@@ -59,9 +59,9 @@ export default async function BlogPostPage({ params }: PageProps) {
       </section>
 
       {/* Content */}
-      <section className="section-light">
+      <section className="bg-warm-white py-12 lg:py-16">
         <div className="section-container max-w-3xl">
-          <article className="prose prose-lg max-w-none text-text-on-light prose-headings:font-heading prose-headings:text-text-on-light prose-a:text-certifyd-blue prose-strong:text-text-on-light">
+          <article className="prose prose-lg prose-certifyd max-w-none prose-headings:font-heading prose-a:text-certifyd-blue prose-a:underline-offset-2 prose-strong:text-text-on-light prose-img:rounded-sm">
             <MDXRemote source={post.content} />
           </article>
         </div>

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* ============================================
    CERTIFYD DESIGN SYSTEM — "Two-Tone" Theme
@@ -116,6 +117,22 @@
       padding-top: var(--section-padding-y-lg);
       padding-bottom: var(--section-padding-y-lg);
     }
+  }
+
+  /* Blog prose — Certifyd design system colors */
+  .prose-certifyd {
+    --tw-prose-body: var(--color-text-on-light);
+    --tw-prose-headings: var(--color-text-on-light);
+    --tw-prose-links: var(--color-certifyd-blue);
+    --tw-prose-bold: var(--color-text-on-light);
+    --tw-prose-counters: var(--color-text-on-light-muted);
+    --tw-prose-bullets: var(--color-certifyd-blue);
+    --tw-prose-hr: var(--color-warm-border);
+    --tw-prose-quotes: var(--color-text-on-light);
+    --tw-prose-quote-borders: var(--color-certifyd-blue);
+    --tw-prose-code: var(--color-text-on-light);
+    --tw-prose-pre-bg: var(--color-navy);
+    --tw-prose-pre-code: var(--color-text-on-dark);
   }
 
   /* Geometric grid background pattern */

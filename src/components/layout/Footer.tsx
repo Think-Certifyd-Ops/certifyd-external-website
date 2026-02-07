@@ -19,7 +19,6 @@ const companyLinks = [
   { label: "Blog", href: "/blog/" },
   { label: "Contact", href: "/contact/" },
   { label: "Careers", href: "/careers/" },
-  { label: "Updates", href: "/updates/" },
 ];
 
 export function Footer() {

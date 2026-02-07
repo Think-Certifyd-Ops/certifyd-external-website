@@ -12,3 +12,267 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Content-Security-Policy = "frame-ancestors 'none'"
+
+# ── Redirects ──────────────────────────────────────────────
+# Removed pages
+[[redirects]]
+  from = "/updates"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/updates/"
+  to = "/blog/"
+  status = 301
+
+# Old blog post → new URL (matching content imported)
+[[redirects]]
+  from = "/blog/whos-really-at-your-door-hidden-risk-letting-strangers-into-home"
+  to = "/blog/whos-really-at-your-door/"
+  status = 301
+
+# Old pre-pivot blog slugs → blog index
+[[redirects]]
+  from = "/blog/why-2025-is-the-year-of-ai-powered-phishing-and-why-your-old-defenses-will-fail"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/business-email-compromise-bec-the-dollar27-billion-scam-hiding-in-your-cfos-inbox"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/but-we-have-a-spam-filter-why-technical-only-defenses-are-a-failing-strategy"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-dollar488-million-email-calculating-the-true-cost-of-a-single-phishing-breach"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/data-point-68percent-of-all-breaches-start-with-a-human-element-heres-how-to-fix-it"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/beyond-the-ransom-the-hidden-costs-of-phishing-reputation-downtime-and-fines"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/brand-impersonation-why-52percent-of-phishing-attacks-pretend-to-be-linkedin-and-who-else-to-watch-for"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/your-human-firewall-is-it-your-weakest-link-or-your-greatest-asset"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-https-myth-why-80percent-of-phishing-sites-use-the-secure-padlock"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-rise-of-ai-phishing-flawless-grammar-context-aware-lures-and-unprecedented-scale"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/phishing-and-ransomware-understanding-the-deadly-partnership"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/anatomy-of-a-modern-phishing-email-10-red-flags-that-arent-just-typos-anymore"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/threat-spotlight-what-is-quishing-how-qr-codes-bypass-your-security"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/what-is-smishing-how-attackers-are-using-sms-to-steal-your-credentials"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-dollar60-million-holiday-heist-lessons-from-the-orion-sa-phishing-attack"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-compliance-nightmare-how-phishing-attacks-lead-to-gdpr-and-data-privacy-fines"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-multi-channel-attack-how-hackers-use-email-whatsapp-and-sms-together"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-helpful-employee-how-social-engineering-preys-on-our-instinct-to-help"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-psychology-of-urgency-why-we-click-on-phishing-links-and-how-to-stop"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/stop-blaming-your-team-why-a-no-blame-security-culture-is-your-best-defense"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/from-clicker-to-defender-5-steps-to-empower-employees-to-report-phishing"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/phishing-as-a-service-phaas-the-dark-web-services-making-attacks-easier-than-ever"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/dont-forget-the-new-hire-why-onboarding-is-a-critical-moment-for-security-training"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/leaderships-role-how-to-model-good-security-behavior-from-the-c-suite-down"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/tricking-vs-training-why-your-current-phishing-simulations-are-backfiring"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/anatomy-of-a-business-email-compromise-bec-attack-3-real-world-examples"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/security-burnout-is-real-how-a-tired-stressed-employee-becomes-a-phishing-victim"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-remote-work-risk-is-your-wfh-team-more-vulnerable-to-phishing-yes"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-unmanaged-device-threat-how-quishing-moves-the-attack-to-a-personal-phone"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/layered-security-in-practice-what-defense-in-depth-actually-means-for-phishing"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/security-orchestration-soar-how-to-automate-your-phishing-response"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/what-is-zero-trust-and-how-does-it-stop-a-phishing-attack-from-spreading"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/measuring-what-matters-how-to-track-your-time-to-report-vs-click-rate"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/beyond-mfa-what-phishing-resistant-authentication-like-fido2-is-and-why-you-need-it"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/beyond-the-annual-quiz-5-ways-to-make-security-training-engaging-and-continuous"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-81percent-problem-a-cisos-guide-to-dmarc-dkim-and-spf"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/why-after-the-fact-alerts-are-too-late-the-case-for-real-time-protection"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/incident-response-101-an-employee-clicked-a-link-these-are-your-next-5-moves"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/case-study-how-company-type-eg-a-mid-sized-law-firm-survived-a-bec-attack"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/template-a-5-minute-security-huddle-discussing-quishing-with-your-team"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/evaluating-your-security-stack-5-signs-your-current-anti-phishing-solution-is-failing"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/5-free-tools-to-check-if-a-link-or-file-is-malicious"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/interview-with-a-hacker-what-they-look-for-in-a-target"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/how-to-report-a-phishing-email-a-simple-guide-for-your-employees"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/a-cisos-90-day-plan-to-reduce-phishing-vulnerability"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-ultimate-10-point-phishing-red-flag-checklist-updated-for-ai-attacks"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/how-to-spot-a-phishing-scam-on-your-mobile-device-ios-and-android"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/holiday-phishing-scams-how-to-protect-your-business-during-peak-season"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/the-future-of-phishing-defense-what-comes-after-the-extra-layer"
+  to = "/blog/"
+  status = 301
