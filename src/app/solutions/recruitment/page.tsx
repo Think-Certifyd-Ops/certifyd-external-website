@@ -14,6 +14,7 @@ export default function RecruitmentPage() {
   return (
     <>
       <SolutionHero
+        badge="Recruitment"
         title="From 3 Weeks of Wasted Time to 30 Seconds"
         subtitle="Pre-screen right-to-work status at application stage. Before interviews. Before emotional investment. Before fines."
       />
@@ -45,30 +46,6 @@ export default function RecruitmentPage() {
           "Audit trail automatic and complete",
         ]}
       />
-
-      {/* Who it's for */}
-      <section className="section-light">
-        <div className="section-container">
-          <h2 className="font-heading text-2xl font-bold text-text-on-light mb-6 text-center">
-            Who it&apos;s for
-          </h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              "Heads of Talent",
-              "HR Directors",
-              "CHROs",
-              "Recruitment Agencies",
-            ].map((role) => (
-              <span
-                key={role}
-                className="px-4 py-2 bg-warm-gray border border-warm-border rounded-sm text-text-on-light-muted text-sm font-medium"
-              >
-                {role}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <SolutionCTA title="Prepare for the Fair Work Agency" />
     </>

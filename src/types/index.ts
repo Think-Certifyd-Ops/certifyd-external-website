@@ -35,3 +35,14 @@ export interface BlogPost {
   category: string;
   content: string;
 }
+
+export interface ChangelogEntry {
+  date: string;
+  version: string;
+  title: string;
+  summary: string;
+  changes: {
+    category: "added" | "changed" | "fixed" | "removed";
+    items: string[];
+  }[];
+}

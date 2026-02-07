@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SolutionHero } from "@/components/solutions/SolutionHero";
 import { ProblemSection } from "@/components/solutions/ProblemSection";
+import { SolutionSteps } from "@/components/solutions/SolutionSteps";
 import { SolutionCTA } from "@/components/solutions/SolutionCTA";
 
 export const metadata: Metadata = {
@@ -21,7 +22,8 @@ export default function CarePage() {
   return (
     <>
       <SolutionHero
-        title="Know Who&apos;s Looking After Your Family"
+        badge="Care Homes"
+        title="Know Who's Looking After Your Family"
         subtitle="Rotating agency staff. Vulnerable residents. Families left in the dark."
       />
 
@@ -35,28 +37,7 @@ export default function CarePage() {
         ]}
       />
 
-      {/* How It Works */}
-      <section className="section-dark">
-        <div className="section-container">
-          <h2 className="font-heading text-2xl lg:text-3xl font-bold text-text-on-dark mb-10">
-            How It Works
-          </h2>
-          <div className="space-y-6">
-            {howItWorksSteps.map((step, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-full bg-certifyd-blue flex items-center justify-center shrink-0">
-                  <span className="font-heading text-sm font-bold text-white">
-                    {index + 1}
-                  </span>
-                </div>
-                <p className="text-text-on-dark text-base leading-relaxed pt-1">
-                  {step}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SolutionSteps steps={howItWorksSteps} />
 
       <SolutionCTA title="Protect your residents" />
     </>

@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/Button";
 export function Hero() {
   return (
     <section className="section-dark bg-grid-pattern relative min-h-[85vh] flex items-center">
-      {/* Faint blue radial gradient overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -25,10 +24,10 @@ export function Hero() {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mt-10 animate-slide-up animation-delay-400">
-          <Button variant="primary" size="lg" href="#how-it-works">
+          <Button variant="outline" size="lg" href="#how-it-works">
             See how it works
           </Button>
-          <Button variant="secondary" size="lg" href="/contact/">
+          <Button variant="ghost" size="lg" href="/contact/" className="text-text-on-dark-muted hover:text-white">
             Get in touch
           </Button>
         </div>

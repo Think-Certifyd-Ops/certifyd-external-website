@@ -1,4 +1,7 @@
+"use client";
+
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const CAPABILITIES = [
   {
@@ -37,36 +40,32 @@ export function WhatWeDo() {
   return (
     <section className="section-light">
       <div className="section-container py-20 lg:py-28">
-        <SectionHeader
-          badge="What We Do"
-          title="One Platform. Three Capabilities."
-          align="center"
-          dark={false}
-        />
+        <ScrollReveal>
+          <SectionHeader
+            badge="What We Do"
+            title="One Platform. Three Capabilities."
+            align="center"
+            dark={false}
+          />
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {CAPABILITIES.map((cap) => (
-            <div
-              key={cap.title}
-              className="bg-white border border-warm-border rounded-sm p-8 text-center"
-            >
-              <div className="w-14 h-14 mx-auto rounded-sm bg-certifyd-blue/10 flex items-center justify-center mb-6">
-                {cap.icon}
+          {CAPABILITIES.map((cap, index) => (
+            <ScrollReveal key={cap.title} delay={index * 120}>
+              <div className="bg-white border border-warm-border rounded-sm p-8 text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div className="w-14 h-14 mx-auto rounded-sm bg-certifyd-blue/10 flex items-center justify-center mb-6">
+                  {cap.icon}
+                </div>
+                <h3 className="font-heading text-xl font-semibold text-text-on-light mb-3">
+                  {cap.title}
+                </h3>
+                <p className="text-text-on-light-muted text-sm leading-relaxed">
+                  {cap.description}
+                </p>
               </div>
-              <h3 className="font-heading text-xl font-semibold text-text-on-light mb-3">
-                {cap.title}
-              </h3>
-              <p className="text-text-on-light-muted text-sm leading-relaxed">
-                {cap.description}
-              </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
-
-        <p className="text-center font-medium text-text-on-light-muted mt-12 max-w-2xl mx-auto">
-          What makes us different: Two-way verification. Pre-screening at
-          application stage. Affordable. Universal.
-        </p>
       </div>
     </section>
   );
