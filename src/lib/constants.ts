@@ -15,10 +15,19 @@ export const NAV_ITEMS: NavItem[] = [
     label: "Solutions",
     href: "/solutions",
     children: [
-      { label: "Recruitment", href: "/solutions/recruitment/" },
-      { label: "Trades", href: "/solutions/trades/" },
-      { label: "Care Homes", href: "/solutions/care/" },
-      { label: "Workforce", href: "/solutions/workforce/" },
+      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+    ],
+  },
+  {
+    label: "Industries",
+    href: "/industries",
+    children: [
+      { label: "Recruitment", href: "/industries/recruitment/" },
+      { label: "Trades", href: "/industries/trades/" },
+      { label: "Care Homes", href: "/industries/care/" },
+      { label: "Workforce", href: "/industries/workforce/" },
     ],
   },
   { label: "About", href: "/about/" },
@@ -56,27 +65,27 @@ export const FOUR_STORIES: StoryCard[] = [
     story:
       'A recruiter asks "Right to work?" The candidate says "Yes." Three weeks of interviews later — graduate visa, needs £20k sponsorship. Or start over.',
     stat: "Up to £60,000 civil penalty per illegal worker.",
-    href: "/solutions/recruitment/",
+    href: "/industries/recruitment/",
   },
   {
     title: "The Tradesperson",
     story:
       "A homeowner finds a builder online. He knows where she lives, what's in her home, when she's out. She knows nothing about him. He sends his mate instead. No one checks.",
     stat: "Zero regulation for tradespeople entering your home.",
-    href: "/solutions/trades/",
+    href: "/industries/trades/",
   },
   {
     title: "The Care Home",
     story:
       "Rotating agency staff cover nights and weekends. Families have no idea who's looking after their parent. A staff member gives a false name. Nobody checked.",
     stat: "39% of safeguarding concerns involve staff or volunteers.",
-    href: "/solutions/care/",
+    href: "/industries/care/",
   },
   {
     title: "The Temp",
     story:
       '5 agency workers arrive for the week. One says "Dave couldn\'t make it — I\'m covering." He gets a lanyard and building access. Nobody checks. Nobody can.',
     stat: "1.1M temporary workers in the UK. Most unverified.",
-    href: "/solutions/workforce/",
+    href: "/industries/workforce/",
   },
 ];

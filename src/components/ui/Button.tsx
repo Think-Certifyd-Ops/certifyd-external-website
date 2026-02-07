@@ -45,11 +45,11 @@ export function Button({
   );
 
   const inner = (
-    <>
-      <span className="transition-transform duration-300 ease-out group-hover:-translate-x-1">
+    <span className="inline-flex items-center">
+      <span className="transition-transform duration-300 ease-out group-hover:-translate-x-1.5">
         {children}
       </span>
-      <span className="inline-block w-0 overflow-hidden transition-all duration-300 ease-out group-hover:w-5 group-hover:ml-1">
+      <span className="inline-flex items-center ml-1 w-4 shrink-0 opacity-0 translate-x-1 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
         <svg
           className="w-4 h-4"
           fill="none"
@@ -64,7 +64,7 @@ export function Button({
           />
         </svg>
       </span>
-    </>
+    </span>
   );
 
   if (href) {

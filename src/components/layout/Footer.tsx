@@ -2,10 +2,16 @@ import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 
 const solutionLinks = [
-  { label: "Recruitment", href: "/solutions/recruitment/" },
-  { label: "Trades", href: "/solutions/trades/" },
-  { label: "Care Homes", href: "/solutions/care/" },
-  { label: "Workforce", href: "/solutions/workforce/" },
+  { label: "Certify That Person", href: "/solutions/person/" },
+  { label: "Certify That Business", href: "/solutions/business/" },
+  { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+];
+
+const industryLinks = [
+  { label: "Recruitment", href: "/industries/recruitment/" },
+  { label: "Trades", href: "/industries/trades/" },
+  { label: "Care Homes", href: "/industries/care/" },
+  { label: "Workforce", href: "/industries/workforce/" },
 ];
 
 const companyLinks = [
@@ -13,6 +19,7 @@ const companyLinks = [
   { label: "Blog", href: "/blog/" },
   { label: "Contact", href: "/contact/" },
   { label: "Careers", href: "/careers/" },
+  { label: "Updates", href: "/updates/" },
 ];
 
 export function Footer() {
@@ -20,7 +27,7 @@ export function Footer() {
     <footer className="bg-navy border-t border-navy-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:py-16">
+        <div className="grid grid-cols-1 gap-10 py-12 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8 lg:py-16">
           {/* Column 1: Logo + Tagline */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block">
@@ -55,7 +62,26 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Company */}
+          {/* Column 3: Industries */}
+          <div>
+            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
+              Industries
+            </h3>
+            <ul className="space-y-3">
+              {industryLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-text-on-dark-muted transition-colors hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Company */}
           <div>
             <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
               Company
@@ -74,7 +100,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact */}
+          {/* Column 5: Contact */}
           <div>
             <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
               Contact

@@ -4,11 +4,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
-const SOLUTIONS = [
-  { label: "Recruitment", href: "/solutions/recruitment/" },
-  { label: "Trades", href: "/solutions/trades/" },
-  { label: "Care Homes", href: "/solutions/care/" },
-  { label: "Workforce", href: "/solutions/workforce/" },
+const INDUSTRIES = [
+  { label: "Recruitment", href: "/industries/recruitment/" },
+  { label: "Trades", href: "/industries/trades/" },
+  { label: "Care Homes", href: "/industries/care/" },
+  { label: "Workforce", href: "/industries/workforce/" },
 ];
 
 export function HomeCTA() {
@@ -32,14 +32,14 @@ export function HomeCTA() {
 
         <ScrollReveal delay={100}>
           <div className="flex flex-wrap justify-center gap-4 mt-10">
-            {SOLUTIONS.map((solution) => (
+            {INDUSTRIES.map((industry) => (
               <Link
-                key={solution.label}
-                href={solution.href}
+                key={industry.label}
+                href={industry.href}
                 className="group border border-navy-border bg-navy-light px-6 py-3 rounded-sm text-sm font-heading font-medium text-text-on-dark hover:border-white/40 hover:bg-navy-lighter transition-all duration-300"
               >
                 <span className="transition-transform duration-300 group-hover:-translate-x-0.5 inline-block">
-                  {solution.label}
+                  {industry.label}
                 </span>
                 <svg
                   className="w-3.5 h-3.5 ml-2 inline-block opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
