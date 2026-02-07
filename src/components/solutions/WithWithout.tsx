@@ -19,6 +19,21 @@ export function WithWithout({ without, with_certifyd }: WithWithoutProps) {
       />
 
       <div className="section-container relative z-10 py-20 lg:py-28">
+        <ScrollReveal>
+          <div className="mb-14 lg:mb-16">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-px bg-certifyd-blue" />
+              <span className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
+                The Difference
+              </span>
+            </div>
+            <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-dark max-w-xl leading-tight">
+              Before and after<br />
+              <span className="text-certifyd-blue">Certifyd.</span>
+            </h2>
+          </div>
+        </ScrollReveal>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-sm overflow-hidden border border-navy-border">
           {/* Without */}
           <ScrollReveal direction="left" className="h-full">

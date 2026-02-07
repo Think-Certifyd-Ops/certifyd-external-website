@@ -63,10 +63,16 @@ export default function CertifyBusinessPage() {
       <section className="section-light">
         <div className="section-container">
           <ScrollReveal>
-            <div className="flex items-center gap-3 mb-10">
-              <div className="w-8 h-px bg-text-on-light-muted" />
-              <h2 className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
-                Key Capabilities
+            <div className="mb-14 lg:mb-16">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-px bg-text-on-light-muted" />
+                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
+                  Key Capabilities
+                </span>
+              </div>
+              <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-light max-w-xl leading-tight">
+                Your team, verified.<br />
+                <span className="text-certifyd-blue">Your reputation, proven.</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -90,14 +96,21 @@ export default function CertifyBusinessPage() {
 
       {/* Industry Use Cases */}
       <section className="section-dark">
-        <div className="section-container py-16 lg:py-20">
+        <div className="section-container py-20 lg:py-28">
           <ScrollReveal>
-            <div className="text-center mb-10">
-              <h2 className="font-heading text-2xl lg:text-3xl font-bold text-text-on-dark">
-                See it in action
+            <div className="mb-14 lg:mb-16">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-px bg-certifyd-blue" />
+                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
+                  See It In Action
+                </span>
+              </div>
+              <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-dark max-w-2xl leading-tight">
+                Trust scales across<br />
+                <span className="text-certifyd-blue">every industry.</span>
               </h2>
-              <p className="text-text-on-dark-muted mt-3 text-sm">
-                Certify That Business works across every industry where workforce trust matters.
+              <p className="text-text-on-dark-muted mt-4 text-sm max-w-lg">
+                Certify That Business works wherever workforce trust is non-negotiable.
               </p>
             </div>
           </ScrollReveal>

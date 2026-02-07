@@ -73,12 +73,16 @@ export default function TradesPage() {
         <div className="section-container">
           <ScrollReveal>
             <div className="mb-14">
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-px bg-text-on-light-muted" />
-                <h2 className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
+                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
                   Also works for
-                </h2>
+                </span>
               </div>
+              <h2 className="font-heading text-2xl lg:text-3xl font-bold text-text-on-light mb-8 leading-tight">
+                Anyone at your door<br />
+                <span className="text-certifyd-blue">claiming to be someone.</span>
+              </h2>
               <div className="flex flex-wrap gap-3">
                 {alsoWorksFor.map((item) => (
                   <span
@@ -93,10 +97,16 @@ export default function TradesPage() {
           </ScrollReveal>
 
           <ScrollReveal delay={100}>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px bg-text-on-light-muted" />
-              <h2 className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
-                Who benefits
+            <div className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-px bg-text-on-light-muted" />
+                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
+                  Who benefits
+                </span>
+              </div>
+              <h2 className="font-heading text-2xl lg:text-3xl font-bold text-text-on-light leading-tight">
+                Everyone in the chain<br />
+                <span className="text-certifyd-blue">wins.</span>
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
