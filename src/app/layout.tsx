@@ -40,6 +40,10 @@ export const metadata: Metadata = {
     description:
       "Affordable identity verification that works before the offer, before the interview, before you let someone through the door.",
   },
+  icons: {
+    icon: "/logos/certifyd-icon-blue.svg",
+    apple: "/logos/certifyd-icon-blue.svg",
+  },
 };
 
 export default function RootLayout({

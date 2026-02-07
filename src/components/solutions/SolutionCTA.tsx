@@ -6,9 +6,11 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 interface SolutionCTAProps {
   title: string;
   href?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
 }
 
-export function SolutionCTA({ title, href = "/contact/" }: SolutionCTAProps) {
+export function SolutionCTA({ title, href = "/contact/", secondaryLabel, secondaryHref }: SolutionCTAProps) {
   return (
     <section className="relative bg-navy overflow-hidden">
       <div
@@ -32,9 +34,15 @@ export function SolutionCTA({ title, href = "/contact/" }: SolutionCTAProps) {
               <Button variant="outline" size="lg" href={href}>
                 Get in touch
               </Button>
-              <Button variant="ghost" size="lg" href="/" className="text-text-on-dark-muted hover:text-white">
-                Back to home
-              </Button>
+              {secondaryLabel && secondaryHref ? (
+                <Button variant="ghost" size="lg" href={secondaryHref} className="text-text-on-dark-muted hover:text-white">
+                  {secondaryLabel}
+                </Button>
+              ) : (
+                <Button variant="ghost" size="lg" href="/" className="text-text-on-dark-muted hover:text-white">
+                  Back to home
+                </Button>
+              )}
             </div>
           </div>
         </ScrollReveal>

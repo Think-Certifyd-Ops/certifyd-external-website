@@ -162,7 +162,7 @@ function VerificationDashboard() {
 
 export function Hero() {
   return (
-    <section className="section-dark bg-grid-pattern relative min-h-[85vh] flex items-center overflow-hidden">
+    <section className="section-dark bg-grid-pattern relative overflow-hidden">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -172,7 +172,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="section-container relative z-10 py-20 lg:py-24">
+      <div className="section-container relative z-10 pb-8 lg:pb-12">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Left — Text */}
           <div className="lg:w-1/2 text-center lg:text-left">

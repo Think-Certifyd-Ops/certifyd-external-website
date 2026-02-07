@@ -3,6 +3,46 @@ import type { ChangelogEntry } from "@/types";
 export const CHANGELOG: ChangelogEntry[] = [
   {
     date: "2026-02-07",
+    version: "1.5.0",
+    title: "Polish, content & data fixes",
+    summary:
+      "Home page hero spacing fixed so CTA stays above the fold. FourStories upgraded to dark section with mini mock UI graphics. HowItWorks screenshots replaced with CSS phone mockups. WithWithout readability improved. Fair Work Agency blog post added. Team photos, favicon, and LinkedIn URLs corrected.",
+    changes: [
+      {
+        category: "added",
+        items: [
+          "FourStories: Mini graphic headers per card — RTW status, identity check, shift monitor, access badge",
+          "HowItWorks: CSS phone mockup graphics for all 4 steps with QR code and Certifyd icon",
+          "HomeCTA: Subtitle and mini industry icon badges",
+          "Fair Work Agency blog post at /blog/fair-work-agency-april-2026",
+          "SolutionCTA: Optional secondary button with custom label and link",
+          "Team photos on About page (Andrew, Jason, Michael)",
+          "Certifyd blue SVG favicon",
+        ],
+      },
+      {
+        category: "changed",
+        items: [
+          "Hero: Removed min-h-[85vh] and excess padding — buttons now visible without scrolling",
+          "FourStories: Switched from light section to dark navy with navy-light cards",
+          "HowItWorks: Replaced PNG screenshots with CSS-only phone mockups, visible on all breakpoints",
+          "HomeCTA: Added subtitle and industry icon pills above buttons",
+          "WithWithout: Better contrast, larger text (15px), coloured left borders, larger number badges",
+          "Recruitment CTA: Now links to Fair Work Agency blog post",
+          "LinkedIn URLs corrected (company: thinkcertifyd, team profiles updated)",
+        ],
+      },
+      {
+        category: "removed",
+        items: [
+          "Old favicon.ico replaced by SVG icon via metadata",
+          "PNG app mockup images removed from HowItWorks section",
+        ],
+      },
+    ],
+  },
+  {
+    date: "2026-02-07",
     version: "1.4.0",
     title: "Hero graphics for all industry and solution pages",
     summary:

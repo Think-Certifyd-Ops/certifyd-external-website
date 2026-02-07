@@ -50,7 +50,11 @@ export default function RecruitmentPage() {
         ]}
       />
 
-      <SolutionCTA title="Prepare for the Fair Work Agency" />
+      <SolutionCTA
+        title="Prepare for the Fair Work Agency"
+        secondaryLabel="Read more about the Fair Work Agency"
+        secondaryHref="/blog/fair-work-agency-april-2026"
+      />
     </>
   );
 }

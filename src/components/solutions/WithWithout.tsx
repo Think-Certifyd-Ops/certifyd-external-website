@@ -37,7 +37,7 @@ export function WithWithout({ without, with_certifyd }: WithWithoutProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-sm overflow-hidden border border-navy-border">
           {/* Without */}
           <ScrollReveal direction="left" className="h-full">
-            <div className="bg-navy-light p-8 lg:p-10 h-full border-b lg:border-b-0 lg:border-r border-navy-border">
+            <div className="bg-navy-lighter p-8 lg:p-10 h-full border-b lg:border-b-0 lg:border-r border-navy-border border-l-2 border-l-accent-warning/40">
               <div className="flex items-center gap-3 mb-8">
                 <svg className="w-5 h-5 text-accent-warning" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -46,13 +46,13 @@ export function WithWithout({ without, with_certifyd }: WithWithoutProps) {
                   Without Certifyd
                 </h3>
               </div>
-              <ol className="space-y-5">
+              <ol className="space-y-6">
                 {without.map((step, index) => (
                   <li key={index} className="flex items-start gap-4">
-                    <span className="font-heading text-xs font-bold text-text-on-dark-muted bg-navy-lighter w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="font-heading text-xs font-bold text-text-on-dark-muted bg-navy w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
                       {index + 1}
                     </span>
-                    <p className="text-text-on-dark-muted text-sm leading-relaxed">
+                    <p className="text-text-on-dark/80 text-[15px] leading-relaxed">
                       {step}
                     </p>
                   </li>
@@ -63,7 +63,7 @@ export function WithWithout({ without, with_certifyd }: WithWithoutProps) {
 
           {/* With */}
           <ScrollReveal direction="right" className="h-full">
-            <div className="bg-navy-light p-8 lg:p-10 h-full relative">
+            <div className="bg-navy-light p-8 lg:p-10 h-full relative border-l-2 border-l-accent-success/40">
               <div
                 className="absolute inset-0 pointer-events-none"
                 style={{
@@ -79,13 +79,13 @@ export function WithWithout({ without, with_certifyd }: WithWithoutProps) {
                     With Certifyd
                   </h3>
                 </div>
-                <ol className="space-y-5">
+                <ol className="space-y-6">
                   {with_certifyd.map((step, index) => (
                     <li key={index} className="flex items-start gap-4">
-                      <span className="font-heading text-xs font-bold text-certifyd-blue bg-certifyd-blue/15 w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="font-heading text-xs font-bold text-certifyd-blue bg-certifyd-blue/15 w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
                         {index + 1}
                       </span>
-                      <p className="text-text-on-dark text-sm leading-relaxed">
+                      <p className="text-text-on-dark text-[15px] leading-relaxed">
                         {step}
                       </p>
                     </li>

@@ -5,7 +5,7 @@ export const COMPANY = {
   tagline: "The identity layer for businesses that can't afford to get it wrong.",
   email: "team@certifyd.io",
   address: "Aldwych House, 71-91 Aldwych, London, England WC2B 4HN",
-  linkedin: "https://www.linkedin.com/company/certifyd",
+  linkedin: "https://www.linkedin.com/company/thinkcertifyd/",
   website: "https://www.certifyd.io",
 } as const;
 
@@ -38,24 +38,27 @@ export const NAV_ITEMS: NavItem[] = [
 export const TEAM: TeamMember[] = [
   {
     name: "Andrew Speer",
+    photo: "/team/Andrew Speer.jpg",
     title: "Co-Founder & CEO",
     description:
       "15+ years building and scaling revenue operations across the UK, US, and EMEA. Andrew brings enterprise sales expertise and a track record of turning complex problems into simple, scalable solutions.",
-    linkedin: "https://www.linkedin.com/in/andrewspeer",
+    linkedin: "https://www.linkedin.com/in/speerandrew/",
   },
   {
     name: "Jason Shubrook",
+    photo: "/team/Jason Shubrook.jpg",
     title: "Co-Founder & CTO",
     description:
       "20+ years designing real-time distributed systems for the world's largest financial institutions. Jason builds the kind of infrastructure that doesn't go down — and still writes code.",
-    linkedin: "https://www.linkedin.com/in/jasonshubrook",
+    linkedin: "https://www.linkedin.com/in/jason-shubrook-654b194/",
   },
   {
     name: "Michael Neligan",
+    photo: "/team/Michael Neligan.jpg",
     title: "Co-Founder & CCO",
     description:
       "10+ years building and scaling digital products from zero to millions of users. Michael knows how to take a product to market and make it stick.",
-    linkedin: "https://www.linkedin.com/in/michaelneligan",
+    linkedin: "https://www.linkedin.com/in/michaelneligan/",
   },
 ];
 
