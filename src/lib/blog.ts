@@ -34,9 +34,13 @@ export function getAllPosts(): BlogPostMeta[] {
     };
   });
 
-  return posts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  const today = new Date().toISOString().split("T")[0];
+
+  return posts
+    .filter((p) => p.date <= today)
+    .sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
 }
 
 export function getPostBySlug(slug: string) {

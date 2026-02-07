@@ -1,0 +1,84 @@
+---
+title: "The $25 Million Deepfake: What the Arup Attack Means for Every Business"
+date: "2026-02-11"
+author: "Certifyd Team"
+excerpt: "In early 2024, a finance worker at Arup transferred $25 million after a video call with deepfake versions of his colleagues. Here's what went wrong — and what it means for your business."
+category: "Security"
+---
+
+In January 2024, a finance worker at the Hong Kong office of **Arup** — the global engineering firm behind the Sydney Opera House and the Beijing Water Cube — received a message from what appeared to be the company's UK-based chief financial officer. The message requested a confidential financial transaction.
+
+The employee was suspicious. It looked like a phishing attempt. So he did what most security-aware employees would do: he requested a video call to verify.
+
+The call was arranged. When he joined, he saw the CFO. He saw several other colleagues he recognised. They discussed the transaction. Everything looked and sounded normal.
+
+He transferred **$25.6 million** across fifteen transactions.
+
+Every face on that call was a deepfake. Every voice was synthetic. The employee had followed his instincts — verify before you act — and the verification method itself was compromised. The visual and audio trust that video calls are built on had been entirely fabricated.
+
+## This Is Not Science Fiction
+
+The Arup attack was not carried out by a nation-state intelligence service. It was a financial fraud operation using tools that are now commercially available.
+
+Deepfake video generation has moved from research labs to consumer apps in under three years. Real-time face-swapping tools can run on a standard laptop. Voice cloning services require as little as three seconds of sample audio to produce a convincing replica. The barriers to creating a synthetic version of anyone — your CEO, your CFO, your colleague — are effectively gone.
+
+The Arup case made international headlines because of the dollar figure. But it is far from isolated.
+
+**Ferrari narrowly avoided a similar attack** in mid-2024. A senior executive received WhatsApp messages and then a phone call from someone claiming to be CEO Benedetto Vigna. The voice was a near-perfect clone — the right accent, the right cadence, the right mannerisms. The executive grew suspicious and asked a personal question: "What book did you recommend to me last week?" The line went dead.
+
+If the executive hadn't thought to ask an out-of-band verification question — one that couldn't be predicted by an AI model — Ferrari would have joined Arup on the list.
+
+## The FBI Warning
+
+In June 2024, the FBI issued a public advisory warning that **North Korean IT workers were using deepfakes and stolen identities to obtain remote employment at US companies**. The scheme was straightforward: use AI-generated faces and voices during video interviews, provide stolen credentials, and gain employment — and access to internal systems — at legitimate organisations.
+
+The advisory noted that these operatives were specifically targeting technology, financial services, and defence companies. They were passing hiring processes that relied on video interviews as a verification step.
+
+The implication is stark: the standard hiring process — resume, phone screen, video interview — can no longer reliably confirm that you're speaking to a real person, let alone the right person.
+
+## What Actually Went Wrong
+
+In each of these cases, the victims did something reasonable. They relied on visual and audio cues to verify identity. They trusted what they could see and hear.
+
+This is how human trust has worked for thousands of years. You recognise a face. You recognise a voice. You look someone in the eye and make a judgment. This instinct is so deeply embedded that it operates below conscious thought — you don't decide to trust a familiar face; you simply do.
+
+Deepfakes exploit exactly this instinct. They don't hack a system. They hack the human. They present a face and voice that trigger automatic trust, bypassing every rational security measure the victim might otherwise apply.
+
+The lesson from Arup, Ferrari, and the FBI advisory is not that employees need better training. It's that **visual and audio trust is broken as a verification mechanism**. No amount of awareness training will teach the human brain to reliably distinguish a high-quality deepfake from a real face on a video call. The technology has surpassed our biology.
+
+## Why Existing Security Doesn't Help
+
+Most enterprise security is designed to protect systems, not interactions. Firewalls, endpoint detection, email filtering, multi-factor authentication — all of these protect the perimeter. None of them address the moment when a human being is sitting on a video call, looking at a face they recognise, and being asked to act.
+
+The Arup employee had access controls. He had financial authorisation workflows. He had the instinct to request a video call. None of it mattered because the verification layer — the human judgment of "that looks like my CFO" — was the weakest link, and the attackers knew it.
+
+Multi-factor authentication confirms you are accessing a system. It does not confirm the person on the other end of a call is real. Password managers protect credentials. They do not protect against a synthetic face asking you to transfer funds. Email security filters catch malicious links. They do not catch a deepfake CFO on a live video call.
+
+The gap is between system-level security and human-level trust. That gap is exactly where deepfake attacks operate.
+
+## Two-Way Verification as the Fix
+
+The Arup attack succeeds because verification was one-directional and based on appearance. The employee looked at the screen and saw faces he trusted. Those faces never independently proved they were real.
+
+Two-way verification changes this equation. Instead of relying on what a face looks like on a screen, both parties authenticate through an independent, cryptographic layer that cannot be spoofed by visual appearance.
+
+Here's what that looks like in practice with Certifyd:
+
+- **Before a high-value meeting**, participants authenticate via a dynamic QR code that refreshes every 30 seconds
+- **Both parties verify simultaneously** — not through facial recognition, which can be fooled, but through a cryptographic identity exchange
+- **An auditable record is created** — timestamped proof that every participant was verified at the time of the meeting
+- **It works on any platform** — Zoom, Teams, Google Meet, in-person. No specialist hardware. No app installation required for verifiers.
+
+If the Arup employee had required cryptographic two-way verification before proceeding with the transaction, the deepfake faces on the screen would have been irrelevant. The attackers could look like anyone they wanted. They couldn't forge a cryptographic identity exchange.
+
+## What This Means for Your Business
+
+You don't need to be a $25 million target. Deepfake attacks are scaling down, not up. The same tools that targeted Arup's CFO can target your head of finance, your HR director, your procurement team. The cost of mounting these attacks is falling every month.
+
+The question every business needs to answer: **what happens when an employee receives a video call from someone who looks and sounds exactly like their manager, requesting urgent action?**
+
+If the answer is "they'd probably comply," then your business has the same vulnerability that cost Arup $25.6 million.
+
+The fix isn't awareness training. It isn't better phishing simulations. It is an independent verification layer that doesn't rely on what humans can see and hear — because what humans can see and hear can now be manufactured at will.
+
+[See how Certifyd provides real-time, deepfake-proof identity verification for every interaction.](/solutions/person/)

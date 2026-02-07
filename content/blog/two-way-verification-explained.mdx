@@ -1,0 +1,90 @@
+---
+title: "Two-Way Verification: What It Is and Why One-Way Systems Are No Longer Enough"
+date: "2026-02-09"
+author: "Certifyd Team"
+excerpt: "You prove your identity to your bank every day. But when did your bank last prove its identity to you? That's the problem with one-way verification."
+category: "Identity"
+---
+
+You get a phone call. The voice says: "This is your bank. We've detected suspicious activity on your account. Can you confirm your date of birth and the last four digits of your card?"
+
+Most people answer. The voice sounds professional. The number looks right. The urgency feels real.
+
+In 2024, UK Finance reported that **authorised push payment fraud** — where victims are tricked into making payments to criminals — cost UK consumers and businesses **over 459 million pounds**. The majority of these scams start with a phone call or message where someone claims to be from a trusted institution. The victim verifies their identity to the caller. The caller never verifies theirs.
+
+This is one-way verification. And it is the foundation of almost every identity system in use today.
+
+## How One-Way Verification Works
+
+The model is simple: **you prove who you are to an institution**. The institution never proves who it is to you.
+
+When you log into your bank, you enter your password, your PIN, your biometric. The bank's system confirms you are you. But at no point does the bank prove to you — the human — that the system you're interacting with is genuinely your bank. You trust the URL, the branding, the certificate padlock. You trust the phone number on your caller ID. You trust the email that looks right.
+
+This trust is exploited every single day.
+
+- **CEO fraud:** An employee receives an urgent email from their chief executive requesting an immediate funds transfer. The email address is spoofed or compromised. The employee complies because the request came from "the CEO." The CEO never verified themselves to the employee.
+- **Fake bank calls:** A scammer calls posing as your bank's fraud team. They ask you to verify yourself — date of birth, security questions, card details. You verify. They don't.
+- **Recruitment scams:** A candidate receives an offer from a company. The interviewer was on a video call, wearing a branded background. The offer email came from a legitimate-looking domain. The candidate provides their passport, National Insurance number, and bank details. The company doesn't exist.
+
+In every case, the victim did what they were trained to do: verify their identity when asked. The problem is that no one asked the other side to do the same.
+
+## What Two-Way Verification Means
+
+Two-way verification — also called reciprocal or mutual authentication — changes the model fundamentally. **Both parties prove who they are before the interaction proceeds.**
+
+Instead of one side verifying to the other, both sides authenticate simultaneously. The result: neither party is taking the other on trust alone.
+
+In practice, this means:
+
+- When a bank calls you, the bank also proves it is your bank — not just by showing a phone number, but through a cryptographic exchange that can't be spoofed
+- When you join a video call with a colleague, both of you verify your identity in real time — not based on what the screen shows, but through an independent authentication layer
+- When a tradesperson arrives at your home, they verify themselves to you, and you verify yourself to them — creating mutual accountability and an auditable record
+
+The principle is straightforward: if you're asking someone to trust you with their time, their money, their safety, or their personal information, you should be willing to prove you are who you claim to be. And they should be able to demand it.
+
+## How QR-Based Two-Way Verification Works
+
+Certifyd uses QR codes as the mechanism for real-time, two-way verification. Here is how it works:
+
+1. **Both parties have a Certifyd-verified identity** linked to their account
+2. **At the point of interaction**, one party generates a dynamic QR code — on their phone, on a screen, or embedded in a platform
+3. **The other party scans it** using their device
+4. **Both identities are authenticated simultaneously** — the system confirms that both the person requesting and the person responding are verified
+5. **A timestamped, auditable record is created** — who verified whom, when, and in what context
+
+The QR code refreshes every 30 seconds, making it impossible to screenshot, share, or reuse. The entire process takes under 30 seconds. It works in person, on a video call, during a voice call, or via text and messaging apps. No specialist hardware. No app download required for the verifying party.
+
+This is fundamentally different from showing a badge, flashing a document, or reading out a reference number. It is cryptographic proof, in real time, that both parties are who they claim to be.
+
+## Why Existing Platforms Fall Short
+
+The identity verification market is not empty. Companies like **Yoti** and **Signicat** offer digital identity solutions used by millions. But they share a critical limitation: they are built on the one-way model.
+
+**Yoti** (valued at approximately 82 million pounds) provides digital identity verification — you prove who you are to a service. The service checks your credentials. But Yoti doesn't require the service to prove its identity back to you. You're still trusting that the entity asking for your identity is legitimate.
+
+**Signicat** (acquired for approximately 450 million euros) offers pan-European digital identity across regulated industries. Their system assumes the organisation requesting verification can be trusted. For regulated banks and governments, that assumption may hold. For a recruitment call, a trades booking, or an agency care shift? It doesn't.
+
+Both platforms answer the question: "Is this person who they say they are?" Neither answers the equally important question: "Is the entity asking me to verify also who they say they are?"
+
+That second question is the one that stops CEO fraud, fake bank calls, deepfake video meetings, and recruitment scams. It is the question that one-way systems cannot answer by design.
+
+## Where Two-Way Verification Changes the Game
+
+The shift from one-way to two-way verification matters most in contexts where both parties have something at stake:
+
+- **Hiring:** The recruiter verifies the candidate. The candidate verifies the recruiter is from a real company, not a data harvesting operation.
+- **Care and healthcare:** The care home verifies the agency worker. The agency worker verifies the facility is the one they were assigned to.
+- **Trades and home services:** The tradesperson verifies they're at the right address. The homeowner verifies the person at the door is the one they booked.
+- **High-value meetings:** Both parties on a video call confirm they are real, verified humans — not deepfakes, not imposters, not AI-generated faces.
+
+In each case, two-way verification removes the single point of trust failure that makes fraud possible. It replaces "I trust you because you look right" with "I trust you because we've both been verified, in real time, with a record to prove it."
+
+## The Direction of Travel
+
+One-way verification was designed for a world where institutions could be trusted by default and individuals needed to prove themselves. That world is gone. Deepfakes are commoditised. Voice cloning takes seconds. Phishing emails are indistinguishable from real ones. Spoofed phone numbers are trivial.
+
+The question is no longer "Can you prove who you are?" It's "Can we both prove who we are?"
+
+Two-way verification is not a feature. It is the new baseline for trust.
+
+[See how Certifyd makes two-way verification simple, fast, and universal.](/solutions/person/)

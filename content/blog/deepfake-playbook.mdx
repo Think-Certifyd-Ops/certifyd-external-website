@@ -1,0 +1,71 @@
+---
+title: "The Deepfake Playbook: How Real-Time AI Video Cloning Works"
+date: "2026-02-26"
+author: "Certifyd Team"
+excerpt: "Real-time deepfakes can now impersonate anyone on a video call. Here's how the technology works, what it costs, and why traditional defences can't detect it."
+category: "Security"
+---
+
+In January 2024, a finance worker at a multinational firm in Hong Kong joined a video call with what appeared to be the company's CFO and several other senior colleagues. During the call, the CFO instructed the worker to transfer $25 million to a series of accounts. The worker complied. Every person on that call — except the worker — was a deepfake.
+
+This was not a proof-of-concept demonstration. It was an actual fraud, confirmed by Hong Kong police, and it represents the new reality of visual communication. The people you see on your screen may not be real.
+
+## How Real-Time Deepfakes Work
+
+A deepfake is a synthetically generated or manipulated piece of media — video, audio, or both — designed to convincingly impersonate a real person. The technology behind real-time video deepfakes relies on three core components:
+
+**Facial mapping and replacement.** A neural network analyses a source video (or even a collection of photographs) to build a detailed 3D model of a person's face. This model captures bone structure, skin texture, micro-expressions, and how the face moves when speaking. During a live video call, the deepfake system maps these learned features onto the impersonator's face in real time, frame by frame. The result: the impersonator moves their mouth, raises an eyebrow, or turns their head — and the system renders those movements onto the target's face with near-zero latency.
+
+**Voice synthesis and cloning.** Modern voice cloning systems need as little as three seconds of sample audio to generate a convincing replica of someone's voice. The cloned voice captures tone, cadence, accent, and speech patterns. Combined with text-to-speech or real-time voice conversion, the impersonator can speak naturally while the output sounds exactly like the target.
+
+**Real-time rendering and streaming.** The final component is the pipeline that combines face-swap and voice clone outputs into a single video stream, delivered in real time over standard video call platforms. This stream replaces the impersonator's webcam feed. To the other participants, it looks and sounds like a normal video call — because, technically, it is. The pixels are arriving through the same channels as any other video feed.
+
+## What It Costs
+
+The barrier to entry has collapsed. Services advertising "interview stand-ins" — where a deepfake impersonator takes a job interview on your behalf — are available for as little as **$50 per hour**. Open-source face-swap models are free to download. Voice cloning tools offer free tiers. A consumer-grade GPU can run the pipeline in real time.
+
+This isn't nation-state technology anymore. It's commodity fraud tooling. Anyone with a laptop and moderate technical competence can impersonate anyone else on a video call today.
+
+## Why You Can't Detect It
+
+At standard video call resolution — 720p, compressed, over a variable connection — real-time deepfakes are effectively undetectable to the human eye. The artefacts that were once giveaways (blurring around the jawline, inconsistent lighting, lip-sync delays) have been systematically eliminated by successive generations of the underlying models.
+
+The current defences against deepfakes fall into three categories. All three are failing.
+
+### Deepfake Detection AI
+
+The detection approach treats deepfakes as a classification problem: train a model to distinguish real video from synthetic video. The fundamental issue is that this creates an **adversarial arms race**. Every improvement in detection is incorporated into the next generation of deepfake models. Detection is always one step behind generation, and the gap is widening. Academic papers report detection accuracy under controlled conditions, but in the wild — over compressed video, with variable lighting and cheap webcams — performance drops dramatically.
+
+### Watermarking and Content Provenance
+
+Initiatives like the C2PA standard aim to embed cryptographic provenance data into media at the point of creation, allowing recipients to verify that content hasn't been manipulated. The problem is adoption. Watermarking only works if every camera, every platform, and every pipeline supports it. It's voluntary, not universal. And it doesn't help with live video calls, where the "content" is generated in real time and consumed in real time — there's no file to watermark.
+
+### "Be Vigilant"
+
+The most common advice given to organisations is to train employees to spot deepfakes: look for unusual eye movements, ask unexpected questions, watch for visual glitches. This advice was questionable two years ago. Today it's obsolete. Asking humans to visually detect synthetic media that is specifically designed to be indistinguishable from real media is not a security strategy. It's wishful thinking.
+
+## The Fundamental Problem
+
+Every current defence shares the same underlying flaw: **they're trying to verify the signal**. They analyse the pixels, the audio waveform, the metadata — looking for evidence that the digital signal has been tampered with.
+
+But the signal itself can be faked. That's literally what a deepfake is. No matter how sophisticated your signal analysis becomes, the generation technology will keep pace. You're trying to determine whether a stream of pixels is "real" — but the concept of a "real" pixel in a digital video call is already an abstraction.
+
+This is why detection will never provide reliable security against deepfakes. The problem isn't in the signal. The problem is that you have no way to verify the **person behind the signal**.
+
+## Verify the Person, Not the Pixels
+
+The alternative is to stop trying to authenticate the video and start authenticating the human.
+
+Cryptographic, QR-based verification works on a fundamentally different principle. Instead of analysing whether the pixels look real, it requires the person on the call to **prove they are who they claim to be** through a verification process that cannot be replicated by a deepfake.
+
+Here's how it works: both parties in a call scan a QR code that refreshes every 30 seconds. The verification is cryptographically linked to a pre-verified identity — not to a face, not to a voice, but to a **person**. The deepfake can replicate the CFO's face and voice perfectly. It cannot replicate the CFO's cryptographic identity credential.
+
+This approach sidesteps the arms race entirely. It doesn't matter how good the deepfake is. It doesn't matter if the face-swap is pixel-perfect and the voice clone is indistinguishable. The question isn't "does this look like the CFO?" The question is "has this person cryptographically proven they are the CFO?" One question can be fooled by sufficiently advanced AI. The other cannot.
+
+## What This Means for Your Organisation
+
+If your business conducts high-value meetings over video — board calls, financial authorisations, client consultations, recruitment interviews — you are already exposed. The technology to impersonate your colleagues exists, it's affordable, and it's improving every month.
+
+The choice isn't between trusting video calls and abandoning them. It's between trusting the pixels and verifying the person. One of those approaches has already been defeated. The other is how identity verification works for the next decade.
+
+[Learn how Certifyd's two-way verification protects every interaction where identity matters.](/solutions/person/)
