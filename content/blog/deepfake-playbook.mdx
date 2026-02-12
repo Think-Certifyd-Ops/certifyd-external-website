@@ -8,7 +8,7 @@ category: "Security"
 
 In January 2024, a finance worker at a multinational firm in Hong Kong joined a video call with what appeared to be the company's CFO and several other senior colleagues. During the call, the CFO instructed the worker to transfer $25 million to a series of accounts. The worker complied. Every person on that call — except the worker — was a deepfake.
 
-This was not a proof-of-concept demonstration. It was an actual fraud, confirmed by Hong Kong police, and it represents the new reality of visual communication. The people you see on your screen may not be real.
+This was not a proof-of-concept demonstration. It was an actual fraud, confirmed by Hong Kong police, and it represents the new reality of visual communication. We covered this incident in detail in [The $25 Million Deepfake](/blog/arup-deepfake-attack/). The people you see on your screen may not be real.
 
 ## How Real-Time Deepfakes Work
 
@@ -16,13 +16,13 @@ A deepfake is a synthetically generated or manipulated piece of media — video,
 
 **Facial mapping and replacement.** A neural network analyses a source video (or even a collection of photographs) to build a detailed 3D model of a person's face. This model captures bone structure, skin texture, micro-expressions, and how the face moves when speaking. During a live video call, the deepfake system maps these learned features onto the impersonator's face in real time, frame by frame. The result: the impersonator moves their mouth, raises an eyebrow, or turns their head — and the system renders those movements onto the target's face with near-zero latency.
 
-**Voice synthesis and cloning.** Modern voice cloning systems need as little as three seconds of sample audio to generate a convincing replica of someone's voice. The cloned voice captures tone, cadence, accent, and speech patterns. Combined with text-to-speech or real-time voice conversion, the impersonator can speak naturally while the output sounds exactly like the target.
+**[Voice synthesis and cloning.](/blog/voice-cloning-threat/)** Modern voice cloning systems need as little as three seconds of sample audio to generate a convincing replica of someone's voice. The cloned voice captures tone, cadence, accent, and speech patterns. Combined with text-to-speech or real-time voice conversion, the impersonator can speak naturally while the output sounds exactly like the target.
 
 **Real-time rendering and streaming.** The final component is the pipeline that combines face-swap and voice clone outputs into a single video stream, delivered in real time over standard video call platforms. This stream replaces the impersonator's webcam feed. To the other participants, it looks and sounds like a normal video call — because, technically, it is. The pixels are arriving through the same channels as any other video feed.
 
 ## What It Costs
 
-The barrier to entry has collapsed. Services advertising "interview stand-ins" — where a deepfake impersonator takes a job interview on your behalf — are available for as little as **$50 per hour**. Open-source face-swap models are free to download. Voice cloning tools offer free tiers. A consumer-grade GPU can run the pipeline in real time.
+The barrier to entry has collapsed. Services advertising "interview stand-ins" — where a [deepfake impersonator takes a job interview](/blog/deepfake-candidates-recruitment/) on your behalf — are available for as little as **$50 per hour**. Open-source face-swap models are free to download. Voice cloning tools offer free tiers. A consumer-grade GPU can run the pipeline in real time.
 
 This isn't nation-state technology anymore. It's commodity fraud tooling. Anyone with a laptop and moderate technical competence can impersonate anyone else on a video call today.
 
@@ -38,7 +38,7 @@ The detection approach treats deepfakes as a classification problem: train a mod
 
 ### Watermarking and Content Provenance
 
-Initiatives like the C2PA standard aim to embed cryptographic provenance data into media at the point of creation, allowing recipients to verify that content hasn't been manipulated. The problem is adoption. Watermarking only works if every camera, every platform, and every pipeline supports it. It's voluntary, not universal. And it doesn't help with live video calls, where the "content" is generated in real time and consumed in real time — there's no file to watermark.
+Initiatives like the [C2PA standard](https://c2pa.org/) aim to embed cryptographic provenance data into media at the point of creation, allowing recipients to verify that content hasn't been manipulated. The problem is adoption. Watermarking only works if every camera, every platform, and every pipeline supports it. It's voluntary, not universal. And it doesn't help with live video calls, where the "content" is generated in real time and consumed in real time — there's no file to watermark.
 
 ### "Be Vigilant"
 
