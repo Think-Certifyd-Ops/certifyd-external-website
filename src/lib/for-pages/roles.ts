@@ -16,7 +16,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "They Have Your Keys. Do You Know Who They Are?",
     subtitle:
       "Cleaners enter your home weekly \u2014 often unsupervised, with full access to your property. Certifyd lets homeowners and cleaning companies verify every cleaner at the door in 30 seconds.",
-    heroCard: { name: "Sarah Jones", company: "Sparkle Cleaning Co." },
+    heroCard: { name: "Sarah Jones", secondaryLabel: "Company", secondaryValue: "Sparkle Cleaning Co.", context: "Arrived: 09:15 AM" },
     searchIntentParagraph:
       "Identity verification for cleaners goes beyond checking a business card or a name on an app. Certifyd uses bi-directional authentication \u2014 both the homeowner and the cleaner cryptographically prove their identity to each other in real time. When a cleaner arrives, the system verifies not just who they are, but that they hold an active membership with the cleaning company that sent them and are authorised to be there. The result is a tamper-proof, auditable record of every visit: who arrived, when, where, and under whose authority.",
     stats: [
@@ -134,7 +134,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "Day One. New Face. No Idea Who They Are.",
     subtitle:
       "Temporary workers arrive at your site, warehouse, or office as complete strangers. Certifyd verifies every temp\u2019s identity, right to work, and agency affiliation before they start.",
-    heroCard: { name: "James Wilson", company: "FlexStaff Ltd" },
+    heroCard: { name: "James Wilson", secondaryLabel: "Company", secondaryValue: "FlexStaff Ltd", context: "Arrived: 06:00 AM" },
     searchIntentParagraph:
       "Identity verification for temp workers means more than checking a name against a booking sheet. Certifyd uses bi-directional authentication \u2014 the hiring site and the temp worker cryptographically prove their identity to each other in real time. When a temp arrives, the system verifies not just who they are, but that they hold an active assignment with the staffing agency that sent them and are authorised to work at that location. The result is a tamper-proof, auditable record of every assignment: who arrived, when, where, and under whose contractual authority.",
     stats: [
@@ -232,7 +232,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "They\u2019re in Every Room. Do You Know Who Sent Them?",
     subtitle:
       "Electricians access every room in your home, often unsupervised. Certifyd verifies their identity, company membership, and authority to be there \u2014 at the door, in 30 seconds.",
-    heroCard: { name: "David Chen", company: "Chen Electrical" },
+    heroCard: { name: "David Chen", secondaryLabel: "Company", secondaryValue: "Chen Electrical", context: "Arrived: 10:30 AM" },
     searchIntentParagraph:
       "Identity verification for electricians goes beyond checking a business card or a Part P certificate. Certifyd uses bi-directional authentication \u2014 both the homeowner and the electrician cryptographically prove their identity to each other in real time. When an electrician arrives, the system verifies not just who they are, but that they hold an active membership with the electrical company that dispatched them and are authorised for that job. The result is a tamper-proof, auditable record of every visit: who arrived, when, where, and under whose professional authority.",
     stats: [
@@ -330,7 +330,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "It\u2019s an Emergency. You\u2019ve Never Seen This Person Before.",
     subtitle:
       "Plumbers often arrive during emergencies when you\u2019re vulnerable and rushed. Certifyd verifies their identity, company membership, and dispatch authority \u2014 in 30 seconds, even under pressure.",
-    heroCard: { name: "Mark Thompson", company: "Thompson Plumbing" },
+    heroCard: { name: "Mark Thompson", secondaryLabel: "Company", secondaryValue: "Thompson Plumbing", context: "Arrived: 08:45 AM" },
     searchIntentParagraph:
       "Identity verification for plumbers is critical because plumbing emergencies create urgency that criminals exploit. Certifyd uses bi-directional authentication \u2014 both the homeowner and the plumber cryptographically prove their identity to each other in real time. When a plumber arrives, the system verifies not just who they are, but that they hold an active membership with the plumbing company that dispatched them. The result is a tamper-proof, auditable record of every callout: who arrived, when, where, and under whose authority.",
     stats: [
@@ -428,7 +428,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "Six Strangers in Your Home for Six Weeks. Who Are They?",
     subtitle:
       "Building projects bring multiple tradespeople into your home over weeks or months. Certifyd verifies every person on site \u2014 their identity, their company, and their authority to be there.",
-    heroCard: { name: "Tom Richards", company: "Richards & Sons Building" },
+    heroCard: { name: "Tom Richards", secondaryLabel: "Company", secondaryValue: "Richards & Sons Building", context: "Arrived: 07:30 AM" },
     searchIntentParagraph:
       "Identity verification for builders addresses a unique challenge: building projects involve multiple people rotating through your property over extended periods. Certifyd uses bi-directional authentication \u2014 both the homeowner and each tradesperson cryptographically prove their identity to each other in real time. The system verifies not just who they are, but that each person holds an active membership with the building company and is authorised for that specific project. Every visit creates a tamper-proof, auditable record.",
     stats: [
@@ -526,7 +526,8 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "Your Parent Can\u2019t Check. But You Can.",
     subtitle:
       "Care workers attend to vulnerable people who may not be able to verify identity themselves. Certifyd lets families, managers, and care providers verify every carer in real time.",
-    heroCard: { name: "Maria Santos", company: "Sunrise Care Group" },
+    heroGraphic: "shift-monitor",
+    heroCard: { name: "Maria Santos", secondaryLabel: "Provider", secondaryValue: "Sunrise Care Group" },
     searchIntentParagraph:
       "Identity verification for care workers is a safeguarding imperative, not just an administrative task. Certifyd uses bi-directional authentication \u2014 both the care recipient (or their family) and the care worker cryptographically prove their identity to each other in real time. When a care worker arrives, the system verifies not just who they are, but that they hold an active membership with the care provider, their DBS status is current, and they are authorised for that specific service user. The result is a tamper-proof, auditable record of every visit.",
     stats: [
@@ -624,7 +625,8 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "They\u2019re Wearing Scrubs. That\u2019s All You Know.",
     subtitle:
       "Agency nurses arrive at care settings to cover shifts, often meeting staff and patients for the first time. Certifyd verifies their identity, agency membership, and authorisation \u2014 in 30 seconds.",
-    heroCard: { name: "Rachel Okonkwo", company: "NHS Locum Bank" },
+    heroGraphic: "shift-monitor",
+    heroCard: { name: "Rachel Okonkwo", secondaryLabel: "Agency", secondaryValue: "NHS Locum Bank" },
     searchIntentParagraph:
       "Identity verification for agency nurses addresses a critical safeguarding gap in healthcare staffing. Certifyd uses bi-directional authentication \u2014 both the receiving facility and the agency nurse cryptographically prove their identity to each other in real time. When a nurse arrives for a shift, the system verifies not just who they are, but that they hold an active membership with the nursing agency that dispatched them and are authorised for that assignment. The result is a tamper-proof, auditable record of every shift: who arrived, when, where, and under whose authority.",
     stats: [
@@ -722,7 +724,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "They Know Your Address. They Know When You\u2019re Home.",
     subtitle:
       "Delivery drivers visit your home regularly, know your routine, and often arrive when you\u2019re alone. Certifyd verifies their identity and the company they represent \u2014 before you open the door.",
-    heroCard: { name: "Ryan Foster", company: "Swift Logistics" },
+    heroCard: { name: "Ryan Foster", secondaryLabel: "Company", secondaryValue: "Swift Logistics", context: "Arrived: 11:20 AM" },
     searchIntentParagraph:
       "Identity verification for delivery drivers matters because deliveries are one of the most common ways strangers come to your door. Certifyd uses bi-directional authentication \u2014 both the homeowner and the delivery driver cryptographically prove their identity to each other in real time. When a driver arrives, the system verifies not just who they are, but that they hold an active role with the delivery company and are authorised for that route. The result is a tamper-proof, auditable record of every delivery: who arrived, when, where, and under whose authority.",
     stats: [
@@ -810,7 +812,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "They Guard Your Building. Who Guards Their Identity?",
     subtitle:
       "Security guards have access to your premises, CCTV, alarms, and keys. Certifyd verifies their identity, SIA licence status, and employer affiliation \u2014 in real time.",
-    heroCard: { name: "James Ndlovu", company: "Sentinel Security" },
+    heroCard: { name: "James Ndlovu", secondaryLabel: "Company", secondaryValue: "Sentinel Security", context: "Shift started: 22:00" },
     searchIntentParagraph:
       "Identity verification for security guards closes an ironic gap: the people responsible for site security are often the least verified individuals on the premises. Certifyd uses bi-directional authentication \u2014 both the site manager and the security guard cryptographically prove their identity to each other in real time. The system verifies not just who the guard is, but that they hold an active SIA licence, are a current member of the security company, and are authorised for that specific site. Every shift creates a tamper-proof audit record.",
     stats: [
@@ -898,7 +900,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "200 Workers. 40 Are New This Week. Who Checked?",
     subtitle:
       "Warehouses run on high-volume, high-turnover labour. Certifyd verifies every worker\u2019s identity, agency affiliation, and right to work \u2014 before they start their shift.",
-    heroCard: { name: "Tomasz Kowalski", company: "MegaWare Distribution" },
+    heroCard: { name: "Tomasz Kowalski", secondaryLabel: "Company", secondaryValue: "MegaWare Distribution", context: "Arrived: 05:45 AM" },
     searchIntentParagraph:
       "Identity verification for warehouse workers addresses the challenge of high-volume, high-turnover environments where dozens of new faces appear every week. Certifyd uses bi-directional authentication \u2014 both the site manager and the worker cryptographically prove their identity to each other in real time. When a worker arrives, the system verifies not just who they are, but that they hold an active assignment with the staffing agency that sent them, their right-to-work status, and their authorisation for that specific site. The result is audit-ready, tamper-proof records for every shift.",
     stats: [
@@ -996,7 +998,7 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "Three New Faces Every Friday Night. Nobody Checked.",
     subtitle:
       "Hotels, restaurants, and event venues rely on agency and casual staff who arrive as strangers. Certifyd verifies every new hire\u2019s identity and right to work before they start.",
-    heroCard: { name: "Priya Sharma", company: "The Grand Hotel" },
+    heroCard: { name: "Priya Sharma", secondaryLabel: "Company", secondaryValue: "The Grand Hotel", context: "Shift started: 14:00" },
     searchIntentParagraph:
       "Identity verification for hospitality staff addresses an industry where high turnover and last-minute staffing create persistent identity gaps. Certifyd uses bi-directional authentication \u2014 both the venue manager and the worker cryptographically prove their identity to each other in real time. When a hospitality worker arrives for a shift, the system verifies not just who they are, but that they hold an active assignment with their agency or employer and are authorised to work. The result is a tamper-proof, auditable record of every shift.",
     stats: [
@@ -1094,7 +1096,8 @@ export const ROLE_PAGES: ForPage[] = [
     headline: "You\u2019ve Never Met Them. You\u2019re Giving Them Access to Everything.",
     subtitle:
       "Remote workers join your team from anywhere in the world, often without ever meeting anyone in person. Certifyd verifies they are who they claim to be \u2014 cryptographically, not just visually.",
-    heroCard: { name: "Alex Morgan", company: "TechFlow Ltd" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Alex Morgan", secondaryLabel: "Company", secondaryValue: "TechFlow Ltd" },
     searchIntentParagraph:
       "Identity verification for remote workers has become critical as deepfakes and AI-generated personas make visual verification unreliable. Certifyd uses bi-directional, device-bound authentication \u2014 both parties cryptographically prove their identity to each other in real time. Unlike video calls (where faces can be synthesised) or document checks (where PDFs can be forged), Certifyd verification is bound to a physical device through WebAuthn passkeys. You cannot deepfake a passkey. The result is cryptographic proof that the person on the other end of the connection is who they claim to be.",
     stats: [

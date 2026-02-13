@@ -19,8 +19,16 @@ export interface ForPage {
   headline: string;
   subtitle: string;
 
-  // Verification card (shown in hero)
-  heroCard: { name: string; company: string };
+  // Hero graphic variant
+  heroGraphic?: "verification-card" | "qr-scan" | "compliance-dash" | "shift-monitor";
+
+  // Verification card (shown in hero when heroGraphic is "verification-card" or undefined)
+  heroCard: {
+    name: string;
+    secondaryLabel: string;
+    secondaryValue: string;
+    context?: string;
+  };
 
   // Search intent paragraph
   searchIntentParagraph: string;

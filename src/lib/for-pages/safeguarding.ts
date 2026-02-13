@@ -16,7 +16,7 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
     headline: "Your Mum Opens the Door to Everyone. She Shouldn\u2019t Have To.",
     subtitle:
       "Elderly people are the primary targets of doorstep fraud and rogue traders. Certifyd gives families a way to verify who\u2019s at your parents\u2019 door \u2014 even when you\u2019re not there.",
-    heroCard: { name: "Margaret Wilson", company: "Verified Visitor" },
+    heroCard: { name: "Margaret Wilson", secondaryLabel: "Visiting from", secondaryValue: "Sunrise Care Group", context: "Verified at door: 10:30 AM" },
     searchIntentParagraph:
       "Protecting elderly parents from doorstep fraud requires verification that works when the vulnerable person cannot check for themselves. Certifyd uses bi-directional, device-bound authentication that can be managed by family members remotely. When someone arrives at an elderly person\u2019s home \u2014 a tradesperson, a care worker, a charity collector \u2014 the visitor verifies their identity through their registered device. The elderly person or their family member can confirm the visitor\u2019s identity and organisational affiliation in real time, creating a tamper-proof record of every visit.",
     stats: [
@@ -114,7 +114,8 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
     headline: "They\u2019re Meeting a Stranger. Alone. In a Private Location.",
     subtitle:
       "Lone workers \u2014 estate agents, social workers, mobile engineers \u2014 meet unfamiliar people in private locations. Certifyd verifies the identity of the person they\u2019re meeting before they arrive.",
-    heroCard: { name: "Sophie Turner", company: "Field Engineer" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Sophie Turner", secondaryLabel: "Role", secondaryValue: "Field Engineer" },
     searchIntentParagraph:
       "Identity verification for lone workers protects employees who meet unfamiliar people in private or isolated locations. Certifyd uses bi-directional authentication \u2014 both the lone worker and the person they\u2019re meeting cryptographically prove their identity to each other before or at the point of contact. This creates a verifiable record of who the lone worker met, when, and where \u2014 critical for both personal safety and organisational duty of care. If the other person can\u2019t verify, the lone worker has a clear signal to disengage.",
     stats: [
@@ -202,7 +203,7 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
     headline: "A Stranger Says They\u2019re Picking Up Your Child. Are They?",
     subtitle:
       "School pickup authorisation relies on lists, passwords, and visual recognition. Certifyd verifies the collector\u2019s identity cryptographically \u2014 confirming they are who the parent authorised.",
-    heroCard: { name: "Hannah Green", company: "Verified Guardian" },
+    heroCard: { name: "Hannah Green", secondaryLabel: "Authorised by", secondaryValue: "Claire Green (Parent)", context: "Pickup verified: 3:15 PM" },
     searchIntentParagraph:
       "Identity verification for school pickups addresses a critical safeguarding gap: when someone other than the usual parent collects a child, the school must verify their identity and authorisation. Current systems \u2014 password words, phone calls to parents, checking ID cards \u2014 are imperfect and stressful. Certifyd uses device-bound authentication: the parent authorises a specific person, and that person verifies their identity through their registered device at pickup time. The school sees cryptographic confirmation that the collector is who the parent said they would be.",
     stats: [
@@ -289,7 +290,8 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
     headline: "Safeguarding Means Knowing Who. Not Just Trusting Who.",
     subtitle:
       "Safeguarding vulnerable people requires verifiable identity, not assumed identity. Certifyd provides cryptographic proof of who is with whom, when, and under whose authority.",
-    heroCard: { name: "Dr. Sarah Khan", company: "Safeguarding Lead" },
+    heroGraphic: "shift-monitor",
+    heroCard: { name: "Dr. Sarah Khan", secondaryLabel: "Role", secondaryValue: "Safeguarding Lead" },
     searchIntentParagraph:
       "Safeguarding identity verification with Certifyd creates a verifiable chain of authority around vulnerable people. Every person who interacts with a vulnerable individual \u2014 care workers, visitors, volunteers, transport providers, professionals \u2014 verifies through device-bound authentication. The system confirms not just who they are, but their active membership with their organisation and their specific authorisation to be with that individual. When a safeguarding concern arises, there is a tamper-proof record of exactly who was present, when, and under whose authority.",
     stats: [

@@ -16,7 +16,8 @@ export const SCENARIO_PAGES: ForPage[] = [
     headline: "You\u2019ve Swiped Right. But Who Are They Really?",
     subtitle:
       "Online dating profiles can be fabricated with stolen photos, AI-generated faces, and invented biographies. Certifyd lets you verify the other person\u2019s identity before you meet \u2014 cryptographically, not just visually.",
-    heroCard: { name: "Jessica Taylor", company: "Verified User" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Jessica Taylor", secondaryLabel: "Status", secondaryValue: "Identity Verified" },
     searchIntentParagraph:
       "Identity verification for online dating with Certifyd provides cryptographic proof that the person behind the profile is real. Dating apps rely on photo verification, phone number linking, and social media connections \u2014 all of which can be faked with AI-generated images, burner phones, and fake accounts. Certifyd\u2019s device-bound authentication ties a person\u2019s identity to their physical device through a WebAuthn passkey. Before meeting someone in person, you can request mutual Certifyd verification. If they can\u2019t verify, the profile isn\u2019t what it seems.",
     stats: [
@@ -103,7 +104,8 @@ export const SCENARIO_PAGES: ForPage[] = [
     headline: "An Empty Property. A Stranger. No One Else Around.",
     subtitle:
       "Estate agents conduct viewings alone in empty properties with people they\u2019ve never met. Certifyd verifies the identity of both the agent and the viewer before every appointment.",
-    heroCard: { name: "Michael Shaw", company: "Shaw Properties" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Michael Shaw", secondaryLabel: "Agency", secondaryValue: "Shaw Properties" },
     searchIntentParagraph:
       "Identity verification for estate agent viewings protects both the agent and the viewer. Certifyd uses bi-directional authentication \u2014 both parties cryptographically prove their identity to each other before or at the point of meeting. The estate agent confirms the viewer is who they booked as, and the viewer confirms the agent is genuinely from the estate agency. This creates a verified meeting record: who met whom, when, and where \u2014 critical for personal safety and professional accountability.",
     stats: [
@@ -196,7 +198,7 @@ export const SCENARIO_PAGES: ForPage[] = [
     headline: "You\u2019re Giving a Stranger the Keys to Your Home. Who Are They?",
     subtitle:
       "Short-term rental hosts give strangers access to their homes. Guests enter properties owned by strangers. Certifyd verifies both parties\u2019 identity before the keys change hands.",
-    heroCard: { name: "Chris Walker", company: "Property Host" },
+    heroCard: { name: "Chris Walker", secondaryLabel: "Property", secondaryValue: "14 Marine Terrace, Brighton", context: "Check-in verified: 3:00 PM" },
     searchIntentParagraph:
       "Identity verification for short-term rentals with Certifyd provides cryptographic proof that both the host and the guest are who they claim to be. Platform verification checks that an account exists \u2014 it doesn\u2019t verify who actually shows up at the property. Certifyd uses bi-directional, device-bound authentication: both parties verify through their registered devices at the point of check-in. The host knows the guest\u2019s verified identity before handing over keys. The guest knows the host is the legitimate property owner. Every stay creates a tamper-proof record.",
     stats: [
@@ -283,7 +285,7 @@ export const SCENARIO_PAGES: ForPage[] = [
     headline: "They\u2019re Alone with Your Children. Do You Really Know Who They Are?",
     subtitle:
       "Nannies and au pairs have unsupervised access to your children, your home, and your family\u2019s routine. Certifyd verifies their identity and agency affiliation \u2014 not just on day one, but every day.",
-    heroCard: { name: "Anna Kovacs", company: "Verified Nanny" },
+    heroCard: { name: "Anna Kovacs", secondaryLabel: "Agency", secondaryValue: "Little Ones Nanny Agency", context: "Arrival verified: 8:00 AM" },
     searchIntentParagraph:
       "Identity verification for nannies and au pairs addresses one of the highest-trust relationships in domestic life. Certifyd uses bi-directional authentication \u2014 both the family and the nanny or au pair cryptographically prove their identity to each other. When the nanny arrives, the system verifies not just who they are, but that they hold an active membership with the agency that placed them (if applicable) and are the specific person the family authorised. The result is a tamper-proof, auditable record of every arrival \u2014 proof of who was with your children.",
     stats: [

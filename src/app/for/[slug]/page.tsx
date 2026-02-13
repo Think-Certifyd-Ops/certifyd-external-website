@@ -17,6 +17,9 @@ import {
   HowToSchema,
 } from "@/components/seo/JsonLd";
 import { VerificationCard } from "@/components/graphics/VerificationCard";
+import { QRScanGraphic } from "@/components/graphics/QRScanGraphic";
+import { ComplianceDash } from "@/components/graphics/ComplianceDash";
+import { ShiftMonitor } from "@/components/graphics/ShiftMonitor";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -75,10 +78,17 @@ export default async function ForPage({ params }: PageProps) {
         title={page.headline}
         subtitle={page.subtitle}
       >
-        <VerificationCard
-          name={page.heroCard.name}
-          company={page.heroCard.company}
-        />
+        {(!page.heroGraphic || page.heroGraphic === "verification-card") && (
+          <VerificationCard
+            name={page.heroCard.name}
+            secondaryLabel={page.heroCard.secondaryLabel}
+            secondaryValue={page.heroCard.secondaryValue}
+            context={page.heroCard.context}
+          />
+        )}
+        {page.heroGraphic === "qr-scan" && <QRScanGraphic />}
+        {page.heroGraphic === "compliance-dash" && <ComplianceDash />}
+        {page.heroGraphic === "shift-monitor" && <ShiftMonitor />}
       </SolutionHero>
 
       {/* Stats — dark MetricsBar-style */}

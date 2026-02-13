@@ -16,7 +16,8 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     headline: "A Photocopied Passport Is Not Proof. It Never Was.",
     subtitle:
       "Right-to-work checks require verifying a person\u2019s identity and immigration status. Certifyd adds cryptographic proof that the person presenting is the document holder \u2014 and creates audit-ready records.",
-    heroCard: { name: "Laura Mitchell", company: "HR Director" },
+    heroGraphic: "compliance-dash",
+    heroCard: { name: "Laura Mitchell", secondaryLabel: "Role", secondaryValue: "HR Director" },
     searchIntentParagraph:
       "Right-to-work identity verification with Certifyd goes beyond document checks. The current system \u2014 examining a passport or share code and keeping a copy on file \u2014 proves a document exists, not that the person presenting it is the document holder. Certifyd adds a cryptographic identity layer: the worker\u2019s identity is device-bound through a passkey, verified in real time, and linked to their right-to-work documentation. The result is tamper-proof verification records that prove not just that a check was done, but that the verified person is who they claim to be.",
     stats: [
@@ -114,7 +115,8 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     headline: "They Can Walk In. Can You Pass the Audit?",
     subtitle:
       "The Fair Work Agency launches April 2026 with the power to inspect any UK business. Certifyd gives you tamper-proof verification records that demonstrate compliance on demand.",
-    heroCard: { name: "Sarah Bennett", company: "Compliance Manager" },
+    heroGraphic: "compliance-dash",
+    heroCard: { name: "Sarah Bennett", secondaryLabel: "Role", secondaryValue: "Compliance Manager" },
     searchIntentParagraph:
       "Fair Work Agency compliance requires businesses to demonstrate verifiable identity and right-to-work checks for every worker. Certifyd creates the evidence trail the FWA will demand: tamper-proof verification records linking each worker\u2019s cryptographically verified identity to their right-to-work status, employment relationship, and every assignment or shift. Unlike photocopied documents in filing cabinets, Certifyd records cannot be backdated, fabricated, or altered. They provide the kind of audit-ready evidence that withstands regulatory scrutiny.",
     stats: [
@@ -207,7 +209,8 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     headline: "Third-Party Contractors. Your Site. Your Liability.",
     subtitle:
       "Contractors from third-party companies access your premises, systems, and data. Certifyd verifies their identity, company affiliation, and authorisation \u2014 in real time, at the point of access.",
-    heroCard: { name: "Andrew Peters", company: "Operations Director" },
+    heroGraphic: "compliance-dash",
+    heroCard: { name: "Andrew Peters", secondaryLabel: "Role", secondaryValue: "Operations Director" },
     searchIntentParagraph:
       "Contractor identity verification with Certifyd ensures that every third-party worker accessing your site is who they claim to be. Certifyd uses bi-directional authentication \u2014 both the site manager and the contractor cryptographically prove their identity to each other in real time. The system verifies not just the contractor\u2019s name, but their active employment or contract with the sending company, their authorisation for your specific site, and their current status. Every site access event creates a tamper-proof audit record.",
     stats: [
@@ -300,7 +303,8 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     headline: "The Agency Checked Them. But Did They Check the Right Person?",
     subtitle:
       "Hiring businesses share legal liability for agency worker compliance. Certifyd verifies that the person who arrives is the person the agency checked \u2014 in real time, at every assignment.",
-    heroCard: { name: "Michelle Taylor", company: "Compliance Lead" },
+    heroGraphic: "compliance-dash",
+    heroCard: { name: "Michelle Taylor", secondaryLabel: "Role", secondaryValue: "Compliance Lead" },
     searchIntentParagraph:
       "Agency worker compliance with Certifyd closes the gap between agency onboarding and client-site arrival. Agencies verify workers at registration, but there is no standard mechanism to confirm that the person who arrives at the client\u2019s premises is the same person who was verified. Certifyd\u2019s bi-directional, device-bound authentication provides that confirmation: the worker\u2019s identity is cryptographically verified through their registered device at each assignment, their active agency membership is confirmed in real time, and a tamper-proof record is created for both the agency and the hiring employer.",
     stats: [

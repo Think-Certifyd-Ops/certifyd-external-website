@@ -16,7 +16,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "You Place Them. You\u2019re Liable. Did You Actually Verify Them?",
     subtitle:
       "Recruitment agencies carry legal liability for the candidates they place. Certifyd verifies every candidate\u2019s identity, right to work, and credentials \u2014 cryptographically, not just on paper.",
-    heroCard: { name: "Emma Clarke", company: "Apex Recruitment" },
+    heroCard: { name: "Emma Clarke", secondaryLabel: "Company", secondaryValue: "Apex Recruitment", context: "Candidate verified: 10:00 AM" },
     searchIntentParagraph:
       "Identity verification for recruitment agencies must go beyond document checks. Certifyd uses bi-directional authentication \u2014 both the agency and the candidate cryptographically prove their identity to each other in real time. The system verifies not just the candidate\u2019s name, but that their identity is device-bound and cannot be transferred, cloned, or faked by a deepfake. When placing a candidate, the agency confirms their verified identity and right-to-work status, creating a tamper-proof record that satisfies both client requirements and regulatory obligations.",
     stats: [
@@ -114,7 +114,8 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "Agency Staff Arrive Tonight. Do You Know Who They Are?",
     subtitle:
       "Care homes depend on agency workers for nights, weekends, and cover shifts. Certifyd verifies every worker\u2019s identity, employer, and role before they start caring for your residents.",
-    heroCard: { name: "Patricia Williams", company: "Oakwood Care Home" },
+    heroGraphic: "shift-monitor",
+    heroCard: { name: "Patricia Williams", secondaryLabel: "Care Home", secondaryValue: "Oakwood Care Home" },
     searchIntentParagraph:
       "Identity verification for care homes is a safeguarding obligation, not an optional extra. Certifyd uses bi-directional authentication \u2014 both the care home manager and the arriving worker cryptographically prove their identity to each other in real time. When agency staff arrive, the system verifies not just who they are, but that they hold an active membership with the agency that dispatched them and are authorised for that specific care home. The result is a tamper-proof, auditable record for every shift \u2014 evidence that satisfies CQC requirements.",
     stats: [
@@ -207,7 +208,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "Your Cleaners Enter 50 Homes a Week. Can You Prove Who They Are?",
     subtitle:
       "Cleaning companies send staff into clients\u2019 homes with keys and alarm codes. Certifyd gives you a verified, auditable record of every cleaner at every property.",
-    heroCard: { name: "Helen Marsh", company: "Sparkle Services Ltd" },
+    heroCard: { name: "Helen Marsh", secondaryLabel: "Company", secondaryValue: "Sparkle Services Ltd", context: "Arrived: 08:00 AM" },
     searchIntentParagraph:
       "Identity verification for cleaning companies transforms trust from a promise into proof. Certifyd\u2019s Organisation management lets cleaning companies register each cleaner as a member with a defined role, with their identity cryptographically bound to their device. When a cleaner arrives at a client\u2019s home, bi-directional authentication verifies both parties in real time. The system confirms not just the cleaner\u2019s identity, but their active membership with your company and their authority to service that client. Every visit creates a tamper-proof audit record.",
     stats: [
@@ -300,7 +301,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "You Place Thousands a Month. How Many Did You Actually Verify?",
     subtitle:
       "Staffing agencies face right-to-work liability for every worker they place. Certifyd verifies each worker\u2019s identity at the point of assignment \u2014 not just at onboarding.",
-    heroCard: { name: "Robert Hughes", company: "PeopleForce Staffing" },
+    heroCard: { name: "Robert Hughes", secondaryLabel: "Company", secondaryValue: "PeopleForce Staffing", context: "Worker verified: 06:30 AM" },
     searchIntentParagraph:
       "Identity verification for staffing agencies must work at scale and at speed. Certifyd\u2019s Organisation management lets staffing agencies register each worker as a member with a defined role, their identity cryptographically bound to their device. At each assignment, the worker\u2019s identity, active agency membership, and right-to-work status are verified in real time \u2014 not assumed from a check that was done weeks or months earlier. Every placement creates a tamper-proof audit record that satisfies both client requirements and Fair Work Agency compliance.",
     stats: [
@@ -393,7 +394,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "High Turnover. New Staff Weekly. Who\u2019s Checking?",
     subtitle:
       "Hotels, restaurants, and event venues cycle through staff rapidly. Certifyd verifies every worker\u2019s identity, right to work, and employer \u2014 before they start serving your customers.",
-    heroCard: { name: "Marco Rossi", company: "The Crown Group" },
+    heroCard: { name: "Marco Rossi", secondaryLabel: "Company", secondaryValue: "The Crown Group", context: "Shift started: 17:00" },
     searchIntentParagraph:
       "Identity verification for hospitality businesses addresses an industry where speed of hiring often outpaces rigour of checking. Certifyd\u2019s Organisation management lets hospitality businesses register each employee as a member with their identity cryptographically bound to their device. For agency and casual staff, bi-directional authentication verifies identity and right-to-work status in real time at the start of every shift. Every verification creates a tamper-proof audit record \u2014 essential for an industry consistently targeted by Home Office enforcement.",
     stats: [
@@ -486,7 +487,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "You Verify the Business. Who Verifies the Person?",
     subtitle:
       "Trade platforms like Checkatrade and MyBuilder verify that a business exists. Certifyd verifies that the person who arrives at the door is who they claim to be.",
-    heroCard: { name: "Daniel Wright", company: "TradeCheck UK" },
+    heroCard: { name: "Daniel Wright", secondaryLabel: "Company", secondaryValue: "TradeCheck UK", context: "Arrived: 09:15 AM" },
     searchIntentParagraph:
       "Identity verification for trade platforms closes the gap between verifying a business and verifying the individual who shows up. Certifyd\u2019s bi-directional authentication lets platform members cryptographically prove their identity to homeowners in real time. When a tradesperson arrives, the system verifies not just who they are, but that they hold an active membership with the trade company listed on the platform and are authorised for that job. This extends the platform\u2019s trust layer from the business level to the individual level \u2014 the piece that\u2019s currently missing.",
     stats: [
@@ -579,7 +580,8 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "They Enter Alone. The Service User Can\u2019t Check.",
     subtitle:
       "Domiciliary care workers visit vulnerable people in their own homes, often alone and unsupervised. Certifyd verifies every carer\u2019s identity before they cross the threshold.",
-    heroCard: { name: "Comfort Adeyemi", company: "HomeFirst Care" },
+    heroGraphic: "shift-monitor",
+    heroCard: { name: "Comfort Adeyemi", secondaryLabel: "Provider", secondaryValue: "HomeFirst Care" },
     searchIntentParagraph:
       "Identity verification for domiciliary care providers is a safeguarding imperative. Certifyd uses bi-directional authentication \u2014 both the service user (or their family) and the care worker cryptographically prove their identity to each other in real time. When a carer arrives at someone\u2019s home, the system verifies not just who they are, but that they hold an active membership with the care provider, are authorised for that specific service user, and are currently employed. The result is a tamper-proof visit record that satisfies CQC requirements and gives families verifiable peace of mind.",
     stats: [
@@ -672,7 +674,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     headline: "Dozens of People. Dozens of Sites. One Question: Who Are They?",
     subtitle:
       "Facilities management companies deploy cleaners, engineers, security guards, and maintenance crews across client sites. Certifyd verifies every person on every site, every day.",
-    heroCard: { name: "Simon Clarke", company: "Sterling FM" },
+    heroCard: { name: "Simon Clarke", secondaryLabel: "Company", secondaryValue: "Sterling FM", context: "Site access: 07:00 AM" },
     searchIntentParagraph:
       "Identity verification for facilities management companies addresses the challenge of deploying large, diverse workforces across multiple client sites. Certifyd\u2019s Organisation management lets FM companies register each worker as a member with a defined role, their identity cryptographically bound to their device. At each site, workers verify through bi-directional authentication \u2014 confirming their identity, FM company membership, and site-specific authorisation in real time. Every site visit creates a tamper-proof audit record that satisfies both client contracts and regulatory requirements.",
     stats: [

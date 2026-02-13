@@ -1,15 +1,17 @@
 interface VerificationCardProps {
   name: string;
-  company: string;
+  secondaryLabel: string;
+  secondaryValue: string;
+  context?: string;
   certifiedSince?: string;
-  arrivedTime?: string;
 }
 
 export function VerificationCard({
   name,
-  company,
+  secondaryLabel,
+  secondaryValue,
+  context = "Arrived: 09:15 AM",
   certifiedSince = "January 2026",
-  arrivedTime = "09:15 AM",
 }: VerificationCardProps) {
   return (
     <div className="relative group">
@@ -83,10 +85,10 @@ export function VerificationCard({
             </div>
             <div className="border-t border-navy-border/50 pt-3">
               <div className="text-[10px] text-certifyd-blue uppercase tracking-wider font-semibold mb-0.5">
-                Company
+                {secondaryLabel}
               </div>
               <div className="text-base text-text-on-dark font-medium">
-                {company}
+                {secondaryValue}
               </div>
             </div>
             <div className="border-t border-navy-border/50 pt-3">
@@ -100,11 +102,8 @@ export function VerificationCard({
 
         {/* Footer */}
         <div className="px-5 py-3 border-t border-navy-border bg-navy-lighter/50 flex items-center justify-between">
-          <span className="text-[10px] text-text-on-dark-muted">
-            Arrived:{" "}
-            <span className="font-medium text-text-on-dark">
-              {arrivedTime}
-            </span>
+          <span className="text-[10px] text-text-on-dark-muted font-medium">
+            {context}
           </span>
           <span className="text-[10px] text-accent-success font-medium">
             Record Created

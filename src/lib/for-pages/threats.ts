@@ -16,7 +16,8 @@ export const THREAT_PAGES: ForPage[] = [
     headline: "You Can\u2019t Trust Your Eyes Anymore. Trust Cryptography Instead.",
     subtitle:
       "Deepfake technology can synthesise faces and voices in real time. Certifyd defeats deepfakes by verifying identity through device-bound cryptographic authentication \u2014 not through what you can see or hear.",
-    heroCard: { name: "Sarah Mitchell", company: "Verified via Certifyd" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Sarah Mitchell", secondaryLabel: "Status", secondaryValue: "Verified via Certifyd" },
     searchIntentParagraph:
       "Deepfake protection with Certifyd works at the protocol level, not the perception level. Deepfake detection tools try to spot synthetic media \u2014 an arms race the detectors are losing. Certifyd takes a fundamentally different approach: instead of asking \u2018does this face look real?\u2019, it asks \u2018can this person complete a cryptographic challenge on their registered device?\u2019 A deepfake can synthesise any face and any voice, but it cannot possess the physical device that holds someone\u2019s passkey. Bi-directional, device-bound authentication makes deepfakes irrelevant to identity verification.",
     stats: [
@@ -109,7 +110,8 @@ export const THREAT_PAGES: ForPage[] = [
     headline: "The CEO Just Called. Or Did They?",
     subtitle:
       "CEO fraud uses impersonation to authorise payments, access credentials, or sensitive actions. Certifyd lets teams verify that instructions genuinely come from the person claiming to send them.",
-    heroCard: { name: "Catherine Moore", company: "CFO, Sterling Group" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Catherine Moore", secondaryLabel: "Role", secondaryValue: "CFO, Sterling Group" },
     searchIntentParagraph:
       "CEO fraud protection with Certifyd replaces trust in voices, emails, and video calls with cryptographic verification. Traditional CEO fraud relies on impersonating a senior executive \u2014 via email, phone, or increasingly via deepfake video. Certifyd defeats this by requiring device-bound authentication: before acting on any high-stakes instruction, the recipient can request that the supposed sender verify their identity through their registered device. A deepfake can clone a CEO\u2019s voice and face, but it cannot complete a passkey challenge on the CEO\u2019s phone.",
     stats: [
@@ -202,7 +204,8 @@ export const THREAT_PAGES: ForPage[] = [
     headline: "That\u2019s Their Voice. But It\u2019s Not Them.",
     subtitle:
       "Voice cloning technology can replicate a person\u2019s voice from a few seconds of audio. Certifyd verifies identity through cryptographic proof that voices cannot fake.",
-    heroCard: { name: "James Richardson", company: "Board Member" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "James Richardson", secondaryLabel: "Role", secondaryValue: "Board Member" },
     searchIntentParagraph:
       "Voice cloning protection with Certifyd eliminates the voice channel as a trusted identity signal. AI voice cloning can now replicate any person\u2019s voice from a few seconds of recorded audio \u2014 enough to fool colleagues, family members, and bank voice-recognition systems. Certifyd replaces voice-based trust with device-bound cryptographic authentication. When identity matters, the person verifies through their registered device, not through their voice. A cloned voice cannot complete a passkey challenge.",
     stats: [
@@ -295,7 +298,8 @@ export const THREAT_PAGES: ForPage[] = [
     headline: "The Email Looks Right. The Sender Isn\u2019t.",
     subtitle:
       "Phishing attacks impersonate colleagues, executives, and trusted organisations. Certifyd lets you verify the sender\u2019s actual identity before acting on any request.",
-    heroCard: { name: "David Peters", company: "IT Manager" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "David Peters", secondaryLabel: "Role", secondaryValue: "IT Manager" },
     searchIntentParagraph:
       "Phishing protection with Certifyd adds cryptographic identity verification to communications where impersonation is the attack vector. Phishing succeeds because emails, messages, and calls can be made to appear to come from trusted sources. Certifyd doesn\u2019t try to detect phishing \u2014 it lets the recipient verify the sender\u2019s identity through device-bound authentication. Before acting on a suspicious request, the recipient asks the sender to complete a Certifyd verification. If they can\u2019t \u2014 because they\u2019re an impersonator \u2014 the attack fails.",
     stats: [
@@ -388,7 +392,8 @@ export const THREAT_PAGES: ForPage[] = [
     headline: "You\u2019ve Talked for Months. You\u2019ve Never Met. Are They Real?",
     subtitle:
       "Romance scams use fake identities to build emotional connections and extract money. Certifyd lets you verify that the person on the other end is real \u2014 before you\u2019re in too deep.",
-    heroCard: { name: "Emma Davis", company: "Trust & Safety" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Emma Davis", secondaryLabel: "Status", secondaryValue: "Identity Verified" },
     searchIntentParagraph:
       "Romance scam protection with Certifyd provides cryptographic proof that the person you\u2019re communicating with is who they claim to be. Romance scammers create elaborate fake identities \u2014 stolen photos, fabricated backstories, and now AI-generated faces and voices. Certifyd verification doesn\u2019t analyse photos or voices. It requires the person to prove their identity through a device-bound passkey: a cryptographic challenge that only the real person can complete on their registered device. If someone won\u2019t or can\u2019t verify, that tells you everything you need to know.",
     stats: [
@@ -475,7 +480,8 @@ export const THREAT_PAGES: ForPage[] = [
     headline: "The Attack Doesn\u2019t Target Your Systems. It Targets Your People.",
     subtitle:
       "Social engineering attacks exploit human trust, not technical vulnerabilities. Certifyd provides a protocol for verifying the identity of anyone making a request \u2014 before trust is exploited.",
-    heroCard: { name: "Michael Brooks", company: "Security Director" },
+    heroGraphic: "qr-scan",
+    heroCard: { name: "Michael Brooks", secondaryLabel: "Role", secondaryValue: "Security Director" },
     searchIntentParagraph:
       "Social engineering protection with Certifyd addresses the fundamental vulnerability in all social engineering attacks: unverified identity. Whether the attacker impersonates a colleague, a vendor, IT support, or a bank official, the attack depends on the target trusting the attacker\u2019s claimed identity. Certifyd provides a universal verification step: before acting on any request, the target can ask the requester to verify through device-bound cryptographic authentication. This transforms social engineering from a human judgement problem into a protocol problem \u2014 and protocols don\u2019t get fooled.",
     stats: [
