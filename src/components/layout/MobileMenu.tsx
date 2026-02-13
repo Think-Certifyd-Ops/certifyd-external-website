@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { COMPANY, NAV_ITEMS } from "@/lib/constants";
@@ -12,27 +12,42 @@ interface MobileMenuProps {
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const pathname = usePathname();
-  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+  const [expandedTop, setExpandedTop] = useState<string | null>(null);
+  const [expandedSub, setExpandedSub] = useState<string | null>(null);
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
 
+  // Close menu on route change only
+  const prevPathname = useRef(pathname);
   useEffect(() => {
-    onClose();
-  }, [pathname, onClose]);
+    if (prevPathname.current !== pathname) {
+      prevPathname.current = pathname;
+      onCloseRef.current();
+      setExpandedTop(null);
+      setExpandedSub(null);
+    }
+  }, [pathname]);
+
+  // Reset expanded state when menu closes
+  useEffect(() => {
+    if (!isOpen) {
+      setExpandedTop(null);
+      setExpandedSub(null);
+    }
+  }, [isOpen]);
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
-  const toggleExpanded = (label: string) => {
-    setExpandedItems((prev) => {
-      const next = new Set(prev);
-      if (next.has(label)) {
-        next.delete(label);
-      } else {
-        next.add(label);
-      }
-      return next;
-    });
+  const toggleTop = (label: string) => {
+    setExpandedTop((prev) => (prev === label ? null : label));
+    setExpandedSub(null);
+  };
+
+  const toggleSub = (label: string) => {
+    setExpandedSub((prev) => (prev === label ? null : label));
   };
 
   const hasMegaChildren = (children?: { children?: unknown[] }[]) =>
@@ -57,7 +72,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       >
         <div className="flex h-full flex-col">
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-5">
+          <div className="flex items-center justify-between px-6 py-5 border-b border-navy-border">
             <img
               src="/logos/certifyd-logo-white.svg"
               alt={COMPANY.name}
@@ -86,70 +101,101 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </button>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="flex-1 overflow-y-auto px-6 py-4">
+          {/* Navigation */}
+          <nav className="flex-1 overflow-y-auto px-4 py-4">
             <ul className="space-y-1">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
                   {item.children ? (
                     <>
+                      {/* Top-level accordion trigger */}
                       <button
                         type="button"
-                        onClick={() => toggleExpanded(item.label)}
+                        onClick={() => toggleTop(item.label)}
                         className={`flex w-full items-center justify-between rounded-sm px-3 py-3 text-base font-medium transition-colors ${
-                          isActive(item.href)
-                            ? "text-white bg-navy-light"
-                            : "text-text-on-dark-muted hover:text-white hover:bg-navy-light"
+                          expandedTop === item.label
+                            ? "text-white bg-white/[0.06]"
+                            : "text-text-on-dark-muted hover:text-white hover:bg-white/[0.06]"
                         }`}
                       >
                         {item.label}
                         <svg
-                          className={`h-4 w-4 transition-transform ${
-                            expandedItems.has(item.label) ? "rotate-180" : ""
+                          className={`h-4 w-4 shrink-0 transition-transform duration-200 ${
+                            expandedTop === item.label ? "rotate-180" : ""
                           }`}
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                           strokeWidth={2}
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19 9l-7 7-7-7"
-                          />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                       </button>
 
-                      {expandedItems.has(item.label) && (
-                        <div className="mt-1 ml-2">
+                      {/* Expanded content */}
+                      {expandedTop === item.label && (
+                        <div className="mt-1 pb-2">
                           {hasMegaChildren(item.children) ? (
-                            /* Two-level: column headers → children */
-                            item.children.map((column) => (
-                              <div key={column.label} className="mb-3">
-                                <h4 className="px-3 py-1.5 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
-                                  {column.label}
-                                </h4>
-                                <ul className="ml-2 border-l border-navy-border pl-3">
-                                  {column.children?.map((child) => (
-                                    <li key={child.href}>
-                                      <Link
-                                        href={child.href}
-                                        onClick={onClose}
-                                        className={`block rounded-sm px-3 py-1.5 text-sm transition-colors ${
-                                          isActive(child.href)
-                                            ? "text-white bg-navy-light"
-                                            : "text-text-on-dark-muted hover:text-white hover:bg-navy-light"
-                                        }`}
-                                      >
-                                        {child.label}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ))
+                            /* Two-level accordion: columns are sub-accordions */
+                            <ul className="space-y-0.5 ml-2">
+                              {item.children.map((column) => (
+                                <li key={column.label}>
+                                  {/* Sub-accordion trigger */}
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleSub(column.label)}
+                                    className={`flex w-full items-center justify-between rounded-sm px-3 py-2.5 text-sm font-medium transition-colors ${
+                                      expandedSub === column.label
+                                        ? "text-certifyd-blue"
+                                        : "text-text-on-dark-muted hover:text-white"
+                                    }`}
+                                  >
+                                    <span className="flex items-center gap-2">
+                                      <span className="font-heading text-[10px] font-semibold uppercase tracking-wider">
+                                        {column.label}
+                                      </span>
+                                      <span className="text-[10px] text-text-on-dark-muted/50">
+                                        {column.children?.length}
+                                      </span>
+                                    </span>
+                                    <svg
+                                      className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 ${
+                                        expandedSub === column.label ? "rotate-180" : ""
+                                      }`}
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                      strokeWidth={2}
+                                    >
+                                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                  </button>
+
+                                  {/* Sub-accordion children */}
+                                  {expandedSub === column.label && (
+                                    <ul className="ml-3 border-l border-certifyd-blue/20 pl-3 pb-1">
+                                      {column.children?.map((child) => (
+                                        <li key={child.href}>
+                                          <Link
+                                            href={child.href}
+                                            onClick={onClose}
+                                            className={`block rounded-sm px-2 py-1.5 text-sm transition-colors ${
+                                              isActive(child.href)
+                                                ? "text-white"
+                                                : "text-text-on-dark-muted hover:text-white"
+                                            }`}
+                                          >
+                                            {child.label}
+                                          </Link>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
                           ) : (
-                            /* Single-level: direct children */
+                            /* Simple one-level children */
                             <ul className="ml-2 border-l border-navy-border pl-3">
                               {item.children.map((child) => (
                                 <li key={child.href}>
@@ -158,8 +204,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                     onClick={onClose}
                                     className={`block rounded-sm px-3 py-2 text-sm transition-colors ${
                                       isActive(child.href)
-                                        ? "text-white bg-navy-light"
-                                        : "text-text-on-dark-muted hover:text-white hover:bg-navy-light"
+                                        ? "text-white"
+                                        : "text-text-on-dark-muted hover:text-white"
                                     }`}
                                   >
                                     {child.label}
@@ -177,8 +223,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                       onClick={onClose}
                       className={`block rounded-sm px-3 py-3 text-base font-medium transition-colors ${
                         isActive(item.href)
-                          ? "text-white bg-navy-light"
-                          : "text-text-on-dark-muted hover:text-white hover:bg-navy-light"
+                          ? "text-white bg-white/[0.06]"
+                          : "text-text-on-dark-muted hover:text-white hover:bg-white/[0.06]"
                       }`}
                     >
                       {item.label}
