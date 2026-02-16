@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const INDUSTRIES = [
@@ -56,16 +57,29 @@ export function HomeCTA() {
 
       <div className="section-container relative z-10 py-20 lg:py-28 text-center">
         <ScrollReveal>
-          <h2 className="font-heading text-3xl lg:text-4xl font-bold text-text-on-dark">
-            Find out how Certifyd works for your industry
+          <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-dark max-w-3xl mx-auto leading-tight">
+            Every day you wait, another unverified person walks through your
+            door.
           </h2>
-          <p className="text-text-on-dark-muted mt-4 text-sm max-w-lg mx-auto">
-            Every industry. Same broken trust. Same simple fix.
+          <p className="text-text-on-dark-muted mt-6 text-lg max-w-xl mx-auto">
+            30 seconds. That&rsquo;s all it takes to know who you&rsquo;re
+            really dealing with.
           </p>
         </ScrollReveal>
 
         <ScrollReveal delay={100}>
-          <div className="flex flex-wrap justify-center gap-4 mt-10">
+          <div className="mt-10">
+            <Button variant="outline" size="lg" href="/contact/">
+              Book a demo
+            </Button>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={200}>
+          <p className="text-xs font-heading text-text-on-dark-muted uppercase tracking-wider mt-16 mb-6">
+            Or explore by industry
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
             {INDUSTRIES.map((industry) => (
               <Link
                 key={industry.label}

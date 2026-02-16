@@ -5,7 +5,7 @@ import { FOUR_STORIES } from "@/lib/constants";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
-/* Mini graphic headers — dark "UI mockup" elements on light cards */
+/* Mini graphic headers — dark "UI mockup" elements */
 function HireGraphic() {
   return (
     <div className="bg-navy rounded-md p-3 mb-5">
@@ -103,43 +103,60 @@ export function FourStories() {
           />
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
+        <div className="mt-16 space-y-20 lg:space-y-28">
           {FOUR_STORIES.map((story, index) => {
+            const isEven = index % 2 === 0;
             const Graphic = GRAPHICS[index];
             return (
-              <ScrollReveal key={story.title} delay={index * 100}>
-                <Link
-                  href={story.href}
-                  className="group block bg-white border border-warm-border rounded-sm overflow-hidden hover:border-certifyd-blue/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full"
+              <ScrollReveal key={story.title}>
+                <div
+                  className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-10 lg:gap-20`}
                 >
-                  <div className="p-6">
-                    {Graphic && <Graphic />}
+                  {/* Stat side — big, bold, unmissable */}
+                  <div className="lg:w-5/12 text-center lg:text-left">
+                    <p className="font-heading text-6xl lg:text-8xl font-bold text-accent-warning leading-none">
+                      {story.statHighlight || story.stat}
+                    </p>
+                    {story.statSubtitle && (
+                      <p className="font-heading text-lg text-text-on-light-muted mt-3">
+                        {story.statSubtitle}
+                      </p>
+                    )}
+                    <div className="w-16 h-1 bg-accent-warning/30 mt-6 mx-auto lg:mx-0 rounded-full" />
+                  </div>
 
-                    <h3 className="font-heading text-base font-semibold text-text-on-light mb-3">
+                  {/* Narrative side */}
+                  <div className="lg:w-7/12">
+                    {Graphic && <Graphic />}
+                    <h3 className="font-heading text-2xl font-semibold text-text-on-light">
                       {story.title}
                     </h3>
-                    <p className="text-text-on-light-muted text-sm leading-relaxed mb-4">
+                    <p className="text-text-on-light-muted text-base leading-relaxed mt-3 max-w-lg">
                       {story.story}
                     </p>
-                    <p className="font-heading text-sm font-bold text-accent-warning mb-4">
-                      {story.stat}
-                    </p>
-                    <span className="inline-flex items-center text-certifyd-blue text-sm font-heading font-medium">
-                      <span className="transition-transform duration-300 group-hover:-translate-x-0.5">
+                    <Link
+                      href={story.href}
+                      className="inline-flex items-center text-certifyd-blue text-sm font-heading font-medium mt-5 group/link"
+                    >
+                      <span className="transition-transform duration-300 group-hover/link:-translate-x-0.5">
                         Learn more
                       </span>
                       <svg
-                        className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1"
+                        className="w-4 h-4 ml-1 transition-transform duration-300 group-hover/link:translate-x-1"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={2}
                         stroke="currentColor"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
                       </svg>
-                    </span>
+                    </Link>
                   </div>
-                </Link>
+                </div>
               </ScrollReveal>
             );
           })}

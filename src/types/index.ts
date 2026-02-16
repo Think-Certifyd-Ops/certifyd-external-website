@@ -17,6 +17,8 @@ export interface StoryCard {
   title: string;
   story: string;
   stat: string;
+  statHighlight?: string;
+  statSubtitle?: string;
   href: string;
 }
 
