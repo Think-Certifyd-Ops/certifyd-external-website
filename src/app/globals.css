@@ -37,6 +37,7 @@
   /* Accents */
   --color-accent-warning: #E85D2C;
   --color-accent-success: #00B368;
+  --color-warm-charcoal: #44403C;
 
   /* Fonts */
   --font-heading: var(--font-ibm-plex-mono);

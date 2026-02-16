@@ -114,7 +114,7 @@ export function FourStories() {
                 >
                   {/* Stat side — big, bold, unmissable */}
                   <div className="lg:w-5/12 text-center lg:text-left">
-                    <p className="font-heading text-6xl lg:text-8xl font-bold text-accent-warning leading-none">
+                    <p className="font-heading text-6xl lg:text-8xl font-bold text-warm-charcoal leading-none">
                       {story.statHighlight || story.stat}
                     </p>
                     {story.statSubtitle && (
@@ -122,7 +122,7 @@ export function FourStories() {
                         {story.statSubtitle}
                       </p>
                     )}
-                    <div className="w-16 h-1 bg-accent-warning/30 mt-6 mx-auto lg:mx-0 rounded-full" />
+                    <div className="w-16 h-1 bg-certifyd-blue/30 mt-6 mx-auto lg:mx-0 rounded-full" />
                   </div>
 
                   {/* Narrative side */}
