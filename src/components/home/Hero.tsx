@@ -40,7 +40,7 @@ function VerificationDashboard() {
         aria-hidden="true"
       />
 
-      <div className="relative bg-navy-light border border-navy-border rounded-lg overflow-hidden rotate-1 group-hover:rotate-0 transition-transform duration-500 ease-out shadow-2xl">
+      <div className="relative bg-navy-light border border-navy-border rounded-lg overflow-hidden group-hover:rotate-1 transition-transform duration-500 ease-out shadow-2xl">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-3 border-b border-navy-border">
           <span className="font-heading text-xs font-semibold text-text-on-dark-muted uppercase tracking-wider">
