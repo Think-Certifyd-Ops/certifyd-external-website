@@ -181,6 +181,19 @@
   100% { transform: translateX(-50%); }
 }
 
+/* How It Works — connection flash (Step 3 verified) */
+@keyframes connectionFlash {
+  0% { transform: translateX(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(800%); opacity: 0; }
+}
+
+.connection-flash {
+  animation: connectionFlash 1.2s var(--ease-out-expo) 0.8s forwards;
+  opacity: 0;
+}
+
 @layer utilities {
   .animate-marquee {
     animation: marquee 25s linear infinite;
@@ -195,5 +208,10 @@
   .animate-marquee,
   .animate-marquee-slow {
     animation-play-state: paused;
+  }
+
+  .connection-flash {
+    animation: none;
+    opacity: 0;
   }
 }
