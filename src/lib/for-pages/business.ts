@@ -235,8 +235,8 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
+        "We had a client call worried sick because a different cleaner showed up \u2014 one of our team was off sick and we sent a replacement. They had no way of knowing if she really worked for us.",
+      attribution: "Owner, domestic cleaning company",
     },
     faqs: [
       {
@@ -421,8 +421,8 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "At \u00a350\u2013200 per background check, we were spending thousands a year just to verify temps. Some checks got skipped. That\u2019s the reality for millions of small businesses.",
-      attribution: "Director, temp staffing agency",
+        "Saturday night, full restaurant, two new agency staff I\u2019ve never seen before walk in. They put on aprons and start working. I\u2019ve got 200 covers to get through \u2014 I\u2019m not stopping to check IDs.",
+      attribution: "General Manager, restaurant group",
     },
     faqs: [
       {
@@ -701,8 +701,8 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "At \u00a350\u2013200 per background check, we were spending thousands a year just to verify temps. Some checks got skipped. That\u2019s the reality for millions of small businesses.",
-      attribution: "Director, temp staffing agency",
+        "We manage 40 sites. On any given day, we\u2019ve got subcontracted cleaners, agency guards, and maintenance engineers across all of them. When a client asks \u2018who was in our building last night?\u2019 \u2014 it takes us hours to piece it together.",
+      attribution: "Operations Director, facilities management company",
     },
     faqs: [
       {

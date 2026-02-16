@@ -43,8 +43,8 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
+        "Mum had a man knock on her door saying he was from the water board. She let him in. He wasn\u2019t. That\u2019s when we realised she can\u2019t tell anymore who she should trust.",
+      attribution: "Daughter of elderly fraud victim",
     },
     faqs: [
       {

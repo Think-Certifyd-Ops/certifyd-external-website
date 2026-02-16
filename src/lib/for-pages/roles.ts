@@ -43,8 +43,8 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
+        "My clients give me their house keys and alarm codes. They trust me completely. But when I started, nobody verified who I was \u2014 I could have been anyone.",
+      attribution: "Self-employed cleaner",
     },
     faqs: [
       {
@@ -357,8 +357,8 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
+        "I turn up at someone\u2019s house, and they just let me in. They\u2019ve got no idea if I\u2019m really a plumber or if I actually work for the company I say I do.",
+      attribution: "Sole trader, plumber",
     },
     faqs: [
       {
@@ -455,8 +455,8 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "This is the first time I\u2019ve ever heard of a product like this. I love the concept. As a recruiter, to be able to say \u2018this is how you prevent that from happening\u2019 \u2014 that\u2019s a massive USP.",
-      attribution: "Director, specialist recruitment firm",
+        "We send crews to residential sites. The homeowner has never met most of them. When we swap someone out mid-project, the client just has to trust us that the new person is legit.",
+      attribution: "Owner, building and renovation company",
     },
     faqs: [
       {
@@ -927,8 +927,8 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "At \u00a350\u2013200 per background check, we were spending thousands a year just to verify temps. Some checks got skipped. That\u2019s the reality for millions of small businesses.",
-      attribution: "Director, temp staffing agency",
+        "Monday morning, 30 new temps arrive at the gate. We\u2019ve got names on a list from the agency. Half the time, the person doesn\u2019t match the name. We wave them through anyway because we\u2019ve got orders to ship.",
+      attribution: "Shift Manager, distribution centre",
     },
     faqs: [
       {
@@ -1025,8 +1025,8 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "At \u00a350\u2013200 per background check, we were spending thousands a year just to verify temps. Some checks got skipped. That\u2019s the reality for millions of small businesses.",
-      attribution: "Director, temp staffing agency",
+        "On a busy weekend we\u2019ll have agency staff we\u2019ve never met working the bar. They\u2019re serving alcohol, handling payments, dealing with customers. I just have to hope the agency did their checks.",
+      attribution: "Operations Manager, hotel chain",
     },
     faqs: [
       {

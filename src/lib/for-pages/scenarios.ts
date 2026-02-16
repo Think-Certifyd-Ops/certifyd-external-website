@@ -132,8 +132,8 @@ export const SCENARIO_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
+        "I do six viewings a day in empty houses with people I\u2019ve never met. My only safety measure is texting my colleague the address. That\u2019s it.",
+      attribution: "Estate agent, South London",
     },
     faqs: [
       {
@@ -312,8 +312,8 @@ export const SCENARIO_PAGES: ForPage[] = [
     ],
     testimonial: {
       quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
+        "The agency said they\u2019d verified her. But when she arrived at our door, we had no way to independently check she was actually the person they\u2019d vetted.",
+      attribution: "Parent, first-time nanny employer",
     },
     faqs: [
       {
