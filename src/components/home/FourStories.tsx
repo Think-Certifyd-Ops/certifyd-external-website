@@ -184,14 +184,14 @@ export function TrustMosaic() {
             return (
               <ScrollReveal key={category.badge} delay={index * 100}>
                 <div
-                  className={`group bg-white border rounded-sm p-6 transition-all duration-300 ${
+                  className={`group flex flex-col bg-white border rounded-sm p-6 h-full transition-all duration-300 ${
                     isExpanded
                       ? "border-certifyd-blue/30 shadow-lg"
                       : "border-warm-border hover:-translate-y-1 hover:border-certifyd-blue/20 hover:shadow-md"
                   }`}
                 >
                   {/* Category badge */}
-                  <span className="inline-block text-[10px] font-heading font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-certifyd-blue/10 text-certifyd-blue mb-4">
+                  <span className="inline-block self-start text-[10px] font-heading font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-certifyd-blue/10 text-certifyd-blue mb-4">
                     {category.badge}
                   </span>
 
@@ -204,7 +204,7 @@ export function TrustMosaic() {
                   </p>
 
                   {/* Mini graphic */}
-                  <div className="mt-4">
+                  <div className="mt-4 flex-1">
                     {Graphic && <Graphic />}
                   </div>
 
