@@ -203,8 +203,8 @@ export function Header() {
               <img
                 src="/logos/certifyd-logo-white.svg"
                 alt={COMPANY.name}
-                className="h-10 w-auto"
-                style={{ width: "148px" }}
+                className="h-12 w-auto"
+                style={{ width: "176px" }}
               />
             </Link>
 
