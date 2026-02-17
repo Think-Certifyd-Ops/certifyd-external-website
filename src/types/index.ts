@@ -22,6 +22,14 @@ export interface StoryCard {
   href: string;
 }
 
+export interface TrustCategory {
+  badge: string;
+  statHighlight: string;
+  statSubtitle: string;
+  story: string;
+  href: string;
+}
+
 export interface SolutionPage {
   slug: string;
   title: string;

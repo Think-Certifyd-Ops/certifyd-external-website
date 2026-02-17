@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
 import { ProblemTicker } from "@/components/home/ProblemTicker";
-import { FourStories } from "@/components/home/FourStories";
-import { MetricsBar } from "@/components/home/MetricsBar";
-import { Testimonials } from "@/components/home/Testimonials";
+import { TrustMosaic } from "@/components/home/FourStories";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { WhatWeDo } from "@/components/home/WhatWeDo";
+import { MetricsBar } from "@/components/home/MetricsBar";
+import { Testimonials } from "@/components/home/Testimonials";
+import { BlogHighlights } from "@/components/home/BlogHighlights";
 import { HomeCTA } from "@/components/home/HomeCTA";
+import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title:
@@ -23,15 +25,18 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const posts = getAllPosts().slice(0, 3);
+
   return (
     <>
       <Hero />
       <ProblemTicker />
-      <FourStories />
-      <MetricsBar />
-      <Testimonials />
+      <TrustMosaic />
       <HowItWorks />
       <WhatWeDo />
+      <MetricsBar />
+      <Testimonials />
+      <BlogHighlights posts={posts} />
       <HomeCTA />
     </>
   );

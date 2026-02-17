@@ -1,4 +1,4 @@
-import type { NavItem, TeamMember, StoryCard } from "@/types";
+import type { NavItem, TeamMember, StoryCard, TrustCategory } from "@/types";
 
 /**
  * Hero graphic tilt classes — change these to adjust rotation site-wide.
@@ -201,5 +201,56 @@ export const FOUR_STORIES: StoryCard[] = [
     statHighlight: "1.1M",
     statSubtitle: "temporary workers \u2014 most unverified",
     href: "/industries/workforce/",
+  },
+];
+
+export const TRUST_CATEGORIES: TrustCategory[] = [
+  {
+    badge: "Recruitment",
+    statHighlight: "\u00a360,000",
+    statSubtitle: "civil penalty per illegal worker",
+    story:
+      'A recruiter asks "Right to work?" The candidate says "Yes." Three weeks of interviews later \u2014 graduate visa, needs \u00a320k sponsorship. Or start over.',
+    href: "/industries/recruitment/",
+  },
+  {
+    badge: "Trades",
+    statHighlight: "Zero",
+    statSubtitle: "regulation for tradespeople entering your home",
+    story:
+      "A homeowner finds a builder online. He knows where she lives, what\u2019s in her home, when she\u2019s out. She knows nothing about him. He sends his mate instead.",
+    href: "/industries/trades/",
+  },
+  {
+    badge: "Care",
+    statHighlight: "39%",
+    statSubtitle: "of safeguarding concerns involve staff or volunteers",
+    story:
+      "Rotating agency staff cover nights and weekends. Families have no idea who\u2019s looking after their parent. A staff member gives a false name. Nobody checked.",
+    href: "/industries/care/",
+  },
+  {
+    badge: "Workforce",
+    statHighlight: "1.1M",
+    statSubtitle: "temporary workers \u2014 most unverified",
+    story:
+      '5 agency workers arrive for the week. One says "Dave couldn\'t make it \u2014 I\'m covering." He gets a lanyard and building access. Nobody checks.',
+    href: "/industries/workforce/",
+  },
+  {
+    badge: "Threats",
+    statHighlight: "$25M",
+    statSubtitle: "stolen via a single deepfake video call",
+    story:
+      "A finance officer joins a video call with his CFO and colleagues. Everyone looks real. Everyone sounds real. None of them are. \u00a320 million transferred before anyone noticed.",
+    href: "/for/deepfakes/",
+  },
+  {
+    badge: "Safeguarding",
+    statHighlight: "3.2M",
+    statSubtitle: "over-65s targeted by doorstep fraud each year",
+    story:
+      "A man in a high-vis jacket knocks on your elderly parent\u2019s door. Says he\u2019s from the council. He\u2019s not. They let him in because he looked official.",
+    href: "/for/protecting-elderly-parents/",
   },
 ];

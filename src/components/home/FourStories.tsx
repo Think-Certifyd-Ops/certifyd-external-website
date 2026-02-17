@@ -1,14 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { FOUR_STORIES } from "@/lib/constants";
+import { TRUST_CATEGORIES } from "@/lib/constants";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
-/* Mini graphic headers — dark "UI mockup" elements */
+/* ── Mini graphics — dark "UI mockup" elements showing failure states ── */
+
 function HireGraphic() {
   return (
-    <div className="bg-navy rounded-md p-3 mb-5">
+    <div className="bg-navy rounded-md p-3">
       <div className="flex items-center gap-2 mb-2">
         <span className="text-[10px] font-heading font-semibold text-text-on-dark-muted uppercase tracking-wider">
           RTW Status
@@ -28,7 +30,7 @@ function HireGraphic() {
 
 function TradesGraphic() {
   return (
-    <div className="bg-navy rounded-md p-3 mb-5">
+    <div className="bg-navy rounded-md p-3">
       <div className="flex items-center gap-2 mb-2">
         <span className="text-[10px] font-heading font-semibold text-text-on-dark-muted uppercase tracking-wider">
           Identity Check
@@ -48,7 +50,7 @@ function TradesGraphic() {
 
 function CareGraphic() {
   return (
-    <div className="bg-navy rounded-md p-3 mb-5">
+    <div className="bg-navy rounded-md p-3">
       <div className="flex items-center gap-2 mb-2">
         <span className="text-[10px] font-heading font-semibold text-text-on-dark-muted uppercase tracking-wider">
           Staff on Shift
@@ -68,9 +70,9 @@ function CareGraphic() {
   );
 }
 
-function TempGraphic() {
+function WorkforceGraphic() {
   return (
-    <div className="bg-navy rounded-md p-3 mb-5">
+    <div className="bg-navy rounded-md p-3">
       <div className="flex items-center gap-2 mb-2">
         <span className="text-[10px] font-heading font-semibold text-text-on-dark-muted uppercase tracking-wider">
           Access Badge
@@ -88,9 +90,80 @@ function TempGraphic() {
   );
 }
 
-const GRAPHICS = [HireGraphic, TradesGraphic, CareGraphic, TempGraphic];
+function ThreatsGraphic() {
+  return (
+    <div className="bg-navy rounded-md p-3">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-[10px] font-heading font-semibold text-text-on-dark-muted uppercase tracking-wider">
+          Video Call
+        </span>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="w-8 h-6 rounded-sm bg-navy-lighter border border-navy-border flex items-center justify-center">
+          <svg className="w-3.5 h-3.5 text-accent-warning" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0" />
+          </svg>
+        </div>
+        <span className="text-xs text-accent-warning font-heading font-medium">
+          ⚠ Identity Not Verified
+        </span>
+      </div>
+    </div>
+  );
+}
 
-export function FourStories() {
+function SafeguardingGraphic() {
+  return (
+    <div className="bg-navy rounded-md p-3">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-[10px] font-heading font-semibold text-text-on-dark-muted uppercase tracking-wider">
+          Front Door
+        </span>
+      </div>
+      <div className="flex items-center gap-2">
+        <span className="w-5 h-5 rounded-full bg-accent-warning/20 flex items-center justify-center text-accent-warning text-xs font-bold">
+          ?
+        </span>
+        <span className="text-xs text-accent-warning font-heading font-medium">
+          Unknown Visitor
+        </span>
+      </div>
+    </div>
+  );
+}
+
+const GRAPHICS = [
+  HireGraphic,
+  TradesGraphic,
+  CareGraphic,
+  WorkforceGraphic,
+  ThreatsGraphic,
+  SafeguardingGraphic,
+];
+
+/* ── Chevron icon ── */
+function ChevronIcon({ expanded }: { expanded: boolean }) {
+  return (
+    <svg
+      className={`w-4 h-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </svg>
+  );
+}
+
+/* ── Main section ── */
+export function TrustMosaic() {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  function toggleCard(index: number) {
+    setExpandedIndex((prev) => (prev === index ? null : index));
+  }
+
   return (
     <section className="section-light">
       <div className="section-container py-20 lg:py-28">
@@ -103,58 +176,80 @@ export function FourStories() {
           />
         </ScrollReveal>
 
-        <div className="mt-16 space-y-20 lg:space-y-28">
-          {FOUR_STORIES.map((story, index) => {
-            const isEven = index % 2 === 0;
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
+          {TRUST_CATEGORIES.map((category, index) => {
             const Graphic = GRAPHICS[index];
+            const isExpanded = expandedIndex === index;
+
             return (
-              <ScrollReveal key={story.title}>
+              <ScrollReveal key={category.badge} delay={index * 100}>
                 <div
-                  className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-10 lg:gap-20`}
+                  className={`group bg-white border rounded-sm p-6 transition-all duration-300 ${
+                    isExpanded
+                      ? "border-certifyd-blue/30 shadow-lg"
+                      : "border-warm-border hover:-translate-y-1 hover:border-certifyd-blue/20 hover:shadow-md"
+                  }`}
                 >
-                  {/* Stat side — big, bold, unmissable */}
-                  <div className="lg:w-5/12 text-center lg:text-left">
-                    <p className="font-heading text-6xl lg:text-8xl font-bold text-warm-charcoal leading-none">
-                      {story.statHighlight || story.stat}
-                    </p>
-                    {story.statSubtitle && (
-                      <p className="font-heading text-lg text-text-on-light-muted mt-3">
-                        {story.statSubtitle}
-                      </p>
-                    )}
-                    <div className="w-16 h-1 bg-certifyd-blue/30 mt-6 mx-auto lg:mx-0 rounded-full" />
+                  {/* Category badge */}
+                  <span className="inline-block text-[10px] font-heading font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-certifyd-blue/10 text-certifyd-blue mb-4">
+                    {category.badge}
+                  </span>
+
+                  {/* Stat */}
+                  <p className="font-heading text-3xl lg:text-4xl font-bold text-warm-charcoal leading-none">
+                    {category.statHighlight}
+                  </p>
+                  <p className="font-heading text-sm text-text-on-light-muted mt-1.5">
+                    {category.statSubtitle}
+                  </p>
+
+                  {/* Mini graphic */}
+                  <div className="mt-4">
+                    {Graphic && <Graphic />}
                   </div>
 
-                  {/* Narrative side */}
-                  <div className="lg:w-7/12">
-                    {Graphic && <Graphic />}
-                    <h3 className="font-heading text-2xl font-semibold text-text-on-light">
-                      {story.title}
-                    </h3>
-                    <p className="text-text-on-light-muted text-base leading-relaxed mt-3 max-w-lg">
-                      {story.story}
-                    </p>
-                    <Link
-                      href={story.href}
-                      className="inline-flex items-center text-certifyd-blue text-sm font-heading font-medium mt-5 group/link"
-                    >
-                      <span className="transition-transform duration-300 group-hover/link:-translate-x-0.5">
-                        Learn more
-                      </span>
-                      <svg
-                        className="w-4 h-4 ml-1 transition-transform duration-300 group-hover/link:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
+                  {/* Expand/collapse trigger */}
+                  <button
+                    onClick={() => toggleCard(index)}
+                    aria-expanded={isExpanded}
+                    className="flex items-center gap-1.5 text-certifyd-blue text-sm font-heading font-medium mt-4 transition-colors duration-200 hover:text-certifyd-blue-dark"
+                  >
+                    <span>{isExpanded ? "Collapse" : "Read the story"}</span>
+                    <ChevronIcon expanded={isExpanded} />
+                  </button>
+
+                  {/* Expandable content */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-out ${
+                      isExpanded ? "max-h-60 opacity-100 mt-4" : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <div className="border-t border-warm-border pt-4">
+                      <p className="text-text-on-light-muted text-sm leading-relaxed">
+                        {category.story}
+                      </p>
+                      <Link
+                        href={category.href}
+                        className="inline-flex items-center text-certifyd-blue text-sm font-heading font-medium mt-4 group/link"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                        />
-                      </svg>
-                    </Link>
+                        <span className="transition-transform duration-300 group-hover/link:-translate-x-0.5">
+                          Learn more
+                        </span>
+                        <svg
+                          className="w-4 h-4 ml-1 transition-transform duration-300 group-hover/link:translate-x-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={2}
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                          />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>
@@ -165,3 +260,6 @@ export function FourStories() {
     </section>
   );
 }
+
+/* Keep backward-compatible export name */
+export { TrustMosaic as FourStories };
