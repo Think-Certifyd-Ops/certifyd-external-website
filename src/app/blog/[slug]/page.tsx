@@ -22,6 +22,8 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
+  const today = new Date().toISOString().split("T")[0];
+  if (!post.meta.date || post.meta.date > today) return {};
   return {
     title: post.meta.title,
     description: post.meta.excerpt,
@@ -46,6 +48,8 @@ export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) notFound();
+  const today = new Date().toISOString().split("T")[0];
+  if (!post.meta.date || post.meta.date > today) notFound();
 
   return (
     <>

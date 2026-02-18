@@ -13,6 +13,15 @@ export interface BlogPostMeta {
   category: string;
 }
 
+function getTodayIsoDate(): string {
+  return new Date().toISOString().split("T")[0];
+}
+
+function isPublished(date: string): boolean {
+  if (!date) return false;
+  return date <= getTodayIsoDate();
+}
+
 export function getAllPosts(): BlogPostMeta[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
 
@@ -34,10 +43,8 @@ export function getAllPosts(): BlogPostMeta[] {
     };
   });
 
-  const today = new Date().toISOString().split("T")[0];
-
   return posts
-    .filter((p) => p.date <= today)
+    .filter((p) => isPublished(p.date))
     .sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
@@ -68,5 +75,11 @@ export function getAllSlugs(): string[] {
   return fs
     .readdirSync(BLOG_DIR)
     .filter((f) => f.endsWith(".mdx"))
+    .filter((filename) => {
+      const filePath = path.join(BLOG_DIR, filename);
+      const fileContents = fs.readFileSync(filePath, "utf-8");
+      const { data } = matter(fileContents);
+      return isPublished(data.date || "");
+    })
     .map((f) => f.replace(/\.mdx$/, ""));
 }
