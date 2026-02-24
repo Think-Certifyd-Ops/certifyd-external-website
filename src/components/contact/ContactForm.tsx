@@ -58,6 +58,7 @@ export function ContactForm() {
       name="contact"
       method="POST"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
       onSubmit={(e) => {
         e.preventDefault();
         setError("");
@@ -87,6 +88,11 @@ export function ContactForm() {
       className="space-y-6"
     >
       <input type="hidden" name="form-name" value="contact" />
+      <p className="hidden">
+        <label>
+          Don&apos;t fill this out: <input name="bot-field" />
+        </label>
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>

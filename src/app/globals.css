@@ -204,6 +204,28 @@
   }
 }
 
+/* Print styles for PDF lead magnets */
+@media print {
+  header, footer, nav {
+    display: none !important;
+  }
+
+  .print-document {
+    margin: 0;
+    padding: 0;
+  }
+
+  .print-document * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    margin: 0.5in;
+    size: A4;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
   .animate-marquee-slow {

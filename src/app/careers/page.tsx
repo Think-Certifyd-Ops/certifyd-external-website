@@ -36,10 +36,16 @@ export default function CareersPage() {
             name="careers"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             encType="multipart/form-data"
             className="space-y-6"
           >
             <input type="hidden" name="form-name" value="careers" />
+            <p className="hidden">
+              <label>
+                Don&apos;t fill this out: <input name="bot-field" />
+              </label>
+            </p>
 
             <div>
               <label
