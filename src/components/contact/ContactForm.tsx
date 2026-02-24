@@ -23,6 +23,7 @@ const INTERESTS = [
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   if (submitted) {
     return (
@@ -59,16 +60,29 @@ export function ContactForm() {
       data-netlify="true"
       onSubmit={(e) => {
         e.preventDefault();
+        setError("");
         const form = e.target as HTMLFormElement;
         const formData = new FormData(form);
 
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+          body: new URLSearchParams(
+            formData as unknown as Record<string, string>
+          ).toString(),
         })
-          .then(() => setSubmitted(true))
-          .catch(() => setSubmitted(true));
+          .then((res) => {
+            if (res.ok) {
+              setSubmitted(true);
+            } else {
+              console.error("Form submission failed:", res.status, res.statusText);
+              setError("Something went wrong. Please try again or email us directly.");
+            }
+          })
+          .catch((err) => {
+            console.error("Form submission error:", err);
+            setError("Something went wrong. Please try again or email us directly.");
+          });
       }}
       className="space-y-6"
     >
@@ -201,6 +215,10 @@ export function ContactForm() {
           placeholder="Tell us about your needs..."
         />
       </div>
+
+      {error && (
+        <p className="text-sm text-red-600">{error}</p>
+      )}
 
       <button
         type="submit"

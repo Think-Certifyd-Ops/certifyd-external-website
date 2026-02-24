@@ -8,6 +8,7 @@ interface InlineFormProps {
 
 export function InlineForm({ source }: InlineFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   if (submitted) {
     return (
@@ -44,6 +45,7 @@ export function InlineForm({ source }: InlineFormProps) {
       data-netlify="true"
       onSubmit={(e) => {
         e.preventDefault();
+        setError("");
         const form = e.target as HTMLFormElement;
         const formData = new FormData(form);
 
@@ -54,8 +56,18 @@ export function InlineForm({ source }: InlineFormProps) {
             formData as unknown as Record<string, string>
           ).toString(),
         })
-          .then(() => setSubmitted(true))
-          .catch(() => setSubmitted(true));
+          .then((res) => {
+            if (res.ok) {
+              setSubmitted(true);
+            } else {
+              console.error("Form submission failed:", res.status, res.statusText);
+              setError("Something went wrong. Please try again or email us directly.");
+            }
+          })
+          .catch((err) => {
+            console.error("Form submission error:", err);
+            setError("Something went wrong. Please try again or email us directly.");
+          });
       }}
       className="space-y-5"
     >
@@ -146,6 +158,10 @@ export function InlineForm({ source }: InlineFormProps) {
           placeholder="Tell us about your needs..."
         />
       </div>
+
+      {error && (
+        <p className="text-sm text-red-400">{error}</p>
+      )}
 
       <button
         type="submit"
