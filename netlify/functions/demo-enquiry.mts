@@ -7,6 +7,7 @@ export default async (req: Request, _context: Context) => {
 
   const attioApiKey = Netlify.env.get("ATTIO_API_KEY");
   const loopsApiKey = Netlify.env.get("LOOPS_API_KEY");
+  const slackWebhookUrl = Netlify.env.get("SLACK_WEBHOOK_URL");
 
   try {
     const body = await req.json();
@@ -194,6 +195,47 @@ export default async (req: Request, _context: Context) => {
           }),
         }
       ).catch((err) => console.error("Attio person update failed:", err));
+    }
+
+    // ── Step 4: Slack notification ─────────────────────────
+    if (slackWebhookUrl) {
+      const fullName = `${firstName || ""} ${lastName || ""}`.trim() || "Unknown";
+      const blocks = [
+        {
+          type: "header",
+          text: { type: "plain_text", text: "New Website Enquiry", emoji: true },
+        },
+        {
+          type: "section",
+          fields: [
+            { type: "mrkdwn", text: `*Name:*\n${fullName}` },
+            { type: "mrkdwn", text: `*Email:*\n${email}` },
+            { type: "mrkdwn", text: `*Company:*\n${company || "—"}` },
+            { type: "mrkdwn", text: `*Role:*\n${role || "—"}` },
+            { type: "mrkdwn", text: `*Form:*\n${source || "website"}` },
+            { type: "mrkdwn", text: `*Interest:*\n${interest || "General"}` },
+          ],
+        },
+        ...(message ? [{
+          type: "section",
+          text: { type: "mrkdwn", text: `*Message:*\n${message}` },
+        }] : []),
+        ...(attioPersonUrl ? [{
+          type: "actions",
+          elements: [{
+            type: "button",
+            text: { type: "plain_text", text: "View in Attio" },
+            url: attioPersonUrl,
+            style: "primary",
+          }],
+        }] : []),
+      ];
+
+      await fetch(slackWebhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ blocks }),
+      }).catch((err) => console.error("Slack notification failed:", err));
     }
 
     return new Response(JSON.stringify({ ok: true, results }), {
