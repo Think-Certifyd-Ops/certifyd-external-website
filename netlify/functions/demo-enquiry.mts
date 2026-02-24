@@ -6,6 +6,7 @@ export default async (req: Request, _context: Context) => {
   }
 
   const attioApiKey = Netlify.env.get("ATTIO_API_KEY");
+  const attioSlug = Netlify.env.get("ATTIO_WORKSPACE_SLUG") || "certifyd";
   const loopsApiKey = Netlify.env.get("LOOPS_API_KEY");
   const slackWebhookUrl = Netlify.env.get("SLACK_WEBHOOK_URL");
 
@@ -87,7 +88,10 @@ export default async (req: Request, _context: Context) => {
         if (personRes.ok) {
           const personData = await personRes.json();
           attioPersonId = personData?.data?.id?.record_id || null;
-          attioPersonUrl = personData?.data?.web_url || null;
+          // Attio API doesn't return web_url — construct it from workspace slug + record ID
+          attioPersonUrl = attioPersonId
+            ? `https://app.attio.com/${attioSlug}/objects/people/${attioPersonId}`
+            : null;
           results.attio_person = "ok";
         } else {
           console.error("Attio person creation failed:", await personRes.text());

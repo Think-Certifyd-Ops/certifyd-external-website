@@ -1,4 +1,6 @@
-export default async (req: Request) => {
+import type { Context } from "@netlify/functions";
+
+export default async (req: Request, _context: Context) => {
   if (req.method !== "POST") {
     return new Response(JSON.stringify({ error: "Method not allowed" }), {
       status: 405,
@@ -32,8 +34,8 @@ export default async (req: Request) => {
     });
   }
 
-  const apiKey = process.env.LOOPS_API_KEY;
-  if (!apiKey) {
+  const loopsApiKey = Netlify.env.get("LOOPS_API_KEY");
+  if (!loopsApiKey) {
     console.error("LOOPS_API_KEY not configured");
     return new Response(
       JSON.stringify({ error: "Server configuration error" }),
@@ -45,7 +47,7 @@ export default async (req: Request) => {
     const res = await fetch("https://app.loops.so/api/v1/contacts/create", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`,
+        Authorization: `Bearer ${loopsApiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

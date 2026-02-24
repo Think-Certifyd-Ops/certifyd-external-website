@@ -69,30 +69,44 @@ Blog posts are categorised as: Company Updates, Identity, Compliance, Recruitmen
 
 ## Form Submissions & Integrations
 
-All form submissions route through **Netlify Functions** — API keys are never exposed client-side.
+All form submissions route through **Netlify Functions** (`.mts`, v2 format) — API keys are never exposed client-side. All functions use `Netlify.env.get()` for environment variables.
 
-| Form | Component | Function | Destinations |
-|---|---|---|---|
-| **Waitlist** (email only) | `WaitlistForm` | `waitlist.ts` → `/api/waitlist` | **Loops** (source: `website-waitlist`) |
-| **Contact / Demo** (full form) | `ContactForm` | `demo-enquiry.ts` → `/.netlify/functions/demo-enquiry` | **Attio** (CRM record) + **Loops** (source: `contact-page`) |
+| Form | Component | Function | Netlify Forms | Attio | Loops | Slack |
+|---|---|---|---|---|---|---|
+| **Waitlist** (email only) | `WaitlistForm` | `waitlist.mts` → `/api/waitlist` | No | No | Yes (source: `website-waitlist`) | No |
+| **Contact / Demo** (full form) | `ContactForm` | `demo-enquiry.mts` | Yes (`contact`) | Yes (company + person + note) | Yes (contact) | Yes |
+| **Industry pages** (full form) | `InlineForm` | `demo-enquiry.mts` | Yes (`for-page-enquiry`) | Yes (company + person + note) | Yes (contact) | Yes |
+| **Lead magnet** (name + email + company) | `LeadMagnetForm` | `lead-magnet.mts` | Yes (`lead-magnet`) | Yes (company + person + note) | Yes (contact + drip event) | Yes |
+| **Careers** (with CV upload) | Inline in `careers/page.tsx` | None | Yes (`careers`) | No | No | No |
 
 ### Routing rules
 
-- **Email-only captures** (waitlist, newsletter, gated content) → **Loops only**. These are top-of-funnel nurture contacts.
-- **Full contact forms** (demo requests, partnerships, investor interest) → **Attio** (as a company/person record) **+ Loops** (for email sequences). These are qualified leads.
-- Netlify Forms is the primary store for contact submissions (backup/notification). Loops and Attio are forwarded best-effort after the Netlify Form succeeds.
+- **Email-only captures** (waitlist, newsletter) → **Loops only**. Top-of-funnel nurture.
+- **Forms with name + company + email** (demos, lead magnets, industry enquiries) → **Attio** (company + person record) **+ Loops** (contact) **+ Slack** (notification with "View in Attio" button).
+- **Careers** → Netlify Forms only (internal, no CRM/marketing integration needed).
+- Netlify Forms is the primary store for all non-waitlist submissions. Attio/Loops/Slack are forwarded best-effort after the Netlify Form succeeds.
 
 ### Environment variables (Netlify Dashboard)
 
-- `LOOPS_API_KEY` — Loops API key (used by `waitlist.ts` and `demo-enquiry.ts`)
-- `ATTIO_API_KEY` — Attio API key (used by `demo-enquiry.ts`)
+- `LOOPS_API_KEY` — Loops API key (all functions)
+- `ATTIO_API_KEY` — Attio API key (`demo-enquiry.mts`, `lead-magnet.mts`)
+- `ATTIO_WORKSPACE_SLUG` — Attio workspace slug for constructing record URLs (default: `certifyd`)
+- `SLACK_WEBHOOK_URL` — Slack incoming webhook for form notifications (`demo-enquiry.mts`, `lead-magnet.mts`)
+
+### Netlify Functions conventions
+
+- All functions use `.mts` extension (ESM, Netlify Functions v2)
+- Signature: `export default async (req: Request, _context: Context) => { ... }`
+- Env vars via `Netlify.env.get()` (not `process.env`)
+- `netlify/` is excluded from `tsconfig.json` — Netlify's bundler handles compilation
+- Attio person URLs are constructed (API doesn't return `web_url`): `https://app.attio.com/{slug}/objects/people/{record_id}`
 
 ### Adding a new form
 
 1. Create the component in `src/components/`
-2. Create a Netlify Function in `netlify/functions/`
+2. Create a Netlify Function in `netlify/functions/*.mts` (v2 format)
 3. Add a redirect in `netlify.toml` if using a clean `/api/` path
-4. Route to Loops and/or Attio per the rules above
+4. Route to Attio + Loops + Slack per the rules above
 5. Document the form in this table
 
 ## Component Patterns
