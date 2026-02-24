@@ -67,8 +67,37 @@ When creating or editing any page or blog post, apply these standards:
 
 Blog posts are categorised as: Company Updates, Identity, Compliance, Recruitment, Trades, Care, Workforce, Thought Leadership, Security.
 
+## Form Submissions & Integrations
+
+All form submissions route through **Netlify Functions** — API keys are never exposed client-side.
+
+| Form | Component | Function | Destinations |
+|---|---|---|---|
+| **Waitlist** (email only) | `WaitlistForm` | `waitlist.ts` → `/api/waitlist` | **Loops** (source: `website-waitlist`) |
+| **Contact / Demo** (full form) | `ContactForm` | `demo-enquiry.ts` → `/.netlify/functions/demo-enquiry` | **Attio** (CRM record) + **Loops** (source: `contact-page`) |
+
+### Routing rules
+
+- **Email-only captures** (waitlist, newsletter, gated content) → **Loops only**. These are top-of-funnel nurture contacts.
+- **Full contact forms** (demo requests, partnerships, investor interest) → **Attio** (as a company/person record) **+ Loops** (for email sequences). These are qualified leads.
+- Netlify Forms is the primary store for contact submissions (backup/notification). Loops and Attio are forwarded best-effort after the Netlify Form succeeds.
+
+### Environment variables (Netlify Dashboard)
+
+- `LOOPS_API_KEY` — Loops API key (used by `waitlist.ts` and `demo-enquiry.ts`)
+- `ATTIO_API_KEY` — Attio API key (used by `demo-enquiry.ts`)
+
+### Adding a new form
+
+1. Create the component in `src/components/`
+2. Create a Netlify Function in `netlify/functions/`
+3. Add a redirect in `netlify.toml` if using a clean `/api/` path
+4. Route to Loops and/or Attio per the rules above
+5. Document the form in this table
+
 ## Component Patterns
 
 - `RelatedContent` — reusable 3-column component for solution/industry pages accepting `solutions`, `articles`, and `resources` (external) arrays
 - `SolutionCTA` — call-to-action component for solution/industry pages
 - `SolutionHero`, `ProblemSection`, `SolutionSteps` — shared layout components
+- `WaitlistForm` — inline email capture (email + submit button) with loading/success/error states, honeypot spam protection
