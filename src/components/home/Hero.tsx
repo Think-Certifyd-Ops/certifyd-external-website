@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 import { WaitlistForm } from "@/components/ui/WaitlistForm";
 
 const VERIFICATION_FEED = [
@@ -187,29 +187,22 @@ export function Hero() {
               before the interview, before you let someone through the door.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-10 animate-slide-up animation-delay-400">
-              <Button variant="outline" size="lg" href="#how-it-works">
-                See how it works
-              </Button>
-              <Button
-                variant="ghost"
-                size="lg"
-                href="/contact/"
-                className="text-text-on-dark-muted hover:text-white"
-              >
-                Book a demo
-              </Button>
-            </div>
-
-            <div className="mt-8 animate-slide-up animation-delay-500">
-              <p className="text-xs font-heading text-text-on-dark-muted uppercase tracking-wider mb-3 text-center lg:text-left">
-                Or join the waitlist
-              </p>
+            <div className="mt-10 animate-slide-up animation-delay-400">
               <WaitlistForm className="flex justify-center lg:justify-start" />
-              <p className="text-xs text-text-on-dark-muted/60 mt-2 text-center lg:text-left">
+              <p className="text-xs text-text-on-dark-muted/60 mt-3 text-center lg:text-left">
                 No spam. Unsubscribe anytime.
               </p>
             </div>
+
+            <p className="text-sm text-text-on-dark-muted mt-6 text-center lg:text-left animate-slide-up animation-delay-500">
+              Already want a demo?{" "}
+              <Link
+                href="/contact/"
+                className="text-white underline underline-offset-4 decoration-white/30 hover:decoration-white transition-colors"
+              >
+                Book one here
+              </Link>
+            </p>
           </div>
 
           {/* Right — Dashboard */}
