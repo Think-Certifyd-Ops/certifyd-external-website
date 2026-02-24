@@ -65,7 +65,7 @@ export function WaitlistForm({ className }: { className?: string }) {
     <div className={className}>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col sm:flex-row gap-3 max-w-md"
+        className="flex flex-col sm:flex-row gap-3 max-w-lg"
       >
         {/* Honeypot — hidden from humans, filled by bots */}
         <input
@@ -95,7 +95,7 @@ export function WaitlistForm({ className }: { className?: string }) {
           disabled={status === "loading"}
           className="px-6 py-3 bg-certifyd-blue text-white rounded-sm font-heading font-medium text-sm hover:bg-certifyd-blue-light transition-colors disabled:opacity-50 whitespace-nowrap"
         >
-          {status === "loading" ? "Joining\u2026" : "Get early access"}
+          {status === "loading" ? "Joining\u2026" : "Join the waitlist"}
         </button>
       </form>
 

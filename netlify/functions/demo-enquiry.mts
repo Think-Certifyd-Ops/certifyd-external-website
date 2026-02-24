@@ -67,7 +67,7 @@ export default async (req: Request, _context: Context) => {
               data: {
                 values: {
                   email_addresses: [{ email_address: email }],
-                  name: [{ first_name: firstName || "", last_name: lastName || "" }],
+                  name: [{ full_name: `${firstName || ""} ${lastName || ""}`.trim(), first_name: firstName || "", last_name: lastName || "" }],
                   ...(role ? { job_title: [{ value: role }] } : {}),
                   ...(companyRecordId
                     ? { company: [{ target_object: "companies", target_record_id: companyRecordId }] }
@@ -108,7 +108,8 @@ export default async (req: Request, _context: Context) => {
                 parent_object: "companies",
                 parent_record_id: companyRecordId,
                 title: `Website enquiry — ${interest || source || "General"}`,
-                content_plaintext: noteLines,
+                format: "plaintext",
+                content: noteLines,
               },
             }),
           }).catch((err) => console.error("Attio note failed:", err));
