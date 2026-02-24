@@ -74,6 +74,23 @@ export function ContactForm() {
         })
           .then((res) => {
             if (res.ok) {
+              // Forward to Attio + Loops via Netlify Function (best-effort)
+              const name = formData.get("name") as string;
+              fetch("/.netlify/functions/demo-enquiry", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  email: formData.get("email"),
+                  firstName: name?.split(" ")[0] || "",
+                  lastName: name?.split(" ").slice(1).join(" ") || "",
+                  company: formData.get("company"),
+                  role: formData.get("role"),
+                  industry: formData.get("industry"),
+                  interest: formData.get("interest"),
+                  message: formData.get("message"),
+                  source: "contact-page",
+                }),
+              }).catch(() => {});
               setSubmitted(true);
             } else {
               console.error("Form submission failed:", res.status, res.statusText);

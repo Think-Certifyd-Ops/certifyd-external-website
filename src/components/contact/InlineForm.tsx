@@ -59,6 +59,21 @@ export function InlineForm({ source }: InlineFormProps) {
         })
           .then((res) => {
             if (res.ok) {
+              // Forward to Attio + Loops via Netlify Function (best-effort)
+              const name = formData.get("name") as string;
+              fetch("/.netlify/functions/demo-enquiry", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  email: formData.get("email"),
+                  firstName: name?.split(" ")[0] || "",
+                  lastName: name?.split(" ").slice(1).join(" ") || "",
+                  company: formData.get("company"),
+                  role: formData.get("role"),
+                  message: formData.get("message"),
+                  source,
+                }),
+              }).catch(() => {});
               setSubmitted(true);
             } else {
               console.error("Form submission failed:", res.status, res.statusText);
