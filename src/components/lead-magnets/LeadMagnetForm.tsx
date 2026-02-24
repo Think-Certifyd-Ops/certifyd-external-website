@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface LeadMagnetFormProps {
   /** Identifies which lead magnet this form is for */
   source: string;
-  /** URL to the PDF preview page for print-to-PDF */
+  /** URL to the PDF file for download */
   pdfUrl: string;
   /** Button label, e.g. "Download Checklist" */
   buttonLabel?: string;
@@ -19,6 +19,15 @@ export function LeadMagnetForm({
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const downloadTriggered = useRef(false);
+
+  // Auto-trigger PDF download once the form submits successfully
+  useEffect(() => {
+    if (submitted && !downloadTriggered.current) {
+      downloadTriggered.current = true;
+      window.open(pdfUrl, "_blank", "noopener,noreferrer");
+    }
+  }, [submitted, pdfUrl]);
 
   if (submitted) {
     return (
@@ -39,10 +48,10 @@ export function LeadMagnetForm({
           </svg>
         </div>
         <h3 className="font-heading text-xl font-bold text-text-on-dark mb-2">
-          Your download is ready
+          Your download should start automatically
         </h3>
         <p className="text-text-on-dark-muted text-sm mb-6">
-          We&apos;ve also sent a copy to your inbox.
+          We&apos;ve also sent a copy to your inbox. If the download didn&apos;t start, click below.
         </p>
         <a
           href={pdfUrl}
