@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { WaitlistForm } from "@/components/ui/WaitlistForm";
 
 const VERIFICATION_FEED = [
   {
@@ -198,6 +199,16 @@ export function Hero() {
               >
                 Book a demo
               </Button>
+            </div>
+
+            <div className="mt-8 animate-slide-up animation-delay-500">
+              <p className="text-xs font-heading text-text-on-dark-muted uppercase tracking-wider mb-3 text-center lg:text-left">
+                Or join the waitlist
+              </p>
+              <WaitlistForm className="flex justify-center lg:justify-start" />
+              <p className="text-xs text-text-on-dark-muted/60 mt-2 text-center lg:text-left">
+                No spam. Unsubscribe anytime.
+              </p>
             </div>
           </div>
 

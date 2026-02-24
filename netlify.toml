@@ -13,6 +13,12 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Content-Security-Policy = "frame-ancestors 'none'"
 
+# ── API → Netlify Functions ────────────────────────────────
+[[redirects]]
+  from = "/api/waitlist"
+  to = "/.netlify/functions/waitlist"
+  status = 200
+
 # ── Redirects ──────────────────────────────────────────────
 # Removed pages
 [[redirects]]

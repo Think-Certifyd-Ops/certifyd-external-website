@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import { WaitlistForm } from "@/components/ui/WaitlistForm";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const INDUSTRIES = [
@@ -90,6 +91,18 @@ export function HomeCTA() {
             <Button variant="outline" size="lg" href="/contact/">
               Book a demo
             </Button>
+          </div>
+
+          <div className="mt-8">
+            <p className="text-sm text-text-on-dark-muted mb-3">
+              Not ready to talk? Join the waitlist.
+            </p>
+            <div className="flex justify-center">
+              <WaitlistForm />
+            </div>
+            <p className="text-xs text-text-on-dark-muted/60 mt-2">
+              No spam. Unsubscribe anytime.
+            </p>
           </div>
         </ScrollReveal>
 
