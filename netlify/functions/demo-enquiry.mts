@@ -90,7 +90,7 @@ export default async (req: Request, _context: Context) => {
           attioPersonId = personData?.data?.id?.record_id || null;
           // Attio API doesn't return web_url — construct it from workspace slug + record ID
           attioPersonUrl = attioPersonId
-            ? `https://app.attio.com/${attioSlug}/objects/people/${attioPersonId}`
+            ? `https://app.attio.com/${attioSlug}/person/${attioPersonId}/overview`
             : null;
           results.attio_person = "ok";
         } else {

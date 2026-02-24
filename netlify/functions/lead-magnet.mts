@@ -85,7 +85,7 @@ export default async (req: Request, _context: Context) => {
           const personData = await personRes.json();
           const personId = personData?.data?.id?.record_id || null;
           attioPersonUrl = personId
-            ? `https://app.attio.com/${attioSlug}/objects/people/${personId}`
+            ? `https://app.attio.com/${attioSlug}/person/${personId}/overview`
             : null;
           results.attio_person = "ok";
         } else {

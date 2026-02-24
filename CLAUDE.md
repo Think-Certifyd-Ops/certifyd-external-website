@@ -99,7 +99,7 @@ All form submissions route through **Netlify Functions** (`.mts`, v2 format) —
 - Signature: `export default async (req: Request, _context: Context) => { ... }`
 - Env vars via `Netlify.env.get()` (not `process.env`)
 - `netlify/` is excluded from `tsconfig.json` — Netlify's bundler handles compilation
-- Attio person URLs are constructed (API doesn't return `web_url`): `https://app.attio.com/{slug}/objects/people/{record_id}`
+- Attio person URLs are constructed (API doesn't return `web_url`): `https://app.attio.com/{slug}/person/{record_id}/overview`
 
 ### Adding a new form
 
