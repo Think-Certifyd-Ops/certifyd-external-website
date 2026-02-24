@@ -20,8 +20,11 @@ export default async (req: Request, _context: Context) => {
     }
 
     const results: Record<string, string> = {};
+    let attioPersonId: string | null = null;
+    let attioPersonUrl: string | null = null;
+    let companyRecordId: string | null = null;
 
-    // ── Attio: Create company + person ──────────────────────
+    // ── Step 1: Attio — create company + person ─────────────
     if (attioApiKey) {
       try {
         // Create or update company
@@ -37,14 +40,16 @@ export default async (req: Request, _context: Context) => {
               data: {
                 values: {
                   name: [{ value: company }],
-                  ...(industry ? { description: [{ value: `Industry: ${industry}` }] } : {}),
+                  description: [{ value: [
+                    industry ? `Industry: ${industry}` : null,
+                    `Source: ${source || "website"}`,
+                  ].filter(Boolean).join(" | ") }],
                 },
               },
             }),
           }
         );
 
-        let companyRecordId: string | null = null;
         if (companyRes.ok) {
           const companyData = await companyRes.json();
           companyRecordId = companyData?.data?.id?.record_id || null;
@@ -54,7 +59,7 @@ export default async (req: Request, _context: Context) => {
           results.attio_company = "failed";
         }
 
-        // Create or update person
+        // Create or update person (description updated later with Loops ID)
         const personRes = await fetch(
           "https://api.attio.com/v2/objects/people/records?matching_attribute=email_addresses",
           {
@@ -79,6 +84,9 @@ export default async (req: Request, _context: Context) => {
         );
 
         if (personRes.ok) {
+          const personData = await personRes.json();
+          attioPersonId = personData?.data?.id?.record_id || null;
+          attioPersonUrl = personData?.data?.web_url || null;
           results.attio_person = "ok";
         } else {
           console.error("Attio person creation failed:", await personRes.text());
@@ -88,10 +96,10 @@ export default async (req: Request, _context: Context) => {
         // Add a note with the enquiry details
         if (companyRecordId) {
           const noteLines = [
-            `**Inbound enquiry** from ${firstName} ${lastName} (${email})`,
+            `Inbound enquiry from ${firstName} ${lastName} (${email})`,
             role ? `Role: ${role}` : null,
             interest ? `Interest: ${interest}` : null,
-            source ? `Source: ${source}` : null,
+            source ? `Form: ${source}` : null,
             message ? `\nMessage:\n${message}` : null,
           ]
             .filter(Boolean)
@@ -122,7 +130,9 @@ export default async (req: Request, _context: Context) => {
       results.attio = "not_configured";
     }
 
-    // ── Loops: Create contact ───────────────────────────────
+    // ── Step 2: Loops — create contact with Attio link ──────
+    let loopsContactId: string | null = null;
+
     if (loopsApiKey) {
       try {
         const loopsRes = await fetch("https://app.loops.so/api/v1/contacts/create", {
@@ -136,13 +146,19 @@ export default async (req: Request, _context: Context) => {
             firstName: firstName || undefined,
             lastName: lastName || undefined,
             company: company || undefined,
-            source: source || "website-demo",
+            source: source || "website",
+            // Custom properties — store Attio link on Loops contact
+            ...(attioPersonUrl ? { attioUrl: attioPersonUrl } : {}),
           }),
         });
 
-        results.loops = loopsRes.ok ? "ok" : "failed";
-        if (!loopsRes.ok) {
+        if (loopsRes.ok) {
+          const loopsData = await loopsRes.json();
+          loopsContactId = loopsData?.id || null;
+          results.loops = "ok";
+        } else {
           console.error("Loops contact creation failed:", await loopsRes.text());
+          results.loops = "failed";
         }
       } catch (err) {
         console.error("Loops integration error:", err);
@@ -150,6 +166,34 @@ export default async (req: Request, _context: Context) => {
       }
     } else {
       results.loops = "not_configured";
+    }
+
+    // ── Step 3: Update Attio person description with cross-links ──
+    if (attioApiKey && attioPersonId) {
+      const descParts = [
+        `Form: ${source || "website"}`,
+        interest ? interest : null,
+        loopsContactId ? `Loops ID: ${loopsContactId}` : null,
+        `Loops: https://app.loops.so/contacts?search=${encodeURIComponent(email)}`,
+      ].filter(Boolean).join(" | ");
+
+      await fetch(
+        `https://api.attio.com/v2/objects/people/records/${attioPersonId}`,
+        {
+          method: "PATCH",
+          headers: {
+            Authorization: `Bearer ${attioApiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            data: {
+              values: {
+                description: [{ value: descParts }],
+              },
+            },
+          }),
+        }
+      ).catch((err) => console.error("Attio person update failed:", err));
     }
 
     return new Response(JSON.stringify({ ok: true, results }), {
