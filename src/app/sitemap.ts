@@ -76,6 +76,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Partners
+    {
+      url: `${BASE_URL}/partners`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
     // Blog index
     {
       url: `${BASE_URL}/blog`,

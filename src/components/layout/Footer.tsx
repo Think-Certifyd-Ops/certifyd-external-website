@@ -21,6 +21,7 @@ const companyLinks = [
   { label: "Contact", href: "/contact/" },
   { label: "Security", href: "/security/" },
   { label: "Careers", href: "/careers/" },
+  { label: "Partners", href: "/partners/" },
 ];
 
 const gettingStartedLinks = [
@@ -47,6 +48,14 @@ export function Footer() {
             <p className="mt-4 text-sm leading-relaxed text-text-on-dark-muted">
               {COMPANY.tagline}
             </p>
+            <Link href="/partners/" className="mt-6 inline-block">
+              <img
+                src="/logos/partners/nvidia-inception.png"
+                alt="NVIDIA Inception Programme Member"
+                className="h-12 w-auto rounded opacity-70 transition-opacity hover:opacity-100"
+                style={{ filter: "brightness(0.9) invert(1)" }}
+              />
+            </Link>
           </div>
 
           {/* Column 2: Solutions */}
