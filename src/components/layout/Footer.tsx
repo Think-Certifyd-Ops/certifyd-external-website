@@ -53,7 +53,6 @@ export function Footer() {
                 src="/logos/partners/nvidia-inception.png"
                 alt="NVIDIA Inception Programme Member"
                 className="h-12 w-auto rounded opacity-70 transition-opacity hover:opacity-100"
-                style={{ filter: "brightness(0.9) invert(1)" }}
               />
             </Link>
           </div>
