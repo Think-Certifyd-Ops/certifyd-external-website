@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const steps = [
   "Register your organisation and set up your admin account",
-  "Invite team members \u2014 they\u2019ll register their own devices with passkeys",
+  "Invite team members \u2014 they\u2019ll register their own devices with verified credentials",
   "Configure your compliance requirements and verification policies",
   "Your first audit report is ready. Real-time visibility from day one.",
 ];

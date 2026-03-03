@@ -15,11 +15,11 @@ export const SCENARIO_PAGES: ForPage[] = [
     badge: "Online Dating",
     headline: "You\u2019ve Swiped Right. But Who Are They Really?",
     subtitle:
-      "Online dating profiles can be fabricated with stolen photos, AI-generated faces, and invented biographies. Certifyd lets you verify the other person\u2019s identity before you meet \u2014 cryptographically, not just visually.",
+      "Online dating profiles can be fabricated with stolen photos, AI-generated faces, and invented biographies. Certifyd lets you verify the other person\u2019s identity before you meet \u2014 through verified credentials, not just profile photos.",
     heroGraphic: "qr-scan",
     heroCard: { name: "Jessica Taylor", secondaryLabel: "Status", secondaryValue: "Identity Verified" },
     searchIntentParagraph:
-      "Identity verification for online dating with Certifyd provides cryptographic proof that the person behind the profile is real. Dating apps rely on photo verification, phone number linking, and social media connections \u2014 all of which can be faked with AI-generated images, burner phones, and fake accounts. Certifyd\u2019s device-bound authentication ties a person\u2019s identity to their physical device through a WebAuthn passkey. Before meeting someone in person, you can request mutual Certifyd verification. If they can\u2019t verify, the profile isn\u2019t what it seems.",
+      "Identity verification for online dating with Certifyd confirms the person behind the profile is real through document-verified identity. Dating apps rely on photo verification, phone number linking, and social media connections \u2014 all of which can be faked with AI-generated images, burner phones, and fake accounts. Certifyd ties a person\u2019s verified identity to their registered device through secure biometric authentication. Before meeting someone in person, you can request mutual Certifyd verification. If they can\u2019t verify, the profile isn\u2019t what it seems.",
     stats: [
       { value: "10M+", label: "UK adults use online dating" },
       { value: "\u00a331M", label: "annual UK romance scam losses" },
@@ -28,7 +28,7 @@ export const SCENARIO_PAGES: ForPage[] = [
     whyItMatters: [
       "Over 10 million UK adults use online dating apps. Most have had the experience of arriving at a date only to find the person looks nothing like their photos. At the mild end, this is catfishing \u2014 misleading photos and embellished profiles. At the serious end, it\u2019s criminal fraud, with romance scams costing UK victims over \u00a331 million annually.",
       "Dating apps have introduced photo verification, video calls, and social media linking to combat fake profiles. But AI-generated photos now pass photo verification checks. Deepfake video calls can impersonate anyone in real time. And fake social media accounts are trivially easy to create. The verification methods that apps use are being outpaced by the technology that fakers use.",
-      "Certifyd provides a fundamentally stronger verification: device-bound cryptographic identity. The person\u2019s identity is tied to their physical phone through a passkey. No AI can generate a passkey. No catfish can borrow someone else\u2019s device. Before meeting someone, you can request mutual Certifyd verification. Both parties prove their identity cryptographically. It\u2019s the difference between trusting a profile picture and trusting a cryptographic proof.",
+      "Certifyd provides a fundamentally stronger verification: document-verified, device-linked identity. The person\u2019s identity is verified against their official documents and tied to their physical phone. No AI can replicate a verified credential. No catfish can borrow someone else\u2019s device. Before meeting someone, you can request mutual Certifyd verification. Both parties prove their identity through their registered device. It\u2019s the difference between trusting a profile picture and confirming a verified identity.",
     ],
     problems: [
       "AI-generated profile photos now pass dating app photo verification checks.",
@@ -38,8 +38,8 @@ export const SCENARIO_PAGES: ForPage[] = [
     ],
     steps: [
       "Before meeting, both people open Certifyd and request mutual verification",
-      "Each person completes a device-bound passkey authentication on their registered phone",
-      "Both identities are cryptographically confirmed \u2014 real people, real devices, real names",
+      "Each person completes identity verification on their registered phone",
+      "Both identities are verified \u2014 real people, real devices, real names",
       "A verification record is created, and both parties know who they\u2019re actually meeting",
     ],
     faqs: [
@@ -51,7 +51,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       {
         question: "Don\u2019t dating apps already verify profiles?",
         answer:
-          "Some dating apps offer photo verification (comparing a selfie to profile photos) or phone number linking. But AI-generated photos can match selfie prompts, phone numbers can be spoofed with burner SIMs, and social media accounts can be fabricated. These measures verify surface-level signals, not identity. Certifyd uses device-bound cryptographic authentication \u2014 a fundamentally stronger proof that the person is who they claim to be.",
+          "Some dating apps offer photo verification (comparing a selfie to profile photos) or phone number linking. But AI-generated photos can match selfie prompts, phone numbers can be spoofed with burner SIMs, and social media accounts can be fabricated. These measures verify surface-level signals, not identity. Certifyd uses device-verified identity authentication \u2014 a fundamentally stronger proof that the person is who they claim to be.",
       },
       {
         question: "Is this just for first dates?",
@@ -61,7 +61,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       {
         question: "Could dating apps integrate Certifyd?",
         answer:
-          "Yes. Dating platforms could offer Certifyd verification as a trust badge on profiles \u2014 visible proof that a user has completed device-bound cryptographic identity verification. This is fundamentally more trustworthy than existing verification methods. For platforms competing on user safety, Certifyd integration would provide the strongest identity assurance available.",
+          "Yes. Dating platforms could offer Certifyd verification as a trust badge on profiles \u2014 visible proof that a user has completed document-verified, device-linked identity verification. This is fundamentally more trustworthy than existing verification methods. For platforms competing on user safety, Certifyd integration would provide the strongest identity assurance available.",
       },
     ],
     alsoRelevant: [
@@ -107,7 +107,7 @@ export const SCENARIO_PAGES: ForPage[] = [
     heroGraphic: "qr-scan",
     heroCard: { name: "Michael Shaw", secondaryLabel: "Agency", secondaryValue: "Shaw Properties" },
     searchIntentParagraph:
-      "Identity verification for estate agent viewings protects both the agent and the viewer. Certifyd uses bi-directional authentication \u2014 both parties cryptographically prove their identity to each other before or at the point of meeting. The estate agent confirms the viewer is who they booked as, and the viewer confirms the agent is genuinely from the estate agency. This creates a verified meeting record: who met whom, when, and where \u2014 critical for personal safety and professional accountability.",
+      "Identity verification for estate agent viewings protects both the agent and the viewer. Certifyd uses bi-directional authentication \u2014 both parties verifiably prove their identity to each other before or at the point of meeting. The estate agent confirms the viewer is who they booked as, and the viewer confirms the agent is genuinely from the estate agency. This creates a verified meeting record: who met whom, when, and where \u2014 critical for personal safety and professional accountability.",
     stats: [
       { value: "1.2M", label: "UK property transactions annually" },
       { value: "85%", label: "of viewings are conducted by lone agents" },
@@ -116,7 +116,7 @@ export const SCENARIO_PAGES: ForPage[] = [
     whyItMatters: [
       "Estate agents are classic lone workers. They meet unknown people in empty properties, often alone, multiple times per day. The viewer booked online or by phone \u2014 the agent knows their name and nothing else. The risk is real: agents have been assaulted, robbed, and worse during viewings. The National Association of Estate Agents has repeatedly highlighted personal safety as a sector concern.",
       "The risk runs both ways. Viewers also meet strangers claiming to be estate agents in properties they don\u2019t own. Fake estate agent scams \u2014 where criminals impersonate agents to collect deposits or gain access to properties \u2014 are a growing problem. The viewer has no way to verify that the person with the keys genuinely works for the agency.",
-      "Certifyd\u2019s bi-directional verification solves both sides. Before the viewing, both parties verify through their device-bound passkeys. The agent confirms the viewer\u2019s identity. The viewer confirms the agent is a genuine, current member of the estate agency. A verification record is created for every viewing. For agents, this is both a safety tool and a professional differentiator.",
+      "Certifyd\u2019s bi-directional verification solves both sides. Before the viewing, both parties verify through their device-verified verified credentials. The agent confirms the viewer\u2019s identity. The viewer confirms the agent is a genuine, current member of the estate agency. A verification record is created for every viewing. For agents, this is both a safety tool and a professional differentiator.",
     ],
     problems: [
       "Agents meet unknown people alone in empty properties with no independent identity verification.",
@@ -126,9 +126,9 @@ export const SCENARIO_PAGES: ForPage[] = [
     ],
     steps: [
       "Before the viewing, both the agent and the viewer open Certifyd and verify through their devices",
-      "The agent\u2019s identity and agency membership are cryptographically confirmed to the viewer",
-      "The viewer\u2019s identity is cryptographically confirmed to the agent",
-      "A tamper-proof record is created: who met whom, when, and at which property",
+      "The agent\u2019s identity and agency membership are verified and confirmed to the viewer",
+      "The viewer\u2019s identity is verified and confirmed to the agent",
+      "An auditable record is created: who met whom, when, and at which property",
     ],
     testimonial: {
       quote:
@@ -139,7 +139,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       {
         question: "How does Certifyd protect estate agents during viewings?",
         answer:
-          "Certifyd verifies the viewer\u2019s identity before the viewing begins. The agent knows exactly who they\u2019re meeting, with a cryptographic record of the viewer\u2019s verified identity. If a viewer can\u2019t or won\u2019t verify, the agent has grounds to refuse the viewing or bring a colleague. Every viewing creates a tamper-proof record of who was present \u2014 a deterrent against bad actors and evidence if an incident occurs.",
+          "Certifyd verifies the viewer\u2019s identity before the viewing begins. The agent knows exactly who they\u2019re meeting, with a verified record of the viewer\u2019s verified identity. If a viewer can\u2019t or won\u2019t verify, the agent has grounds to refuse the viewing or bring a colleague. Every viewing creates an auditable record of who was present \u2014 a deterrent against bad actors and evidence if an incident occurs.",
       },
       {
         question: "How does it protect property viewers?",
@@ -149,7 +149,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       {
         question: "Can estate agencies use Certifyd across their team?",
         answer:
-          "Yes. The estate agency registers as an Organisation on Certifyd and adds each agent as a member. When any agent conducts a viewing, they verify through their device-bound identity, confirming they are a current member of the agency. This works across branches, teams, and individual agents \u2014 providing a consistent verification standard for every viewing.",
+          "Yes. The estate agency registers as an Organisation on Certifyd and adds each agent as a member. When any agent conducts a viewing, they verify through their device-verified identity, confirming they are a current member of the agency. This works across branches, teams, and individual agents \u2014 providing a consistent verification standard for every viewing.",
       },
       {
         question: "Is this practical for multiple viewings per day?",
@@ -200,7 +200,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       "Short-term rental hosts give strangers access to their homes. Guests enter properties owned by strangers. Certifyd verifies both parties\u2019 identity before the keys change hands.",
     heroCard: { name: "Chris Walker", secondaryLabel: "Property", secondaryValue: "14 Marine Terrace, Brighton", context: "Check-in verified: 3:00 PM" },
     searchIntentParagraph:
-      "Identity verification for short-term rentals with Certifyd provides cryptographic proof that both the host and the guest are who they claim to be. Platform verification checks that an account exists \u2014 it doesn\u2019t verify who actually shows up at the property. Certifyd uses bi-directional, device-bound authentication: both parties verify through their registered devices at the point of check-in. The host knows the guest\u2019s verified identity before handing over keys. The guest knows the host is the legitimate property owner. Every stay creates a tamper-proof record.",
+      "Identity verification for short-term rentals with Certifyd provides verified identity that both the host and the guest are who they claim to be. Platform verification checks that an account exists \u2014 it doesn\u2019t verify who actually shows up at the property. Certifyd uses bi-directional, device-verified authentication: both parties verify through their registered devices at the point of check-in. The host knows the guest\u2019s verified identity before handing over keys. The guest knows the host is the legitimate property owner. Every stay creates an auditable record.",
     stats: [
       { value: "300K+", label: "UK short-term rental listings" },
       { value: "\u00a35.4B", label: "UK short-term rental market value" },
@@ -209,7 +209,7 @@ export const SCENARIO_PAGES: ForPage[] = [
     whyItMatters: [
       "The UK short-term rental market has grown to over 300,000 listings worth \u00a35.4 billion annually. Hosts routinely hand keys to strangers they\u2019ve never met, giving them unsupervised access to their property, belongings, and neighbours. Guests enter properties owned by strangers, trusting that the listing is legitimate and the host is who they claim to be.",
       "Platform verification on Airbnb, Booking.com, and similar sites checks that an account holder provided a government ID at some point. It does not verify that the person who arrives at the property is the account holder. Accounts can be shared, borrowed, or created with fraudulent documents. Reviews belong to the account, not the person. A five-star account may have changed hands without the platform knowing.",
-      "For hosts, Certifyd verifies the guest\u2019s identity at check-in through device-bound authentication. For guests, it verifies the host or the host\u2019s representative is a genuine, authorised person. This mutual verification creates trust that platform reviews alone cannot provide \u2014 and a tamper-proof record of who stayed at the property, which is increasingly important for insurance claims, neighbour disputes, and regulatory compliance.",
+      "For hosts, Certifyd verifies the guest\u2019s identity at check-in through device-verified authentication. For guests, it verifies the host or the host\u2019s representative is a genuine, authorised person. This mutual verification creates trust that platform reviews alone cannot provide \u2014 and an auditable record of who stayed at the property, which is increasingly important for insurance claims, neighbour disputes, and regulatory compliance.",
     ],
     problems: [
       "Hosts hand keys to strangers whose identity is verified by a platform account, not in person.",
@@ -219,15 +219,15 @@ export const SCENARIO_PAGES: ForPage[] = [
     ],
     steps: [
       "Before check-in, both host and guest open Certifyd and verify through their registered devices",
-      "Each person\u2019s identity is cryptographically confirmed \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is verified and confirmed \u2014 bi-directional, not one-way",
       "The host sees the guest\u2019s verified identity; the guest sees the host\u2019s verified identity",
-      "A tamper-proof record is created: who checked in, when, and at which property",
+      "A auditable record is created: who checked in, when, and at which property",
     ],
     faqs: [
       {
         question: "How does Certifyd work with self-check-in?",
         answer:
-          "For self-check-in properties (key boxes, smart locks), the guest can verify through Certifyd before receiving the access code. The host sends the code only after the guest\u2019s identity has been cryptographically confirmed. This provides the convenience of self-check-in with the security of identity verification. The host knows who has their access code without needing to be physically present.",
+          "For self-check-in properties (key boxes, smart locks), the guest can verify through Certifyd before receiving the access code. The host sends the code only after the guest\u2019s identity has been verified and confirmed. This provides the convenience of self-check-in with the security of identity verification. The host knows who has their access code without needing to be physically present.",
       },
       {
         question: "Does this replace Airbnb\u2019s own verification?",
@@ -242,7 +242,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       {
         question: "Is this useful for insurance and disputes?",
         answer:
-          "Yes. Short-term rental insurance claims and neighbour disputes often hinge on who was actually staying at the property. Certifyd\u2019s tamper-proof verification records provide evidence that a specific, identified person was present at a specific time. This is stronger evidence than a platform booking confirmation (which shows who booked, not who stayed).",
+          "Yes. Short-term rental insurance claims and neighbour disputes often hinge on who was actually staying at the property. Certifyd\u2019s auditable verification records provide evidence that a specific, identified person was present at a specific time. This is stronger evidence than a platform booking confirmation (which shows who booked, not who stayed).",
       },
     ],
     alsoRelevant: [
@@ -287,7 +287,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       "Nannies and au pairs have unsupervised access to your children, your home, and your family\u2019s routine. Certifyd verifies their identity and agency affiliation \u2014 not just on day one, but every day.",
     heroCard: { name: "Anna Kovacs", secondaryLabel: "Agency", secondaryValue: "Little Ones Nanny Agency", context: "Arrival verified: 8:00 AM" },
     searchIntentParagraph:
-      "Identity verification for nannies and au pairs addresses one of the highest-trust relationships in domestic life. Certifyd uses bi-directional authentication \u2014 both the family and the nanny or au pair cryptographically prove their identity to each other. When the nanny arrives, the system verifies not just who they are, but that they hold an active membership with the agency that placed them (if applicable) and are the specific person the family authorised. The result is a tamper-proof, auditable record of every arrival \u2014 proof of who was with your children.",
+      "Identity verification for nannies and au pairs addresses one of the highest-trust relationships in domestic life. Certifyd uses bi-directional authentication \u2014 both the family and the nanny or au pair verifiably prove their identity to each other. When the nanny arrives, the system verifies not just who they are, but that they hold an active membership with the agency that placed them (if applicable) and are the specific person the family authorised. The result is an auditable, auditable record of every arrival \u2014 proof of who was with your children.",
     stats: [
       { value: "120K+", label: "nannies working in the UK" },
       { value: "0", label: "mandatory registration or licensing for nannies" },
@@ -296,7 +296,7 @@ export const SCENARIO_PAGES: ForPage[] = [
     whyItMatters: [
       "Nannying is entirely unregulated in the UK. There is no mandatory register of nannies, no licensing requirement, and no legal obligation for identity verification beyond basic right-to-work checks. Ofsted\u2019s voluntary register for nannies is exactly that \u2014 voluntary. The 120,000+ nannies working in UK homes do so without any regulatory oversight of their identity or background beyond what individual families choose to check.",
       "Au pairs add a further dimension. They are typically young people from overseas, placed through agencies or informal arrangements. Their visa status, identity documents, and background may be unfamiliar to UK families. The agency that placed them verified their identity at some point \u2014 but the family has no independent way to confirm that the person who arrived is the person the agency verified.",
-      "Families trust nannies and au pairs with the most precious thing they have. This relationship is built on an identity that has often been verified by nothing more rigorous than a phone interview, a reference check (which can be fabricated), and a DBS check (which is point-in-time). Certifyd adds cryptographic identity verification: the nanny\u2019s identity is device-bound, their agency membership (if applicable) is confirmed in real time, and every arrival creates a verifiable record.",
+      "Families trust nannies and au pairs with the most precious thing they have. This relationship is built on an identity that has often been verified by nothing more rigorous than a phone interview, a reference check (which can be fabricated), and a DBS check (which is point-in-time). Certifyd adds verified identity verification: the nanny\u2019s identity is device-verified, their agency membership (if applicable) is confirmed in real time, and every arrival creates a verifiable record.",
     ],
     problems: [
       "Nannying is unregulated \u2014 no licensing, no mandatory register, no formal identity verification.",
@@ -305,10 +305,10 @@ export const SCENARIO_PAGES: ForPage[] = [
       "When incidents occur, there\u2019s no verifiable record of who was with the children and when.",
     ],
     steps: [
-      "Nanny or au pair registers on Certifyd, creating a device-bound identity (via agency or directly)",
+      "Nanny or au pair registers on Certifyd, creating a device-verified identity (via agency or directly)",
       "Each day, the nanny verifies through their device upon arrival at the family\u2019s home",
-      "The family receives cryptographic confirmation of the nanny\u2019s identity and agency affiliation",
-      "A tamper-proof record is created for every visit: who arrived, when, and under whose authority",
+      "The family receives verified confirmation of the nanny\u2019s identity and agency affiliation",
+      "A auditable record is created for every visit: who arrived, when, and under whose authority",
     ],
     testimonial: {
       quote:
@@ -319,7 +319,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       {
         question: "Are nannies required to be registered in the UK?",
         answer:
-          "No. Unlike childminders (who must register with Ofsted), nannies have no mandatory registration requirement in England. Ofsted offers a voluntary register, but participation is low. This means families have no regulatory framework to verify a nanny\u2019s identity or background beyond their own private checks. Certifyd fills this gap with device-bound identity verification that works regardless of regulatory status.",
+          "No. Unlike childminders (who must register with Ofsted), nannies have no mandatory registration requirement in England. Ofsted offers a voluntary register, but participation is low. This means families have no regulatory framework to verify a nanny\u2019s identity or background beyond their own private checks. Certifyd fills this gap with device-verified identity verification that works regardless of regulatory status.",
       },
       {
         question: "How does Certifyd work with nanny agencies?",
@@ -329,7 +329,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       {
         question: "Can Certifyd verify au pairs from overseas?",
         answer:
-          "Yes. Certifyd verifies identity through device-bound authentication, which works regardless of nationality or country of origin. The au pair registers their device and creates a cryptographic identity. Their agency membership (if placed through an agency) is confirmed in real time. This provides the family with verified identity assurance that doesn\u2019t depend on their ability to authenticate foreign identity documents.",
+          "Yes. Certifyd verifies identity through device-verified authentication, which works regardless of nationality or country of origin. The au pair registers their device and creates a verified identity. Their agency membership (if placed through an agency) is confirmed in real time. This provides the family with verified identity assurance that doesn\u2019t depend on their ability to authenticate foreign identity documents.",
       },
       {
         question: "Is daily verification really necessary?",

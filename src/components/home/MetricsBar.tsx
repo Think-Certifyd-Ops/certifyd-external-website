@@ -72,7 +72,7 @@ export function MetricsBar() {
               {[
                 { icon: "shield", label: "GDPR Compliant" },
                 { icon: "server", label: "UK Data Residency" },
-                { icon: "lock", label: "Tamper-Proof Records" },
+                { icon: "lock", label: "Auditable Records" },
                 { icon: "clipboard", label: "Audit-Ready" },
               ].map((badge) => (
                 <div

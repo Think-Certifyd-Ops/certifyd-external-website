@@ -11,15 +11,15 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     title: "Certifyd for Right-to-Work Checks",
     metaTitle: "Right-to-Work Identity Verification | Certifyd",
     metaDescription:
-      "Right-to-work checks that go beyond photocopied passports. Verify identity cryptographically and stay audit-ready for the Fair Work Agency.",
+      "Right-to-work checks that go beyond photocopied passports. Verify identity verifiably and stay audit-ready for the Fair Work Agency.",
     badge: "Right to Work",
     headline: "A Photocopied Passport Is Not Proof. It Never Was.",
     subtitle:
-      "Right-to-work checks require verifying a person\u2019s identity and immigration status. Certifyd adds cryptographic proof that the person presenting is the document holder \u2014 and creates audit-ready records.",
+      "Right-to-work checks require verifying a person\u2019s identity and immigration status. Certifyd adds verified identity that the person presenting is the document holder \u2014 and creates audit-ready records.",
     heroGraphic: "compliance-dash",
     heroCard: { name: "Laura Mitchell", secondaryLabel: "Role", secondaryValue: "HR Director" },
     searchIntentParagraph:
-      "Right-to-work identity verification with Certifyd goes beyond document checks. The current system \u2014 examining a passport or share code and keeping a copy on file \u2014 proves a document exists, not that the person presenting it is the document holder. Certifyd adds a cryptographic identity layer: the worker\u2019s identity is device-bound through a passkey, verified in real time, and linked to their right-to-work documentation. The result is tamper-proof verification records that prove not just that a check was done, but that the verified person is who they claim to be.",
+      "Right-to-work identity verification with Certifyd goes beyond document checks. The current system \u2014 examining a passport or share code and keeping a copy on file \u2014 proves a document exists, not that the person presenting it is the document holder. Certifyd adds a verified identity layer: the worker\u2019s identity is device-verified through a verified credential, verified in real time, and linked to their right-to-work documentation. The result is auditable verification records that prove not just that a check was done, but that the verified person is who they claim to be.",
     stats: [
       { value: "\u00a360K", label: "maximum penalty per illegal worker" },
       { value: "Apr 2026", label: "Fair Work Agency launches" },
@@ -28,7 +28,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     whyItMatters: [
       "UK employers are legally required to conduct right-to-work checks on every employee before they start work. The prescribed process involves examining original documents (passport, biometric residence permit, or share code) and keeping a dated copy. Failure to conduct these checks can result in civil penalties of up to \u00a360,000 per illegal worker under the Immigration, Asylum and Nationality Act 2006, and potential criminal prosecution.",
       "But the current system has a fundamental flaw: a photocopied passport proves that a passport was photocopied. It does not prove that the person who presented it is the passport holder. Names can be borrowed, documents can be shared, and biometric residence permits can be presented by the wrong person. The \u2018statutory excuse\u2019 \u2014 that you conducted the check in good faith \u2014 requires reasonable checks, not just paperwork.",
-      "The Fair Work Agency, launching in April 2026, will consolidate enforcement powers from HMRC, the Gangmasters and Labour Abuse Authority, and the Employment Agency Standards Inspectorate. It will have enhanced powers to enter any business and demand evidence of compliance. Certifyd creates tamper-proof verification records that go beyond the current standard: each check is linked to a device-bound, cryptographically verified identity that cannot be forged, shared, or transferred.",
+      "The Fair Work Agency, launching in April 2026, will consolidate enforcement powers from HMRC, the Gangmasters and Labour Abuse Authority, and the Employment Agency Standards Inspectorate. It will have enhanced powers to enter any business and demand evidence of compliance. Certifyd creates auditable verification records that go beyond the current standard: each check is linked to a device-verified, document-verified identity that cannot be forged, shared, or transferred.",
     ],
     problems: [
       "Photocopied passports prove a document was examined, not that the presenter is the document holder.",
@@ -37,10 +37,10 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       "The Fair Work Agency will demand stronger evidence than filing cabinets of photocopied documents.",
     ],
     steps: [
-      "Worker registers their device with Certifyd, creating a cryptographic identity bound to their phone",
+      "Worker registers their device with Certifyd, creating a verified identity bound to their phone",
       "Right-to-work documentation is linked to their verified identity \u2014 not just filed in a drawer",
       "At each assignment or employment event, the worker\u2019s identity is re-verified in real time through their device",
-      "A tamper-proof audit record is created: who was verified, when, how, and linked to which documentation",
+      "A auditable audit record is created: who was verified, when, how, and linked to which documentation",
     ],
     testimonial: {
       quote:
@@ -51,22 +51,22 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       {
         question: "Does Certifyd replace the right-to-work check?",
         answer:
-          "No. Employers must still examine the prescribed documents (passport, BRP, or digital share code) as required by law. Certifyd adds an identity verification layer on top: it confirms that the person presenting the documents is who they claim to be, through device-bound cryptographic authentication. This strengthens the statutory excuse by demonstrating that the employer took additional steps to verify identity, not just documents.",
+          "No. Employers must still examine the prescribed documents (passport, BRP, or digital share code) as required by law. Certifyd adds an identity verification layer on top: it confirms that the person presenting the documents is who they claim to be, through device-verified identity authentication. This strengthens the statutory excuse by demonstrating that the employer took additional steps to verify identity, not just documents.",
       },
       {
         question: "What changes with the Fair Work Agency in April 2026?",
         answer:
-          "The Fair Work Agency consolidates enforcement powers from multiple bodies into a single agency with enhanced inspection and penalty powers. It will be able to enter any business and demand evidence of right-to-work compliance for every worker. Businesses that can provide tamper-proof, per-worker verification records will be significantly better positioned than those relying on traditional document-based processes.",
+          "The Fair Work Agency consolidates enforcement powers from multiple bodies into a single agency with enhanced inspection and penalty powers. It will be able to enter any business and demand evidence of right-to-work compliance for every worker. Businesses that can provide auditable, per-worker verification records will be significantly better positioned than those relying on traditional document-based processes.",
       },
       {
         question: "How does Certifyd handle share code verification?",
         answer:
-          "Share codes are generated through the Home Office\u2019s online service and verify a person\u2019s immigration status. Certifyd complements this by verifying the identity of the person using the share code \u2014 confirming through device-bound authentication that they are who they claim to be. The share code proves right to work; Certifyd proves the person is who they say they are. Together, they provide stronger assurance than either alone.",
+          "Share codes are generated through the Home Office\u2019s online service and verify a person\u2019s immigration status. Certifyd complements this by verifying the identity of the person using the share code \u2014 confirming through device-verified authentication that they are who they claim to be. The share code proves right to work; Certifyd proves the person is who they say they are. Together, they provide stronger assurance than either alone.",
       },
       {
         question: "What about repeat checks for time-limited permissions?",
         answer:
-          "Workers with time-limited right to work (visas, graduate visas, pre-settled status) require follow-up checks before their permission expires. Certifyd creates a timeline of verification events linked to the worker\u2019s cryptographic identity, making it easy to demonstrate that follow-up checks were conducted on the correct person at the correct time. Each re-verification is a new tamper-proof record in the audit trail.",
+          "Workers with time-limited right to work (visas, graduate visas, pre-settled status) require follow-up checks before their permission expires. Certifyd creates a timeline of verification events linked to the worker\u2019s verified identity, making it easy to demonstrate that follow-up checks were conducted on the correct person at the correct time. Each re-verification is a new auditable record in the audit trail.",
       },
     ],
     alsoRelevant: [
@@ -110,15 +110,15 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     title: "Certifyd for FWA Compliance",
     metaTitle: "Fair Work Agency Compliance | Certifyd",
     metaDescription:
-      "The Fair Work Agency launches April 2026 with walk-in audit powers. Get audit-ready with tamper-proof identity verification records from Certifyd.",
+      "The Fair Work Agency launches April 2026 with walk-in audit powers. Get audit-ready with verifiable identity verification records from Certifyd.",
     badge: "FWA Compliance",
     headline: "They Can Walk In. Can You Pass the Audit?",
     subtitle:
-      "The Fair Work Agency launches April 2026 with the power to inspect any UK business. Certifyd gives you tamper-proof verification records that demonstrate compliance on demand.",
+      "The Fair Work Agency launches April 2026 with the power to inspect any UK business. Certifyd gives you auditable verification records that demonstrate compliance on demand.",
     heroGraphic: "compliance-dash",
     heroCard: { name: "Sarah Bennett", secondaryLabel: "Role", secondaryValue: "Compliance Manager" },
     searchIntentParagraph:
-      "Fair Work Agency compliance requires businesses to demonstrate verifiable identity and right-to-work checks for every worker. Certifyd creates the evidence trail the FWA will demand: tamper-proof verification records linking each worker\u2019s cryptographically verified identity to their right-to-work status, employment relationship, and every assignment or shift. Unlike photocopied documents in filing cabinets, Certifyd records cannot be backdated, fabricated, or altered. They provide the kind of audit-ready evidence that withstands regulatory scrutiny.",
+      "Fair Work Agency compliance requires businesses to demonstrate verifiable identity and right-to-work checks for every worker. Certifyd creates the evidence trail the FWA will demand: auditable verification records linking each worker\u2019s document-verified identity to their right-to-work documentation, employment relationship, and every assignment or shift. Unlike photocopied documents in filing cabinets, Certifyd records are timestamped, device-linked, and independently verifiable. They provide the kind of audit-ready evidence that withstands regulatory scrutiny.",
     stats: [
       { value: "Apr 2026", label: "Fair Work Agency launches" },
       { value: "\u00a360K", label: "maximum penalty per illegal worker" },
@@ -127,7 +127,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     whyItMatters: [
       "The Fair Work Agency represents the most significant change to UK employment enforcement in decades. It consolidates powers from HMRC\u2019s National Minimum Wage team, the Gangmasters and Labour Abuse Authority (GLAA), and the Employment Agency Standards Inspectorate into a single body with enhanced inspection, enforcement, and penalty powers.",
       "The FWA will have the authority to enter any business premises \u2014 not just those in traditionally regulated sectors. Butchers, dog groomers, tech startups, and law firms will all be within scope. The FWA can demand evidence of right-to-work checks for every person working on the premises, including agency workers, contractors, and casual staff. The burden of proof falls on the employer.",
-      "Current compliance practices \u2014 photocopied passports filed in cabinets, Excel spreadsheets of check dates, scanned share code confirmations \u2014 were designed for a less rigorous enforcement environment. The FWA will expect better. Certifyd provides tamper-proof, cryptographically verified records that prove not just that a check was done, but that the specific person was verified through their device-bound identity at a specific time and place. This is the difference between compliance on paper and compliance in practice.",
+      "Current compliance practices \u2014 photocopied passports filed in cabinets, Excel spreadsheets of check dates, scanned share code confirmations \u2014 were designed for a less rigorous enforcement environment. The FWA will expect better. Certifyd provides auditable, document-verified records that prove not just that a check was done, but that the specific person was verified against their identity documents at a specific time. This is the difference between compliance on paper and compliance in practice.",
     ],
     problems: [
       "The FWA can enter any business and demand compliance evidence \u2014 not just traditionally regulated sectors.",
@@ -137,9 +137,9 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     ],
     steps: [
       "Register your organisation on Certifyd and add each employee and worker as a member",
-      "Each worker\u2019s identity is cryptographically bound to their device through a passkey",
+      "Each worker\u2019s identity is verified against their documents and linked to their registered device",
       "Right-to-work status is linked to their verified identity, not just filed as a document",
-      "Every verification event creates a tamper-proof audit record \u2014 exportable, searchable, and FWA-ready",
+      "Every verification event creates an auditable record \u2014 exportable, searchable, and FWA-ready",
     ],
     testimonial: {
       quote:
@@ -160,12 +160,12 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       {
         question: "What evidence will the FWA expect?",
         answer:
-          "The FWA will expect employers to demonstrate that they have conducted right-to-work checks on every worker, that the checks were conducted correctly, and that they can identify every person working on their premises. Certifyd provides tamper-proof records that demonstrate all three: who was verified, when, through what method, and linked to which identity and documentation. These records go beyond the current minimum standard.",
+          "The FWA will expect employers to demonstrate that they have conducted right-to-work checks on every worker, that the checks were conducted correctly, and that they can identify every person working on their premises. Certifyd provides auditable records that demonstrate all three: who was verified, when, through what method, and linked to which identity and documentation. These records go beyond the current minimum standard.",
       },
       {
         question: "How is Certifyd different from a compliance checklist?",
         answer:
-          "A compliance checklist confirms that a process was followed. Certifyd provides cryptographic evidence that a specific person was verified through their device-bound identity at a specific time. Checklists can be backdated or fabricated. Certifyd records cannot. The difference is between saying \u2018we did the check\u2019 and proving \u2018we verified this specific person through unforgeable cryptographic authentication.\u2019",
+          "A compliance checklist confirms that a process was followed. Certifyd provides verifiable evidence that a specific person was verified against their identity documents at a specific time. Checklists can be backdated or fabricated. Certifyd records are timestamped and linked to specific devices, making fabrication detectable. The difference is between saying \u2018we did the check\u2019 and proving \u2018we verified this specific person through document-verified identity.\u2019",
       },
     ],
     alsoRelevant: [
@@ -212,7 +212,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     heroGraphic: "compliance-dash",
     heroCard: { name: "Andrew Peters", secondaryLabel: "Role", secondaryValue: "Operations Director" },
     searchIntentParagraph:
-      "Contractor identity verification with Certifyd ensures that every third-party worker accessing your site is who they claim to be. Certifyd uses bi-directional authentication \u2014 both the site manager and the contractor cryptographically prove their identity to each other in real time. The system verifies not just the contractor\u2019s name, but their active employment or contract with the sending company, their authorisation for your specific site, and their current status. Every site access event creates a tamper-proof audit record.",
+      "Contractor identity verification with Certifyd ensures that every third-party worker accessing your site is who they claim to be. Certifyd uses bi-directional authentication \u2014 both the site manager and the contractor verifiably prove their identity to each other in real time. The system verifies not just the contractor\u2019s name, but their active employment or contract with the sending company, their authorisation for your specific site, and their current status. Every site access event creates an auditable audit record.",
     stats: [
       { value: "4.4M", label: "self-employed contractors in the UK" },
       { value: "50%+", label: "of large businesses use contractors regularly" },
@@ -221,7 +221,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     whyItMatters: [
       "The UK has approximately 4.4 million self-employed workers, and over half of large businesses use contractors regularly. Contractors access office buildings, data centres, construction sites, hospitals, and government facilities \u2014 often with the same level of physical access as permanent employees, but with far less identity verification.",
       "The hiring business typically relies on the contracting company to vet its own people. But that vetting happens at the contracting company\u2019s end, and the hiring business has no independent way to verify that the person who arrives is the person who was vetted. When a contractor sends a substitute, when a subcontractor arrives instead of the named individual, or when a contract changes hands mid-project, the identity chain breaks.",
-      "For businesses subject to ISO 27001, SOC 2, PCI DSS, or government security requirements, contractor identity verification is not optional. Certifyd provides device-bound, bi-directional authentication that creates tamper-proof access records for every contractor visit. This satisfies audit requirements and gives the hiring business cryptographic assurance that the person on their premises is who they claim to be and is authorised by the sending company.",
+      "For businesses subject to ISO 27001, SOC 2, PCI DSS, or government security requirements, contractor identity verification is not optional. Certifyd provides device-verified, bi-directional authentication that creates auditable access records for every contractor visit. This satisfies audit requirements and gives the hiring business verified assurance that the person on their premises is who they claim to be and is authorised by the sending company.",
     ],
     problems: [
       "Contractors are vetted by their own company, not by the business whose site they\u2019re accessing.",
@@ -231,9 +231,9 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     ],
     steps: [
       "Contracting company registers as an Organisation on Certifyd and adds each contractor as a member",
-      "Each contractor registers their device, creating a cryptographic identity bound to their phone",
+      "Each contractor registers their device, creating a verified identity bound to their phone",
       "At each site visit, the contractor verifies through Certifyd \u2014 confirming identity, company membership, and site authorisation",
-      "A tamper-proof record is created: who accessed the site, when, and under whose organisational authority",
+      "A auditable record is created: who accessed the site, when, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -244,12 +244,12 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       {
         question: "How does Certifyd differ from a visitor management system?",
         answer:
-          "Visitor management systems record that a person signed in. Certifyd verifies that the person is who they claim to be. A visitor sign-in captures a name and a time \u2014 anyone can write any name. Certifyd uses device-bound cryptographic authentication: the contractor proves their identity through their registered device, their active membership with the sending company is confirmed in real time, and a tamper-proof record is created. It\u2019s the difference between a signature and a cryptographic proof.",
+          "Visitor management systems record that a person signed in. Certifyd verifies that the person is who they claim to be. A visitor sign-in captures a name and a time \u2014 anyone can write any name. Certifyd uses device-verified identity authentication: the contractor proves their identity through their registered device, their active membership with the sending company is confirmed in real time, and an auditable record is created. It\u2019s the difference between a signature and a verified identity.",
       },
       {
         question: "Can Certifyd help with ISO 27001 compliance?",
         answer:
-          "Yes. ISO 27001 requires organisations to control access to information and facilities, including for third-party contractors. Certifyd provides verifiable, tamper-proof records of contractor identity and access events. These records satisfy the audit evidence requirements of Annex A controls related to physical security, access management, and supplier relationship security.",
+          "Yes. ISO 27001 requires organisations to control access to information and facilities, including for third-party contractors. Certifyd provides verifiable, auditable records of contractor identity and access events. These records satisfy the audit evidence requirements of Annex A controls related to physical security, access management, and supplier relationship security.",
       },
       {
         question: "What about contractors who work at multiple client sites?",
@@ -259,7 +259,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       {
         question: "How do you revoke a contractor\u2019s site access?",
         answer:
-          "The contracting company revokes the individual\u2019s membership or site-specific authorisation through Certifyd. The revocation takes effect instantly. The contractor can no longer verify at that site. Unlike physical access cards (which can be retained or copied), device-bound cryptographic access cannot be transferred. When it\u2019s revoked, it\u2019s gone.",
+          "The contracting company revokes the individual\u2019s membership or site-specific authorisation through Certifyd. The revocation takes effect instantly. The contractor can no longer verify at that site. Unlike physical access cards (which can be retained or copied), device-verified access cannot be transferred. When it\u2019s revoked, it\u2019s gone.",
       },
     ],
     alsoRelevant: [
@@ -306,7 +306,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     heroGraphic: "compliance-dash",
     heroCard: { name: "Michelle Taylor", secondaryLabel: "Role", secondaryValue: "Compliance Lead" },
     searchIntentParagraph:
-      "Agency worker compliance with Certifyd closes the gap between agency onboarding and client-site arrival. Agencies verify workers at registration, but there is no standard mechanism to confirm that the person who arrives at the client\u2019s premises is the same person who was verified. Certifyd\u2019s bi-directional, device-bound authentication provides that confirmation: the worker\u2019s identity is cryptographically verified through their registered device at each assignment, their active agency membership is confirmed in real time, and a tamper-proof record is created for both the agency and the hiring employer.",
+      "Agency worker compliance with Certifyd closes the gap between agency onboarding and client-site arrival. Agencies verify workers at registration, but there is no standard mechanism to confirm that the person who arrives at the client\u2019s premises is the same person who was verified. Certifyd\u2019s bi-directional, device-verified authentication provides that confirmation: the worker\u2019s identity is document-verified through their registered device at each assignment, their active agency membership is confirmed in real time, and an auditable record is created for both the agency and the hiring employer.",
     stats: [
       { value: "1.2M", label: "agency workers in the UK" },
       { value: "Joint", label: "liability between agency and hirer" },
@@ -315,7 +315,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     whyItMatters: [
       "Over 1.2 million people in the UK work through employment agencies. The legal framework creates joint liability: under the Immigration, Asylum and Nationality Act 2006, both the agency and the hiring business can face penalties if an illegal worker is placed. The hiring business cannot simply rely on the agency having conducted the checks \u2014 they must satisfy themselves that the worker has the right to work in the UK.",
       "The practical challenge is that agencies verify at onboarding, and hirers verify at the point of assignment \u2014 but neither can confirm that the person at the site is the person who was checked. Workers share documents, substitutions happen, and the gap between the checked identity and the working identity goes undetected until an enforcement action reveals it.",
-      "The Fair Work Agency (from April 2026) will be able to inspect both agencies and hiring businesses simultaneously. When the FWA asks the hirer \u2018Who verified this person?\u2019 and the hirer says \u2018The agency did,\u2019 the FWA can then ask the agency \u2018How do you know the person at this site is the person you verified?\u2019 Neither has a satisfactory answer without real-time identity verification. Certifyd provides that answer: device-bound, cryptographic proof that the person at the site is the person who was verified.",
+      "The Fair Work Agency (from April 2026) will be able to inspect both agencies and hiring businesses simultaneously. When the FWA asks the hirer \u2018Who verified this person?\u2019 and the hirer says \u2018The agency did,\u2019 the FWA can then ask the agency \u2018How do you know the person at this site is the person you verified?\u2019 Neither has a satisfactory answer without real-time identity verification. Certifyd provides that answer: device-verified, verified identity that the person at the site is the person who was verified.",
     ],
     problems: [
       "Agencies verify at onboarding; hirers rely on that check for months or years of subsequent assignments.",
@@ -327,7 +327,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       "Agency registers workers on Certifyd during onboarding, linking identity to their device",
       "Hiring business requests verification at the point of each assignment",
       "Worker verifies through Certifyd at the client site \u2014 confirming identity, agency membership, and right-to-work status",
-      "Both agency and hirer receive tamper-proof verification records for the same event",
+      "Both agency and hirer receive auditable verification records for the same event",
     ],
     testimonial: {
       quote:
@@ -343,7 +343,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       {
         question: "How does Certifyd bridge the agency-hirer gap?",
         answer:
-          "The agency verifies the worker\u2019s identity at onboarding through Certifyd, binding their identity to their device. At each subsequent assignment, the worker re-verifies at the client site through the same device-bound identity. Both the agency and the hirer receive a tamper-proof verification record confirming that the person at the site is the person the agency verified. This closes the gap between onboarding verification and assignment-level compliance.",
+          "The agency verifies the worker\u2019s identity at onboarding through Certifyd, binding their identity to their device. At each subsequent assignment, the worker re-verifies at the client site through the same device-verified identity. Both the agency and the hirer receive an auditable verification record confirming that the person at the site is the person the agency verified. This closes the gap between onboarding verification and assignment-level compliance.",
       },
       {
         question: "What about workers registered with multiple agencies?",
@@ -353,7 +353,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       {
         question: "How do you handle agency worker substitutions?",
         answer:
-          "Substitutions are where the compliance gap is widest. An agency books Worker A, but Worker B arrives. Without real-time verification, the hirer may not notice the difference. With Certifyd, the worker who arrives must verify through their own device-bound identity. If Worker B arrives instead of Worker A, the verification record will show Worker B\u2019s identity \u2014 immediately alerting the hirer to the substitution and creating an accurate record of who actually worked.",
+          "Substitutions are where the compliance gap is widest. An agency books Worker A, but Worker B arrives. Without real-time verification, the hirer may not notice the difference. With Certifyd, the worker who arrives must verify through their own device-verified identity. If Worker B arrives instead of Worker A, the verification record will show Worker B\u2019s identity \u2014 immediately alerting the hirer to the substitution and creating an accurate record of who actually worked.",
       },
     ],
     alsoRelevant: [

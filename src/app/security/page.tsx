@@ -7,53 +7,53 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 export const metadata: Metadata = {
   title: "Security & Trust — How Certifyd Protects Your Data",
   description:
-    "Certifyd uses device-bound cryptographic authentication to protect identity data. No central credential store. No biometric databases. Just trust, built on provable security.",
+    "Certifyd uses device-verified identity authentication to protect identity data. No central credential store. No biometric databases. Just trust, built on provable security.",
   alternates: { canonical: "/security/" },
   openGraph: {
     title: "Security & Trust — How Certifyd Protects Your Data",
     description:
-      "Device-bound cryptographic authentication. No central credential store. No biometric databases.",
+      "Device-verified identity authentication. No central credential store. No biometric databases.",
     url: "https://www.certifyd.io/security/",
   },
 };
 
 const securitySteps = [
-  "Identity is bound to the user\u2019s physical device via a WebAuthn passkey",
+  "Identity is bound to the user\u2019s physical device via a secure biometric authentication",
   "No passwords or credentials are stored on our servers \u2014 ever",
-  "Every verification creates a tamper-proof, cryptographically signed record",
+  "Every verification creates an auditable, verifiably signed record",
   "Audit trails are immutable and available for compliance at any time",
 ];
 
 const principles = [
   {
-    title: "Device-Bound Identity",
+    title: "Device-Verified Identity",
     description:
-      "Your identity is tied to your physical device through WebAuthn passkeys. It can\u2019t be copied, phished, or stolen remotely. If someone doesn\u2019t have the device, they can\u2019t impersonate you.",
+      "Your identity is tied to your physical device through secure biometric authentications. It can\u2019t be copied, phished, or stolen remotely. If someone doesn\u2019t have the device, they can\u2019t impersonate you.",
   },
   {
     title: "No Central Credential Store",
     description:
-      "We don\u2019t store passwords, biometrics, or credentials on our servers. There\u2019s no database to breach. Cryptographic keys live on the user\u2019s device and never leave it.",
+      "We don\u2019t store passwords, biometrics, or credentials on our servers. There\u2019s no database to breach. Verification credentials are linked to the user\u2019s device and cannot be transferred.",
   },
   {
     title: "End-to-End Verification",
     description:
-      "Every verification is a real-time, cryptographic exchange between two devices. Both parties prove their identity to each other simultaneously. Replay attacks and interception are mathematically impossible.",
+      "Every verification is a real-time, verified exchange between two devices. Both parties prove their identity to each other simultaneously. Replay attacks and interception are mathematically impossible.",
   },
   {
-    title: "Tamper-Proof Audit Trail",
+    title: "Auditable Verification Trail",
     description:
       "Every verification creates an immutable record: who verified whom, when, where, and under what authority. Records cannot be altered after creation. Ready for regulatory audits at any time.",
   },
   {
     title: "Phishing Resistant by Design",
     description:
-      "WebAuthn passkeys are bound to the originating domain. They cannot be used on phishing sites or replayed in man-in-the-middle attacks. The cryptographic protocol prevents spoofing at the protocol level.",
+      "secure biometric authentications are bound to the originating domain. They cannot be used on phishing sites or replayed in man-in-the-middle attacks. The verified protocol prevents spoofing at the protocol level.",
   },
   {
     title: "Privacy by Default",
     description:
-      "We collect only what\u2019s necessary. We don\u2019t track behaviour, sell data, or build profiles. Verification data is minimised to the cryptographic proof of identity \u2014 nothing more.",
+      "We collect only what\u2019s necessary. We don\u2019t track behaviour, sell data, or build profiles. Verification data is minimised to the verified identity of identity \u2014 nothing more.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function SecurityPage() {
       <SolutionHero
         badge="Security & Trust"
         title="Your Identity Data Never Leaves Your Device"
-        subtitle="Certifyd is built on device-bound cryptographic authentication. No central credential store. No biometric databases. No passwords to steal. Just provable, phishing-resistant identity."
+        subtitle="Certifyd is built on device-verified identity authentication. No central credential store. No biometric databases. No passwords to steal. Just provable, phishing-resistant identity."
       />
 
       <SolutionSteps steps={securitySteps} title="How We Protect Data" />

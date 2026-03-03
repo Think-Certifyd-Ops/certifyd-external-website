@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const steps = [
   "Download the Certifyd app and create your account",
-  "Register your device with a WebAuthn passkey \u2014 no passwords needed",
+  "Register your device with a secure biometric authentication \u2014 no passwords needed",
   "Link to your employer or organisation (if applicable)",
   "You\u2019re verified. Scan or show your QR code to prove your identity in 30 seconds.",
 ];
@@ -44,7 +44,7 @@ const features = [
   {
     title: "Your Data Stays on Your Device",
     description:
-      "Your identity is tied to your physical device through a cryptographic passkey. It can\u2019t be copied, phished, or stolen. You\u2019re in control.",
+      "Your identity is tied to your physical device through a verified credential. It can\u2019t be copied, phished, or stolen. You\u2019re in control.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function PersonOnboardingPage() {
       <SolutionHero
         badge="Getting Started"
         title="Verify Your Identity in Minutes"
-        subtitle="Set up your Certifyd identity once. Use it everywhere. No passwords, no ID cards, no friction \u2014 just cryptographic proof that you are who you say you are."
+        subtitle="Set up your Certifyd identity once. Use it everywhere. No passwords, no ID cards, no friction \u2014 just verified identity that you are who you say you are."
       >
         <QRScanGraphic />
       </SolutionHero>

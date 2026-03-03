@@ -15,10 +15,10 @@ export const BUSINESS_PAGES: ForPage[] = [
     badge: "Recruitment Agencies",
     headline: "You Place Them. You\u2019re Liable. Did You Actually Verify Them?",
     subtitle:
-      "Recruitment agencies carry legal liability for the candidates they place. Certifyd verifies every candidate\u2019s identity, right to work, and credentials \u2014 cryptographically, not just on paper.",
+      "Recruitment agencies carry legal liability for the candidates they place. Certifyd verifies every candidate\u2019s identity, right to work, and credentials \u2014 verifiably, not just on paper.",
     heroCard: { name: "Emma Clarke", secondaryLabel: "Company", secondaryValue: "Apex Recruitment", context: "Candidate verified: 10:00 AM" },
     searchIntentParagraph:
-      "Identity verification for recruitment agencies must go beyond document checks. Certifyd uses bi-directional authentication \u2014 both the agency and the candidate cryptographically prove their identity to each other in real time. The system verifies not just the candidate\u2019s name, but that their identity is device-bound and cannot be transferred, cloned, or faked by a deepfake. When placing a candidate, the agency confirms their verified identity and right-to-work status, creating a tamper-proof record that satisfies both client requirements and regulatory obligations.",
+      "Identity verification for recruitment agencies must go beyond document checks. Certifyd uses bi-directional authentication \u2014 both the agency and the candidate verifiably prove their identity to each other in real time. The system verifies not just the candidate\u2019s name, but that their identity is device-verified and cannot be transferred, cloned, or faked by a deepfake. When placing a candidate, the agency confirms their verified identity and right-to-work status, creating an auditable record that satisfies both client requirements and regulatory obligations.",
     stats: [
       { value: "30K+", label: "recruitment agencies in the UK" },
       { value: "\u00a360K", label: "penalty per illegal worker placed" },
@@ -26,20 +26,20 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     whyItMatters: [
       "The UK has over 30,000 recruitment agencies, placing millions of workers annually. Under the Immigration, Asylum and Nationality Act 2006, agencies share legal liability with employers for right-to-work compliance. A civil penalty of up to \u00a360,000 per illegal worker can be levied against both the agency and the hiring company. The Fair Work Agency (launching April 2026) will consolidate enforcement and increase inspection frequency.",
-      "Deepfake candidates are no longer hypothetical. AI-generated personas are appearing in video interviews, and fabricated CVs that pass initial screening are increasingly common. Agencies that verify candidates through video calls and document scans are using methods that AI can now defeat. Device-bound cryptographic authentication is the only verification method that cannot be synthesised or spoofed.",
-      "For agencies, Certifyd transforms identity verification from a cost centre into a competitive advantage. Clients increasingly demand assurance that placed candidates are who they claim to be. An agency that can provide cryptographically verified candidate identities \u2014 with tamper-proof placement records \u2014 differentiates itself from competitors still relying on photocopied passports and video calls.",
+      "Deepfake candidates are no longer hypothetical. AI-generated personas are appearing in video interviews, and fabricated CVs that pass initial screening are increasingly common. Agencies that verify candidates through video calls and document scans are using methods that AI can now defeat. Device-verified identity authentication provides a verification method that is significantly harder to synthesise or spoof than video or document checks.",
+      "For agencies, Certifyd transforms identity verification from a cost centre into a competitive advantage. Clients increasingly demand assurance that placed candidates are who they claim to be. An agency that can provide document-verified candidate identities \u2014 with auditable placement records \u2014 differentiates itself from competitors still relying on photocopied passports and video calls.",
     ],
     problems: [
       "Agencies carry legal liability for right-to-work compliance, even when the client is the employer of record.",
       "Deepfake candidates and fabricated CVs are passing through traditional screening processes.",
       "Document-based verification (photocopied passports, scanned IDs) doesn\u2019t prove the person presenting is the document holder.",
-      "When a placed candidate\u2019s identity is questioned, the agency has no cryptographic proof of who they verified.",
+      "When a placed candidate\u2019s identity is questioned, the agency has no verified identity of who they verified.",
     ],
     steps: [
       "Agency registers as an Organisation on Certifyd and invites candidates to verify during onboarding",
-      "Each candidate registers their device, creating a cryptographic key pair bound to their identity",
+      "Each candidate registers their device, creating a secure credential bound to their identity",
       "At placement, the candidate\u2019s identity, right-to-work status, and agency membership are confirmed in real time",
-      "A tamper-proof placement record is created: who was verified, when, and under whose organisational authority",
+      "A auditable placement record is created: who was verified, when, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -55,17 +55,17 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "How does Certifyd help with deepfake candidates?",
         answer:
-          "Deepfake technology can synthesise faces and voices for video interviews, and AI can generate convincing CVs and cover letters. Certifyd bypasses these attack vectors entirely by using device-bound cryptographic authentication. A candidate\u2019s identity is tied to their physical device through a passkey \u2014 you cannot deepfake a cryptographic challenge. If the candidate can\u2019t verify through their registered device, they are not who they claim to be.",
+          "Deepfake technology can synthesise faces and voices for video interviews, and AI can generate convincing CVs and cover letters. Certifyd bypasses these attack vectors entirely by using device-verified identity authentication. A candidate\u2019s identity is tied to their physical device through a verified credential \u2014 you cannot deepfake a verified challenge. If the candidate can\u2019t verify through their registered device, they are not who they claim to be.",
       },
       {
         question: "How do agencies onboard candidates onto Certifyd?",
         answer:
-          "During the standard agency registration process, candidates are invited to create their Certifyd identity. They register their device (creating a cryptographic key pair) and the agency adds them as a member with a defined role. This takes minutes and only needs to happen once. From that point forward, the candidate can verify their identity in 30 seconds for any placement, any client, any location.",
+          "During the standard agency registration process, candidates are invited to create their Certifyd identity. They register their device (creating a secure credential) and the agency adds them as a member with a defined role. This takes minutes and only needs to happen once. From that point forward, the candidate can verify their identity in 30 seconds for any placement, any client, any location.",
       },
       {
         question: "Can Certifyd verification be shared with clients?",
         answer:
-          "Yes. When a candidate is placed, the agency can provide the client with a Certifyd verification record confirming the candidate\u2019s identity and right-to-work status. This gives clients confidence without requiring them to repeat the verification process. The record is tamper-proof and timestamped, providing auditable evidence for both the agency and the client.",
+          "Yes. When a candidate is placed, the agency can provide the client with a Certifyd verification record confirming the candidate\u2019s identity and right-to-work status. This gives clients confidence without requiring them to repeat the verification process. The record is auditable and timestamped, providing auditable evidence for both the agency and the client.",
       },
     ],
     alsoRelevant: [
@@ -117,7 +117,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     heroGraphic: "shift-monitor",
     heroCard: { name: "Patricia Williams", secondaryLabel: "Care Home", secondaryValue: "Oakwood Care Home" },
     searchIntentParagraph:
-      "Identity verification for care homes is a safeguarding obligation, not an optional extra. Certifyd uses bi-directional authentication \u2014 both the care home manager and the arriving worker cryptographically prove their identity to each other in real time. When agency staff arrive, the system verifies not just who they are, but that they hold an active membership with the agency that dispatched them and are authorised for that specific care home. The result is a tamper-proof, auditable record for every shift \u2014 evidence that satisfies CQC requirements.",
+      "Identity verification for care homes is a safeguarding obligation, not an optional extra. Certifyd uses bi-directional authentication \u2014 both the care home manager and the arriving worker verifiably prove their identity to each other in real time. When agency staff arrive, the system verifies not just who they are, but that they hold an active membership with the agency that dispatched them and are authorised for that specific care home. The result is an auditable, auditable record for every shift \u2014 evidence that satisfies CQC requirements.",
     stats: [
       { value: "15K+", label: "care homes in England" },
       { value: "39%", label: "annual staff turnover in adult social care" },
@@ -126,7 +126,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     whyItMatters: [
       "There are over 15,000 care homes in England, and the sector faces a staffing crisis. With 165,000 vacancies and 39% annual turnover, care homes routinely rely on agency staff to maintain safe staffing levels. On any given night, a significant proportion of the workforce may be agency workers who have never been to that care home before.",
       "The CQC inspects care homes against five key questions, including \u2018Safe\u2019 and \u2018Well-led\u2019. Both require evidence of robust staff identity verification and safe recruitment practices. When an inspector asks \u2018Who was on shift on Tuesday night?\u2019 and the answer relies on handwritten sign-in sheets and agency booking confirmations, that\u2019s a safeguarding gap \u2014 not a compliance strength.",
-      "Families trust care homes to protect their most vulnerable relatives. When a daughter calls and asks \u2018Who is looking after my mum tonight?\u2019, the care home should be able to answer with cryptographic certainty. Certifyd\u2019s bi-directional, device-bound verification means every worker on every shift is verified in real time, with tamper-proof records that demonstrate who was there, when, and under whose authority.",
+      "Families trust care homes to protect their most vulnerable relatives. When a daughter calls and asks \u2018Who is looking after my mum tonight?\u2019, the care home should be able to answer with verified certainty. Certifyd\u2019s bi-directional, device-verified verification means every worker on every shift is verified in real time, with auditable records that demonstrate who was there, when, and under whose authority.",
     ],
     problems: [
       "Agency workers arrive for shifts at care homes where they\u2019ve never worked before and nobody recognises them.",
@@ -136,9 +136,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     steps: [
       "Care home registers as an Organisation on Certifyd; agency partners register separately",
-      "Each worker registers their device, creating a cryptographic identity bound to their phone",
+      "Each worker registers their device, creating a verified identity bound to their phone",
       "When a worker arrives for a shift, both parties verify through Certifyd \u2014 confirming identity and agency membership in real time",
-      "A tamper-proof record is created for every shift: who, when, where, and under whose organisational authority",
+      "A auditable record is created for every shift: who, when, where, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -149,7 +149,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "How does Certifyd support CQC compliance?",
         answer:
-          "CQC\u2019s \u2018Safe\u2019 key line of enquiry requires care homes to demonstrate that only authorised, verified staff care for residents. Certifyd creates tamper-proof verification records for every shift, linking each worker to their verified identity, their employing agency or organisation, and their role authority. These records are audit-ready, exportable, and demonstrate ongoing identity assurance \u2014 not just point-of-hire checks.",
+          "CQC\u2019s \u2018Safe\u2019 key line of enquiry requires care homes to demonstrate that only authorised, verified staff care for residents. Certifyd creates auditable verification records for every shift, linking each worker to their verified identity, their employing agency or organisation, and their role authority. These records are audit-ready, exportable, and demonstrate ongoing identity assurance \u2014 not just point-of-hire checks.",
       },
       {
         question: "Can Certifyd work with multiple agencies?",
@@ -159,7 +159,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "What about permanent staff?",
         answer:
-          "Permanent staff can be registered as members of the care home\u2019s own Organisation on Certifyd. This gives them the same device-bound, verifiable identity as agency workers. For care homes that want comprehensive shift records, Certifyd covers both permanent and agency staff through the same system.",
+          "Permanent staff can be registered as members of the care home\u2019s own Organisation on Certifyd. This gives them the same device-verified, verifiable identity as agency workers. For care homes that want comprehensive shift records, Certifyd covers both permanent and agency staff through the same system.",
       },
       {
         question: "Can families be notified when staff verify?",
@@ -210,7 +210,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       "Cleaning companies send staff into clients\u2019 homes with keys and alarm codes. Certifyd gives you a verified, auditable record of every cleaner at every property.",
     heroCard: { name: "Helen Marsh", secondaryLabel: "Company", secondaryValue: "Sparkle Services Ltd", context: "Arrived: 08:00 AM" },
     searchIntentParagraph:
-      "Identity verification for cleaning companies transforms trust from a promise into proof. Certifyd\u2019s Organisation management lets cleaning companies register each cleaner as a member with a defined role, with their identity cryptographically bound to their device. When a cleaner arrives at a client\u2019s home, bi-directional authentication verifies both parties in real time. The system confirms not just the cleaner\u2019s identity, but their active membership with your company and their authority to service that client. Every visit creates a tamper-proof audit record.",
+      "Identity verification for cleaning companies transforms trust from a promise into proof. Certifyd\u2019s Organisation management lets cleaning companies register each cleaner as a member with a defined role, with their identity securely linked to their device. When a cleaner arrives at a client\u2019s home, bi-directional authentication verifies both parties in real time. The system confirms not just the cleaner\u2019s identity, but their active membership with your company and their authority to service that client. Every visit creates an auditable audit record.",
     stats: [
       { value: "\u00a39.5B", label: "UK cleaning industry annual revenue" },
       { value: "0", label: "regulatory requirements for cleaner ID" },
@@ -219,7 +219,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     whyItMatters: [
       "The UK cleaning industry generates \u00a39.5 billion annually, employing hundreds of thousands of people across thousands of companies. Yet there is no regulatory body, no mandatory licensing, and no identity verification requirement for domestic cleaners. The barrier to entry is zero \u2014 and so is the accountability when something goes wrong.",
       "For professional cleaning companies, this lack of regulation creates a trust problem. You invest in DBS checks, training, and insurance \u2014 but clients have no way to distinguish your verified staff from an unvetted individual with a Gumtree ad. When you send a substitute cleaner, the client has no independent way to confirm that person works for you. Your reputation depends on a phone call or a text message.",
-      "Certifyd gives professional cleaning companies a verifiable trust infrastructure. Each cleaner\u2019s identity is cryptographically bound to their device and linked to their active membership in your company. Clients can verify every cleaner at their door in 30 seconds. When a cleaner leaves your company, their membership is revoked instantly. This turns your investment in staff vetting into a visible, provable competitive advantage.",
+      "Certifyd gives professional cleaning companies a verifiable trust infrastructure. Each cleaner\u2019s identity is securely linked to their device and linked to their active membership in your company. Clients can verify every cleaner at their door in 30 seconds. When a cleaner leaves your company, their membership is revoked instantly. This turns your investment in staff vetting into a visible, provable competitive advantage.",
     ],
     problems: [
       "No regulation means clients can\u2019t distinguish your vetted staff from unverified competitors.",
@@ -229,9 +229,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     steps: [
       "Register your cleaning company as an Organisation on Certifyd and add each cleaner as a member",
-      "Each cleaner registers their device, creating a cryptographic identity bound to their phone",
+      "Each cleaner registers their device, creating a verified identity bound to their phone",
       "At each client visit, both parties verify through Certifyd \u2014 confirming the cleaner\u2019s identity and company membership",
-      "A tamper-proof record is created for every visit: who, when, where, and under your company\u2019s authority",
+      "A auditable record is created for every visit: who, when, where, and under your company\u2019s authority",
     ],
     testimonial: {
       quote:
@@ -242,7 +242,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "How do I add my cleaners to Certifyd?",
         answer:
-          "Register your company as an Organisation on Certifyd and invite each cleaner by email or phone number. Each cleaner creates their own account, registers their device (creating a cryptographic key pair), and accepts your organisation\u2019s membership invitation. You assign them a role (e.g. \u2018Cleaner\u2019, \u2018Team Lead\u2019) and they\u2019re ready to verify at client properties. The process takes minutes per cleaner.",
+          "Register your company as an Organisation on Certifyd and invite each cleaner by email or phone number. Each cleaner creates their own account, registers their device (creating a secure credential), and accepts your organisation\u2019s membership invitation. You assign them a role (e.g. \u2018Cleaner\u2019, \u2018Team Lead\u2019) and they\u2019re ready to verify at client properties. The process takes minutes per cleaner.",
       },
       {
         question: "What happens when a cleaner leaves my company?",
@@ -303,7 +303,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       "Staffing agencies face right-to-work liability for every worker they place. Certifyd verifies each worker\u2019s identity at the point of assignment \u2014 not just at onboarding.",
     heroCard: { name: "Robert Hughes", secondaryLabel: "Company", secondaryValue: "PeopleForce Staffing", context: "Worker verified: 06:30 AM" },
     searchIntentParagraph:
-      "Identity verification for staffing agencies must work at scale and at speed. Certifyd\u2019s Organisation management lets staffing agencies register each worker as a member with a defined role, their identity cryptographically bound to their device. At each assignment, the worker\u2019s identity, active agency membership, and right-to-work status are verified in real time \u2014 not assumed from a check that was done weeks or months earlier. Every placement creates a tamper-proof audit record that satisfies both client requirements and Fair Work Agency compliance.",
+      "Identity verification for staffing agencies must work at scale and at speed. Certifyd\u2019s Organisation management lets staffing agencies register each worker as a member with a defined role, their identity securely linked to their device. At each assignment, the worker\u2019s identity, active agency membership, and right-to-work status are verified in real time \u2014 not assumed from a check that was done weeks or months earlier. Every placement creates an auditable audit record that satisfies both client requirements and Fair Work Agency compliance.",
     stats: [
       { value: "30K+", label: "recruitment businesses in the UK" },
       { value: "\u00a350-200", label: "traditional cost per background check" },
@@ -312,7 +312,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     whyItMatters: [
       "UK staffing agencies place over a million workers annually across warehousing, hospitality, care, construction, and office environments. Each placement carries right-to-work liability. The standard approach \u2014 verify at onboarding, then assume compliance for every subsequent assignment \u2014 creates a growing gap between the check that was done and the person who shows up at the client\u2019s site.",
       "At \u00a350\u2013200 per traditional background check, agencies spending thousands annually on verification still face a fundamental problem: the check proves a person\u2019s identity at one point in time. It does not prove that the person arriving at the client site today is the person who was checked. With high worker turnover and frequent substitutions, this gap is not theoretical \u2014 it\u2019s operational reality.",
-      "The Fair Work Agency (launching April 2026) will consolidate employment enforcement powers and increase inspection frequency across staffing agencies. Agencies that can demonstrate real-time, per-assignment identity verification \u2014 with tamper-proof records \u2014 will be better positioned for compliance. Agencies relying on photocopied passports in filing cabinets will face increasingly uncomfortable audits.",
+      "The Fair Work Agency (launching April 2026) will consolidate employment enforcement powers and increase inspection frequency across staffing agencies. Agencies that can demonstrate real-time, per-assignment identity verification \u2014 with auditable records \u2014 will be better positioned for compliance. Agencies relying on photocopied passports in filing cabinets will face increasingly uncomfortable audits.",
     ],
     problems: [
       "Onboarding verification doesn\u2019t prove the person arriving at the client site is the person who was checked.",
@@ -322,9 +322,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     steps: [
       "Agency registers as an Organisation on Certifyd and adds each worker during onboarding",
-      "Each worker registers their device, creating a cryptographic identity bound to their phone",
+      "Each worker registers their device, creating a verified identity bound to their phone",
       "At each assignment, the worker verifies at the client site \u2014 confirming identity, agency membership, and right-to-work status",
-      "A tamper-proof record is created for every placement: who, when, where, and under the agency\u2019s authority",
+      "A auditable record is created for every placement: who, when, where, and under the agency\u2019s authority",
     ],
     testimonial: {
       quote:
@@ -335,12 +335,12 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "How does Certifyd reduce verification costs?",
         answer:
-          "Traditional background checks cost \u00a350\u2013200 per person and are conducted once at onboarding. Certifyd provides ongoing, real-time identity verification at every assignment for a fraction of the cost. Workers register once \u2014 their device-bound identity persists across all placements. There\u2019s no per-check fee for repeat verifications, and no manual paperwork. The cost saving compounds with every subsequent assignment.",
+          "Traditional background checks cost \u00a350\u2013200 per person and are conducted once at onboarding. Certifyd provides ongoing, real-time identity verification at every assignment for a fraction of the cost. Workers register once \u2014 their device-verified identity persists across all placements. There\u2019s no per-check fee for repeat verifications, and no manual paperwork. The cost saving compounds with every subsequent assignment.",
       },
       {
         question: "What happens when a worker moves to a different agency?",
         answer:
-          "The worker\u2019s Certifyd identity belongs to them \u2014 it\u2019s bound to their device, not to your agency. When they leave, you revoke their membership in your Organisation. They can then be added as a member of their new agency. Their cryptographic identity remains consistent, but their organisational affiliations reflect their current employment. This is seamless for the worker and instant for both agencies.",
+          "The worker\u2019s Certifyd identity belongs to them \u2014 it\u2019s bound to their device, not to your agency. When they leave, you revoke their membership in your Organisation. They can then be added as a member of their new agency. Their verified identity remains consistent, but their organisational affiliations reflect their current employment. This is seamless for the worker and instant for both agencies.",
       },
       {
         question: "Can clients see verification records for placed workers?",
@@ -396,7 +396,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       "Hotels, restaurants, and event venues cycle through staff rapidly. Certifyd verifies every worker\u2019s identity, right to work, and employer \u2014 before they start serving your customers.",
     heroCard: { name: "Marco Rossi", secondaryLabel: "Company", secondaryValue: "The Crown Group", context: "Shift started: 17:00" },
     searchIntentParagraph:
-      "Identity verification for hospitality businesses addresses an industry where speed of hiring often outpaces rigour of checking. Certifyd\u2019s Organisation management lets hospitality businesses register each employee as a member with their identity cryptographically bound to their device. For agency and casual staff, bi-directional authentication verifies identity and right-to-work status in real time at the start of every shift. Every verification creates a tamper-proof audit record \u2014 essential for an industry consistently targeted by Home Office enforcement.",
+      "Identity verification for hospitality businesses addresses an industry where speed of hiring often outpaces rigour of checking. Certifyd\u2019s Organisation management lets hospitality businesses register each employee as a member with their identity securely linked to their device. For agency and casual staff, bi-directional authentication verifies identity and right-to-work status in real time at the start of every shift. Every verification creates an auditable audit record \u2014 essential for an industry consistently targeted by Home Office enforcement.",
     stats: [
       { value: "180K", label: "hospitality businesses in the UK" },
       { value: "#1", label: "sector for right-to-work enforcement actions" },
@@ -405,7 +405,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     whyItMatters: [
       "Hospitality is the UK\u2019s largest private-sector employer with 3.5 million workers across 180,000 businesses. It is also consistently the number one sector for Home Office illegal working enforcement actions. The combination of high turnover, casual employment, and reliance on agency labour creates an environment where identity verification gaps are systemic, not occasional.",
       "The operational reality is brutal. A hotel that needs 15 agency workers for a conference weekend receives a list of names from the agency. The workers arrive, put on uniforms, and start working. Nobody independently verified that the people who arrived are the people on the list. When HMRC or the Fair Work Agency walks in and asks for evidence, the hotel has a booking confirmation and a list of names \u2014 not proof of identity.",
-      "Certifyd transforms compliance from a paper exercise into a real-time system. Each worker\u2019s identity is device-bound and verified at the start of every shift. The business gets tamper-proof records that link specific individuals to specific shifts \u2014 evidence that withstands regulatory scrutiny. For hospitality groups operating multiple venues, Certifyd provides a consistent verification standard across all sites.",
+      "Certifyd transforms compliance from a paper exercise into a real-time system. Each worker\u2019s identity is device-verified and verified at the start of every shift. The business gets auditable records that link specific individuals to specific shifts \u2014 evidence that withstands regulatory scrutiny. For hospitality groups operating multiple venues, Certifyd provides a consistent verification standard across all sites.",
     ],
     problems: [
       "Hospitality is the top sector for right-to-work enforcement \u2014 the industry\u2019s staffing model creates structural compliance gaps.",
@@ -415,9 +415,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     steps: [
       "Business registers as an Organisation on Certifyd; agency partners register separately",
-      "Each worker registers their device during onboarding, creating a device-bound identity",
+      "Each worker registers their device during onboarding, creating a device-verified identity",
       "At every shift, the worker verifies through Certifyd \u2014 confirming identity, employer, and right-to-work status in real time",
-      "A tamper-proof record is created: who, when, where, and under whose organisational authority",
+      "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -433,7 +433,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "How does Certifyd work across multiple venues?",
         answer:
-          "Hospitality groups can manage all venues under a single Organisation on Certifyd, with site-specific roles and permissions. Workers who rotate between venues carry their device-bound identity with them \u2014 verification works the same way at any location. Management gets a centralised view of verification records across all sites, while each venue maintains its own shift-level audit trail.",
+          "Hospitality groups can manage all venues under a single Organisation on Certifyd, with site-specific roles and permissions. Workers who rotate between venues carry their device-verified identity with them \u2014 verification works the same way at any location. Management gets a centralised view of verification records across all sites, while each venue maintains its own shift-level audit trail.",
       },
       {
         question: "Can Certifyd handle event staffing at scale?",
@@ -443,7 +443,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "What\u2019s the Fair Work Agency and how does it affect hospitality?",
         answer:
-          "The Fair Work Agency launches in April 2026, consolidating employment enforcement powers from HMRC, the Gangmasters and Labour Abuse Authority, and the Employment Agency Standards Inspectorate. It will have enhanced powers to inspect any business and demand evidence of right-to-work compliance for every worker. Hospitality businesses that can provide tamper-proof, per-shift verification records will be far better positioned than those relying on filing cabinets of photocopied documents.",
+          "The Fair Work Agency launches in April 2026, consolidating employment enforcement powers from HMRC, the Gangmasters and Labour Abuse Authority, and the Employment Agency Standards Inspectorate. It will have enhanced powers to inspect any business and demand evidence of right-to-work compliance for every worker. Hospitality businesses that can provide auditable, per-shift verification records will be far better positioned than those relying on filing cabinets of photocopied documents.",
       },
     ],
     alsoRelevant: [
@@ -489,7 +489,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       "Trade platforms like Checkatrade and MyBuilder verify that a business exists. Certifyd verifies that the person who arrives at the door is who they claim to be.",
     heroCard: { name: "Daniel Wright", secondaryLabel: "Company", secondaryValue: "TradeCheck UK", context: "Arrived: 09:15 AM" },
     searchIntentParagraph:
-      "Identity verification for trade platforms closes the gap between verifying a business and verifying the individual who shows up. Certifyd\u2019s bi-directional authentication lets platform members cryptographically prove their identity to homeowners in real time. When a tradesperson arrives, the system verifies not just who they are, but that they hold an active membership with the trade company listed on the platform and are authorised for that job. This extends the platform\u2019s trust layer from the business level to the individual level \u2014 the piece that\u2019s currently missing.",
+      "Identity verification for trade platforms closes the gap between verifying a business and verifying the individual who shows up. Certifyd\u2019s bi-directional authentication lets platform members verifiably prove their identity to homeowners in real time. When a tradesperson arrives, the system verifies not just who they are, but that they hold an active membership with the trade company listed on the platform and are authorised for that job. This extends the platform\u2019s trust layer from the business level to the individual level \u2014 the piece that\u2019s currently missing.",
     stats: [
       { value: "50M+", label: "annual trade platform searches in the UK" },
       { value: "0", label: "platforms that verify who actually arrives" },
@@ -498,7 +498,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     whyItMatters: [
       "Trade platforms have built successful businesses by aggregating reviews and verifying business credentials. Checkatrade, MyBuilder, Rated People, and similar platforms verify that a business is registered, insured, and (in some cases) competent. This is valuable. But it addresses only half the trust problem \u2014 it tells the homeowner that the business is legitimate, not that the person at their door works for that business.",
       "The structural limitation is this: platforms verify at the entity level (the company), but risk manifests at the individual level (the person). A five-star-rated electrical company may send a subcontractor the homeowner has never heard of. A trusted plumbing firm may dispatch a new employee who hasn\u2019t completed their own checks. The platform has no mechanism to verify the individual because its relationship is with the business, not the worker.",
-      "Certifyd gives trade platforms a way to extend their trust layer to the individual level. Each tradesperson\u2019s identity is cryptographically bound to their device and linked to their active membership in the trade company. When they arrive at a job sourced through the platform, both parties verify each other in real time. The platform gets richer data, the homeowner gets real assurance, and the tradesperson gets a verified reputation that travels with them.",
+      "Certifyd gives trade platforms a way to extend their trust layer to the individual level. Each tradesperson\u2019s identity is securely linked to their device and linked to their active membership in the trade company. When they arrive at a job sourced through the platform, both parties verify each other in real time. The platform gets richer data, the homeowner gets real assurance, and the tradesperson gets a verified reputation that travels with them.",
     ],
     problems: [
       "Platforms verify the business but can\u2019t verify who actually arrives at the homeowner\u2019s door.",
@@ -508,9 +508,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     steps: [
       "Trade platform integrates Certifyd \u2014 member businesses register as Organisations",
-      "Each tradesperson within a business registers their device, creating a device-bound identity",
+      "Each tradesperson within a business registers their device, creating a device-verified identity",
       "When a tradesperson arrives at a platform-sourced job, both parties verify through Certifyd",
-      "A tamper-proof record links the individual to the business, the platform, and the specific job",
+      "A auditable record links the individual to the business, the platform, and the specific job",
     ],
     testimonial: {
       quote:
@@ -531,7 +531,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "What\u2019s the benefit for tradespeople?",
         answer:
-          "Verified tradespeople build a cryptographic trust record over time. Every verified job creates an auditable record of attendance and professional conduct. This portable, tamper-proof reputation follows them across platforms and employers. For tradespeople competing on trust, Certifyd verification becomes a differentiator \u2014 proof that they stand behind their identity and their work.",
+          "Verified tradespeople build a verified trust record over time. Every verified job creates an auditable record of attendance and professional conduct. This portable, auditable reputation follows them across platforms and employers. For tradespeople competing on trust, Certifyd verification becomes a differentiator \u2014 proof that they stand behind their identity and their work.",
       },
       {
         question: "Can sole traders use Certifyd without a platform?",
@@ -583,7 +583,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     heroGraphic: "shift-monitor",
     heroCard: { name: "Comfort Adeyemi", secondaryLabel: "Provider", secondaryValue: "HomeFirst Care" },
     searchIntentParagraph:
-      "Identity verification for domiciliary care providers is a safeguarding imperative. Certifyd uses bi-directional authentication \u2014 both the service user (or their family) and the care worker cryptographically prove their identity to each other in real time. When a carer arrives at someone\u2019s home, the system verifies not just who they are, but that they hold an active membership with the care provider, are authorised for that specific service user, and are currently employed. The result is a tamper-proof visit record that satisfies CQC requirements and gives families verifiable peace of mind.",
+      "Identity verification for domiciliary care providers is a safeguarding imperative. Certifyd uses bi-directional authentication \u2014 both the service user (or their family) and the care worker verifiably prove their identity to each other in real time. When a carer arrives at someone\u2019s home, the system verifies not just who they are, but that they hold an active membership with the care provider, are authorised for that specific service user, and are currently employed. The result is an auditable visit record that satisfies CQC requirements and gives families verifiable peace of mind.",
     stats: [
       { value: "10K+", label: "domiciliary care providers in England" },
       { value: "540K", label: "people receiving home care" },
@@ -592,7 +592,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     whyItMatters: [
       "Over 540,000 people in England receive domiciliary care \u2014 personal care delivered in their own homes. Unlike residential care homes where managers can observe staff, domiciliary care workers operate independently, visiting service users alone. The service user may have dementia, limited mobility, or cognitive impairment that prevents them from verifying or challenging the identity of the person at their door.",
       "Domiciliary care providers employ over 700,000 workers, with annual turnover exceeding 30%. The sector relies heavily on agency and bank workers to cover absences and meet demand. A service user who expects their regular carer may instead receive a stranger from an agency \u2014 someone the care provider may not have met and the service user certainly has not. Without real-time verification, neither party has independent confirmation of the other\u2019s identity.",
-      "CQC rates domiciliary care providers against the same five key questions as care homes. The \u2018Safe\u2019 key line of enquiry requires providers to demonstrate that only authorised, verified staff deliver care. Certifyd\u2019s device-bound, bi-directional authentication creates a tamper-proof record for every home visit, linking the specific carer to the specific service user, the time of arrival, and the organisational authority under which they are working.",
+      "CQC rates domiciliary care providers against the same five key questions as care homes. The \u2018Safe\u2019 key line of enquiry requires providers to demonstrate that only authorised, verified staff deliver care. Certifyd\u2019s device-verified, bi-directional authentication creates an auditable record for every home visit, linking the specific carer to the specific service user, the time of arrival, and the organisational authority under which they are working.",
     ],
     problems: [
       "Care workers visit service users alone, with no one to witness or verify their identity.",
@@ -602,9 +602,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     steps: [
       "Domiciliary care provider registers as an Organisation on Certifyd and adds each carer as a member",
-      "Each carer registers their device, creating a cryptographic identity bound to their phone",
+      "Each carer registers their device, creating a verified identity bound to their phone",
       "At each home visit, the carer verifies through Certifyd \u2014 confirming identity, employment, and service user authorisation",
-      "A tamper-proof visit record is created: who, when, where, and under whose organisational authority",
+      "A auditable visit record is created: who, when, where, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -625,12 +625,12 @@ export const BUSINESS_PAGES: ForPage[] = [
       {
         question: "How does this help with safeguarding referrals?",
         answer:
-          "When a safeguarding concern arises, one of the first questions is \u2018who was with the service user?\u2019 Certifyd provides a tamper-proof record of exactly who visited, when, and under whose organisational authority. This evidence is invaluable for safeguarding investigations, removing ambiguity about which specific individual was present at the relevant time.",
+          "When a safeguarding concern arises, one of the first questions is \u2018who was with the service user?\u2019 Certifyd provides an auditable record of exactly who visited, when, and under whose organisational authority. This evidence is invaluable for safeguarding investigations, removing ambiguity about which specific individual was present at the relevant time.",
       },
       {
         question: "What about personal assistants employed directly by the service user?",
         answer:
-          "Direct payment recipients who employ their own personal assistants can register as an Organisation on Certifyd and add their PAs as members. The PA verifies at each visit, creating the same tamper-proof record. This gives self-directed care arrangements the same verification infrastructure that larger care providers use \u2014 protecting both the service user and the PA.",
+          "Direct payment recipients who employ their own personal assistants can register as an Organisation on Certifyd and add their PAs as members. The PA verifies at each visit, creating the same auditable record. This gives self-directed care arrangements the same verification infrastructure that larger care providers use \u2014 protecting both the service user and the PA.",
       },
     ],
     alsoRelevant: [
@@ -676,7 +676,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       "Facilities management companies deploy cleaners, engineers, security guards, and maintenance crews across client sites. Certifyd verifies every person on every site, every day.",
     heroCard: { name: "Simon Clarke", secondaryLabel: "Company", secondaryValue: "Sterling FM", context: "Site access: 07:00 AM" },
     searchIntentParagraph:
-      "Identity verification for facilities management companies addresses the challenge of deploying large, diverse workforces across multiple client sites. Certifyd\u2019s Organisation management lets FM companies register each worker as a member with a defined role, their identity cryptographically bound to their device. At each site, workers verify through bi-directional authentication \u2014 confirming their identity, FM company membership, and site-specific authorisation in real time. Every site visit creates a tamper-proof audit record that satisfies both client contracts and regulatory requirements.",
+      "Identity verification for facilities management companies addresses the challenge of deploying large, diverse workforces across multiple client sites. Certifyd\u2019s Organisation management lets FM companies register each worker as a member with a defined role, their identity securely linked to their device. At each site, workers verify through bi-directional authentication \u2014 confirming their identity, FM company membership, and site-specific authorisation in real time. Every site visit creates an auditable audit record that satisfies both client contracts and regulatory requirements.",
     stats: [
       { value: "\u00a3140B", label: "UK facilities management market" },
       { value: "10%+", label: "of the UK workforce in FM roles" },
@@ -685,7 +685,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     whyItMatters: [
       "Facilities management is a \u00a3140 billion industry in the UK, employing over 10% of the total workforce. FM companies deploy diverse teams \u2014 cleaners, security guards, maintenance engineers, grounds staff, and catering workers \u2014 across client sites that may include offices, hospitals, schools, data centres, and government buildings. Each site has its own security requirements, and each client expects the FM company to guarantee the identity of every person sent.",
       "The supply chain complexity is significant. FM companies subcontract to specialist providers, who may in turn use agency labour. The person cleaning a bank\u2019s server room at midnight may be employed by an agency, contracted through a cleaning subcontractor, managed by the FM company, and ultimately accountable to the bank. At each link in this chain, identity verification may be assumed rather than confirmed.",
-      "Client contracts increasingly require evidence of identity verification for every person accessing their sites. Insurance requirements, security standards (ISO 27001, BREEAM, PCI DSS), and regulatory obligations demand auditable proof. Certifyd provides this through device-bound, bi-directional authentication \u2014 creating tamper-proof records that flow through the entire supply chain, from the individual worker to the end client.",
+      "Client contracts increasingly require evidence of identity verification for every person accessing their sites. Insurance requirements, security standards (ISO 27001, BREEAM, PCI DSS), and regulatory obligations demand auditable proof. Certifyd provides this through device-verified, bi-directional authentication \u2014 creating auditable records that flow through the entire supply chain, from the individual worker to the end client.",
     ],
     problems: [
       "Multiple subcontractor layers mean the FM company can\u2019t always verify who ends up on the client\u2019s site.",
@@ -695,9 +695,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     steps: [
       "FM company registers as an Organisation on Certifyd; subcontractors register separately",
-      "Each worker registers their device, creating a cryptographic identity linked to their employer",
+      "Each worker registers their device, creating a verified identity linked to their employer",
       "At each site, workers verify through Certifyd \u2014 confirming identity, employer, and site-specific authorisation",
-      "A tamper-proof record is created for every site visit, auditable by the FM company and the end client",
+      "A auditable record is created for every site visit, auditable by the FM company and the end client",
     ],
     testimonial: {
       quote:

@@ -24,7 +24,7 @@ const howItWorks = [
   "Both people open Certifyd on their phone",
   "One shows their QR code, the other scans it",
   "Instant mutual confirmation \u2014 both parties verified",
-  "An auditable, tamper-proof record is created automatically",
+  "An auditable, auditable record is created automatically",
 ];
 
 const features = [
@@ -46,7 +46,7 @@ const features = [
   {
     title: "Auditable Records",
     description:
-      "Every verification creates a tamper-proof record \u2014 who, when, where. Ready for audits, disputes, or compliance checks.",
+      "Every verification creates an auditable record \u2014 who, when, where. Ready for audits, disputes, or compliance checks.",
   },
 ];
 

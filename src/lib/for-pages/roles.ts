@@ -18,7 +18,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Cleaners enter your home weekly \u2014 often unsupervised, with full access to your property. Certifyd lets homeowners and cleaning companies verify every cleaner at the door in 30 seconds.",
     heroCard: { name: "Sarah Jones", secondaryLabel: "Company", secondaryValue: "Sparkle Cleaning Co.", context: "Arrived: 09:15 AM" },
     searchIntentParagraph:
-      "Identity verification for cleaners goes beyond checking a business card or a name on an app. Certifyd uses bi-directional authentication \u2014 both the homeowner and the cleaner cryptographically prove their identity to each other in real time. When a cleaner arrives, the system verifies not just who they are, but that they hold an active membership with the cleaning company that sent them and are authorised to be there. The result is a tamper-proof, auditable record of every visit: who arrived, when, where, and under whose authority.",
+      "Identity verification for cleaners goes beyond checking a business card or a name on an app. Certifyd uses bi-directional authentication \u2014 both the homeowner and the cleaner verifiably prove their identity to each other in real time. When a cleaner arrives, the system verifies not just who they are, but that they hold an active membership with the cleaning company that sent them and are authorised to be there. The result is an auditable, auditable record of every visit: who arrived, when, where, and under whose authority.",
     stats: [
       { value: "0", label: "regulations requiring cleaners to verify ID" },
       { value: "\u00a357M", label: "annual UK doorstep crime cost" },
@@ -27,7 +27,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "The UK cleaning industry is largely unregulated. There is no licensing requirement, no mandatory identity check, and no register of domestic cleaners. A person can set up a cleaning business tomorrow with nothing more than a Facebook page and a bucket.",
       "For the millions of UK households that use a regular cleaner, this means entrusting house keys, alarm codes, and unsupervised access to someone whose identity has never been formally verified. When cleaning companies send substitute staff \u2014 which happens frequently \u2014 the homeowner often has no idea who has just walked through their door.",
-      "Platforms like Checkatrade and Trustatrader verify that a cleaning business exists. They cannot verify who actually arrives. That gap \u2014 between the business you booked and the person who turns up \u2014 is where risk lives. Closing it requires bi-directional authentication: both parties proving their identity to each other in real time, with the cleaner\u2019s organisational membership and authority verified cryptographically, not just taken on trust.",
+      "Platforms like Checkatrade and Trustatrader verify that a cleaning business exists. They cannot verify who actually arrives. That gap \u2014 between the business you booked and the person who turns up \u2014 is where risk lives. Closing it requires bi-directional authentication: both parties proving their identity to each other in real time, with the cleaner\u2019s organisational membership and authority verified verifiably, not just taken on trust.",
     ],
     problems: [
       "Cleaning companies send different staff with no notice \u2014 you don\u2019t know who\u2019s actually in your home.",
@@ -37,9 +37,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Cleaner arrives \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the cleaner\u2019s active membership with their cleaning company and their authority to be there",
-      "A tamper-proof record is created: who, when, where, and under whose organisational authority",
+      "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -61,13 +61,13 @@ export const ROLE_PAGES: ForPage[] = [
         question:
           "How do cleaning companies verify their staff with Certifyd?",
         answer:
-          "Cleaning companies register as an Organisation on Certifyd and add each cleaner as a member with a defined role. Each cleaner registers their own device (a passkey on their phone, for example) which is cryptographically bound to their identity. When they arrive at a job, the system verifies not just the cleaner\u2019s identity but their active membership and authority within the company \u2014 in real time. If a cleaner leaves the company, their membership is revoked instantly and they can no longer verify under that organisation.",
+          "Cleaning companies register as an Organisation on Certifyd and add each cleaner as a member with a defined role. Each cleaner registers their own device (a verified credential on their phone, for example) which is securely linked to their identity. When they arrive at a job, the system verifies not just the cleaner\u2019s identity but their active membership and authority within the company \u2014 in real time. If a cleaner leaves the company, their membership is revoked instantly and they can no longer verify under that organisation.",
       },
       {
         question:
           "How is Certifyd different from just asking to see ID?",
         answer:
-          "A driving licence or passport proves a person\u2019s name \u2014 it does not prove they work for the company they claim to represent, that they are authorised to be at your address, or that they were actually there at a specific time. Certifyd uses device-bound cryptographic authentication: the cleaner\u2019s identity is verified through their registered device, their active membership in the cleaning company is confirmed in real time, and a tamper-proof audit record is created automatically. It\u2019s the difference between a static card anyone could carry and a live, verified chain of trust.",
+          "A driving licence or passport proves a person\u2019s name \u2014 it does not prove they work for the company they claim to represent, that they are authorised to be at your address, or that they were actually there at a specific time. Certifyd uses device-verified identity authentication: the cleaner\u2019s identity is verified through their registered device, their active membership in the cleaning company is confirmed in real time, and an auditable audit record is created automatically. It\u2019s the difference between a static card anyone could carry and a live, verified chain of trust.",
       },
       {
         question:
@@ -136,7 +136,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Temporary workers arrive at your site, warehouse, or office as complete strangers. Certifyd verifies every temp\u2019s identity, right to work, and agency affiliation before they start.",
     heroCard: { name: "James Wilson", secondaryLabel: "Company", secondaryValue: "FlexStaff Ltd", context: "Arrived: 06:00 AM" },
     searchIntentParagraph:
-      "Identity verification for temp workers means more than checking a name against a booking sheet. Certifyd uses bi-directional authentication \u2014 the hiring site and the temp worker cryptographically prove their identity to each other in real time. When a temp arrives, the system verifies not just who they are, but that they hold an active assignment with the staffing agency that sent them and are authorised to work at that location. The result is a tamper-proof, auditable record of every assignment: who arrived, when, where, and under whose contractual authority.",
+      "Identity verification for temp workers means more than checking a name against a booking sheet. Certifyd uses bi-directional authentication \u2014 the hiring site and the temp worker verifiably prove their identity to each other in real time. When a temp arrives, the system verifies not just who they are, but that they hold an active assignment with the staffing agency that sent them and are authorised to work at that location. The result is an auditable, auditable record of every assignment: who arrived, when, where, and under whose contractual authority.",
     stats: [
       { value: "1.2M", label: "agency workers in the UK" },
       { value: "\u00a360K", label: "penalty per illegal worker" },
@@ -145,7 +145,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "The UK temporary staffing industry employs over 1.2 million workers through more than 30,000 recruitment agencies. On any given day, tens of thousands of people walk onto work sites where nobody knows them personally. The hiring manager has a name on a spreadsheet. The temp has a lanyard with a photo. Neither side has verified the other.",
       "Under the Immigration, Asylum and Nationality Act 2006, employers bear joint liability for right-to-work checks \u2014 even when a worker arrives through an agency. The Fair Work Agency, launching April 2026, will have the power to inspect any business and demand evidence of every worker\u2019s identity and right to work. Relying on the agency to \u2018have done the checks\u2019 is not a statutory excuse.",
-      "The gap between booking a temp and knowing who actually turns up is a compliance blind spot. Agencies verify at onboarding, but there is no mechanism to confirm that the person who arrives at the site is the same person who was onboarded. Certifyd closes that gap with device-bound, bi-directional authentication \u2014 both parties verify each other in real time, with organisational membership and assignment authority confirmed cryptographically.",
+      "The gap between booking a temp and knowing who actually turns up is a compliance blind spot. Agencies verify at onboarding, but there is no mechanism to confirm that the person who arrives at the site is the same person who was onboarded. Certifyd closes that gap with device-verified, bi-directional authentication \u2014 both parties verify each other in real time, with organisational membership and assignment authority confirmed verifiably.",
     ],
     problems: [
       "Agencies send replacement temps with no notice \u2014 the site has no way to verify who actually arrives.",
@@ -155,9 +155,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Temp worker arrives on site \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the temp\u2019s active assignment with their staffing agency, right-to-work status, and authority to be at that site",
-      "A tamper-proof record is created: who, when, where, and under whose contractual authority",
+      "A auditable record is created: who, when, where, and under whose contractual authority",
     ],
     testimonial: {
       quote:
@@ -173,17 +173,17 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "What happens when the agency sends a different temp?",
         answer:
-          "Last-minute substitutions are common in temporary staffing \u2014 sickness, no-shows, and scheduling changes mean a different person may arrive. Without real-time verification, the site manager has no way to confirm the substitute\u2019s identity or assignment. Certifyd links each temp to their device-bound identity and active agency assignment, so the site knows immediately whether the person who arrives is authorised to be there.",
+          "Last-minute substitutions are common in temporary staffing \u2014 sickness, no-shows, and scheduling changes mean a different person may arrive. Without real-time verification, the site manager has no way to confirm the substitute\u2019s identity or assignment. Certifyd links each temp to their device-verified identity and active agency assignment, so the site knows immediately whether the person who arrives is authorised to be there.",
       },
       {
         question: "How does Certifyd help with Fair Work Agency compliance?",
         answer:
-          "The Fair Work Agency (launching April 2026) will have the power to enter any business and demand evidence of right-to-work checks for every worker on site. Certifyd creates tamper-proof verification records for every temp worker assignment \u2014 who was verified, when, where, by whom, and under whose organisational authority. These records are audit-ready and exportable, giving you compliance evidence that goes beyond a photocopied passport in a filing cabinet.",
+          "The Fair Work Agency (launching April 2026) will have the power to enter any business and demand evidence of right-to-work checks for every worker on site. Certifyd creates auditable verification records for every temp worker assignment \u2014 who was verified, when, where, by whom, and under whose organisational authority. These records are audit-ready and exportable, giving you compliance evidence that goes beyond a photocopied passport in a filing cabinet.",
       },
       {
         question: "Can temp workers use Certifyd across multiple agencies?",
         answer:
-          "Yes. A temp worker\u2019s Certifyd identity is theirs \u2014 it\u2019s bound to their device, not to any single agency. When they register with a new agency, that agency adds them as a member with the appropriate role. The worker can hold memberships across multiple agencies simultaneously, and each agency can manage, revoke, or update their membership independently. The worker\u2019s cryptographic identity remains consistent across all of them.",
+          "Yes. A temp worker\u2019s Certifyd identity is theirs \u2014 it\u2019s bound to their device, not to any single agency. When they register with a new agency, that agency adds them as a member with the appropriate role. The worker can hold memberships across multiple agencies simultaneously, and each agency can manage, revoke, or update their membership independently. The worker\u2019s verified identity remains consistent across all of them.",
       },
     ],
     alsoRelevant: [
@@ -234,7 +234,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Electricians access every room in your home, often unsupervised. Certifyd verifies their identity, company membership, and authority to be there \u2014 at the door, in 30 seconds.",
     heroCard: { name: "David Chen", secondaryLabel: "Company", secondaryValue: "Chen Electrical", context: "Arrived: 10:30 AM" },
     searchIntentParagraph:
-      "Identity verification for electricians goes beyond checking a business card or a Part P certificate. Certifyd uses bi-directional authentication \u2014 both the homeowner and the electrician cryptographically prove their identity to each other in real time. When an electrician arrives, the system verifies not just who they are, but that they hold an active membership with the electrical company that dispatched them and are authorised for that job. The result is a tamper-proof, auditable record of every visit: who arrived, when, where, and under whose professional authority.",
+      "Identity verification for electricians goes beyond checking a business card or a Part P certificate. Certifyd uses bi-directional authentication \u2014 both the homeowner and the electrician verifiably prove their identity to each other in real time. When an electrician arrives, the system verifies not just who they are, but that they hold an active membership with the electrical company that dispatched them and are authorised for that job. The result is an auditable, auditable record of every visit: who arrived, when, where, and under whose professional authority.",
     stats: [
       { value: "0", label: "ID checks required for electricians entering homes" },
       { value: "\u00a3270M", label: "annual UK rogue trader losses" },
@@ -243,7 +243,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "Electrical work in the UK is partially regulated through Part P of the Building Regulations and the Competent Person Scheme, but there is no requirement for an electrician to prove their identity to a homeowner before entering the property. A valid certification card proves competency \u2014 it does not prove that the person holding it is who they claim to be, or that they were sent by the company you booked.",
       "When an electrical company dispatches a subcontractor or sends a replacement engineer, the homeowner has no mechanism to verify the substitute\u2019s identity or authority. The name on the booking may not match the person at the door. Electrical work requires access to every room, including bedrooms and private spaces, often with the homeowner absent.",
-      "Trade platforms and certification bodies verify that a business or individual is competent and insured. They cannot verify who actually arrives at the property. Certifyd closes that gap with bi-directional, device-bound authentication: both parties prove their identity cryptographically, with the electrician\u2019s organisational membership and dispatch authority confirmed in real time.",
+      "Trade platforms and certification bodies verify that a business or individual is competent and insured. They cannot verify who actually arrives at the property. Certifyd closes that gap with bi-directional, device-verified authentication: both parties prove their identity verifiably, with the electrician\u2019s organisational membership and dispatch authority confirmed in real time.",
     ],
     problems: [
       "Electrical companies send subcontractors or replacement engineers without notifying the homeowner.",
@@ -253,9 +253,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Electrician arrives \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the electrician\u2019s active membership with their company and their authority for that specific job",
-      "A tamper-proof record is created: who, when, where, and under whose professional authority",
+      "A auditable record is created: who, when, where, and under whose professional authority",
     ],
     testimonial: {
       quote:
@@ -271,7 +271,7 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "How is Certifyd different from checking an NICEIC or NAPIT card?",
         answer:
-          "An NICEIC or NAPIT card proves that the registered person is competent. It does not prove that the person holding the card is that person, that they currently work for the company they claim to represent, or that they were authorised to attend your property. Certifyd uses device-bound cryptographic authentication: the electrician\u2019s identity is verified through their registered device, their active membership in the company is confirmed in real time, and a tamper-proof audit record is created automatically.",
+          "An NICEIC or NAPIT card proves that the registered person is competent. It does not prove that the person holding the card is that person, that they currently work for the company they claim to represent, or that they were authorised to attend your property. Certifyd uses device-verified identity authentication: the electrician\u2019s identity is verified through their registered device, their active membership in the company is confirmed in real time, and an auditable audit record is created automatically.",
       },
       {
         question: "What if the electrical company sends a subcontractor?",
@@ -332,7 +332,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Plumbers often arrive during emergencies when you\u2019re vulnerable and rushed. Certifyd verifies their identity, company membership, and dispatch authority \u2014 in 30 seconds, even under pressure.",
     heroCard: { name: "Mark Thompson", secondaryLabel: "Company", secondaryValue: "Thompson Plumbing", context: "Arrived: 08:45 AM" },
     searchIntentParagraph:
-      "Identity verification for plumbers is critical because plumbing emergencies create urgency that criminals exploit. Certifyd uses bi-directional authentication \u2014 both the homeowner and the plumber cryptographically prove their identity to each other in real time. When a plumber arrives, the system verifies not just who they are, but that they hold an active membership with the plumbing company that dispatched them. The result is a tamper-proof, auditable record of every callout: who arrived, when, where, and under whose authority.",
+      "Identity verification for plumbers is critical because plumbing emergencies create urgency that criminals exploit. Certifyd uses bi-directional authentication \u2014 both the homeowner and the plumber verifiably prove their identity to each other in real time. When a plumber arrives, the system verifies not just who they are, but that they hold an active membership with the plumbing company that dispatched them. The result is an auditable, auditable record of every callout: who arrived, when, where, and under whose authority.",
     stats: [
       { value: "12K+", label: "rogue trader reports annually (Trading Standards)" },
       { value: "\u00a31,200", label: "average loss to emergency callout scams" },
@@ -341,7 +341,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "Plumbing is entirely unregulated in England. Unlike gas work (which requires Gas Safe registration), there is no mandatory register, licensing requirement, or competency check for plumbers. Anyone can call themselves a plumber and advertise plumbing services tomorrow. The only exception is work involving unvented hot water systems, which requires specific certification.",
       "Emergency callouts are particularly risky. When a pipe bursts at midnight, homeowners are under pressure to let someone in immediately. This urgency is routinely exploited by rogue traders who arrive quickly, quote inflated prices, and carry out unnecessary or substandard work. Trading Standards receives over 12,000 rogue trader reports annually, with plumbing and heating among the most common categories.",
-      "Even legitimate plumbing companies create risk through substitution. When the plumber you booked is unavailable, a replacement arrives \u2014 and you have no way to verify they are who they claim to be. Certifyd\u2019s bi-directional authentication closes this gap: both parties verify each other through device-bound cryptographic proof, with the plumber\u2019s organisational membership confirmed in real time.",
+      "Even legitimate plumbing companies create risk through substitution. When the plumber you booked is unavailable, a replacement arrives \u2014 and you have no way to verify they are who they claim to be. Certifyd\u2019s bi-directional authentication closes this gap: both parties verify each other through device-verified proof, with the plumber\u2019s organisational membership confirmed in real time.",
     ],
     problems: [
       "Emergency callouts create urgency that rogue traders exploit \u2014 homeowners let strangers in under pressure.",
@@ -351,9 +351,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Plumber arrives \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the plumber\u2019s active membership with their company and dispatch authority for that callout",
-      "A tamper-proof record is created: who, when, where, and under whose professional authority",
+      "A auditable record is created: who, when, where, and under whose professional authority",
     ],
     testimonial: {
       quote:
@@ -374,12 +374,12 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "How do plumbing companies use Certifyd?",
         answer:
-          "Plumbing companies register as an Organisation on Certifyd and add each plumber as a member with a defined role. Each plumber registers their own device, which is cryptographically bound to their identity. When dispatched to a job, the system verifies not just the plumber\u2019s identity but their active membership and authority within the company \u2014 in real time. If a plumber leaves, their membership is revoked instantly.",
+          "Plumbing companies register as an Organisation on Certifyd and add each plumber as a member with a defined role. Each plumber registers their own device, which is securely linked to their identity. When dispatched to a job, the system verifies not just the plumber\u2019s identity but their active membership and authority within the company \u2014 in real time. If a plumber leaves, their membership is revoked instantly.",
       },
       {
         question: "Is Certifyd the same as checking a Gas Safe card?",
         answer:
-          "No. Gas Safe registration proves a person is qualified to work on gas appliances \u2014 it does not cover general plumbing, and it does not prove the person holding the card is actually that person. Certifyd uses device-bound cryptographic authentication: the plumber\u2019s identity is verified through their registered device, their company membership is confirmed in real time, and a tamper-proof record is created. It\u2019s live, verified proof \u2014 not a static card.",
+          "No. Gas Safe registration proves a person is qualified to work on gas appliances \u2014 it does not cover general plumbing, and it does not prove the person holding the card is actually that person. Certifyd uses device-verified identity authentication: the plumber\u2019s identity is verified through their registered device, their company membership is confirmed in real time, and an auditable record is created. It\u2019s live, verified proof \u2014 not a static card.",
       },
     ],
     alsoRelevant: [
@@ -430,7 +430,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Building projects bring multiple tradespeople into your home over weeks or months. Certifyd verifies every person on site \u2014 their identity, their company, and their authority to be there.",
     heroCard: { name: "Tom Richards", secondaryLabel: "Company", secondaryValue: "Richards & Sons Building", context: "Arrived: 07:30 AM" },
     searchIntentParagraph:
-      "Identity verification for builders addresses a unique challenge: building projects involve multiple people rotating through your property over extended periods. Certifyd uses bi-directional authentication \u2014 both the homeowner and each tradesperson cryptographically prove their identity to each other in real time. The system verifies not just who they are, but that each person holds an active membership with the building company and is authorised for that specific project. Every visit creates a tamper-proof, auditable record.",
+      "Identity verification for builders addresses a unique challenge: building projects involve multiple people rotating through your property over extended periods. Certifyd uses bi-directional authentication \u2014 both the homeowner and each tradesperson verifiably prove their identity to each other in real time. The system verifies not just who they are, but that each person holds an active membership with the building company and is authorised for that specific project. Every visit creates an auditable, auditable record.",
     stats: [
       { value: "0", label: "licensing required for UK builders" },
       { value: "6\u201312", label: "average people on a home renovation crew" },
@@ -439,7 +439,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "Building is entirely unregulated in the UK. There is no licensing requirement, no register of builders, and no mandatory identity check. Unlike Australia (where builders must hold a licence) or many US states (which require contractor licensing), anyone in the UK can advertise building services with no oversight whatsoever.",
       "Home renovation projects compound the risk. A typical kitchen or extension project involves the main contractor plus subcontractors: electricians, plumbers, plasterers, tilers, decorators. The homeowner books one company but multiple unknown individuals arrive over weeks or months. The main contractor may have vetted their direct employees, but subcontractors bring their own crews \u2014 and nobody verifies the chain.",
-      "When something goes wrong \u2014 theft, damage, disputes over work quality \u2014 the homeowner often cannot identify which individual was responsible, on which day, working under whose authority. Certifyd creates a cryptographically verified record of every person who enters the property, linked to their organisational membership, for every visit throughout the project.",
+      "When something goes wrong \u2014 theft, damage, disputes over work quality \u2014 the homeowner often cannot identify which individual was responsible, on which day, working under whose authority. Certifyd creates a document-verified record of every person who enters the property, linked to their organisational membership, for every visit throughout the project.",
     ],
     problems: [
       "Building projects bring multiple unknown subcontractors into your home over weeks or months.",
@@ -449,9 +449,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Each tradesperson arrives \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the homeowner \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the homeowner \u2014 bi-directional, not one-way",
       "The system confirms each person\u2019s active membership with the building company or subcontractor and their authority for this project",
-      "A tamper-proof record is created for every visit: who, when, where, and under whose authority in the contractor chain",
+      "A auditable record is created for every visit: who, when, where, and under whose authority in the contractor chain",
     ],
     testimonial: {
       quote:
@@ -467,12 +467,12 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "How do I verify subcontractors on a building project?",
         answer:
-          "On a typical building project, the main contractor hires subcontractors who bring their own crews. The homeowner has no direct relationship with these individuals and no way to verify them. With Certifyd, every person on site \u2014 whether direct employee or subcontractor \u2014 verifies through their device-bound identity and active organisational membership. The homeowner sees exactly who each person is and which company authorised them to be there.",
+          "On a typical building project, the main contractor hires subcontractors who bring their own crews. The homeowner has no direct relationship with these individuals and no way to verify them. With Certifyd, every person on site \u2014 whether direct employee or subcontractor \u2014 verifies through their device-verified identity and active organisational membership. The homeowner sees exactly who each person is and which company authorised them to be there.",
       },
       {
         question: "Can Certifyd track who was on site each day?",
         answer:
-          "Yes. Every verification creates a tamper-proof record with a timestamp and location. Over the course of a building project, this builds a complete audit trail of which individuals were on your property on which days, working under whose authority. If a dispute arises weeks or months later, you have verifiable evidence \u2014 not just memory.",
+          "Yes. Every verification creates an auditable record with a timestamp and location. Over the course of a building project, this builds a complete audit trail of which individuals were on your property on which days, working under whose authority. If a dispute arises weeks or months later, you have verifiable evidence \u2014 not just memory.",
       },
       {
         question: "What about one-person building firms?",
@@ -529,7 +529,7 @@ export const ROLE_PAGES: ForPage[] = [
     heroGraphic: "shift-monitor",
     heroCard: { name: "Maria Santos", secondaryLabel: "Provider", secondaryValue: "Sunrise Care Group" },
     searchIntentParagraph:
-      "Identity verification for care workers is a safeguarding imperative, not just an administrative task. Certifyd uses bi-directional authentication \u2014 both the care recipient (or their family) and the care worker cryptographically prove their identity to each other in real time. When a care worker arrives, the system verifies not just who they are, but that they hold an active membership with the care provider, their DBS status is current, and they are authorised for that specific service user. The result is a tamper-proof, auditable record of every visit.",
+      "Identity verification for care workers is a safeguarding imperative, not just an administrative task. Certifyd uses bi-directional authentication \u2014 both the care recipient (or their family) and the care worker verifiably prove their identity to each other in real time. When a care worker arrives, the system verifies not just who they are, but that they hold an active membership with the care provider, their DBS status is current, and they are authorised for that specific service user. The result is an auditable, auditable record of every visit.",
     stats: [
       { value: "165K", label: "care worker vacancies in England" },
       { value: "39%", label: "annual staff turnover in adult social care" },
@@ -538,7 +538,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "Adult social care in England employs approximately 1.5 million people across 18,000 organisations. Staff turnover is 39% annually \u2014 meaning the care worker visiting your parent this week may not be the same person who visited last week. For families relying on home care, this constant rotation of unfamiliar faces creates anxiety and safeguarding risk.",
       "The Care Quality Commission (CQC) requires providers to carry out DBS checks and verify identity at onboarding. But DBS checks are a point-in-time snapshot \u2014 they confirm a person\u2019s criminal record status on the day the check was run, not today. And onboarding verification confirms who a person was when they joined, not that the person arriving at a service user\u2019s home is still that same employee, still with that same provider, still authorised for that role.",
-      "Agency staff compound the problem. Care homes and domiciliary care providers routinely rely on agency workers to cover shifts, particularly nights and weekends. The agency verifies at registration, but there is no real-time mechanism to confirm that the person who arrives is the person the agency dispatched. Certifyd closes this gap with device-bound, bi-directional authentication \u2014 verifying identity, organisational membership, and role authority in real time.",
+      "Agency staff compound the problem. Care homes and domiciliary care providers routinely rely on agency workers to cover shifts, particularly nights and weekends. The agency verifies at registration, but there is no real-time mechanism to confirm that the person who arrives is the person the agency dispatched. Certifyd closes this gap with device-verified, bi-directional authentication \u2014 verifying identity, organisational membership, and role authority in real time.",
     ],
     problems: [
       "39% annual staff turnover means families constantly encounter unfamiliar care workers.",
@@ -548,9 +548,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Care worker arrives \u2014 both parties (or the family member / manager) open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the care worker\u2019s active membership with their care provider, current role, and authorisation for that service user",
-      "A tamper-proof record is created: who, when, where, and under whose organisational authority",
+      "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -561,7 +561,7 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "How does Certifyd help with CQC compliance?",
         answer:
-          "CQC requires care providers to demonstrate robust recruitment and identity verification processes. Certifyd creates tamper-proof verification records for every care worker visit \u2014 who was verified, when, where, and under whose organisational authority. These records are audit-ready and demonstrate ongoing identity assurance, not just onboarding checks. This supports CQC\u2019s \u2018Safe\u2019 and \u2018Well-led\u2019 key lines of enquiry.",
+          "CQC requires care providers to demonstrate robust recruitment and identity verification processes. Certifyd creates auditable verification records for every care worker visit \u2014 who was verified, when, where, and under whose organisational authority. These records are audit-ready and demonstrate ongoing identity assurance, not just onboarding checks. This supports CQC\u2019s \u2018Safe\u2019 and \u2018Well-led\u2019 key lines of enquiry.",
       },
       {
         question: "Can family members verify care workers remotely?",
@@ -628,7 +628,7 @@ export const ROLE_PAGES: ForPage[] = [
     heroGraphic: "shift-monitor",
     heroCard: { name: "Rachel Okonkwo", secondaryLabel: "Agency", secondaryValue: "NHS Locum Bank" },
     searchIntentParagraph:
-      "Identity verification for agency nurses addresses a critical safeguarding gap in healthcare staffing. Certifyd uses bi-directional authentication \u2014 both the receiving facility and the agency nurse cryptographically prove their identity to each other in real time. When a nurse arrives for a shift, the system verifies not just who they are, but that they hold an active membership with the nursing agency that dispatched them and are authorised for that assignment. The result is a tamper-proof, auditable record of every shift: who arrived, when, where, and under whose authority.",
+      "Identity verification for agency nurses addresses a critical safeguarding gap in healthcare staffing. Certifyd uses bi-directional authentication \u2014 both the receiving facility and the agency nurse verifiably prove their identity to each other in real time. When a nurse arrives for a shift, the system verifies not just who they are, but that they hold an active membership with the nursing agency that dispatched them and are authorised for that assignment. The result is an auditable, auditable record of every shift: who arrived, when, where, and under whose authority.",
     stats: [
       { value: "\u00a33B+", label: "NHS spend on agency staff annually" },
       { value: "70K+", label: "agency nurses active in the UK" },
@@ -637,7 +637,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "The NHS spends over \u00a33 billion annually on agency and bank staff. Across the health and social care sector, over 70,000 agency nurses work shifts at facilities where they may never have been before. They arrive in scrubs, present an ID badge, and begin working with vulnerable patients \u2014 often without the receiving ward having any independent way to verify their identity.",
       "NMC registration confirms that a person is a qualified nurse. It does not confirm that the person presenting themselves at the ward is actually that registered nurse. PIN numbers can be shared, ID badges can be borrowed, and agency booking confirmations don\u2019t include photographs. The gap between \u2018a qualified nurse was dispatched\u2019 and \u2018this specific person is that qualified nurse\u2019 is where safeguarding risk lives.",
-      "High-profile cases of impersonation in healthcare settings \u2014 including individuals posing as nurses to access medication, patients, or restricted areas \u2014 demonstrate that institutional trust in uniforms and badges is insufficient. Certifyd replaces assumption with cryptographic proof: device-bound, bi-directional authentication that verifies the nurse\u2019s identity and active agency membership in real time, creating an auditable record for every shift.",
+      "High-profile cases of impersonation in healthcare settings \u2014 including individuals posing as nurses to access medication, patients, or restricted areas \u2014 demonstrate that institutional trust in uniforms and badges is insufficient. Certifyd replaces assumption with verified identity: device-verified, bi-directional authentication that verifies the nurse\u2019s identity and active agency membership in real time, creating an auditable record for every shift.",
     ],
     problems: [
       "Agency nurses arrive at facilities where nobody knows them, wearing generic scrubs and presenting an ID badge.",
@@ -647,9 +647,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Agency nurse arrives for shift \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the nurse\u2019s active membership with their nursing agency and their authorisation for that specific shift",
-      "A tamper-proof record is created: who, when, where, and under whose organisational authority",
+      "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -660,7 +660,7 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "How do facilities currently verify agency nurses?",
         answer:
-          "Most facilities check an ID badge and cross-reference with the agency\u2019s booking confirmation. Some check NMC registration online. But none of these methods verify that the person standing in front of you is the person named on those documents. An NMC PIN can be recited by anyone. An ID badge can be borrowed. Certifyd uses device-bound cryptographic authentication \u2014 the nurse proves their identity through their registered device, which cannot be transferred or spoofed.",
+          "Most facilities check an ID badge and cross-reference with the agency\u2019s booking confirmation. Some check NMC registration online. But none of these methods verify that the person standing in front of you is the person named on those documents. An NMC PIN can be recited by anyone. An ID badge can be borrowed. Certifyd uses device-verified identity authentication \u2014 the nurse proves their identity through their registered device, which cannot be transferred or spoofed.",
       },
       {
         question: "Does Certifyd verify NMC registration?",
@@ -726,7 +726,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Delivery drivers visit your home regularly, know your routine, and often arrive when you\u2019re alone. Certifyd verifies their identity and the company they represent \u2014 before you open the door.",
     heroCard: { name: "Ryan Foster", secondaryLabel: "Company", secondaryValue: "Swift Logistics", context: "Arrived: 11:20 AM" },
     searchIntentParagraph:
-      "Identity verification for delivery drivers matters because deliveries are one of the most common ways strangers come to your door. Certifyd uses bi-directional authentication \u2014 both the homeowner and the delivery driver cryptographically prove their identity to each other in real time. When a driver arrives, the system verifies not just who they are, but that they hold an active role with the delivery company and are authorised for that route. The result is a tamper-proof, auditable record of every delivery: who arrived, when, where, and under whose authority.",
+      "Identity verification for delivery drivers matters because deliveries are one of the most common ways strangers come to your door. Certifyd uses bi-directional authentication \u2014 both the homeowner and the delivery driver verifiably prove their identity to each other in real time. When a driver arrives, the system verifies not just who they are, but that they hold an active role with the delivery company and are authorised for that route. The result is an auditable, auditable record of every delivery: who arrived, when, where, and under whose authority.",
     stats: [
       { value: "4.2B", label: "UK parcels delivered annually" },
       { value: "53%", label: "of doorstep crimes involve impersonating delivery" },
@@ -745,9 +745,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Driver arrives \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the driver\u2019s active role with their delivery company and their authorisation for that route",
-      "A tamper-proof record is created: who, when, where, and under whose organisational authority",
+      "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
     faqs: [
       {
@@ -758,12 +758,12 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "Don\u2019t delivery companies already verify their drivers?",
         answer:
-          "Some do \u2014 at the point of onboarding. But many delivery drivers are self-employed contractors working through intermediary platforms, not direct employees. A driver may change platforms, lose their contract, or be working under a different person\u2019s account. Onboarding verification does not confirm that the person at your door today is the same person who was vetted months ago. Certifyd provides real-time, device-bound verification at the point of delivery.",
+          "Some do \u2014 at the point of onboarding. But many delivery drivers are self-employed contractors working through intermediary platforms, not direct employees. A driver may change platforms, lose their contract, or be working under a different person\u2019s account. Onboarding verification does not confirm that the person at your door today is the same person who was vetted months ago. Certifyd provides real-time, device-verified verification at the point of delivery.",
       },
       {
         question: "How would delivery companies use Certifyd?",
         answer:
-          "Delivery companies register as Organisations on Certifyd and add each driver as a member with a defined role. Each driver registers their own device, which is cryptographically bound to their identity. At each delivery, the system verifies not just the driver\u2019s identity but their active membership and current authorisation. If a driver leaves or is suspended, their membership is revoked instantly.",
+          "Delivery companies register as Organisations on Certifyd and add each driver as a member with a defined role. Each driver registers their own device, which is securely linked to their identity. At each delivery, the system verifies not just the driver\u2019s identity but their active membership and current authorisation. If a driver leaves or is suspended, their membership is revoked instantly.",
       },
       {
         question: "Is this practical for hundreds of daily deliveries?",
@@ -814,7 +814,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Security guards have access to your premises, CCTV, alarms, and keys. Certifyd verifies their identity, SIA licence status, and employer affiliation \u2014 in real time.",
     heroCard: { name: "James Ndlovu", secondaryLabel: "Company", secondaryValue: "Sentinel Security", context: "Shift started: 22:00" },
     searchIntentParagraph:
-      "Identity verification for security guards closes an ironic gap: the people responsible for site security are often the least verified individuals on the premises. Certifyd uses bi-directional authentication \u2014 both the site manager and the security guard cryptographically prove their identity to each other in real time. The system verifies not just who the guard is, but that they hold an active SIA licence, are a current member of the security company, and are authorised for that specific site. Every shift creates a tamper-proof audit record.",
+      "Identity verification for security guards closes an ironic gap: the people responsible for site security are often the least verified individuals on the premises. Certifyd uses bi-directional authentication \u2014 both the site manager and the security guard verifiably prove their identity to each other in real time. The system verifies not just who the guard is, but that they hold an active SIA licence, are a current member of the security company, and are authorised for that specific site. Every shift creates an auditable audit record.",
     stats: [
       { value: "370K", label: "SIA licence holders in the UK" },
       { value: "25%+", label: "of guards work through agencies" },
@@ -823,7 +823,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "The Private Security Industry Act 2001 requires security guards to hold a Security Industry Authority (SIA) licence. But SIA licences prove that a person passed the required training and background checks \u2014 they do not prove that the person presenting at your site is the licence holder. SIA licence numbers can be shared, badges can be cloned, and there is no real-time mechanism to confirm the guard standing at your reception is who they claim to be.",
       "The security industry relies heavily on agency and subcontractor labour. Over 25% of security guards work through agencies, covering shifts at sites they may never have visited before. The site manager receives a name from the agency and a guard arrives \u2014 but without independent verification, there is no way to confirm the match. When a guard covers a colleague\u2019s shift at short notice, the gap widens further.",
-      "Security guards hold extraordinary access: keys, alarm codes, CCTV systems, server rooms, and detailed knowledge of a building\u2019s vulnerabilities. Certifyd\u2019s bi-directional, device-bound authentication ensures that every guard on every shift is cryptographically verified, with their organisational membership and site authorisation confirmed in real time.",
+      "Security guards hold extraordinary access: keys, alarm codes, CCTV systems, server rooms, and detailed knowledge of a building\u2019s vulnerabilities. Certifyd\u2019s bi-directional, device-verified authentication ensures that every guard on every shift is document-verified, with their organisational membership and site authorisation confirmed in real time.",
     ],
     problems: [
       "SIA licences prove qualification, not that the person presenting is the licence holder.",
@@ -833,30 +833,30 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Guard arrives for shift \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the guard\u2019s active membership with their security company and authorisation for that site",
-      "A tamper-proof record is created: who, when, where, and under whose organisational authority",
+      "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
     faqs: [
       {
         question: "Don\u2019t SIA licences already verify security guards?",
         answer:
-          "SIA licences confirm that a person has passed the required training and background checks. They do not confirm that the person standing at your reception is the licence holder. An SIA badge shows a name, licence number, and photo \u2014 but badges can be cloned, photos can be outdated, and there is no real-time verification mechanism. Certifyd uses device-bound cryptographic authentication: the guard proves their identity through their registered device, which cannot be transferred, cloned, or spoofed.",
+          "SIA licences confirm that a person has passed the required training and background checks. They do not confirm that the person standing at your reception is the licence holder. An SIA badge shows a name, licence number, and photo \u2014 but badges can be cloned, photos can be outdated, and there is no real-time verification mechanism. Certifyd uses device-verified identity authentication: the guard proves their identity through their registered device, which cannot be transferred, cloned, or spoofed.",
       },
       {
         question: "How does Certifyd work with BS 7858 vetting?",
         answer:
-          "BS 7858 is the British Standard for security screening, covering employment history verification, criminal record checks, and identity confirmation at the point of hiring. Certifyd complements BS 7858 by providing ongoing, real-time identity verification at every shift \u2014 not just at onboarding. A guard who passed BS 7858 screening six months ago is verified again cryptographically every time they arrive for duty.",
+          "BS 7858 is the British Standard for security screening, covering employment history verification, criminal record checks, and identity confirmation at the point of hiring. Certifyd complements BS 7858 by providing ongoing, real-time identity verification at every shift \u2014 not just at onboarding. A guard who passed BS 7858 screening six months ago is verified again verifiably every time they arrive for duty.",
       },
       {
         question: "Can Certifyd verify guards across multiple sites?",
         answer:
-          "Yes. A guard\u2019s Certifyd identity is device-bound and portable. The security company adds site-specific authorisations as part of the guard\u2019s membership. When a guard arrives at any authorised site, the system confirms their identity, company membership, and specific site authorisation in real time. If site access is revoked, it takes effect immediately \u2014 the guard can no longer verify at that location.",
+          "Yes. A guard\u2019s Certifyd identity is device-verified and portable. The security company adds site-specific authorisations as part of the guard\u2019s membership. When a guard arrives at any authorised site, the system confirms their identity, company membership, and specific site authorisation in real time. If site access is revoked, it takes effect immediately \u2014 the guard can no longer verify at that location.",
       },
       {
         question: "What records does Certifyd create for security shifts?",
         answer:
-          "Every shift verification creates a tamper-proof record: the guard\u2019s verified identity, the time of verification, the location, and the organisational authority under which they are working. Over time, this builds a complete, auditable shift history for every guard across every site \u2014 invaluable for compliance, incident investigation, and client reporting.",
+          "Every shift verification creates an auditable record: the guard\u2019s verified identity, the time of verification, the location, and the organisational authority under which they are working. Over time, this builds a complete, auditable shift history for every guard across every site \u2014 invaluable for compliance, incident investigation, and client reporting.",
       },
     ],
     alsoRelevant: [
@@ -902,7 +902,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Warehouses run on high-volume, high-turnover labour. Certifyd verifies every worker\u2019s identity, agency affiliation, and right to work \u2014 before they start their shift.",
     heroCard: { name: "Tomasz Kowalski", secondaryLabel: "Company", secondaryValue: "MegaWare Distribution", context: "Arrived: 05:45 AM" },
     searchIntentParagraph:
-      "Identity verification for warehouse workers addresses the challenge of high-volume, high-turnover environments where dozens of new faces appear every week. Certifyd uses bi-directional authentication \u2014 both the site manager and the worker cryptographically prove their identity to each other in real time. When a worker arrives, the system verifies not just who they are, but that they hold an active assignment with the staffing agency that sent them, their right-to-work status, and their authorisation for that specific site. The result is audit-ready, tamper-proof records for every shift.",
+      "Identity verification for warehouse workers addresses the challenge of high-volume, high-turnover environments where dozens of new faces appear every week. Certifyd uses bi-directional authentication \u2014 both the site manager and the worker verifiably prove their identity to each other in real time. When a worker arrives, the system verifies not just who they are, but that they hold an active assignment with the staffing agency that sent them, their right-to-work status, and their authorisation for that specific site. The result is audit-ready, auditable records for every shift.",
     stats: [
       { value: "900K+", label: "warehouse workers in the UK" },
       { value: "35%+", label: "are agency or temporary staff" },
@@ -911,7 +911,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "UK warehousing and logistics employs over 900,000 workers, with more than 35% sourced through staffing agencies. Peak periods \u2014 Black Friday, Christmas, Easter \u2014 see warehouses onboard hundreds of temporary workers per week. The speed of onboarding frequently outpaces the rigour of identity verification. A worker arrives with a name badge, gets a hi-vis vest, and starts picking orders. Nobody independently verified who they are.",
       "Right-to-work compliance is a critical concern. The HMRC and the Fair Work Agency (launching April 2026) can inspect any warehouse and demand evidence of right-to-work checks for every person on site. When 40% of your workforce arrived through three different agencies this week, demonstrating that every individual was verified \u2014 and that the person on site is the person who was checked \u2014 becomes a serious compliance challenge.",
-      "The operational reality is that warehouse managers are responsible for output, not HR. They don\u2019t have time to conduct thorough identity checks on every temp who walks through the door. Certifyd automates this with device-bound, bi-directional authentication \u2014 30 seconds per worker, with tamper-proof records created automatically. No clipboards, no photocopied passports, no guesswork.",
+      "The operational reality is that warehouse managers are responsible for output, not HR. They don\u2019t have time to conduct thorough identity checks on every temp who walks through the door. Certifyd automates this with device-verified, bi-directional authentication \u2014 30 seconds per worker, with auditable records created automatically. No clipboards, no photocopied passports, no guesswork.",
     ],
     problems: [
       "Peak periods require onboarding dozens of temps per week \u2014 identity verification is routinely skipped.",
@@ -921,9 +921,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Worker arrives on site \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the worker\u2019s active assignment with their agency, right-to-work status, and site authorisation",
-      "A tamper-proof record is created: who, when, where, and under whose contractual authority",
+      "A auditable record is created: who, when, where, and under whose contractual authority",
     ],
     testimonial: {
       quote:
@@ -934,12 +934,12 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "How does Certifyd handle high-volume onboarding?",
         answer:
-          "Certifyd is designed for speed. Each verification takes 30 seconds. Workers register once \u2014 their device-bound identity persists across all assignments. When they arrive at a new site, verification confirms their identity, agency membership, and site authorisation instantly. There\u2019s no paperwork, no forms, no manual data entry. The system scales linearly: 10 workers take 5 minutes, 100 workers can be processed by multiple managers simultaneously.",
+          "Certifyd is designed for speed. Each verification takes 30 seconds. Workers register once \u2014 their device-verified identity persists across all assignments. When they arrive at a new site, verification confirms their identity, agency membership, and site authorisation instantly. There\u2019s no paperwork, no forms, no manual data entry. The system scales linearly: 10 workers take 5 minutes, 100 workers can be processed by multiple managers simultaneously.",
       },
       {
         question: "Who is liable for right-to-work checks in a warehouse?",
         answer:
-          "The hiring employer. Even when workers are sourced through agencies, the business operating the warehouse bears legal responsibility for right-to-work verification. Under the Immigration, Asylum and Nationality Act 2006, civil penalties of up to \u00a360,000 per illegal worker apply. The Fair Work Agency (from April 2026) will have enhanced inspection powers. Certifyd creates tamper-proof verification records that demonstrate compliance for every worker on every shift.",
+          "The hiring employer. Even when workers are sourced through agencies, the business operating the warehouse bears legal responsibility for right-to-work verification. Under the Immigration, Asylum and Nationality Act 2006, civil penalties of up to \u00a360,000 per illegal worker apply. The Fair Work Agency (from April 2026) will have enhanced inspection powers. Certifyd creates auditable verification records that demonstrate compliance for every worker on every shift.",
       },
       {
         question: "Can Certifyd work with multiple staffing agencies simultaneously?",
@@ -1000,7 +1000,7 @@ export const ROLE_PAGES: ForPage[] = [
       "Hotels, restaurants, and event venues rely on agency and casual staff who arrive as strangers. Certifyd verifies every new hire\u2019s identity and right to work before they start.",
     heroCard: { name: "Priya Sharma", secondaryLabel: "Company", secondaryValue: "The Grand Hotel", context: "Shift started: 14:00" },
     searchIntentParagraph:
-      "Identity verification for hospitality staff addresses an industry where high turnover and last-minute staffing create persistent identity gaps. Certifyd uses bi-directional authentication \u2014 both the venue manager and the worker cryptographically prove their identity to each other in real time. When a hospitality worker arrives for a shift, the system verifies not just who they are, but that they hold an active assignment with their agency or employer and are authorised to work. The result is a tamper-proof, auditable record of every shift.",
+      "Identity verification for hospitality staff addresses an industry where high turnover and last-minute staffing create persistent identity gaps. Certifyd uses bi-directional authentication \u2014 both the venue manager and the worker verifiably prove their identity to each other in real time. When a hospitality worker arrives for a shift, the system verifies not just who they are, but that they hold an active assignment with their agency or employer and are authorised to work. The result is an auditable, auditable record of every shift.",
     stats: [
       { value: "3.5M", label: "UK hospitality workforce" },
       { value: "30%", label: "annual staff turnover rate" },
@@ -1009,7 +1009,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "UK hospitality employs approximately 3.5 million people across 180,000 businesses, with annual staff turnover around 30%. Hotels, restaurants, pubs, and event venues routinely rely on agency and casual workers to fill shifts at short notice. On any busy Friday night, a restaurant may have three staff members who started that day \u2014 none of whose identity has been independently verified beyond a glance at a document.",
       "Hospitality is one of the sectors most at risk from right-to-work non-compliance. The Home Office\u2019s own data shows that hospitality consistently features in illegal working enforcement actions. The Fair Work Agency (launching April 2026) will consolidate enforcement powers and increase inspection frequency across the sector. For businesses that rely on casual and agency labour, the ability to demonstrate real-time identity verification for every worker on every shift is moving from \u2018nice to have\u2019 to \u2018essential\u2019.",
-      "The hospitality staffing model \u2014 high volume, high turnover, last-minute bookings \u2014 means that traditional identity verification methods (photocopied passports in a filing cabinet) cannot keep pace. Workers arrive from multiple agencies, work a few shifts, and move on. Certifyd\u2019s device-bound authentication creates a verifiable identity record for each worker that persists across venues, agencies, and assignments.",
+      "The hospitality staffing model \u2014 high volume, high turnover, last-minute bookings \u2014 means that traditional identity verification methods (photocopied passports in a filing cabinet) cannot keep pace. Workers arrive from multiple agencies, work a few shifts, and move on. Certifyd\u2019s device-verified authentication creates a verifiable identity record for each worker that persists across venues, agencies, and assignments.",
     ],
     problems: [
       "High turnover means new, unverified faces appear on the rota every week.",
@@ -1019,9 +1019,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Worker arrives for shift \u2014 both parties open Certifyd and authenticate via their registered device",
-      "Each person\u2019s identity is cryptographically verified to the other \u2014 bi-directional, not one-way",
+      "Each person\u2019s identity is document-verified to the other \u2014 bi-directional, not one-way",
       "The system confirms the worker\u2019s active role with their employer or agency and their right-to-work status",
-      "A tamper-proof record is created: who, when, where, and under whose organisational authority",
+      "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -1037,7 +1037,7 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "How do hotels verify agency staff with Certifyd?",
         answer:
-          "The hotel and the staffing agency both register as Organisations on Certifyd. The agency adds each worker as a member. When a worker arrives for a shift, the hotel manager verifies them through Certifyd \u2014 confirming their identity, active agency membership, and right-to-work status in real time. The hotel gets a tamper-proof verification record without needing to conduct its own background check.",
+          "The hotel and the staffing agency both register as Organisations on Certifyd. The agency adds each worker as a member. When a worker arrives for a shift, the hotel manager verifies them through Certifyd \u2014 confirming their identity, active agency membership, and right-to-work status in real time. The hotel gets an auditable verification record without needing to conduct its own background check.",
       },
       {
         question: "Can Certifyd handle event staffing?",
@@ -1047,7 +1047,7 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "What if a worker doesn\u2019t have a smartphone?",
         answer:
-          "Certifyd is device-bound, meaning verification works through the worker\u2019s registered device. For the rare case where a worker doesn\u2019t have access to a smartphone, alternative verification methods can be arranged through the employing organisation. However, with UK smartphone penetration above 95%, this is an edge case rather than a systemic barrier.",
+          "Certifyd is device-verified, meaning verification works through the worker\u2019s registered device. For the rare case where a worker doesn\u2019t have access to a smartphone, alternative verification methods can be arranged through the employing organisation. However, with UK smartphone penetration above 95%, this is an edge case rather than a systemic barrier.",
       },
     ],
     alsoRelevant: [
@@ -1095,11 +1095,11 @@ export const ROLE_PAGES: ForPage[] = [
     badge: "Remote Workers",
     headline: "You\u2019ve Never Met Them. You\u2019re Giving Them Access to Everything.",
     subtitle:
-      "Remote workers join your team from anywhere in the world, often without ever meeting anyone in person. Certifyd verifies they are who they claim to be \u2014 cryptographically, not just visually.",
+      "Remote workers join your team from anywhere in the world, often without ever meeting anyone in person. Certifyd verifies they are who they claim to be \u2014 verifiably, not just visually.",
     heroGraphic: "qr-scan",
     heroCard: { name: "Alex Morgan", secondaryLabel: "Company", secondaryValue: "TechFlow Ltd" },
     searchIntentParagraph:
-      "Identity verification for remote workers has become critical as deepfakes and AI-generated personas make visual verification unreliable. Certifyd uses bi-directional, device-bound authentication \u2014 both parties cryptographically prove their identity to each other in real time. Unlike video calls (where faces can be synthesised) or document checks (where PDFs can be forged), Certifyd verification is bound to a physical device through WebAuthn passkeys. You cannot deepfake a passkey. The result is cryptographic proof that the person on the other end of the connection is who they claim to be.",
+      "Identity verification for remote workers has become critical as deepfakes and AI-generated personas make visual verification unreliable. Certifyd uses bi-directional, device-verified authentication \u2014 both parties verifiably prove their identity to each other in real time. Unlike video calls (where faces can be synthesised) or document checks (where PDFs can be forged), Certifyd verification is bound to a physical device through secure biometric authentications. You cannot deepfake a verified credential. The result is verified identity that the person on the other end of the connection is who they claim to be.",
     stats: [
       { value: "44%", label: "of UK workers now work remotely at least part-time" },
       { value: "\u00a320M+", label: "lost in a single deepfake video call (Arup, 2024)" },
@@ -1108,7 +1108,7 @@ export const ROLE_PAGES: ForPage[] = [
     whyItMatters: [
       "Remote and hybrid work has become the norm for millions of UK workers. 44% of the UK workforce now works remotely at least part-time. This means companies routinely grant system access, credentials, and sensitive information to people they have never met in person. The onboarding process for remote workers typically involves a video call and a document check \u2014 neither of which is proof against modern impersonation techniques.",
       "Deepfakes have moved from theoretical risk to operational reality. In early 2024, engineering firm Arup lost \u00a320 million after an employee was deceived by a deepfake video call that impersonated the company\u2019s CFO and other executives. AI-generated candidates are appearing in recruitment processes, and voice cloning technology can now replicate a person\u2019s voice from a few seconds of audio. Visual and audio verification are no longer reliable.",
-      "Device-bound authentication solves this problem at the protocol level. A Certifyd passkey is cryptographically bound to the worker\u2019s physical device \u2014 it cannot be cloned, transferred, or synthesised. When a remote worker verifies through Certifyd, they prove their identity through a challenge-response that only their physical device can complete. No video, no voice, no documents \u2014 just cryptographic proof that the person is who they claim to be.",
+      "Device-verified authentication addresses this problem at a fundamental level. A Certifyd verified credential is securely linked to the worker\u2019s physical device \u2014 it cannot be cloned, transferred, or synthesised. When a remote worker verifies through Certifyd, they prove their identity through a challenge-response that only their physical device can complete. No video, no voice, no documents \u2014 just verified identity that the person is who they claim to be.",
     ],
     problems: [
       "Remote workers are onboarded through video calls and document checks \u2014 both vulnerable to deepfakes.",
@@ -1118,9 +1118,9 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     steps: [
       "Remote worker is asked to verify \u2014 both parties open Certifyd on their registered devices",
-      "Each person\u2019s identity is cryptographically verified through their device-bound passkey \u2014 no video or voice needed",
+      "Each person\u2019s identity is document-verified through their device-verified verified credential \u2014 no video or voice needed",
       "The system confirms the worker\u2019s active membership with their employer and their role authorisation",
-      "A tamper-proof record is created: who verified, when, and under whose organisational authority",
+      "A auditable record is created: who verified, when, and under whose organisational authority",
     ],
     testimonial: {
       quote:
@@ -1131,22 +1131,22 @@ export const ROLE_PAGES: ForPage[] = [
       {
         question: "Can Certifyd stop deepfake impersonation?",
         answer:
-          "Yes. Certifyd verification is device-bound, not appearance-bound. A deepfake can synthesise a person\u2019s face and voice, but it cannot complete a cryptographic challenge on the real person\u2019s registered device. When a remote worker verifies through Certifyd, they prove their identity through a passkey that is physically bound to their device \u2014 a device that an impersonator does not possess. This is fundamentally different from video-based verification.",
+          "Yes. Certifyd verification is device-verified, not appearance-bound. A deepfake can synthesise a person\u2019s face and voice, but it cannot complete a verified challenge on the real person\u2019s registered device. When a remote worker verifies through Certifyd, they prove their identity through a verified credential that is physically bound to their device \u2014 a device that an impersonator does not possess. This is fundamentally different from video-based verification.",
       },
       {
         question: "How does Certifyd work for remote onboarding?",
         answer:
-          "During onboarding, the remote worker registers their device with Certifyd, creating a cryptographic key pair bound to that device. Their employer adds them as a member with a defined role. From that point forward, any verification request can only be completed by that specific device \u2014 proving the person is who they claim to be, regardless of where they are. This replaces the \u2018show me your passport on Zoom\u2019 approach with cryptographic proof.",
+          "During onboarding, the remote worker registers their device with Certifyd, creating a secure credential bound to that device. Their employer adds them as a member with a defined role. From that point forward, any verification request can only be completed by that specific device \u2014 proving the person is who they claim to be, regardless of where they are. This replaces the \u2018show me your passport on Zoom\u2019 approach with verified identity.",
       },
       {
         question: "What about hybrid workers who are sometimes on-site?",
         answer:
-          "Certifyd works the same way regardless of location. A hybrid worker verifies through their device-bound passkey whether they\u2019re at home, in the office, at a client site, or in a coffee shop. The verification record captures the context (time, identity, organisational membership) without requiring physical presence. The same system that verifies a remote worker on a video call verifies them at the office entrance.",
+          "Certifyd works the same way regardless of location. A hybrid worker verifies through their device-verified verified credential whether they\u2019re at home, in the office, at a client site, or in a coffee shop. The verification record captures the context (time, identity, organisational membership) without requiring physical presence. The same system that verifies a remote worker on a video call verifies them at the office entrance.",
       },
       {
         question: "How is this different from SSO or 2FA?",
         answer:
-          "SSO and 2FA verify that someone can access an account \u2014 they don\u2019t verify who that someone is. If a person\u2019s credentials are compromised, 2FA protects the account but doesn\u2019t prove the person using the credentials is the legitimate owner. Certifyd adds identity verification to the mix: it confirms not just that the right credentials were used, but that the person using them is cryptographically verified as the person they claim to be. It\u2019s identity, not just access.",
+          "SSO and 2FA verify that someone can access an account \u2014 they don\u2019t verify who that someone is. If a person\u2019s credentials are compromised, 2FA protects the account but doesn\u2019t prove the person using the credentials is the legitimate owner. Certifyd adds identity verification to the mix: it confirms not just that the right credentials were used, but that the person using them is document-verified as the person they claim to be. It\u2019s identity, not just access.",
       },
     ],
     alsoRelevant: [

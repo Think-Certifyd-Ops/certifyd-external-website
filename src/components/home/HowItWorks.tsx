@@ -154,7 +154,7 @@ function PhoneRecord() {
         <div className="h-1.5 bg-navy-border rounded-full w-3/4" />
         <div className="h-1.5 bg-navy-border rounded-full w-5/6" />
       </div>
-      <div className="text-[9px] text-text-on-dark-muted mt-2">Tamper-proof</div>
+      <div className="text-[9px] text-text-on-dark-muted mt-2">Auditable</div>
     </PhoneFrame>
   );
 }
@@ -189,7 +189,7 @@ const STEPS = [
   {
     number: 4,
     title: "Recorded",
-    you: { label: "A tamper-proof record is created", Phone: PhoneRecord },
+    you: { label: "A auditable record is created", Phone: PhoneRecord },
     them: { label: "Both parties. One truth.", Phone: PhoneRecord },
   },
 ];

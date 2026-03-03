@@ -19,7 +19,7 @@ const sections = [
 
 **Account data** — Name, email address, organisation name, and role when you create an account or request a demo.
 
-**Verification data** — When you use Certifyd for identity verification, we process cryptographic authentication data through your device. We do not store biometric data centrally. Verification records include timestamps, device identifiers, and confirmation of successful verification.
+**Verification data** — When you use Certifyd for identity verification, we process verified authentication data through your device. We do not store biometric data centrally. Verification records include timestamps, device identifiers, and confirmation of successful verification.
 
 **Usage data** — How you interact with our website and services, including pages visited, features used, and session duration.
 
@@ -88,7 +88,7 @@ To exercise any of these rights, contact us at team@certifyd.io. We will respond
   },
   {
     title: "10. Security",
-    content: `We implement appropriate technical and organisational measures to protect your personal data. Our platform uses device-bound cryptographic authentication (WebAuthn/passkeys), meaning sensitive identity data never leaves your device. For more information, see our Security & Trust page.`,
+    content: `We implement appropriate technical and organisational measures to protect your personal data. Our platform uses device-verified identity authentication (WebAuthn/verified credentials), meaning sensitive identity data never leaves your device. For more information, see our Security & Trust page.`,
   },
   {
     title: "11. Changes to This Policy",
