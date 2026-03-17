@@ -30,6 +30,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Certify That Business", href: "/solutions/business/", description: "Verify the organisations behind the people" },
       { label: "Audit-Ready Compliance", href: "/solutions/compliance/", description: "One-click compliance reports" },
       { label: "Security & Trust", href: "/security/", description: "How we protect your data" },
+      { label: "Identity Intelligence (3I)", href: "/3i/", description: "GPU-powered graph intelligence engine" },
     ],
   },
   {

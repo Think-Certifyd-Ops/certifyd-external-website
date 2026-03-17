@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(head:*)",
+      "Bash(ls:*)",
+      "Bash(npm install:*)",
+      "Bash(npx turbo build:*)",
+      "Bash(curl:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(DATABASE_URL=\"postgresql://postgres.knufjtyeddvmtsksqzpa:iSK6rbABxq%23hVb7@aws-1-eu-west-1.pooler.supabase.com:6543/postgres\" npx drizzle-kit push:*)",
+      "Bash(DATABASE_URL=\"postgresql://postgres.knufjtyeddvmtsksqzpa:iSK6rbABxq%23hVb7@aws-1-eu-west-1.pooler.supabase.com:6543/postgres\" npx tsx:*)",
+      "Bash(python3:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:www.notion.com)",
+      "WebFetch(domain:onfido.com)",
+      "WebFetch(domain:jumio.com)",
+      "WebFetch(domain:www.veriff.com)",
+      "WebFetch(domain:www.okta.com)",
+      "WebFetch(domain:www.entrust.com)",
+      "WebFetch(domain:slack.com)",
+      "WebFetch(domain:www.salesforce.com)"
+    ]
+  }
+}
