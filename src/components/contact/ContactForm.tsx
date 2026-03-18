@@ -76,6 +76,8 @@ export function ContactForm() {
             if (res.ok) {
               // Forward to Attio + Loops via Netlify Function (best-effort)
               const name = formData.get("name") as string;
+              let utmData = {};
+              try { utmData = JSON.parse(sessionStorage.getItem("certifyd_utm") || "{}"); } catch {}
               fetch("/.netlify/functions/demo-enquiry", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -89,8 +91,18 @@ export function ContactForm() {
                   interest: formData.get("interest"),
                   message: formData.get("message"),
                   source: "contact-page",
+                  ...utmData,
                 }),
               }).catch(() => {});
+
+              // GA4 conversion event
+              if (typeof window !== "undefined" && typeof window.gtag === "function") {
+                window.gtag("event", "generate_lead", {
+                  event_category: "demo_request",
+                  event_label: "contact-page",
+                });
+              }
+
               setSubmitted(true);
             } else {
               console.error("Form submission failed:", res.status, res.statusText);

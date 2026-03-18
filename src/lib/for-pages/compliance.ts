@@ -195,6 +195,121 @@ export const COMPLIANCE_PAGES: ForPage[] = [
   },
 
   /* ─────────────────────────────────────────────────────
+     RIGHT-TO-WORK PENALTIES
+     ───────────────────────────────────────────────────── */
+  {
+    slug: "right-to-work-penalties",
+    category: "compliance",
+    parentIndustry: "recruitment",
+    title: "Certifyd for Avoiding Right-to-Work Penalties",
+    metaTitle: "Right-to-Work Penalties UK: £45K\u2013£60K Per Worker | Certifyd",
+    metaDescription:
+      "UK employers face fines of £45,000\u2013£60,000 per illegal worker. 2,438 penalties issued in 2025 alone. Find out how to protect your business.",
+    badge: "RTW Penalties",
+    headline: "£45,000 Per Worker. And 80% of Employers Would Fail the Audit.",
+    subtitle:
+      "Right-to-work penalties tripled in February 2024. Enforcement raids are up 77%. The Home Office issued 2,438 penalties worth over £130 million in 2025. If you can\u2019t prove you verified every worker before Day 1, you have no statutory excuse \u2014 and no defence.",
+    heroGraphic: "compliance-dash",
+    heroCard: { name: "Compliance Alert", secondaryLabel: "Risk", secondaryValue: "Critical" },
+    searchIntentParagraph:
+      "Right-to-work penalties for UK employers can reach £45,000 per illegal worker for a first offence and £60,000 for repeat breaches \u2014 tripled from £15,000 and £20,000 respectively in February 2024. In 2025, the Home Office issued 2,438 civil penalties worth over £130 million, conducted over 17,400 enforcement visits, and made more than 12,300 arrests. A Home Office survey found that 80% of employers answered at least one compliance question incorrectly, and 51% wrongly believed a driving licence was valid proof of right to work. Certifyd provides auditable identity verification records that strengthen your statutory excuse and prepare you for walk-in inspections.",
+    stats: [
+      { value: "\u00a3130M+", label: "in penalties issued in 2025 alone" },
+      { value: "2,438", label: "employers penalised in 2025" },
+      { value: "80%", label: "of employers fail compliance questions" },
+      { value: "77%", label: "increase in enforcement raids" },
+      { value: "\u00a360K", label: "maximum fine per worker (repeat)" },
+      { value: "5 years", label: "prison for knowingly employing" },
+    ],
+    whyItMatters: [
+      "The penalty regime changed dramatically in February 2024. First-offence fines tripled from £15,000 to £45,000 per illegal worker. Repeat offences tripled from £20,000 to £60,000. These are not theoretical maximums \u2014 in Q1 2025, a care recruitment agency was fined £210,000 for 14 workers, and nine construction firms were fined nearly £1 million in a single quarter.",
+      "The Home Office publishes the names of every penalised employer quarterly. Beyond the fine itself, penalties can trigger sponsor licence revocation (meaning you can no longer hire migrant workers), business closure orders, and director disqualification. One restaurant in London accumulated £470,000 in penalties across three enforcement visits.",
+      "A Home Office survey of 2,152 employers found that 89% believed they were compliant \u2014 but 80% got at least one compliance question wrong. Over half wrongly accepted driving licences as proof of right to work. 64% incorrectly believed they needed to recheck every five years. The gap between perceived and actual compliance is where penalties happen.",
+      "The only defence against a civil penalty is a \u2018statutory excuse\u2019: proof that you conducted the prescribed right-to-work check correctly, before Day 1 of employment, and kept a dated copy. Certifyd creates timestamped, device-verified records that demonstrate you verified the identity of every worker \u2014 not just that you photocopied a passport.",
+    ],
+    problems: [
+      "A first-offence penalty of £45,000 per worker can destroy a small business \u2014 three workers means £135,000.",
+      "The Home Office names every penalised employer publicly, damaging reputation and client relationships.",
+      "89% of employers think they\u2019re compliant, but 80% would fail the audit. The gap is where penalties happen.",
+      "A photocopied passport proves a document was examined \u2014 not that the person presenting it was the document holder.",
+      "Enforcement visits are up 77% since July 2024, with 828 raids in a single month (January 2025).",
+      "Penalties are the starting point \u2014 serious cases escalate to criminal prosecution, up to 5 years in prison.",
+    ],
+    steps: [
+      "Register your team on Certifyd and add each worker \u2014 their identity is verified and bound to their device",
+      "Right-to-work documentation is linked to each verified identity, creating auditable evidence beyond photocopied documents",
+      "At each assignment or employment event, identity is re-verified in real time \u2014 30 seconds, any channel",
+      "Your compliance dashboard shows verification status across your entire workforce, exportable as audit-ready reports",
+    ],
+    testimonial: {
+      quote:
+        "We asked and they said yes \u2014 that was our right-to-work process. Then the Home Office visited and we realised \u2018asking\u2019 is not a statutory excuse. It cost us £90,000.",
+      attribution: "Director, UK staffing agency",
+    },
+    faqs: [
+      {
+        question: "How much is the fine for employing an illegal worker?",
+        answer:
+          "The civil penalty is up to £45,000 per illegal worker for a first breach and up to £60,000 for a repeat breach (within 3 years). These rates were tripled in February 2024. Mitigating factors can reduce the fine: reporting your suspicion to the Home Office saves £5,000 per worker, and active cooperation saves a further £5,000. For a first breach where all mitigating factors apply, a warning notice may be issued instead of a fine. A 30% discount is also available for fast payment within 21 days (first breach only).",
+      },
+      {
+        question: "What counts as a \u2018statutory excuse\u2019 against a penalty?",
+        answer:
+          "A statutory excuse is your legal defence against a civil penalty. You establish it by conducting one of the three prescribed right-to-work checks before employment starts: a manual document check (examine originals, check they\u2019re genuine, keep a dated copy), a Home Office online check using a share code, or a check through a certified Identity Service Provider (for British/Irish passport holders). The check must happen on or before Day 1. A check done on Day 2 provides no defence whatsoever.",
+      },
+      {
+        question: "What industries are most targeted by enforcement?",
+        answer:
+          "In 2025, restaurants, takeaways and caf\u00e9s faced the most visits (3,559), followed by food retail (2,570) and beauty (1,865). However, the fastest-growing enforcement sectors are warehousing and distribution (up 292% in visits) and construction (up 146%). Care providers were fined nearly £600,000 in Q1 2025 alone. Recruitment agencies are specifically named and penalised. No sector is exempt.",
+      },
+      {
+        question: "How does Certifyd help avoid right-to-work penalties?",
+        answer:
+          "Certifyd creates auditable, device-verified identity records that strengthen your statutory excuse. Instead of a photocopied passport (which proves a document was examined, not that the presenter is the holder), Certifyd verifies the person\u2019s identity through their registered device and links it to their right-to-work documentation. Your compliance dashboard tracks verification status, visa expiry dates, and follow-up deadlines across your entire workforce \u2014 so no checks are missed and audit evidence is always available.",
+      },
+      {
+        question: "What happens beyond the fine?",
+        answer:
+          "The fine is just the starting point. The Home Office publishes penalised employer names quarterly, damaging your reputation and client relationships. Penalties can trigger sponsor licence revocation (you can no longer hire migrant workers), business closure orders, and director disqualification. In serious cases where you knowingly employed illegal workers, criminal prosecution carries up to 5 years\u2019 imprisonment and unlimited fines.",
+      },
+    ],
+    alsoRelevant: [
+      { label: "Certifyd for Right-to-Work Checks", slug: "right-to-work-checks" },
+      { label: "Certifyd for FWA Compliance", slug: "fwa-compliance" },
+      { label: "Certifyd for Agency Worker Compliance", slug: "agency-worker-compliance" },
+    ],
+    relatedSolutions: [
+      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certify That Person", href: "/solutions/person/" },
+    ],
+    relatedArticles: [
+      { label: "Right-to-Work Gap Signs", href: "/blog/right-to-work-gap-signs/" },
+      { label: "Fair Work Agency: What Changes in April 2026", href: "/blog/fair-work-agency-april-2026/" },
+      { label: "Walk-In Compliance Audit Prep", href: "/blog/walk-in-compliance-audit-prep/" },
+    ],
+    relatedResources: [
+      {
+        label: "GOV.UK \u2014 Penalties for Employing Illegal Workers",
+        href: "https://www.gov.uk/penalties-for-employing-illegal-workers",
+        external: true,
+      },
+      {
+        label: "GOV.UK \u2014 Right to Work Checks: Employer\u2019s Guide",
+        href: "https://www.gov.uk/government/publications/right-to-work-checks-employers-guide",
+        external: true,
+      },
+      {
+        label: "Free: Fair Work Agency Compliance Checklist",
+        href: "/resources/fair-work-agency-checklist/",
+        external: false,
+      },
+    ],
+    ctaTitle: "Don\u2019t be the next employer on the Home Office penalty list",
+    ctaSecondaryLabel: "Download: Free FWA Compliance Checklist",
+    ctaSecondaryHref: "/resources/fair-work-agency-checklist/",
+  },
+
+  /* ─────────────────────────────────────────────────────
      CONTRACTOR VERIFICATION
      ───────────────────────────────────────────────────── */
   {

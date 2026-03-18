@@ -97,6 +97,8 @@ export function LeadMagnetForm({
           }
 
           // Forward to Loops via Netlify Function (best-effort, don't block)
+          let utmData = {};
+          try { utmData = JSON.parse(sessionStorage.getItem("certifyd_utm") || "{}"); } catch {}
           fetch("/.netlify/functions/lead-magnet", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -106,6 +108,7 @@ export function LeadMagnetForm({
               lastName: (formData.get("name") as string)?.split(" ").slice(1).join(" ") || "",
               company: formData.get("company"),
               source,
+              ...utmData,
             }),
           }).catch(() => {
             /* Loops integration is best-effort */

@@ -26,6 +26,13 @@ export function WaitlistForm({ className }: { className?: string }) {
       });
 
       if (res.ok) {
+        // GA4 conversion event
+        if (typeof window !== "undefined" && typeof window.gtag === "function") {
+          window.gtag("event", "sign_up", {
+            event_category: "waitlist",
+            event_label: "homepage",
+          });
+        }
         setStatus("success");
       } else {
         const data = await res.json().catch(() => ({}));

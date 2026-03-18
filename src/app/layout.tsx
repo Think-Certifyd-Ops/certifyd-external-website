@@ -80,6 +80,29 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-FNMZS9PQ1S');
+            // Google Ads: uncomment and replace with your AW-ID once created
+            // gtag('config', 'AW-XXXXXXXXX');
+          `}
+        </Script>
+        {/* Capture UTM params + gclid for Google Ads attribution */}
+        <Script id="utm-capture" strategy="afterInteractive">
+          {`
+            (function(){
+              try {
+                var params = new URLSearchParams(window.location.search);
+                var keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
+                var stored = {};
+                keys.forEach(function(k){
+                  var v = params.get(k);
+                  if(v) stored[k] = v;
+                });
+                if(Object.keys(stored).length > 0){
+                  stored._landing = window.location.pathname;
+                  stored._ts = new Date().toISOString();
+                  sessionStorage.setItem('certifyd_utm', JSON.stringify(stored));
+                }
+              } catch(e){}
+            })();
           `}
         </Script>
       </head>

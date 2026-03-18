@@ -83,6 +83,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    // Resources (lead magnets)
+    {
+      url: `${BASE_URL}/resources/right-to-work-guide`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/resources/fair-work-agency-checklist`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
     // Blog index
     {
       url: `${BASE_URL}/blog`,
