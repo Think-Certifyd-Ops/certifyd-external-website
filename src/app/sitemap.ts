@@ -83,6 +83,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    // RTW Dashboard (landing page)
+    {
+      url: `${BASE_URL}/rtw`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     // Resources (lead magnets)
     {
       url: `${BASE_URL}/resources/right-to-work-guide`,
