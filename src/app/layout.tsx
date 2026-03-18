@@ -80,8 +80,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-FNMZS9PQ1S');
-            // Google Ads: uncomment and replace with your AW-ID once created
-            // gtag('config', 'AW-XXXXXXXXX');
+            gtag('config', 'AW-18025201012');
           `}
         </Script>
         {/* Capture UTM params + gclid for Google Ads attribution */}
