@@ -1,10 +1,10 @@
 /**
  * Shared Google Ads API client helper.
  * Handles OAuth token refresh and provides reusable query/mutate wrappers.
- * Uses REST API v18 with direct fetch() — zero dependencies.
+ * Uses REST API v23 with direct fetch() — zero dependencies.
  */
 
-const API_VERSION = "v18";
+const API_VERSION = "v23";
 const BASE_URL = `https://googleads.googleapis.com/${API_VERSION}`;
 const TOKEN_URL = "https://oauth2.googleapis.com/token";
 
