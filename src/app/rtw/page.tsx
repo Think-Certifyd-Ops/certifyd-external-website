@@ -185,11 +185,6 @@ const faqs = [
       "Yes. Certifyd supports bulk CSV import so you can upload your existing worker records in minutes. Once imported, the dashboard immediately highlights compliance gaps \u2014 who\u2019s verified, who isn\u2019t, and who\u2019s expiring.",
   },
   {
-    question: "Is there a free trial?",
-    answer:
-      "Yes. All plans include a 7-day free trial with full access to every feature. No credit card required to start. Book a demo and we\u2019ll walk you through everything.",
-  },
-  {
     question: "Do I need IDSP certification to use Certifyd?",
     answer:
       "No. Certifyd is a compliance management dashboard \u2014 you don\u2019t need any certification to use it. Whether you use an IDSP for digital checks or do manual document checks, Certifyd tracks and manages everything.",
@@ -274,7 +269,7 @@ export default function RtwPage() {
                 </a>
               </div>
               <p className="mt-4 text-sm text-text-on-dark-muted/60 animate-slide-up animation-delay-400">
-                7-day free trial &middot; No credit card required
+                From &pound;99/month &middot; Book a 30-minute walkthrough
               </p>
             </div>
 
@@ -490,8 +485,7 @@ export default function RtwPage() {
                 Simple, transparent pricing.
               </h2>
               <p className="text-lg text-text-on-light-muted mt-4 max-w-xl mx-auto">
-                All plans include a 7-day free trial. No credit card required to
-                start.
+                Undercut the enterprise players. Beat the manual spreadsheet.
               </p>
             </div>
           </ScrollReveal>
@@ -567,65 +561,6 @@ export default function RtwPage() {
               </ScrollReveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ────── TESTIMONIAL ────── */}
-      <section className="relative bg-navy overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse at 50% 0%, rgba(0,89,255,0.12), transparent 60%)",
-          }}
-          aria-hidden="true"
-        />
-        <div className="section-container relative z-10 py-24 lg:py-32">
-          <ScrollReveal>
-            <div className="max-w-3xl mx-auto text-center">
-              <svg
-                className="w-16 h-16 text-certifyd-blue/30 mx-auto mb-10"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <blockquote className="font-heading text-2xl lg:text-4xl font-bold text-text-on-dark leading-snug mb-8">
-                &ldquo;We were tracking Right to Work in a spreadsheet. When we
-                got audited, it took three days to pull everything together.
-                With Certifyd, it took thirty seconds.&rdquo;
-              </blockquote>
-              <cite className="text-sm text-text-on-dark-muted not-italic">
-                &mdash; Compliance Manager, UK recruitment agency
-              </cite>
-
-              <div className="mt-12">
-                <a
-                  href="#book-demo"
-                  className="group inline-flex items-center justify-center px-8 py-3 border border-white/40 text-white rounded-sm font-heading font-medium hover:bg-white hover:text-navy transition-all duration-300"
-                >
-                  <span className="transition-transform duration-300 group-hover:-translate-x-1.5">
-                    Book a demo
-                  </span>
-                  <span className="inline-flex items-center ml-1 w-4 shrink-0 opacity-0 translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
@@ -743,9 +678,9 @@ export default function RtwPage() {
                     </svg>
                     <p className="text-sm text-text-on-dark-muted">
                       <span className="font-semibold text-text-on-dark">
-                        7-day free trial
+                        Get set up fast
                       </span>{" "}
-                      — start immediately after the call, no credit card needed
+                      — we&apos;ll onboard your team and import your existing records
                     </p>
                   </div>
                 </div>
