@@ -82,9 +82,9 @@ async function createCampaign(config: CreateCampaignRequest) {
         },
         geoTargetTypeSetting: {
           positiveGeoTargetType: "PRESENCE",
-          negativeGeoTargetType: "PRESENCE_OR_INTEREST",
         },
         maximizeConversions: {},
+        containsEuPoliticalAdvertising: false,
       },
     },
   ]);
