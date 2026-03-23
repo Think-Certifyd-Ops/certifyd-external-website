@@ -84,7 +84,7 @@ async function createCampaign(config: CreateCampaignRequest) {
           positiveGeoTargetType: "PRESENCE",
           negativeGeoTargetType: "PRESENCE_OR_INTEREST",
         },
-        biddingStrategyType: "MAXIMIZE_CONVERSIONS",
+        maximizeConversions: {},
       },
     },
   ]);
