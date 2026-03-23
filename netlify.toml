@@ -19,6 +19,26 @@
   to = "/.netlify/functions/waitlist"
   status = 200
 
+[[redirects]]
+  from = "/api/google-ads/campaign"
+  to = "/.netlify/functions/google-ads-campaign"
+  status = 200
+
+[[redirects]]
+  from = "/api/google-ads/conversions"
+  to = "/.netlify/functions/google-ads-conversions"
+  status = 200
+
+[[redirects]]
+  from = "/api/google-ads/report"
+  to = "/.netlify/functions/google-ads-report"
+  status = 200
+
+[[redirects]]
+  from = "/api/google-ads/weekly-review"
+  to = "/.netlify/functions/google-ads-weekly-review"
+  status = 200
+
 # ── Redirects ──────────────────────────────────────────────
 # Removed pages
 [[redirects]]

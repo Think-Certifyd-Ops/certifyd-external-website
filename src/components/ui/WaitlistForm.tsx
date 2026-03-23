@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -31,6 +32,7 @@ export function WaitlistForm({ className }: { className?: string }) {
           window.gtag("event", "sign_up", {
             event_category: "waitlist",
             event_label: "homepage",
+            ...(GOOGLE_ADS_CONVERSIONS.waitlistSignup ? { send_to: GOOGLE_ADS_CONVERSIONS.waitlistSignup } : {}),
           });
         }
         setStatus("success");

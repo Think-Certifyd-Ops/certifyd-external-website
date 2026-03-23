@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 interface InlineFormProps {
   source: string;
@@ -83,6 +84,7 @@ export function InlineForm({ source }: InlineFormProps) {
                 window.gtag("event", "generate_lead", {
                   event_category: "demo_request",
                   event_label: source,
+                  ...(GOOGLE_ADS_CONVERSIONS.demoRequest ? { send_to: GOOGLE_ADS_CONVERSIONS.demoRequest } : {}),
                 });
               }
 

@@ -205,6 +205,18 @@ export const FOUR_STORIES: StoryCard[] = [
   },
 ];
 
+/**
+ * Google Ads conversion labels for gtag send_to parameter.
+ * Populated after running POST /api/google-ads/conversions.
+ * Format: "AW-XXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXX"
+ * Set to empty strings until conversion actions are created.
+ */
+export const GOOGLE_ADS_CONVERSIONS = {
+  demoRequest: "", // "Website - Demo Request" — £50 value
+  leadMagnet: "", // "Website - Lead Magnet" — £10 value
+  waitlistSignup: "", // "Website - Waitlist Signup" — £5 value
+} as const;
+
 export const TRUST_CATEGORIES: TrustCategory[] = [
   {
     badge: "Recruitment",

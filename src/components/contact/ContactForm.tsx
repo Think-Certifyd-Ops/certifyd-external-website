@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 const INDUSTRIES = [
   "Recruitment",
@@ -100,6 +101,7 @@ export function ContactForm() {
                 window.gtag("event", "generate_lead", {
                   event_category: "demo_request",
                   event_label: "contact-page",
+                  ...(GOOGLE_ADS_CONVERSIONS.demoRequest ? { send_to: GOOGLE_ADS_CONVERSIONS.demoRequest } : {}),
                 });
               }
 

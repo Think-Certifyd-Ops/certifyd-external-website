@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 interface LeadMagnetFormProps {
   /** Identifies which lead magnet this form is for */
@@ -119,6 +120,7 @@ export function LeadMagnetForm({
             window.gtag("event", "generate_lead", {
               event_category: "lead_magnet",
               event_label: source,
+              ...(GOOGLE_ADS_CONVERSIONS.leadMagnet ? { send_to: GOOGLE_ADS_CONVERSIONS.leadMagnet } : {}),
             });
           }
 
