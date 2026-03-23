@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { StatCounter } from "@/components/ui/StatCounter";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { InlineForm } from "@/components/contact/InlineForm";
 import { ComplianceDash } from "@/components/graphics/ComplianceDash";
 import {
   BreadcrumbSchema,
   ServiceSchema,
   FAQSchema,
 } from "@/components/seo/JsonLd";
+import { RtwInteractiveWrapper } from "./RtwClient";
 
 export const metadata: Metadata = {
   title:
-    "Right to Work Compliance Dashboard for UK Recruitment Agencies | Certifyd",
+    "Right to Work Compliance Dashboard for UK Businesses | Certifyd",
   description:
-    "RTW compliance dashboard that keeps recruitment agencies audit-ready. Track workers, log checks, manage documents, generate reports. From \u00A399/month. Book a demo.",
+    "RTW compliance dashboard that keeps UK businesses audit-ready. Track workers, log checks, manage documents, generate reports. From \u00A399/month. Book a demo.",
   alternates: { canonical: "/rtw/" },
   openGraph: {
     title: "Right to Work Compliance Dashboard | Certifyd",
@@ -101,57 +101,6 @@ const features = [
   },
 ];
 
-const tiers = [
-  {
-    name: "Starter",
-    price: 99,
-    description: "For small agencies getting started with compliance.",
-    features: [
-      "Up to 50 workers",
-      "Unlimited RTW checks",
-      "Document storage",
-      "Basic compliance reports",
-      "3 team members",
-      "Full audit trail",
-      "Email support",
-    ],
-    highlighted: false,
-  },
-  {
-    name: "Professional",
-    price: 199,
-    description: "For growing agencies that need full compliance coverage.",
-    features: [
-      "Up to 200 workers",
-      "Unlimited RTW checks",
-      "Document storage",
-      "Full compliance reports",
-      "10 team members",
-      "Full audit trail",
-      "Priority support",
-      "Bulk CSV import",
-    ],
-    highlighted: true,
-  },
-  {
-    name: "Enterprise",
-    price: 499,
-    description: "For large agencies with unlimited needs.",
-    features: [
-      "Unlimited workers",
-      "Unlimited RTW checks",
-      "Document storage",
-      "Custom compliance reports",
-      "Unlimited team members",
-      "Full audit trail",
-      "Dedicated account manager",
-      "Bulk CSV import",
-      "API access (coming soon)",
-    ],
-    highlighted: false,
-  },
-];
-
 const faqs = [
   {
     question: "What is a Right to Work check?",
@@ -205,7 +154,7 @@ export default function RtwPage() {
       />
       <ServiceSchema
         name="Right to Work Compliance Dashboard"
-        description="RTW compliance dashboard for UK recruitment agencies. Track workers, log checks, manage documents, and stay audit-ready."
+        description="RTW compliance dashboard for UK businesses. Track workers, log checks, manage documents, and stay audit-ready."
         slug="rtw"
       />
       <FAQSchema faqs={faqs} />
@@ -233,7 +182,7 @@ export default function RtwPage() {
                 <span className="text-certifyd-blue">Sorted.</span>
               </h1>
               <p className="text-lg lg:text-xl text-text-on-dark-muted max-w-xl mt-6 animate-slide-up animation-delay-200">
-                The compliance dashboard that keeps UK recruitment agencies
+                The compliance dashboard that keeps UK businesses
                 audit-ready. Track workers, log checks, and generate reports
                 &mdash; before the &pound;60K fines land.
               </p>
@@ -399,8 +348,8 @@ export default function RtwPage() {
               </h2>
               <p className="text-lg text-text-on-dark-muted max-w-2xl mt-6">
                 Certifyd replaces your spreadsheets with a purpose-built
-                compliance dashboard designed for UK recruitment agencies
-                managing temporary workers.
+                compliance dashboard designed for UK businesses
+                managing workers.
               </p>
             </div>
           </ScrollReveal>
@@ -469,100 +418,8 @@ export default function RtwPage() {
         </div>
       </section>
 
-      {/* ────── PRICING ────── */}
-      <section id="pricing" className="section-light scroll-mt-20">
-        <div className="section-container">
-          <ScrollReveal>
-            <div className="mb-14 lg:mb-16 text-center">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <div className="w-8 h-px bg-certifyd-blue" />
-                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
-                  Pricing
-                </span>
-                <div className="w-8 h-px bg-certifyd-blue" />
-              </div>
-              <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-light leading-tight">
-                Simple, transparent pricing.
-              </h2>
-              <p className="text-lg text-text-on-light-muted mt-4 max-w-xl mx-auto">
-                Undercut the enterprise players. Beat the manual spreadsheet.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {tiers.map((tier, index) => (
-              <ScrollReveal key={tier.name} delay={index * 100}>
-                <div
-                  className={`relative flex flex-col rounded-sm border p-6 bg-white ${
-                    tier.highlighted
-                      ? "border-certifyd-blue ring-2 ring-certifyd-blue/20"
-                      : "border-warm-border"
-                  }`}
-                >
-                  {tier.highlighted && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-certifyd-blue px-3 py-0.5 text-xs font-heading font-semibold text-white whitespace-nowrap">
-                      Most Popular
-                    </div>
-                  )}
-
-                  <div className="mb-6">
-                    <h3 className="font-heading text-lg font-bold text-text-on-light">
-                      {tier.name}
-                    </h3>
-                    <p className="text-sm text-text-on-light-muted mt-1">
-                      {tier.description}
-                    </p>
-                    <div className="mt-4 flex items-baseline gap-1">
-                      <span className="font-heading text-4xl font-bold text-text-on-light">
-                        &pound;{tier.price}
-                      </span>
-                      <span className="text-sm text-text-on-light-muted">
-                        /month
-                      </span>
-                    </div>
-                  </div>
-
-                  <ul className="mb-8 flex-1 space-y-3">
-                    {tier.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-start gap-2.5 text-sm"
-                      >
-                        <svg
-                          className="w-4 h-4 mt-0.5 text-certifyd-blue shrink-0"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={2.5}
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M4.5 12.75l6 6 9-13.5"
-                          />
-                        </svg>
-                        <span className="text-text-on-light">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <a
-                    href="#book-demo"
-                    className={`w-full text-center px-6 py-3 rounded-sm font-heading font-semibold transition-all duration-300 ${
-                      tier.highlighted
-                        ? "bg-certifyd-blue text-white hover:bg-certifyd-blue-light"
-                        : "bg-navy text-white hover:bg-navy-light"
-                    }`}
-                  >
-                    Book a Demo
-                  </a>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ────── PRICING + DEMO FORM (client interactive) ────── */}
+      <RtwInteractiveWrapper />
 
       {/* ────── FAQ ────── */}
       <section className="section-light">
@@ -581,117 +438,6 @@ export default function RtwPage() {
             </div>
           </ScrollReveal>
           <FAQAccordion faqs={faqs} />
-        </div>
-      </section>
-
-      {/* ────── BOOK A DEMO FORM ────── */}
-      <section
-        id="book-demo"
-        className="relative bg-navy overflow-hidden bg-grid-pattern scroll-mt-20"
-      >
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse at 50% 100%, rgba(0,89,255,0.1), transparent 60%)",
-          }}
-          aria-hidden="true"
-        />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-certifyd-blue/30 to-transparent" />
-
-        <div className="section-container relative z-10 py-20 lg:py-28">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-start">
-            {/* Left — CTA copy */}
-            <ScrollReveal>
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-px bg-certifyd-blue" />
-                  <span className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
-                    Book a Demo
-                  </span>
-                </div>
-                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-text-on-dark leading-tight mb-6">
-                  See Certifyd in action.
-                </h2>
-                <p className="text-text-on-dark-muted leading-relaxed mb-8">
-                  Book a demo and we&apos;ll walk you through the dashboard,
-                  show you how it works for your agency, and answer any
-                  questions. We typically respond within 24 hours.
-                </p>
-
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="w-5 h-5 text-certifyd-blue mt-0.5 shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      />
-                    </svg>
-                    <p className="text-sm text-text-on-dark-muted">
-                      <span className="font-semibold text-text-on-dark">
-                        30-minute walkthrough
-                      </span>{" "}
-                      — tailored to your agency&apos;s size and needs
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="w-5 h-5 text-certifyd-blue mt-0.5 shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      />
-                    </svg>
-                    <p className="text-sm text-text-on-dark-muted">
-                      <span className="font-semibold text-text-on-dark">
-                        Free compliance assessment
-                      </span>{" "}
-                      — we&apos;ll identify gaps in your current RTW process
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg
-                      className="w-5 h-5 text-certifyd-blue mt-0.5 shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      />
-                    </svg>
-                    <p className="text-sm text-text-on-dark-muted">
-                      <span className="font-semibold text-text-on-dark">
-                        Get set up fast
-                      </span>{" "}
-                      — we&apos;ll onboard your team and import your existing records
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            {/* Right — Form */}
-            <ScrollReveal delay={100}>
-              <InlineForm source="RTW Compliance Dashboard — /rtw" />
-            </ScrollReveal>
-          </div>
         </div>
       </section>
     </>
