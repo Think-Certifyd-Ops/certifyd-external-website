@@ -20,7 +20,19 @@
       "WebFetch(domain:www.okta.com)",
       "WebFetch(domain:www.entrust.com)",
       "WebFetch(domain:slack.com)",
-      "WebFetch(domain:www.salesforce.com)"
+      "WebFetch(domain:www.salesforce.com)",
+      "Bash(openssl rand -hex 32)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=\"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" --window-size=1080,810 --default-background-color=0 \"file:///Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.html\" 2>&1)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=\"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" --window-size=1080,810 \"file:///Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.html\" 2>&1)",
+      "Bash(sips -s format jpeg \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" --out \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.jpg\" -s formatOptions 95 2>&1)",
+      "Bash(sips -g pixelHeight -g pixelWidth \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" 2>&1)",
+      "Bash(sips -c 800 1080 \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" --out \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen-cropped.png\" 2>&1)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=\"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" --window-size=1080,1080 \"file:///Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.html\" 2>&1)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --screenshot=\"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" --window-size=1080,900 \"file:///Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.html\" 2>&1)",
+      "Bash(sips --cropOffset 0 0 -c 810 1080 \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" 2>&1)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --force-device-scale-factor=1 --screenshot=\"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" --window-size=1080,910 \"file:///Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.html\" 2>&1)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --force-device-scale-factor=1 --screenshot=\"/tmp/wa-daniel-owen-raw.png\" --window-size=1080,1000 \"file:///Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.html\" 2>&1)",
+      "Bash(convert \"/tmp/wa-daniel-owen-raw.png\" -crop 1080x810+0+0 +repage \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" && convert \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.png\" -quality 95 \"/Users/andrewspeer/Documents/GitHub/buildout/templates/wa-congrats-daniel-owen.jpg\" 2>&1)"
     ]
   }
 }
