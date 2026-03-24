@@ -12,7 +12,7 @@
  */
 
 import type { Context } from "@netlify/functions";
-import { mutate, postToSlack, validateSecret, getCustomerId, getCustomerResourceName } from "./google-ads-client.mts";
+import { mutate, query, postToSlack, validateSecret, getCustomerId, getCustomerResourceName } from "./google-ads-client.mts";
 
 interface AdGroupConfig {
   name: string;
@@ -40,13 +40,18 @@ interface PauseResumeRequest {
   campaignResourceName: string;
 }
 
-interface UpdateRequest {
-  action: "update";
+interface RemoveRequest {
+  action: "remove";
   campaignResourceName: string;
-  updates: Record<string, any>;
 }
 
-type ActionRequest = CreateCampaignRequest | PauseResumeRequest | UpdateRequest;
+interface UpdateBudgetRequest {
+  action: "updateBudget";
+  budgetResourceName: string;
+  dailyBudgetMicros: number;
+}
+
+type ActionRequest = CreateCampaignRequest | PauseResumeRequest | RemoveRequest | UpdateBudgetRequest;
 
 async function createCampaign(config: CreateCampaignRequest) {
   const customerId = getCustomerId();
@@ -222,6 +227,47 @@ async function pauseOrResumeCampaign(
 }
 
 export default async (req: Request, _context: Context) => {
+  // GET: List all campaigns with budgets
+  if (req.method === "GET") {
+    if (!validateSecret(req)) {
+      return new Response(JSON.stringify({ error: "Unauthorized" }), {
+        status: 401, headers: { "Content-Type": "application/json" },
+      });
+    }
+    try {
+      const rows = await query(`
+        SELECT
+          campaign.id, campaign.name, campaign.status,
+          campaign.resource_name,
+          campaign_budget.resource_name,
+          campaign_budget.amount_micros
+        FROM campaign
+        WHERE campaign.status != 'REMOVED'
+        ORDER BY campaign.name
+      `);
+      const campaigns = rows.map((r: any) => ({
+        id: r.campaign?.id,
+        name: r.campaign?.name,
+        status: r.campaign?.status,
+        resourceName: r.campaign?.resourceName,
+        budget: {
+          resourceName: r.campaignBudget?.resourceName,
+          dailyBudget: r.campaignBudget?.amountMicros
+            ? `£${(Number(r.campaignBudget.amountMicros) / 1_000_000).toFixed(0)}`
+            : "unknown",
+          amountMicros: r.campaignBudget?.amountMicros,
+        },
+      }));
+      return new Response(JSON.stringify({ ok: true, campaigns }), {
+        status: 200, headers: { "Content-Type": "application/json" },
+      });
+    } catch (err: any) {
+      return new Response(JSON.stringify({ error: err.message }), {
+        status: 500, headers: { "Content-Type": "application/json" },
+      });
+    }
+  }
+
   if (req.method !== "POST") {
     return new Response("Method not allowed", { status: 405 });
   }
@@ -288,8 +334,36 @@ export default async (req: Request, _context: Context) => {
       });
     }
 
+    if (body.action === "remove") {
+      await mutate("campaigns", [
+        {
+          remove: (body as RemoveRequest).campaignResourceName,
+        },
+      ]);
+      return new Response(JSON.stringify({ ok: true, status: "REMOVED" }), {
+        status: 200, headers: { "Content-Type": "application/json" },
+      });
+    }
+
+    if (body.action === "updateBudget") {
+      const { budgetResourceName, dailyBudgetMicros } = body as UpdateBudgetRequest;
+      await mutate("campaignBudgets", [
+        {
+          update: {
+            resourceName: budgetResourceName,
+            amountMicros: String(dailyBudgetMicros),
+          },
+          updateMask: "amountMicros",
+        },
+      ]);
+      return new Response(
+        JSON.stringify({ ok: true, dailyBudget: `£${(dailyBudgetMicros / 1_000_000).toFixed(0)}` }),
+        { status: 200, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
     return new Response(
-      JSON.stringify({ error: "Invalid action. Use: create, pause, resume" }),
+      JSON.stringify({ error: "Invalid action. Use: create, pause, resume, remove, updateBudget" }),
       { status: 400, headers: { "Content-Type": "application/json" } }
     );
   } catch (err: any) {
