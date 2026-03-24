@@ -212,9 +212,9 @@ export const FOUR_STORIES: StoryCard[] = [
  * Set to empty strings until conversion actions are created.
  */
 export const GOOGLE_ADS_CONVERSIONS = {
-  demoRequest: "AW-18025201012/7SWiCOH0ho4cEPT6ipND", // "Website - Demo Request" — £50 value
-  leadMagnet: "AW-18025201012/ZiCJCPm_j44cEPT6ipND", // "Website - Lead Magnet" — £10 value
-  waitlistSignup: "AW-18025201012/b0xVCO-Fh44cEPT6ipND", // "Website - Waitlist Signup" — £5 value
+  demoRequest: "", // "Website - Demo Request" — £50 value (pending new account setup)
+  leadMagnet: "", // "Website - Lead Magnet" — £10 value (pending new account setup)
+  waitlistSignup: "", // "Website - Waitlist Signup" — £5 value (pending new account setup)
 } as const;
 
 export const TRUST_CATEGORIES: TrustCategory[] = [

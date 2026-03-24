@@ -80,7 +80,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-FNMZS9PQ1S');
-            gtag('config', 'AW-18025201012');
+            gtag('config', 'AW-18037838481');
           `}
         </Script>
         {/* Capture UTM params + gclid for Google Ads attribution */}
