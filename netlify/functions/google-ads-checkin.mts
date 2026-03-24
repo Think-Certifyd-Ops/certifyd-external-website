@@ -11,6 +11,16 @@ import { query, postToSlack, getCustomerId } from "./google-ads-client.mts";
 
 export const config = { schedule: "0 10,14 * * *" };
 
+function todayDate(): string {
+  return new Date().toISOString().split("T")[0];
+}
+
+function yesterdayDate(): string {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return d.toISOString().split("T")[0];
+}
+
 function formatCurrency(micros: number | string): string {
   const value = Number(micros) / 1_000_000;
   return `£${value.toFixed(2)}`;
@@ -42,7 +52,7 @@ async function getTodayPerformance(): Promise<CampaignStats[]> {
       metrics.conversions,
       metrics.ctr
     FROM campaign
-    WHERE segments.date = TODAY
+    WHERE segments.date = '${todayDate()}'
       AND campaign.status = 'ENABLED'
     ORDER BY metrics.cost_micros DESC
   `);
@@ -80,7 +90,7 @@ async function getYesterdayTotals(): Promise<{
       metrics.clicks,
       metrics.conversions
     FROM campaign
-    WHERE segments.date = YESTERDAY
+    WHERE segments.date = '${yesterdayDate()}'
       AND campaign.status = 'ENABLED'
   `);
 
@@ -103,7 +113,7 @@ async function getTopSearchTerms(): Promise<
       metrics.conversions,
       metrics.cost_micros
     FROM search_term_view
-    WHERE segments.date = TODAY
+    WHERE segments.date = '${todayDate()}'
     ORDER BY metrics.clicks DESC
     LIMIT 5
   `);
