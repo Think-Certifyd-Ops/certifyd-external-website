@@ -39,6 +39,16 @@
   to = "/.netlify/functions/google-ads-weekly-review"
   status = 200
 
+[[redirects]]
+  from = "/api/google-ads/checkin"
+  to = "/.netlify/functions/google-ads-checkin"
+  status = 200
+
+[[redirects]]
+  from = "/api/morning-briefing"
+  to = "/.netlify/functions/morning-briefing"
+  status = 200
+
 # ── Redirects ──────────────────────────────────────────────
 # Removed pages
 [[redirects]]
