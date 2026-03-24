@@ -432,7 +432,7 @@ function buildSlackBlocks(
       {
         type: "button",
         text: { type: "plain_text", text: "Google Analytics" },
-        url: `https://analytics.google.com/analytics/web/#/p${Netlify.env.get("GOOGLE_ANALYTICS_PROPERTY_ID") || ""}/reports/reportinghub`,
+        url: "https://analytics.google.com/analytics/web/#/a381179067p520574638/reports/intelligenthome?params=_u..nav%3Dmaui",
       },
       {
         type: "button",
