@@ -14,6 +14,7 @@ interface GoogleAdsConfig {
   refreshToken: string;
   developerToken: string;
   customerId: string;
+  loginCustomerId?: string;
 }
 
 function getConfig(): GoogleAdsConfig {
@@ -22,6 +23,7 @@ function getConfig(): GoogleAdsConfig {
   const refreshToken = Netlify.env.get("GOOGLE_ADS_REFRESH_TOKEN");
   const developerToken = Netlify.env.get("GOOGLE_ADS_DEVELOPER_TOKEN");
   const customerId = Netlify.env.get("GOOGLE_ADS_CUSTOMER_ID");
+  const loginCustomerId = Netlify.env.get("GOOGLE_ADS_LOGIN_CUSTOMER_ID");
 
   if (!clientId || !clientSecret || !refreshToken || !developerToken || !customerId) {
     throw new Error(
@@ -29,7 +31,20 @@ function getConfig(): GoogleAdsConfig {
     );
   }
 
-  return { clientId, clientSecret, refreshToken, developerToken, customerId };
+  return { clientId, clientSecret, refreshToken, developerToken, customerId, loginCustomerId };
+}
+
+/** Build auth headers, including login-customer-id for MCC accounts */
+function getAuthHeaders(config: GoogleAdsConfig, accessToken: string): Record<string, string> {
+  const headers: Record<string, string> = {
+    Authorization: `Bearer ${accessToken}`,
+    "developer-token": config.developerToken,
+    "Content-Type": "application/json",
+  };
+  if (config.loginCustomerId) {
+    headers["login-customer-id"] = formatCustomerId(config.loginCustomerId);
+  }
+  return headers;
 }
 
 /** Cached access token + expiry */
@@ -79,11 +94,7 @@ export async function query(gaql: string): Promise<any[]> {
     `${BASE_URL}/customers/${customerId}/googleAds:searchStream`,
     {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        "developer-token": config.developerToken,
-        "Content-Type": "application/json",
-      },
+      headers: getAuthHeaders(config, accessToken),
       body: JSON.stringify({ query: gaql }),
     }
   );
@@ -117,11 +128,7 @@ export async function mutate(
     `${BASE_URL}/customers/${customerId}/${resource}:mutate`,
     {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        "developer-token": config.developerToken,
-        "Content-Type": "application/json",
-      },
+      headers: getAuthHeaders(config, accessToken),
       body: JSON.stringify({ operations }),
     }
   );
