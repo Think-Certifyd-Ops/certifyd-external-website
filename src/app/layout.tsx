@@ -40,21 +40,12 @@ export const metadata: Metadata = {
     siteName: "Certifyd",
     locale: "en_GB",
     type: "website",
-    images: [
-      {
-        url: "/logos/Blue Certifyd Icon.png",
-        width: 512,
-        height: 512,
-        alt: "Certifyd — Identity Verification for Businesses",
-      },
-    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Certifyd — Identity Verification for Businesses",
     description:
       "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
-    images: ["/logos/Blue Certifyd Icon.png"],
   },
   icons: {
     icon: "/logos/certifyd-icon-blue.svg",
