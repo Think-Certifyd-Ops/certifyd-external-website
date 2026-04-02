@@ -62,26 +62,26 @@ export default function AboutPage() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/solutions/person/"
+                    href="/products/codewords/"
                     className="text-sm text-text-on-light hover:text-certifyd-blue transition-colors"
                   >
-                    Certify That Person &rarr;
+                    Certifyd CodeWords &rarr;
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/solutions/business/"
+                    href="/products/portal/"
                     className="text-sm text-text-on-light hover:text-certifyd-blue transition-colors"
                   >
-                    Certify That Business &rarr;
+                    Certifyd Portal &rarr;
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/solutions/compliance/"
+                    href="/products/portal/"
                     className="text-sm text-text-on-light hover:text-certifyd-blue transition-colors"
                   >
-                    Audit-Ready Compliance &rarr;
+                    Certifyd Portal &rarr;
                   </Link>
                 </li>
               </ul>

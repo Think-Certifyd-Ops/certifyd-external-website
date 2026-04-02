@@ -67,6 +67,74 @@
   to = "/blog/whos-really-at-your-door/"
   status = 301
 
+# ── Solutions → Products redirects ─────────────────────────
+[[redirects]]
+  from = "/solutions/person"
+  to = "/products/codewords/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/person/"
+  to = "/products/codewords/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/business"
+  to = "/products/portal/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/business/"
+  to = "/products/portal/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/compliance"
+  to = "/products/portal/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/compliance/"
+  to = "/products/portal/"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/*"
+  to = "/products/"
+  status = 301
+
+# ── RTW → Portal redirect ─────────────────────────────────
+[[redirects]]
+  from = "/rtw"
+  to = "/products/portal/"
+  status = 301
+
+[[redirects]]
+  from = "/rtw/"
+  to = "/products/portal/"
+  status = 301
+
+# ── Onboarding → Home redirects ───────────────────────────
+[[redirects]]
+  from = "/onboarding/person"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/onboarding/person/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/onboarding/organisation"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/onboarding/organisation/"
+  to = "/"
+  status = 301
+
 # Catch-all: old pre-pivot blog slugs → blog index
 [[redirects]]
   from = "/blog/*"

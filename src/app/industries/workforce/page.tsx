@@ -69,8 +69,9 @@ export default function WorkforcePage() {
 
       <RelatedContent
         solutions={[
-          { label: "Certify That Business", href: "/solutions/business/" },
-          { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd CodeWords", href: "/products/codewords/" },
+          { label: "Certifyd Screen", href: "/products/verify/" },
         ]}
         articles={[
           { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -83,7 +84,13 @@ export default function WorkforcePage() {
         ]}
       />
 
-      <SolutionCTA title="Get compliance without HR headcount" />
+      <SolutionCTA
+        title="Get compliance without HR headcount"
+        primaryLabel="Try the Portal demo"
+        href="/products/portal/demo/"
+        secondaryLabel="Book a demo"
+        secondaryHref="/contact/"
+      />
     </>
   );
 }

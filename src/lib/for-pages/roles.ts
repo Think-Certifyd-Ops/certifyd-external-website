@@ -85,8 +85,9 @@ export const ROLE_PAGES: ForPage[] = [
       },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       {
@@ -192,8 +193,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Right-to-Work Checks", slug: "right-to-work-checks" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -290,8 +292,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Trade Platforms", slug: "trade-platforms" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -388,8 +391,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Doorstep Fraud Problem", href: "/blog/doorstep-fraud-problem/" },
@@ -486,8 +490,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Trade Platforms", slug: "trade-platforms" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -585,8 +590,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Domiciliary Care", slug: "domiciliary-care" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Care Home Staffing Crisis", href: "/blog/care-home-staffing-crisis/" },
@@ -684,8 +690,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Safeguarding", slug: "safeguarding" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Care Home Staffing Crisis", href: "/blog/care-home-staffing-crisis/" },
@@ -777,8 +784,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Trade Platforms", slug: "trade-platforms" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -865,8 +873,8 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Lone Workers", slug: "lone-workers" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
@@ -958,8 +966,8 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Right-to-Work Checks", slug: "right-to-work-checks" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -1056,8 +1064,8 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Right-to-Work Checks", slug: "right-to-work-checks" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -1155,8 +1163,9 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for CEO Fraud", slug: "ceo-fraud" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
+      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
     ],
     relatedArticles: [
       { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },

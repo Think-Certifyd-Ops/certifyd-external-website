@@ -1,5 +1,5 @@
 interface SolutionHeroProps {
-  title: string;
+  title: React.ReactNode;
   subtitle: string;
   badge?: string;
   children?: React.ReactNode;

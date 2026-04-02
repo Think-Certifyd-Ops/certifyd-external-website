@@ -6,11 +6,12 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 interface SolutionCTAProps {
   title: string;
   href?: string;
+  primaryLabel?: string;
   secondaryLabel?: string;
   secondaryHref?: string;
 }
 
-export function SolutionCTA({ title, href = "/contact/", secondaryLabel, secondaryHref }: SolutionCTAProps) {
+export function SolutionCTA({ title, href = "/contact/", primaryLabel = "Book a demo", secondaryLabel, secondaryHref }: SolutionCTAProps) {
   return (
     <section className="relative bg-navy overflow-hidden">
       <div
@@ -32,7 +33,7 @@ export function SolutionCTA({ title, href = "/contact/", secondaryLabel, seconda
             </h2>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button variant="outline" size="lg" href={href}>
-                Book a demo
+                {primaryLabel}
               </Button>
               {secondaryLabel && secondaryHref ? (
                 <Button variant="ghost" size="lg" href={secondaryHref} className="text-text-on-dark-muted hover:text-white">

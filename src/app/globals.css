@@ -226,6 +226,38 @@
   }
 }
 
+/* Sentinel — pulsing monitoring indicator */
+@keyframes sentinelPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.sentinel-pulse {
+  animation: sentinelPulse 2s ease-in-out infinite;
+}
+
+/* Sentinel — typing animation for last transcript line */
+@keyframes sentinelTyping {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes sentinelBlink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--color-accent-success); }
+}
+
+.sentinel-typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 2px solid var(--color-accent-success);
+  animation:
+    sentinelTyping 3s steps(60, end) 1s forwards,
+    sentinelBlink 0.75s step-end infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
   .animate-marquee-slow {
@@ -235,5 +267,17 @@
   .connection-flash {
     animation: none;
     opacity: 0;
+  }
+
+  .sentinel-pulse {
+    animation: none;
+  }
+
+  .sentinel-typing {
+    animation: none;
+    width: 100%;
+    border-right: none;
+    white-space: normal;
+    overflow: visible;
   }
 }

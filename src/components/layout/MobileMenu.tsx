@@ -13,7 +13,6 @@ interface MobileMenuProps {
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const pathname = usePathname();
   const [expandedTop, setExpandedTop] = useState<string | null>(null);
-  const [expandedSub, setExpandedSub] = useState<string | null>(null);
   const onCloseRef = useRef(onClose);
   onCloseRef.current = onClose;
 
@@ -24,7 +23,6 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       prevPathname.current = pathname;
       onCloseRef.current();
       setExpandedTop(null);
-      setExpandedSub(null);
     }
   }, [pathname]);
 
@@ -32,7 +30,6 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   useEffect(() => {
     if (!isOpen) {
       setExpandedTop(null);
-      setExpandedSub(null);
     }
   }, [isOpen]);
 
@@ -43,15 +40,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
   const toggleTop = (label: string) => {
     setExpandedTop((prev) => (prev === label ? null : label));
-    setExpandedSub(null);
   };
-
-  const toggleSub = (label: string) => {
-    setExpandedSub((prev) => (prev === label ? null : label));
-  };
-
-  const hasMegaChildren = (children?: { children?: unknown[] }[]) =>
-    children?.some((child) => child.children);
 
   return (
     <>
@@ -134,87 +123,23 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
                       {/* Expanded content */}
                       {expandedTop === item.label && (
-                        <div className="mt-1 pb-2">
-                          {hasMegaChildren(item.children) ? (
-                            /* Two-level accordion: columns are sub-accordions */
-                            <ul className="space-y-0.5 ml-2">
-                              {item.children.map((column) => (
-                                <li key={column.label}>
-                                  {/* Sub-accordion trigger */}
-                                  <button
-                                    type="button"
-                                    onClick={() => toggleSub(column.label)}
-                                    className={`flex w-full items-center justify-between rounded-sm px-3 py-2.5 text-sm font-medium transition-colors ${
-                                      expandedSub === column.label
-                                        ? "text-certifyd-blue"
-                                        : "text-text-on-dark-muted hover:text-white"
-                                    }`}
-                                  >
-                                    <span className="flex items-center gap-2">
-                                      <span className="font-heading text-[10px] font-semibold uppercase tracking-wider">
-                                        {column.label}
-                                      </span>
-                                      <span className="text-[10px] text-text-on-dark-muted/50">
-                                        {column.children?.length}
-                                      </span>
-                                    </span>
-                                    <svg
-                                      className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 ${
-                                        expandedSub === column.label ? "rotate-180" : ""
-                                      }`}
-                                      fill="none"
-                                      viewBox="0 0 24 24"
-                                      stroke="currentColor"
-                                      strokeWidth={2}
-                                    >
-                                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                  </button>
-
-                                  {/* Sub-accordion children */}
-                                  {expandedSub === column.label && (
-                                    <ul className="ml-3 border-l border-certifyd-blue/20 pl-3 pb-1">
-                                      {column.children?.map((child) => (
-                                        <li key={child.href}>
-                                          <Link
-                                            href={child.href}
-                                            onClick={onClose}
-                                            className={`block rounded-sm px-2 py-1.5 text-sm transition-colors ${
-                                              isActive(child.href)
-                                                ? "text-white"
-                                                : "text-text-on-dark-muted hover:text-white"
-                                            }`}
-                                          >
-                                            {child.label}
-                                          </Link>
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  )}
-                                </li>
-                              ))}
-                            </ul>
-                          ) : (
-                            /* Simple one-level children */
-                            <ul className="ml-2 border-l border-navy-border pl-3">
-                              {item.children.map((child) => (
-                                <li key={child.href}>
-                                  <Link
-                                    href={child.href}
-                                    onClick={onClose}
-                                    className={`block rounded-sm px-3 py-2 text-sm transition-colors ${
-                                      isActive(child.href)
-                                        ? "text-white"
-                                        : "text-text-on-dark-muted hover:text-white"
-                                    }`}
-                                  >
-                                    {child.label}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
+                        <ul className="mt-1 pb-2 ml-2 border-l border-navy-border pl-3">
+                          {item.children.map((child) => (
+                            <li key={child.href}>
+                              <Link
+                                href={child.href}
+                                onClick={onClose}
+                                className={`block rounded-sm px-3 py-2 text-sm transition-colors ${
+                                  isActive(child.href)
+                                    ? "text-white"
+                                    : "text-text-on-dark-muted hover:text-white"
+                                }`}
+                              >
+                                {child.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
                       )}
                     </>
                   ) : (

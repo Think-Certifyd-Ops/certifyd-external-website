@@ -74,8 +74,10 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Deepfakes", slug: "deepfakes" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
+      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "Right-to-Work Gap Signs", href: "/blog/right-to-work-gap-signs/" },
@@ -173,8 +175,9 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Domiciliary Care", slug: "domiciliary-care" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Care Home Staffing Crisis", href: "/blog/care-home-staffing-crisis/" },
@@ -266,8 +269,9 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Facilities Management", slug: "facilities-management" },
     ],
     relatedSolutions: [
-      { label: "Certify That Business", href: "/solutions/business/" },
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -359,8 +363,9 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Agency Worker Compliance", slug: "agency-worker-compliance" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -452,8 +457,8 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for FWA Compliance", slug: "fwa-compliance" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "Fair Work Agency: What Changes in April 2026", href: "/blog/fair-work-agency-april-2026/" },
@@ -545,8 +550,9 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Cleaning Companies", slug: "cleaning-companies" },
     ],
     relatedSolutions: [
-      { label: "Certify That Business", href: "/solutions/business/" },
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Trade Platforms\u2019 Blind Spot", href: "/blog/trade-platforms-blind-spot/" },
@@ -639,8 +645,9 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Care Home Staffing Crisis", href: "/blog/care-home-staffing-crisis/" },
@@ -732,8 +739,9 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Contractor Verification", slug: "contractor-verification" },
     ],
     relatedSolutions: [
-      { label: "Certify That Business", href: "/solutions/business/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Audit Trails for Compliance", href: "/blog/audit-trails-compliance/" },

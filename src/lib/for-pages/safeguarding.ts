@@ -74,8 +74,8 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       { label: "Certifyd for Domiciliary Care", slug: "domiciliary-care" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd ID", href: "/products/id/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -168,8 +168,8 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
@@ -256,7 +256,8 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Safeguarding Gap in Care Homes", href: "/blog/safeguarding-gap-care-homes/" },
@@ -349,8 +350,8 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Safeguarding Gap in Care Homes", href: "/blog/safeguarding-gap-care-homes/" },

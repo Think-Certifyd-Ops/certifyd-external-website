@@ -75,8 +75,9 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Remote Workers", slug: "remote-workers" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },
@@ -169,8 +170,9 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Voice Cloning", slug: "voice-cloning" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
     ],
     relatedArticles: [
       { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },
@@ -263,8 +265,8 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Social Engineering", slug: "social-engineering" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "The Voice Cloning Threat", href: "/blog/voice-cloning-threat/" },
@@ -357,8 +359,8 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Deepfakes", slug: "deepfakes" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "The Deepfake Playbook", href: "/blog/deepfake-playbook/" },
@@ -446,7 +448,8 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Social Engineering", slug: "social-engineering" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "The Deepfake Playbook", href: "/blog/deepfake-playbook/" },
@@ -539,8 +542,9 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Deepfakes", slug: "deepfakes" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
     ],
     relatedArticles: [
       { label: "The Deepfake Playbook", href: "/blog/deepfake-playbook/" },

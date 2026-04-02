@@ -52,8 +52,9 @@ export default function CarePage() {
 
       <RelatedContent
         solutions={[
-          { label: "Certify That Person", href: "/solutions/person/" },
-          { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd CodeWords", href: "/products/codewords/" },
+          { label: "Certifyd ID", href: "/products/id/" },
         ]}
         articles={[
           { label: "The Care Home Staffing Crisis", href: "/blog/care-home-staffing-crisis/" },
@@ -66,7 +67,13 @@ export default function CarePage() {
         ]}
       />
 
-      <SolutionCTA title="Protect your residents" />
+      <SolutionCTA
+        title="Protect your residents"
+        primaryLabel="Try the Portal demo"
+        href="/products/portal/demo/"
+        secondaryLabel="Book a demo"
+        secondaryHref="/contact/"
+      />
     </>
   );
 }

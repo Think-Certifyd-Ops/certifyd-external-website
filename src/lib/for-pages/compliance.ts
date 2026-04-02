@@ -75,8 +75,8 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Staffing Agencies", slug: "staffing-agencies" },
     ],
     relatedSolutions: [
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
     ],
     relatedArticles: [
       { label: "Right-to-Work Gap Signs", href: "/blog/right-to-work-gap-signs/" },
@@ -174,8 +174,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Staffing Agencies", slug: "staffing-agencies" },
     ],
     relatedSolutions: [
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
     ],
     relatedArticles: [
       { label: "Fair Work Agency: What Changes in April 2026", href: "/blog/fair-work-agency-april-2026/" },
@@ -279,8 +278,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Agency Worker Compliance", slug: "agency-worker-compliance" },
     ],
     relatedSolutions: [
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
     ],
     relatedArticles: [
       { label: "Right-to-Work Gap Signs", href: "/blog/right-to-work-gap-signs/" },
@@ -383,8 +381,9 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Agency Worker Compliance", slug: "agency-worker-compliance" },
     ],
     relatedSolutions: [
-      { label: "Certify That Business", href: "/solutions/business/" },
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Audit Trails for Compliance", href: "/blog/audit-trails-compliance/" },
@@ -477,8 +476,8 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Temp Workers", slug: "temp-workers" },
     ],
     relatedSolutions: [
-      { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd Portal", href: "/products/portal/" },
+      { label: "Certifyd Screen", href: "/products/verify/" },
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },

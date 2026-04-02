@@ -2,9 +2,11 @@ import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 
 const solutionLinks = [
-  { label: "Certify That Person", href: "/solutions/person/" },
-  { label: "Certify That Business", href: "/solutions/business/" },
-  { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+  { label: "Certifyd Portal", href: "/products/portal/" },
+  { label: "Certifyd Screen", href: "/products/verify/" },
+  { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+  { label: "Certifyd CodeWords", href: "/products/codewords/" },
+  { label: "Certifyd ID", href: "/products/id/" },
 ];
 
 const industryLinks = [
@@ -24,9 +26,10 @@ const companyLinks = [
   { label: "Partners", href: "/partners/" },
 ];
 
-const gettingStartedLinks = [
-  { label: "For Individuals", href: "/onboarding/person/" },
-  { label: "For Organisations", href: "/onboarding/organisation/" },
+const resourceLinks = [
+  { label: "Blog", href: "/blog/" },
+  { label: "Security & Trust", href: "/security/" },
+  { label: "Identity Intelligence (3I)", href: "/3i/" },
 ];
 
 export function Footer() {
@@ -114,13 +117,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 5: Getting Started */}
+          {/* Column 5: Resources */}
           <div>
             <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
-              Getting Started
+              Resources
             </h3>
             <ul className="space-y-3">
-              {gettingStartedLinks.map((link) => (
+              {resourceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

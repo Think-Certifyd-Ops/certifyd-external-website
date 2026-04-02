@@ -1,42 +1,29 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
-import { ProblemTicker } from "@/components/home/ProblemTicker";
-import { TrustMosaic } from "@/components/home/FourStories";
-import { HowItWorks } from "@/components/home/HowItWorks";
-import { WhatWeDo } from "@/components/home/WhatWeDo";
-import { MetricsBar } from "@/components/home/MetricsBar";
+import { ProductSuite } from "@/components/home/ProductSuite";
 import { Testimonials } from "@/components/home/Testimonials";
-import { BlogHighlights } from "@/components/home/BlogHighlights";
 import { HomeCTA } from "@/components/home/HomeCTA";
-import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title:
-    "Certifyd — Identity Verification for Businesses | Right-to-Work & Compliance",
+    "Certifyd — Identity Infrastructure for Business | Verification & Compliance",
   description:
-    "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
+    "Identity infrastructure to protect businesses against fraud. Right-to-work compliance, pre-meeting verification, and doorstep ID — all on one platform.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Certifyd — Identity Verification for Businesses",
+    title: "Certifyd — Identity Infrastructure for Business",
     description:
-      "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
+      "Identity infrastructure to protect businesses against fraud. Right-to-work compliance, pre-meeting verification, and doorstep ID — all on one platform.",
     url: "https://www.certifyd.io",
   },
 };
 
 export default function Home() {
-  const posts = getAllPosts().slice(0, 3);
-
   return (
     <>
       <Hero />
-      <ProblemTicker />
-      <TrustMosaic />
-      <HowItWorks />
-      <WhatWeDo />
-      <MetricsBar />
+      <ProductSuite />
       <Testimonials />
-      <BlogHighlights posts={posts} />
       <HomeCTA />
     </>
   );

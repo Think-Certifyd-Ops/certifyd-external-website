@@ -60,8 +60,10 @@ export default function RecruitmentPage() {
 
       <RelatedContent
         solutions={[
-          { label: "Certify That Person", href: "/solutions/person/" },
-          { label: "Audit-Ready Compliance", href: "/solutions/compliance/" },
+          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd Screen", href: "/products/verify/" },
+          { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+          { label: "Certifyd CodeWords", href: "/products/codewords/" },
         ]}
         articles={[
           { label: "The Real Cost of a Bad Hire", href: "/blog/real-cost-bad-hire/" },
@@ -77,8 +79,10 @@ export default function RecruitmentPage() {
 
       <SolutionCTA
         title="Prepare for the Fair Work Agency"
-        secondaryLabel="Read more about the Fair Work Agency"
-        secondaryHref="/blog/fair-work-agency-april-2026"
+        primaryLabel="Try Screen free"
+        href="https://recruiter.certifyd.io"
+        secondaryLabel="Book a demo"
+        secondaryHref="/contact/"
       />
     </>
   );

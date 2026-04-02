@@ -32,21 +32,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
-    // Solutions
+    // Products
     {
-      url: `${BASE_URL}/solutions/person`,
+      url: `${BASE_URL}/products`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/solutions/business`,
+      url: `${BASE_URL}/products/portal`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/solutions/compliance`,
+      url: `${BASE_URL}/products/verify`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/products/sentinel`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/products/codewords`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/products/id`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
@@ -82,13 +100,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
-    },
-    // RTW Dashboard (landing page)
-    {
-      url: `${BASE_URL}/rtw`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
     },
     // Resources (lead magnets)
     {

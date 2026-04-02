@@ -109,7 +109,7 @@ export default function PartnersPage() {
       <SolutionCTA
         title="Interested in partnering with Certifyd?"
         secondaryLabel="Learn about our solutions"
-        secondaryHref="/solutions/business/"
+        secondaryHref="/products/portal/"
       />
     </>
   );

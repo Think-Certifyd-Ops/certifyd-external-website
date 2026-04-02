@@ -70,7 +70,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
     ],
     relatedArticles: [
       { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
@@ -163,8 +163,8 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -251,7 +251,8 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Cleaners", slug: "cleaners" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -343,8 +344,8 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certify That Person", href: "/solutions/person/" },
-      { label: "Certify That Business", href: "/solutions/business/" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+      { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },

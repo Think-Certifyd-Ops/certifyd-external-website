@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllForPageSlugs, getForPageBySlug } from "@/lib/for-pages";
+import { PRODUCT_DEMOS } from "@/lib/for-pages/types";
 import { SolutionHero } from "@/components/solutions/SolutionHero";
 import { ProblemSection } from "@/components/solutions/ProblemSection";
 import { SolutionSteps } from "@/components/solutions/SolutionSteps";
@@ -51,6 +52,10 @@ export default async function ForPage({ params }: PageProps) {
   const { slug } = await params;
   const page = getForPageBySlug(slug);
   if (!page) notFound();
+
+  const primaryDemo = page.relatedSolutions[0]
+    ? PRODUCT_DEMOS[page.relatedSolutions[0].href]
+    : undefined;
 
   return (
     <>
@@ -225,29 +230,57 @@ export default async function ForPage({ params }: PageProps) {
                 Book a demo or tell us about your needs.
               </p>
             </div>
-            <a
-              href="#get-started"
-              className="group inline-flex items-center justify-center px-8 py-3.5 bg-white text-certifyd-blue rounded-sm font-heading font-semibold hover:bg-navy hover:text-white transition-all duration-300 shrink-0"
-            >
-              <span className="transition-transform duration-300 group-hover:-translate-x-1.5">
-                Book a demo
-              </span>
-              <span className="inline-flex items-center ml-1 w-4 shrink-0 opacity-0 translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
+            <div className="flex flex-wrap items-center gap-3 shrink-0">
+              <a
+                href="#get-started"
+                className="group inline-flex items-center justify-center px-8 py-3.5 bg-white text-certifyd-blue rounded-sm font-heading font-semibold hover:bg-navy hover:text-white transition-all duration-300"
+              >
+                <span className="transition-transform duration-300 group-hover:-translate-x-1.5">
+                  Book a demo
+                </span>
+                <span className="inline-flex items-center ml-1 w-4 shrink-0 opacity-0 translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </span>
+              </a>
+              {primaryDemo && (
+                <Link
+                  href={primaryDemo.href}
+                  {...(primaryDemo.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="group inline-flex items-center justify-center px-8 py-3.5 border border-white/40 text-white rounded-sm font-heading font-semibold hover:bg-white hover:text-certifyd-blue transition-all duration-300"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </span>
-            </a>
+                  <span className="transition-transform duration-300 group-hover:-translate-x-1.5">
+                    {primaryDemo.label}
+                  </span>
+                  <span className="inline-flex items-center ml-1 w-4 shrink-0 opacity-0 translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </section>
@@ -422,6 +455,18 @@ export default async function ForPage({ params }: PageProps) {
                   us about your verification needs and we&apos;ll get back to
                   you within 24 hours.
                 </p>
+
+                {primaryDemo && (
+                  <Link
+                    href={primaryDemo.href}
+                    {...(primaryDemo.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="group inline-flex items-center text-sm font-heading font-medium text-certifyd-blue hover:text-certifyd-blue-light transition-colors mb-4"
+                  >
+                    <span className="transition-transform duration-300 group-hover:-translate-x-1">
+                      {primaryDemo.label} →
+                    </span>
+                  </Link>
+                )}
 
                 {page.ctaSecondaryLabel && page.ctaSecondaryHref && (
                   <Link

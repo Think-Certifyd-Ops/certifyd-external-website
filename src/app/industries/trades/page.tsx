@@ -140,8 +140,9 @@ export default function TradesPage() {
 
       <RelatedContent
         solutions={[
-          { label: "Certify That Person", href: "/solutions/person/" },
-          { label: "Certify That Business", href: "/solutions/business/" },
+          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd CodeWords", href: "/products/codewords/" },
+          { label: "Certifyd ID", href: "/products/id/" },
         ]}
         articles={[
           { label: "The Doorstep Fraud Problem", href: "/blog/doorstep-fraud-problem/" },
@@ -154,7 +155,13 @@ export default function TradesPage() {
         ]}
       />
 
-      <SolutionCTA title="Bring verification to your platform" />
+      <SolutionCTA
+        title="Bring verification to your platform"
+        primaryLabel="Try the ID demo"
+        href="/products/id/demo/"
+        secondaryLabel="Book a demo"
+        secondaryHref="/contact/"
+      />
     </>
   );
 }
