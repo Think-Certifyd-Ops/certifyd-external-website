@@ -48,6 +48,7 @@ export const NAV_ITEMS: NavItem[] = [
     href: "/blog/",
     children: [
       { label: "Blog", href: "/blog/", description: "Insights on identity, trust, and compliance" },
+      { label: "Free Tools", href: "/tools/", description: "Compliance calculators and risk assessments" },
       { label: "Security & Trust", href: "/security/", description: "How we protect your data" },
       { label: "Identity Intelligence (3I)", href: "/3i/", description: "GPU-powered graph intelligence engine" },
     ],
