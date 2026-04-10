@@ -1,0 +1,97 @@
+---
+title: "Who's Really on That Video Call? Meeting Verification"
+date: "2026-06-17"
+author: "Certifyd Team"
+excerpt: "In remote work, you regularly meet people you've never seen in person. Meeting identity verification closes a gap most organisations ignore."
+category: "Identity"
+---
+
+A London-based law firm was negotiating the final terms of a £12 million acquisition in early 2025. The deal involved three parties across two countries, and every meeting happened over video call. In the final due diligence session, a representative from the seller's side joined from what appeared to be the same home office he had used throughout the process. He confirmed key financial details, agreed to amended terms, and the deal moved to completion.
+
+Three weeks after closing, the buyer's legal team discovered that the person who had attended the final three calls was not the individual he claimed to be. The real representative had been replaced — whether through internal fraud or external compromise was never fully established — and the impersonator had used the video calls to steer the deal toward terms that benefited a third party. The firm faced a professional negligence claim.
+
+Nobody had verified the identity of the person on the screen. Nobody had considered that they needed to.
+
+## The assumption that nobody questions
+
+Every organisation that conducts business over video calls operates on an unexamined assumption: the person on the screen is who they say they are.
+
+This assumption was reasonable when video calls were supplementary to in-person relationships. You met someone at a conference, exchanged business cards, and then occasionally spoke on Zoom. The video call confirmed what the handshake had already established.
+
+That world ended in 2020. Today, entire business relationships — hiring, client engagements, partnership negotiations, board meetings, legal proceedings — are conducted entirely over video. Many professionals routinely participate in high-stakes meetings with people they have never met in person and never will.
+
+The verification gap this creates is not theoretical. The [Arup deepfake attack](/blog/arup-deepfake-attack/) — in which a finance employee was deceived into transferring $25 million during a video call where multiple participants were AI-generated deepfakes — demonstrated the endpoint. But the everyday risk is simpler and more pervasive than deepfakes.
+
+## The everyday risks beyond deepfakes
+
+The deepfake scenario gets headlines, but most meeting identity failures are far more mundane — and far more common.
+
+**Unauthorised substitution.** A company sends a different person to a meeting than expected. The substitute introduces themselves with a name nobody recognises, or — more dangerously — with the name of the person who was expected. In a meeting with six participants, most of whom don't know each other, nobody challenges this. The substitute may be a junior employee handling a meeting above their authority, or they may be someone outside the organisation entirely.
+
+**Information leaking to the wrong audience.** Confidential meetings — strategy discussions, M&A negotiations, board sessions, legal consultations — are only confidential if the participants are who they should be. An uninvited participant on a video call has access to everything discussed. In platforms that allow dial-in access with a meeting code, an unknown participant can join without showing their face at all.
+
+**Credential sharing.** A senior executive shares their meeting link or login credentials with an assistant or colleague, who then attends the meeting "as" the executive. The other participants believe they are speaking with the decision-maker. They are not. Decisions made in the meeting may later be disavowed because the actual principal was never present.
+
+**Impersonation in professional services.** Lawyers, accountants, financial advisers, and consultants participate in meetings where their professional identity carries weight and creates obligations. A person who joins a client meeting claiming to be a qualified solicitor — and who is not — creates liability for the firm and risk for the client. The current system for verifying professional credentials in a video call is, effectively, trust.
+
+## Industries where meeting identity matters most
+
+While every organisation faces some level of meeting identity risk, certain industries face disproportionate exposure.
+
+**Legal services.** Client conferences, case strategy discussions, witness preparation, and settlement negotiations increasingly happen over video. The Legal Services Act 2007 and SRA Standards and Regulations impose obligations on firms to verify client identity. Those obligations do not currently extend to verifying that the person in the meeting is the verified client, as opposed to someone using their name and meeting link.
+
+**Financial services.** Investment meetings, wealth management consultations, and transaction approvals carry fiduciary obligations. The [FCA's financial crime guidance](https://www.fca.org.uk/firms/financial-crime/money-laundering-terrorist-financing) requires firms to know their customers. But "knowing your customer" at the point of account opening does not guarantee that the person on the quarterly review call is the same customer.
+
+**Healthcare.** Remote consultations — which surged during COVID and have remained a significant portion of healthcare delivery — involve sharing medical information with a patient. If the person on the screen is not the patient, that information has been disclosed to an unauthorised party. NHS Data Security and Protection Toolkit standards require appropriate access controls, but video call identity is not currently within scope.
+
+**Recruitment.** The [deepfake candidate problem](/blog/deepfake-candidates-recruitment/) has demonstrated that remote interviews are vulnerable to impersonation. But the risk extends beyond deliberate fraud. When a recruiter conducts a video interview with someone they have never met, and the person is hired based on that interaction, the entire employment relationship begins with an unverified identity claim.
+
+**Mergers and acquisitions.** Due diligence meetings, negotiation sessions, and board approvals for M&A transactions routinely happen over video. The information shared in these meetings is highly sensitive and commercially valuable. The identity of participants is assumed, not verified.
+
+## Why current measures fail
+
+Organisations that have considered meeting identity risk typically rely on one or more of the following measures. None of them work.
+
+**Calendar invitations.** The meeting organiser sends a calendar invite to specific email addresses. But email addresses can be compromised, forwarded, or delegated. A calendar invite proves that an email account was invited, not that a specific person attended.
+
+**Waiting rooms and host admission.** The meeting host reviews names in the waiting room before admitting participants. But the host is checking a text string that the participant typed in themselves. There is no verification that the name entered matches the person's actual identity. And in large meetings, hosts frequently admit everyone in the waiting room without individual verification.
+
+**Verbal confirmation.** The meeting begins with introductions. Participants state their name and organisation. This is social convention, not verification. It would be trivially easy for an impersonator to introduce themselves using any name they choose.
+
+**Video-on requirements.** Some organisations require participants to have their camera on. This confirms that a human face is present. It does not confirm whose face it is. Without a prior in-person meeting for comparison, a face on a screen is just a face on a screen.
+
+**Passwords and access codes.** Meeting platforms offer password protection. But passwords are shared via the same channels (email, calendar) that are vulnerable to compromise. A meeting password proves that someone received the password, not that they are authorised to attend.
+
+## What pre-meeting verification looks like
+
+Effective meeting identity verification happens before the meeting starts, not during it. The process is simple in concept and fast in execution.
+
+**Before the meeting.** The organiser creates a verified meeting. Each expected participant receives a verification request linked to their confirmed identity. This is not a calendar invite — it is a request to confirm identity through a secure channel, independent of the meeting platform.
+
+**At the point of joining.** Each participant completes a brief verification step — typically taking under 30 seconds — that confirms they are the specific individual expected to attend. The verification is biometric and cryptographic, not visual. It does not rely on anyone squinting at a webcam and thinking "that looks like Sarah."
+
+**During the meeting.** The meeting host can see, in real time, which participants have been verified and which have not. An unverified participant is immediately visible. The host can choose to proceed, request verification, or remove the participant.
+
+**After the meeting.** A verification record is created showing which participants were present, when they joined, and that their identity was confirmed. This record is timestamped, tamper-resistant, and available for audit purposes. For regulated industries, this record satisfies the evidential requirements that "I was on a call with them" does not.
+
+## The platform-agnostic requirement
+
+One of the critical design requirements for meeting verification is platform independence. Business meetings happen across Zoom, Microsoft Teams, Google Meet, Webex, and dozens of other platforms. An organisation may use different platforms for internal meetings, client meetings, and partner meetings.
+
+A verification layer that works only within one platform is insufficient. It forces the organisation to either standardise on a single platform (often impractical) or accept unverified meetings on non-supported platforms (which defeats the purpose).
+
+Effective meeting verification must sit outside the video platform. It operates as a separate layer that participants engage with regardless of whether the meeting is on Zoom, Teams, or any other service. This independence also means that the verification cannot be defeated by manipulating the video platform — a critical consideration given that [deepfake technology operates at the video layer](/blog/deepfake-detection-video-calls/).
+
+## The compliance dimension
+
+For regulated organisations, unverified meetings create a compliance gap that is increasingly difficult to defend.
+
+**Anti-money laundering.** The Money Laundering Regulations 2017 require ongoing customer due diligence. If client meetings are conducted without verifying that the person present is the verified client, the due diligence chain is broken.
+
+**Data protection.** Discussing personal data — client information, employee records, patient data — in a meeting where participant identity has not been verified may constitute a data breach under UK GDPR. The ICO's guidance on appropriate technical and organisational measures increasingly expects organisations to verify the identity of people who access personal data, regardless of the access medium.
+
+**Professional conduct.** The SRA, FCA, and other professional regulators expect practitioners to exercise reasonable care in verifying the identity of parties they interact with. "We assumed it was them because they joined the call" is not a standard of care that will survive regulatory scrutiny.
+
+**Board governance.** The Companies Act 2006 requires that board decisions are taken by properly constituted boards. If a board meeting is conducted over video and one participant is not who they claim to be, the validity of decisions taken in that meeting may be questioned.
+
+Certifyd Verify provides pre-meeting identity verification that works across any video platform. Each participant verifies their identity before the meeting begins — a 30-second process that creates a [tamper-proof record](/blog/audit-trails-compliance/) of who was present. For legal, financial, and healthcare organisations where meeting identity carries regulatory weight, it closes the gap between assumption and proof. [Learn how Certifyd Verify works](/products/verify/).

@@ -1,0 +1,105 @@
+---
+title: "AI Deepfakes Are Now a Business Problem, Not a Tech Demo"
+date: "2026-04-23"
+author: "Certifyd Team"
+excerpt: "Deepfakes cost Arup $25M and are now available for $20/month. Here's why AI identity fraud is an operational business risk, not a novelty."
+category: "Security"
+---
+
+In January 2024, a finance worker at [Arup transferred $25.6 million](/blog/arup-deepfake-attack/) after a video call in which every participant — his CFO and several colleagues — was a deepfake. He had requested the call specifically to verify the transaction request. The verification method itself was the attack vector.
+
+Eighteen months later, the tools used to create those deepfakes are cheaper, faster, and more accessible than ever. Real-time face-swapping runs on a consumer laptop. Voice cloning requires three seconds of sample audio. Full synthetic identity packages — face, voice, documents — are available as a service for as little as $20 per month.
+
+This is no longer a technology demonstration. It is an operational business risk that most organisations are not prepared for.
+
+## The proliferation problem
+
+The Arup attack made headlines because of the dollar figure. But it was not a sophisticated state-sponsored operation. It was financial fraud using commercially available tools. And the tools have only become more accessible since.
+
+**Open-source face-swapping.** Multiple open-source projects now offer real-time face-swapping capable of running during a live video call. The software is free. The hardware requirements are a modern GPU — the kind found in any gaming PC or high-end laptop.
+
+**Voice cloning as a service.** Services offering voice cloning from minimal sample audio have proliferated. Some are marketed for legitimate purposes — audiobook narration, content creation. Others make no attempt to restrict misuse. The output quality is now sufficient to fool colleagues, family members, and — critically — [voice-based authentication systems](/blog/voice-cloning-threat/).
+
+**Document forgery.** AI-generated identity documents — passports, driving licences, utility bills — have reached a quality level where they can pass many automated and manual verification processes. The combination of a synthetic face, a cloned voice, and a forged document creates a complete synthetic identity that is difficult to detect through any single verification method.
+
+**The cost barrier has collapsed.** Creating a convincing deepfake video in 2022 required specialised expertise and significant compute resources. In 2026, it requires a subscription to a commercial tool and a few hours of setup. The economics of deepfake attacks have shifted from "expensive and rare" to "cheap and scalable."
+
+## Attack vectors that businesses face now
+
+Deepfake attacks against businesses are not limited to the Arup-style financial fraud. The attack surface is broader and more varied.
+
+### Executive impersonation
+
+The Arup model: impersonate a senior executive on a video or voice call to authorise financial transactions, data transfers, or strategic decisions. This works because organisations train employees to comply with requests from senior leaders, and the traditional verification method — recognising the person on the call — is now compromised.
+
+Variations include deepfake voicemails, deepfake video messages sent via internal messaging platforms, and deepfake appearances in team meetings where the impersonated person is "attending remotely."
+
+### Recruitment fraud
+
+The [FBI warned in 2024](https://www.ic3.gov/PSA/2022/PSA220628) that operatives were using deepfakes to pass remote job interviews, gaining employment — and internal system access — at target companies. The candidate appears on camera, answers questions convincingly, and presents credentials that match a real (stolen) identity.
+
+For the hiring manager, the video interview confirms the candidate is real. Except they are not. The face is synthetic. The voice may be synthetic. The credentials belong to someone else. Once hired, the operative has access to internal systems, customer data, and intellectual property. We have written extensively about [deepfake candidates in recruitment](/blog/deepfake-candidates-recruitment/) and why this is accelerating.
+
+### Supplier and partner impersonation
+
+The same technology that impersonates a CFO can impersonate a supplier, a client, or a business partner. An attacker calls your accounts payable team, appearing as a known supplier contact, and requests a change to bank details. The visual and vocal match is convincing. The bank details are changed. The next payment goes to the attacker.
+
+This is a variant of the well-known "invoice redirect" fraud, but elevated by deepfake technology from an email-based social engineering attack to a live, interactive deception that is orders of magnitude harder to detect.
+
+### Document fraud at scale
+
+AI-generated identity documents are being used to open bank accounts, pass background checks, and satisfy compliance requirements. For businesses that rely on document inspection as part of their [right to work checks](/blog/digital-right-to-work-checks-vs-manual/) or know-your-customer processes, this represents a fundamental challenge to manual verification.
+
+A well-crafted AI-generated passport will pass a visual inspection by a non-specialist. The security features — holograms, microprinting, UV elements — are not present in the forgery, but many manual checks do not examine these features closely enough to detect their absence.
+
+## Why traditional verification is broken
+
+The common thread across all these attack vectors is that they exploit verification methods built on the assumption that seeing and hearing a person confirms their identity. This assumption was reasonable for most of human history. It is no longer reasonable.
+
+**Video calls do not prove identity.** A face on a screen can be generated, swapped, or manipulated in real time. The quality is sufficient to deceive human observers at the resolution and frame rate of a typical business video call.
+
+**Voice calls do not prove identity.** A voice on a phone can be cloned from a brief sample. Real-time voice conversion can transform the attacker's voice into the target's voice during a live conversation.
+
+**Documents do not prove identity.** Physical documents can be forged. Digital documents can be fabricated. AI has made both cheaper and more convincing.
+
+**None of these methods are zero-trust.** They all rely on the recipient's ability to detect deception — to notice something "off" about the face, the voice, or the document. This is the human factor. And the [human factor is now the weakest link](/blog/deepfake-playbook/) in the verification chain.
+
+## What businesses should be doing now
+
+The response to deepfake risk is not awareness training. Training employees to "look for signs of deepfakes" is the modern equivalent of training bank tellers to "look for signs of forged banknotes" — useful at the margins, but fundamentally inadequate against high-quality fakes. The solution is to change the verification method itself.
+
+### 1. Establish out-of-band verification for high-value actions
+
+Any action with significant financial, operational, or security implications should require verification through a channel separate from the one used to make the request. If the request came via video call, the verification happens via a different medium — a pre-agreed codeword, a callback to a known number, or a cryptographic verification exchange.
+
+The Ferrari case illustrates this perfectly. The executive who nearly fell for the deepfake CEO asked a personal question — an out-of-band verification that the attacker could not anticipate. The line went dead. One question, delivered through a channel the deepfake could not prepare for, prevented the fraud.
+
+### 2. Implement cryptographic identity verification
+
+The fundamental fix is to move from appearance-based verification (what someone looks like and sounds like) to cryptographic verification (a mathematical proof of identity that cannot be faked regardless of how convincing the appearance is).
+
+This means verifying participants in sensitive meetings and transactions through an independent identity layer — not by looking at their face, but by confirming their identity through a mechanism that is not susceptible to visual or audio manipulation.
+
+### 3. Harden your recruitment process
+
+If your hiring process includes remote video interviews as a verification step, those interviews are now a potential attack vector. Consider supplementing video interviews with identity verification steps that go beyond visual confirmation — digital document validation via certified providers, liveness checks that test for real-time human presence, and background checks that cross-reference identity data against authoritative sources.
+
+### 4. Update your financial controls
+
+Dual authorisation for large transactions is standard. But if both authorisers can be impersonated on a video call, dual authorisation does not help. Layer in verification methods that cannot be deepfaked: physical tokens, cryptographic signatures, or callback procedures to pre-registered numbers (not numbers provided in the request itself).
+
+### 5. Assess your current exposure
+
+Map your organisation's processes that currently rely on visual or vocal identity verification. These are your deepfake attack surfaces. For each one, ask: if the person on the other end of this interaction were a deepfake, how would we know? If the answer is "we wouldn't," you have identified a vulnerability that needs a different verification layer.
+
+## The trajectory
+
+Deepfake technology is not plateauing. It is improving at a pace that consistently outstrips detection technology. Every month, the tools become cheaper, the output becomes more convincing, and the barrier to entry drops further.
+
+The businesses that will be protected are not those that train their employees to spot deepfakes — a losing race against improving technology. They are those that implement [verification methods that do not depend on human perception at all](/blog/two-way-verification-explained/). Methods that verify identity through means that cannot be synthesised, regardless of how good the deepfake is.
+
+The question is not whether your business will encounter a deepfake attack. It is whether you will recognise it when it happens — or, better, whether your systems will make the attack irrelevant by verifying identity through channels that deepfakes cannot compromise.
+
+---
+
+**Certifyd's [Verify](/products/verify/) and [Sentinel](/products/sentinel/) platforms provide cryptographic identity verification that is immune to deepfake manipulation.** Real-time participant verification for meetings, transactions, and recruitment — proving identity through mathematical certainty, not human perception.

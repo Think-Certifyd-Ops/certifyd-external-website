@@ -1,0 +1,123 @@
+---
+title: "Social Engineering at Work: Why Your Team Is the Target"
+date: "2026-05-29"
+author: "Certifyd Team"
+excerpt: "93% of data breaches involve social engineering. AI has made these attacks harder to detect — and training alone is not enough to stop them."
+category: "Security"
+---
+
+A payroll manager at a mid-sized logistics company received an email from the HR director. The email asked her to update the bank details for a senior employee's salary — the employee had switched banks and needed the change processed before the next pay run. The email came from the right address, referenced the right employee, and used the HR director's typical sign-off.
+
+She updated the details. The next month's salary — £8,400 — went to a fraudster's account in Lithuania.
+
+When the real HR director was asked about the email, she had never sent it. The email address had been spoofed. The attacker had researched the company's payroll cycle through publicly available information, identified the payroll manager through LinkedIn, and crafted a message that exploited both the operational context and the trust between colleagues.
+
+This is social engineering. It does not hack systems. It hacks people.
+
+## What social engineering actually is
+
+Social engineering is the use of psychological manipulation to trick people into taking actions or revealing information that compromises security. It bypasses technical defences entirely — firewalls, encryption, access controls are all irrelevant when the attack targets the human decision-making process.
+
+According to [Verizon's Data Breach Investigations Report](https://www.verizon.com/business/resources/reports/dbir/), social engineering is involved in approximately 74% of all data breaches. The UK's National Cyber Security Centre (NCSC) consistently identifies it as one of the most significant threats to organisations of all sizes.
+
+Social engineering takes several forms, each exploiting different aspects of human psychology:
+
+**Phishing** — fraudulent emails designed to trick recipients into clicking links, downloading attachments, or providing credentials. This is the most common form, accounting for the majority of social engineering attacks.
+
+**Spear phishing** — targeted phishing aimed at specific individuals, using personalised information to increase credibility. The payroll manager example above is a spear phishing attack.
+
+**Pretexting** — creating a fabricated scenario to obtain information or access. An attacker calls the front desk posing as an IT support engineer who needs remote access credentials to fix an urgent system issue.
+
+**Vishing** — voice phishing, conducted by phone. The attacker calls an employee posing as a bank, a supplier, or a colleague and uses conversation to extract information or authorise transactions.
+
+**Tailgating** — physically following an authorised person through a secure entrance. An attacker carrying a box of "deliveries" waits for an employee to badge in and holds the door.
+
+**Baiting** — leaving infected USB drives in car parks, reception areas, or common spaces, relying on curiosity to make someone plug one in.
+
+Each method exploits the same fundamental vulnerability: human beings are wired to trust, to help, and to respond to authority and urgency. These instincts are features of human cooperation, not bugs. Social engineers weaponise them.
+
+## The AI amplifier
+
+Every form of social engineering listed above has been made significantly more dangerous by artificial intelligence.
+
+**Phishing emails are now grammatically perfect and contextually accurate.** The tells that security training taught people to spot — poor grammar, generic greetings, implausible scenarios — have largely disappeared. Large language models produce phishing emails that are indistinguishable from legitimate business communication.
+
+**Vishing attacks now use cloned voices.** An attacker no longer needs to impersonate someone's speaking style through acting. They clone the voice directly. As little as [30 seconds of audio is enough to create a voice clone](/blog/voice-cloning-threat/) that replicates tone, cadence, accent, and speech patterns with near-perfect accuracy. When the "CEO" calls to request an urgent payment, the voice is not an approximation — it is a clone.
+
+**Deepfake video enables visual impersonation.** The [Arup attack](/blog/arup-deepfake-attack/) demonstrated that real-time deepfake technology can create convincing video impersonations of multiple people simultaneously on a live call. The visual trust that video calls were supposed to provide has been compromised.
+
+**Reconnaissance is automated.** AI tools can scrape LinkedIn profiles, company websites, press releases, and social media to build detailed profiles of target organisations and individuals in minutes. The research phase that once took an attacker days or weeks now takes hours.
+
+The net effect is that social engineering attacks are more convincing, more scalable, and harder to detect than at any point in history.
+
+## Why training alone does not work
+
+The standard organisational response to social engineering is security awareness training. Employees are taught to spot phishing emails, to be cautious with unsolicited requests, and to verify before they act.
+
+Training helps. It is not sufficient.
+
+The evidence is consistent across multiple studies: security awareness training produces a measurable improvement in phishing click rates immediately after delivery. Click rates drop, reporting increases, and the organisation feels more secure. Then, over the following 3-6 months, the improvement erodes. Click rates drift back toward pre-training levels. By the time the annual refresher arrives, the behavioural change has largely dissipated.
+
+This is not because employees are careless. It is because:
+
+1. **Vigilance fatigue is real.** Employees receive dozens or hundreds of emails daily. Maintaining a suspicious posture toward every single one is cognitively exhausting and incompatible with productive work.
+
+2. **AI-generated attacks defeat trained responses.** Training teaches people to spot specific indicators: poor grammar, suspicious URLs, generic greetings. When AI produces emails that contain none of these indicators, the training becomes less relevant.
+
+3. **Authority and urgency override caution.** Social engineering deliberately exploits hierarchical trust. When the request appears to come from a senior executive and is framed as urgent, the trained response ("I should verify this") conflicts with the organisational instinct ("my boss needs this done now"). The instinct wins more often than not.
+
+4. **Voice and video bypass learned defences.** Training focuses heavily on email because that has been the primary attack vector. When the attack shifts to a voice call or video call, employees have far less training and far less scepticism. "I heard their voice" or "I saw their face" feels like verification — even though it is not.
+
+Training creates awareness. It does not create systems. And social engineering attacks are a systems problem.
+
+## The systemic approach
+
+If training alone cannot stop social engineering, what can?
+
+The answer is to reduce the reliance on individual human judgment for high-risk decisions and replace it with systemic verification that operates regardless of how convincing the attack is.
+
+### Verification for financial transactions
+
+Any request to transfer funds, change payment details, or authorise a purchase above a defined threshold should trigger a mandatory verification step that cannot be satisfied by the request itself. This means:
+
+- The verification must happen through a **separate channel** from the request
+- The verification must use a method that **cannot be spoofed** by voice cloning, deepfakes, or email spoofing
+- The verification must be **procedural**, not discretionary — it happens for every qualifying transaction, not only when someone "feels something is wrong"
+
+### Verification for identity-sensitive actions
+
+Requests to change employee details (bank accounts, addresses, emergency contacts), grant system access, share sensitive data, or modify security settings should all require identity verification of the requester that does not depend on recognising their face, voice, or email address.
+
+### Verification for physical access
+
+[Tailgating and pretexting attacks targeting physical premises](/blog/identity-verification-gap/) require systemic controls: badge access that cannot be bypassed by holding a door, visitor verification that confirms identity against an expected list, and contractor verification that does not rely on "the office said they were coming."
+
+### Reducing the attack surface
+
+Beyond verification, organisations should actively reduce the information available to attackers. Review what employee details are publicly available on LinkedIn and the company website. Limit the detail in email signatures (full phone numbers and org structures are a gift to pretexters). Control what information is shared in press releases and social media posts about organisational structure and personnel.
+
+## Real UK examples
+
+Social engineering attacks are not limited to large enterprises:
+
+**NHS trust, 2023.** A hospital trust's finance department received invoices from what appeared to be a long-standing medical supplies vendor. The invoices included updated bank details and a plausible explanation for the change. Over three months, approximately £600,000 was redirected to fraudulent accounts before the real vendor queried unpaid invoices.
+
+**Law firm, 2024.** A solicitor received a call from what appeared to be a client, requesting that completion funds for a property transaction be sent to a different account. The voice matched previous calls. The solicitor processed the payment. The £270,000 was irrecoverable.
+
+**Manufacturing company, 2024.** An attacker posed as the company's IT support provider and called reception, claiming they needed to run urgent maintenance on the server. The receptionist provided remote access credentials. The attacker exfiltrated customer data including addresses, payment details, and contract terms.
+
+In each case, the victim acted reasonably based on the information available to them. In each case, a systemic verification requirement — confirming the requester's identity through a method the attacker could not control — would have prevented the loss.
+
+## The human layer is the last unprotected layer
+
+Organisations invest significantly in technical security. Firewalls, endpoint detection, email filtering, multi-factor authentication, intrusion detection systems — these protect the perimeter and the systems. Collectively, they represent billions of pounds of annual investment across the UK economy.
+
+The human layer — the moment when a person decides to trust a request, approve a transaction, grant access, or share information — remains largely unprotected by anything more than training and good intentions.
+
+Social engineers know this. Every attack in this article succeeded not by breaking through technical defences but by bypassing them entirely, going straight to the person who has the authority to act and the instinct to trust.
+
+The question is not whether your employees are security-aware. The question is whether your organisation has systemic verification in place for the decisions that matter — so that when the perfectly crafted email arrives, or the cloned voice calls, or the [deepfake CEO appears on screen](/blog/deepfake-detection-video-calls/), the outcome does not depend on whether one individual happens to ask the right question at the right moment.
+
+---
+
+**Certifyd provides identity verification at the interaction level — confirming that the person making a request is who they claim to be, through a cryptographic method that cannot be defeated by social engineering.** [Learn how Certifyd's verification products protect your team](/products/verify/).

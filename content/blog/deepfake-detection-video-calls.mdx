@@ -1,0 +1,87 @@
+---
+title: "Can You Spot a Deepfake on a Video Call? Probably Not."
+date: "2026-05-13"
+author: "Certifyd Team"
+excerpt: "Research shows humans detect deepfakes at near-chance levels. Here's why 'just look carefully' is not a security strategy."
+category: "Security"
+---
+
+A senior accountant at a London-based investment firm joins a Teams call with three colleagues to approve a transfer. The CFO is there, the head of treasury is there, a compliance officer is there. They discuss the transaction, confirm the details, and authorise the payment. The accountant has known these colleagues for years. Their faces, their voices, their mannerisms — all exactly as expected.
+
+Every person on that call was synthetic. The accountant was the only real human in the meeting.
+
+This is not a hypothetical. This is the pattern established by the [Arup attack in January 2024](/blog/arup-deepfake-attack/), where a finance worker transferred $25.6 million after a video call populated entirely by deepfake versions of his colleagues. And it is a pattern that has been replicated, with variations, across dozens of documented cases since.
+
+The standard advice — "look carefully for visual glitches" — is dangerously outdated. Here is why.
+
+## Humans detect deepfakes at near-chance levels
+
+The science is clear, and it is not encouraging. Multiple peer-reviewed studies have tested human ability to distinguish deepfake video from authentic footage, and the results converge on the same finding: we are barely better than a coin flip.
+
+A [2022 study published in PNAS](https://www.pnas.org/doi/10.1073/pnas.2110013119) (Proceedings of the National Academy of Sciences) found that participants correctly identified deepfake faces only **48.2% of the time** — worse than chance. When participants were warned that some images were synthetic and told to look carefully, accuracy improved to approximately 59%. Still barely better than guessing.
+
+Research from University College London found similar results for video deepfakes specifically. When shown short clips of real and synthetic faces under typical video call conditions — compressed video, variable lighting, slight motion blur — participants' detection accuracy did not meaningfully exceed 50%.
+
+The critical insight is not that people are careless. The participants in these studies were paying attention. They were told deepfakes were present. They were trying to spot them. And they still couldn't.
+
+## What a modern deepfake looks like on a video call
+
+The deepfake artefacts that security trainers teach people to look for — flickering around the hairline, mismatched skin tones, unnatural blinking — are relics of 2020-era technology. Modern real-time face-swapping tools have largely eliminated these tells.
+
+**Lip synchronisation** is now near-perfect in controlled conditions. The synthetic face moves in precise alignment with the audio, whether the audio is live speech from the attacker or a [cloned voice](/blog/voice-cloning-threat/). The slight lag that used to betray deepfakes on video calls has been engineered away.
+
+**Eye contact and gaze direction** are accurately simulated. Earlier deepfake models struggled with natural eye movement — the synthetic face would stare unnaturally or look slightly off-centre. Current models track the apparent gaze direction and replicate natural patterns of looking at the camera, looking at notes, and glancing away during thought.
+
+**Lighting and shadows** adapt in real time. The deepfake face is rendered with lighting that matches the apparent environment, including shadows from overhead lighting, reflections in glasses, and colour temperature variations. On a compressed video call, these are indistinguishable from real lighting.
+
+**Motion naturalness** — head tilts, micro-expressions, the way someone shifts when they're thinking — is increasingly convincing. The remaining tells are subtle: occasional smoothness around the jaw line during rapid head turns, minor inconsistencies when a hand passes in front of the face. These artefacts are visible in laboratory conditions on high-resolution displays. On a standard Zoom or Teams call, compressed to 720p and rendered on a laptop screen, they vanish.
+
+The uncomfortable truth is that the technology has evolved specifically to defeat human visual detection. Generative adversarial networks (GANs) and diffusion models are trained on datasets of real faces and iteratively refined until human observers cannot distinguish them. The AI's job is literally to fool your eyes. And it is now very good at that job.
+
+## Why "just look carefully" fails
+
+The advice typically given in corporate security training follows a pattern: look for visual inconsistencies, watch for unnatural movements, pay attention to your instincts. This advice has three fundamental problems.
+
+**First, the artefacts it relies on are disappearing.** Every generation of deepfake technology eliminates the tells that the previous generation of detection advice was based on. Training people to look for 2022 artefacts in 2026 deepfakes is like training people to look for obviously photoshopped images in the age of AI-generated photography. The technology has moved on.
+
+**Second, video call conditions mask whatever artefacts remain.** Corporate video calls are inherently low-fidelity. Bandwidth compression, variable frame rates, inconsistent lighting in home offices, and small display windows all reduce the visual information available to the viewer. The same deepfake that might be detectable on a 4K monitor in a laboratory setting is undetectable in a 200-pixel Teams window.
+
+**Third, human attention is not designed for this task.** In a real meeting, you are processing content — discussing a transaction, reviewing a document, considering a decision. You are not forensically analysing each pixel of each face on screen. The cognitive load of the actual meeting leaves minimal capacity for deepfake detection, even if you had the training and the visual conditions to attempt it.
+
+The net result: relying on human visual detection as a security control against deepfakes is not a strategy. It is a hope. And the research consistently shows it is a hope that fails approximately half the time.
+
+## The Arup case as a watershed
+
+The [Arup attack](/blog/arup-deepfake-attack/) was not notable because it used deepfakes — that technology was already well-known. It was notable because the victim did everything right by conventional standards. He was suspicious of the initial message. He requested a video call to verify. He engaged in a live conversation with what appeared to be multiple trusted colleagues. His verification process was exactly what security training recommends.
+
+And it failed completely, because the verification mechanism itself — human visual and audio recognition — was the compromised layer.
+
+The lesson is not that the Arup employee was negligent. The lesson is that the entire paradigm of visual verification on video calls is broken. If a careful, security-conscious professional who explicitly requested a verification call can be deceived, the control has failed. Not the person. The control.
+
+Since Arup, the pattern has been documented across financial services, technology, and professional services. The [FBI has warned specifically](https://www.ic3.gov/PSA/2022/PSA220628) about deepfakes being used in remote hiring processes. Multiple cases involve multi-person calls where the victim was the only real participant. The attack surface is any video call where trust is placed in visual and audio identity.
+
+## What technical countermeasures exist
+
+If human detection is unreliable, the response must be technical. Several approaches are being deployed, with varying effectiveness.
+
+**Liveness detection** requires the person on the call to perform a real-time action — turning their head to a specific angle, holding up a specific number of fingers, responding to an unpredictable prompt. The theory is that a deepfake will struggle with unexpected physical actions. In practice, advanced face-swapping tools can handle these challenges if they operate in real time on the attacker's own face (the deepfake mirrors whatever the attacker does). Liveness detection raises the bar but does not eliminate the risk.
+
+**Challenge-response protocols** move verification out of the visual channel entirely. Instead of asking "does this face look right?", they ask "can this person prove they are who they claim to be through an independent, non-visual mechanism?" This might involve a cryptographic identity exchange, a separate authentication on a different device, or a shared secret that cannot be predicted by an attacker observing the call.
+
+**AI-based deepfake detection** uses machine learning models trained to identify synthetic video. These tools analyse frame-level features that are invisible to human observers — compression artefacts, frequency-domain anomalies, temporal inconsistencies between frames. Detection accuracy rates for current commercial tools range from 70% to over 95%, depending on the specific technology used and the conditions. However, this is an arms race: detection models improve, and generation models improve to evade them.
+
+**Cryptographic identity verification** bypasses the visual question entirely. Rather than trying to determine whether a face on a screen is real, both parties authenticate through an independent cryptographic exchange. The face on the screen becomes irrelevant — the identity is proved through a mechanism that cannot be spoofed by visual appearance, regardless of how convincing the deepfake is.
+
+## Why verification must move beyond visual assessment
+
+The trajectory is clear. Deepfake generation technology is improving faster than either human or AI-based detection. The cost of creating convincing deepfakes is falling. The tools are increasingly accessible — some require nothing more than a consumer GPU and a few photographs of the target.
+
+In this environment, any security control that ultimately depends on a human looking at a face on a screen and deciding whether it is real is a control with a known, documented, and worsening failure rate. It is not zero. It is not small. It is approximately 50%, and that number is not improving.
+
+The businesses and organisations that will be protected are those that do not rely on visual verification as a trust mechanism. They use video calls for communication, but they authenticate identity through a separate, independent channel that is not vulnerable to visual spoofing.
+
+This is not a future requirement. The [deepfake playbook](/blog/deepfake-playbook/) for attackers is already written. The tools are already available. The attacks are already happening. The only question is whether your verification process has caught up with the threat — or whether you are still asking employees to look carefully at a 720p video feed and trust what they see.
+
+---
+
+**Certifyd [Verify](/products/verify/) provides cryptographic identity verification that works alongside any video call platform — proving participants are who they claim to be through an independent mechanism that deepfakes cannot defeat.** When visual trust is broken, you need a verification layer that does not rely on what you can see.

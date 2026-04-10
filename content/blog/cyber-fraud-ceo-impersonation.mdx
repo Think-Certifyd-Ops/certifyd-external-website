@@ -1,0 +1,108 @@
+---
+title: "CEO Fraud and Deepfake Impersonation: The New Threat"
+date: "2026-05-27"
+author: "Certifyd Team"
+excerpt: "CEO fraud losses exceed £1.2B annually in the UK. Deepfakes have turned a social engineering attack into an identity attack."
+category: "Security"
+---
+
+In February 2024, a finance worker at Arup's Hong Kong office joined a video call with his company's UK-based chief financial officer and several colleagues. They discussed a confidential transaction. He authorised **$25.6 million** in transfers across fifteen payments.
+
+Every person on that call was a deepfake. The faces were synthetic. The voices were cloned. The employee had done what any security-conscious professional would do — he requested a video call to verify the request — and the verification method itself had been compromised.
+
+The [Arup attack](/blog/arup-deepfake-attack/) made global headlines because of the figure involved. But it represents a fundamental shift in how CEO fraud operates, and the implications extend far beyond a single incident.
+
+## CEO fraud is not new. The technology is.
+
+Business Email Compromise (BEC), commonly known as CEO fraud, has been one of the most costly cybercrime categories for over a decade. The attack is conceptually simple: a fraudster impersonates a senior executive and instructs an employee to make an urgent payment, change bank details, or share sensitive information.
+
+Historically, BEC relied on email spoofing — a convincing email from what appeared to be the CEO's address. The defence was straightforward: verify before you act. Call the person. Confirm the instruction on a separate channel. Check that the voice you hear matches the person you know.
+
+That defence has been dismantled.
+
+Today's CEO fraud attacks can include:
+
+- **Deepfake video calls** where the attacker appears as a real-time, photorealistic replica of the CEO or CFO
+- **Cloned voice calls** where the attacker uses AI-generated speech that replicates the executive's tone, cadence, accent, and speech patterns
+- **Spoofed phone numbers and messaging accounts** so the call appears to come from the legitimate number
+- **Multi-participant deception** as seen in the Arup case, where multiple colleagues are simulated simultaneously to create the appearance of a legitimate business meeting
+
+The social engineering component — urgency, authority, confidentiality — remains the same. What has changed is that the attacker can now present a face and voice that are indistinguishable from the real person.
+
+## The scale of the problem in the UK
+
+Authorised push payment (APP) fraud — where victims are deceived into making payments to accounts controlled by criminals — cost UK consumers and businesses **over £1.2 billion** in 2023, according to [UK Finance data](https://www.ukfinance.org.uk/). BEC and CEO fraud represent a significant share of the business component of these losses.
+
+[Action Fraud](https://www.actionfraud.police.uk/), the UK's national fraud and cybercrime reporting centre, receives thousands of reports of BEC annually. The true figure is almost certainly higher, as many businesses — particularly larger organisations — do not report incidents due to reputational concerns.
+
+The National Cyber Security Centre (NCSC) has issued repeated warnings about the increasing sophistication of BEC attacks, specifically noting the emergence of AI-generated content as an amplifying factor.
+
+What makes the current moment different is not the volume of attacks but the collapse of the traditional defence. When an employee can no longer trust that a video call with their CEO is real, the entire informal verification layer that businesses have relied on for decades ceases to function.
+
+## How deepfake CEO fraud works in practice
+
+A typical AI-augmented CEO fraud attack follows a predictable pattern:
+
+**Phase 1: Reconnaissance.** The attacker gathers information about the target organisation — executive names, roles, reporting structures, current projects, upcoming transactions. This information is often publicly available through LinkedIn, company websites, press releases, and Companies House filings.
+
+**Phase 2: Voice and video harvesting.** The attacker collects audio and video samples of the executive to impersonate. Sources include earnings calls, conference presentations, podcast appearances, webinar recordings, and social media videos. As little as [30 seconds of audio is sufficient for voice cloning](/blog/voice-cloning-threat/).
+
+**Phase 3: Building the synthetic identity.** Using commercially available deepfake tools, the attacker creates a real-time face-swap model and a voice clone. These tools have improved dramatically — many now run on consumer hardware and produce output that is indistinguishable from reality to the human eye and ear.
+
+**Phase 4: The attack.** The attacker initiates contact with the target employee — typically via email or messaging to establish context ("I need to discuss something confidential"), followed by a video or voice call where the synthetic identity is deployed. Urgency and authority are used to override normal verification procedures.
+
+**Phase 5: Extraction.** The employee authorises a payment, shares credentials, or provides access to sensitive information. By the time the deception is discovered — often hours or days later — the funds have been moved through multiple accounts and are unrecoverable.
+
+## Why existing defences fail
+
+Most organisations' defences against CEO fraud were designed for an era when the attacker's tools were limited to email and phone calls with their own voice. Those defences systematically fail against AI-augmented attacks:
+
+**"Call them back to verify."** This works if the attacker initiated contact via email and the employee calls the real person's phone. It does not work if the attacker has spoofed the phone number, or if the attack is conducted entirely via video call where the employee initiated the verification.
+
+**"I recognised their voice."** Human voice recognition is an informal trust mechanism, not a security control. When voice cloning produces output that is indistinguishable from the original, [voice recognition ceases to be a reliable verification method](/blog/voice-cloning-threat/).
+
+**"We require dual authorisation."** Adding a second authoriser helps — but only if the second authoriser applies a different verification method. If both people on the approval chain trust the same video call, you have doubled the witnesses to a deception, not doubled the security.
+
+**"We have email filters and phishing detection."** These systems protect against email-based attacks. They do not protect against a live video call where a synthetic CEO asks for an urgent transfer. The attack bypasses the email layer entirely.
+
+**Security awareness training.** Training reduces susceptibility to basic phishing. It does not train the human brain to distinguish a high-quality deepfake from a real face on a video call. The technology has surpassed human perceptual capability. No amount of training closes that gap.
+
+## The small business myth
+
+There is a persistent assumption that CEO fraud targets only large enterprises. The data does not support this.
+
+While high-profile cases like Arup involve eight-figure sums, the majority of BEC losses come from smaller transactions at smaller businesses. A payment of £15,000 from a 30-person company does not make headlines, but it may represent a month's payroll. A redirected invoice payment of £40,000 can push an SME into insolvency.
+
+Small businesses are, in many ways, more vulnerable. They are less likely to have multi-factor authorisation processes, less likely to have dedicated finance teams with established verification procedures, and more likely to have a culture where "the boss said to do it" is sufficient authority for action.
+
+The economics of deepfake attacks also favour scale. Once an attacker has built a voice clone or face-swap model, the marginal cost of deploying it against additional targets is near zero. Attacking fifty small businesses is often more profitable — and less risky — than attacking one large one.
+
+## Multi-factor identity verification for high-value decisions
+
+The solution to deepfake CEO fraud is not better training or more sophisticated email filters. It is a fundamental change in how identity is verified for high-value decisions.
+
+The principle is straightforward: **do not rely on what you can see and hear on a screen to verify identity, because what you can see and hear can be fabricated.**
+
+Instead, require cryptographic identity verification — an independent authentication step that cannot be replicated by a deepfake, no matter how convincing.
+
+In practice, this means:
+
+1. **Establish verification thresholds.** Any request above a defined financial value, any change to payment details, any access to sensitive systems — these trigger mandatory identity verification through a channel the attacker cannot control.
+
+2. **Use out-of-band verification.** The verification must happen through a separate channel from the request. If the request comes via video call, the verification cannot happen on the same video call. It must use an independent, cryptographic method that confirms the person's identity without relying on their face or voice.
+
+3. **Make verification routine, not exceptional.** If verification only happens when someone "feels something is off," it fails. Attackers design their approaches to not feel off. Verification must be procedural — built into the workflow for every qualifying transaction, not triggered by suspicion.
+
+4. **Create an audit trail.** Every high-value decision should have an auditable record of who authorised it and how their identity was verified. This protects the organisation not only against fraud but against internal disputes and regulatory scrutiny.
+
+## The verification layer that is missing
+
+The gap in most organisations' security architecture is between system-level security (firewalls, MFA, endpoint protection) and human-level trust (recognising a face, a voice, a communication style). Deepfake attacks operate precisely in that gap.
+
+Closing it requires a verification layer that sits at the interaction level — confirming that the person you are communicating with is who they claim to be, using a method that cannot be defeated by synthetic media. Not after the call. Not by asking a personal question. Through a cryptographic exchange that produces a verifiable, timestamped proof of identity.
+
+The Arup employee followed his instincts. He requested a video call. He saw familiar faces. He heard familiar voices. And he transferred $25.6 million to criminals. His instincts were not the problem. The absence of a verification layer that does not depend on human perception was the problem.
+
+---
+
+**Certifyd provides real-time, cryptographic identity verification for high-stakes interactions — [ensuring the person on the call is who they claim to be](/products/verify/), regardless of how convincing a deepfake appears.** When the cost of being wrong is measured in millions, visual trust is not enough.

@@ -1,0 +1,163 @@
+---
+title: "Identity Verification APIs: What Businesses Should Know"
+date: "2026-07-01"
+author: "Certifyd Team"
+excerpt: "Building identity verification into your product or workflow? Here's what to look for in an API provider — and what most businesses get wrong."
+category: "Identity"
+---
+
+A property management company in Leeds decides to automate its tenant onboarding. The current process — emailing documents back and forth, manually checking passports, filing scanned copies in folders — takes too long and fails too often. Documents get lost. Checks are inconsistent. Landlords complain about delays.
+
+The company's development team investigates identity verification APIs. Within a week, they are overwhelmed. Dozens of providers. Different capabilities. Different pricing models. Different claims about accuracy, speed, and compliance. Some offer document OCR. Some offer biometric matching. Some offer everything. Some do not clearly explain what they do at all.
+
+They choose a provider based on price and ease of integration. Six months later, they discover that the provider's document verification does not check against the issuing authority's database — it only analyses the image. Several fraudulent documents have passed through undetected. The "verification" was essentially a sophisticated image quality check, not a genuine identity verification.
+
+The company has to re-verify hundreds of tenants and explain the gap to their landlord clients.
+
+This scenario is not unusual. The identity verification market is growing rapidly, and the gap between what providers claim and what they deliver is significant. For businesses building or integrating identity verification into their systems, understanding what these APIs actually do — and what to look for — is essential.
+
+## What identity verification APIs do
+
+At their core, identity verification APIs automate the process of confirming that a person is who they claim to be. They take inputs — typically a photo of an identity document and a selfie or live image of the person — and return a confidence score or pass/fail result.
+
+The technology stack behind this typically includes several components:
+
+### Document OCR (Optical Character Recognition)
+
+The API reads the text on the identity document — name, date of birth, document number, expiry date, nationality, machine-readable zone (MRZ). This data is extracted and structured, enabling automated processing. Good OCR handles multiple document types, languages, and formats. It can read data from passports, driving licences, national identity cards, residence permits, and other standard documents.
+
+OCR accuracy matters. A system that misreads a passport number or expiry date introduces errors downstream. The best providers achieve accuracy rates above 99% on standard document types, but performance drops on damaged, low-quality, or non-standard documents.
+
+### Document authenticity analysis
+
+Beyond reading the text, the API analyses the document image for signs of tampering, manipulation, or fabrication. This includes checking:
+
+- **Font consistency** — are the fonts on the document consistent with genuine specimens?
+- **Layout and formatting** — does the document match the expected template for its type and issuing country?
+- **Security features** — can holograms, watermarks, UV-reactive elements, or microprinting be detected in the image?
+- **Image manipulation** — are there signs of Photoshop, splicing, or digital alteration?
+- **MRZ validation** — does the machine-readable zone contain valid check digits that match the visual data?
+
+This analysis catches some fraudulent documents, but it operates on the image alone. As [AI-generated documents](/blog/ai-generated-documents-employer-risk/) become more sophisticated, image-based authenticity analysis is becoming less reliable as a standalone check. The best providers supplement image analysis with database verification.
+
+### Database verification
+
+The most robust form of document verification checks the document's details against the records held by the issuing authority. For UK documents, this means:
+
+- **Passport validation** against HM Passport Office records
+- **Driving licence validation** against DVLA records
+- **Biometric residence permit validation** against Home Office records
+- **Right to work status** via the [Home Office online checking service](https://www.gov.uk/check-job-applicant-right-to-work)
+
+Database verification confirms that the document is not just visually convincing but actually exists in the issuing authority's records. An AI-generated passport that looks perfect will fail a database check because the passport number does not correspond to any issued document.
+
+Not all providers offer database verification. Some only perform image analysis. The difference is critical, and it is not always clear from the provider's marketing materials.
+
+### Biometric matching
+
+Biometric matching compares the person presenting the document to the photo on the document. The most common form is facial recognition: the person takes a selfie or live photo, and the API compares it to the document photo.
+
+The sophistication of biometric matching varies significantly:
+
+- **Static selfie comparison** — the person uploads a photo, which is compared to the document photo. This is the weakest form, as a printed photo or screen image can fool it.
+- **Active liveness detection** — the person performs a specific action (blink, turn head, smile) to prove they are a live person, not a photograph or video playback.
+- **Passive liveness detection** — the system analyses the image for indicators of liveness without requiring specific actions. This is harder to spoof and provides a smoother user experience.
+
+Liveness detection is essential. Without it, biometric matching can be defeated by holding up a photograph of the document holder in front of the camera. With [deepfake technology](/blog/deepfake-detection-video-calls/) becoming more accessible, even video-based liveness checks face emerging threats.
+
+### NFC chip reading
+
+Many modern identity documents — biometric passports, biometric residence permits — contain an NFC chip that stores the holder's biometric data and a cryptographic signature from the issuing authority. APIs that support NFC reading can:
+
+- Extract the biometric data directly from the chip (higher quality than the printed photo)
+- Verify the cryptographic signature, confirming the chip data has not been tampered with
+- Compare the chip photo to the live selfie for a more reliable biometric match
+
+NFC verification is currently the strongest form of document authentication available to businesses, because the cryptographic signature cannot be forged by AI tools or image manipulation. If the chip is valid, the document is genuine. If the document does not have a valid chip, or the chip data does not match the visual data, it is suspect.
+
+Not all devices support NFC reading (most modern smartphones do), and not all identity documents have NFC chips. But for documents that do, NFC verification provides a level of assurance that image analysis alone cannot match.
+
+## What to look for in a provider
+
+For businesses evaluating identity verification API providers, the following criteria should guide the assessment.
+
+### UK DIATF certification
+
+The [UK Digital Identity and Attributes Trust Framework (DIATF)](https://www.gov.uk/government/publications/uk-digital-identity-and-attributes-trust-framework) establishes standards for digital identity services in the UK. Providers certified under the DIATF have been independently assessed against these standards, covering identity proofing, authentication, security, and privacy.
+
+For right to work checks specifically, the DIATF includes a certification path for **Identity Service Providers (IDSPs)** who can conduct digital right to work checks. Using a certified IDSP provides employers with a statutory excuse — the same legal protection as conducting a manual check — and gives assurance that the verification meets a defined standard.
+
+DIATF certification is not mandatory, but it is increasingly the baseline expectation. The Home Office recognises [certified IDSP checks](https://www.gov.uk/government/publications/right-to-work-checks-employers-guide) as valid for establishing a statutory excuse for British and Irish citizens. For businesses building right to work verification into their systems, choosing a DIATF-certified provider is the most direct path to compliance.
+
+### Data residency and GDPR compliance
+
+Identity data — passport images, facial biometrics, personal details — is among the most sensitive data a business can process. Under the [UK GDPR](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/), processing biometric data for identification purposes is classified as special category data, requiring explicit consent and robust safeguards.
+
+When evaluating providers, establish:
+
+- **Where is the data stored?** UK-based data residency reduces cross-border data transfer complications.
+- **How long is the data retained?** Providers should have clear data retention policies aligned with the purpose of processing. Identity data should not be retained indefinitely.
+- **Who has access?** The provider's staff access to identity data should be restricted and auditable.
+- **Is the data encrypted?** Both at rest and in transit, using current encryption standards.
+- **What happens on termination?** When you stop using the service, what happens to the data? It should be securely deleted within a defined timeframe.
+
+A provider that cannot clearly answer these questions should not be trusted with identity data, regardless of the quality of their verification technology.
+
+### Accuracy rates and bias
+
+Identity verification systems make decisions about people. Those decisions must be accurate, and they must be fair.
+
+**False positive rate** — the rate at which genuine documents or genuine persons are incorrectly rejected. A high false positive rate creates friction for legitimate users and can disproportionately affect people with darker skin, older documents, or non-standard document types.
+
+**False negative rate** — the rate at which fraudulent documents or impersonators are incorrectly accepted. This is the security-critical metric. A high false negative rate means the system is letting fraud through.
+
+**Demographic bias** — facial recognition systems have historically performed less accurately on certain demographic groups, particularly people with darker skin tones and women. The [National Institute of Standards and Technology (NIST)](https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt) publishes benchmark assessments of facial recognition algorithms, including demographic analysis. Providers should be able to demonstrate that their system performs consistently across demographic groups.
+
+Ask providers for their accuracy metrics, how they were measured, and whether they have been independently assessed. Be sceptical of providers who claim 99.9% accuracy without context — accuracy on what document types, what populations, and under what conditions?
+
+### Speed and user experience
+
+Identity verification must be fast enough to be practical. If the verification takes ten minutes, users will abandon the process. If it requires uploading multiple photos, downloading an app, and performing a complicated liveness check, conversion rates will suffer.
+
+The best providers complete verification in under 60 seconds, with a user experience that requires minimal effort: take a photo of your document, take a selfie, done.
+
+For businesses integrating verification into existing workflows — onboarding, checkout, access control — the API should support embedded verification within your existing user interface, not redirect users to a third-party site or app.
+
+### Coverage of document types
+
+The UK workforce includes people holding documents from over 190 countries. A verification system that works well for UK passports but fails on Zimbabwean national identity cards or Philippine passports is not fit for purpose in a diverse workforce.
+
+Check which document types the provider supports, and specifically whether they support the documents most common in your workforce. For right to work checks, this means not just passports but biometric residence permits, eVisas (which are digital, not physical), and the various documents on the Home Office's List A and List B.
+
+## Build vs buy
+
+Some businesses consider building their own identity verification system rather than using a third-party API. This is almost always the wrong decision.
+
+Building a production-grade identity verification system requires:
+
+- Document template databases covering hundreds of document types across dozens of countries
+- Machine learning models trained on millions of genuine and fraudulent document images
+- Biometric matching algorithms that have been tested for accuracy and demographic bias
+- Liveness detection that resists [sophisticated spoofing attempts](/blog/deepfake-playbook/)
+- Ongoing updates as document formats change, new fraud techniques emerge, and regulatory requirements evolve
+- Security infrastructure to protect the most sensitive category of personal data
+
+The cost of building this in-house vastly exceeds the cost of using a specialist provider. The risk of getting it wrong — of building a system that misses fraud or creates bias — is significant and ongoing.
+
+The buy decision is usually correct. The question is not whether to use an API, but which one.
+
+## The integration decision
+
+For businesses integrating identity verification into their products or workflows, the key architectural decisions are:
+
+**Where in the workflow does verification occur?** The earlier, the better. For employee onboarding, verification at application stage prevents wasted time on candidates who cannot work. For tenant onboarding, verification before viewing prevents fraudulent applications progressing.
+
+**How does verification data flow into your systems?** The API result — verified/not verified, document data, [audit trail](/blog/audit-trails-compliance/) — needs to integrate with your HR system, property management system, or compliance dashboard. Look for APIs with webhooks, flexible data formats, and pre-built integrations with common platforms.
+
+**How do you handle failures?** Not every verification will succeed on the first attempt. Poor lighting, damaged documents, and user error are common. Your workflow needs a graceful failure path — retry, manual review, or alternative verification method — rather than a dead end.
+
+**How do you maintain the audit trail?** For right to work compliance, the [audit trail](/blog/audit-trails-compliance/) is as important as the verification itself. Your system must record what was checked, when, by whom, what the result was, and what documents were examined. This record must be retrievable for inspection.
+
+---
+
+**Certifyd's identity verification platform is built for UK compliance — [DIATF-aligned verification](/products/portal/), database checks against issuing authorities, biometric matching with liveness detection, and audit-ready records that satisfy the Home Office and the Fair Work Agency.** Whether you are building verification into your own product or need a turnkey compliance solution, Certifyd provides the infrastructure.
