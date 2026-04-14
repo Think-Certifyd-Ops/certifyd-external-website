@@ -185,6 +185,62 @@ export function HowToSchema({ name, steps }: HowToSchemaProps) {
   );
 }
 
+interface PodcastEpisodeSchemaProps {
+  title: string;
+  description: string;
+  slug: string;
+  date: string;
+  duration: string;
+  audioUrl: string;
+  guestName: string;
+}
+
+export function PodcastEpisodeSchema({
+  title,
+  description,
+  slug,
+  date,
+  duration,
+  audioUrl,
+  guestName,
+}: PodcastEpisodeSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    name: title,
+    description,
+    url: `${BASE_URL}/podcast/${slug}/`,
+    datePublished: date,
+    timeRequired: `PT${duration.replace(":", "M")}S`,
+    associatedMedia: {
+      "@type": "MediaObject",
+      contentUrl: audioUrl,
+      encodingFormat: "audio/mpeg",
+    },
+    partOfSeries: {
+      "@type": "PodcastSeries",
+      name: "Gone Phishing with Certifyd",
+      url: `${BASE_URL}/podcast/`,
+    },
+    performer: {
+      "@type": "Person",
+      name: guestName,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: COMPANY.name,
+      url: BASE_URL,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 interface BreadcrumbSchemaProps {
   items: { name: string; href: string }[];
 }

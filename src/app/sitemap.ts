@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
+import { getAllEpisodes } from "@/lib/podcast";
 import { getAllForPages } from "@/lib/for-pages";
 
 export const dynamic = "force-static";
@@ -181,5 +182,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...forPages, ...blogPosts];
+  const podcastIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/podcast`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+  ];
+
+  const podcastEpisodes: MetadataRoute.Sitemap = getAllEpisodes().map((ep) => ({
+    url: `${BASE_URL}/podcast/${ep.slug}`,
+    lastModified: new Date(ep.date),
+    changeFrequency: "yearly",
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...forPages, ...blogPosts, ...podcastIndex, ...podcastEpisodes];
 }

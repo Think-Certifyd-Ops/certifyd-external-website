@@ -1,0 +1,61 @@
+---
+title: "A Million Hacking Attempts Per Second"
+date: "2026-01-29"
+author: "Certifyd Team"
+excerpt: "A cybersecurity veteran explains why AI voice cloning, shadow AI, and the death of the junior developer are the threats keeping him up at night."
+category: "Podcast"
+---
+
+Scammers cloned the CEO's voice. Nick Hernandez got on the phone with them anyway — just to see what would happen. What he found was a live-typed conversation being fed through a voice model built from public recordings. It sounded close, but not close enough. Next time, it will be.
+
+## Meet the Guest
+
+Nick Hernandez has spent 20 years in cybersecurity, starting at a credit card payment gateway that faced a million hacking attempts per second. He now leads security at Zydoc, a healthcare technology company that uses AI to transcribe medical encounters into electronic health records. The intersection of AI, healthcare data, and constant attack pressure gives him a perspective few others have.
+
+## Key Takeaways
+
+- **Voice cloning is already in play.** Attackers created a voice model of Zydoc's CEO from public recordings. The quality was poor — this time. With open-source models like Ollama's new voice capabilities running locally, the quality gap is closing fast and the cost is approaching zero.
+- **Phishing has evolved beyond grammar checks.** AI-written phishing emails no longer contain the spelling errors that used to be giveaways. The metadata is now the only reliable indicator, and most employees don't know how to check it.
+- **New starters are the highest-value target.** Zydoc sees phishing attempts to new employees "almost immediately" after they join. The combination of wanting to impress, not knowing the culture, and time pressure makes them the most exploitable point in any organisation.
+- **Shadow AI is the new shadow IT.** People are installing AI tools with full system access the same way they used to plug computers straight into cable modems with no firewall. The security implications haven't caught up.
+- **The junior developer pipeline is a security risk.** If nobody learns the fundamentals because AI can write working code, who maintains the systems when the AI gets it wrong? Nick's nine-year-old daughter built a working game with Claude Code. The code was "a disaster" — but it worked.
+
+## The CEO Voice Clone
+
+Zydoc's CEO is publicly active — talks, podcasts, LinkedIn videos. Scammers scraped enough audio to build a voice model and started calling employees, impersonating him. Nick, curious by nature, answered one of these calls pretending to be the targeted employee.
+
+> "They had created a voice model of his voice, but it was a very poor one because it was all through low-quality audio recordings. It sounded a bit like him, but knowing him well enough, I knew it wasn't him."
+
+The attack broke down for two reasons: the voice quality was off, and the scammers were typing their responses into a text-to-speech system in real time. Their English wasn't great, so the phrasing felt wrong even when the voice sounded plausible. But Nick is blunt about the trajectory — open-source voice models are rapidly improving, and running locally means they're faster and cheaper. The "poor quality" defence has an expiry date.
+
+## Returns Fraud: Building Trust to Steal
+
+Before healthcare, Nick worked at a credit card payment gateway. One attack still stands out: fraudsters who gained access to a merchant account and started by processing *returns* — giving money back. The fraud detection system, optimised to flag suspicious charges, wasn't watching for generosity. Once the session looked trustworthy, they pivoted to real transactions and siphoned funds out.
+
+> "By running the returns, the fraud system was less on guard because you're not expecting someone to do fraud by returning money."
+
+The parallel to modern phishing is clear. Whether it's returns that build trust before theft, or low-value GoFundMe scams that establish credibility before scaling, attackers are investing in the relationship before exploiting it.
+
+## Shadow AI Is the New Cable Modem
+
+The most vivid analogy came when Nick compared the current AI adoption wave to the early days of the internet.
+
+> "It's almost like the beginning of the internet. People would just buy computers, plug them into the cable modem, no firewall, no router, nothing. That's where we are right now with AI."
+
+Employees are installing AI coding tools, browser agents, and automation platforms with full system access — often without IT awareness. The agentic identity problem compounds it: if an AI agent acts maliciously on your machine, who is liable? The user, the developer, the model provider? Nobody has answered this yet, and organisations are already living with the risk.
+
+## The Positive Signal
+
+It's not all bleak. Nick's team built a custom AI agent that analyses their security logs and immediately started catching attack patterns that humans missed — low-frequency probing spread across multiple days that no analyst would piece together.
+
+> "Three, four requests at a time throughout multiple days. You don't really put it together."
+
+The same AI capabilities that enable attacks are enabling defenders to see patterns they couldn't before. The arms race continues, but at least the defensive tooling is keeping pace.
+
+## What This Means for Identity
+
+When scammers can clone a voice, fabricate a caller ID, and time their attack to a new employee's first day, the traditional signals of trust collapse. Nick's instinct was right — he knew his CEO's voice well enough to catch the fake. But that only works if you know the person. In most business interactions, you don't. That's the gap identity verification has to fill — making "is this really you?" instant and routine, not something that relies on gut feel and 10 years of familiarity.
+
+---
+
+*This post is based on a conversation from the Gone Phishing podcast. Listen to the full episode for the complete discussion.*

@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
   alternates: {
     canonical: "/",
+    types: {
+      "application/rss+xml": "/podcast/feed.xml",
+    },
   },
   openGraph: {
     title: "Certifyd — Identity Verification for Businesses",
