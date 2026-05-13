@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/layout/Header";
+import "@/styles/marketing.css";
+import { MarketingHeader } from "@/components/marketing/MarketingHeader";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
 
@@ -104,7 +105,7 @@ export default function RootLayout({
       >
         <OrganizationSchema />
         <WebSiteSchema />
-        <Header />
+        <MarketingHeader />
         <main>{children}</main>
         <Footer />
       </body>
