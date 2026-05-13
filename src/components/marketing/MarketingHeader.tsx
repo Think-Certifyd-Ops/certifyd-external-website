@@ -72,9 +72,14 @@ export function MarketingHeader() {
           <Link href="/blog">Resources</Link>
         </nav>
 
-        <Link href="/contact/" className="nav__cta">
+        <a
+          href="https://cal.com/andrew-speer/certifyd-discovery"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav__cta"
+        >
           Book a 20-min call <span aria-hidden="true">→</span>
-        </Link>
+        </a>
       </div>
     </header>
   );
