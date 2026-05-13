@@ -410,7 +410,13 @@
     }
 
     /* Industries dropdown */
-    .nav__drop { position: relative; }
+    .nav__drop {
+      position: relative;
+      /* Extend hover area downward so the gap between trigger and menu
+         doesn't break hover. Negative margin keeps layout unchanged. */
+      padding-bottom: 0.65rem;
+      margin-bottom: -0.65rem;
+    }
     .nav__droptrigger {
       font-family: var(--font-mono);
       font-size: var(--t-label);
@@ -448,11 +454,17 @@
       gap: 0;
       z-index: 60;
     }
+    /* Open on hover (mouse), focus-within (keyboard), or .is-open (click/touch) */
+    .nav__drop:hover .nav__dropmenu,
+    .nav__drop:focus-within .nav__dropmenu,
     .nav__dropmenu.is-open {
       opacity: 1;
       pointer-events: auto;
       transform: translateX(-50%) translateY(0);
     }
+    /* Rotate chevron on hover/focus too, not just on click */
+    .nav__drop:hover .nav__dropchev,
+    .nav__drop:focus-within .nav__dropchev { transform: rotate(180deg); }
     .nav__dropitem {
       font-family: var(--font-mono);
       font-size: var(--t-label);
