@@ -91,8 +91,9 @@
     .marketing dd { margin: 0; padding: 0; }
     .marketing ul,
     .marketing ol { list-style: none; }
-    .marketing a { color: inherit; text-decoration: none; }
-    .marketing button { font-family: inherit; cursor: pointer; background: none; border: 0; color: inherit; }
+    /* a / button defaults handled by Tailwind preflight - don't override here
+       or we'll outweigh per-class color rules like .btn--white via specificity. */
+    .marketing button { font-family: inherit; cursor: pointer; background: none; border: 0; }
     .marketing img,
     .marketing svg { display: block; max-width: 100%; }
 
@@ -167,11 +168,11 @@
       text-wrap: balance;
     }
     .h2 {
-      font-family: var(--font-sans);
+      font-family: var(--font-mono);
       font-weight: 600;
       font-size: var(--t-h2);
       line-height: 1.1;
-      letter-spacing: var(--tracking-h);
+      letter-spacing: var(--tracking-mega);
       text-wrap: balance;
     }
     .h3 {
@@ -388,17 +389,25 @@
     .nav__links a:hover { color: var(--on-dark); }
     .nav__cta {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.7rem 1.15rem;
-      border: 1px solid var(--navy-line);
+      padding: 0.72rem 1.25rem;
+      border: 1px solid var(--blue);
       border-radius: 4px;
       font-family: var(--font-mono);
-      font-size: var(--t-label);
-      letter-spacing: 0.04em;
-      color: var(--on-dark);
-      transition: background .3s var(--ease), border-color .3s var(--ease), transform .3s var(--ease);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      background: var(--blue);
+      color: white;
+      box-shadow: 0 8px 22px -10px rgba(0,89,255,0.65);
+      transition: background .3s var(--ease), border-color .3s var(--ease), transform .3s var(--ease), box-shadow .3s var(--ease);
       min-height: 44px;
     }
-    .nav__cta:hover { background: var(--blue); border-color: var(--blue); transform: translateY(-1px); }
+    .nav__cta:hover {
+      background: var(--blue-dark);
+      border-color: var(--blue-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px -10px rgba(0,89,255,0.8);
+    }
 
     /* Industries dropdown */
     .nav__drop { position: relative; }
@@ -1744,11 +1753,11 @@
 
     /* Base cell — used by every cell in the table */
     .cmp__cell {
-      padding: 1rem 0;
+      padding: 1.4rem 0;
       border-bottom: 1px solid var(--warm-line);
       font-family: var(--font-sans);
       font-size: var(--t-small);
-      line-height: 1.4;
+      line-height: 1.5;
       color: var(--ink-soft);
       font-style: normal;
       display: flex;
@@ -1795,7 +1804,7 @@
       background: var(--blue);
       color: white;
       font-style: normal;
-      padding: 0.95rem 1.25rem;
+      padding: 1.3rem 1.4rem;
       border-bottom-color: rgba(255,255,255,0.18);
       gap: 0.7rem;
     }
@@ -1806,8 +1815,8 @@
       border-top: 0;
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
-      padding-top: 1.1rem;
-      padding-bottom: 0.9rem;
+      padding-top: 1.45rem;
+      padding-bottom: 1.1rem;
       border-bottom-color: rgba(255,255,255,0.22);
     }
     .cmp__certbadge {
@@ -1824,7 +1833,7 @@
       border-bottom: 0;
       border-bottom-left-radius: 12px;
       border-bottom-right-radius: 12px;
-      padding-bottom: 1.2rem;
+      padding-bottom: 1.55rem;
       box-shadow: 0 28px 60px -22px rgba(0,89,255,0.55);
     }
 

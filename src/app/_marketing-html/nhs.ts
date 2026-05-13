@@ -30,7 +30,7 @@ export const nhsBody = String.raw`
             Book a 20-min call
             <span class="btn__arrow" aria-hidden="true">→</span>
           </a>
-          <a href="#pillars" class="btn btn--outline">
+          <a href="#walkthrough" class="btn btn--outline">
             See how it works
             <span class="btn__arrow" aria-hidden="true">↓</span>
           </a>
@@ -498,11 +498,11 @@ export const nhsBody = String.raw`
         <h2 class="close__title">Fill the Staff Passport gap. On your terms.</h2>
         <p class="close__sub">20 minutes. The bank dashboard, the clinician wallet, your DSPT-aligned audit pack. No slides, no decks - just the product.</p>
         <div class="close__ctas">
-          <a href="#" class="btn btn--white">
+          <a href="/contact/" class="btn btn--white">
             Book a 20-min call
             <span class="btn__arrow" aria-hidden="true">→</span>
           </a>
-          <a href="#" class="btn btn--clear-light">
+          <a href="/products" class="btn btn--clear-light">
             See the products
             <span class="btn__arrow" aria-hidden="true">↓</span>
           </a>
