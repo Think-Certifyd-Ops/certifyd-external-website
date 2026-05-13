@@ -26,7 +26,7 @@ export const homepageBody = String.raw`
         </p>
 
         <div class="hero__ctas">
-          <a href="#close" class="btn btn--primary">
+          <a href="https://cal.com/andrew-speer/certifyd-discovery" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
             Book a 20-min call
             <span class="btn__arrow" aria-hidden="true">→</span>
           </a>
@@ -498,7 +498,7 @@ export const homepageBody = String.raw`
         <h2 class="close__title">Make compliance a live state. Not a paper exercise.</h2>
         <p class="close__sub">20 minutes. We'll show you the dashboard, the worker app, and the audit trail. No slides, no decks - just the product.</p>
         <div class="close__ctas">
-          <a href="/contact/" class="btn btn--white">
+          <a href="https://cal.com/andrew-speer/certifyd-discovery" target="_blank" rel="noopener noreferrer" class="btn btn--white">
             Book a 20-min call
             <span class="btn__arrow" aria-hidden="true">→</span>
           </a>
