@@ -33,10 +33,6 @@
       --warn:    #E85D2C;
       --success: #00B368;
 
-      /* Mapped to next/font variables defined in app/layout.tsx */
-      --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
-      --font-sans: var(--font-ibm-plex-sans), system-ui, sans-serif;
-
       /* Tight scale. Headlines push monumental. Body sits at 17-19px. */
       --t-mega:    clamp(1.625rem, 2.85vw, 2.75rem);  /* hero & big editorial */
       --t-h1:      clamp(2.5rem, 4.6vw, 4rem);
@@ -62,6 +58,14 @@
       --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
 
       --focus: 0 0 0 3px #F6F3EE, 0 0 0 5px var(--blue);
+    }
+
+    /* Mapped to next/font variables defined on <body> in app/layout.tsx.
+       Must be declared on body (not :root) because that's where next/font
+       attaches the variables via the className it injects. */
+    body {
+      --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+      --font-sans: var(--font-ibm-plex-sans), system-ui, sans-serif;
     }
 
     /* Scoped resets — only inside .marketing wrapper, so non-marketing pages
@@ -366,10 +370,10 @@
     }
     .brand-mark {
       display: inline-flex; align-items: center;
-      height: 26px;
+      height: 38px;
     }
     .brand-mark svg { height: 100%; width: auto; display: block; }
-    .nav__brand--footer .brand-mark { height: 30px; }
+    .nav__brand--footer .brand-mark { height: 40px; }
     .nav__links {
       display: none;
       gap: 2.2rem;

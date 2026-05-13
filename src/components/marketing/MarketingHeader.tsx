@@ -69,7 +69,7 @@ export function MarketingHeader() {
               ))}
             </div>
           </div>
-          <Link href="/resources">Resources</Link>
+          <Link href="/blog">Resources</Link>
         </nav>
 
         <Link href="/contact/" className="nav__cta">
