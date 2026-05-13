@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
-import { Hero } from "@/components/home/Hero";
-import { ProductSuite } from "@/components/home/ProductSuite";
-import { Testimonials } from "@/components/home/Testimonials";
-import { HomeCTA } from "@/components/home/HomeCTA";
+import { ScrollReveal } from "@/components/marketing/ScrollReveal";
+import { homepageBody } from "./_marketing-html/homepage";
 
 export const metadata: Metadata = {
-  title:
-    "Certifyd — Identity Infrastructure for Business | Verification & Compliance",
+  title: "Certifyd — Workers carry their credentials. Certifyd when it matters.",
   description:
-    "Identity infrastructure to protect businesses against fraud. Right-to-work compliance, pre-meeting verification, and doorstep ID — all on one platform.",
+    "Live workforce compliance for care providers, NHS trusts, and staffing agencies. Two-way verification in seconds. Audit-ready, always.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Certifyd — Identity Infrastructure for Business",
+    title: "Certifyd — Workers carry their credentials. Certifyd when it matters.",
     description:
-      "Identity infrastructure to protect businesses against fraud. Right-to-work compliance, pre-meeting verification, and doorstep ID — all on one platform.",
+      "Live workforce compliance for care providers, NHS trusts, and staffing agencies. Two-way verification in seconds. Audit-ready, always.",
     url: "https://www.certifyd.io",
   },
 };
@@ -21,10 +18,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Hero />
-      <ProductSuite />
-      <Testimonials />
-      <HomeCTA />
+      <div className="marketing">
+        <a className="skip" href="#hero">
+          Skip to main content
+        </a>
+        <div dangerouslySetInnerHTML={{ __html: homepageBody }} />
+      </div>
+      <ScrollReveal />
     </>
   );
 }
