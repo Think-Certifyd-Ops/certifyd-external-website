@@ -177,7 +177,7 @@ export const homepageBody = String.raw`
 
       <div class="ind__grid">
 
-        <a href="#" class="ind__card reveal">
+        <a href="/industries/care" class="ind__card reveal">
           <span class="ind__tag">Care &amp; domiciliary</span>
           <h3 class="ind__h">Know who's at your resident's door.</h3>
           <p class="ind__p">Live DBS, qualifications, and agency check-in. CQC-ready audit trail, all the time.</p>
@@ -185,7 +185,7 @@ export const homepageBody = String.raw`
           <span class="ind__cta">For care providers <span aria-hidden="true">→</span></span>
         </a>
 
-        <a href="#" class="ind__card reveal">
+        <a href="/industries/nhs" class="ind__card reveal">
           <span class="ind__tag">NHS trusts</span>
           <h3 class="ind__h">Verify a nurse's NMC before the shift starts.</h3>
           <p class="ind__p">Portable, trust-controlled credentials for temporary and agency clinical staff. Fills the gap the Staff Passport left behind.</p>
@@ -193,7 +193,7 @@ export const homepageBody = String.raw`
           <span class="ind__cta">For NHS trusts <span aria-hidden="true">→</span></span>
         </a>
 
-        <a href="#" class="ind__card reveal">
+        <a href="/industries/recruitment" class="ind__card reveal">
           <span class="ind__tag">Recruitment &amp; temp</span>
           <h3 class="ind__h">Prove they're qualified - before the client asks.</h3>
           <p class="ind__p">Identity at screening, credentials at placement, check-in at the client site. Your audit trail, not the agency's.</p>
