@@ -109,43 +109,10 @@ All form submissions route through **Netlify Functions** (`.mts`, v2 format) —
 4. Route to Attio + Loops + Slack per the rules above
 5. Document the form in this table
 
-## Google Ads Integration
+## Disabled Function Archive
 
-Programmatic Google Ads management via Netlify Functions. All functions use the REST API v18 with direct `fetch()` — zero npm dependencies.
-
-### Functions
-
-| Function | Path | Schedule | Purpose |
-|---|---|---|---|
-| `google-ads-client.mts` | (shared helper) | — | OAuth token refresh, GAQL query/mutate wrappers, Slack posting |
-| `google-ads-campaign.mts` | `/api/google-ads/campaign` | — | Campaign CRUD (create/pause/resume). Secured with `x-function-secret` header |
-| `google-ads-conversions.mts` | `/api/google-ads/conversions` | — | One-time: create conversion actions. Secured with `x-function-secret` header |
-| `google-ads-report.mts` | `/api/google-ads/report` | `0 8 * * *` (daily 08:00 UTC) | Daily performance report + auto-negative keywords → Slack |
-| `google-ads-weekly-review.mts` | `/api/google-ads/weekly-review` | `0 9 * * 5` (Friday 09:00 UTC) | Weekly review with recommendations → Slack |
-
-### Conversion Tracking
-
-- `GOOGLE_ADS_CONVERSIONS` in `src/lib/constants.ts` stores conversion labels for gtag `send_to`
-- Form components (`ContactForm`, `InlineForm`, `LeadMagnetForm`, `WaitlistForm`) include `send_to` when labels are configured
-- Labels are populated after running `POST /api/google-ads/conversions` to create the conversion actions
-
-### Environment Variables (Netlify Dashboard)
-
-- `GOOGLE_ADS_CLIENT_ID` — Google OAuth client ID
-- `GOOGLE_ADS_CLIENT_SECRET` — Google OAuth client secret
-- `GOOGLE_ADS_REFRESH_TOKEN` — OAuth refresh token (from consent flow)
-- `GOOGLE_ADS_DEVELOPER_TOKEN` — Google Ads API developer token
-- `GOOGLE_ADS_CUSTOMER_ID` — Google Ads customer ID (with or without dashes)
-- `GOOGLE_ADS_FUNCTION_SECRET` — Random token to secure campaign/conversion endpoints (generate with `openssl rand -hex 32`)
-
-### Campaign Strategy
-
-3 campaigns targeting RTW compliance and FWA:
-1. **RTW Dashboard** (£25/day) → `/rtw/` — high-intent RTW software searches
-2. **FWA/Penalties** (£20/day) → `/for/fwa-compliance/`, `/for/right-to-work-checks/` — problem-aware searches
-3. **Lead Magnet** (£15/day) → `/resources/fair-work-agency-checklist/` — information seekers
-
-All campaigns created PAUSED via the campaign CRUD endpoint.
+Unused Google Ads, check-in, report, weekly review, and morning briefing functions are archived in `netlify/disabled-functions/`.
+They are intentionally outside `netlify/functions/` so Netlify does not deploy or schedule them.
 
 ## Component Patterns
 

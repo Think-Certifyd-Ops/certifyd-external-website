@@ -123,8 +123,7 @@ export const FOUR_STORIES: StoryCard[] = [
 ];
 
 /**
- * Google Ads conversion labels for gtag send_to parameter.
- * Populated after running POST /api/google-ads/conversions.
+ * Optional Google Ads conversion labels for gtag send_to parameter.
  * Format: "AW-XXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXX"
  * Set to empty strings until conversion actions are created.
  */
