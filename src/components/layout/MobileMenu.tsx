@@ -160,8 +160,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </ul>
           </nav>
 
-          {/* CTA Button */}
-          <div className="border-t border-navy-border px-6 py-6">
+          {/* CTA Buttons */}
+          <div className="border-t border-navy-border px-6 py-6 space-y-3">
             <Link
               href="/contact/"
               onClick={onClose}
@@ -169,6 +169,12 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             >
               Book a Demo
             </Link>
+            <a
+              href="https://app.certifyd.io/login"
+              className="block w-full rounded-sm border border-navy-border px-5 py-3 text-center text-sm font-medium text-text-on-dark-muted transition-colors hover:text-white"
+            >
+              Log in
+            </a>
           </div>
         </div>
       </div>

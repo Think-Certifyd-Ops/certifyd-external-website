@@ -277,6 +277,12 @@ export function Header() {
 
             {/* Desktop CTA + Mobile Hamburger */}
             <div className="flex items-center gap-4">
+              <a
+                href="https://app.certifyd.io/login"
+                className="hidden text-sm font-medium text-text-on-dark-muted transition-colors hover:text-white lg:inline-block"
+              >
+                Log in
+              </a>
               <Link
                 href="/contact/"
                 className="hidden rounded-sm bg-certifyd-blue px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-certifyd-blue-light lg:inline-block"

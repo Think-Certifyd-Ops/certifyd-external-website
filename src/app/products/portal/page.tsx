@@ -9,12 +9,12 @@ import { PortalSelfCheck } from "@/components/portal/PortalSelfCheck";
 export const metadata: Metadata = {
   title: "Certifyd Portal — Right to Work Compliance for SMEs",
   description:
-    "Would you pass a Home Office audit today? RTW compliance dashboard with employee document uploads, expiry tracking, and one-click audit reports. From £29/month.",
+    "Would you pass a Home Office audit today? RTW compliance dashboard with employee document uploads, expiry tracking, and one-click audit reports. From £299/month.",
   alternates: { canonical: "/products/portal/" },
   openGraph: {
     title: "Certifyd Portal — Right to Work Compliance for SMEs",
     description:
-      "Would you pass a Home Office audit today? RTW compliance dashboard with one-click audit reports. From £29/month.",
+      "Would you pass a Home Office audit today? RTW compliance dashboard with one-click audit reports. From £299/month.",
     url: "https://www.certifyd.io/products/portal/",
   },
 };
@@ -81,7 +81,8 @@ export default function CertifydPortalPage() {
               Right to Work compliance for SMEs. Employee uploads, expiry tracking, automated chasing, and one-click audit reports.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4 animate-slide-up animation-delay-300">
-              <Button href="/contact/" size="lg">Book a demo</Button>
+              <Button href="https://app.certifyd.io/signup" size="lg">Get started</Button>
+              <Button href="/contact/" size="lg" variant="outline">Book a demo</Button>
               <Button href="/products/portal/demo/" variant="outline" size="lg">Try the demo</Button>
             </div>
           </div>
