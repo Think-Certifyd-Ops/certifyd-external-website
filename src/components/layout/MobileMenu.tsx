@@ -170,7 +170,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               Book a Demo
             </Link>
             <a
-              href="https://app.certifyd.io/login"
+              href="https://certifyd-portal.netlify.app/login"
               className="block w-full rounded-sm border border-navy-border px-5 py-3 text-center text-sm font-medium text-text-on-dark-muted transition-colors hover:text-white"
             >
               Log in

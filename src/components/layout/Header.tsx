@@ -278,7 +278,7 @@ export function Header() {
             {/* Desktop CTA + Mobile Hamburger */}
             <div className="flex items-center gap-4">
               <a
-                href="https://app.certifyd.io/login"
+                href="https://certifyd-portal.netlify.app/login"
                 className="hidden text-sm font-medium text-text-on-dark-muted transition-colors hover:text-white lg:inline-block"
               >
                 Log in

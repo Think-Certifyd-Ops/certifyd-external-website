@@ -81,7 +81,7 @@ export default function CertifydPortalPage() {
               Right to Work compliance for SMEs. Employee uploads, expiry tracking, automated chasing, and one-click audit reports.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4 animate-slide-up animation-delay-300">
-              <Button href="https://app.certifyd.io/signup" size="lg">Get started</Button>
+              <Button href="https://certifyd-portal.netlify.app/signup" size="lg">Get started</Button>
               <Button href="/contact/" size="lg" variant="outline">Book a demo</Button>
               <Button href="/products/portal/demo/" variant="outline" size="lg">Try the demo</Button>
             </div>
