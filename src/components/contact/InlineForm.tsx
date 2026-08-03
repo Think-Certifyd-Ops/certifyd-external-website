@@ -5,9 +5,23 @@ import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 interface InlineFormProps {
   source: string;
+  interest?: string;
+  buttonLabel?: string;
+  messageLabel?: string;
+  messagePlaceholder?: string;
+  successTitle?: string;
+  successMessage?: string;
 }
 
-export function InlineForm({ source }: InlineFormProps) {
+export function InlineForm({
+  source,
+  interest,
+  buttonLabel = "Get in Touch",
+  messageLabel = "Message",
+  messagePlaceholder = "Tell us about your needs...",
+  successTitle = "Message sent",
+  successMessage = "We typically respond within 24 hours.",
+}: InlineFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
@@ -30,10 +44,10 @@ export function InlineForm({ source }: InlineFormProps) {
           </svg>
         </div>
         <h3 className="font-heading text-2xl font-bold text-text-on-dark mb-2">
-          Message sent
+          {successTitle}
         </h3>
         <p className="text-text-on-dark-muted">
-          We typically respond within 24 hours.
+          {successMessage}
         </p>
       </div>
     );
@@ -75,6 +89,7 @@ export function InlineForm({ source }: InlineFormProps) {
                   role: formData.get("role"),
                   message: formData.get("message"),
                   source,
+                  interest,
                   ...utmData,
                 }),
               }).catch(() => {});
@@ -183,14 +198,14 @@ export function InlineForm({ source }: InlineFormProps) {
           htmlFor="inline-message"
           className="block text-sm font-medium text-text-on-dark-muted mb-2"
         >
-          Message
+          {messageLabel}
         </label>
         <textarea
           id="inline-message"
           name="message"
           rows={3}
           className="w-full px-4 py-3 bg-navy-lighter border border-navy-border rounded-sm text-text-on-dark placeholder:text-text-on-dark-muted/50 focus:outline-none focus:border-certifyd-blue transition-colors resize-none"
-          placeholder="Tell us about your needs..."
+          placeholder={messagePlaceholder}
         />
       </div>
 
@@ -202,7 +217,7 @@ export function InlineForm({ source }: InlineFormProps) {
         type="submit"
         className="w-full sm:w-auto bg-certifyd-blue text-white px-8 py-3 rounded-sm font-heading font-medium hover:bg-certifyd-blue-light transition-colors"
       >
-        Get in Touch
+        {buttonLabel}
       </button>
     </form>
   );
