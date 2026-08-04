@@ -7,26 +7,17 @@ import { SolutionCTA } from "@/components/solutions/SolutionCTA";
 import { PortalSelfCheck } from "@/components/portal/PortalSelfCheck";
 
 export const metadata: Metadata = {
-  title: "Certifyd Portal — Right to Work Compliance for SMEs",
+  title: "Certifyd Portal | Worker Compliance Records and Right to Work",
   description:
-    "Would you pass a Home Office audit today? RTW compliance dashboard with employee document uploads, expiry tracking, and one-click audit reports. From £299/month.",
+    "Keep Right to Work checks, worker evidence, expiry dates and review reports in one live record. Built for UK recruitment, staffing and multi-site employers. From £299 per month.",
   alternates: { canonical: "/products/portal/" },
   openGraph: {
-    title: "Certifyd Portal — Right to Work Compliance for SMEs",
+    title: "Certifyd Portal | One Live Worker Compliance Record",
     description:
-      "Would you pass a Home Office audit today? RTW compliance dashboard with one-click audit reports. From £299/month.",
+      "Collect worker evidence, track expiries and produce review-ready records without another spreadsheet.",
     url: "https://www.certifyd.io/products/portal/",
   },
 };
-
-const penaltyStats = [
-  { value: "\u00A345k\u2013\u00A360k", label: "fine per illegal worker" },
-  { value: "2,438", label: "civil penalties issued in 2025" },
-  { value: "\u00A3130M+", label: "total fines levied" },
-  { value: "5 years", label: "max prison sentence" },
-  { value: "72 hours", label: "Home Office audit notice" },
-  { value: "3x increase", label: "in enforcement raids since 2023" },
-];
 
 const useCases = [
   { label: "Care Homes", href: "/for/care-homes/" },
@@ -55,7 +46,7 @@ const previewStatusStyles = {
 export default function CertifydPortalPage() {
   return (
     <>
-      {/* ── Hero — Dashboard preview as centrepiece ── */}
+      {/* Hero: dashboard preview as centrepiece */}
       <section className="relative bg-navy bg-grid-pattern pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
@@ -73,21 +64,22 @@ export default function CertifydPortalPage() {
               Certifyd Portal
             </span>
             <h1 className="font-heading text-5xl lg:text-7xl font-bold leading-[1.05] text-text-on-dark animate-fade-in">
-              Would You Pass<br />
-              a Home Office<br />
-              <span className="text-certifyd-blue">Audit Today?</span>
+              Keep Every Worker<br />
+              <span className="text-certifyd-blue">File Ready.</span>
             </h1>
-            <p className="text-lg text-text-on-dark-muted max-w-lg mx-auto mt-6 animate-slide-up animation-delay-200">
-              Right to Work compliance for SMEs. Employee uploads, expiry tracking, automated chasing, and one-click audit reports.
+            <p className="text-lg text-text-on-dark-muted max-w-2xl mx-auto mt-6 animate-slide-up animation-delay-200">
+              One live record for Right to Work checks, worker evidence, expiry dates and follow-up. Built for UK recruitment, staffing and multi-site employers.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4 animate-slide-up animation-delay-300">
-              <Button href="https://certifyd-portal.netlify.app/signup" size="lg">Get started</Button>
-              <Button href="/contact/" size="lg" variant="outline">Book a demo</Button>
-              <Button href="/products/portal/demo/" variant="outline" size="lg">Try the demo</Button>
+              <Button href="https://certifyd-portal.netlify.app/signup" size="lg">Start 7-day trial</Button>
+              <Button href="/products/portal/demo/" variant="outline" size="lg">Try the worker-record demo</Button>
             </div>
+            <p className="mt-4 text-xs text-text-on-dark-muted animate-slide-up animation-delay-300">
+              Create an account without a card. Your trial includes up to 10 workers.
+            </p>
           </div>
 
-          {/* Dashboard preview — mimics the real demo page */}
+          {/* Dashboard preview based on the real demo page */}
           <div className="max-w-4xl mx-auto animate-slide-up animation-delay-400">
             <div className="relative group">
               <div
@@ -157,48 +149,20 @@ export default function CertifydPortalPage() {
         </div>
       </section>
 
-      {/* ── Penalty stat bar — Horizontal scrolling ticker ── */}
-      <section className="bg-accent-warning/10 border-y border-accent-warning/20">
-        <div className="py-10 lg:py-12 overflow-hidden whitespace-nowrap">
-          <div className="flex gap-12 animate-marquee">
-            {penaltyStats.map((stat) => (
-              <div key={stat.label} className="flex items-center gap-4 shrink-0 px-4">
-                <p className="font-heading text-4xl lg:text-5xl font-bold text-accent-warning">
-                  {stat.value}
-                </p>
-                <p className="text-sm text-text-on-light-muted whitespace-nowrap">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-            {penaltyStats.map((stat) => (
-              <div key={`dup-${stat.label}`} className="flex items-center gap-4 shrink-0 px-4">
-                <p className="font-heading text-4xl lg:text-5xl font-bold text-accent-warning">
-                  {stat.value}
-                </p>
-                <p className="text-sm text-text-on-light-muted whitespace-nowrap">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Before / After — "The spreadsheet is not a strategy" ── */}
+      {/* Before and after */}
       <section id="how-it-breaks" className="section-light">
         <div className="section-container">
           <ScrollReveal>
             <div className="text-center max-w-2xl mx-auto mb-14 lg:mb-16">
               <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-light leading-tight">
-                The spreadsheet<br />
-                <span className="text-accent-warning">is not a strategy.</span>
+                One live record beats<br />
+                <span className="text-accent-warning">another spreadsheet.</span>
               </h2>
             </div>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-            {/* Before — Without Portal */}
+            {/* Before: without Portal */}
             <ScrollReveal>
               <div className="bg-white border border-warm-border rounded-sm p-6 lg:p-8 h-full">
                 <div className="flex items-center gap-2 mb-6">
@@ -221,7 +185,7 @@ export default function CertifydPortalPage() {
                     <div className="bg-white p-1.5 text-text-on-light">Sarah C.</div>
                     <div className="bg-white p-1.5 text-accent-success">Done</div>
                     <div className="bg-white p-1.5 text-text-on-light-muted">N/A</div>
-                    <div className="bg-white p-1.5 text-text-on-light-muted">—</div>
+                    <div className="bg-white p-1.5 text-text-on-light-muted">Not set</div>
 
                     <div className="bg-white p-1.5 text-text-on-light">James O.</div>
                     <div className="bg-white p-1.5 text-accent-warning">Pending?</div>
@@ -234,9 +198,9 @@ export default function CertifydPortalPage() {
                     <div className="bg-red-50 p-1.5 text-red-500">No</div>
 
                     <div className="bg-white p-1.5 text-text-on-light">David B.</div>
-                    <div className="bg-white p-1.5 text-text-on-light-muted">—</div>
-                    <div className="bg-white p-1.5 text-text-on-light-muted">—</div>
-                    <div className="bg-white p-1.5 text-text-on-light-muted">—</div>
+                    <div className="bg-white p-1.5 text-text-on-light-muted">Not set</div>
+                    <div className="bg-white p-1.5 text-text-on-light-muted">Not set</div>
+                    <div className="bg-white p-1.5 text-text-on-light-muted">Not set</div>
                   </div>
                   <p className="text-[9px] text-text-on-light-muted/60 mt-2 italic">Last updated: 3 months ago</p>
                 </div>
@@ -259,7 +223,7 @@ export default function CertifydPortalPage() {
               </div>
             </ScrollReveal>
 
-            {/* After — With Portal */}
+            {/* After: with Portal */}
             <ScrollReveal delay={150}>
               <div className="bg-certifyd-blue/5 border border-certifyd-blue/20 rounded-sm p-6 lg:p-8 h-full">
                 <div className="flex items-center gap-2 mb-6">
@@ -300,9 +264,9 @@ export default function CertifydPortalPage() {
                 <div className="space-y-3">
                   {[
                     "Employees upload documents themselves via a secure link.",
-                    "Expiry dates are tracked automatically. You never miss one.",
-                    "Chase sequences fire without you lifting a finger.",
-                    "One click generates an audit-ready compliance report.",
+                    "Upcoming permission and document expiries stay visible.",
+                    "Renewal requests can go out from the same worker record.",
+                    "Generate a dated review pack from the evidence you hold.",
                   ].map((step, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <span className="shrink-0 w-5 h-5 rounded-full bg-certifyd-blue/15 flex items-center justify-center mt-0.5">
@@ -320,7 +284,7 @@ export default function CertifydPortalPage() {
         </div>
       </section>
 
-      {/* ── Bento feature grid — with icons ── */}
+      {/* Feature grid with icons */}
       <section className="section-light border-t border-warm-border">
         <div className="section-container">
           <ScrollReveal>
@@ -332,15 +296,15 @@ export default function CertifydPortalPage() {
                 </span>
               </div>
               <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-light max-w-xl leading-tight">
-                Compliance on autopilot.<br />
-                <span className="text-certifyd-blue">Not on spreadsheets.</span>
+                One worker record.<br />
+                <span className="text-certifyd-blue">Less chasing.</span>
               </h2>
             </div>
           </ScrollReveal>
 
           {/* Row 1: Hero feature (8 cols) + 2 stacked (4 cols) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-6">
-            {/* Hero feature card — One-Click Audit Reports */}
+            {/* Hero feature card: reports */}
             <ScrollReveal className="lg:col-span-8">
               <div className="bg-white border border-warm-border rounded-sm p-8 lg:p-10 hover:shadow-md transition-all duration-300 h-full">
                 <div className="flex items-center gap-2 mb-4">
@@ -350,10 +314,10 @@ export default function CertifydPortalPage() {
                   <span className="font-heading text-xs font-semibold text-certifyd-blue uppercase tracking-wider">Flagship</span>
                 </div>
                 <h3 className="font-heading text-xl lg:text-2xl font-bold text-text-on-light mb-3">
-                  One-Click Audit Reports
+                  Review-Ready Reports
                 </h3>
                 <p className="text-text-on-light-muted text-sm leading-relaxed mb-6 max-w-md">
-                  Home Office knocks on your door? Generate a complete, date-stamped compliance report in one click. Every document, every check, every date — instantly.
+                  Generate a dated PDF from the checks, worker details and evidence already held in Portal. Review the record before you share it.
                 </p>
                 {/* Inline mock report */}
                 <div className="bg-warm-white border border-warm-border rounded-md p-5 max-w-lg">
@@ -362,7 +326,7 @@ export default function CertifydPortalPage() {
                     <span className="text-[10px] text-accent-success font-medium">Generated just now</span>
                   </div>
                   <div className="space-y-2.5">
-                    {["Sarah Chen — BRP verified, expires Dec 2026", "James Okafor — UK passport, no expiry", "Maria Santos — Visa pending renewal \u26A0\uFE0F", "David Park — Settled status verified", "Elena Vasquez — BRP verified, expires Mar 2027"].map((line) => (
+                    {["Sarah Chen: BRP verified, expires Dec 2026", "James Okafor: UK passport, no expiry", "Maria Santos: Visa pending renewal \u26A0\uFE0F", "David Park: Settled status verified", "Elena Vasquez: BRP verified, expires Mar 2027"].map((line) => (
                       <div key={line} className="flex items-start gap-2 text-[11px] text-text-on-light-muted">
                         <span className="shrink-0 mt-1 w-1.5 h-1.5 rounded-full bg-certifyd-blue" />
                         {line}
@@ -387,18 +351,18 @@ export default function CertifydPortalPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
                     </svg>
                     <h3 className="font-heading text-lg font-bold text-text-on-light">
-                      Automated Chase Sequences
+                      Renewal Follow-Ups
                     </h3>
                   </div>
                   <p className="text-text-on-light-muted text-sm leading-relaxed mb-6">
-                    Missing a document? Portal sends reminder emails automatically. Escalating frequency. You don&apos;t lift a finger.
+                    When permission is close to expiry, Portal can send the worker a fresh, secure upload request and record the request against their file.
                   </p>
                   {/* Email timeline visual */}
                   <div className="space-y-3">
                     {[
-                      { day: "Day 1", label: "Friendly reminder", color: "bg-certifyd-blue" },
-                      { day: "Day 5", label: "Second request", color: "bg-accent-warning" },
-                      { day: "Day 10", label: "Urgent: escalated to manager", color: "bg-red-500" },
+                      { day: "30 days", label: "Upcoming expiry identified", color: "bg-certifyd-blue" },
+                      { day: "Request", label: "Secure upload link sent", color: "bg-accent-warning" },
+                      { day: "Review", label: "Submission shown to your team", color: "bg-accent-success" },
                     ].map((email) => (
                       <div key={email.day} className="flex items-center gap-3">
                         <span className={`w-2 h-2 rounded-full ${email.color} shrink-0`} />
@@ -424,7 +388,7 @@ export default function CertifydPortalPage() {
                     </h3>
                   </div>
                   <p className="text-text-on-light-muted text-sm leading-relaxed">
-                    Every document has a deadline. Portal tracks them all and alerts you before anything expires — 60, 30, and 7 days out.
+                    See permission and document dates in the dashboard and compliance calendar, with expiring records brought into view.
                   </p>
                 </div>
               </ScrollReveal>
@@ -444,8 +408,8 @@ export default function CertifydPortalPage() {
                 ),
               },
               {
-                title: "IDSP Wrapper",
-                desc: "Portal wraps your existing identity service provider. One compliance layer on top of the tools you already use.",
+                title: "Evidence Vault",
+                desc: "Keep worker documents, check records and company procedures together, with an audit trail of changes.",
                 icon: (
                   <svg className="w-5 h-5 text-certifyd-blue" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -480,7 +444,7 @@ export default function CertifydPortalPage() {
         </div>
       </section>
 
-      {/* ── Compliance self-check — Interactive ── */}
+      {/* Interactive compliance self-check */}
       <section className="section-dark">
         <div className="section-container">
           <ScrollReveal>
@@ -492,10 +456,10 @@ export default function CertifydPortalPage() {
                 </span>
               </div>
               <h2 className="font-heading text-2xl lg:text-4xl font-bold text-text-on-dark leading-tight mb-2">
-                Are you audit-ready?
+                How complete are your records?
               </h2>
               <p className="text-text-on-dark-muted text-sm mb-8">
-                Answer honestly. It takes 30 seconds.
+                Eight quick questions. No signup required.
               </p>
             </div>
           </ScrollReveal>
@@ -535,25 +499,25 @@ export default function CertifydPortalPage() {
                       Portal
                     </span>
                     <div className="flex items-baseline gap-1">
-                      <span className="font-heading text-5xl lg:text-6xl font-bold text-text-on-light">&pound;29</span>
+                      <span className="font-heading text-5xl lg:text-6xl font-bold text-text-on-light">&pound;299</span>
                       <span className="font-heading text-lg text-text-on-light-muted">/month</span>
                     </div>
-                    <p className="text-sm text-text-on-light-muted mt-1">No enterprise contracts. No procurement.</p>
+                    <p className="text-sm text-text-on-light-muted mt-1">Starter plan, up to 50 workers.</p>
                   </div>
-                  <Button href="/contact/" size="lg">Book a demo</Button>
+                  <Button href="https://certifyd-portal.netlify.app/signup" size="lg">Start 7-day trial</Button>
                 </div>
 
                 {/* Feature checklist */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
                     "Employee self-service uploads",
-                    "Automated chase sequences",
-                    "Expiry tracking & alerts",
-                    "One-click audit reports",
-                    "Live compliance dashboard",
-                    "IDSP wrapper integration",
-                    "Unlimited employees",
-                    "Email & chat support",
+                    "Expiry renewal follow-ups",
+                    "Compliance dashboard and calendar",
+                    "Review-ready PDF and CSV reports",
+                    "Secure worker upload links",
+                    "RTW check logging and evidence vault",
+                    "Up to 50 workers",
+                    "Team support",
                   ].map((feature) => (
                     <div key={feature} className="flex items-center gap-2.5">
                       <svg className="w-4 h-4 text-certifyd-blue shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
@@ -564,20 +528,10 @@ export default function CertifydPortalPage() {
                   ))}
                 </div>
 
-                {/* Vita callout */}
-                <div className="mt-8 p-4 bg-certifyd-blue/5 border border-certifyd-blue/15 rounded-sm">
-                  <p className="text-sm text-text-on-light">
-                    <span className="font-heading font-semibold">Vita customers:</span>{" "}
-                    Portal is free while you&apos;re on your Vita plan.{" "}
-                    <Link href="/contact/" className="text-certifyd-blue underline underline-offset-2 decoration-certifyd-blue/30 hover:decoration-certifyd-blue transition-colors">
-                      Talk to us
-                    </Link>
-                  </p>
-                </div>
               </div>
 
               <p className="text-center text-xs text-text-on-light-muted mt-4">
-                No credit card required. Cancel anytime.
+                Create an account without a card. The trial includes up to 10 workers.
               </p>
             </div>
           </ScrollReveal>
@@ -596,8 +550,8 @@ export default function CertifydPortalPage() {
                 </span>
               </div>
               <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-dark max-w-2xl leading-tight">
-                Any business that<br />
-                <span className="text-certifyd-blue">employs people.</span>
+                Built for teams with<br />
+                <span className="text-certifyd-blue">worker files to keep current.</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -631,9 +585,9 @@ export default function CertifydPortalPage() {
 
       <RelatedContent
         solutions={[
+          { label: "Sponsor Compliance, powered by Portal", href: "https://certifyd-sponsor.vercel.app/" },
           { label: "Certifyd ID", href: "/products/id/" },
           { label: "Certifyd Screen", href: "/products/verify/" },
-          { label: "Certifyd Sentinel", href: "/products/sentinel/" },
         ]}
         articles={[
           { label: "Right to Work Checks Explained", href: "/blog/what-are-right-to-work-checks/" },
@@ -645,10 +599,11 @@ export default function CertifydPortalPage() {
       />
 
       <SolutionCTA
-        title="Don't wait for the audit. Be ready now."
-        href="/contact/"
-        secondaryLabel="See all products"
-        secondaryHref="/products/"
+        title="Start with ten worker records."
+        href="https://certifyd-portal.netlify.app/signup"
+        primaryLabel="Start 7-day trial"
+        secondaryLabel="Try the worker-record demo"
+        secondaryHref="/products/portal/demo/"
       />
     </>
   );

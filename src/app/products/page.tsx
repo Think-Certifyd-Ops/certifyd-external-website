@@ -4,14 +4,14 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SolutionCTA } from "@/components/solutions/SolutionCTA";
 
 export const metadata: Metadata = {
-  title: "Solutions — Certifyd Identity Infrastructure",
+  title: "Products | Certifyd Identity Infrastructure",
   description:
-    "The identity layer for businesses that can't afford to get it wrong. Five solutions covering compliance, pre-meeting verification, meeting recording, corporate authentication, and home access.",
+    "Six focused products covering worker compliance, sponsor licence workflows, pre-meeting checks, meeting monitoring, caller verification and home access.",
   alternates: { canonical: "/products/" },
   openGraph: {
-    title: "Solutions — Certifyd Identity Infrastructure",
+    title: "Products | Certifyd Identity Infrastructure",
     description:
-      "Five solutions covering compliance, verification, meeting recording, and corporate authentication.",
+      "Six products covering worker compliance, sponsor licence workflows and identity verification.",
     url: "https://www.certifyd.io/products/",
   },
 };
@@ -20,12 +20,22 @@ const products = [
   {
     name: "Certifyd Portal",
     slug: "/products/portal/",
-    tagline: "Would you pass a Home Office audit today?",
+    tagline: "Keep every worker file ready.",
     description:
-      "Right to Work compliance workflow for SMEs. Employee document uploads, expiry tracking, automated chase sequences, and one-click audit reports. Wraps your existing IDSP. From £29/month.",
-    badge: "Start free trial",
+      "The core worker compliance system for UK recruitment, staffing and multi-site employers. Collect evidence, track expiry dates, follow up and produce review-ready reports. From £299 per month.",
+    badge: "Live app",
     badgeColor: "bg-accent-success/15 text-accent-success",
-    cta: "Start free trial",
+    cta: "Start 7-day trial",
+  },
+  {
+    name: "Sponsor Compliance",
+    slug: "https://certifyd-sponsor.vercel.app/",
+    tagline: "See every gap across your sponsored workforce.",
+    description:
+      "A sponsor-specific package powered by Certifyd Portal. Track CoS and visa dates, structured interviews, worker evidence and inspection records in one place.",
+    badge: "Live app and demo",
+    badgeColor: "bg-accent-success/15 text-accent-success",
+    cta: "Explore Sponsor Compliance",
   },
   {
     name: "Certifyd Screen",
@@ -62,7 +72,7 @@ const products = [
     slug: "/products/id/",
     tagline: "Know who's at your door.",
     description:
-      "Simple identity verification for home access. Tradespeople, delivery drivers, care workers — scan their QR code and know they're real. No apps, no hardware. The simple version of Certifyd for everyday use.",
+      "Simple identity verification for home access. Tradespeople, delivery drivers and care workers show a QR code so the visitor can check the record. No apps or hardware needed for the person scanning.",
     badge: "Coming soon",
     badgeColor: "bg-certifyd-blue/15 text-certifyd-blue",
     cta: "Book demo",
@@ -92,7 +102,7 @@ export default function ProductsPage() {
             The Identity Layer for Businesses That Can&apos;t Afford to Get It Wrong.
           </h1>
           <p className="text-lg lg:text-xl text-text-on-dark-muted max-w-2xl mt-6 animate-slide-up animation-delay-200">
-            Five products. One platform. From Right to Work compliance to catching CEO fraud on a phone call — Certifyd covers the full spectrum of business identity risk.
+            One core worker record, plus focused workflows for sponsor compliance and identity checks. See what is live, what you can try, and what is still in development.
           </p>
         </div>
       </section>

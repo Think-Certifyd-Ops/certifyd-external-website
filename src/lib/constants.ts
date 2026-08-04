@@ -1,7 +1,7 @@
 import type { NavItem, TeamMember, StoryCard, TrustCategory } from "@/types";
 
 /**
- * Hero graphic tilt classes — change these to adjust rotation site-wide.
+ * Hero graphic tilt classes. Change these to adjust rotation site-wide.
  * "left" tilts anticlockwise, "right" tilts clockwise.
  * QRScanGraphic uses the "phone" variants for its larger overlapping mockups.
  */
@@ -48,10 +48,9 @@ export const NAV_ITEMS: NavItem[] = [
     href: "/blog/",
     children: [
       { label: "Blog", href: "/blog/", description: "Insights on identity, trust, and compliance" },
-      { label: "Podcast", href: "/podcast/", description: "Gone Phishing — conversations about identity and trust" },
+      { label: "Podcast", href: "/podcast/", description: "Gone Phishing, conversations about identity and trust" },
       { label: "Free Tools", href: "/tools/", description: "Compliance calculators and risk assessments" },
       { label: "Security & Trust", href: "/security/", description: "How we protect your data" },
-      { label: "Identity Intelligence (3I)", href: "/3i/", description: "GPU-powered graph intelligence engine" },
     ],
   },
 ];
@@ -70,7 +69,7 @@ export const TEAM: TeamMember[] = [
     photo: "/team/Jason Shubrook.jpg",
     title: "Co-Founder & CTO",
     description:
-      "20+ years designing real-time distributed systems for the world's largest financial institutions. Jason builds the kind of infrastructure that doesn't go down — and still writes code.",
+      "20+ years designing real-time distributed systems for the world's largest financial institutions. Jason builds the kind of infrastructure that doesn't go down, and still writes code.",
     linkedin: "https://www.linkedin.com/in/jason-shubrook-654b194/",
   },
   {
@@ -87,7 +86,7 @@ export const FOUR_STORIES: StoryCard[] = [
   {
     title: "The Hire",
     story:
-      'A recruiter asks "Right to work?" The candidate says "Yes." Three weeks of interviews later — graduate visa, needs £20k sponsorship. Or start over.',
+      'A recruiter asks "Right to work?" The candidate says "Yes." Three weeks of interviews later, they learn it is a graduate visa and the candidate needs £20k sponsorship. Or start over.',
     stat: "Up to £60,000 civil penalty per illegal worker.",
     statHighlight: "\u00a360,000",
     statSubtitle: "civil penalty per illegal worker",
@@ -114,7 +113,7 @@ export const FOUR_STORIES: StoryCard[] = [
   {
     title: "The Temp",
     story:
-      '5 agency workers arrive for the week. One says "Dave couldn\'t make it — I\'m covering." He gets a lanyard and building access. Nobody checks. Nobody can.',
+      '5 agency workers arrive for the week. One says "Dave couldn\'t make it. I\'m covering." He gets a lanyard and building access. Nobody checks. Nobody can.',
     stat: "1.1M temporary workers in the UK. Most unverified.",
     statHighlight: "1.1M",
     statSubtitle: "temporary workers \u2014 most unverified",
@@ -128,9 +127,9 @@ export const FOUR_STORIES: StoryCard[] = [
  * Set to empty strings until conversion actions are created.
  */
 export const GOOGLE_ADS_CONVERSIONS = {
-  demoRequest: "AW-18037838481/hutaCMK4z44cEJGljplD", // "Website - Demo Request" — £50 value
-  leadMagnet: "AW-18037838481/R-NnCKrB144cEJGljplD", // "Website - Lead Magnet" — £10 value
-  waitlistSignup: "AW-18037838481/1BYGCMW4z44cEJGljplD", // "Website - Waitlist Signup" — £5 value
+  demoRequest: "AW-18037838481/hutaCMK4z44cEJGljplD", // "Website - Demo Request", £50 value
+  leadMagnet: "AW-18037838481/R-NnCKrB144cEJGljplD", // "Website - Lead Magnet", £10 value
+  waitlistSignup: "AW-18037838481/1BYGCMW4z44cEJGljplD", // "Website - Waitlist Signup", £5 value
 } as const;
 
 export const TRUST_CATEGORIES: TrustCategory[] = [

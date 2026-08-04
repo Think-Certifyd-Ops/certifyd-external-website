@@ -30,7 +30,6 @@ const resourceLinks = [
   { label: "Contract Activation", href: "/contract-activation/" },
   { label: "Blog", href: "/blog/" },
   { label: "Security & Trust", href: "/security/" },
-  { label: "Identity Intelligence (3I)", href: "/3i/" },
 ];
 
 export function Footer() {
