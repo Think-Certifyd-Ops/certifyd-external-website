@@ -71,11 +71,11 @@ export default function CertifydPortalPage() {
               One live record for Right to Work checks, worker evidence, expiry dates and follow-up. Built for UK recruitment, staffing and multi-site employers.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4 animate-slide-up animation-delay-300">
-              <Button href="https://certifyd-portal.netlify.app/signup" size="lg">Start 7-day trial</Button>
+              <Button href="mailto:team@certifyd.io?subject=Portal%207-day%20trial" size="lg">Request a 7-day trial</Button>
               <Button href="/products/portal/demo/" variant="outline" size="lg">Try the worker-record demo</Button>
             </div>
             <p className="mt-4 text-xs text-text-on-dark-muted animate-slide-up animation-delay-300">
-              Create an account without a card. Your trial includes up to 10 workers.
+              We will set up your workspace. No card required, with up to 10 workers included.
             </p>
           </div>
 
@@ -504,7 +504,7 @@ export default function CertifydPortalPage() {
                     </div>
                     <p className="text-sm text-text-on-light-muted mt-1">Starter plan, up to 50 workers.</p>
                   </div>
-                  <Button href="https://certifyd-portal.netlify.app/signup" size="lg">Start 7-day trial</Button>
+                  <Button href="mailto:team@certifyd.io?subject=Portal%207-day%20trial" size="lg">Request a 7-day trial</Button>
                 </div>
 
                 {/* Feature checklist */}
@@ -531,7 +531,7 @@ export default function CertifydPortalPage() {
               </div>
 
               <p className="text-center text-xs text-text-on-light-muted mt-4">
-                Create an account without a card. The trial includes up to 10 workers.
+                We will set up your workspace. No card required, with up to 10 workers included.
               </p>
             </div>
           </ScrollReveal>
@@ -600,8 +600,8 @@ export default function CertifydPortalPage() {
 
       <SolutionCTA
         title="Start with ten worker records."
-        href="https://certifyd-portal.netlify.app/signup"
-        primaryLabel="Start 7-day trial"
+        href="mailto:team@certifyd.io?subject=Portal%207-day%20trial"
+        primaryLabel="Request a 7-day trial"
         secondaryLabel="Try the worker-record demo"
         secondaryHref="/products/portal/demo/"
       />

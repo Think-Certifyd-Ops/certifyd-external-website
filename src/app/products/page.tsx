@@ -25,7 +25,7 @@ const products = [
       "The core worker compliance system for UK recruitment, staffing and multi-site employers. Collect evidence, track expiry dates, follow up and produce review-ready reports. From £299 per month.",
     badge: "Live app",
     badgeColor: "bg-accent-success/15 text-accent-success",
-    cta: "Start 7-day trial",
+    cta: "Request 7-day trial",
   },
   {
     name: "Sponsor Compliance",
