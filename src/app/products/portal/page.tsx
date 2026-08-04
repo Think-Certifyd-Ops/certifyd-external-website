@@ -585,7 +585,7 @@ export default function CertifydPortalPage() {
 
       <RelatedContent
         solutions={[
-          { label: "Sponsor Compliance, powered by Portal", href: "https://certifyd-sponsor.vercel.app/" },
+          { label: "Sponsor Compliance, powered by Portal", href: "https://certifyd-sponsor-compliance.netlify.app/" },
           { label: "Certifyd ID", href: "/products/id/" },
           { label: "Certifyd Screen", href: "/products/verify/" },
         ]}

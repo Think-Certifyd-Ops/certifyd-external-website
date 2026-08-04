@@ -29,7 +29,7 @@ const products = [
   },
   {
     name: "Sponsor Compliance",
-    slug: "https://certifyd-sponsor.vercel.app/",
+    slug: "https://certifyd-sponsor-compliance.netlify.app/",
     tagline: "See every gap across your sponsored workforce.",
     description:
       "A sponsor-specific package powered by Certifyd Portal. Track CoS and visa dates, structured interviews, worker evidence and inspection records in one place.",
