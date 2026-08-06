@@ -66,6 +66,15 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script
+          id="roger-group-consent"
+          src="https://rogerson-signups.netlify.app/consent-widget.js"
+          strategy="beforeInteractive"
+          data-brand="Certifyd"
+          data-domain="certifyd.io"
+          data-analytics="true"
+          data-marketing="false"
+        />
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FNMZS9PQ1S"
           strategy="afterInteractive"
         />
