@@ -8,7 +8,7 @@ export default async (req: Request, _context: Context) => {
     });
   }
 
-  let body: { email?: string; hp?: string };
+  let body: { email?: string; hp?: string; source?: string };
   try {
     body = await req.json();
   } catch {
@@ -34,6 +34,14 @@ export default async (req: Request, _context: Context) => {
     });
   }
 
+  const allowedSources = new Set([
+    "website-waitlist",
+    "codewords-family-waitlist",
+  ]);
+  const source = body.source && allowedSources.has(body.source)
+    ? body.source
+    : "website-waitlist";
+
   const loopsApiKey = Netlify.env.get("LOOPS_API_KEY");
   if (!loopsApiKey) {
     console.error("LOOPS_API_KEY not configured");
@@ -52,7 +60,7 @@ export default async (req: Request, _context: Context) => {
       },
       body: JSON.stringify({
         email,
-        source: "website-waitlist",
+        source,
       }),
     });
 
