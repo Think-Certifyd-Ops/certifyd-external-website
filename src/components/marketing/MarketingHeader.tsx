@@ -17,7 +17,8 @@ export function MarketingHeader() {
 
   // Close dropdown when navigating
   useEffect(() => {
-    setOpen(false);
+    const frame = requestAnimationFrame(() => setOpen(false));
+    return () => cancelAnimationFrame(frame);
   }, [pathname]);
 
   // Close on outside click

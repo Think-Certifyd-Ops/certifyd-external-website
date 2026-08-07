@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Certifyd",
+  title: "Privacy Policy | Certifyd",
   description:
     "How Certifyd collects, uses, and protects your personal data. GDPR-compliant privacy policy.",
   alternates: { canonical: "/privacy/" },
@@ -17,52 +17,59 @@ const sections = [
     title: "2. What Data We Collect",
     content: `We collect data that you provide directly and data generated through your use of our services:
 
-**Account data** — Name, email address, organisation name, and role when you create an account or request a demo.
+**Account data**: Name, email address, organisation name, role and password hash where the service uses password authentication.
 
-**Verification data** — When you use Certifyd for identity verification, we process verified authentication data through your device. We do not store biometric data centrally. Verification records include timestamps, device identifiers, and confirmation of successful verification.
+**CodeWords data**: Registered-device public keys and fingerprints, platform and app version, push notification tokens, trusted relationships, in-person connection transcript hashes, challenge context and decisions, timestamps, recovery state, app-integrity results and security audit events. We do not receive the private signing keys or biometric templates held by your phone. Push alerts use generic event text and do not include names, request details, decisions, recovery codes or challenge identifiers.
 
-**Usage data** — How you interact with our website and services, including pages visited, features used, and session duration.
+**Other verification data**: Information required for the Certifyd service you choose, which may include verification status, timestamps, device identifiers and signed confirmation records. The relevant product flow explains what it needs before collection.
 
-**Communications data** — Messages you send us via email, contact forms, or other channels.
+**Usage data**: How you interact with our website and services, including pages visited, features used and session duration where measurement is enabled.
 
-**Technical data** — IP address, browser type, operating system, and device information collected automatically when you visit our website.`,
+**Communications data**: Messages you send us through email, contact forms or support channels.
+
+**Technical and security data**: IP address, browser type, operating system, app version, integrity results and limited diagnostic information used to operate and protect the service.
+
+CodeWords does not upload your address book, record calls or audio, store QR camera frames or collect precise location. On Android 11 and earlier, the operating system classifies Bluetooth discovery under a location permission; CodeWords does not read or retain coordinates.`,
   },
   {
     title: "3. How We Use Your Data",
     content: `We use your data for the following purposes:
 
-- **Providing our services** — Processing verifications, managing your account, and delivering the Certifyd platform.
-- **Communicating with you** — Responding to enquiries, sending service updates, and providing support.
-- **Improving our services** — Analysing usage patterns to improve functionality, performance, and user experience.
-- **Legal compliance** — Meeting our legal obligations, including maintaining audit trails required by employment and safeguarding regulations.
-- **Security** — Detecting and preventing fraud, abuse, and security incidents.`,
+- **Providing our services**: Managing accounts, registering devices, creating or revoking relationships, delivering challenges and supporting recovery.
+- **Communicating with you**: Verifying email, sending security alerts, responding to enquiries and providing support.
+- **Improving our services**: Analysing aggregate usage and reliability patterns to improve functionality and user experience.
+- **Legal compliance**: Meeting applicable legal obligations and responding to valid requests.
+- **Security**: Detecting abuse, enforcing rate limits, validating app integrity and investigating security incidents.`,
   },
   {
     title: "4. Legal Basis for Processing",
     content: `Under the UK General Data Protection Regulation (UK GDPR), we process your data on the following legal bases:
 
-- **Contract performance** — Processing necessary to provide our services to you or your organisation.
-- **Legitimate interests** — Processing necessary for our legitimate business interests, such as improving our services and ensuring security, where those interests are not overridden by your rights.
-- **Legal obligation** — Processing required to comply with applicable laws and regulations.
-- **Consent** — Where you have given specific consent, such as for marketing communications. You can withdraw consent at any time.`,
+- **Contract performance**: Processing necessary to provide a service you request.
+- **Legitimate interests**: Processing necessary to secure, operate and improve our services where those interests are not overridden by your rights.
+- **Legal obligation**: Processing required to comply with applicable law.
+- **Consent**: Where you have given specific consent, such as for marketing communications. You can withdraw consent at any time.`,
   },
   {
     title: "5. Data Sharing",
     content: `We do not sell your personal data. We share data only in the following circumstances:
 
-- **With your organisation** — If you use Certifyd through an organisation, your employer or contracting organisation may access verification records and compliance data.
-- **Service providers** — We use trusted third-party providers for hosting, analytics, and communications. All providers are bound by data processing agreements.
-- **Legal requirements** — We may disclose data where required by law, regulation, or legal process.
-- **Business transfers** — In the event of a merger, acquisition, or sale of assets, your data may be transferred to the acquiring entity.`,
+- **With your organisation**: If you use an organisation-managed service, authorised administrators may access the records described in that service.
+- **Service providers**: We use contracted providers for hosting, application distribution, push notification delivery, integrity checks, email and support. They process data under our instructions and applicable agreements.
+- **Legal requirements**: We may disclose data where required by law or valid legal process.
+- **Business transfers**: If ownership of the business changes, data may transfer subject to appropriate notice and safeguards.`,
   },
   {
     title: "6. Data Retention",
-    content: `We retain your data only for as long as necessary for the purposes described in this policy:
+    content: `We retain personal data only for as long as needed for the purpose described or a documented legal requirement:
 
-- **Account data** — Retained for the duration of your account plus 12 months after deletion.
-- **Verification records** — Retained for the period required by applicable regulations (typically 2-6 years depending on the use case).
-- **Usage and technical data** — Retained for up to 26 months.
-- **Communications** — Retained for up to 3 years after the last communication.`,
+- **CodeWords account, device, relationship, challenge and audit data**: Retained while the account is active. The in-app deletion flow removes the account and associated active-service records. Deleted data may remain in protected backups until those backups age out under the provider schedule.
+- **Rate-limit records**: Short-lived pseudonymous security buckets retained for the active protection window and operational cleanup period.
+- **App-integrity records**: Retained only as needed to validate the installed app, investigate abuse and support key lifecycle requirements.
+- **Website usage and technical data**: Retention depends on the enabled provider and is kept no longer than needed for measurement, reliability or security.
+- **Communications**: Retained while needed to answer the request, maintain support history or meet a legal obligation.
+
+Other Certifyd products may require a different documented retention period. We explain that period in the relevant service or agreement.`,
   },
   {
     title: "7. Your Rights",
@@ -76,7 +83,7 @@ const sections = [
 - **Objection** — Object to processing based on legitimate interests or for direct marketing.
 - **Withdraw consent** — Where processing is based on consent, withdraw it at any time.
 
-To exercise any of these rights, contact us at team@certifyd.io. We will respond within one month.`,
+To exercise any of these rights, use our account deletion page or contact team@certifyd.io with “Privacy” in the subject. We will respond within the period required by applicable law.`,
   },
   {
     title: "8. International Transfers",
@@ -88,7 +95,7 @@ To exercise any of these rights, contact us at team@certifyd.io. We will respond
   },
   {
     title: "10. Security",
-    content: `We implement appropriate technical and organisational measures to protect your personal data. Our platform uses device-verified identity authentication (WebAuthn/verified credentials), meaning sensitive identity data never leaves your device. For more information, see our Security & Trust page.`,
+    content: `We use technical and organisational controls appropriate to each service, including encrypted transport, access control, password hashing, device-bound keys, short-lived challenges, rate limiting, audit events and recovery controls. No system is free of risk. See our Security & Trust page and the CodeWords security model for the controls and limitations relevant to that service.`,
   },
   {
     title: "11. Changes to This Policy",
@@ -120,7 +127,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-text-on-dark-muted mt-4 text-lg">
-            Last updated: February 2025
+            Last updated: 7 August 2026
           </p>
         </div>
       </section>
@@ -164,6 +171,13 @@ export default function PrivacyPolicyPage() {
                 className="text-certifyd-blue hover:underline"
               >
                 Security & Trust
+              </Link>
+              {" | "}
+              <Link
+                href="/account-deletion/"
+                className="text-certifyd-blue hover:underline"
+              >
+                Account deletion
               </Link>
             </p>
           </div>

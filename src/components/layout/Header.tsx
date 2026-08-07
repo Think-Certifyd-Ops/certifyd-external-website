@@ -118,7 +118,8 @@ export function Header() {
   }, [mobileMenuOpen]);
 
   useEffect(() => {
-    setActiveDropdown(null);
+    const frame = requestAnimationFrame(() => setActiveDropdown(null));
+    return () => cancelAnimationFrame(frame);
   }, [pathname]);
 
   const openDropdown = useCallback((label: string) => {
