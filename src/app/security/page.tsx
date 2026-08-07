@@ -7,72 +7,72 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 export const metadata: Metadata = {
   title: "Security & Trust — How Certifyd Protects Your Data",
   description:
-    "Certifyd uses device-verified identity authentication to protect identity data. No central credential store. No biometric databases. Just trust, built on provable security.",
+    "How Certifyd uses device-bound keys, data minimisation, signed events, recovery controls and documented security limitations.",
   alternates: { canonical: "/security/" },
   openGraph: {
     title: "Security & Trust — How Certifyd Protects Your Data",
     description:
-      "Device-verified identity authentication. No central credential store. No biometric databases.",
+      "Device-bound keys, signed events, recovery controls and clear security limitations.",
     url: "https://www.certifyd.io/security/",
   },
 };
 
 const securitySteps = [
-  "Identity is bound to the user\u2019s physical device via a secure biometric authentication",
-  "No passwords or credentials are stored on our servers \u2014 ever",
-  "Every verification creates an auditable, verifiably signed record",
-  "Audit trails are immutable and available for compliance at any time",
+  "Supported approval flows use device-bound cryptographic keys",
+  "Biometric checks are performed by the phone and biometric templates are not sent to Certifyd",
+  "Sensitive events create signed or tamper-evident security records where the product supports them",
+  "Recovery and revocation are designed to invalidate old trust rather than silently transfer it",
 ];
 
 const principles = [
   {
-    title: "Device-Verified Identity",
+    title: "Device-Bound Approval",
     description:
-      "Your identity is tied to your physical device through secure biometric authentications. It can\u2019t be copied, phished, or stolen remotely. If someone doesn\u2019t have the device, they can\u2019t impersonate you.",
+      "Supported flows bind approval to a cryptographic key held by the enrolled device. A valid signature confirms control of that key, not a person\u2019s legal identity or freedom from coercion.",
   },
   {
-    title: "No Central Credential Store",
+    title: "Protected Account Credentials",
     description:
-      "We don\u2019t store passwords, biometrics, or credentials on our servers. There\u2019s no database to breach. Verification credentials are linked to the user\u2019s device and cannot be transferred.",
+      "Where a product uses passwords, the server stores password hashes rather than plaintext. Device private keys and biometric templates are not uploaded to Certifyd.",
   },
   {
-    title: "End-to-End Verification",
+    title: "Replay-Resistant Exchanges",
     description:
-      "Every verification is a real-time, verified exchange between two devices. Both parties prove their identity to each other simultaneously. Replay attacks and interception are mathematically impossible.",
+      "Fresh nonces, short expiry times, signatures and server state are used to detect replay in supported protocols. No security protocol removes every relay, endpoint or implementation risk.",
   },
   {
     title: "Auditable Verification Trail",
     description:
-      "Every verification creates an immutable record: who verified whom, when, where, and under what authority. Records cannot be altered after creation. Ready for regulatory audits at any time.",
+      "Security events record the account, enrolled device, time and result needed for investigation. Some products add a tamper-evident hash chain. Retention and deletion follow the applicable product policy.",
   },
   {
     title: "Phishing Resistant by Design",
     description:
-      "secure biometric authentications are bound to the originating domain. They cannot be used on phishing sites or replayed in man-in-the-middle attacks. The verified protocol prevents spoofing at the protocol level.",
+      "Domain-bound WebAuthn credentials and app-bound device keys reduce common credential phishing risks where implemented. Users must still check the request shown on the trusted surface.",
   },
   {
     title: "Privacy by Default",
     description:
-      "We collect only what\u2019s necessary. We don\u2019t track behaviour, sell data, or build profiles. Verification data is minimised to the verified identity of identity \u2014 nothing more.",
+      "We aim to collect only the account, device, relationship, request and security data needed for each service. We do not sell personal data or biometric templates.",
   },
 ];
 
 const compliance = [
   {
     title: "UK GDPR",
-    description: "Fully compliant with the UK General Data Protection Regulation. Data minimisation, purpose limitation, and user rights are built into the platform.",
+    description: "Our controls and processes are designed to support UK GDPR duties including data minimisation, purpose limitation and user rights.",
   },
   {
     title: "ICO Registered",
     description: "Registered with the UK Information Commissioner\u2019s Office as a data controller.",
   },
   {
-    title: "FIDO2 / WebAuthn",
-    description: "Built on the FIDO2 standard, the same protocol used by Google, Apple, and Microsoft for passwordless authentication.",
+    title: "Platform Cryptography",
+    description: "Products use platform security capabilities such as WebAuthn, Secure Enclave, Android Keystore, App Attest and Play Integrity where appropriate.",
   },
   {
-    title: "Data Residency",
-    description: "Data is processed and stored within the United Kingdom and European Economic Area. No unexpected international transfers.",
+    title: "Documented Processing",
+    description: "Our privacy policy describes relevant processing and international-transfer safeguards. Product-specific disclosures are updated as services change.",
   },
 ];
 
@@ -81,8 +81,8 @@ export default function SecurityPage() {
     <>
       <SolutionHero
         badge="Security & Trust"
-        title="Your Identity Data Never Leaves Your Device"
-        subtitle="Certifyd is built on device-verified identity authentication. No central credential store. No biometric databases. No passwords to steal. Just provable, phishing-resistant identity."
+        title="Security With Clear Boundaries"
+        subtitle="Certifyd combines device-bound cryptography, signed events, recovery controls and data minimisation. We also state what each result does and does not prove."
       />
 
       <SolutionSteps steps={securitySteps} title="How We Protect Data" />

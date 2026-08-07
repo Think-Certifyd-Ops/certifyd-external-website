@@ -14,22 +14,28 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const pathname = usePathname();
   const [expandedTop, setExpandedTop] = useState<string | null>(null);
   const onCloseRef = useRef(onClose);
-  onCloseRef.current = onClose;
+  useEffect(() => {
+    onCloseRef.current = onClose;
+  }, [onClose]);
 
   // Close menu on route change only
   const prevPathname = useRef(pathname);
   useEffect(() => {
     if (prevPathname.current !== pathname) {
       prevPathname.current = pathname;
-      onCloseRef.current();
-      setExpandedTop(null);
+      const frame = requestAnimationFrame(() => {
+        onCloseRef.current();
+        setExpandedTop(null);
+      });
+      return () => cancelAnimationFrame(frame);
     }
   }, [pathname]);
 
   // Reset expanded state when menu closes
   useEffect(() => {
     if (!isOpen) {
-      setExpandedTop(null);
+      const frame = requestAnimationFrame(() => setExpandedTop(null));
+      return () => cancelAnimationFrame(frame);
     }
   }, [isOpen]);
 
