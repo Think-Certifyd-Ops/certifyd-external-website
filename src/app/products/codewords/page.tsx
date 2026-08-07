@@ -63,7 +63,7 @@ export default function CertifydCodeWordsPage() {
                   Certifyd CodeWords
                 </span>
                 <span className="inline-block px-3 py-1 text-xs font-heading font-medium rounded-full bg-white/5 text-text-on-dark-muted">
-                  Family and Work
+                  Personal and Business
                 </span>
               </div>
               <h1 className="font-heading text-5xl lg:text-7xl font-bold leading-[1.05] text-text-on-dark">
@@ -74,8 +74,8 @@ export default function CertifydCodeWordsPage() {
                 Connect trusted phones while you are together. Later, challenge a sensitive request and see whether the enrolled phone approved that exact request.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
-                <Button href="/contact/" size="lg">Join the first release</Button>
-                <Button href="/security/codewords/" variant="outline" size="lg">Read the security model</Button>
+                <Button href="/products/codewords/family/" size="lg">For personal and family use</Button>
+                <Button href="/products/codewords/business/" variant="outline" size="lg">For business use</Button>
               </div>
             </div>
 
@@ -126,20 +126,22 @@ export default function CertifydCodeWordsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <ScrollReveal>
               <div className="h-full border border-navy-border bg-navy-light rounded-sm p-8 lg:p-10">
-                <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-4">Family</p>
+                <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-4">Personal and family</p>
                 <h2 className="font-heading text-3xl font-bold text-text-on-dark mb-4">A familiar check for unusual requests</h2>
-                <p className="text-text-on-dark-muted leading-relaxed">
+                <p className="text-text-on-dark-muted leading-relaxed mb-6">
                   Connect with a parent, child, partner or trusted friend before an urgent call arrives. Challenge money, account or safety requests on a separate channel.
                 </p>
+                <Button href="/products/codewords/family/">Explore family use</Button>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={100}>
               <div className="h-full border border-navy-border bg-navy-light rounded-sm p-8 lg:p-10">
-                <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-4">Work</p>
+                <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-4">Business</p>
                 <h2 className="font-heading text-3xl font-bold text-text-on-dark mb-4">A second channel for sensitive actions</h2>
-                <p className="text-text-on-dark-muted leading-relaxed">
+                <p className="text-text-on-dark-muted leading-relaxed mb-6">
                   Connect trusted colleagues in person, then add a separate confirmation step for payment, file, access and account-change requests.
                 </p>
+                <Button href="/products/codewords/business/">Explore business use</Button>
               </div>
             </ScrollReveal>
           </div>
