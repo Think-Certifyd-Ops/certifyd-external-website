@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { InlineForm } from "@/components/contact/InlineForm";
 import { ContractActivationDemo } from "./ContractActivationDemo";
 import styles from "./contract-activation.module.css";
 
@@ -63,7 +62,7 @@ export default function ContractActivationPage() {
                   See the worked example
                   <span aria-hidden="true">↓</span>
                 </a>
-                <a className={styles.secondaryButton} href="#pilot">
+                <a className={styles.secondaryButton} href="/contact/">
                   Request a reviewed pack
                   <span aria-hidden="true">→</span>
                 </a>
@@ -207,48 +206,6 @@ export default function ContractActivationPage() {
         </div>
       </section>
 
-      <section className={styles.pilotSection} id="pilot">
-        <div className={styles.container}>
-          <div className={styles.pilotGrid}>
-            <div className={styles.pilotOffer}>
-              <p className={styles.sectionLabel}>Founding pilot</p>
-              <h2>One stack. One reviewed activation pack.</h2>
-              <div className={styles.priceRow}>
-                <span className={styles.price}>£750</span>
-                <span>plus VAT</span>
-              </div>
-              <ul>
-                <li>Up to five governing documents</li>
-                <li>Up to 150 pages in total</li>
-                <li>Five working day target turnaround</li>
-                <li>One 45-minute review session</li>
-              </ul>
-              <p className={styles.offerNote}>
-                We are accepting ten reviewed pilot packs. This is an
-                operational compliance analysis, not legal advice.
-              </p>
-            </div>
-            <div className={styles.formCard}>
-              <h3>Request a reviewed pack</h3>
-              <p>
-                Tell us about the client or contract type. We will confirm
-                fit, scope and a secure transfer method before you share any
-                documents.
-              </p>
-              <InlineForm
-                source="contract-activation-pilot"
-                interest="Contract Activation Pack"
-                buttonLabel="Request a reviewed pack"
-                messageLabel="What are you activating?"
-                messagePlaceholder="For example: a new healthcare staffing framework with an MSA, SOW and client compliance schedule."
-                successTitle="Request received"
-                successMessage="We will reply within one working day to confirm fit and the secure next step."
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className={styles.faqSection}>
         <div className={styles.container}>
           <div className={styles.faqGrid}>
@@ -275,8 +232,9 @@ export default function ContractActivationPage() {
               <article>
                 <h3>How do we share confidential documents?</h3>
                 <p>
-                  Do not attach them to this form. We agree scope, handling
-                  and a secure transfer method before any contract is shared.
+                  Do not attach them to your initial enquiry. We agree
+                  scope, handling and a secure transfer method before any
+                  contract is shared.
                 </p>
               </article>
             </div>

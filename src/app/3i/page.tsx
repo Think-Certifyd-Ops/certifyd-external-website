@@ -369,7 +369,7 @@ export default function ThreeIPage() {
                 <span className="text-certifyd-blue">Not bolted on.</span>
               </h2>
               <p className="text-text-on-dark-muted mt-6 text-base max-w-2xl leading-relaxed">
-                Identity graph traversal and neural network inference are inherently parallel workloads. GPU acceleration isn't a marketing label — it's an architectural requirement. Traversing millions of identity relationships in real-time, running graph neural networks for anomaly detection, and computing trust scores across dense entity networks demands the kind of parallel compute that only GPU infrastructure provides.
+                Identity graph traversal and neural network inference are inherently parallel workloads. GPU acceleration isn&apos;t a marketing label. It is an architectural requirement. Traversing millions of identity relationships in real time, running graph neural networks for anomaly detection, and computing trust scores across dense entity networks demands the kind of parallel compute that only GPU infrastructure provides.
               </p>
             </div>
           </ScrollReveal>

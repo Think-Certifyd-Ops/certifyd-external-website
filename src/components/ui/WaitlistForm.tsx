@@ -5,7 +5,23 @@ import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 type Status = "idle" | "loading" | "success" | "error";
 
-export function WaitlistForm({ className }: { className?: string }) {
+type WaitlistFormProps = {
+  className?: string;
+  placeholder?: string;
+  buttonLabel?: string;
+  eventLabel?: string;
+  source?: string;
+  successMessage?: string;
+};
+
+export function WaitlistForm({
+  className,
+  placeholder = "you@company.com",
+  buttonLabel = "Join the waitlist",
+  eventLabel = "homepage",
+  source = "website-waitlist",
+  successMessage = "You are on the list. We will be in touch.",
+}: WaitlistFormProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -23,6 +39,7 @@ export function WaitlistForm({ className }: { className?: string }) {
         body: JSON.stringify({
           email,
           hp: hpRef.current?.value || "",
+          source,
         }),
       });
 
@@ -31,7 +48,7 @@ export function WaitlistForm({ className }: { className?: string }) {
         if (typeof window !== "undefined" && typeof window.gtag === "function") {
           window.gtag("event", "sign_up", {
             event_category: "waitlist",
-            event_label: "homepage",
+            event_label: eventLabel,
             ...(GOOGLE_ADS_CONVERSIONS.waitlistSignup ? { send_to: GOOGLE_ADS_CONVERSIONS.waitlistSignup } : {}),
           });
         }
@@ -64,7 +81,7 @@ export function WaitlistForm({ className }: { className?: string }) {
           />
         </svg>
         <span className="font-heading font-medium text-sm">
-          You&rsquo;re on the list &mdash; we&rsquo;ll be in touch
+          {successMessage}
         </span>
       </div>
     );
@@ -94,7 +111,7 @@ export function WaitlistForm({ className }: { className?: string }) {
             setEmail(e.target.value);
             if (status === "error") setStatus("idle");
           }}
-          placeholder="you@company.com"
+          placeholder={placeholder}
           required
           className="flex-1 px-4 py-3 bg-navy-light border border-navy-border rounded-sm text-white placeholder:text-text-on-dark-muted/50 focus:outline-none focus:border-certifyd-blue transition-colors text-sm"
         />
@@ -104,7 +121,7 @@ export function WaitlistForm({ className }: { className?: string }) {
           disabled={status === "loading"}
           className="px-6 py-3 bg-certifyd-blue text-white rounded-sm font-heading font-medium text-sm hover:bg-certifyd-blue-light transition-colors disabled:opacity-50 whitespace-nowrap"
         >
-          {status === "loading" ? "Joining\u2026" : "Join the waitlist"}
+          {status === "loading" ? "Joining..." : buttonLabel}
         </button>
       </form>
 

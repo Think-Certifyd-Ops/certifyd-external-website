@@ -11,6 +11,7 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
+    "netlify/disabled-functions/**",
     "next-env.d.ts",
   ]),
 ]);

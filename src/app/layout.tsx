@@ -65,6 +65,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          id="roger-group-consent-default"
+          dangerouslySetInnerHTML={{ __html: "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:500});" }}
+        />
+        <Script
+          id="roger-group-consent"
+          src="https://rogerson-signups.netlify.app/consent-widget.js"
+          strategy="beforeInteractive"
+          data-brand="Certifyd"
+          data-domain="certifyd.io"
+          data-analytics="true"
+          data-marketing="false"
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FNMZS9PQ1S"
           strategy="afterInteractive"

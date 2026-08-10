@@ -16,7 +16,7 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self'; connect-src 'self' https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://region1.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://rogerson-signups.netlify.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self'; connect-src 'self' https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://region1.google-analytics.com https://rogerson-signups.netlify.app; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
 
 # ── /sponsors → Certifyd Sponsor Register app (proxied, keeps SEO on the brand domain) ──
 [[redirects]]

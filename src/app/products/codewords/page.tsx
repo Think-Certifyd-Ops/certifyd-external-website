@@ -104,14 +104,14 @@ export default function CodeWordsPage() {
                 Add a trusted phone while you are together. Later, challenge an unusual request and see whether that enrolled phone approved the exact details.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
-                <Button href="/contact/?subject=CodeWords%20Family%20beta" size="lg">
-                  Join the Family beta
+                <Button href="/products/codewords/family/" size="lg">
+                  Explore Family
                 </Button>
                 <Button href="/products/codewords/demo/" variant="outline" size="lg">
                   Try the challenge demo
                 </Button>
-                <Button href="#work" variant="outline" size="lg">
-                  Explore CodeWords for Work
+                <Button href="/products/codewords/business/" variant="outline" size="lg">
+                  Explore Work
                 </Button>
               </div>
               <p className="mt-5 max-w-xl text-sm leading-relaxed text-text-on-dark-muted">
@@ -206,8 +206,8 @@ export default function CodeWordsPage() {
                   ))}
                 </div>
                 <div className="mt-8">
-                  <Button href="/contact/?subject=CodeWords%20Family%20beta" size="lg">
-                    Join with someone you trust
+                  <Button href="/products/codewords/family/" size="lg">
+                    Explore CodeWords for Family
                   </Button>
                 </div>
               </div>
@@ -254,8 +254,8 @@ export default function CodeWordsPage() {
                   Work challenges are an additional control. They do not execute payments or replace your existing dual approval, callback or account-security process.
                 </p>
                 <div className="mt-8">
-                  <Button href="/contact/?subject=CodeWords%20Work%20pilot" size="lg">
-                    Discuss a Work pilot
+                  <Button href="/products/codewords/business/" size="lg">
+                    Explore CodeWords for Work
                   </Button>
                 </div>
               </div>
