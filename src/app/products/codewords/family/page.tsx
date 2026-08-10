@@ -36,8 +36,8 @@ const scenarios = [
 const steps = [
   {
     number: "01",
-    title: "Connect in person",
-    body: "Meet with the person you trust. One phone shows a rotating QR session while the other scans it and Bluetooth checks that both devices are nearby.",
+    title: "Add trust side by side",
+    body: "Put both phones side by side. One phone shows changing signed QR frames while the other scans them and looks for the matching nearby Bluetooth service.",
   },
   {
     number: "02",

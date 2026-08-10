@@ -36,8 +36,8 @@ type AudiencePageProps = {
 };
 
 const safeguards = [
-  "Trusted phones connect while both people are together",
-  "A rotating QR session and Bluetooth check device proximity",
+  "Trusted phones are added while both people are together",
+  "Changing signed QR frames and a matching nearby Bluetooth signal",
   "Each approval is signed by a key held on the enrolled phone",
   "Biometrics protect sensitive approvals on supported devices",
   "Challenges name the exact request and expire after a short time",

@@ -1,90 +1,130 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { RelatedContent } from "@/components/solutions/RelatedContent";
 
 export const metadata: Metadata = {
-  title: "Certifyd CodeWords | Challenge Trusted Phones",
+  title: "Certifyd CodeWords | Check suspicious requests with people you trust",
   description:
-    "Connect trusted phones in person, then challenge sensitive requests and confirm whether the enrolled phone approved the exact action.",
+    "Add a trusted phone while you are together. Later, challenge an unusual money, account or safety request and see what that enrolled phone approved.",
   alternates: { canonical: "/products/codewords/" },
   openGraph: {
-    title: "Certifyd CodeWords | Meet Once. Check Any Time.",
+    title: "Certifyd CodeWords | Meet once. Check any time.",
     description:
-      "Connect trusted phones in person, then use a separate challenge before acting on a sensitive request.",
+      "A separate way for families and teams to check suspicious requests before anyone acts.",
     url: "https://www.certifyd.io/products/codewords/",
   },
 };
 
-const steps = [
+const setupSteps = [
   {
     number: "01",
-    title: "Meet in person",
-    body: "Open CodeWords on two phones while you are together. One phone presents a fast-changing QR session and the other scans it.",
+    title: "Add someone side by side",
+    body: "One phone shows changing, signed LiveQR frames. The other scans them and checks for the matching nearby Bluetooth signal.",
   },
   {
     number: "02",
-    title: "Connect both phones",
-    body: "Bluetooth completes a fresh signed device challenge. Both people compare the same three words and six-digit number, then approve on their own phone.",
+    title: "Compare the same words",
+    body: "Both people compare three words and a six-digit number, then approve the direct device setup on their own phone.",
   },
   {
     number: "03",
-    title: "Challenge from anywhere",
-    body: "Later, send the exact money, account, access or safety request. The enrolled phone can confirm it, deny it or report pressure.",
+    title: "Challenge the exact request",
+    body: "Later, ask about the payment, password reset, file share or safety request itself. The other phone can confirm, deny or report pressure.",
   },
 ];
 
-const safeguards = [
-  "One active phone per account",
-  "Separate device keys for presence and approval",
-  "Rotating QR sessions with replay protection",
-  "Authenticated Bluetooth during in-person setup",
-  "Signed challenges with short expiry times",
-  "Recovery revokes old phones and trusted connections",
+const familyExamples = [
+  "Are you asking me to send £420 for the deposit?",
+  "Are you asking me to buy gift cards during this call?",
+  "Are you safe and asking me to collect you?",
 ];
 
-export default function CertifydCodeWordsPage() {
+const workExamples = [
+  "Are you asking me to change the supplier bank account?",
+  "Are you asking me to share the payroll file with this address?",
+  "Are you asking me to reset the administrator password?",
+];
+
+function CheckIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 shrink-0 text-certifyd-blue" fill="none" stroke="currentColor" strokeWidth="2">
+      <path strokeLinecap="round" strokeLinejoin="round" d="m5 12 4 4L19 6" />
+    </svg>
+  );
+}
+
+function PhoneShot({
+  src,
+  alt,
+  priority = false,
+}: {
+  src: string;
+  alt: string;
+  priority?: boolean;
+}) {
+  return (
+    <div className="relative mx-auto w-full max-w-[330px] overflow-hidden rounded-[2rem] border border-navy-border/60 bg-white shadow-2xl shadow-black/30">
+      <Image
+        src={src}
+        alt={alt}
+        width={1320}
+        height={2868}
+        priority={priority}
+        className="h-auto w-full"
+      />
+    </div>
+  );
+}
+
+export default function CodeWordsPage() {
   return (
     <>
-      <section className="relative bg-navy bg-grid-pattern pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
+      <section className="relative overflow-hidden bg-navy pt-32 pb-24 lg:pt-40 lg:pb-32">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse at 20% 40%, rgba(0,89,255,0.16), transparent 58%), radial-gradient(ellipse at 85% 75%, rgba(0,89,255,0.08), transparent 48%)",
+              "radial-gradient(ellipse at 18% 40%, rgba(0,89,255,0.18), transparent 55%), radial-gradient(ellipse at 82% 75%, rgba(0,89,255,0.08), transparent 50%)",
           }}
           aria-hidden="true"
         />
         <div className="section-container relative z-10">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
+          <div className="grid items-center gap-14 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <div className="flex flex-wrap gap-2 mb-6">
-                <span className="inline-block px-3 py-1 text-xs font-heading font-medium rounded-full bg-certifyd-blue/15 text-certifyd-blue">
-                  Certifyd CodeWords
-                </span>
-                <span className="inline-block px-3 py-1 text-xs font-heading font-medium rounded-full bg-white/5 text-text-on-dark-muted">
-                  Personal and Business
-                </span>
-              </div>
-              <h1 className="font-heading text-5xl lg:text-7xl font-bold leading-[1.05] text-text-on-dark">
+              <span className="mb-6 inline-block rounded-full bg-certifyd-blue/15 px-3 py-1 font-heading text-xs font-medium text-certifyd-blue">
+                Certifyd CodeWords
+              </span>
+              <h1 className="max-w-4xl font-heading text-5xl font-bold leading-[1.04] text-text-on-dark lg:text-7xl">
                 Meet once.<br />
                 <span className="text-certifyd-blue">Check any time.</span>
               </h1>
-              <p className="text-lg lg:text-xl text-text-on-dark-muted max-w-2xl mt-6 leading-relaxed">
-                Connect trusted phones while you are together. Later, challenge a sensitive request and see whether the enrolled phone approved that exact request.
+              <p className="mt-7 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted lg:text-xl">
+                Add a trusted phone while you are together. Later, challenge an unusual request and see whether that enrolled phone approved the exact details.
               </p>
-              <div className="flex flex-wrap gap-4 mt-8">
-                <Button href="/products/codewords/family/" size="lg">For personal and family use</Button>
-                <Button href="/products/codewords/business/" variant="outline" size="lg">For business use</Button>
+              <div className="mt-9 flex flex-wrap gap-4">
+                <Button href="/products/codewords/family/" size="lg">
+                  Explore Family
+                </Button>
+                <Button href="/products/codewords/demo/" variant="outline" size="lg">
+                  Try the challenge demo
+                </Button>
+                <Button href="/products/codewords/business/" variant="outline" size="lg">
+                  Explore Work
+                </Button>
               </div>
+              <p className="mt-5 max-w-xl text-sm leading-relaxed text-text-on-dark-muted">
+                CodeWords confirms an enrolled phone and a specific request. It does not prove a voice, email sender or legal identity.
+              </p>
             </div>
 
-            <div className="lg:col-span-5 mt-12 lg:mt-0">
-              <div className="relative mx-auto max-w-sm aspect-square rounded-3xl bg-certifyd-blue p-10 shadow-2xl shadow-black/30">
-                <div className="absolute left-[17%] top-[17%] h-[42%] w-[42%] border-l-[36px] border-t-[36px] border-white" />
-                <div className="absolute bottom-[17%] right-[17%] h-[42%] w-[42%] border-b-[36px] border-r-[36px] border-white" />
-                <div className="absolute left-1/2 top-1/2 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-md bg-white" />
-              </div>
+            <div className="lg:col-span-5">
+              <PhoneShot
+                src="/images/products/codewords/codewords-family-home.png"
+                alt="Certifyd CodeWords Family home screen with an incoming challenge and trusted person count"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -93,131 +133,204 @@ export default function CertifydCodeWordsPage() {
       <section className="section-light">
         <div className="section-container">
           <ScrollReveal>
-            <div className="mb-14 lg:mb-16">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-px bg-text-on-light-muted" />
-                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
-                  How it works
-                </span>
-              </div>
-              <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-light max-w-2xl leading-tight">
-                Trust starts together.<br />
-                <span className="text-certifyd-blue">The challenge works remotely.</span>
+            <div className="max-w-3xl">
+              <p className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
+                How it works
+              </p>
+              <h2 className="font-heading text-3xl font-bold leading-tight text-text-on-light lg:text-5xl">
+                Trust starts before the suspicious call.
               </h2>
+              <p className="mt-5 text-lg leading-relaxed text-text-on-light-muted">
+                Caller ID, a familiar voice and an email address can all be imitated. CodeWords creates a separate relationship between two enrolled phones first.
+              </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {steps.map((step, index) => (
+          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+            {setupSteps.map((step, index) => (
               <ScrollReveal key={step.number} delay={index * 100}>
-                <div className="h-full bg-white border border-warm-border border-t-4 border-t-certifyd-blue rounded-sm p-8">
-                  <p className="font-heading text-sm font-bold text-certifyd-blue mb-8">{step.number}</p>
-                  <h3 className="font-heading text-2xl font-bold text-text-on-light mb-4">{step.title}</h3>
-                  <p className="text-text-on-light-muted leading-relaxed">{step.body}</p>
+                <div className="h-full rounded-sm border border-warm-border bg-white p-8">
+                  <p className="font-heading text-sm font-bold text-certifyd-blue">{step.number}</p>
+                  <h3 className="mt-6 font-heading text-2xl font-bold text-text-on-light">{step.title}</h3>
+                  <p className="mt-4 leading-relaxed text-text-on-light-muted">{step.body}</p>
                 </div>
               </ScrollReveal>
             ))}
+          </div>
+
+          <div className="mt-16 grid items-center gap-14 lg:grid-cols-2">
+            <PhoneShot
+              src="/images/products/codewords/codewords-direct-setup.png"
+              alt="Direct device setup screen explaining LiveQR, Bluetooth and word comparison"
+            />
+            <ScrollReveal>
+              <div>
+                <p className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
+                  Two signals, one human check
+                </p>
+                <h2 className="font-heading text-3xl font-bold leading-tight text-text-on-light lg:text-4xl">
+                  A saved QR screenshot is not enough.
+                </h2>
+                <p className="mt-5 leading-relaxed text-text-on-light-muted">
+                  The beta scans three fresh, sequential QR frames and looks for a matching Bluetooth service advertised by the presenting phone. Both people then compare the same short code before accepting.
+                </p>
+                <div className="mt-7 rounded-sm border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950">
+                  Current beta limitation: Bluetooth is a second nearby-device signal. It is not cryptographic proof of distance, and a modified client or coordinated relay remains possible.
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      <section id="family" className="section-dark scroll-mt-28">
+        <div className="section-container">
+          <div className="grid items-center gap-14 lg:grid-cols-12">
+            <ScrollReveal className="lg:col-span-7">
+              <div>
+                <p className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
+                  CodeWords for Family
+                </p>
+                <h2 className="font-heading text-3xl font-bold leading-tight text-text-on-dark lg:text-5xl">
+                  A calmer answer to “Is that really you?”
+                </h2>
+                <p className="mt-5 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted">
+                  Add a parent, partner, adult child or close friend before an emergency. If a future request feels wrong, stop the conversation and challenge the exact action in CodeWords.
+                </p>
+                <div className="mt-8 space-y-4">
+                  {familyExamples.map((example) => (
+                    <div key={example} className="flex gap-3 rounded-sm border border-navy-border bg-navy-light p-4 text-text-on-dark">
+                      <CheckIcon />
+                      <span>{example}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-8">
+                  <Button href="/products/codewords/family/" size="lg">
+                    Explore CodeWords for Family
+                  </Button>
+                </div>
+              </div>
+            </ScrollReveal>
+            <div className="lg:col-span-5">
+              <PhoneShot
+                src="/images/products/codewords/codewords-incoming-challenge.png"
+                alt="Incoming CodeWords challenge asking about an exact venue deposit request"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" className="section-light scroll-mt-28">
+        <div className="section-container">
+          <div className="grid items-center gap-14 lg:grid-cols-12">
+            <div className="order-2 lg:order-1 lg:col-span-5">
+              <PhoneShot
+                src="/images/products/codewords/codewords-confirmed-result.png"
+                alt="CodeWords result confirming that an enrolled phone approved a password reset request"
+              />
+            </div>
+            <ScrollReveal className="order-1 lg:order-2 lg:col-span-7">
+              <div>
+                <p className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
+                  CodeWords for Work
+                </p>
+                <h2 className="font-heading text-3xl font-bold leading-tight text-text-on-light lg:text-5xl">
+                  A separate approval path for sensitive requests.
+                </h2>
+                <p className="mt-5 max-w-2xl text-lg leading-relaxed text-text-on-light-muted">
+                  A familiar colleague can still appear in a spoofed email or cloned voice call. CodeWords lets a trusted colleague review the exact request on their enrolled phone before the team acts.
+                </p>
+                <div className="mt-8 space-y-4">
+                  {workExamples.map((example) => (
+                    <div key={example} className="flex gap-3 rounded-sm border border-warm-border bg-white p-4 text-text-on-light">
+                      <CheckIcon />
+                      <span>{example}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-6 text-sm leading-relaxed text-text-on-light-muted">
+                  Work challenges are an additional control. They do not execute payments or replace your existing dual approval, callback or account-security process.
+                </p>
+                <div className="mt-8">
+                  <Button href="/products/codewords/business/" size="lg">
+                    Explore CodeWords for Work
+                  </Button>
+                </div>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
       <section className="section-dark">
         <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <ScrollReveal>
-              <div className="h-full border border-navy-border bg-navy-light rounded-sm p-8 lg:p-10">
-                <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-4">Personal and family</p>
-                <h2 className="font-heading text-3xl font-bold text-text-on-dark mb-4">A familiar check for unusual requests</h2>
-                <p className="text-text-on-dark-muted leading-relaxed mb-6">
-                  Connect with a parent, child, partner or trusted friend before an urgent call arrives. Challenge money, account or safety requests on a separate channel.
-                </p>
-                <Button href="/products/codewords/family/">Explore family use</Button>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal delay={100}>
-              <div className="h-full border border-navy-border bg-navy-light rounded-sm p-8 lg:p-10">
-                <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-4">Business</p>
-                <h2 className="font-heading text-3xl font-bold text-text-on-dark mb-4">A second channel for sensitive actions</h2>
-                <p className="text-text-on-dark-muted leading-relaxed mb-6">
-                  Connect trusted colleagues in person, then add a separate confirmation step for payment, file, access and account-change requests.
-                </p>
-                <Button href="/products/codewords/business/">Explore business use</Button>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-light">
-        <div className="section-container">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-start">
-            <ScrollReveal className="lg:col-span-5">
-              <div className="mb-10 lg:mb-0">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-px bg-text-on-light-muted" />
-                  <span className="font-heading text-xs font-semibold uppercase tracking-wider text-text-on-light-muted">
-                    Security you can understand
-                  </span>
-                </div>
-                <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-light leading-tight">
-                  The phone signs.<br />
-                  <span className="text-certifyd-blue">You decide.</span>
-                </h2>
-              </div>
-            </ScrollReveal>
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {safeguards.map((safeguard, index) => (
-                <ScrollReveal key={safeguard} delay={index * 60}>
-                  <div className="h-full bg-white border border-warm-border rounded-sm p-5 flex gap-3">
-                    <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-certifyd-blue" />
-                    <p className="text-sm font-medium text-text-on-light">{safeguard}</p>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-amber-50 border-y border-amber-200/70">
-        <div className="section-container py-14 lg:py-16">
           <ScrollReveal>
-            <div className="max-w-4xl">
-              <p className="font-heading text-xs font-semibold uppercase tracking-wider text-amber-700 mb-3">What a confirmation means</p>
-              <h2 className="font-heading text-2xl lg:text-3xl font-bold text-text-on-light mb-4">
-                CodeWords confirms an enrolled phone and the exact request shown in the app.
-              </h2>
-              <p className="text-text-on-light-muted leading-relaxed">
-                It does not prove that a voice, email, video image or legal identity is genuine. Coercion, a compromised unlocked phone and a mistaken first connection remain possible. If anything feels wrong, stop and verify another way.
+            <div className="mx-auto max-w-4xl text-center">
+              <p className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
+                What a result means
               </p>
+              <h2 className="font-heading text-3xl font-bold leading-tight text-text-on-dark lg:text-5xl">
+                Confirm the device and the request, not the caller’s identity.
+              </h2>
             </div>
           </ScrollReveal>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            <div className="rounded-sm border border-emerald-500/30 bg-emerald-500/10 p-8">
+              <h3 className="font-heading text-xl font-bold text-emerald-300">A valid confirmation means</h3>
+              <ul className="mt-6 space-y-4 text-text-on-dark-muted">
+                <li>The previously enrolled phone responded.</li>
+                <li>The responder opened CodeWords and approved the displayed request.</li>
+                <li>The signed answer is fresh, time-limited and bound to those details.</li>
+              </ul>
+            </div>
+            <div className="rounded-sm border border-amber-400/30 bg-amber-400/10 p-8">
+              <h3 className="font-heading text-xl font-bold text-amber-300">It does not prove</h3>
+              <ul className="mt-6 space-y-4 text-text-on-dark-muted">
+                <li>That a voice, video image, email address or legal identity is genuine.</li>
+                <li>That the phone is not stolen and already unlocked.</li>
+                <li>That the person is free from coercion or that the requested action is safe.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <RelatedContent
         solutions={[
-          { label: "CodeWords security model", href: "/security/codewords/" },
-          { label: "CodeWords support", href: "/support/codewords/" },
-          { label: "Account deletion", href: "/account-deletion/" },
+          { label: "Certifyd ID", href: "/products/id/" },
+          { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+          { label: "Certifyd Screen", href: "/products/verify/" },
         ]}
         articles={[
           { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },
           { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
         ]}
         resources={[
-          { label: "FBI IC3: Business Email Compromise", href: "https://www.ic3.gov/PSA/2024/PSA240911", external: true },
-          { label: "UK Finance: Annual Fraud Report", href: "https://www.ukfinance.org.uk/policy-and-guidance/reports-and-publications/annual-fraud-report-2024", external: true },
+          { label: "Read the CodeWords security model", href: "/security/codewords/", external: false },
+          { label: "Get CodeWords support", href: "/support/codewords/", external: false },
+          { label: "Read the Certifyd privacy policy", href: "/privacy/", external: false },
         ]}
       />
 
-      <section className="section-dark">
-        <div className="section-container text-center py-20 lg:py-24">
-          <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-dark mb-5">Connect before the urgent request arrives.</h2>
-          <p className="mx-auto max-w-2xl text-text-on-dark-muted mb-8">
-            CodeWords requires two compatible phones, an internet connection, and camera and Bluetooth access during the first in-person setup.
+      <section className="relative overflow-hidden bg-certifyd-blue">
+        <div className="section-container py-20 text-center lg:py-28">
+          <h2 className="mx-auto max-w-3xl font-heading text-3xl font-bold text-white lg:text-5xl">
+            Add trust before you need to question it.
+          </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
+            Join the Family beta with someone you know, or talk to us about a controlled Work pilot.
           </p>
-          <Button href="/contact/" size="lg">Join the first release</Button>
+          <div className="mt-9 flex flex-wrap justify-center gap-4">
+            <Button href="/contact/?subject=CodeWords%20Family%20beta" variant="outline" size="lg">
+              Join the Family beta
+            </Button>
+            <Button href="/contact/?subject=CodeWords%20Work%20pilot" variant="ghost" size="lg" className="text-white hover:text-navy">
+              Discuss a Work pilot
+            </Button>
+          </div>
         </div>
       </section>
     </>

@@ -37,7 +37,7 @@ const steps = [
   {
     number: "01",
     title: "Enrol trusted people",
-    body: "Connect colleagues, principals, or suppliers in person. Rotating QR and authenticated Bluetooth help bind the relationship to two nearby devices.",
+    body: "Put both phones side by side. Changing signed QR frames, a matching nearby Bluetooth signal and a comparison code support direct device setup.",
   },
   {
     number: "02",
@@ -89,7 +89,7 @@ export default function CodeWordsBusinessPage() {
       scenarios={scenarios}
       steps={steps}
       distinctionTitle="Check the action, not just the message."
-      distinctionBody="Email headers, caller ID, familiar writing, and a face on video can all create false confidence. CodeWords sends the exact action to a phone enrolled in person, so the approval arrives through an independent, device-bound path."
+      distinctionBody="Email headers, caller ID, familiar writing, and a face on video can all create false confidence. CodeWords sends the exact action to a phone enrolled during direct device setup, so the approval arrives through a separate signed path."
       faqs={faqs}
     />
   );

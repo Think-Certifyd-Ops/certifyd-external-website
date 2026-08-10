@@ -1,72 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "Delete Your Certifyd Account",
-  description:
-    "How to delete a Certifyd CodeWords account in the app or request deletion when you no longer have access to the app.",
+  description: "Request deletion of your Certifyd account and associated CodeWords data.",
   alternates: { canonical: "/account-deletion/" },
-  openGraph: {
-    title: "Delete Your Certifyd Account",
-    description: "In-app and web-assisted account deletion for Certifyd CodeWords.",
-    url: "https://www.certifyd.io/account-deletion/",
-  },
 };
 
 export default function AccountDeletionPage() {
   return (
     <>
-      <section className="relative bg-navy pt-32 pb-20 lg:pt-40 lg:pb-24">
+      <section className="relative bg-navy pt-32 pb-18 lg:pt-40 lg:pb-24">
         <div className="section-container">
-          <span className="inline-block px-3 py-1 text-xs font-heading font-medium rounded-full bg-certifyd-blue/15 text-certifyd-blue mb-6">Privacy control</span>
-          <h1 className="font-heading text-4xl lg:text-6xl font-bold text-text-on-dark max-w-3xl">Delete your Certifyd account</h1>
-          <p className="text-lg text-text-on-dark-muted max-w-2xl mt-6">
-            You can delete a CodeWords account in the app. If you no longer have app access, you can request deletion from this page.
+          <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">Account controls</p>
+          <h1 className="mt-4 max-w-3xl font-heading text-4xl font-bold leading-tight text-text-on-dark lg:text-6xl">
+            Delete your Certifyd account.
+          </h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted">
+            You can start account deletion in the app or request it from the web.
           </p>
         </div>
       </section>
 
       <section className="section-light">
-        <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-            <div className="bg-white border border-warm-border rounded-sm p-8">
-              <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-3">Fastest route</p>
-              <h2 className="font-heading text-2xl font-bold text-text-on-light mb-4">Delete in the app</h2>
-              <ol className="space-y-3 text-text-on-light-muted list-decimal pl-5">
-                <li>Open CodeWords and sign in.</li>
-                <li>Open Settings, then Account Management.</li>
-                <li>Choose Delete account.</li>
-                <li>Enter the current account password, read the effect and confirm.</li>
+        <div className="section-container max-w-4xl">
+          <div className="space-y-8">
+            <article className="rounded-sm border border-warm-border bg-white p-8">
+              <h2 className="font-heading text-2xl font-bold text-text-on-light">Delete in the app</h2>
+              <ol className="mt-5 list-decimal space-y-3 pl-5 text-text-on-light-muted">
+                <li>Open Certifyd CodeWords and go to Settings.</li>
+                <li>Open Account management, then choose Delete account.</li>
+                <li>Confirm with your current account credentials.</li>
               </ol>
-            </div>
-            <div className="bg-white border border-warm-border rounded-sm p-8">
-              <p className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue mb-3">No app access</p>
-              <h2 className="font-heading text-2xl font-bold text-text-on-light mb-4">Request deletion by email</h2>
-              <p className="text-text-on-light-muted leading-relaxed mb-5">
-                Email us from the address on the account. Use the subject “Delete my Certifyd CodeWords account.” We will verify the request without asking for your password, biometric or recovery code.
+            </article>
+
+            <article className="rounded-sm border border-warm-border bg-white p-8">
+              <h2 className="font-heading text-2xl font-bold text-text-on-light">Request deletion on the web</h2>
+              <p className="mt-4 leading-relaxed text-text-on-light-muted">
+                Use the deletion request link and provide the email address on your account. We may ask you to verify control of that address before deletion begins. Never send your password or a biometric record.
               </p>
-              <a className="inline-flex font-semibold text-certifyd-blue hover:underline" href="mailto:team@certifyd.io?subject=Delete%20my%20Certifyd%20CodeWords%20account">
-                Request account deletion
-              </a>
-            </div>
-          </div>
+              <div className="mt-6">
+                <Button href="/contact/?subject=Certifyd%20account%20deletion%20request">Request account deletion</Button>
+              </div>
+            </article>
 
-          <div className="max-w-4xl">
-            <h2 className="font-heading text-2xl font-bold text-text-on-light mb-4">What deletion removes</h2>
-            <p className="text-text-on-light-muted leading-relaxed mb-5">
-              The active CodeWords deletion flow removes the account and its device records, trusted relationships, in-person connection records, challenges, sessions, recovery state and account audit events from active systems. Other people will no longer be able to use the deleted relationship.
-            </p>
-            <p className="text-text-on-light-muted leading-relaxed mb-5">
-              Deleted data may remain in protected service backups until those backups age out under the provider schedule. We may retain limited information only where a documented legal obligation requires it, and will explain that exception when it applies.
-            </p>
-            <p className="text-text-on-light-muted leading-relaxed">
-              Deletion is permanent. A later account is new and cannot recover the deleted phone or trusted relationships.
-            </p>
-          </div>
-
-          <div className="mt-12 pt-8 border-t border-warm-border flex flex-wrap gap-6 text-sm">
-            <Link className="text-certifyd-blue hover:underline" href="/privacy/">Privacy policy</Link>
-            <Link className="text-certifyd-blue hover:underline" href="/support/codewords/">CodeWords support</Link>
+            <article className="rounded-sm border border-amber-300 bg-amber-50 p-8 text-amber-950">
+              <h2 className="font-heading text-2xl font-bold">What deletion changes</h2>
+              <p className="mt-4 leading-relaxed">
+                Account deletion removes access to your account, revokes its registered devices and ends its trusted relationships. Challenge and security records linked to the account are deleted or de-identified, except for limited records we must retain for fraud prevention, dispute handling or legal obligations. We will explain any required retention when we confirm the request.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Deletion cannot be used to move trust to a replacement phone. Add the new phone as a new device with the people you trust.
+              </p>
+            </article>
           </div>
         </div>
       </section>
