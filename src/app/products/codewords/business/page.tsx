@@ -2,59 +2,59 @@ import type { Metadata } from "next";
 import { CodeWordsAudiencePage } from "@/components/codewords/CodeWordsAudiencePage";
 
 export const metadata: Metadata = {
-  title: "CodeWords for Business | Challenge Sensitive Requests",
+  title: "CodeWords for Business | A Trusted Second Channel",
   description:
-    "Give finance, operations, and leadership a trusted second channel for payment, access, data, and account-change requests.",
+    "Help teams challenge sensitive requests with trusted colleagues, suppliers, and clients before money moves, access changes, or data is shared.",
   alternates: { canonical: "/products/codewords/business/" },
   openGraph: {
-    title: "CodeWords for Business | Verify Before You Act",
+    title: "CodeWords for Business | Give Requests a Trusted Route Back",
     description:
-      "Challenge sensitive instructions through a trusted enrolled phone before your team acts.",
+      "Build trusted links inside your organisation and with suppliers and clients, then check sensitive requests before your team acts.",
     url: "https://www.certifyd.io/products/codewords/business/",
   },
 };
 
 const scenarios = [
   {
-    title: "Payment and bank-detail changes",
-    body: "Challenge the amount, recipient, and reason through the enrolled phone before finance releases a payment or accepts new bank details.",
+    title: "Inside your organisation",
+    body: "Connect colleagues, leaders, finance, IT, and operations before an urgent instruction arrives. Give each person a separate way to check the exact request.",
   },
   {
-    title: "Executive and supplier instructions",
-    body: "Check an urgent instruction made by call, text, email, or video without relying on the same channel that carried the request.",
+    title: "With suppliers",
+    body: "Create trusted links with regular supplier contacts, then challenge bank-detail changes, unusual invoices, urgent orders, and account requests outside email.",
   },
   {
-    title: "Access and recovery requests",
-    body: "Add a trusted approval before resetting an account, changing an administrator, issuing a credential, or granting sensitive access.",
+    title: "With clients",
+    body: "Give named client contacts a trusted route for checking instructions, file requests, approvals, and last-minute changes before either side acts.",
   },
   {
-    title: "Sensitive data and file requests",
-    body: "Confirm who approved a request before the team shares payroll, customer, legal, financial, or confidential company information.",
+    title: "Across access, money, and data",
+    body: "Use the same checking habit before changing account access, releasing a payment, sharing a sensitive file, or accepting new contact details.",
   },
 ];
 
 const steps = [
   {
     number: "01",
-    title: "Enrol trusted people",
-    body: "Put both phones side by side. Changing signed QR frames, a matching nearby Bluetooth signal and a comparison code support direct device setup.",
+    title: "Build the trusted links first",
+    body: "Start with the people inside your organisation, then add named supplier and client contacts. Direct setup binds each relationship to the phones used when they meet.",
   },
   {
     number: "02",
-    title: "Define the exact action",
-    body: "When a sensitive instruction arrives, create a short challenge that records what is being requested, not just who appears to be asking.",
+    title: "Challenge the exact action",
+    body: "When a sensitive instruction arrives, record what is being requested, including the amount, recipient, account, file, or access change.",
   },
   {
     number: "03",
-    title: "Approve on a separate channel",
-    body: "The enrolled phone shows the action and requires protected approval. Your team sees an approve, deny, pressure, expired, or revoked result before acting.",
+    title: "Wait for the separate answer",
+    body: "The trusted phone shows the action and requires protected approval. Your team sees an approved, denied, pressured, expired, or revoked result before acting.",
   },
 ];
 
 const faqs = [
   {
     question: "Does this replace our payment approval process?",
-    answer: "No. CodeWords adds a trusted device challenge to an existing control. Keep your dual approvals, call-backs, payment limits, and bank controls in place.",
+    answer: "No. CodeWords adds a trusted device challenge to your existing controls. Keep dual approvals, independent call-backs, payment limits, bank controls, and access policies in place.",
   },
   {
     question: "Can we use it with phone, email, text, and video?",
@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     question: "How should we start a pilot?",
-    answer: "Choose one narrow workflow with a clear owner and meaningful consequence, such as bank-detail changes or urgent executive payment requests. Enrol a small group and measure whether the extra check improves decisions.",
+    answer: "Start inside your organisation with one narrow workflow, such as bank-detail changes or urgent executive requests. Give the team a clear rule for when to stop and check. Add selected suppliers or clients only after that habit works internally.",
   },
 ];
 
@@ -75,21 +75,29 @@ export default function CodeWordsBusinessPage() {
     <CodeWordsAudiencePage
       audience="business"
       eyebrow="CodeWords for business"
-      headline="Put sensitive requests through a trusted second channel."
-      intro="Connect trusted people and phones before an urgent instruction arrives. Then challenge the exact payment, access, account, or data request outside the call, email, or message that carried it."
+      headline="Give every sensitive request a trusted route back."
+      intro="Build trusted links between colleagues first, then extend them to the suppliers and clients you work with. When an unusual instruction arrives, check the exact request outside the call, email, message, or video meeting that carried it."
       primaryLabel="Book a pilot call"
       primaryHref="https://cal.com/andrew-speer/certifyd-discovery"
-      secondaryLabel="See CodeWords for families"
+      secondaryLabel="See CodeWords for personal use"
       secondaryHref="/products/codewords/family/"
       proofNote="CodeWords strengthens an existing approval process. It does not replace dual control, payment limits, call-backs, or formal identity checks."
       requestLabel="Payment approval"
       requestText="Approve £18,400 to new supplier details?"
-      scenariosTitle="Challenge the instructions that carry real consequences."
-      scenariosIntro="Use CodeWords where impersonation, a compromised account, or a rushed decision could move money, expose data, or grant access."
+      scenariosTitle="Start internally. Extend trust deliberately."
+      scenariosIntro="Create a known route back to the people whose requests can move money, expose data, grant access, or change a plan."
       scenarios={scenarios}
       steps={steps}
-      distinctionTitle="Check the action, not just the message."
-      distinctionBody="Email headers, caller ID, familiar writing, and a face on video can all create false confidence. CodeWords sends the exact action to a phone enrolled during direct device setup, so the approval arrives through a separate signed path."
+      distinctionTitle="Familiar faces are no longer enough."
+      distinctionBody="A convincing video meeting can show familiar colleagues and still be an impersonation. CodeWords does not analyse the face, voice, or email. It sends the exact action to a phone connected through direct setup, so the answer returns through a separate signed path."
+      habitTitle="The technology only works when checking is normal."
+      habitBody="CodeWords adds a layer of trust, not an invisible shield. Your organisation still needs a clear rule: when a request is urgent, unusual, or sensitive, stop the original conversation and challenge the action. Leaders must make that behaviour expected, especially when a request appears to come from them."
+      habitPoints={[
+        "Pause the original call, message, or meeting.",
+        "Open CodeWords independently, never from a supplied link.",
+        "Challenge the exact action, not just the person\u2019s name.",
+        "Keep your existing approvals, call-backs, and account controls.",
+      ]}
       faqs={faqs}
     />
   );

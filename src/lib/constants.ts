@@ -29,7 +29,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Certifyd Portal", href: "/products/portal/", description: "Right to Work compliance for SMEs" },
       { label: "Certifyd Screen", href: "/products/verify/", description: "Pre-meeting identity verification" },
       { label: "Certifyd Sentinel", href: "/products/sentinel/", description: "Compliant meeting recording & AI monitoring" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/", description: "Corporate verification codes" },
+      { label: "Certifyd CodeWords", href: "/products/codewords/", description: "Check unusual requests with people you trust" },
       { label: "Certifyd ID", href: "/products/id/", description: "Two-way identity verification between two people" },
     ],
   },

@@ -60,12 +60,12 @@ const products = [
   {
     name: "Certifyd CodeWords",
     slug: "/products/codewords/",
-    tagline: "Verify anyone. Any channel. In seconds.",
+    tagline: "Meet once. Check unusual requests any time.",
     description:
-      "Professional identity verification across every channel. QR codes for video calls, 3-word codes for phone calls and Slack, 6-digit number codes for quick checks. Multiple methods, one platform. Stop BEC attacks and CEO fraud.",
-    badge: "Coming soon",
+      "Create trusted connections with family, friends, colleagues, suppliers, and clients. If an unusual call, text, email, or video meeting asks you to act, challenge the exact request through a separate signed path.",
+    badge: "Beta",
     badgeColor: "bg-certifyd-blue/15 text-certifyd-blue",
-    cta: "Book demo",
+    cta: "Explore CodeWords",
   },
   {
     name: "Certifyd ID",
