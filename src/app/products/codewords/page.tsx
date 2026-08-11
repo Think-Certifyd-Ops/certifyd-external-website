@@ -5,14 +5,14 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { RelatedContent } from "@/components/solutions/RelatedContent";
 
 export const metadata: Metadata = {
-  title: "Certifyd CodeWords | Check suspicious requests with people you trust",
+  title: "Certifyd CodeWords | Check Unusual Requests",
   description:
-    "Add a trusted phone while you are together. Later, challenge an unusual money, account or safety request and see what that enrolled phone approved.",
+    "Meet once, then use a trusted second channel to check unusual calls, texts, and emails with family, friends, colleagues, suppliers, and clients.",
   alternates: { canonical: "/products/codewords/" },
   openGraph: {
-    title: "Certifyd CodeWords | Meet once. Check any time.",
+    title: "Certifyd CodeWords | Check Somewhere Safer",
     description:
-      "A separate way for families and teams to check suspicious requests before anyone acts.",
+      "A trusted second channel for checking unusual requests before you act.",
     url: "https://www.certifyd.io/products/codewords/",
   },
 };
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
 const setupSteps = [
   {
     number: "01",
-    title: "Add someone side by side",
-    body: "One phone shows changing, signed LiveQR frames. The other scans them and checks for the matching nearby Bluetooth signal.",
+    title: "Connect while you are together",
+    body: "One phone shows changing signed QR frames. The other scans them and finds the matching nearby Bluetooth service.",
   },
   {
     number: "02",
-    title: "Compare the same words",
-    body: "Both people compare three words and a six-digit number, then approve the direct device setup on their own phone.",
+    title: "Check both signals",
+    body: "The phones exchange a fresh signed Bluetooth challenge. Both people compare the same three words and six-digit number before accepting.",
   },
   {
     number: "03",
@@ -35,13 +35,13 @@ const setupSteps = [
   },
 ];
 
-const familyExamples = [
+const personalExamples = [
   "Are you asking me to send £420 for the deposit?",
   "Are you asking me to buy gift cards during this call?",
   "Are you safe and asking me to collect you?",
 ];
 
-const workExamples = [
+const businessExamples = [
   "Are you asking me to change the supplier bank account?",
   "Are you asking me to share the payroll file with this address?",
   "Are you asking me to reset the administrator password?",
@@ -97,21 +97,18 @@ export default function CodeWordsPage() {
                 Certifyd CodeWords
               </span>
               <h1 className="max-w-4xl font-heading text-5xl font-bold leading-[1.04] text-text-on-dark lg:text-7xl">
-                Meet once.<br />
-                <span className="text-certifyd-blue">Check any time.</span>
+                When a request feels wrong,<br />
+                <span className="text-certifyd-blue">check somewhere safer.</span>
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted lg:text-xl">
-                Add a trusted phone while you are together. Later, challenge an unusual request and see whether that enrolled phone approved the exact details.
+                CodeWords gives you and the people you trust a separate way to check unusual calls, texts, emails, and video meetings before anyone sends money, shares access, or changes a plan.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Button href="/products/codewords/family/" size="lg">
-                  Explore Family
-                </Button>
-                <Button href="/products/codewords/demo/" variant="outline" size="lg">
-                  Try the challenge demo
+                  CodeWords for Personal Use
                 </Button>
                 <Button href="/products/codewords/business/" variant="outline" size="lg">
-                  Explore Work
+                  CodeWords for Business
                 </Button>
               </div>
               <p className="mt-5 max-w-xl text-sm leading-relaxed text-text-on-dark-muted">
@@ -122,7 +119,7 @@ export default function CodeWordsPage() {
             <div className="lg:col-span-5">
               <PhoneShot
                 src="/images/products/codewords/codewords-family-home.png"
-                alt="Certifyd CodeWords Family home screen with an incoming challenge and trusted person count"
+                alt="Certifyd CodeWords Personal Use home screen with an incoming challenge and trusted person count"
                 priority
               />
             </div>
@@ -172,10 +169,10 @@ export default function CodeWordsPage() {
                   A saved QR screenshot is not enough.
                 </h2>
                 <p className="mt-5 leading-relaxed text-text-on-light-muted">
-                  The beta scans three fresh, sequential QR frames and looks for a matching Bluetooth service advertised by the presenting phone. Both people then compare the same short code before accepting.
+                  The beta scans three fresh, sequential QR frames, connects to the matching Bluetooth service, and verifies a fresh challenge signed by the presenting phone. Both people then compare the same short code before accepting.
                 </p>
                 <div className="mt-7 rounded-sm border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950">
-                  Current beta limitation: Bluetooth is a second nearby-device signal. It is not cryptographic proof of distance, and a modified client or coordinated relay remains possible.
+                  Current beta limitation: the Bluetooth challenge is authenticated but not application-encrypted. It does not prove an exact distance, and a modified client or coordinated relay remains possible.
                 </div>
               </div>
             </ScrollReveal>
@@ -183,22 +180,22 @@ export default function CodeWordsPage() {
         </div>
       </section>
 
-      <section id="family" className="section-dark scroll-mt-28">
+      <section id="personal" className="section-dark scroll-mt-28">
         <div className="section-container">
           <div className="grid items-center gap-14 lg:grid-cols-12">
             <ScrollReveal className="lg:col-span-7">
               <div>
                 <p className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
-                  CodeWords for Family
+                  CodeWords for Personal Use
                 </p>
                 <h2 className="font-heading text-3xl font-bold leading-tight text-text-on-dark lg:text-5xl">
-                  A calmer answer to “Is that really you?”
+                  Give family and friends a safer way to check.
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted">
-                  Add a parent, partner, adult child or close friend before an emergency. If a future request feels wrong, stop the conversation and challenge the exact action in CodeWords.
+                  Connect with a parent, partner, adult child, relative, or close friend before an emergency. If a future request feels wrong, stop the conversation and check the exact action in CodeWords.
                 </p>
                 <div className="mt-8 space-y-4">
-                  {familyExamples.map((example) => (
+                  {personalExamples.map((example) => (
                     <div key={example} className="flex gap-3 rounded-sm border border-navy-border bg-navy-light p-4 text-text-on-dark">
                       <CheckIcon />
                       <span>{example}</span>
@@ -207,7 +204,7 @@ export default function CodeWordsPage() {
                 </div>
                 <div className="mt-8">
                   <Button href="/products/codewords/family/" size="lg">
-                    Explore CodeWords for Family
+                    Explore CodeWords for Personal Use
                   </Button>
                 </div>
               </div>
@@ -222,7 +219,7 @@ export default function CodeWordsPage() {
         </div>
       </section>
 
-      <section id="work" className="section-light scroll-mt-28">
+      <section id="business" className="section-light scroll-mt-28">
         <div className="section-container">
           <div className="grid items-center gap-14 lg:grid-cols-12">
             <div className="order-2 lg:order-1 lg:col-span-5">
@@ -234,16 +231,16 @@ export default function CodeWordsPage() {
             <ScrollReveal className="order-1 lg:order-2 lg:col-span-7">
               <div>
                 <p className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue">
-                  CodeWords for Work
+                  CodeWords for Business
                 </p>
                 <h2 className="font-heading text-3xl font-bold leading-tight text-text-on-light lg:text-5xl">
-                  A separate approval path for sensitive requests.
+                  Make it normal to challenge unusual instructions.
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-relaxed text-text-on-light-muted">
-                  A familiar colleague can still appear in a spoofed email or cloned voice call. CodeWords lets a trusted colleague review the exact request on their enrolled phone before the team acts.
+                  Build trusted links between colleagues first, then extend them to named suppliers and clients. CodeWords gives each relationship a separate signed path for checking the exact request before anyone acts.
                 </p>
                 <div className="mt-8 space-y-4">
-                  {workExamples.map((example) => (
+                  {businessExamples.map((example) => (
                     <div key={example} className="flex gap-3 rounded-sm border border-warm-border bg-white p-4 text-text-on-light">
                       <CheckIcon />
                       <span>{example}</span>
@@ -251,11 +248,11 @@ export default function CodeWordsPage() {
                   ))}
                 </div>
                 <p className="mt-6 text-sm leading-relaxed text-text-on-light-muted">
-                  Work challenges are an additional control. They do not execute payments or replace your existing dual approval, callback or account-security process.
+                  CodeWords adds a layer of trust, but the team must use it. Make pausing and checking expected, even when an urgent request appears to come from a senior leader. Keep dual approval, independent call-backs, and account controls in place.
                 </p>
                 <div className="mt-8">
                   <Button href="/products/codewords/business/" size="lg">
-                    Explore CodeWords for Work
+                    Explore CodeWords for Business
                   </Button>
                 </div>
               </div>
@@ -305,7 +302,7 @@ export default function CodeWordsPage() {
           { label: "Certifyd Screen", href: "/products/verify/" },
         ]}
         articles={[
-          { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },
+          { label: "How real-time deepfake video calls work", href: "/blog/deepfake-playbook/" },
           { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
         ]}
         resources={[
@@ -321,14 +318,14 @@ export default function CodeWordsPage() {
             Add trust before you need to question it.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
-            Join the Family beta with someone you know, or talk to us about a controlled Work pilot.
+            Join the personal release with someone you trust, or talk to us about a controlled business pilot.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-4">
-            <Button href="/contact/?subject=CodeWords%20Family%20beta" variant="outline" size="lg">
-              Join the Family beta
+            <Button href="/contact/?subject=CodeWords%20Personal%20release" variant="outline" size="lg">
+              Join the personal release
             </Button>
-            <Button href="/contact/?subject=CodeWords%20Work%20pilot" variant="ghost" size="lg" className="text-white hover:text-navy">
-              Discuss a Work pilot
+            <Button href="/contact/?subject=CodeWords%20Business%20pilot" variant="ghost" size="lg" className="text-white hover:text-navy">
+              Discuss a business pilot
             </Button>
           </div>
         </div>

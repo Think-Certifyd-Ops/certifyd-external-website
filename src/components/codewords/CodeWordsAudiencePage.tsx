@@ -15,7 +15,7 @@ type Step = {
 };
 
 type AudiencePageProps = {
-  audience: "family" | "business";
+  audience: "personal" | "business";
   eyebrow: string;
   headline: string;
   intro: string;
@@ -32,12 +32,15 @@ type AudiencePageProps = {
   steps: Step[];
   distinctionTitle: string;
   distinctionBody: string;
+  habitTitle: string;
+  habitBody: string;
+  habitPoints: string[];
   faqs: { question: string; answer: string }[];
 };
 
 const safeguards = [
   "Trusted phones are added while both people are together",
-  "Changing signed QR frames and a matching nearby Bluetooth signal",
+  "Changing signed QR frames and a fresh signed Bluetooth challenge",
   "Each approval is signed by a key held on the enrolled phone",
   "Biometrics protect sensitive approvals on supported devices",
   "Challenges name the exact request and expire after a short time",
@@ -62,9 +65,12 @@ export function CodeWordsAudiencePage({
   steps,
   distinctionTitle,
   distinctionBody,
+  habitTitle,
+  habitBody,
+  habitPoints,
   faqs,
 }: AudiencePageProps) {
-  const isFamily = audience === "family";
+  const isPersonal = audience === "personal";
 
   return (
     <>
@@ -206,6 +212,38 @@ export function CodeWordsAudiencePage({
         </div>
       </section>
 
+      <section className="section-dark">
+        <div className="section-container">
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+            <ScrollReveal className="lg:col-span-7">
+              <span className="font-heading text-xs font-semibold uppercase tracking-wider text-certifyd-blue-light">
+                The checking habit
+              </span>
+              <h2 className="mt-4 font-heading text-3xl font-bold leading-tight tracking-[-0.03em] text-text-on-dark lg:text-5xl">
+                {habitTitle}
+              </h2>
+              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-text-on-dark-muted">
+                {habitBody}
+              </p>
+            </ScrollReveal>
+            <div className="space-y-3 lg:col-span-5">
+              {habitPoints.map((point, index) => (
+                <ScrollReveal key={point} delay={index * 55}>
+                  <div className="flex gap-4 rounded-sm border border-navy-border bg-navy-light p-5">
+                    <span className="font-heading text-sm font-bold text-certifyd-blue-light">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <p className="text-sm font-medium leading-relaxed text-text-on-dark">
+                      {point}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-light">
         <div className="section-container">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -275,21 +313,21 @@ export function CodeWordsAudiencePage({
         <div className="section-container py-20 lg:py-24">
           <div className="max-w-3xl">
             <h2 className="font-heading text-3xl lg:text-5xl font-bold text-text-on-dark leading-tight">
-              {isFamily
-                ? "Give your family a safer way to check."
+              {isPersonal
+                ? "Give the people you trust a safer way to check."
                 : "Add a trusted check before the next sensitive request."}
             </h2>
             <p className="text-lg text-text-on-dark-muted mt-5 mb-8 max-w-2xl">
-              {isFamily
-                ? "Join the first family release and we will let you know when CodeWords is ready to install."
+              {isPersonal
+                ? "Join the first personal release and we will let you know when CodeWords is ready to install."
                 : "Book a short call to choose one high-risk workflow for a CodeWords pilot."}
             </p>
-            {isFamily ? (
+            {isPersonal ? (
               <WaitlistForm
                 placeholder="you@example.com"
-                buttonLabel="Join the family release"
-                eventLabel="codewords-family"
-                source="codewords-family-waitlist"
+                buttonLabel="Join the personal release"
+                eventLabel="codewords-personal"
+                source="codewords-personal-waitlist"
                 successMessage="You are on the list. We will be in touch."
               />
             ) : (

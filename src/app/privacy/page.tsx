@@ -49,7 +49,7 @@ const sections = [
     title: "6. When data is shared",
     paragraphs: [
       "We share data with service providers that help us host, secure, monitor, notify and support the service, under appropriate contractual safeguards. A trusted relationship necessarily shares the challenge and response information with the participants in that relationship.",
-      "For a work account, an authorised organisation administrator may see account, device, policy and challenge audit information allowed by the organisation's service agreement and product controls. We may also disclose data when required by law, to protect people or the service, or as part of a business transfer subject to appropriate safeguards.",
+      "For a business account, an authorised organisation administrator may see account, device, policy and challenge audit information allowed by the organisation's service agreement and product controls. We may also disclose data when required by law, to protect people or the service, or as part of a business transfer subject to appropriate safeguards.",
     ],
   },
   {
@@ -109,7 +109,7 @@ export default function PrivacyPolicyPage() {
       <section className="section-light">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
           <p className="mb-14 text-base leading-relaxed text-text-on-light-muted">
-            This policy covers Certifyd websites and services, including Certifyd CodeWords for Family and Work.
+            This policy covers Certifyd websites and services, including CodeWords for Personal Use and CodeWords for Business.
           </p>
           <div className="space-y-12">
             {sections.map((section) => (

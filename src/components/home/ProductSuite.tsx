@@ -31,8 +31,8 @@ const PRODUCTS = [
   },
   {
     name: "CodeWords",
-    description: "Verify anyone on any channel — QR codes, word codes, or number codes.",
-    cta: "Book demo",
+    description: "Meet once, then check unusual requests with family, friends, colleagues, suppliers, and clients.",
+    cta: "Explore CodeWords",
     href: "/products/codewords/",
     dark: false,
     span: "md:col-span-4",
