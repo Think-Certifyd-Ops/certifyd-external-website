@@ -65,7 +65,7 @@ const faqs = [
     answer: "It proves that the enrolled phone signed approval for the exact request shown in CodeWords. It does not prove that the original voice, email, or video was genuine, or that the phone holder was free from pressure.",
   },
   {
-    question: "How should we start a pilot?",
+    question: "How should we start?",
     answer: "Start inside your organisation with one narrow workflow, such as bank-detail changes or urgent executive requests. Give the team a clear rule for when to stop and check. Add selected suppliers or clients only after that habit works internally.",
   },
 ];
@@ -77,7 +77,7 @@ export default function CodeWordsBusinessPage() {
       eyebrow="CodeWords for business"
       headline="Give every sensitive request a trusted route back."
       intro="Build trusted links between colleagues first, then extend them to the suppliers and clients you work with. When an unusual instruction arrives, check the exact request outside the call, email, message, or video meeting that carried it."
-      primaryLabel="Book a pilot call"
+      primaryLabel="Discuss CodeWords for business"
       primaryHref="https://cal.com/andrew-speer/certifyd-discovery"
       secondaryLabel="See CodeWords for personal use"
       secondaryHref="/products/codewords/family/"
