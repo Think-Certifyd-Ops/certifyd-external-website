@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description:
     "Setup, challenge, recovery, privacy and safety help for Certifyd CodeWords.",
   alternates: { canonical: "/support/codewords/" },
+  openGraph: {
+    title: "Certifyd CodeWords Support",
+    description: "Setup, challenge, recovery, privacy and safety help for Certifyd CodeWords.",
+    url: "https://www.certifyd.io/support/codewords/",
+  },
 };
 
 const help = [
@@ -33,6 +38,10 @@ const help = [
   {
     title: "Someone is under pressure",
     body: "Stop the action and follow your agreed family or workplace safety plan. Do not confront a caller if doing so could increase risk. Contact emergency services when there is immediate danger.",
+  },
+  {
+    title: "Report or block an unsafe request",
+    body: "Open the incoming challenge and choose Report this request. You can send the report to Certifyd for review, or report and block the sender. Blocking ends the trusted connection on both accounts, cancels pending challenges and prevents new requests through that connection.",
   },
 ];
 

@@ -81,7 +81,7 @@ export default function CodeWordsDemoPage() {
               <div className="mt-6 rounded-lg border border-certifyd-blue/20 bg-certifyd-blue/5 p-4">
                 <p className="text-xs font-semibold uppercase tracking-wider text-certifyd-blue">Trusted person</p>
                 <p className="mt-2 font-heading text-xl font-bold">Sarah</p>
-                <p className="mt-1 text-sm text-text-on-light-muted">Direct device setup, beta</p>
+                <p className="mt-1 text-sm text-text-on-light-muted">Direct device setup</p>
               </div>
 
               <div className="mt-8 flex items-start gap-3">

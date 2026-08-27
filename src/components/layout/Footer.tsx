@@ -185,6 +185,13 @@ export function Footer() {
               </Link>
               <span className="text-navy-border">|</span>
               <Link
+                href="/terms/"
+                className="transition-colors hover:text-white"
+              >
+                Terms of Service
+              </Link>
+              <span className="text-navy-border">|</span>
+              <Link
                 href="/cookies/"
                 className="transition-colors hover:text-white"
               >

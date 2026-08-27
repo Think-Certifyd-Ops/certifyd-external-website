@@ -319,21 +319,21 @@ export function CodeWordsAudiencePage({
             </h2>
             <p className="text-lg text-text-on-dark-muted mt-5 mb-8 max-w-2xl">
               {isPersonal
-                ? "Join the first personal release and we will let you know when CodeWords is ready to install."
-                : "Book a short call to choose one high-risk workflow for a CodeWords pilot."}
+                ? "Get a note when CodeWords is available to install from the App Store, plus important release updates."
+                : "Book a short call to choose the first high-risk workflow for your CodeWords rollout."}
             </p>
             {isPersonal ? (
               <WaitlistForm
                 placeholder="you@example.com"
-                buttonLabel="Join the personal release"
+                buttonLabel="Get App Store updates"
                 eventLabel="codewords-personal"
                 source="codewords-personal-waitlist"
-                successMessage="You are on the list. We will be in touch."
+                successMessage="You are on the list. We will send App Store availability updates."
               />
             ) : (
               <div className="flex flex-wrap gap-4">
                 <Button href="https://cal.com/andrew-speer/certifyd-discovery" size="lg">
-                  Book a 20-minute pilot call
+                  Book a 20-minute workflow call
                 </Button>
                 <Button href="/contact/" variant="outline" size="lg">
                   Send an enquiry

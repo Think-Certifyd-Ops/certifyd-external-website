@@ -169,10 +169,10 @@ export default function CodeWordsPage() {
                   A saved QR screenshot is not enough.
                 </h2>
                 <p className="mt-5 leading-relaxed text-text-on-light-muted">
-                  The beta scans three fresh, sequential QR frames, connects to the matching Bluetooth service, and verifies a fresh challenge signed by the presenting phone. Both people then compare the same short code before accepting.
+                  CodeWords scans three fresh, sequential QR frames, connects to the matching Bluetooth service, and verifies a fresh challenge signed by the presenting phone. Both people then compare the same short code before accepting.
                 </p>
                 <div className="mt-7 rounded-sm border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950">
-                  Current beta limitation: the Bluetooth challenge is authenticated but not application-encrypted. It does not prove an exact distance, and a modified client or coordinated relay remains possible.
+                  Bluetooth limit: the challenge is authenticated but not application-encrypted. It does not prove an exact distance, and a modified client or coordinated relay remains possible.
                 </div>
               </div>
             </ScrollReveal>
@@ -318,14 +318,14 @@ export default function CodeWordsPage() {
             Add trust before you need to question it.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
-            Join the personal release with someone you trust, or talk to us about a controlled business pilot.
+            Get App Store availability updates, or talk to us about bringing the checking habit into your business.
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-4">
-            <Button href="/contact/?subject=CodeWords%20Personal%20release" variant="outline" size="lg">
-              Join the personal release
+            <Button href="/products/codewords/family/#early-access" variant="outline" size="lg">
+              Get App Store updates
             </Button>
-            <Button href="/contact/?subject=CodeWords%20Business%20pilot" variant="ghost" size="lg" className="text-white hover:text-navy">
-              Discuss a business pilot
+            <Button href="/contact/?subject=CodeWords%20for%20Business" variant="ghost" size="lg" className="text-white hover:text-navy">
+              Discuss CodeWords for business
             </Button>
           </div>
         </div>

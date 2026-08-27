@@ -77,7 +77,7 @@ export default function CodeWordsFamilyPage() {
       eyebrow="CodeWords for Personal Use"
       headline="When someone you trust asks for help, check somewhere safer."
       intro="Connect with family and close friends while you are together. If an unusual call, text, or email arrives later, check the exact request through their trusted phone before you act."
-      primaryLabel="Join the personal release"
+      primaryLabel="Get App Store updates"
       secondaryLabel="See CodeWords for business"
       secondaryHref="/products/codewords/business/"
       proofNote="CodeWords confirms an enrolled phone and a specific request. It does not identify a voice, message, or video on its own."

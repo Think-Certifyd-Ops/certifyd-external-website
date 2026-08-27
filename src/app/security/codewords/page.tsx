@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "Certifyd CodeWords Security",
   description: "What CodeWords checks, how direct device setup works and where the current security limits are.",
   alternates: { canonical: "/security/codewords/" },
+  openGraph: {
+    title: "Certifyd CodeWords Security",
+    description: "What CodeWords checks, how direct device setup works and where the current security limits are.",
+    url: "https://www.certifyd.io/security/codewords/",
+  },
 };
 
 const controls = [
@@ -46,7 +51,7 @@ export default function CodeWordsSecurityPage() {
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-on-dark-muted">
             CodeWords adds a separate signed challenge when a call, message or email asks you to do something sensitive. It reduces reliance on the channel that may be under attack.
           </p>
-          <p className="mt-6 text-sm text-text-on-dark-muted">Protocol summary updated 11 August 2026 • Current beta assurance</p>
+          <p className="mt-6 text-sm text-text-on-dark-muted">Protocol summary updated 27 August 2026 • Current release assurance</p>
         </div>
       </section>
 
@@ -88,7 +93,7 @@ export default function CodeWordsSecurityPage() {
           <div className="mt-8 rounded-sm border border-certifyd-blue/35 bg-certifyd-blue/10 p-8">
             <h2 className="font-heading text-2xl font-bold text-text-on-dark">What Bluetooth proves today</h2>
             <p className="mt-4 max-w-4xl leading-relaxed text-text-on-dark-muted">
-              The beta exchanges a fresh application-authenticated Bluetooth challenge tied to the LiveQR session. The challenge is signed, but it is not application-encrypted and the phones do not need to pair. This makes passive copying and forgery less useful, but it does not prove an exact distance. A modified app or coordinated relay can still attack the ceremony. The comparison words and number help both people detect a mismatched session before accepting.
+              CodeWords exchanges a fresh application-authenticated Bluetooth challenge tied to the LiveQR session. The challenge is signed, but it is not application-encrypted and the phones do not need to pair. This makes passive copying and forgery less useful, but it does not prove an exact distance. A modified app or coordinated relay can still attack the ceremony. The comparison words and number help both people detect a mismatched session before accepting.
             </p>
           </div>
         </div>
