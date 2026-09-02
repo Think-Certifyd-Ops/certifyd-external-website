@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Certifyd for Care Providers",
     description:
       "DBS, Care Certificate, training - verified live, every shift. CQC-ready audit trail without the chase.",
-    url: "https://www.certifyd.io/industries/care",
+    url: "https://certifyd.io/industries/care",
   },
 };
 

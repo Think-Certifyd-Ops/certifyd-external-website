@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Certifyd Agent Watch | AI Tool and OAuth Access Review",
     description:
       "Turn third-party access metadata into an AI tool register and reviewable access map.",
-    url: "https://www.certifyd.io/products/agent-watch/",
+    url: "https://certifyd.io/products/agent-watch/",
   },
 };
 

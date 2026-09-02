@@ -43,7 +43,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${page.metaTitle} | Certifyd`,
       description: page.metaDescription,
-      url: `https://www.certifyd.io/for/${slug}/`,
+      url: `https://certifyd.io/for/${slug}/`,
     },
   };
 }

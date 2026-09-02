@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "CodeWords for Personal Use | Meet Once. Check Any Time.",
     description:
       "Give family and close friends a separate way to check unusual calls, messages, money requests, and emergencies.",
-    url: "https://www.certifyd.io/products/codewords/family/",
+    url: "https://certifyd.io/products/codewords/family/",
   },
 };
 

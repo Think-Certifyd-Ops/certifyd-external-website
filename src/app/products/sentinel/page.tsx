@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Certifyd Sentinel — Compliant Meeting Recording & AI Monitoring",
     description:
       "Every meeting. Recorded. Compliant. Searchable. Regulatory compliance infrastructure for regulated firms.",
-    url: "https://www.certifyd.io/products/sentinel/",
+    url: "https://certifyd.io/products/sentinel/",
   },
 };
 

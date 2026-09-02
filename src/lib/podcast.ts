@@ -14,9 +14,9 @@ export const SHOW_CONFIG = {
     "Gone Phishing is the podcast where we talk to the people behind cybersecurity, identity, and trust. Real stories from practitioners — not vendor pitches.",
   category: "Technology",
   language: "en-gb",
-  imageUrl: "https://www.certifyd.io/podcast/cover-art.jpg",
-  feedUrl: "https://www.certifyd.io/podcast/feed.xml",
-  siteUrl: "https://www.certifyd.io/podcast/",
+  imageUrl: "https://certifyd.io/podcast/cover-art.jpg",
+  feedUrl: "https://certifyd.io/podcast/feed.xml",
+  siteUrl: "https://certifyd.io/podcast/",
   explicit: false,
 } as const;
 

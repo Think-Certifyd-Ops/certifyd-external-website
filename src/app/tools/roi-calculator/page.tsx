@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Identity Verification ROI Calculator | Certifyd",
     description:
       "Calculate your projected savings from switching to automated identity verification.",
-    url: "https://www.certifyd.io/tools/roi-calculator/",
+    url: "https://certifyd.io/tools/roi-calculator/",
   },
 };
 

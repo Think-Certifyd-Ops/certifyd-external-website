@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Certifyd Portal | One Live Worker Compliance Record",
     description:
       "Collect worker evidence, track expiries and produce review-ready records without another spreadsheet.",
-    url: "https://www.certifyd.io/products/portal/",
+    url: "https://certifyd.io/products/portal/",
   },
 };
 

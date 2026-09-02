@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Security & Trust — How Certifyd Protects Your Data",
     description:
       "Device-bound keys, signed events, recovery controls and clear security limitations.",
-    url: "https://www.certifyd.io/security/",
+    url: "https://certifyd.io/security/",
   },
 };
 

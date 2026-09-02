@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service | Certifyd",
     description: "The terms that apply when you use Certifyd CodeWords.",
-    url: "https://www.certifyd.io/terms/",
+    url: "https://certifyd.io/terms/",
   },
 };
 

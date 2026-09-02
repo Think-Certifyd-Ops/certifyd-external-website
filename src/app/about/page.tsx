@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "About Certifyd — Identity Verification Leadership Team",
     description:
       "Meet the team behind Certifyd. Deep experience building mission-critical infrastructure — now solving identity verification for every business.",
-    url: "https://www.certifyd.io/about/",
+    url: "https://certifyd.io/about/",
   },
 };
 

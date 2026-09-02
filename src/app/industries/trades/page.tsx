@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Trades & Physical Access — Verify Tradespeople Instantly",
     description:
       "Zero regulation for tradespeople entering your home in the UK. Certifyd changes that with instant identity verification.",
-    url: "https://www.certifyd.io/industries/trades/",
+    url: "https://certifyd.io/industries/trades/",
   },
 };
 

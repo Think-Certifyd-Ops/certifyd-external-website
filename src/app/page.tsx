@@ -3,7 +3,9 @@ import { ScrollReveal } from "@/components/marketing/ScrollReveal";
 import { homepageBody } from "./_marketing-html/homepage";
 
 export const metadata: Metadata = {
-  title: "Certifyd — Workers carry their credentials. Certifyd when it matters.",
+  title: {
+    absolute: "Certifyd — Workers carry their credentials. Certifyd when it matters.",
+  },
   description:
     "Live workforce compliance for care providers, NHS trusts, and staffing agencies. Two-way verification in seconds. Audit-ready, always.",
   alternates: { canonical: "/" },
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
     title: "Certifyd — Workers carry their credentials. Certifyd when it matters.",
     description:
       "Live workforce compliance for care providers, NHS trusts, and staffing agencies. Two-way verification in seconds. Audit-ready, always.",
-    url: "https://www.certifyd.io",
+    url: "https://certifyd.io",
   },
 };
 

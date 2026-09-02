@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "When Will You Get Audited? | Compliance Probability Calculator | Certifyd",
     description:
       "Based on Home Office enforcement data, sector analysis, and your risk profile — calculate your audit probability.",
-    url: "https://www.certifyd.io/tools/audit-probability/",
+    url: "https://certifyd.io/tools/audit-probability/",
   },
 };
 

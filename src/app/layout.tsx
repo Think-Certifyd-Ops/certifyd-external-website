@@ -22,7 +22,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.certifyd.io"),
+  metadataBase: new URL("https://certifyd.io"),
   title: {
     default:
       "Certifyd — Identity Verification for Businesses | Right-to-Work & Compliance",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Certifyd — Identity Verification for Businesses",
     description:
       "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
-    url: "https://www.certifyd.io",
+    url: "https://certifyd.io",
     siteName: "Certifyd",
     locale: "en_GB",
     type: "website",

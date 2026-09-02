@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "FWA Audit Readiness Score | Free Compliance Assessment | Certifyd",
     description:
       "15 questions. 2 minutes. Find out if your business would pass a Fair Work Agency inspection.",
-    url: "https://www.certifyd.io/tools/audit-readiness/",
+    url: "https://certifyd.io/tools/audit-readiness/",
   },
 };
 

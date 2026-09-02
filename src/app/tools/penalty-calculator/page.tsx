@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "RTW Penalty Exposure Calculator | Certifyd",
     description:
       "Calculate your worst-case Right to Work penalty exposure. Fines up to £60,000 per worker. 12,831 Home Office visits in 2025.",
-    url: "https://www.certifyd.io/tools/penalty-calculator/",
+    url: "https://certifyd.io/tools/penalty-calculator/",
   },
 };
 

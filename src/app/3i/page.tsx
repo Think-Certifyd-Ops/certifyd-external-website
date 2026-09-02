@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Identity Intelligence Infrastructure (3I) — Certifyd",
     description:
       "Graph-powered identity intelligence that sees what individual checks miss. Three layers. One intelligence engine.",
-    url: "https://www.certifyd.io/3i/",
+    url: "https://certifyd.io/3i/",
   },
 };
 

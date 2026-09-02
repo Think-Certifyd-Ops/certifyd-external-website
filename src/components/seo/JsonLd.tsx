@@ -1,6 +1,6 @@
 import { COMPANY, TEAM } from "@/lib/constants";
 
-const BASE_URL = "https://www.certifyd.io";
+const BASE_URL = "https://certifyd.io";
 
 export function OrganizationSchema() {
   const schema = {

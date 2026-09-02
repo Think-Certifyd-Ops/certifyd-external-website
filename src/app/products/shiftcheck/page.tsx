@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Certifyd ShiftCheck | Last-Mile Worker Identity Verification",
     description:
       "Connect the approved worker record to the person who arrives at the site.",
-    url: "https://www.certifyd.io/products/shiftcheck/",
+    url: "https://certifyd.io/products/shiftcheck/",
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Certifyd CodeWords | Check Somewhere Safer",
     description:
       "A trusted second channel for checking unusual requests before you act.",
-    url: "https://www.certifyd.io/products/codewords/",
+    url: "https://certifyd.io/products/codewords/",
   },
 };
 

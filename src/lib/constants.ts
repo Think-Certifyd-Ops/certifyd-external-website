@@ -18,7 +18,7 @@ export const COMPANY = {
   email: "team@certifyd.io",
   address: "Aldwych House, 71-91 Aldwych, London, England WC2B 4HN",
   linkedin: "https://www.linkedin.com/company/thinkcertifyd/",
-  website: "https://www.certifyd.io",
+  website: "https://certifyd.io",
 } as const;
 
 export const NAV_ITEMS: NavItem[] = [

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Certifyd Blog — Identity Verification & Compliance Insights",
     description:
       "Expert insights on identity verification, right-to-work compliance, and building trust in UK businesses.",
-    url: "https://www.certifyd.io/blog/",
+    url: "https://certifyd.io/blog/",
   },
 };
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "CodeWords for Business | Give Requests a Trusted Route Back",
     description:
       "Build trusted links inside your organisation and with suppliers and clients, then check sensitive requests before your team acts.",
-    url: "https://www.certifyd.io/products/codewords/business/",
+    url: "https://certifyd.io/products/codewords/business/",
   },
 };
 

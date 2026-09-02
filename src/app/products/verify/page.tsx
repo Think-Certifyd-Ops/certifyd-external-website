@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Certifyd Screen — Pre-Meeting Identity Verification for Recruiters",
     description:
       "Pre-screening for recruiters. Candidates verify identity before the interview. Selfie, RTW, sponsorship status — done before you join.",
-    url: "https://www.certifyd.io/products/verify/",
+    url: "https://certifyd.io/products/verify/",
   },
 };
 

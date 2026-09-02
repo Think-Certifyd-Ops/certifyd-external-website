@@ -32,7 +32,7 @@ export async function generateMetadata({
     openGraph: {
       title: episode.meta.title,
       description: episode.meta.description,
-      url: `https://www.certifyd.io/podcast/${slug}/`,
+      url: `https://certifyd.io/podcast/${slug}/`,
       type: "article",
       publishedTime: episode.meta.date,
     },
@@ -66,7 +66,7 @@ export default async function PodcastEpisodePage({ params }: PageProps) {
         slug={slug}
         date={meta.date}
         duration={meta.duration}
-        audioUrl={`https://www.certifyd.io${audioUrl}`}
+        audioUrl={`https://certifyd.io${audioUrl}`}
         guestName={meta.guest.name}
       />
       <BreadcrumbSchema

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Partners & Programmes — Certifyd",
     description:
       "Certifyd partners with leading technology programmes to accelerate identity verification innovation.",
-    url: "https://www.certifyd.io/partners/",
+    url: "https://certifyd.io/partners/",
   },
 };
 

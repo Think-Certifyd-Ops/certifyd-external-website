@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gone Phishing with Certifyd",
     description: SHOW_CONFIG.description,
-    url: "https://www.certifyd.io/podcast/",
+    url: "https://certifyd.io/podcast/",
   },
 };
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Certifyd for Recruitment Agencies",
     description:
       "Right to Work, DBS, references, qualifications - verified once, carried everywhere. REC-aligned audit trail.",
-    url: "https://www.certifyd.io/industries/recruitment",
+    url: "https://certifyd.io/industries/recruitment",
   },
 };
 

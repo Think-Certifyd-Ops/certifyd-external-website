@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Certifyd CodeWords Security",
     description: "What CodeWords checks, how direct device setup works and where the current security limits are.",
-    url: "https://www.certifyd.io/security/codewords/",
+    url: "https://certifyd.io/security/codewords/",
   },
 };
 

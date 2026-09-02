@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Turn the contract into the compliance plan",
     description:
       "A source-linked Contract Activation Pack for staffing, managed-service and regulated workforce suppliers.",
-    url: "https://www.certifyd.io/contract-activation/",
+    url: "https://certifyd.io/contract-activation/",
   },
 };
 

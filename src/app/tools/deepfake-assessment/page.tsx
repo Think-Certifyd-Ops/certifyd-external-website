@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Deepfake Vulnerability Assessment | Free Security Tool | Certifyd",
     description:
       "10 questions that reveal your business's exposure to AI-generated identity fraud. Free deepfake vulnerability assessment.",
-    url: "https://www.certifyd.io/tools/deepfake-assessment/",
+    url: "https://certifyd.io/tools/deepfake-assessment/",
   },
 };
 

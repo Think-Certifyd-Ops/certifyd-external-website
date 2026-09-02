@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Contact Certifyd — Book a Demo",
     description:
       "Book a demo to see how Certifyd's identity verification protects your recruitment, workforce, and compliance processes.",
-    url: "https://www.certifyd.io/contact/",
+    url: "https://certifyd.io/contact/",
   },
 };
 

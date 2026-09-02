@@ -31,7 +31,7 @@ export async function generateMetadata({
     openGraph: {
       title: post.meta.title,
       description: post.meta.excerpt,
-      url: `https://www.certifyd.io/blog/${slug}/`,
+      url: `https://certifyd.io/blog/${slug}/`,
       type: "article",
       publishedTime: post.meta.date,
       authors: [post.meta.author],

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Products | Certifyd Identity Infrastructure",
     description:
       "Six products covering worker compliance, sponsor licence workflows and identity verification.",
-    url: "https://www.certifyd.io/products/",
+    url: "https://certifyd.io/products/",
   },
 };
 

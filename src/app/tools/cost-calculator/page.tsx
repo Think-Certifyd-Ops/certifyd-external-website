@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "RTW Cost Calculator | Certifyd",
     description:
       "Calculate the true cost of manual Right to Work checks. 22 minutes per check. 12% error rate. See how much you could save.",
-    url: "https://www.certifyd.io/tools/cost-calculator/",
+    url: "https://certifyd.io/tools/cost-calculator/",
   },
 };
 

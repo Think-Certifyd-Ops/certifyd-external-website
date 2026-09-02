@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Certifyd for NHS Trusts",
     description:
       "The Staff Passport gap, trust-controlled. NMC, GMC, mandatory training - verified live, every shift. DSPT-aligned.",
-    url: "https://www.certifyd.io/industries/nhs",
+    url: "https://certifyd.io/industries/nhs",
   },
 };
 

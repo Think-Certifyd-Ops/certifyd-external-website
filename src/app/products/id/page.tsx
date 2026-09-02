@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Certifyd ID — Know Who's At Your Door",
     description:
       "Simple identity verification for anyone coming to your home. Scan their QR code. Know they're real.",
-    url: "https://www.certifyd.io/products/id/",
+    url: "https://certifyd.io/products/id/",
   },
 };
 

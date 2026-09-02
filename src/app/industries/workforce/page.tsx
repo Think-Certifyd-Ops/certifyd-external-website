@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Workforce Compliance for UK SMEs | Certifyd",
     description:
       "5.5 million UK SMEs face the same fines as FTSE 250 companies. Get audit-ready compliance without the HR headcount.",
-    url: "https://www.certifyd.io/industries/workforce/",
+    url: "https://certifyd.io/industries/workforce/",
   },
 };
 

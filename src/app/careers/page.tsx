@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Careers at Certifyd",
     description:
       "Join Certifyd and build identity verification infrastructure for UK businesses.",
-    url: "https://www.certifyd.io/careers/",
+    url: "https://certifyd.io/careers/",
   },
 };
 

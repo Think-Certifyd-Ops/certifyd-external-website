@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Certifyd CallCheck | Live Video-Call Challenge",
     description:
       "Add a live challenge and view-once evidence step to a high-risk video call.",
-    url: "https://www.certifyd.io/products/callcheck/",
+    url: "https://certifyd.io/products/callcheck/",
   },
 };
 
