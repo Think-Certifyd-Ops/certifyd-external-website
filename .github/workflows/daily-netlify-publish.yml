@@ -7,7 +7,27 @@ jobs:
   trigger-netlify-build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for blog changes
+        id: blog
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if git log --since="25 hours ago" --format=%H -- content/blog src/app/blog | head -n 1 | grep -q .; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No blog changes since the previous daily window; skipping Netlify."
+          fi
+
       - name: Validate build hook secret
+        if: steps.blog.outputs.changed == 'true'
         env:
           NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
         run: |
@@ -17,6 +37,7 @@ jobs:
           fi
 
       - name: Trigger Netlify build
+        if: steps.blog.outputs.changed == 'true'
         env:
           NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
         run: |
