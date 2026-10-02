@@ -423,28 +423,7 @@ export const homepageBody = String.raw`
   </section>
 
   <!-- ============================================================
-       §07 TESTIMONIAL - magazine editorial
-       ============================================================ -->
-  <section class="section testi grain" id="testi">
-    <div class="wrap">
-      <div class="testi__head reveal">
-        <p class="eyebrow">Testimonial</p>
-        <h2 class="h2" style="max-width:42rem;">Built for buyers who can't afford to get it wrong.</h2>
-      </div>
-      <div class="testi__inner reveal">
-        <div class="testi__mark" aria-hidden="true">❝</div>
-        <div>
-          <blockquote class="testi__q">
-            We rebuilt our agency-worker compliance process around Certifyd. The audit trail used to take a week to pull together. Now it's one click.
-          </blockquote>
-          <p class="testi__attr">Ops Director · regional care group</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       §08 CLOSE - full-bleed blue
+       §07 CLOSE - full-bleed blue
        ============================================================ -->
   <section class="section close" id="close">
     <div class="wrap close__inner">
