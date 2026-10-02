@@ -37,64 +37,16 @@ export const homepageBody = String.raw`
         </div>
       </div>
 
-      <!-- Right: clean compliance dashboard mockup -->
-      <aside class="hero__visual" aria-label="Compliance dashboard preview">
-        <div class="dash">
-          <div class="dash__head">
-            <div>
-              <div class="dash__title">Compliance dashboard</div>
-              <div class="dash__sub">Riverside Care Home · today</div>
-            </div>
-            <div class="dash__live"><span class="dot" aria-hidden="true"></span> Live</div>
+      <!-- Right: real product screens from the current Certifyd platform -->
+      <aside class="hero__visual" aria-label="Certifyd platform workspace and reports">
+        <div class="product-shot">
+          <div class="product-shot__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
           </div>
-
-          <div class="dash__stats">
-            <div class="dash__stat dash__stat--cert">
-              <div class="dash__statn">16</div>
-              <div class="dash__statl">Certifyd today</div>
-            </div>
-            <div class="dash__stat dash__stat--warn">
-              <div class="dash__statn">02</div>
-              <div class="dash__statl">Expiring</div>
-            </div>
-            <div class="dash__stat dash__stat--ok">
-              <div class="dash__statn">93<span>%</span></div>
-              <div class="dash__statl">Compliance</div>
-            </div>
+          <div class="product-shot__desktop">
+            <img src="/images/platform/certifyd-platform-onboarding.png" alt="Certifyd platform showing a care organisation defining workforce roles and evidence requirements" width="1440" height="1144" />
           </div>
-
-          <div class="dash__bar" aria-hidden="true">
-            <div class="dash__barfill" style="width:93%"></div>
-          </div>
-
-          <div class="dash__list">
-            <div class="dash__row">
-              <div class="dash__rowname">Sarah Johnson</div>
-              <div class="dash__rowmeta">DBS · Manual Handling · Safeguarding</div>
-              <div class="dash__rowstatus dash__rowstatus--cert">
-                <span class="dash__statlbl">Certifyd</span>
-                <span class="dash__stattime">08:14</span>
-              </div>
-            </div>
-            <div class="dash__row">
-              <div class="dash__rowname">Anil Patel</div>
-              <div class="dash__rowmeta">DBS expires in 14 days</div>
-              <div class="dash__rowstatus dash__rowstatus--warn">Alert</div>
-            </div>
-            <div class="dash__row">
-              <div class="dash__rowname">Lucy Owens</div>
-              <div class="dash__rowmeta">RTW · Safeguarding · First Aid</div>
-              <div class="dash__rowstatus dash__rowstatus--cert">
-                <span class="dash__statlbl">Certifyd</span>
-                <span class="dash__stattime">09:02</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="dash__cta">
-            <span>Generate audit report</span>
-            <span aria-hidden="true">→</span>
-          </div>
+          <img class="product-shot__mobile" src="/images/platform/certifyd-platform-reports-mobile.png" alt="Certifyd mobile reports screen with audit pack and compliance report options" width="375" height="1665" />
         </div>
       </aside>
 
@@ -474,7 +426,7 @@ export const homepageBody = String.raw`
     <div class="wrap">
       <div class="testi__head reveal">
         <p class="eyebrow">Testimonial</p>
-        <h2 class="h2" style="color:white; max-width:42rem;">Built for buyers who can't afford to get it wrong.</h2>
+        <h2 class="h2" style="max-width:42rem;">Built for buyers who can't afford to get it wrong.</h2>
       </div>
       <div class="testi__inner reveal">
         <div class="testi__mark" aria-hidden="true">❝</div>

@@ -34,7 +34,7 @@ const resourceLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-navy border-t border-navy-border">
+    <footer className="border-t border-[#c8dcf4] bg-[#e8f3ff]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 gap-10 py-12 sm:grid-cols-2 lg:grid-cols-6 lg:gap-8 lg:py-16">
@@ -42,27 +42,27 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-2">
             <Link href="/" className="inline-block">
               <img
-                src="/logos/certifyd-logo-white.svg"
+                src="/logos/certifyd-logo-blue-black.svg"
                 alt={COMPANY.name}
                 className="h-8 w-auto"
                 style={{ width: "120px" }}
               />
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-text-on-dark-muted">
+            <p className="mt-4 text-sm leading-relaxed text-[#50627a]">
               {COMPANY.tagline}
             </p>
             <Link href="/partners/" className="mt-6 inline-block">
               <img
                 src="/logos/partners/nvidia-inception.png"
                 alt="NVIDIA Inception Programme Member"
-                className="h-12 w-auto rounded opacity-70 transition-opacity hover:opacity-100"
+                className="h-12 w-auto rounded opacity-80 transition-opacity hover:opacity-100"
               />
             </Link>
           </div>
 
           {/* Column 2: Solutions */}
           <div>
-            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
+            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-[#35506f]">
               Solutions
             </h3>
             <ul className="space-y-3">
@@ -70,7 +70,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-text-on-dark-muted transition-colors hover:text-white"
+                    className="text-sm text-[#50627a] transition-colors hover:text-[#0a1224]"
                   >
                     {link.label}
                   </Link>
@@ -81,7 +81,7 @@ export function Footer() {
 
           {/* Column 3: Industries */}
           <div>
-            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
+            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-[#35506f]">
               Industries
             </h3>
             <ul className="space-y-3">
@@ -89,7 +89,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-text-on-dark-muted transition-colors hover:text-white"
+                    className="text-sm text-[#50627a] transition-colors hover:text-[#0a1224]"
                   >
                     {link.label}
                   </Link>
@@ -100,7 +100,7 @@ export function Footer() {
 
           {/* Column 4: Company */}
           <div>
-            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
+            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-[#35506f]">
               Company
             </h3>
             <ul className="space-y-3">
@@ -108,7 +108,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-text-on-dark-muted transition-colors hover:text-white"
+                    className="text-sm text-[#50627a] transition-colors hover:text-[#0a1224]"
                   >
                     {link.label}
                   </Link>
@@ -119,7 +119,7 @@ export function Footer() {
 
           {/* Column 5: Resources */}
           <div>
-            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
+            <h3 className="mb-4 font-heading text-xs font-semibold uppercase tracking-wider text-[#35506f]">
               Resources
             </h3>
             <ul className="space-y-3">
@@ -127,7 +127,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-text-on-dark-muted transition-colors hover:text-white"
+                    className="text-sm text-[#50627a] transition-colors hover:text-[#0a1224]"
                   >
                     {link.label}
                   </Link>
@@ -135,14 +135,14 @@ export function Footer() {
               ))}
             </ul>
 
-            <h3 className="mb-4 mt-8 font-heading text-xs font-semibold uppercase tracking-wider text-text-on-dark-muted">
+            <h3 className="mb-4 mt-8 font-heading text-xs font-semibold uppercase tracking-wider text-[#35506f]">
               Contact
             </h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href={`mailto:${COMPANY.email}`}
-                  className="text-sm text-text-on-dark-muted transition-colors hover:text-white"
+                  className="text-sm text-[#50627a] transition-colors hover:text-[#0a1224]"
                 >
                   {COMPANY.email}
                 </a>
@@ -152,7 +152,7 @@ export function Footer() {
                   href={COMPANY.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-text-on-dark-muted transition-colors hover:text-white"
+                  className="inline-flex items-center gap-2 text-sm text-[#50627a] transition-colors hover:text-[#0a1224]"
                 >
                   <svg
                     className="h-4 w-4"
@@ -170,35 +170,35 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-navy-border py-6">
+        <div className="border-t border-[#c8dcf4] py-6">
           <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
-            <p className="text-xs text-text-on-dark-muted">
+            <p className="text-xs text-[#50627a]">
               &copy; {new Date().getFullYear()} Certifyd Ltd. All rights
               reserved.
             </p>
-            <div className="flex items-center gap-4 text-xs text-text-on-dark-muted">
+            <div className="flex items-center gap-4 text-xs text-[#50627a]">
               <Link
                 href="/privacy/"
-                className="transition-colors hover:text-white"
+                className="transition-colors hover:text-[#0a1224]"
               >
                 Privacy Policy
               </Link>
-              <span className="text-navy-border">|</span>
+              <span className="text-[#aac3df]">|</span>
               <Link
                 href="/terms/"
-                className="transition-colors hover:text-white"
+                className="transition-colors hover:text-[#0a1224]"
               >
                 Terms of Service
               </Link>
-              <span className="text-navy-border">|</span>
+              <span className="text-[#aac3df]">|</span>
               <Link
                 href="/cookies/"
-                className="transition-colors hover:text-white"
+                className="transition-colors hover:text-[#0a1224]"
               >
                 Cookie Policy
               </Link>
             </div>
-            <p className="text-xs text-text-on-dark-muted">
+            <p className="text-xs text-[#50627a]">
               {COMPANY.address}
             </p>
           </div>

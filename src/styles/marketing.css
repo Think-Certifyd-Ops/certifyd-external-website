@@ -2,10 +2,10 @@
        TOKENS - brand palette unchanged. Type scale tight. Contrast strict.
        ==================================================================== */
     :root {
-      --blue:        #0059FF;
-      --blue-light:  #3380FF;
-      --blue-dark:   #0044CC;
-      --blue-soft:   #E7EEFF;
+      --blue:        #0A64F7;
+      --blue-light:  #55A4FF;
+      --blue-dark:   #0753CE;
+      --blue-soft:   #E8F3FF;
       /* Accessible blue for text on dark backgrounds - 9:1 contrast on --navy */
       --blue-on-dark: #7EB3FF;
 
@@ -15,16 +15,16 @@
       --navy-3:       #1B2A52;
       --navy-line:    #243463;
 
-      --warm-white:   #F6F3EE;
-      --warm-cream:   #F1EBE0;
-      --warm-line:    #E2DCCF;
-      --warm-rule:    #C3B9A5;
+      --warm-white:   #F8FBFF;
+      --warm-cream:   #EDF5FF;
+      --warm-line:    #D8E6F7;
+      --warm-rule:    #B9D0EB;
 
       --ink:          #0A1224;
       --ink-muted:    #2E3445; /* AA on warm-white at 17px+ */
       --ink-soft:     #5C5347; /* used for tertiary text and rules only */
 
-      --paper:        #F6F3EE;
+      --paper:        #F8FBFF;
 
       --on-dark:        #F5F7FB;
       --on-dark-muted:  #B6BFD0;
@@ -2106,3 +2106,217 @@
       transition: top .2s ease;
     }
     .skip:focus { top: 0; box-shadow: var(--focus); }
+
+    /* ====================================================================
+       2026 LIGHT PRODUCT DIRECTION
+       The public site now takes its palette and proof directly from the
+       current Certifyd workspace: clear white surfaces, pale blue selection
+       states and the vivid blue used for decisive actions.
+       ==================================================================== */
+    .nav {
+      background: color-mix(in srgb, white 90%, transparent);
+      border-bottom-color: #cfe0f4;
+      box-shadow: 0 10px 30px -26px rgba(12, 20, 37, 0.45);
+    }
+    .nav .brand-mark svg path { fill: var(--ink); }
+    .nav__links,
+    .nav__droptrigger { color: #516179; }
+    .nav__links a:hover,
+    .nav__droptrigger:hover,
+    .nav__droptrigger[aria-expanded="true"] { color: var(--ink); }
+    .nav__dropmenu {
+      background: white;
+      border-color: #cfe0f4;
+      box-shadow: 0 24px 60px -24px rgba(26, 72, 128, 0.35);
+    }
+    .nav__dropitem { color: #516179; }
+    .nav__dropitem:hover { background: var(--blue-soft); color: var(--ink); }
+
+    .hero {
+      background:
+        radial-gradient(circle at 87% 14%, rgba(255,255,255,0.9), transparent 31rem),
+        linear-gradient(135deg, #dceeff 0%, #c8e2ff 56%, #a9d2ff 100%);
+      color: var(--ink);
+      padding-block: 5.2rem 5.8rem;
+    }
+    .hero.grain::after { mix-blend-mode: multiply; opacity: 0.22; }
+    .hero .aurora::before,
+    .hero .aurora::after {
+      background:
+        radial-gradient(ellipse 48% 42% at 82% 28%, rgba(10,100,247,0.14), transparent 64%),
+        radial-gradient(ellipse 52% 42% at 8% 84%, rgba(255,255,255,0.64), transparent 68%);
+      mix-blend-mode: normal;
+    }
+    .hero__grid-overlay {
+      background-image:
+        linear-gradient(rgba(10,100,247,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10,100,247,0.08) 1px, transparent 1px);
+      mask-image: linear-gradient(to right, black, transparent 76%);
+    }
+    .hero .eyebrow,
+    .hero .ink-accent { color: #0753ce; }
+    .hero .eyebrow::before { background: #0753ce; }
+    .hero__title { color: var(--ink); }
+    .hero__sub { color: #263a55; font-weight: 400; }
+    .hero .btn--outline {
+      color: var(--ink);
+      border-color: rgba(10,18,36,0.45);
+      background: rgba(255,255,255,0.28);
+    }
+    .hero .btn--outline:hover {
+      background: white;
+      border-color: var(--ink);
+    }
+
+    .product-shot {
+      position: relative;
+      width: min(720px, 100%);
+      margin-inline: auto;
+      padding: 11px 11px 0;
+      border: 1px solid rgba(71, 111, 157, 0.28);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.88);
+      box-shadow:
+        0 34px 70px -32px rgba(17, 61, 113, 0.5),
+        0 2px 0 rgba(255,255,255,0.9) inset;
+      transform: rotate(0.35deg);
+    }
+    .product-shot__chrome {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding-inline: 4px;
+    }
+    .product-shot__chrome span {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #aac6e4;
+    }
+    .product-shot__chrome span:first-child { background: var(--blue); }
+    .product-shot__desktop {
+      height: clamp(330px, 35vw, 470px);
+      overflow: hidden;
+      border: 1px solid #d5e2f1;
+      border-radius: 9px 9px 0 0;
+      background: #f5f8fc;
+    }
+    .product-shot__desktop img {
+      width: 100%;
+      height: auto;
+    }
+    .product-shot__mobile {
+      position: absolute;
+      right: -3%;
+      bottom: -9%;
+      width: clamp(112px, 20%, 150px);
+      height: clamp(250px, 29vw, 345px);
+      object-fit: cover;
+      object-position: top;
+      border: 7px solid white;
+      border-radius: 20px;
+      box-shadow: 0 24px 45px -19px rgba(24, 58, 102, 0.62);
+      background: white;
+    }
+    @media (max-width: 1099px) {
+      .hero__visual { width: min(820px, 96%); margin-inline: auto; }
+      .product-shot__desktop { height: clamp(360px, 66vw, 570px); }
+      .product-shot__mobile { width: clamp(105px, 18%, 145px); height: clamp(240px, 42vw, 340px); }
+    }
+    @media (max-width: 620px) {
+      .hero { padding-block: 3.8rem 4.6rem; }
+      .hero__inner { gap: 3rem; }
+      .product-shot { width: 97%; padding: 7px 7px 0; border-radius: 12px; }
+      .product-shot__chrome { height: 22px; }
+      .product-shot__desktop { height: 245px; }
+      .product-shot__desktop img { width: 135%; max-width: none; }
+      .product-shot__mobile { right: -2%; bottom: -12%; width: 92px; height: 214px; border-width: 5px; border-radius: 15px; }
+    }
+
+    .trustbar {
+      background: var(--blue);
+      color: white;
+      border-bottom-color: color-mix(in srgb, var(--blue-dark) 45%, transparent);
+    }
+    .trustbar__row { color: rgba(255,255,255,0.9); }
+    .trustbar__row span.sep { background: white; }
+
+    .commit,
+    .walk,
+    .compare { background: white; }
+    .pull { background: var(--blue-soft); border-color: #c7def8; }
+
+    .ind {
+      background: linear-gradient(180deg, #e8f3ff 0%, #f5faff 100%);
+      color: var(--ink);
+    }
+    .ind.grain::after,
+    .testi.grain::after { mix-blend-mode: multiply; opacity: 0.18; }
+    .ind .eyebrow,
+    .testi .eyebrow { color: var(--blue); }
+    .ind .eyebrow::before,
+    .testi .eyebrow::before { background: var(--blue); }
+    .ind__card {
+      background: rgba(255,255,255,0.82);
+      border-color: #c8dcf4;
+      box-shadow: 0 18px 44px -36px rgba(24, 76, 137, 0.7);
+    }
+    .ind__card:hover {
+      background: white;
+      border-color: var(--blue-light);
+      box-shadow: 0 28px 55px -34px rgba(10,100,247,0.55);
+    }
+    .ind__h { color: var(--ink); }
+    .ind__p { color: var(--ink-muted); }
+    .ind__stat { color: #243752; }
+    .ind__stat b { color: var(--blue); }
+    .ind__cta { color: var(--blue-dark); border-color: #cbdcf0; }
+    .ind__tag { color: var(--blue-dark); }
+    .ind__tag::after { background: #c7dcf4; }
+
+    .stack {
+      background: linear-gradient(135deg, #0a64f7 0%, #438fe9 100%);
+      color: white;
+    }
+    .stack.grain::after { mix-blend-mode: soft-light; opacity: 0.2; }
+    .stack .eyebrow,
+    .stack .stack__title,
+    .stack .stack__title b { color: white; }
+    .stack .eyebrow::before { background: white; }
+    .stack .lead { color: white; }
+    .passport__rings,
+    .passport__rings::before,
+    .passport__rings::after { border-color: rgba(255,255,255,0.38); }
+    .lyr {
+      background: rgba(255,255,255,0.95);
+      border-color: rgba(255,255,255,0.75);
+      box-shadow: 0 20px 35px -18px rgba(1,35,89,0.55);
+    }
+    .lyr__k,
+    .lyr__s { color: #52637a; }
+    .lyr__k b { color: var(--blue-dark); }
+    .lyr__h { color: var(--ink); }
+    .seal { background: white; border-color: white; }
+    .seal__t { color: var(--blue-dark); }
+    .seal__t small { color: #52637a; }
+    .stack__ex { border-color: rgba(255,255,255,0.45); }
+    .stack__exhead,
+    .stack__exrow b,
+    .stack__exrow span { color: white; }
+    .stack__exrow { border-color: rgba(255,255,255,0.35); }
+
+    .sectors { background: #edf5ff; border-color: #cfe1f5; }
+
+    .testi {
+      background: #ddebff;
+      color: var(--ink);
+    }
+    .testi .h2,
+    .testi__q { color: var(--ink); }
+    .testi__mark { color: var(--blue); }
+    .testi__attr { color: #4d6078; border-color: #bcd2ec; }
+
+    .close {
+      background: linear-gradient(135deg, #075fe9 0%, #2f8af0 100%);
+    }
