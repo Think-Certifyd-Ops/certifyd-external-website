@@ -46,7 +46,10 @@ export const homepageBody = String.raw`
           <div class="product-shot__desktop">
             <img src="/images/platform/certifyd-platform-onboarding.png" alt="Certifyd platform showing a care organisation defining workforce roles and evidence requirements" width="1440" height="1144" />
           </div>
-          <img class="product-shot__mobile" src="/images/platform/certifyd-platform-reports-mobile.png" alt="Certifyd mobile reports screen with audit pack and compliance report options" width="375" height="1665" />
+          <div class="product-shot__phone">
+            <span class="product-shot__speaker" aria-hidden="true"></span>
+            <img src="/images/platform/certifyd-platform-reports-mobile.png" alt="Certifyd mobile reports screen with audit pack and compliance report options" width="375" height="1665" />
+          </div>
         </div>
       </aside>
 
