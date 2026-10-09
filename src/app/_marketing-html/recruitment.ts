@@ -518,7 +518,7 @@ export const recruitmentBody = String.raw`
         <dd>If it's not a fit for your placements, no follow-up. We mean it.</dd>
       </dl>
     </div>
-  </section>
+  <p class="lead" style="max-width:70ch;margin:2rem auto">Recruitment and staffing agencies can connect worker evidence to role requirements, placements and the records their team reviews.</p></section>
 
   <!-- FOOTER -->
 `;

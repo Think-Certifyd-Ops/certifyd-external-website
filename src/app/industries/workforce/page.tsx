@@ -69,7 +69,7 @@ export default function WorkforcePage() {
 
       <RelatedContent
         solutions={[
-          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd Portal", href: "/platform/" },
           { label: "Certifyd CodeWords", href: "/products/codewords/" },
           { label: "Certifyd Screen", href: "/products/verify/" },
         ]}

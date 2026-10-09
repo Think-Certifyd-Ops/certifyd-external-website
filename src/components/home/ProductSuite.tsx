@@ -9,7 +9,7 @@ const PRODUCTS = [
     name: "Portal",
     description: "Right to Work compliance for SMEs. Audit-ready in minutes, not months.",
     cta: "Start free trial",
-    href: "/products/portal/",
+    href: "/platform/",
     dark: true,
     span: "md:col-span-7",
   },

@@ -35,7 +35,7 @@ export function Hero() {
             <Button href="/contact/" size="lg">
               Book a demo
             </Button>
-            <Button href="/products/" variant="outline" size="lg">
+            <Button href="/platform/" variant="outline" size="lg">
               See solutions
             </Button>
           </div>

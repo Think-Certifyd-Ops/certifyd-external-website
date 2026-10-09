@@ -311,7 +311,7 @@ export default function PortalDemoPage() {
   /* ── Email gate ── */
   if (!gateSubmitted) {
     return (
-      <BrowserFrame url="portal.certifyd.io" backHref="/products/portal/" backLabel="Back to Certifyd Portal">
+      <BrowserFrame url="portal.certifyd.io" backHref="/platform/" backLabel="Back to Certifyd Portal">
         <div className="bg-warm-white min-h-[60vh] flex items-center justify-center p-6">
           <div className="max-w-md w-full text-center">
             <div className="w-12 h-12 rounded-full bg-certifyd-blue/10 flex items-center justify-center mx-auto mb-6">
@@ -357,7 +357,7 @@ export default function PortalDemoPage() {
   }
 
   return (
-    <BrowserFrame url="portal.certifyd.io" backHref="/products/portal/" backLabel="Back to Certifyd Portal">
+    <BrowserFrame url="portal.certifyd.io" backHref="/platform/" backLabel="Back to Certifyd Portal">
       <div className="bg-warm-white">
       {/* Top bar */}
       <div className="bg-navy border-b border-navy-border">

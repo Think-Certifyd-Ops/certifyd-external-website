@@ -518,7 +518,7 @@ export const careBody = String.raw`
         <dd>If it's not a fit for your homes, no follow-up. We mean it.</dd>
       </dl>
     </div>
-  </section>
+  <p class="lead" style="max-width:70ch;margin:2rem auto">Care homes and domiciliary care teams can define role requirements, collect worker evidence and review the records shared for work.</p></section>
 
   <!-- FOOTER -->
 `;

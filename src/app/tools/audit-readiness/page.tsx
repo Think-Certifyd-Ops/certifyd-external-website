@@ -144,7 +144,7 @@ export default function AuditReadinessPage() {
             <Button href="/contact/" size="lg">
               Book a demo
             </Button>
-            <Button href="/products/portal/" size="lg" variant="outline">
+            <Button href="/platform/" size="lg" variant="outline">
               Learn about Portal
             </Button>
           </div>

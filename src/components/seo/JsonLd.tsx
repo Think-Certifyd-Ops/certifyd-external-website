@@ -42,7 +42,7 @@ export function WebSiteSchema() {
     name: COMPANY.name,
     url: BASE_URL,
     description:
-      "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready.",
+      "Workforce compliance software for managing role requirements, worker credentials, company records, expiry dates and site attendance.",
   };
 
   return (

@@ -684,13 +684,13 @@ export default function CertifydScreenPage() {
 
       <RelatedContent
         solutions={[
-          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd Portal", href: "/platform/" },
           { label: "Certifyd Sentinel", href: "/products/sentinel/" },
           { label: "Certifyd CodeWords", href: "/products/codewords/" },
         ]}
         articles={[
           { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
-          { label: "Pre-Screening Best Practices", href: "/blog/what-are-right-to-work-checks/" },
+          { label: "Pre-Screening Best Practices", href: "/blog/right-to-work-check-documents-list/" },
         ]}
         resources={[
           { label: "UK Right to Work Checks", href: "https://www.gov.uk/government/publications/right-to-work-checks-employers-guide", external: true },
@@ -701,7 +701,7 @@ export default function CertifydScreenPage() {
         title="Stop wasting the first 10 minutes of every interview."
         href="https://recruiter.certifyd.io"
         secondaryLabel="See all products"
-        secondaryHref="/products/"
+        secondaryHref="/platform/"
       />
     </>
   );

@@ -1,0 +1,10 @@
+{
+  "index": "/",
+  "platform": "/platform/",
+  "records": "/platform/records/",
+  "reduce-compliance-risk": "/outcomes/reduce-compliance-risk/",
+  "import-compliance-records": "/outcomes/import-compliance-records/",
+  "reduce-compliance-admin": "/outcomes/reduce-compliance-admin/",
+  "verified-worker-check-in": "/outcomes/verified-worker-check-in/",
+  "portable-worker-credentials": "/outcomes/portable-worker-credentials/"
+}

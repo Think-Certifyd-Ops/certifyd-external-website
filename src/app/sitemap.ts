@@ -51,7 +51,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${BASE_URL}/terms`,
-      lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
     },
@@ -237,5 +236,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...forPages, ...blogPosts, ...podcastIndex, ...podcastEpisodes];
+  const entries = [...staticPages, ...forPages, ...blogPosts, ...podcastIndex, ...podcastEpisodes];
+  const retired = new Set(["/products/", "/products/portal/", "/products/shiftcheck/", "/for/care-homes/", "/for/domiciliary-care/", "/for/recruitment-agencies/", "/for/staffing-agencies/"]);
+  const added = ["/platform/", "/platform/records/", "/outcomes/reduce-compliance-risk/", "/outcomes/import-compliance-records/", "/outcomes/reduce-compliance-admin/", "/outcomes/verified-worker-check-in/", "/outcomes/portable-worker-credentials/"];
+  const all = [...entries, ...added.map(path => ({url: BASE_URL + path, changeFrequency: "monthly" as const, priority: 0.8}))];
+  return all.map(entry => ({...entry, url: entry.url.replace(/\/?$/, "/")})).filter(entry => !retired.has(new URL(entry.url).pathname));
 }

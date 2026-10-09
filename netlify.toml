@@ -37,94 +37,197 @@
   to = "/.netlify/functions/waitlist"
   status = 200
 
-# ── Redirects ──────────────────────────────────────────────
-# Removed pages
+
+# Exact permanent redirects. Keep at least one year after launch.
+
+[[redirects]]
+  from = "/products"
+  to = "/platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/"
+  to = "/platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/portal"
+  to = "/platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/portal/"
+  to = "/platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/shiftcheck"
+  to = "/outcomes/verified-worker-check-in/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/shiftcheck/"
+  to = "/outcomes/verified-worker-check-in/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/care-homes"
+  to = "/industries/care/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/care-homes/"
+  to = "/industries/care/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/domiciliary-care"
+  to = "/industries/care/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/domiciliary-care/"
+  to = "/industries/care/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/recruitment-agencies"
+  to = "/industries/recruitment/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/recruitment-agencies/"
+  to = "/industries/recruitment/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/staffing-agencies"
+  to = "/industries/recruitment/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/staffing-agencies/"
+  to = "/industries/recruitment/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/updates"
   to = "/blog/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/updates/"
   to = "/blog/"
   status = 301
+  force = true
 
-# Old blog post → new URL (matching content imported)
 [[redirects]]
   from = "/blog/whos-really-at-your-door-hidden-risk-letting-strangers-into-home"
   to = "/blog/whos-really-at-your-door/"
   status = 301
+  force = true
 
-# ── Solutions → Products redirects ─────────────────────────
+[[redirects]]
+  from = "/blog/whos-really-at-your-door-hidden-risk-letting-strangers-into-home/"
+  to = "/blog/whos-really-at-your-door/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/solutions"
+  to = "/platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/solutions/"
+  to = "/platform/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/solutions/person"
   to = "/products/codewords/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/solutions/person/"
   to = "/products/codewords/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/solutions/business"
-  to = "/products/portal/"
+  to = "/platform/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/solutions/business/"
-  to = "/products/portal/"
+  to = "/platform/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/solutions/compliance"
-  to = "/products/portal/"
+  to = "/platform/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/solutions/compliance/"
-  to = "/products/portal/"
+  to = "/platform/"
   status = 301
+  force = true
 
-[[redirects]]
-  from = "/solutions/*"
-  to = "/products/"
-  status = 301
-
-# ── RTW → Portal redirect ─────────────────────────────────
 [[redirects]]
   from = "/rtw"
-  to = "/products/portal/"
+  to = "/platform/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/rtw/"
-  to = "/products/portal/"
+  to = "/platform/"
   status = 301
+  force = true
 
-# ── Onboarding → Home redirects ───────────────────────────
 [[redirects]]
   from = "/onboarding/person"
-  to = "/"
+  to = "/outcomes/portable-worker-credentials/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/onboarding/person/"
-  to = "/"
+  to = "/outcomes/portable-worker-credentials/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/onboarding/organisation"
-  to = "/"
+  to = "/platform/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/onboarding/organisation/"
-  to = "/"
+  to = "/platform/"
   status = 301
-
-# Catch-all: old pre-pivot blog slugs → blog index
-[[redirects]]
-  from = "/blog/*"
-  to = "/blog/"
-  status = 301
+  force = true

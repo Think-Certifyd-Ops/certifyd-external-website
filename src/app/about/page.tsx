@@ -70,7 +70,7 @@ export default function AboutPage() {
                 </li>
                 <li>
                   <Link
-                    href="/products/portal/"
+                    href="/platform/"
                     className="text-sm text-text-on-light hover:text-certifyd-blue transition-colors"
                   >
                     Certifyd Portal &rarr;
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 </li>
                 <li>
                   <Link
-                    href="/products/portal/"
+                    href="/platform/"
                     className="text-sm text-text-on-light hover:text-certifyd-blue transition-colors"
                   >
                     Certifyd Portal &rarr;

@@ -620,7 +620,7 @@ export default function CertifydIDPage() {
             href: "/products/codewords/",
           },
           { label: "Certifyd Screen", href: "/products/verify/" },
-          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd Portal", href: "/platform/" },
         ]}
         articles={[
           {

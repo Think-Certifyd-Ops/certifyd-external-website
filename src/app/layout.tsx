@@ -3,6 +3,7 @@ import Script from "next/script";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import "@/styles/marketing.css";
+import "@/styles/connected.css";
 import { MarketingHeader } from "@/components/marketing/MarketingHeader";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
@@ -25,11 +26,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://certifyd.io"),
   title: {
     default:
-      "Certifyd — Identity Verification for Businesses | Right-to-Work & Compliance",
-    template: "%s | Certifyd",
+      "Certifyd | Workplace credentials and compliance",
+    template: "%s",
   },
   description:
-    "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
+    "Manage workforce credentials, company records, expiry dates and site attendance with Certifyd.",
   alternates: {
     canonical: "/",
     types: {
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Certifyd — Identity Verification for Businesses",
+    title: "Certifyd | Workplace credentials and compliance",
     description:
-      "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
+      "Manage workforce credentials, company records, expiry dates and site attendance with Certifyd.",
     url: "https://certifyd.io",
     siteName: "Certifyd",
     locale: "en_GB",
@@ -47,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Certifyd — Identity Verification for Businesses",
+    title: "Certifyd | Workplace credentials and compliance",
     description:
-      "Affordable identity verification for UK businesses. Pre-screen right-to-work, verify tradespeople, and stay audit-ready — in 30 seconds.",
+      "Manage workforce credentials, company records, expiry dates and site attendance with Certifyd.",
   },
   icons: {
     icon: "/logos/certifyd-icon-blue.svg",

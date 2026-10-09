@@ -476,7 +476,7 @@ export default function CertifydSentinelPage() {
         solutions={[
           { label: "Certifyd Screen", href: "/products/verify/" },
           { label: "Certifyd CodeWords", href: "/products/codewords/" },
-          { label: "Certifyd Portal", href: "/products/portal/" },
+          { label: "Certifyd Portal", href: "/platform/" },
         ]}
         articles={[
           { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },
@@ -490,7 +490,7 @@ export default function CertifydSentinelPage() {
       <SolutionCTA
         title="Don't wait for the regulator to ask for the tape."
         secondaryLabel="See all products"
-        secondaryHref="/products/"
+        secondaryHref="/platform/"
       />
     </>
   );

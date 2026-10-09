@@ -1,0 +1,9 @@
+{
+  "/products/": "/platform/",
+  "/products/portal/": "/platform/",
+  "/products/shiftcheck/": "/outcomes/verified-worker-check-in/",
+  "/for/care-homes/": "/industries/care/",
+  "/for/domiciliary-care/": "/industries/care/",
+  "/for/recruitment-agencies/": "/industries/recruitment/",
+  "/for/staffing-agencies/": "/industries/recruitment/"
+}

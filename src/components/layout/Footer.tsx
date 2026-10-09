@@ -2,16 +2,17 @@ import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 
 const solutionLinks = [
-  { label: "Certifyd Portal", href: "/products/portal/" },
-  { label: "Certifyd Screen", href: "/products/verify/" },
-  { label: "Certifyd Sentinel", href: "/products/sentinel/" },
-  { label: "Certifyd CodeWords", href: "/products/codewords/" },
-  { label: "Certifyd ID", href: "/products/id/" },
+ {label:"Workforce platform",href:"/platform/"},
+ {label:"Compliance gaps",href:"/outcomes/reduce-compliance-risk/"},
+ {label:"Import records",href:"/outcomes/import-compliance-records/"},
+ {label:"Reduce admin",href:"/outcomes/reduce-compliance-admin/"},
+ {label:"Site check-in",href:"/outcomes/verified-worker-check-in/"},
+ {label:"Worker credentials",href:"/outcomes/portable-worker-credentials/"},
 ];
 
 const industryLinks = [
   { label: "Recruitment", href: "/industries/recruitment/" },
-  { label: "Trades", href: "/industries/trades/" },
+  { label: "NHS", href: "/industries/nhs/" },
   { label: "Care Homes", href: "/industries/care/" },
   { label: "Workforce", href: "/industries/workforce/" },
 ];
@@ -27,7 +28,7 @@ const companyLinks = [
 ];
 
 const resourceLinks = [
-  { label: "Contract Activation", href: "/contract-activation/" },
+  { label: "Existing product support", href: "/support/codewords/" },
   { label: "Blog", href: "/blog/" },
   { label: "Security & Trust", href: "/security/" },
 ];

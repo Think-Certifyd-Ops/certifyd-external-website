@@ -6,7 +6,7 @@
 - **Deployment:** Netlify (static HTML in `/out`)
 - **Styling:** Tailwind CSS 4
 - **Blog:** MDX files in `content/blog/` rendered with `next-mdx-remote`
-- **Base URL:** https://www.certifyd.io
+- **Base URL:** https://certifyd.io
 
 ## SEO Best Practices
 
@@ -18,7 +18,7 @@ When creating or editing any page or blog post, apply these standards:
   - `title` — descriptive, keyword-rich, under 60 characters
   - `description` — compelling, under 160 characters, includes primary keyword
   - `alternates: { canonical: "/page-path/" }` — trailing slash required
-  - `openGraph` — title, description, url (full URL with `https://www.certifyd.io`)
+  - `openGraph` — title, description, url (full URL with `https://certifyd.io`)
 - Blog posts get metadata via `generateMetadata` in `src/app/blog/[slug]/page.tsx`
 
 ### Blog Post Frontmatter (MDX files in `content/blog/`)

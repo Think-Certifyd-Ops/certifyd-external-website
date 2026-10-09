@@ -14,7 +14,7 @@ export const GRAPHIC_TILT = {
 
 export const COMPANY = {
   name: "Certifyd",
-  tagline: "The identity layer for businesses that can't afford to get it wrong.",
+  tagline: "Connect your people, records and workplaces.",
   email: "team@certifyd.io",
   address: "Aldwych House, 71-91 Aldwych, London, England WC2B 4HN",
   linkedin: "https://www.linkedin.com/company/thinkcertifyd/",
@@ -22,37 +22,26 @@ export const COMPANY = {
 } as const;
 
 export const NAV_ITEMS: NavItem[] = [
-  {
-    label: "Solutions",
-    href: "/products",
-    children: [
-      { label: "Certifyd Portal", href: "/products/portal/", description: "Right to Work compliance for SMEs" },
-      { label: "Certifyd Screen", href: "/products/verify/", description: "Pre-meeting identity verification" },
-      { label: "Certifyd Sentinel", href: "/products/sentinel/", description: "Compliant meeting recording & AI monitoring" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/", description: "Check unusual requests with people you trust" },
-      { label: "Certifyd ID", href: "/products/id/", description: "Two-way identity verification between two people" },
-    ],
-  },
-  {
-    label: "Industries",
-    href: "/industries",
-    children: [
-      { label: "Recruitment", href: "/industries/recruitment/", description: "Identity verification for recruiters and staffing agencies" },
-      { label: "Trades & Home Access", href: "/industries/trades/", description: "Verify tradespeople before they enter your home" },
-      { label: "Care", href: "/industries/care/", description: "Compliance and safeguarding for care providers" },
-      { label: "Workforce", href: "/industries/workforce/", description: "Right to Work and contractor compliance at scale" },
-    ],
-  },
-  {
-    label: "Resources",
-    href: "/blog/",
-    children: [
-      { label: "Blog", href: "/blog/", description: "Insights on identity, trust, and compliance" },
-      { label: "Podcast", href: "/podcast/", description: "Gone Phishing, conversations about identity and trust" },
-      { label: "Free Tools", href: "/tools/", description: "Compliance calculators and risk assessments" },
-      { label: "Security & Trust", href: "/security/", description: "How we protect your data" },
-    ],
-  },
+  { label: "Platform", href: "/platform/" },
+  { label: "Solutions", href: "/#solutions", children: [
+    { label: "Close compliance gaps", href: "/outcomes/reduce-compliance-risk/" },
+    { label: "Import existing records", href: "/outcomes/import-compliance-records/" },
+    { label: "Reduce compliance admin", href: "/outcomes/reduce-compliance-admin/" },
+    { label: "Follow site attendance", href: "/outcomes/verified-worker-check-in/" },
+    { label: "Manage worker credentials", href: "/outcomes/portable-worker-credentials/" },
+  ] },
+  { label: "Industries", href: "/#industries", children: [
+    { label: "Care", href: "/industries/care/" },
+    { label: "Recruitment", href: "/industries/recruitment/" },
+    { label: "NHS", href: "/industries/nhs/" },
+  ] },
+  { label: "Resources", href: "/blog/", children: [
+    { label: "Guides", href: "/blog/" },
+    { label: "Tools", href: "/tools/" },
+    { label: "Sponsor register", href: "/sponsors/" },
+    { label: "Podcast", href: "/podcast/" },
+  ] },
+  { label: "Security", href: "/security/" },
 ];
 
 export const TEAM: TeamMember[] = [

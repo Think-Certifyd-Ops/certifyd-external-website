@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllForPageSlugs, getForPageBySlug } from "@/lib/for-pages";
+import { getAllForPageSlugs, getForPageBySlug, forPageHref } from "@/lib/for-pages";
 import { PRODUCT_DEMOS } from "@/lib/for-pages/types";
 import { SolutionHero } from "@/components/solutions/SolutionHero";
 import { ProblemSection } from "@/components/solutions/ProblemSection";
@@ -387,7 +387,7 @@ export default async function ForPage({ params }: PageProps) {
               {page.alsoRelevant.map((link, index) => (
                 <ScrollReveal key={link.slug} delay={index * 80}>
                   <Link
-                    href={`/for/${link.slug}/`}
+                    href={forPageHref(link.slug)}
                     className="group flex items-center justify-between bg-white border border-warm-border rounded-sm p-5 hover:shadow-md hover:-translate-y-0.5 hover:border-certifyd-blue transition-all duration-300"
                   >
                     <span className="font-heading text-sm font-semibold text-text-on-light group-hover:text-certifyd-blue transition-colors duration-300">

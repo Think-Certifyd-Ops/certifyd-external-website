@@ -70,7 +70,7 @@ export interface ForPage {
 }
 
 export const PRODUCT_DEMOS: Record<string, { label: string; href: string; external?: boolean }> = {
-  "/products/portal/":    { label: "Try the Portal demo",   href: "/products/portal/demo/" },
+  "/platform/":    { label: "Try the Portal demo",   href: "/products/portal/demo/" },
   "/products/verify/":    { label: "Try Screen free",       href: "https://recruiter.certifyd.io", external: true },
   "/products/id/":        { label: "Try the ID demo",       href: "/products/id/demo/" },
   "/products/codewords/": { label: "Try the CodeWords demo", href: "/products/codewords/demo/" },
