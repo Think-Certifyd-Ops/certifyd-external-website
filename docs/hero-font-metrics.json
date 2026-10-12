@@ -1,0 +1,8 @@
+{
+  "method": "Local IBM Plex Mono Bold font measurement, with declared -.055em spacing and the 82rem wrapper/40px padding/64px gap/.95fr left column CSS.",
+  "left_column_px": 554.8,
+  "previous_56px_title_width": 582.84125,
+  "revised_52px_title_width": 541.379375,
+  "change": "Cap shared H1 at52px and connected hero H1 at3.25rem to preserve the intended first-line words at desktop widths.",
+  "limitation": "Browser-rendered hero height, cascade and interactions still require CUA access; this is not screenshot proof."
+}
