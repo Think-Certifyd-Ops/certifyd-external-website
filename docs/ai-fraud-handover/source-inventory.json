@@ -1,0 +1,225 @@
+{
+  "reviewed": "2026-10-12",
+  "method": "Read-only local source inspection; no live app/production smoke tests or secret values copied. Package ranges are declared ranges, not resolved-version or compatibility claims.",
+  "repositories": [
+    {
+      "product": "Screen",
+      "path": "/Users/andrewspeer/Documents/GitHub/certifyd-verify",
+      "repository": "https://github.com/raspeeruk/certifyd-verify",
+      "commit": "c2d64a56 2026-07-08 Update search title",
+      "uncommitted_changes_present": false,
+      "dependencies": {
+        "@supabase/ssr": "^0.6.1",
+        "@supabase/supabase-js": "^2.49.4",
+        "next": "^15.3.1",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+      },
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+      },
+      "environment_names": [
+        "NEXT_PUBLIC_SITE_URL",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+        "NEXT_PUBLIC_SUPABASE_URL",
+        "NVIDIA_NIM_API_KEY",
+        "SUPABASE_SERVICE_ROLE_KEY"
+      ]
+    },
+    {
+      "product": "Sentinel",
+      "path": "/Users/andrewspeer/Documents/GitHub/Certifyd/sentinel",
+      "repository": "",
+      "commit": "Workspace subdirectory; no independent repository identity established",
+      "uncommitted_changes_present": null,
+      "dependencies": {
+        "@anthropic-ai/sdk": "^0.80.0",
+        "dotenv": "^16.4.0",
+        "express": "^4.21.0",
+        "playwright": "^1.49.0",
+        "ws": "^8.18.0"
+      },
+      "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "start": "tsx src/index.ts",
+        "build": "tsc",
+        "typecheck": "tsc --noEmit"
+      },
+      "environment_names": [
+        "ANTHROPIC_API_KEY",
+        "NVIDIA_API_KEY",
+        "PARTICIPANT_ALLOWLIST",
+        "SENTINEL_PORT",
+        "SLACK_WEBHOOK_URL"
+      ]
+    },
+    {
+      "product": "Agent Watch",
+      "path": "/Users/andrewspeer/Documents/GitHub/certifyd-agent-watch",
+      "repository": "",
+      "commit": "e1d2382 2026-07-08 Add favicon",
+      "uncommitted_changes_present": false,
+      "dependencies": {
+        "next": "^15.3.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+      },
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+      },
+      "environment_names": [
+        "APP_URL",
+        "GOOGLE_CLIENT_ID",
+        "GOOGLE_CLIENT_SECRET"
+      ]
+    },
+    {
+      "product": "CallCheck",
+      "path": "/Users/andrewspeer/Documents/GitHub/certifyd-callcheck",
+      "repository": "https://github.com/raspeeruk/certifyd-callcheck",
+      "commit": "6a7663b 2026-07-08 Add favicon",
+      "uncommitted_changes_present": true,
+      "dependencies": {
+        "@vercel/blob": "^2.4.0",
+        "lucide-react": "^0.475.0",
+        "next": "^16.2.6",
+        "qrcode": "^1.5.4",
+        "react": "19.2.3",
+        "react-dom": "19.2.3",
+        "sharp": "^0.34.5"
+      },
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint"
+      },
+      "environment_names": [
+        "BLOB_READ_WRITE_TOKEN",
+        "BLOB_STORE_ID",
+        "NEXT_PUBLIC_APP_URL",
+        "VERCEL_OIDC_TOKEN"
+      ]
+    },
+    {
+      "product": "CodeWords app",
+      "path": "/Users/andrewspeer/Documents/GitHub/certifyd-react",
+      "repository": "",
+      "commit": "Workspace subdirectory; no independent repository identity established",
+      "uncommitted_changes_present": null,
+      "dependencies": {
+        "@expo-google-fonts/ibm-plex-mono": "^0.4.1",
+        "@expo-google-fonts/ibm-plex-sans": "^0.4.1",
+        "@expo/app-integrity": "56.0.3",
+        "@expo/vector-icons": "^15.0.3",
+        "@scure/bip39": "^2.2.0",
+        "@tanstack/react-query": "^5.90.21",
+        "expo": "~57.0.19",
+        "expo-camera": "~57.0.4",
+        "expo-constants": "~57.0.16",
+        "expo-crypto": "~57.0.2",
+        "expo-dev-client": "~57.0.18",
+        "expo-font": "~57.0.2",
+        "expo-linking": "~57.0.9",
+        "expo-local-authentication": "~57.0.2",
+        "expo-notifications": "~57.0.16",
+        "expo-router": "~57.0.18",
+        "expo-screen-capture": "~57.0.2",
+        "expo-secure-store": "~57.0.3",
+        "expo-splash-screen": "~57.0.8",
+        "expo-status-bar": "~57.0.1",
+        "expo-updates": "~57.0.21",
+        "expo-web-browser": "~57.0.2",
+        "json-canonicalize": "^2.0.0",
+        "react": "19.2.3",
+        "react-dom": "19.2.3",
+        "react-hook-form": "^7.71.2",
+        "react-native": "0.86.3",
+        "react-native-paper": "^5.15.0",
+        "react-native-qrcode-svg": "^6.3.21",
+        "react-native-reanimated": "4.5.1",
+        "react-native-safe-area-context": "~5.7.0",
+        "react-native-screens": "~4.26.0",
+        "react-native-svg": "15.15.4",
+        "react-native-svg-transformer": "^1.5.3",
+        "react-native-web": "~0.21.0",
+        "react-native-worklets": "0.10.1",
+        "zod": "^4.3.6",
+        "zustand": "^5.0.11"
+      },
+      "scripts": {
+        "start": "expo start",
+        "android": "expo run:android",
+        "ios": "expo run:ios",
+        "web": "expo start --web",
+        "typecheck": "tsc --noEmit --incremental false",
+        "doctor": "npx expo-doctor",
+        "test": "vitest run",
+        "verify:brand": "node scripts/verify-brand-assets.mjs",
+        "verify:ios-config": "node scripts/verify-ios-config.mjs",
+        "audit:production": "node scripts/audit-production.mjs"
+      },
+      "environment_names": [
+        "EAS_BUILD_PROFILE",
+        "EXPO_PUBLIC_API_MODE",
+        "EXPO_PUBLIC_API_URL",
+        "EXPO_PUBLIC_GOOGLE_CLOUD_PROJECT_NUMBER",
+        "EXPO_PUBLIC_STORE_PREVIEW"
+      ]
+    },
+    {
+      "product": "CodeWords service",
+      "path": "/Users/andrewspeer/Documents/GitHub/certifyd-api-temp",
+      "repository": "",
+      "commit": "Workspace subdirectory; no independent repository identity established",
+      "uncommitted_changes_present": null,
+      "dependencies": {
+        "@hono/node-server": "^2.1.0",
+        "@hono/zod-validator": "^0.9.0",
+        "@scure/bip39": "^2.2.0",
+        "appattest-checker-node": "^1.0.3",
+        "dotenv": "^17.4.2",
+        "google-auth-library": "^11.0.0",
+        "hono": "^4.13.0",
+        "jose": "^6.2.8",
+        "json-canonicalize": "^2.0.0",
+        "pg": "^8.22.0",
+        "zod": "^4.4.3"
+      },
+      "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc",
+        "start": "node dist/src/index.js",
+        "smoke:production": "node dist/scripts/smoke-codewords.js",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+      },
+      "environment_names": [
+        "APPLE_APP_ID",
+        "APP_ATTEST_ENVIRONMENT",
+        "AUTH_EMAIL_FROM",
+        "CODEWORDS_SMOKE_API_URL",
+        "CODEWORDS_SMOKE_DATABASE_URL",
+        "CONTENT_REPORT_EMAIL",
+        "DATABASE_URL",
+        "ENFORCE_CLIENT_VERSION",
+        "EXPO_ACCESS_TOKEN",
+        "GOOGLE_PLAY_PACKAGE_NAME",
+        "INTEGRITY_MODE",
+        "JWT_SECRET",
+        "MINIMUM_ANDROID_VERSION",
+        "MINIMUM_IOS_VERSION",
+        "NODE_ENV",
+        "PORT",
+        "RECOVERY_COOLING_OFF_MS",
+        "REQUIRE_VERIFIED_EMAIL",
+        "RESEND_API_KEY"
+      ]
+    }
+  ]
+}

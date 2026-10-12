@@ -1,0 +1,64 @@
+{
+  "retrievedAt": "2026-10-09T14:57:47.147Z",
+  "period": {
+    "startDate": "2026-07-09",
+    "endDate": "2026-10-06"
+  },
+  "selected_pages": [
+    {
+      "keys": [
+        "https://certifyd.io/"
+      ],
+      "clicks": 136,
+      "impressions": 654,
+      "ctr": 0.20795107033639143,
+      "position": 7.703363914373089
+    },
+    {
+      "keys": [
+        "https://certifyd.io/blog/right-to-work-check-documents-list/"
+      ],
+      "clicks": 21,
+      "impressions": 9650,
+      "ctr": 0.0021761658031088085,
+      "position": 8.747668393782384
+    },
+    {
+      "keys": [
+        "https://certifyd.io/blog/right-to-work-follow-up-checks/"
+      ],
+      "clicks": 8,
+      "impressions": 998,
+      "ctr": 0.008016032064128256,
+      "position": 8.327655310621243
+    },
+    {
+      "keys": [
+        "https://certifyd.io/industries/care/"
+      ],
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 7.743589743589744
+    },
+    {
+      "keys": [
+        "https://certifyd.io/industries/nhs/"
+      ],
+      "clicks": 0,
+      "impressions": 64,
+      "ctr": 0,
+      "position": 25.171875
+    },
+    {
+      "keys": [
+        "https://certifyd.io/industries/recruitment/"
+      ],
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 4.03030303030303
+    }
+  ],
+  "note": "Saved aggregate evidence from 9 October, not a fresh/live report. Search visibility does not prove buyer intent or enquiries. Previously reported zero GA key events is a measurement gap, not proof of zero leads."
+}

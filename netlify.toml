@@ -351,3 +351,15 @@
   to = "/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/tools/deepfake-assessment"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tools/deepfake-assessment/"
+  to = "/"
+  status = 301
+  force = true

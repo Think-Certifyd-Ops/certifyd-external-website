@@ -1,0 +1,24 @@
+{
+  "type": "Selected developer source archive, not runtime data or deployed service",
+  "reviewed": "2026-10-12",
+  "source": "/Users/andrewspeer/Documents/GitHub/Certifyd/sentinel",
+  "sha256": "6db258e28daeff29e93cf08eeb68916f2a1b09794fff3d17a4d21d5b78dfc1af",
+  "files": [
+    "src/report.ts",
+    "src/summary.ts",
+    "src/index.ts",
+    "src/alerts.ts",
+    "src/verification/deepfake.ts",
+    "src/verification/matcher.ts",
+    "src/verification/store.ts",
+    "src/bot/participants.ts",
+    "src/bot/captions.ts",
+    "src/bot/selectors.ts",
+    "src/bot/meet.ts",
+    "src/session/manager.ts",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json"
+  ],
+  "excluded": "Environment files, credentials, node_modules, browser profiles, runtime outputs and user data. This is the uncorrected prototype source; defects are documented in the handover."
+}

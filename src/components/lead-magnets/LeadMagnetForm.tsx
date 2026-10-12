@@ -49,10 +49,10 @@ export function LeadMagnetForm({
           </svg>
         </div>
         <h3 className="font-heading text-xl font-bold text-text-on-dark mb-2">
-          Your download should start automatically
+          Open your guide
         </h3>
         <p className="text-text-on-dark-muted text-sm mb-6">
-          We&apos;ve also sent a copy to your inbox. If the download didn&apos;t start, click below.
+          Your request has been received. Use the link below to read the guide.
         </p>
         <a
           href={pdfUrl}

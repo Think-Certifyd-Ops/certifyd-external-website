@@ -1,0 +1,735 @@
+{
+  "reviewed": "2026-10-12",
+  "scope": "Homepage, platform, records, five outcomes, five sectors, ID and ID demo, security, physical QR mockup. These are capture instructions, not claims that new real demos have been supplied.",
+  "existing_asset": {
+    "path": "public/images/connected/roles.png",
+    "size": [
+      1440,
+      1144
+    ],
+    "status": "Existing role-setup capture used on approved pages; inspect freshness/anonymisation against current build before final publication. Other platform assets require the same review."
+  },
+  "capture_rules": [
+    "Use a seeded demo organisation and fictional workers; remove real names, emails, documents, IDs, addresses and tokens.",
+    "Capture real supported behaviour and version/date each asset. Do not simulate absent features as product proof.",
+    "Record desktop at 1440×900 and mobile at 390×844; export 16:10 desktop posters and native phone aspect ratios. Crop deliberately; never stretch.",
+    "Use muted captioned video with a poster, explicit play/pause, reduced-motion support and a static fallback. No autoplay audio.",
+    "Keep hero previews compact. Place longer clips in the matching chapter; use the existing data-demo-slot attributes to locate them.",
+    "Document which states and permissions each capture establishes. Use genuine client evidence only after permission; Certifyd has no clients/testimonials to use now."
+  ],
+  "families": {
+    "Connected worker record overview": {
+      "format": "15–25 second captioned company-workspace clip, still poster at 16:10",
+      "show": [
+        "Open a fictional worker from the workforce view",
+        "Show role requirements, shared personal evidence and company-held records",
+        "Follow one item to its evidence and next review action"
+      ],
+      "boundary": "A connected view does not imply the organisation owns all personal documents or that every status is independently verified."
+    },
+    "Role requirements and onboarding": {
+      "format": "20-second desktop capture; 16:10 poster",
+      "show": [
+        "Choose a role in the company workspace",
+        "Show the evidence requested for that role",
+        "Show an invitation and a worker who has not yet supplied all evidence"
+      ],
+      "boundary": "Use the actual supported onboarding flow. Do not replace unimplemented invitations/import with animation presented as product."
+    },
+    "Import and first-group review": {
+      "format": "30-second desktop walkthrough with a sanitised sample spreadsheet and a downloadable example template",
+      "show": [
+        "Show the accepted import or assisted-import method",
+        "Map person, role and record fields through the real supported process",
+        "Demonstrate duplicate/missing-field handling and first-group review before wider rollout"
+      ],
+      "boundary": "Confirm self-serve versus assisted import. Do not imply automatic mapping or validation without a working screen and repeatable result."
+    },
+    "Workforce overview and evidence drill-down": {
+      "format": "20–30 second desktop clip; 16:10 overview and detail posters",
+      "show": [
+        "Filter missing evidence and pending reviews",
+        "Open one worker record from the overview",
+        "Show the document, its source, status and reviewer’s next action"
+      ],
+      "boundary": "An upload is not a completed review. Avoid fabricated workforce totals or claimed reduction in compliance risk."
+    },
+    "Expiry, review dates and history": {
+      "format": "20-second desktop clip covering due and renewed states",
+      "show": [
+        "Show a real expiry field and a separate organisation review date",
+        "Open an approaching-date record",
+        "Add replacement evidence through the real workflow and inspect history"
+      ],
+      "boundary": "A credential expiry date is not automatically a statutory follow-up date. DBS certificates have no official expiry date."
+    },
+    "Personal and organisation ownership": {
+      "format": "Paired desktop and mobile captures, shown sequentially rather than a three-column montage",
+      "show": [
+        "Worker opens personal credentials in the app",
+        "Worker shares the relevant record for work",
+        "Organisation sees only shared evidence plus its own documents and review decision"
+      ],
+      "boundary": "Verify permissions and what survives leaving an organisation. Do not suggest unrestricted access to the worker’s wallet."
+    },
+    "Worker app and scoped document sharing": {
+      "format": "390×844 mobile clip plus 16:10 company-review capture",
+      "show": [
+        "Open a fictional personal ID document with masked identifying details",
+        "Share the relevant document through the actual permission flow",
+        "Show company access and the pending review; demonstrate removal/expiry only if actually supported"
+      ],
+      "boundary": "Reuse of document evidence does not complete an employer’s required identity or right-to-work check. Do not display real passports, addresses or document numbers."
+    },
+    "App scan, attendance and visit history": {
+      "format": "15-second mobile arrival clip plus desktop attendance/history clip",
+      "show": [
+        "Worker scans the assigned site code using the actual app",
+        "Manager sees the recorded person/site/time",
+        "Worker checks out and manager opens the retained visit record"
+      ],
+      "boundary": "A scan records an event. It does not alone prove uninterrupted presence, authorised work or prevent a live relay."
+    },
+    "Homeowner shared profile": {
+      "format": "Worker-phone QR presentation followed by a homeowner browser capture",
+      "show": [
+        "Tradesperson presents the real shared-profile QR",
+        "Homeowner scans without accessing private documents",
+        "Show person, company affiliation, role and credentials actually shared; include expired/unavailable/access-denied state"
+      ],
+      "boundary": "Confirm no-app versus app-required homeowner flow. Show the source/status of company affiliations and credentials; do not imply independent verification beyond actual checks."
+    },
+    "Hardware and offline check-in": {
+      "format": "Real hardware macro shot, 10-second rotation clip, app scan, offline-to-synced event clip",
+      "show": [
+        "Show actual enclosure and mounting scale beside a room door or check-in point",
+        "Record the display changing its authenticated code",
+        "Show a valid scan and rejected stale-code example under the implemented protocol",
+        "Turn off network in a sandbox, record a visit, reconnect and show the same event syncing once"
+      ],
+      "boundary": "Validate device price, display type, rotation interval, clock drift/rollback, token signing/expiry, power draw and battery runtime. Demonstrate offline verification/time trust and replay/relay limits. No inferred “full visit presence”."
+    },
+    "Access and data handling": {
+      "format": "Desktop permission walkthrough and plain-language data diagram",
+      "show": [
+        "Invite a reviewer with limited role access",
+        "Compare permitted and denied evidence views",
+        "Remove access and inspect an audit entry where supported"
+      ],
+      "boundary": "Use implemented controls. Confirm encryption, storage region, retention, processors and deletion with actual system evidence before adding certifications or security badges."
+    }
+  },
+  "placements": [
+    {
+      "slot": "index.hero",
+      "location": "Manage credentials.Keep your peoplein view.",
+      "tag": "div",
+      "page": "/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "index.figure-1",
+      "location": "Set the requirements.Bring your people in.",
+      "tag": "figure",
+      "page": "/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "index.figure-2",
+      "location": "Track expiry dates.Plan the next renewal.",
+      "tag": "figure",
+      "page": "/",
+      "capture_family": "Expiry, review dates and history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "index.figure-3",
+      "location": "Spot missing evidence.Prioritise the next review.",
+      "tag": "figure",
+      "page": "/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "index.figure-4",
+      "location": "Let people carrytheir own credentials.",
+      "tag": "figure",
+      "page": "/",
+      "capture_family": "Personal and organisation ownership",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "index.figure-5",
+      "location": "Know who is on site.Keep the visit history.",
+      "tag": "figure",
+      "page": "/",
+      "capture_family": "App scan, attendance and visit history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "platform.hero",
+      "location": "Manage compliance.Connect yourworkforce records.",
+      "tag": "div",
+      "page": "/platform/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "platform.figure-1",
+      "location": "Manage compliance.Connect yourworkforce records.",
+      "tag": "figure",
+      "page": "/platform/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "platform.figure-2",
+      "location": "Define what eachrole needs.",
+      "tag": "figure",
+      "page": "/platform/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "platform.figure-3",
+      "location": "Connect personal evidenceand company records.",
+      "tag": "figure",
+      "page": "/platform/",
+      "capture_family": "Personal and organisation ownership",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "records.hero",
+      "location": "See what expires.Act whilethere’s time.",
+      "tag": "div",
+      "page": "/platform/records/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "records.figure-1",
+      "location": "See what expires.Act whilethere’s time.",
+      "tag": "figure",
+      "page": "/platform/records/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "records.figure-2",
+      "location": "Set an expiry date.Schedule the next review.",
+      "tag": "figure",
+      "page": "/platform/records/",
+      "capture_family": "Expiry, review dates and history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "records.figure-3",
+      "location": "Find upcoming renewals.Choose the next action.",
+      "tag": "figure",
+      "page": "/platform/records/",
+      "capture_family": "Expiry, review dates and history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "records.figure-4",
+      "location": "Renew the record.Keep the history.",
+      "tag": "figure",
+      "page": "/platform/records/",
+      "capture_family": "Expiry, review dates and history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-risk.hero",
+      "location": "Find and fixcompliance gaps.",
+      "tag": "div",
+      "page": "/outcomes/reduce-compliance-risk/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "reduce-compliance-risk.figure-1",
+      "location": "Find and fixcompliance gaps.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-risk/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-risk.figure-2",
+      "location": "Start with the role.Make the checks clear.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-risk/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-risk.figure-3",
+      "location": "Follow each statusback to the record.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-risk/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-risk.figure-4",
+      "location": "Show what your teamchecked and when.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-risk/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-admin.hero",
+      "location": "Spend less timechasing documents.",
+      "tag": "div",
+      "page": "/outcomes/reduce-compliance-admin/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "reduce-compliance-admin.figure-1",
+      "location": "Spend less timechasing documents.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-admin/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-admin.figure-2",
+      "location": "Ask for the evidencethe role actually needs.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-admin/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-admin.figure-3",
+      "location": "Find the next actionwithout rebuilding the list.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-admin/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "reduce-compliance-admin.figure-4",
+      "location": "Measure the time your teamspends chasing documents.",
+      "tag": "figure",
+      "page": "/outcomes/reduce-compliance-admin/",
+      "capture_family": "Connected worker record overview",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "import-compliance-records.hero",
+      "location": "Bring your recordsinto Certifyd.",
+      "tag": "div",
+      "page": "/outcomes/import-compliance-records/",
+      "capture_family": "Import and first-group review",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "import-compliance-records.figure-1",
+      "location": "Bring your recordsinto Certifyd.",
+      "tag": "figure",
+      "page": "/outcomes/import-compliance-records/",
+      "capture_family": "Import and first-group review",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "import-compliance-records.figure-2",
+      "location": "Start with the recordsyou already have.",
+      "tag": "figure",
+      "page": "/outcomes/import-compliance-records/",
+      "capture_family": "Import and first-group review",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "import-compliance-records.figure-3",
+      "location": "Match workers to roles.Set the evidence needed.",
+      "tag": "figure",
+      "page": "/outcomes/import-compliance-records/",
+      "capture_family": "Import and first-group review",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "import-compliance-records.figure-4",
+      "location": "Check the first group.Then bring the team in.",
+      "tag": "figure",
+      "page": "/outcomes/import-compliance-records/",
+      "capture_family": "Import and first-group review",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "verified-worker-check-in.hero",
+      "location": "Know who checked in,where and when.",
+      "tag": "div",
+      "page": "/outcomes/verified-worker-check-in/",
+      "capture_family": "App scan, attendance and visit history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "verified-worker-check-in.figure-1",
+      "location": "Know who checked in,where and when.",
+      "tag": "figure",
+      "page": "/outcomes/verified-worker-check-in/",
+      "capture_family": "App scan, attendance and visit history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "verified-worker-check-in.figure-2",
+      "location": "Connect the person,the place and the time.",
+      "tag": "figure",
+      "page": "/outcomes/verified-worker-check-in/",
+      "capture_family": "App scan, attendance and visit history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "verified-worker-check-in.figure-3",
+      "location": "See who has arrived.Follow who has left.",
+      "tag": "figure",
+      "page": "/outcomes/verified-worker-check-in/",
+      "capture_family": "App scan, attendance and visit history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "verified-worker-check-in.figure-4",
+      "location": "Review visitsafter the working day.",
+      "tag": "figure",
+      "page": "/outcomes/verified-worker-check-in/",
+      "capture_family": "App scan, attendance and visit history",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "portable-worker-credentials.hero",
+      "location": "Let workers managetheir own credentials.",
+      "tag": "div",
+      "page": "/outcomes/portable-worker-credentials/",
+      "capture_family": "Personal and organisation ownership",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P0"
+    },
+    {
+      "slot": "portable-worker-credentials.figure-1",
+      "location": "Let workers managetheir own credentials.",
+      "tag": "figure",
+      "page": "/outcomes/portable-worker-credentials/",
+      "capture_family": "Personal and organisation ownership",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "portable-worker-credentials.figure-2",
+      "location": "Give workers a placefor their own evidence.",
+      "tag": "figure",
+      "page": "/outcomes/portable-worker-credentials/",
+      "capture_family": "Personal and organisation ownership",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "portable-worker-credentials.figure-3",
+      "location": "Keep personal credentialsand company records distinct.",
+      "tag": "figure",
+      "page": "/outcomes/portable-worker-credentials/",
+      "capture_family": "Personal and organisation ownership",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "portable-worker-credentials.figure-4",
+      "location": "Bring updated evidenceback into the review.",
+      "tag": "figure",
+      "page": "/outcomes/portable-worker-credentials/",
+      "capture_family": "Personal and organisation ownership",
+      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
+      "priority": "P1"
+    },
+    {
+      "slot": "care.hero",
+      "location": "Keep care-worker records ready for review.",
+      "tag": "figure",
+      "page": "/industries/care/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "care.requirements",
+      "location": "Set the evidence each care role needs.",
+      "tag": "figure",
+      "page": "/industries/care/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "care.review",
+      "location": "See what needs a review or renewal.",
+      "tag": "figure",
+      "page": "/industries/care/",
+      "capture_family": "Expiry, review dates and history",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "care.visits",
+      "location": "Connect the person to the visit.",
+      "tag": "figure",
+      "page": "/industries/care/",
+      "capture_family": "App scan, attendance and visit history",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "recruitment.hero",
+      "location": "Prepare worker records for the next placement.",
+      "tag": "figure",
+      "page": "/industries/recruitment/",
+      "capture_family": "Connected worker record overview",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "recruitment.requirements",
+      "location": "Start with the role and client requirements.",
+      "tag": "figure",
+      "page": "/industries/recruitment/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "recruitment.evidence",
+      "location": "Review what the worker has shared.",
+      "tag": "figure",
+      "page": "/industries/recruitment/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "recruitment.next",
+      "location": "Keep the next review in view.",
+      "tag": "figure",
+      "page": "/industries/recruitment/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "nhs.hero",
+      "location": "Bring staff credentials into one trust-managed view.",
+      "tag": "figure",
+      "page": "/industries/nhs/",
+      "capture_family": "Connected worker record overview",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "nhs.requirements",
+      "location": "Define what your trust needs to review.",
+      "tag": "figure",
+      "page": "/industries/nhs/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "nhs.review",
+      "location": "Keep the review beside the staff record.",
+      "tag": "figure",
+      "page": "/industries/nhs/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "nhs.dates",
+      "location": "Follow approaching dates and missing evidence.",
+      "tag": "figure",
+      "page": "/industries/nhs/",
+      "capture_family": "Expiry, review dates and history",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "workforce.hero",
+      "location": "Keep your workforce records ready for the next review.",
+      "tag": "figure",
+      "page": "/industries/workforce/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "workforce.requirements",
+      "location": "Connect each person to the requirements for their work.",
+      "tag": "figure",
+      "page": "/industries/workforce/",
+      "capture_family": "Role requirements and onboarding",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "workforce.review",
+      "location": "Follow missing evidence and pending reviews.",
+      "tag": "figure",
+      "page": "/industries/workforce/",
+      "capture_family": "Workforce overview and evidence drill-down",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "workforce.renewals",
+      "location": "Plan renewals and record the next review.",
+      "tag": "figure",
+      "page": "/industries/workforce/",
+      "capture_family": "Expiry, review dates and history",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "trades.hero",
+      "location": "Scan a visitor’s QR code. See their work profile.",
+      "tag": "figure",
+      "page": "/industries/trades/",
+      "capture_family": "Homeowner shared profile",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "trades.qr",
+      "location": "Ask the visitor to show their Certifyd QR code.",
+      "tag": "figure",
+      "page": "/industries/trades/",
+      "capture_family": "Homeowner shared profile",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "trades.scan-result",
+      "location": "Check who they are and who they work for.",
+      "tag": "figure",
+      "page": "/industries/trades/",
+      "capture_family": "Homeowner shared profile",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "id.hero",
+      "location": "Store your ID documents. Share them for work.",
+      "tag": "figure",
+      "page": "/products/id/",
+      "capture_family": "Worker app and scoped document sharing",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "id.document-list",
+      "location": "Store your ID documents in the app.",
+      "tag": "figure",
+      "page": "/products/id/",
+      "capture_family": "Worker app and scoped document sharing",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "id.sharing",
+      "location": "Share the documents your workplace needs.",
+      "tag": "figure",
+      "page": "/products/id/",
+      "capture_family": "Worker app and scoped document sharing",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "id.document-demo",
+      "location": "Store an ID document. Share it for work.",
+      "tag": "div",
+      "page": "/products/id/demo/",
+      "capture_family": "Worker app and scoped document sharing",
+      "current": "Illustrative worker record; first requirements chapter uses roles.png. Interactive demos use fictional data.",
+      "priority": "P1"
+    },
+    {
+      "slot": "physical-qr.hero",
+      "location": "Record check-ins with a rotating QR display.",
+      "tag": "figure",
+      "page": "/products/rotating-qr/ (mockup only)",
+      "capture_family": "Hardware and offline check-in",
+      "current": "Drawn enclosure, example QR frames and fictional scan record. Not a hardware photograph or authenticated protocol demo.",
+      "priority": "P0"
+    },
+    {
+      "slot": "physical-qr.receipt",
+      "location": "See who checks in for each shift.",
+      "tag": "figure",
+      "page": "/products/rotating-qr/ (mockup only)",
+      "capture_family": "Hardware and offline check-in",
+      "current": "Drawn enclosure, example QR frames and fictional scan record. Not a hardware photograph or authenticated protocol demo.",
+      "priority": "P0"
+    },
+    {
+      "slot": "physical-qr.room",
+      "location": "Track check-ins to each care-home room.",
+      "tag": "figure",
+      "page": "/products/rotating-qr/ (mockup only)",
+      "capture_family": "Hardware and offline check-in",
+      "current": "Drawn enclosure, example QR frames and fictional scan record. Not a hardware photograph or authenticated protocol demo.",
+      "priority": "P0"
+    },
+    {
+      "slot": "physical-qr.offline",
+      "location": "Record home visits, even without a connection.",
+      "tag": "figure",
+      "page": "/products/rotating-qr/ (mockup only)",
+      "capture_family": "Hardware and offline check-in",
+      "current": "Drawn enclosure, example QR frames and fictional scan record. Not a hardware photograph or authenticated protocol demo.",
+      "priority": "P0"
+    },
+    {
+      "page": "/security/",
+      "slot": "security.permissions (planned placement)",
+      "location": "Give each reviewer the information their role needs.",
+      "capture_family": "Access and data handling",
+      "current": "Procurement questions; add verified permissions demonstration here.",
+      "priority": "P0"
+    }
+  ]
+}

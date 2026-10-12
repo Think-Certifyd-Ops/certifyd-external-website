@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   "title": {
-    "absolute": "Certifyd Id interactive demo"
+    "absolute": "Explore a worker’s ID documents | Certifyd"
   },
   "robots": {
     "index": false,

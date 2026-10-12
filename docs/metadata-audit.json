@@ -1,0 +1,1181 @@
+{
+  "rows": [
+    {
+      "route": "/",
+      "title": "Certifyd | Workplace credentials and compliance",
+      "h1": 1,
+      "canonical": "https://certifyd.io/",
+      "robots": ""
+    },
+    {
+      "route": "/contact/",
+      "title": "Book a workforce records demo | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/contact/",
+      "robots": ""
+    },
+    {
+      "route": "/tools/",
+      "title": "Workforce compliance tools | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/tools/",
+      "robots": ""
+    },
+    {
+      "route": "/privacy/",
+      "title": "Privacy Policy | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/privacy/",
+      "robots": ""
+    },
+    {
+      "route": "/security/",
+      "title": "Workforce records and data access | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/security/",
+      "robots": ""
+    },
+    {
+      "route": "/platform/",
+      "title": "Workforce compliance platform | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/platform/",
+      "robots": ""
+    },
+    {
+      "route": "/terms/",
+      "title": "Terms of Service | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/terms/",
+      "robots": ""
+    },
+    {
+      "route": "/about/",
+      "title": "Meet the Certifyd team",
+      "h1": 1,
+      "canonical": "https://certifyd.io/about/",
+      "robots": ""
+    },
+    {
+      "route": "/account-deletion/",
+      "title": "Delete Your Certifyd Account",
+      "h1": 1,
+      "canonical": "https://certifyd.io/account-deletion/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/",
+      "title": "Workforce records and compliance guides | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/",
+      "robots": ""
+    },
+    {
+      "route": "/careers/",
+      "title": "Careers at Certifyd \u2014 Join the Identity Verification Team",
+      "h1": 1,
+      "canonical": "https://certifyd.io/careers/",
+      "robots": ""
+    },
+    {
+      "route": "/3i/",
+      "title": "Identity Intelligence Infrastructure (3I) \u2014 Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/3i/",
+      "robots": ""
+    },
+    {
+      "route": "/partners/",
+      "title": "Partners & Programmes \u2014 Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/partners/",
+      "robots": ""
+    },
+    {
+      "route": "/podcast/",
+      "title": "Gone Phishing Podcast \u2014 Conversations About Identity & Trust",
+      "h1": 1,
+      "canonical": "https://certifyd.io/podcast/",
+      "robots": ""
+    },
+    {
+      "route": "/_not-found/",
+      "title": "404 \u2014 Identity Not Verified | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/",
+      "robots": "noindex"
+    },
+    {
+      "route": "/contract-activation/",
+      "title": "Contract Activation for Workforce Suppliers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/contract-activation/",
+      "robots": ""
+    },
+    {
+      "route": "/404/",
+      "title": "404 \u2014 Identity Not Verified | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/",
+      "robots": "noindex"
+    },
+    {
+      "route": "/cookies/",
+      "title": "Cookie Policy \u2014 Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/cookies/",
+      "robots": ""
+    },
+    {
+      "route": "/podcast/20-years-cybersecurity-almost-got-scammed/",
+      "title": "20 Years in Cybersecurity and I Almost Got Scammed \u2014 Gone Phishing Podcast",
+      "h1": 1,
+      "canonical": "https://certifyd.io/podcast/20-years-cybersecurity-almost-got-scammed/",
+      "robots": ""
+    },
+    {
+      "route": "/podcast/a-million-hacking-attempts-per-second/",
+      "title": "A Million Hacking Attempts Per Second \u2014 Gone Phishing Podcast",
+      "h1": 1,
+      "canonical": "https://certifyd.io/podcast/a-million-hacking-attempts-per-second/",
+      "robots": ""
+    },
+    {
+      "route": "/for/lone-workers/",
+      "title": "Identity Verification for Lone Workers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/lone-workers/",
+      "robots": ""
+    },
+    {
+      "route": "/for/right-to-work-penalties/",
+      "title": "Right-to-Work Penalties UK: \u00a345K\u2013\u00a360K Per Worker | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/right-to-work-penalties/",
+      "robots": ""
+    },
+    {
+      "route": "/for/estate-agent-viewings/",
+      "title": "Identity Verification for Estate Agent Viewings",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/estate-agent-viewings/",
+      "robots": ""
+    },
+    {
+      "route": "/for/plumbers/",
+      "title": "Identity Verification for Plumbers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/plumbers/",
+      "robots": ""
+    },
+    {
+      "route": "/for/care-workers/",
+      "title": "Identity Verification for Care Workers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/care-workers/",
+      "robots": ""
+    },
+    {
+      "route": "/for/ceo-fraud/",
+      "title": "CEO Fraud Protection \u2014 Verify Executive Identity",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/ceo-fraud/",
+      "robots": ""
+    },
+    {
+      "route": "/for/online-dating/",
+      "title": "Identity Verification for Online Dating",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/online-dating/",
+      "robots": ""
+    },
+    {
+      "route": "/for/cleaners/",
+      "title": "Identity Verification for Cleaners",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/cleaners/",
+      "robots": ""
+    },
+    {
+      "route": "/for/temp-workers/",
+      "title": "Identity Verification for Temp Workers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/temp-workers/",
+      "robots": ""
+    },
+    {
+      "route": "/for/airbnb/",
+      "title": "Identity Verification for Airbnb Hosts & Guests",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/airbnb/",
+      "robots": ""
+    },
+    {
+      "route": "/for/voice-cloning/",
+      "title": "Voice Cloning Protection \u2014 Device-Verified Identity",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/voice-cloning/",
+      "robots": ""
+    },
+    {
+      "route": "/for/deepfakes/",
+      "title": "Deepfake Protection \u2014 Device-Verified Identity",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/deepfakes/",
+      "robots": ""
+    },
+    {
+      "route": "/for/protecting-elderly-parents/",
+      "title": "Protect Elderly Parents from Doorstep Fraud",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/protecting-elderly-parents/",
+      "robots": ""
+    },
+    {
+      "route": "/for/builders/",
+      "title": "Identity Verification for Builders",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/builders/",
+      "robots": ""
+    },
+    {
+      "route": "/for/remote-workers/",
+      "title": "Identity Verification for Remote Workers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/remote-workers/",
+      "robots": ""
+    },
+    {
+      "route": "/for/trade-platforms/",
+      "title": "Identity Verification for Trade Platforms",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/trade-platforms/",
+      "robots": ""
+    },
+    {
+      "route": "/for/agency-worker-compliance/",
+      "title": "Agency Worker Identity Compliance | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/agency-worker-compliance/",
+      "robots": ""
+    },
+    {
+      "route": "/for/romance-scams/",
+      "title": "Romance Scam Protection \u2014 Verify Who You\u2019re Talking To",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/romance-scams/",
+      "robots": ""
+    },
+    {
+      "route": "/for/security-guards/",
+      "title": "Identity Verification for Security Guards",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/security-guards/",
+      "robots": ""
+    },
+    {
+      "route": "/for/facilities-management/",
+      "title": "Identity Verification for Facilities Management",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/facilities-management/",
+      "robots": ""
+    },
+    {
+      "route": "/for/fwa-compliance/",
+      "title": "Fair Work Agency Compliance | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/fwa-compliance/",
+      "robots": ""
+    },
+    {
+      "route": "/for/safeguarding/",
+      "title": "Identity Verification for Safeguarding",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/safeguarding/",
+      "robots": ""
+    },
+    {
+      "route": "/for/social-engineering/",
+      "title": "Social Engineering Protection \u2014 Verify Identity First",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/social-engineering/",
+      "robots": ""
+    },
+    {
+      "route": "/for/electricians/",
+      "title": "Identity Verification for Electricians",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/electricians/",
+      "robots": ""
+    },
+    {
+      "route": "/for/phishing/",
+      "title": "Phishing Protection \u2014 Verify Who\u2019s Really Contacting You",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/phishing/",
+      "robots": ""
+    },
+    {
+      "route": "/for/hospitality-staff/",
+      "title": "Identity Verification for Hospitality Staff",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/hospitality-staff/",
+      "robots": ""
+    },
+    {
+      "route": "/for/agency-nurses/",
+      "title": "Identity Verification for Agency Nurses",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/agency-nurses/",
+      "robots": ""
+    },
+    {
+      "route": "/for/school-pickups/",
+      "title": "Identity Verification for School Pickups",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/school-pickups/",
+      "robots": ""
+    },
+    {
+      "route": "/for/hospitality-businesses/",
+      "title": "Identity Verification for Hospitality Businesses",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/hospitality-businesses/",
+      "robots": ""
+    },
+    {
+      "route": "/for/right-to-work-checks/",
+      "title": "Right-to-Work Identity Verification | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/right-to-work-checks/",
+      "robots": ""
+    },
+    {
+      "route": "/for/delivery-drivers/",
+      "title": "Identity Verification for Delivery Drivers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/delivery-drivers/",
+      "robots": ""
+    },
+    {
+      "route": "/for/contractor-verification/",
+      "title": "Contractor Identity Verification | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/contractor-verification/",
+      "robots": ""
+    },
+    {
+      "route": "/for/cleaning-companies/",
+      "title": "Identity Verification for Cleaning Companies",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/cleaning-companies/",
+      "robots": ""
+    },
+    {
+      "route": "/for/nannies-au-pairs/",
+      "title": "Identity Verification for Nannies & Au Pairs",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/nannies-au-pairs/",
+      "robots": ""
+    },
+    {
+      "route": "/for/warehouse-workers/",
+      "title": "Identity Verification for Warehouse Workers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/for/warehouse-workers/",
+      "robots": ""
+    },
+    {
+      "route": "/outcomes/reduce-compliance-risk/",
+      "title": "Find and fix compliance gaps. | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/outcomes/reduce-compliance-risk/",
+      "robots": ""
+    },
+    {
+      "route": "/outcomes/portable-worker-credentials/",
+      "title": "Let workers manage their own credentials. | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/outcomes/portable-worker-credentials/",
+      "robots": ""
+    },
+    {
+      "route": "/outcomes/reduce-compliance-admin/",
+      "title": "Spend less time chasing documents. | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/outcomes/reduce-compliance-admin/",
+      "robots": ""
+    },
+    {
+      "route": "/outcomes/verified-worker-check-in/",
+      "title": "Know who checked in, where and when. | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/outcomes/verified-worker-check-in/",
+      "robots": ""
+    },
+    {
+      "route": "/outcomes/import-compliance-records/",
+      "title": "Bring your records into Certifyd. | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/outcomes/import-compliance-records/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/whos-really-at-your-door/",
+      "title": "Who's Really at Your Door? The Hidden Risk of Letting Strangers Into Your Home",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/whos-really-at-your-door/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/care-home-staffing-crisis/",
+      "title": "Care Home Staffing: When \"Who's Looking After Mum?\" Has No Good Answer",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/care-home-staffing-crisis/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/supply-chain-worker-verification/",
+      "title": "Supply Chain Worker Verification: Your Hidden Liability",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/supply-chain-worker-verification/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/20-years-cybersecurity-almost-got-scammed/",
+      "title": "20 Years in Cybersecurity and I Almost Got Scammed",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/20-years-cybersecurity-almost-got-scammed/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/welcome-to-certifyd/",
+      "title": "Welcome to Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/welcome-to-certifyd/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/education-sector-dbs-rtw-compliance/",
+      "title": "Schools and Universities: DBS and RTW Compliance Guide",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/education-sector-dbs-rtw-compliance/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/right-to-work-for-directors-partners/",
+      "title": "Do Company Directors Need Right to Work Checks?",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/right-to-work-for-directors-partners/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/sponsor-management-system-sms-guide/",
+      "title": "Sponsor Management System (SMS): A Practical Guide",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/sponsor-management-system-sms-guide/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/right-to-work-discrimination-law/",
+      "title": "RTW Checks and Discrimination: Walking the Legal Line",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/right-to-work-discrimination-law/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/deepfake-playbook/",
+      "title": "The Deepfake Playbook: How Real-Time AI Video Cloning Works",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/deepfake-playbook/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/compliance-culture-vs-compliance-theatre/",
+      "title": "Compliance Culture vs Compliance Theatre",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/compliance-culture-vs-compliance-theatre/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/biometric-identity-verification-explained/",
+      "title": "Biometric Identity Verification: How It Works in 2026",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/biometric-identity-verification-explained/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/real-cost-bad-hire/",
+      "title": "The Real Cost of a Bad Hire: Time, Money, and Compliance Risk",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/real-cost-bad-hire/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/vulnerable-adults-identity-doorstep/",
+      "title": "Protecting Vulnerable Adults from Doorstep Identity Fraud",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/vulnerable-adults-identity-doorstep/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/zero-trust-identity-business/",
+      "title": "Zero Trust Starts with Identity: Lessons from Cybersecurity",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/zero-trust-identity-business/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/employee-onboarding-compliance-checklist/",
+      "title": "The Compliance-First Employee Onboarding Checklist",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/employee-onboarding-compliance-checklist/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/multi-site-business-compliance-challenge/",
+      "title": "Multi-Site Compliance: When Your Records Are Everywhere",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/multi-site-business-compliance-challenge/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/landlord-right-to-rent-checks/",
+      "title": "Right to Rent Checks: What Landlords Must Do in 2026",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/landlord-right-to-rent-checks/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/meeting-identity-verification-remote/",
+      "title": "Who's Really on That Video Call? Meeting Verification",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/meeting-identity-verification-remote/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/b-rated-sponsor-licence/",
+      "title": "What a B-Rated Sponsor Licence Means \u2014 and How to Fix It",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/b-rated-sponsor-licence/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/trade-platforms-blind-spot/",
+      "title": "Why Trade Platforms Can't Tell You Who Actually Showed Up",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/trade-platforms-blind-spot/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/home-office-compliance-visit-what-happens/",
+      "title": "What Happens During a Home Office Compliance Visit",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/home-office-compliance-visit-what-happens/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/payroll-fraud-ghost-employees/",
+      "title": "Ghost Employees and Payroll Fraud: An Identity Problem",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/payroll-fraud-ghost-employees/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/deepfake-detection-video-calls/",
+      "title": "Can You Spot a Deepfake on a Video Call? Probably Not.",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/deepfake-detection-video-calls/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/social-engineering-workplace/",
+      "title": "Social Engineering at Work: Why Your Team Is the Target",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/social-engineering-workplace/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/sponsor-licence-revocations-2025/",
+      "title": "3,100 UK Businesses Lost Their Sponsor Licence Last Year",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/sponsor-licence-revocations-2025/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/identity-fraud-uk-statistics-2026/",
+      "title": "Identity Fraud in the UK: The 2025-26 Numbers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/identity-fraud-uk-statistics-2026/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/cleaning-contractor-verification/",
+      "title": "Cleaning Contractors: The Workforce You Never Verified",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/cleaning-contractor-verification/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/domiciliary-care-worker-verification/",
+      "title": "Domiciliary Care Workers: The Verification Blind Spot",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/domiciliary-care-worker-verification/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/recruitment-fraud-fake-candidates/",
+      "title": "Fake Candidates Are Applying for Your Jobs Right Now",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/recruitment-fraud-fake-candidates/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/identity-verification-gap/",
+      "title": "The Identity Verification Gap: Why Businesses Still Trust Strangers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/identity-verification-gap/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/audit-trails-compliance/",
+      "title": "Audit Trails That Actually Work: Why \"We Asked and They Said Yes\" Isn't Compliance",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/audit-trails-compliance/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/identity-verification-api-integration/",
+      "title": "Identity Verification APIs: What Businesses Should Know",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/identity-verification-api-integration/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/right-to-work-penalties-2026/",
+      "title": "Right to Work Penalties in 2026: Fines, Prosecution, Risk",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/right-to-work-penalties-2026/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/trust-layer-missing/",
+      "title": "The Trust Layer Is Missing: Why Identity Verification Is the Infrastructure Problem of Our Time",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/trust-layer-missing/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/care-home-cqc-workforce-compliance/",
+      "title": "CQC and Workforce Compliance: What Care Homes Get Wrong",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/care-home-cqc-workforce-compliance/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/phishing-attacks-business-verification/",
+      "title": "Phishing Has Evolved. Has Your Verification?",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/phishing-attacks-business-verification/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/ai-deepfakes-business-identity-fraud/",
+      "title": "AI Deepfakes Are Now a Business Problem, Not a Tech Demo",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/ai-deepfakes-business-identity-fraud/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/compliance-officer-role-guide/",
+      "title": "What a Compliance Officer Actually Needs: A Practical Guide",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/compliance-officer-role-guide/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/whistleblowing-compliance-failures/",
+      "title": "Whistleblowing and Compliance: When Employees Speak Up",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/whistleblowing-compliance-failures/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/identity-as-infrastructure/",
+      "title": "What Is Identity-as-Infrastructure? The Next Category in Enterprise Trust",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/identity-as-infrastructure/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/seasonal-worker-compliance-agriculture/",
+      "title": "Seasonal Workers: The Compliance Challenge in Agriculture",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/seasonal-worker-compliance-agriculture/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/arup-deepfake-attack/",
+      "title": "The $25 Million Deepfake: What the Arup Attack Means for Every Business",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/arup-deepfake-attack/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/enterprise-compliance-sme-prices/",
+      "title": "Enterprise Compliance at SME Prices: Why Verification Shouldn't Cost \u00a350 Per Check",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/enterprise-compliance-sme-prices/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/recruitment-agency-compliance-risk/",
+      "title": "Why Recruitment Agencies Carry More Compliance Risk",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/recruitment-agency-compliance-risk/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/hospitality-right-to-work-compliance/",
+      "title": "Right to Work in Hospitality: High Turnover, High Risk",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/hospitality-right-to-work-compliance/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/uk-immigration-enforcement-statistics-2025/",
+      "title": "UK Immigration Enforcement in Numbers: 2024-25 Data",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/uk-immigration-enforcement-statistics-2025/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/preventing-modern-slavery-supply-chain/",
+      "title": "Modern Slavery Due Diligence: What Your Business Must Do",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/preventing-modern-slavery-supply-chain/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/right-to-work-check-documents-list/",
+      "title": "Right-to-work documents for UK employers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/right-to-work-check-documents-list/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/digital-right-to-work-checks-vs-manual/",
+      "title": "Digital vs Manual Right to Work Checks: Which Is Safer?",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/digital-right-to-work-checks-vs-manual/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/uk-visa-types-employer-guide/",
+      "title": "UK Visa Types: What Every Employer Needs to Know",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/uk-visa-types-employer-guide/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/preventing-illegal-working-landlord-employer/",
+      "title": "The Employer's Duty to Prevent Illegal Working",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/preventing-illegal-working-landlord-employer/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/sponsor-licence-compliance-calendar/",
+      "title": "The Sponsor Licence Compliance Calendar You Need",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/sponsor-licence-compliance-calendar/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/settled-status-employer-checks/",
+      "title": "EU Settled Status: How Employers Should Verify It",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/settled-status-employer-checks/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/platform-agnostic-verification/",
+      "title": "Platform Agnostic Verification: Why Your Identity Solution Can't Be Locked to One App",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/platform-agnostic-verification/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/contractor-vs-employee-compliance/",
+      "title": "Contractors vs Employees: Different Compliance Obligations?",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/contractor-vs-employee-compliance/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/employee-data-protection-rtw-checks/",
+      "title": "RTW Checks and Data Protection: What You Can (and Can't) Keep",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/employee-data-protection-rtw-checks/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/skilled-worker-visa-employer-obligations/",
+      "title": "Skilled Worker Visa: Your Obligations as a Sponsor",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/skilled-worker-visa-employer-obligations/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/health-care-worker-visa-sponsor-guide/",
+      "title": "Health and Care Worker Visa: A Sponsor's Compliance Guide",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/health-care-worker-visa-sponsor-guide/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/doorstep-fraud-problem/",
+      "title": "The Doorstep Problem: \u00a357 Million in Annual Fraud That Starts With a Knock",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/doorstep-fraud-problem/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/what-is-a-statutory-excuse-rtw/",
+      "title": "What Is a Statutory Excuse? Your RTW Legal Defence",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/what-is-a-statutory-excuse-rtw/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/right-to-work-gap-signs/",
+      "title": "5 Signs Your Hiring Process Has a Right-to-Work Gap",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/right-to-work-gap-signs/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/right-to-work-checks-2026-update/",
+      "title": "Right to Work Checks in 2026: What's Changed",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/right-to-work-checks-2026-update/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/construction-worker-verification-challenges/",
+      "title": "Construction Worker Verification: The On-Site Blind Spot",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/construction-worker-verification-challenges/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/biblical-armageddon-when-ai-attacks-get-intelligent/",
+      "title": "Biblical Armageddon: When AI Attacks Get Intelligent",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/biblical-armageddon-when-ai-attacks-get-intelligent/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/document-fraud-spotting-guide-employers/",
+      "title": "How to Spot Fraudulent Documents: A Guide for Employers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/document-fraud-spotting-guide-employers/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/graduate-visa-employer-guide/",
+      "title": "Hiring Graduate Visa Holders: What Employers Need to Know",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/graduate-visa-employer-guide/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/future-of-identity-verification-uk/",
+      "title": "The Future of Identity Verification in the UK",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/future-of-identity-verification-uk/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/sme-right-to-work-mistakes/",
+      "title": "7 Right to Work Mistakes Small Businesses Keep Making",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/sme-right-to-work-mistakes/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/dbs-checks-vs-right-to-work-checks/",
+      "title": "DBS Checks vs Right to Work Checks: What's the Difference?",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/dbs-checks-vs-right-to-work-checks/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/remote-hiring-identity-verification/",
+      "title": "Remote Hiring and Identity Verification: Closing the Gap",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/remote-hiring-identity-verification/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/care-sector-rtw-compliance-guide/",
+      "title": "Prepare right-to-work records across your care teams.",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/care-sector-rtw-compliance-guide/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/right-to-work-follow-up-checks/",
+      "title": "Right-to-work follow-up checks for employers",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/right-to-work-follow-up-checks/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/fair-work-agency-april-2026/",
+      "title": "The Fair Work Agency: What Every UK Business Needs to Know Before April 2026",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/fair-work-agency-april-2026/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/agency-worker-compliance-who-checks/",
+      "title": "Prepare agency-worker checks before the next placement.",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/agency-worker-compliance-who-checks/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/hr-compliance-automation-business-case/",
+      "title": "The Business Case for Automating HR Compliance",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/hr-compliance-automation-business-case/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/two-way-verification-explained/",
+      "title": "Two-Way Verification: What It Is and Why One-Way Systems Are No Longer Enough",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/two-way-verification-explained/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/safeguarding-gap-care-homes/",
+      "title": "The Safeguarding Gap: How Agency Staff Rotate Through Care Homes Unchecked",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/safeguarding-gap-care-homes/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/voice-cloning-threat/",
+      "title": "Voice Cloning in 30 Seconds: Why Phone Calls Are No Longer Proof of Identity",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/voice-cloning-threat/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/cyber-fraud-ceo-impersonation/",
+      "title": "CEO Fraud and Deepfake Impersonation: The New Threat",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/cyber-fraud-ceo-impersonation/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/ai-generated-documents-employer-risk/",
+      "title": "AI-Generated Documents: The Next Frontier of Employment Fraud",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/ai-generated-documents-employer-risk/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/temp-worker-loophole/",
+      "title": "The Temp Worker Loophole: 1.1 Million Workers, Almost Zero Verification",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/temp-worker-loophole/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/deepfake-candidates-recruitment/",
+      "title": "The Recruiter's Nightmare: Deepfake Candidates in Remote Interviews",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/deepfake-candidates-recruitment/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/visa-expiry-tracking-employers/",
+      "title": "Visa Expiry Tracking: The Compliance Gap Most Employers Miss",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/visa-expiry-tracking-employers/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/kyc-fatigue-living-identity/",
+      "title": "From KYC Fatigue to Living Identity: Why Static Checks Are Failing",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/kyc-fatigue-living-identity/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/care-home-agency-staff-risk/",
+      "title": "Agency Staff in Care Homes: The Compliance Risk No One Owns",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/care-home-agency-staff-risk/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/a-million-hacking-attempts-per-second/",
+      "title": "A Million Hacking Attempts Per Second",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/a-million-hacking-attempts-per-second/",
+      "robots": ""
+    },
+    {
+      "route": "/blog/walk-in-compliance-audit-prep/",
+      "title": "How to Prepare Your Business for a Walk-In Compliance Audit",
+      "h1": 1,
+      "canonical": "https://certifyd.io/blog/walk-in-compliance-audit-prep/",
+      "robots": ""
+    },
+    {
+      "route": "/industries/care/",
+      "title": "Care workforce compliance | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/industries/care/",
+      "robots": ""
+    },
+    {
+      "route": "/industries/trades/",
+      "title": "Verify a visiting tradesperson | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/industries/trades/",
+      "robots": ""
+    },
+    {
+      "route": "/industries/nhs/",
+      "title": "NHS workforce records | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/industries/nhs/",
+      "robots": ""
+    },
+    {
+      "route": "/industries/recruitment/",
+      "title": "Recruitment compliance | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/industries/recruitment/",
+      "robots": ""
+    },
+    {
+      "route": "/industries/workforce/",
+      "title": "Workforce compliance | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/industries/workforce/",
+      "robots": ""
+    },
+    {
+      "route": "/platform/records/",
+      "title": "See what expires. Act while there is time | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/platform/records/",
+      "robots": ""
+    },
+    {
+      "route": "/resources/fair-work-agency-checklist/",
+      "title": "Fair Work Agency record-keeping checklist | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/resources/fair-work-agency-checklist/",
+      "robots": ""
+    },
+    {
+      "route": "/resources/recruitment-placement-evidence-checklist/",
+      "title": "Placement evidence checklist | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/resources/recruitment-placement-evidence-checklist/",
+      "robots": ""
+    },
+    {
+      "route": "/resources/worker-record-review-checklist/",
+      "title": "Worker-record review checklist | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/resources/worker-record-review-checklist/",
+      "robots": ""
+    },
+    {
+      "route": "/resources/right-to-work-guide/",
+      "title": "Right-to-work guide for employers | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/resources/right-to-work-guide/",
+      "robots": ""
+    },
+    {
+      "route": "/resources/preview/fair-work-agency-checklist/",
+      "title": "Fair Work Agency record-keeping checklist | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/resources/fair-work-agency-checklist/",
+      "robots": "noindex, follow"
+    },
+    {
+      "route": "/resources/preview/right-to-work-guide/",
+      "title": "Right-to-work guide for employers | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/resources/right-to-work-guide/",
+      "robots": "noindex, follow"
+    },
+    {
+      "route": "/products/id/",
+      "title": "Reusable worker identity documents | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/products/id/",
+      "robots": ""
+    },
+    {
+      "route": "/products/id/demo/",
+      "title": "Explore a worker\u2019s ID documents | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/products/id/demo/",
+      "robots": "noindex, follow"
+    },
+    {
+      "route": "/products/portal/demo/",
+      "title": "Certifyd Portal interactive demo",
+      "h1": 0,
+      "canonical": "https://certifyd.io/products/portal/demo/",
+      "robots": "noindex, follow"
+    },
+    {
+      "route": "/tools/roi-calculator/",
+      "title": "Workforce process comparison | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/tools/roi-calculator/",
+      "robots": ""
+    },
+    {
+      "route": "/tools/audit-readiness/",
+      "title": "Worker-record readiness checklist | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/tools/audit-readiness/",
+      "robots": ""
+    },
+    {
+      "route": "/tools/penalty-calculator/",
+      "title": "Right-to-work penalty scenario | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/tools/penalty-calculator/",
+      "robots": ""
+    },
+    {
+      "route": "/tools/audit-probability/",
+      "title": "Understand inspection probability | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/tools/audit-probability/",
+      "robots": ""
+    },
+    {
+      "route": "/tools/cost-calculator/",
+      "title": "Workforce compliance cost calculator | Certifyd",
+      "h1": 1,
+      "canonical": "https://certifyd.io/tools/cost-calculator/",
+      "robots": ""
+    }
+  ],
+  "exceptions": []
+}

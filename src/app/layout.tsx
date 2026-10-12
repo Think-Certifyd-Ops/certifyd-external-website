@@ -6,6 +6,7 @@ import "@/styles/marketing.css";
 import "@/styles/connected.css";
 import "@/styles/story.css";
 import { MarketingHeader } from "@/components/marketing/MarketingHeader";
+import {DemoClickTracking} from "@/components/measurement/DemoClickTracking";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
 
@@ -110,6 +111,7 @@ export default function RootLayout({
         <OrganizationSchema />
         <WebSiteSchema />
         <MarketingHeader />
+        <DemoClickTracking/>
         <main>{children}</main>
         <Footer />
       </body>

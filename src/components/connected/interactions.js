@@ -16,4 +16,5 @@ function handleWorkload(){const tasks=workload.elements.tasks,minutes=workload.e
 workload?.addEventListener('input',handleWorkload);workload?.addEventListener('submit',event=>{event.preventDefault();handleWorkload()});
 
 
+const heroQuery=window.matchMedia("(min-width: 801px)");function adaptHeroExamples(){root.querySelectorAll(".hero-example").forEach(example=>{example.open=heroQuery.matches})}adaptHeroExamples();heroQuery.addEventListener("change",adaptHeroExamples,{signal:controller.signal});
 return()=>controller.abort();}

@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build && tsx scripts/generate-rss.ts",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:review": "next build --webpack && node --import tsx scripts/generate-rss.ts",
+    "test:workload": "node --import tsx scripts/verify-workload.mjs",
+    "test:measurement": "node --import tsx scripts/verify-measurement.mjs"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

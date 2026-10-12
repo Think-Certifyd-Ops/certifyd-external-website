@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-12",
+  "property": "properties/520574638",
+  "measurementId": "G-FNMZS9PQ1S",
+  "eventName": "demo_booking_completed",
+  "status": "NOT CONFIGURED by this pass",
+  "reason": "Google OAuth endpoint oauth2.googleapis.com cannot resolve from the shell; no mutation occurred. Node fetch and curl both failed.",
+  "source_handler": "Implemented and unit-tested on review branch. No live collector or actual booking verification yet.",
+  "required_action": "Once Google API access is available, verify the web stream matches this measurement ID, list key events, create demo_booking_completed with ONCE_PER_EVENT only if absent, then read it back. Do not classify demo_cta_click as a completed booking."
+}

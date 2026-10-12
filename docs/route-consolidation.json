@@ -15,5 +15,6 @@
   "/products/codewords/business/": "/",
   "/products/codewords/demo/": "/",
   "/security/codewords/": "/",
-  "/support/codewords/": "/"
+  "/support/codewords/": "/",
+  "/tools/deepfake-assessment/": "/"
 }

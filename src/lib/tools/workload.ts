@@ -1,0 +1,6 @@
+export interface Workload {checks:number;minutes:number;hourly:number;other:number}
+export function monthlyWorkload(v:Workload){if(Object.values(v).some(n=>!Number.isFinite(n)||n<0))throw new Error("Use finite, non-negative inputs");const hours=v.checks*v.minutes/60;const cost=hours*v.hourly+v.other;if(!Number.isFinite(hours)||!Number.isFinite(cost))throw new Error("Inputs exceed the calculation range");return {hours,cost}}
+export function compareWorkload(current:Workload,proposed:Workload,setup:number){if(!Number.isFinite(setup)||setup<0)throw new Error("Use a non-negative setup cost");const a=monthlyWorkload(current),b=monthlyWorkload(proposed);const monthly=a.cost-b.cost;const proposedYear=b.cost*12+setup;return {current:a,proposed:b,monthly,annual:monthly*12-setup,breakEven:monthly>0?setup/monthly:null,returnPercent:proposedYear>0?(a.cost*12-proposedYear)/proposedYear*100:null}}
+export function penaltyScenario(workers:number,repeat:boolean){if(!Number.isSafeInteger(workers)||workers<0)throw new Error("Use a whole, non-negative worker count");return workers*(repeat?60000:45000)}
+export const money=(n:number)=>new Intl.NumberFormat("en-GB",{style:"currency",currency:"GBP",maximumFractionDigits:0}).format(n);
+export const decimal=(n:number)=>new Intl.NumberFormat("en-GB",{maximumFractionDigits:1}).format(n);

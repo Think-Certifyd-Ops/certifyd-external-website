@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState,useRef,useEffect } from "react";
 import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 const INDUSTRIES = [
@@ -24,6 +24,8 @@ const INTERESTS = [
 ];
 
 export function ContactForm() {
+  const formRef=useRef<HTMLFormElement>(null);
+  useEffect(()=>{const form=formRef.current;if(!form)return;const query=new URLSearchParams(location.search);const industries:Record<string,string>={care:"Care & Social Care",recruitment:"Recruitment",nhs:"NHS & Healthcare",trades:"Trades & Home Services",workforce:"Other"};const industry=form.elements.namedItem("industry") as HTMLSelectElement|null;const interest=form.elements.namedItem("interest") as HTMLSelectElement|null;if(industry&&industries[query.get("sector")??""])industry.value=industries[query.get("sector")??""];if(interest&&(query.has("sector")||query.has("workflow")))interest.value="Book a Demo"},[]);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
@@ -57,6 +59,7 @@ export function ContactForm() {
 
   return (
     <form
+      ref={formRef}
       name="contact"
       method="POST"
       data-netlify="true"

@@ -1,0 +1,92 @@
+[
+  [
+    "/",
+    "Workplace credentials and compliance",
+    "HR/compliance buyer: understand the connected person, company and site record",
+    "Platform and five outcome chapters"
+  ],
+  [
+    "/platform/",
+    "Workforce compliance platform/software",
+    "Understand the category, requirements, ownership and team view",
+    "Records, five outcomes, appropriate sector"
+  ],
+  [
+    "/platform/records/",
+    "Credential expiry and review tracking",
+    "Inspect dates, missing evidence, renewal and history",
+    "Admin/risk outcomes and follow-up guide"
+  ],
+  [
+    "/outcomes/reduce-compliance-risk/",
+    "Worker compliance gaps and evidence review",
+    "Follow missing evidence and review status to the record",
+    "Records and review checklist"
+  ],
+  [
+    "/outcomes/import-compliance-records/",
+    "Import workforce compliance records",
+    "Prepare existing people/role/evidence data and review the first group",
+    "Platform, assisted/self-serve method confirmed in demo"
+  ],
+  [
+    "/outcomes/reduce-compliance-admin/",
+    "Reduce document chasing and compliance admin",
+    "Understand requests, renewal work and next actions",
+    "Workload calculator and records"
+  ],
+  [
+    "/outcomes/verified-worker-check-in/",
+    "Worker QR check-in and site attendance",
+    "Record person/place/time and inspect visit history",
+    "Trades, care, physical QR when validated"
+  ],
+  [
+    "/outcomes/portable-worker-credentials/",
+    "Worker credential app and reusable credentials",
+    "Separate personal evidence from company records",
+    "ID documents and ownership demonstration"
+  ],
+  [
+    "/industries/care/",
+    "Care workforce records and compliance",
+    "Care roles, evidence, review dates and visits",
+    "Care guide and records"
+  ],
+  [
+    "/industries/recruitment/",
+    "Recruitment placement compliance records",
+    "Placement evidence and agency/client responsibilities",
+    "Agency guide and placement checklist"
+  ],
+  [
+    "/industries/nhs/",
+    "NHS staff credential records",
+    "Trust requirements, shared staff evidence and reviews",
+    "Security and worker-record checklist"
+  ],
+  [
+    "/industries/trades/",
+    "Tradesperson QR profile for home visits",
+    "Homeowner reads worker and company information shared for a visit",
+    "Shared profile and ID"
+  ],
+  [
+    "/industries/workforce/",
+    "Cross-sector workforce compliance review",
+    "HR/operations teams follow requirements, evidence and next review",
+    "Platform and operational checklists"
+  ],
+  [
+    "/products/id/",
+    "Store and reuse worker identification documents",
+    "Worker stores documents and shares for workplace review",
+    "Portable credentials and fictional sharing example"
+  ],
+  [
+    "/products/rotating-qr/ (mockup)",
+    "Physical rotating QR check-in display",
+    "Shift/room/home-visit device use cases",
+    "Publish only after hardware and offline claims are demonstrated"
+  ]
+]

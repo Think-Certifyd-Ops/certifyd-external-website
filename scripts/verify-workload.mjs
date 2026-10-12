@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import * as w from '../src/lib/tools/workload.ts';
+assert.deepEqual(w.monthlyWorkload({checks:24,minutes:30,hourly:30,other:40}),{hours:12,cost:400});
+const comparison=w.compareWorkload({checks:24,minutes:30,hourly:30,other:40},{checks:24,minutes:10,hourly:30,other:80},600);
+assert.equal(comparison.monthly,200);assert.equal(comparison.annual,1800);assert.equal(comparison.breakEven,3);assert.equal(comparison.returnPercent,60);
+assert.equal(w.compareWorkload({checks:0,minutes:0,hourly:0,other:0},{checks:0,minutes:0,hourly:0,other:0},0).returnPercent,null);
+assert.equal(w.compareWorkload({checks:1,minutes:60,hourly:10,other:0},{checks:1,minutes:120,hourly:10,other:0},100).breakEven,null);
+assert.throws(()=>w.monthlyWorkload({checks:1,minutes:-1,hourly:10,other:0}));assert.throws(()=>w.monthlyWorkload({checks:Infinity,minutes:1,hourly:1,other:0}));assert.throws(()=>w.monthlyWorkload({checks:1e300,minutes:1e300,hourly:10,other:0}));
+assert.equal(w.penaltyScenario(2,false),90000);assert.equal(w.penaltyScenario(2,true),120000);assert.throws(()=>w.penaltyScenario(1.5,false));assert.equal(w.penaltyScenario(0,false),0);
+console.log('Workload calculations: real-world comparison, zero costs, negative savings, invalid inputs and penalty scenarios passed.');
