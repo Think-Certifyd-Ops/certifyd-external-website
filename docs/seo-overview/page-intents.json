@@ -1,15 +1,9 @@
 [
   [
     "/",
-    "Workplace credentials and compliance",
+    "Workplace credentials and workforce compliance platform",
     "HR/compliance buyer: understand the connected person, company and site record",
-    "Platform and five outcome chapters"
-  ],
-  [
-    "/platform/",
-    "Workforce compliance platform/software",
-    "Understand the category, requirements, ownership and team view",
-    "Records, five outcomes, appropriate sector"
+    "Tracked records and five outcome workflows"
   ],
   [
     "/platform/records/",
@@ -27,7 +21,7 @@
     "/outcomes/import-compliance-records/",
     "Import workforce compliance records",
     "Prepare existing people/role/evidence data and review the first group",
-    "Platform, assisted/self-serve method confirmed in demo"
+    "Homepage, assisted/self-serve method confirmed in demo"
   ],
   [
     "/outcomes/reduce-compliance-admin/",

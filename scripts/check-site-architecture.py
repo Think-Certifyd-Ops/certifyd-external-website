@@ -37,7 +37,7 @@ for route,p in pages.items():
   dest=u.path
   if dest in retired:errors.append(f'Internal link to retired URL: {route} -> {dest}')
   if dest.endswith('/') and dest not in pages and not dest.startswith(('/sponsors/','/api/')):errors.append(f'Broken internal route: {route} -> {dest}')
-for route in ['/products/codewords/demo/','/products/id/demo/','/products/portal/demo/']:
+for route in ['/products/id/demo/','/products/portal/demo/']:
  p=pages[route]
  if not any('noindex' in r for r in p.robots) or p.canonical!=['https://certifyd.io'+route]:errors.append(f'Demo indexing incorrect: {route}')
 if len(paths)!=len(set(paths)):errors.append('Duplicate sitemap URLs')

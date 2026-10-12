@@ -1,6 +1,6 @@
 {
   "reviewed": "2026-10-12",
-  "scope": "Homepage, platform, records, five outcomes, five sectors, ID and ID demo, security, physical QR mockup. These are capture instructions, not claims that new real demos have been supplied.",
+  "scope": "Homepage, tracked records, five outcomes, five sectors, ID and ID demo, security, physical QR mockup. These are capture instructions, not claims that new real demos have been supplied.",
   "existing_asset": {
     "path": "public/images/connected/roles.png",
     "size": [
@@ -171,42 +171,6 @@
       "tag": "figure",
       "page": "/",
       "capture_family": "App scan, attendance and visit history",
-      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
-      "priority": "P1"
-    },
-    {
-      "slot": "platform.hero",
-      "location": "Manage compliance.Connect yourworkforce records.",
-      "tag": "div",
-      "page": "/platform/",
-      "capture_family": "Connected worker record overview",
-      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
-      "priority": "P0"
-    },
-    {
-      "slot": "platform.figure-1",
-      "location": "Manage compliance.Connect yourworkforce records.",
-      "tag": "figure",
-      "page": "/platform/",
-      "capture_family": "Connected worker record overview",
-      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
-      "priority": "P1"
-    },
-    {
-      "slot": "platform.figure-2",
-      "location": "Define what eachrole needs.",
-      "tag": "figure",
-      "page": "/platform/",
-      "capture_family": "Role requirements and onboarding",
-      "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
-      "priority": "P1"
-    },
-    {
-      "slot": "platform.figure-3",
-      "location": "Connect personal evidenceand company records.",
-      "tag": "figure",
-      "page": "/platform/",
-      "capture_family": "Personal and organisation ownership",
       "current": "Fictional record illustration or interactive example; inspect roles.png where used.",
       "priority": "P1"
     },

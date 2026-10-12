@@ -2,7 +2,6 @@ import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 
 const solutionLinks = [
- {label:"Workforce platform",href:"/platform/"},
  {label:"Compliance gaps",href:"/outcomes/reduce-compliance-risk/"},
  {label:"Import records",href:"/outcomes/import-compliance-records/"},
  {label:"Reduce admin",href:"/outcomes/reduce-compliance-admin/"},

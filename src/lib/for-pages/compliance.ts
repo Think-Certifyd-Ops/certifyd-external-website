@@ -70,7 +70,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Staffing Agencies", slug: "staffing-agencies" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
     ],
     relatedArticles: [
@@ -164,7 +164,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Staffing Agencies", slug: "staffing-agencies" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
     ],
     relatedArticles: [
       { label: "Fair Work Agency: What Changes in April 2026", href: "/blog/fair-work-agency-april-2026/" },
@@ -263,7 +263,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Agency Worker Compliance", slug: "agency-worker-compliance" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
     ],
     relatedArticles: [
       { label: "Right-to-Work Gap Signs", href: "/blog/right-to-work-gap-signs/" },
@@ -361,7 +361,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Agency Worker Compliance", slug: "agency-worker-compliance" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -451,7 +451,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       { label: "Certifyd for Temp Workers", slug: "temp-workers" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
     ],
     relatedArticles: [

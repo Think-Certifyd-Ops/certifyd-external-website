@@ -467,7 +467,7 @@ export default function ThreeIPage() {
                 <Button variant="primary" size="lg" href="/contact/">
                   Talk to us
                 </Button>
-                <Button variant="ghost" size="lg" href="/platform/" className="text-text-on-light-muted hover:text-certifyd-blue">
+                <Button variant="ghost" size="lg" href="/" className="text-text-on-light-muted hover:text-certifyd-blue">
                   See current product
                 </Button>
               </div>

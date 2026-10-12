@@ -237,8 +237,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const entries = [...staticPages, ...forPages, ...blogPosts, ...podcastIndex, ...podcastEpisodes];
-  const retired = new Set(["/tools/deepfake-assessment/","/products/verify/","/products/sentinel/","/products/agent-watch/","/products/callcheck/","/products/codewords/","/products/codewords/family/","/products/codewords/business/","/products/codewords/demo/","/security/codewords/","/support/codewords/","/products/", "/products/portal/", "/products/shiftcheck/", "/for/care-homes/", "/for/domiciliary-care/", "/for/recruitment-agencies/", "/for/staffing-agencies/"]);
-  const added = ["/resources/worker-record-review-checklist/", "/resources/recruitment-placement-evidence-checklist/", "/platform/", "/platform/records/", "/outcomes/reduce-compliance-risk/", "/outcomes/import-compliance-records/", "/outcomes/reduce-compliance-admin/", "/outcomes/verified-worker-check-in/", "/outcomes/portable-worker-credentials/"];
+  const retired = new Set(["/platform/","/tools/deepfake-assessment/","/products/verify/","/products/sentinel/","/products/agent-watch/","/products/callcheck/","/products/codewords/","/products/codewords/family/","/products/codewords/business/","/products/codewords/demo/","/security/codewords/","/support/codewords/","/products/", "/products/portal/", "/products/shiftcheck/", "/for/care-homes/", "/for/domiciliary-care/", "/for/recruitment-agencies/", "/for/staffing-agencies/"]);
+  const added = ["/resources/worker-record-review-checklist/", "/resources/recruitment-placement-evidence-checklist/", "/platform/records/", "/outcomes/reduce-compliance-risk/", "/outcomes/import-compliance-records/", "/outcomes/reduce-compliance-admin/", "/outcomes/verified-worker-check-in/", "/outcomes/portable-worker-credentials/"];
   const all = [...entries, ...added.map(path => ({url: BASE_URL + path, changeFrequency: "monthly" as const, priority: 0.8}))];
   return all.map(entry => ({...entry, url: entry.url.replace(/\/?$/, "/")})).filter(entry => !retired.has(new URL(entry.url).pathname));
 }

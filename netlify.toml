@@ -16,7 +16,7 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://rogerson-signups.netlify.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self'; connect-src 'self' https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://region1.google-analytics.com https://rogerson-signups.netlify.app; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://rogerson-signups.netlify.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self'; connect-src 'self' https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://region1.google-analytics.com https://rogerson-signups.netlify.app; frame-src https://app.cal.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
 
 # ── /sponsors → Certifyd Sponsor Register app (proxied, keeps SEO on the brand domain) ──
 [[redirects]]
@@ -42,25 +42,25 @@
 
 [[redirects]]
   from = "/products"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/products/"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/products/portal"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/products/portal/"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
@@ -150,13 +150,13 @@
 
 [[redirects]]
   from = "/solutions"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
@@ -174,37 +174,37 @@
 
 [[redirects]]
   from = "/solutions/business"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/business/"
-  to = "/platform/"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/compliance"
-  to = "/platform/"
+  to = "/outcomes/reduce-compliance-risk/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/compliance/"
-  to = "/platform/"
+  to = "/outcomes/reduce-compliance-risk/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/rtw"
-  to = "/platform/"
+  to = "/resources/right-to-work-guide/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/rtw/"
-  to = "/platform/"
+  to = "/resources/right-to-work-guide/"
   status = 301
   force = true
 
@@ -222,13 +222,13 @@
 
 [[redirects]]
   from = "/onboarding/organisation"
-  to = "/platform/"
+  to = "/outcomes/import-compliance-records/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/onboarding/organisation/"
-  to = "/platform/"
+  to = "/outcomes/import-compliance-records/"
   status = 301
   force = true
 
@@ -360,6 +360,19 @@
 
 [[redirects]]
   from = "/tools/deepfake-assessment/"
+  to = "/"
+  status = 301
+  force = true
+
+# The homepage now covers the platform overview. Keep tracked records separate.
+[[redirects]]
+  from = "/platform"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/platform/"
   to = "/"
   status = 301
   force = true

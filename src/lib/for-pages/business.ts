@@ -69,7 +69,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Deepfakes", slug: "deepfakes" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
 
 
@@ -165,7 +165,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Domiciliary Care", slug: "domiciliary-care" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -254,7 +254,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Facilities Management", slug: "facilities-management" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -343,7 +343,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Agency Worker Compliance", slug: "agency-worker-compliance" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
 
     ],
@@ -432,7 +432,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for FWA Compliance", slug: "fwa-compliance" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
     ],
     relatedArticles: [
@@ -520,7 +520,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Cleaning Companies", slug: "cleaning-companies" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -610,7 +610,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -699,7 +699,7 @@ export const BUSINESS_PAGES: ForPage[] = [
       { label: "Certifyd for Contractor Verification", slug: "contractor-verification" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],

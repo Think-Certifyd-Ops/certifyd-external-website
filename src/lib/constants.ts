@@ -22,7 +22,6 @@ export const COMPANY = {
 } as const;
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Platform", href: "/platform/" },
   { label: "Solutions", href: "/#solutions", children: [
     { label: "Close compliance gaps", href: "/outcomes/reduce-compliance-risk/" },
     { label: "Import existing records", href: "/outcomes/import-compliance-records/" },

@@ -54,7 +54,7 @@ export default function NotFound() {
 
           {/* Message */}
           <h1 className="font-heading text-2xl md:text-3xl font-bold text-text-on-dark mb-3">
-            Identity not verified
+            We couldn’t find this page.
           </h1>
           <p className="text-text-on-dark-muted leading-relaxed mb-10 max-w-md mx-auto">
             This page couldn&apos;t be verified. It may have been moved,

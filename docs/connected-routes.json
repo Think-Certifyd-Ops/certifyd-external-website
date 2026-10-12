@@ -1,6 +1,5 @@
 {
   "index": "/",
-  "platform": "/platform/",
   "records": "/platform/records/",
   "reduce-compliance-risk": "/outcomes/reduce-compliance-risk/",
   "import-compliance-records": "/outcomes/import-compliance-records/",

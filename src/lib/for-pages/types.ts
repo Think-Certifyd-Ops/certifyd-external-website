@@ -67,7 +67,6 @@ export interface ForPage {
 }
 
 export const PRODUCT_DEMOS: Record<string, { label: string; href: string; external?: boolean }> = {
-  "/platform/":    { label: "Try the Portal demo",   href: "/products/portal/demo/" },
 
   "/products/id/":        { label: "Try the ID demo",       href: "/products/id/demo/" },
 

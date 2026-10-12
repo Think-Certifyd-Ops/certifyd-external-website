@@ -1,0 +1,406 @@
+CERTIFYD HEADING AND PAGE-HIERARCHY REVIEW
+12 October 2026 | Source: current local export of design/internal-pages-2026-10-12
+
+Scope: 167 exported HTML pages inventoried; 34 commercial/editorial review pages examined heading by heading. /platform/ is retired and redirects to /. /platform/records/ remains. The physical rotating-QR page is a standalone mockup, not a live route.
+
+DECISION
+Keep the homepage as the platform overview. Explain five buyer tasks through the outcome pages, then use sector pages for the situations those buyers recognise. An active verb alone is insufficient: each major heading should name the actual task or object. Use plain descriptive titles for legal pages and editorial articles where an imperative would be artificial.
+
+CHANGES ALREADY MADE IN THIS PASS
+The homepage chapter callouts and fake UI instruction lines were removed. CTA and solution-row arrows now point right and move right on hover. The hero now uses the saved Certifyd role/workspace capture. /platform/ was removed from navigation, sitemap and the review bundle, with a redirect to /. The five outcome pages and tracked-records page received action-led H1/H2 revisions. The missing-page heading now says “We couldn’t find this page.”
+
+IMPORTANT VISUAL LIMIT
+The saved image public/images/connected/roles.png is an existing product capture, not a fresh capture from the live app. It should be replaced with a current, sanitised workforce/records view once access is available. Check its seeded numbers, redactions and permissions before publishing. Browser access to the live app was denied during this pass, so the updated image and hover motion need human visual review.
+
+PAGE-BY-PAGE REVIEW OF THE 34 LOCAL PAGES
+“Applied” means the heading changed in the current source. “Next” is a proposed copy edit and has not been applied. Where no change is listed, retain the heading for now.
+
+/
+  H1: Manage workforce compliance in one place.
+  Applied: H2: Explore the platform in more detail. -> Explore each workflow in more detail.
+  Applied: H2: See how your team can work in Certifyd. -> Review your workforce records in a demo.
+  Next: Keep the current major-heading wording.
+
+/platform/records/
+  H1: Track expiry dates. Plan record reviews.
+  Applied: H1: See what expires. Act while there’s time. -> Track expiry dates. Plan record reviews.
+  Applied: H2: Find upcoming renewals. Choose the next action. -> Review upcoming renewals and their supporting evidence.
+  Applied: H2: Connect current records to the working day. -> View worker records and site attendance.
+  Applied: H2: See how your team can work in Certifyd. -> Review expiry tracking in a demo.
+  Next: Keep the current major-heading wording.
+
+/outcomes/reduce-compliance-risk/
+  H1: Find and fix compliance gaps.
+  Applied: H2: Start with the role. Make the checks clear. -> Set the evidence each role requires.
+  Applied: H2: Follow each status back to the record. -> Review missing, overdue and pending evidence.
+  Applied: H2: Show what your team checked and when. -> Record who reviewed the evidence and when.
+  Applied: H2: Keep the next review moving. -> Plan renewals and request updated evidence.
+  Applied: H2: Bring one role. Walk through the checks. -> Review a worker record in a demo.
+  Next: Keep the current major-heading wording.
+
+/outcomes/import-compliance-records/
+  H1: Import your existing workforce records.
+  Applied: H1: Bring your records into Certifyd. -> Import your existing workforce records.
+  Applied: H2: Start with the records you already have. -> Import the worker records you already maintain.
+  Applied: H2: Match workers to roles. Set the evidence needed. -> Assign roles and set evidence requirements.
+  Applied: H2: Check the first group. Then bring the team in. -> Review imported records before inviting workers.
+  Applied: H2: Keep records useful after the move. -> Track review dates after the import.
+  Applied: H2: Bring a spreadsheet. Plan the first step. -> Plan your records import in a demo.
+  Next: Keep the current major-heading wording.
+
+/outcomes/reduce-compliance-admin/
+  H1: Spend less time chasing documents.
+  Applied: H2: Ask for the evidence the role actually needs. -> Request the documents each role requires.
+  Applied: H2: Find the next action without rebuilding the list. -> Review outstanding requests and approaching renewals.
+  Applied: H2: Bring your starting records with you. -> Import existing records before collecting more.
+  Applied: H2: Bring a recurring task. Find a clearer way through. -> Review document requests and renewals in a demo.
+  Next: Keep the current major-heading wording.
+
+/outcomes/verified-worker-check-in/
+  H1: Track worker check-ins by site and time.
+  Applied: H1: Know who checked in, where and when. -> Track worker check-ins by site and time.
+  Applied: H2: Connect the person, the place and the time. -> Record each worker’s site and check-in time.
+  Applied: H2: See who has arrived. Follow who has left. -> View check-ins and recorded check-outs.
+  Applied: H2: Review visits after the working day. -> Review attendance and visit history.
+  Applied: H2: Connect the visit to the person. -> Open the worker record linked to a visit.
+  Applied: H2: Bring one site. Walk through an arrival. -> Review site check-in in a demo.
+  Next: Keep the current major-heading wording.
+
+/outcomes/portable-worker-credentials/
+  H1: Let workers manage their own credentials.
+  Applied: H2: Give workers a place for their own evidence. -> Store qualifications and certificates in the worker app.
+  Applied: H2: Keep personal credentials and company records distinct. -> Review shared credentials alongside company records.
+  Applied: H2: Bring updated evidence back into the review. -> Review updated worker credentials.
+  Applied: H2: Follow the person into the workplace. -> Link shared credentials to workplace requirements.
+  Applied: H2: See how workers share credentials with your team. -> Review worker document sharing in a demo.
+  Next: Keep the current major-heading wording.
+
+/industries/care/
+  H1: Keep care-worker records ready for review.
+  Next: H2: See what needs a review or renewal. -> Review staff evidence and approaching renewals.
+  Next: H2: Connect the person to the visit. -> Review care visits by worker and site.
+  Next: H2: Connect personal credentials and company records. -> Review worker-shared evidence alongside company records.
+  Next: H2: Start with the work your team needs to do. -> Prepare your workforce checks.
+  Next: H2: Walk through your care team’s records. -> Review care-worker records in a demo.
+
+/industries/recruitment/
+  H1: Prepare worker records for the next placement.
+  Next: H2: Start with the role and client requirements. -> Set evidence requirements for each placement.
+  Next: H2: Keep the next review in view. -> Track placement review dates and renewals.
+  Next: H2: Connect personal credentials and company records. -> Review worker-shared evidence alongside company records.
+  Next: H2: Start with the work your team needs to do. -> Prepare your workforce checks.
+  Next: H2: Walk through your agency’s records. -> Review placement evidence in a demo.
+
+/industries/nhs/
+  H1: Bring staff credentials into one trust-managed view.
+  Next: H1: Bring staff credentials into one trust-managed view. -> Review staff credentials across your trust.
+  Next: H2: Keep the review beside the staff record. -> Record staff-evidence reviews.
+  Next: H2: Follow approaching dates and missing evidence. -> Review missing staff evidence and upcoming renewals.
+  Next: H2: Connect personal credentials and company records. -> Review worker-shared evidence alongside company records.
+  Next: H2: Start with the work your team needs to do. -> Prepare your workforce checks.
+  Next: H2: Walk through your trust’s records. -> Review staff-credential records in a demo.
+
+/industries/workforce/
+  H1: Keep your workforce records ready for the next review.
+  Next: H1: Keep your workforce records ready for the next review. -> Manage workforce compliance records.
+  Next: H2: Connect personal credentials and company records. -> Review worker-shared evidence alongside company records.
+  Next: H2: Start with the work your team needs to do. -> Prepare your workforce checks.
+  Next: H2: Walk through your team’s records. -> Review workforce records in a demo.
+
+/industries/trades/
+  H1: Scan a visitor’s QR code. See their work profile.
+  Next: H2: Connect your team to the company they represent. -> Share each visiting worker’s company details.
+  Next: H2: Walk through a visiting-worker profile. -> Review a visiting-worker profile in a demo.
+
+/products/id/
+  H1: Store your ID documents. Share them for work.
+  Next: H2: Update your documents as things change. -> Replace outdated identification documents.
+  Next: H2: See the personal and company views together. -> Review ID-document sharing in a demo.
+
+/products/id/demo/
+  H1: Store an ID document. Share it for work.
+  Next: Keep the current major-heading wording.
+
+/security/
+  H1: Know who can see each record.
+  Next: H1: Know who can see each record. -> Review who can access each record.
+  Next: H2: Review the access model with your team. -> Review record access and sharing in a demo.
+
+/about/
+  H1: Connect trust to the working day.
+  Next: H1: Connect trust to the working day. -> See why we built Certifyd.
+  Next: H2: Give people their own record. Give teams a clear view. -> Connect worker credentials to company requirements.
+  Next: H2: Walk through your next review with us. -> Review your workforce records in a demo.
+
+/contact/
+  H1: Book a demo.
+  Next: Keep the current major-heading wording.
+  Review: “Book a demo” is direct. Keep the calendar visible without an extra click; “Send us a question” is a secondary path.
+
+/blog/
+  H1: Prepare the next worker-record review.
+  Next: H1: Prepare the next worker-record review. -> Read workforce compliance guides.
+  Next: H2: Start with the checks you need to make. -> Choose a guide for your next workforce check.
+  Next: H2: Explore the wider archive. -> Browse all workforce articles.
+
+/tools/
+  H1: Plan the work behind your compliance records.
+  Next: H1: Plan the work behind your compliance records. -> Calculate review costs. Identify record gaps.
+  Next: H2: Start with the question your team needs to answer. -> Choose a workforce compliance tool.
+  Next: H2: Bring your figures and walk through the records. -> Review your workforce process in a demo.
+
+/tools/cost-calculator/
+  H1: Calculate the time and cost of reviewing worker records.
+  Next: H2: Bring your process and review the working records. -> Review your workforce process in a demo.
+
+/tools/roi-calculator/
+  H1: Compare the cost of your current and proposed process.
+  Next: H2: Bring your process and review the working records. -> Review your workforce process in a demo.
+
+/tools/audit-readiness/
+  H1: Find the gaps in your worker-record review process.
+  Next: H2: Bring your process and review the working records. -> Review your workforce process in a demo.
+
+/tools/audit-probability/
+  H1: Read enforcement figures without guessing your inspection risk.
+  Next: H2: See the records your team needs to manage. -> Review your workforce records in a demo.
+
+/tools/penalty-calculator/
+  H1: Calculate a right-to-work penalty scenario.
+  Next: H2: Bring your process and review the working records. -> Review your workforce process in a demo.
+
+/resources/right-to-work-guide/
+  H1: Prepare the evidence for your next right-to-work check.
+  Next: H2: Review gaps before the next decision. -> Resolve missing evidence and assign follow-up work.
+  Next: H2: Check the sources before applying the process. -> Check the official guidance for your review.
+  Next: H2: Bring your review process and inspect the records. -> Review your workforce records in a demo.
+
+/resources/fair-work-agency-checklist/
+  H1: Review the records behind your employment practices.
+  Next: H2: Check the sources before applying the process. -> Check the official guidance for your review.
+  Next: H2: Bring your review process and inspect the records. -> Review your workforce records in a demo.
+
+/resources/worker-record-review-checklist/
+  H1: Review the evidence behind each worker record.
+  Next: H2: Follow the checklist into the working record. -> Use the checklist to review a worker record.
+  Next: H2: See the records your team needs to manage. -> Review your workforce records in a demo.
+
+/resources/recruitment-placement-evidence-checklist/
+  H1: Prepare worker evidence for the next placement.
+  Next: H2: Follow the checklist into the working record. -> Use the checklist to review a worker record.
+  Next: H2: See the records your team needs to manage. -> Review your workforce records in a demo.
+
+/resources/preview/right-to-work-guide/
+  H1: Prepare the evidence for your next right-to-work check.
+  Next: H2: Review gaps before the next decision. -> Resolve missing evidence and assign follow-up work.
+  Next: H2: Check the sources before applying the process. -> Check the official guidance for your review.
+  Next: H2: Bring your review process and inspect the records. -> Review your workforce records in a demo.
+  Review: this is a preview route; keep its guidance label accurate and avoid a second competing conversion heading.
+
+/resources/preview/fair-work-agency-checklist/
+  H1: Review the records behind your employment practices.
+  Next: H2: Check the sources before applying the process. -> Check the official guidance for your review.
+  Next: H2: Bring your review process and inspect the records. -> Review your workforce records in a demo.
+  Review: this is a preview route; keep its guidance label accurate and avoid a second competing conversion heading.
+
+/blog/right-to-work-check-documents-list/
+  H1: Right-to-work documents for UK employers
+  Next: H2: Connect the check to your workforce record -> Keep right-to-work evidence in the worker record
+  Review: preserve factual article titles; check legal/regulatory details and dates before any stronger promise.
+
+/blog/right-to-work-follow-up-checks/
+  H1: Right-to-work follow-up checks for employers
+  Next: H2: Make the next action visible to the team -> Assign follow-up checks to your team
+  Next: H2: Connect dates to evidence -> Record follow-up dates alongside check evidence
+  Review: preserve factual article titles; check legal/regulatory details and dates before any stronger promise.
+
+/blog/agency-worker-compliance-who-checks/
+  H1: Prepare agency-worker checks before the next placement.
+  Next: Keep the current major-heading wording.
+  Review: preserve factual article titles; check legal/regulatory details and dates before any stronger promise.
+
+/blog/care-sector-rtw-compliance-guide/
+  H1: Prepare right-to-work records across your care teams.
+  Next: Keep the current major-heading wording.
+  Review: preserve factual article titles; check legal/regulatory details and dates before any stronger promise.
+
+CROSS-PAGE PRIORITIES
+1. Sector pages: replace “Keep the next review in view”, “Connect the person to the visit”, and repeated “Start with the work your team needs to do” with the specific review action. Suggestions appear against each route above.
+2. About, Security, Blog and Tools hubs: remove abstract phrases such as “Connect trust to the working day” and “Start with the question your team needs to answer.” Name the person, record, access decision or calculator.
+3. Legacy /for/ templates: all 35 share broad H2s (“The reality of…”, “This is broken. Here’s why”, “Simple verification. Every time”). Audit indexation, consolidation and product fit before rewriting all 35; do not scale the same generic page.
+4. AI-fraud material: /3i/ and several older deepfake/fraud articles still appear in the export. Resolve their role in the separate brand and redirect/canonical plan before publishing the redesigned Certifyd story.
+5. Product proof: confirm real import, check-in, sharing, expiry and permission flows before replacing the remaining fictional diagrams with screenshots. A screenshot is evidence only for the UI it actually shows.
+
+FULL EXPORTED-PAGE INVENTORY
+This inventory records each current H1. It is a heading triage, not a factual/legal SEO audit of every article. “Core” routes have detailed recommendations above.
+
+/ | Manage workforce compliance in one place. | Core: detailed review above
+/3i/ | Three layers. One intelligence engine. | AI product: resolve separate-brand/redirect decision
+/404/ | We couldn’t find this page. | System: missing-page H1 corrected in this pass
+/_not-found/ | We couldn’t find this page. | System: missing-page H1 corrected in this pass
+/about/ | Connect trust to the working day. | Core: detailed review above
+/account-deletion/ | Delete your Certifyd account. | Legal/service: descriptive H1 appropriate
+/blog/ | Prepare the next worker-record review. | Core: detailed review above
+/blog/20-years-cybersecurity-almost-got-scammed/ | 20 Years in Cybersecurity and I Almost Got Scammed | Article: review H1 claims, dates and brand fit
+/blog/a-million-hacking-attempts-per-second/ | A Million Hacking Attempts Per Second | Article: review H1 claims, dates and brand fit
+/blog/agency-worker-compliance-who-checks/ | Prepare agency-worker checks before the next placement. | Core: detailed review above
+/blog/ai-deepfakes-business-identity-fraud/ | AI Deepfakes Are Now a Business Problem, Not a Tech Demo | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/ai-generated-documents-employer-risk/ | AI-Generated Documents: The Next Frontier of Employment Fraud | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/arup-deepfake-attack/ | The $25 Million Deepfake: What the Arup Attack Means for Every Business | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/audit-trails-compliance/ | Audit Trails That Actually Work: Why "We Asked and They Said Yes" Isn't Compliance | Article: review H1 claims, dates and brand fit
+/blog/b-rated-sponsor-licence/ | What a B-Rated Sponsor Licence Means — and How to Fix It | Article: review H1 claims, dates and brand fit
+/blog/biblical-armageddon-when-ai-attacks-get-intelligent/ | Biblical Armageddon: When AI Attacks Get Intelligent | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/biometric-identity-verification-explained/ | Biometric Identity Verification: How It Works in 2026 | Article: review H1 claims, dates and brand fit
+/blog/care-home-agency-staff-risk/ | Agency Staff in Care Homes: The Compliance Risk No One Owns | Article: review H1 claims, dates and brand fit
+/blog/care-home-cqc-workforce-compliance/ | CQC and Workforce Compliance: What Care Homes Get Wrong | Article: review H1 claims, dates and brand fit
+/blog/care-home-staffing-crisis/ | Care Home Staffing: When "Who's Looking After Mum?" Has No Good Answer | Article: review H1 claims, dates and brand fit
+/blog/care-sector-rtw-compliance-guide/ | Prepare right-to-work records across your care teams. | Core: detailed review above
+/blog/cleaning-contractor-verification/ | Cleaning Contractors: The Workforce You Never Verified | Article: review H1 claims, dates and brand fit
+/blog/compliance-culture-vs-compliance-theatre/ | Compliance Culture vs Compliance Theatre | Article: review H1 claims, dates and brand fit
+/blog/compliance-officer-role-guide/ | What a Compliance Officer Actually Needs: A Practical Guide | Article: review H1 claims, dates and brand fit
+/blog/construction-worker-verification-challenges/ | Construction Worker Verification: The On-Site Blind Spot | Article: review H1 claims, dates and brand fit
+/blog/contractor-vs-employee-compliance/ | Contractors vs Employees: Different Compliance Obligations? | Article: review H1 claims, dates and brand fit
+/blog/cyber-fraud-ceo-impersonation/ | CEO Fraud and Deepfake Impersonation: The New Threat | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/dbs-checks-vs-right-to-work-checks/ | DBS Checks vs Right to Work Checks: What's the Difference? | Article: review H1 claims, dates and brand fit
+/blog/deepfake-candidates-recruitment/ | The Recruiter's Nightmare: Deepfake Candidates in Remote Interviews | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/deepfake-detection-video-calls/ | Can You Spot a Deepfake on a Video Call? Probably Not. | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/deepfake-playbook/ | The Deepfake Playbook: How Real-Time AI Video Cloning Works | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/digital-right-to-work-checks-vs-manual/ | Digital vs Manual Right to Work Checks: Which Is Safer? | Article: review H1 claims, dates and brand fit
+/blog/document-fraud-spotting-guide-employers/ | How to Spot Fraudulent Documents: A Guide for Employers | Article: review H1 claims, dates and brand fit
+/blog/domiciliary-care-worker-verification/ | Domiciliary Care Workers: The Verification Blind Spot | Article: review H1 claims, dates and brand fit
+/blog/doorstep-fraud-problem/ | The Doorstep Problem: £57 Million in Annual Fraud That Starts With a Knock | Article: review H1 claims, dates and brand fit
+/blog/education-sector-dbs-rtw-compliance/ | Schools and Universities: DBS and RTW Compliance Guide | Article: review H1 claims, dates and brand fit
+/blog/employee-data-protection-rtw-checks/ | RTW Checks and Data Protection: What You Can (and Can't) Keep | Article: review H1 claims, dates and brand fit
+/blog/employee-onboarding-compliance-checklist/ | The Compliance-First Employee Onboarding Checklist | Article: review H1 claims, dates and brand fit
+/blog/enterprise-compliance-sme-prices/ | Enterprise Compliance at SME Prices: Why Verification Shouldn't Cost £50 Per Check | Article: review H1 claims, dates and brand fit
+/blog/fair-work-agency-april-2026/ | The Fair Work Agency: What Every UK Business Needs to Know Before April 2026 | Article: review H1 claims, dates and brand fit
+/blog/future-of-identity-verification-uk/ | The Future of Identity Verification in the UK | Article: review H1 claims, dates and brand fit
+/blog/graduate-visa-employer-guide/ | Hiring Graduate Visa Holders: What Employers Need to Know | Article: review H1 claims, dates and brand fit
+/blog/health-care-worker-visa-sponsor-guide/ | Health and Care Worker Visa: A Sponsor's Compliance Guide | Article: review H1 claims, dates and brand fit
+/blog/home-office-compliance-visit-what-happens/ | What Happens During a Home Office Compliance Visit | Article: review H1 claims, dates and brand fit
+/blog/hospitality-right-to-work-compliance/ | Right to Work in Hospitality: High Turnover, High Risk | Article: review H1 claims, dates and brand fit
+/blog/hr-compliance-automation-business-case/ | The Business Case for Automating HR Compliance | Article: review H1 claims, dates and brand fit
+/blog/identity-as-infrastructure/ | What Is Identity-as-Infrastructure? The Next Category in Enterprise Trust | Article: review H1 claims, dates and brand fit
+/blog/identity-fraud-uk-statistics-2026/ | Identity Fraud in the UK: The 2025-26 Numbers | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/identity-verification-api-integration/ | Identity Verification APIs: What Businesses Should Know | Article: review H1 claims, dates and brand fit
+/blog/identity-verification-gap/ | The Identity Verification Gap: Why Businesses Still Trust Strangers | Article: review H1 claims, dates and brand fit
+/blog/kyc-fatigue-living-identity/ | From KYC Fatigue to Living Identity: Why Static Checks Are Failing | Article: review H1 claims, dates and brand fit
+/blog/landlord-right-to-rent-checks/ | Right to Rent Checks: What Landlords Must Do in 2026 | Article: review H1 claims, dates and brand fit
+/blog/meeting-identity-verification-remote/ | Who's Really on That Video Call? Meeting Verification | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/multi-site-business-compliance-challenge/ | Multi-Site Compliance: When Your Records Are Everywhere | Article: review H1 claims, dates and brand fit
+/blog/payroll-fraud-ghost-employees/ | Ghost Employees and Payroll Fraud: An Identity Problem | Article: review H1 claims, dates and brand fit
+/blog/phishing-attacks-business-verification/ | Phishing Has Evolved. Has Your Verification? | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/platform-agnostic-verification/ | Platform Agnostic Verification: Why Your Identity Solution Can't Be Locked to One App | Article: review H1 claims, dates and brand fit
+/blog/preventing-illegal-working-landlord-employer/ | The Employer's Duty to Prevent Illegal Working | Article: review H1 claims, dates and brand fit
+/blog/preventing-modern-slavery-supply-chain/ | Modern Slavery Due Diligence: What Your Business Must Do | Article: review H1 claims, dates and brand fit
+/blog/real-cost-bad-hire/ | The Real Cost of a Bad Hire: Time, Money, and Compliance Risk | Article: review H1 claims, dates and brand fit
+/blog/recruitment-agency-compliance-risk/ | Why Recruitment Agencies Carry More Compliance Risk | Article: review H1 claims, dates and brand fit
+/blog/recruitment-fraud-fake-candidates/ | Fake Candidates Are Applying for Your Jobs Right Now | Article: review H1 claims, dates and brand fit
+/blog/remote-hiring-identity-verification/ | Remote Hiring and Identity Verification: Closing the Gap | Article: review H1 claims, dates and brand fit
+/blog/right-to-work-check-documents-list/ | Right-to-work documents for UK employers | Core: detailed review above
+/blog/right-to-work-checks-2026-update/ | Right to Work Checks in 2026: What's Changed | Article: review H1 claims, dates and brand fit
+/blog/right-to-work-discrimination-law/ | RTW Checks and Discrimination: Walking the Legal Line | Article: review H1 claims, dates and brand fit
+/blog/right-to-work-follow-up-checks/ | Right-to-work follow-up checks for employers | Core: detailed review above
+/blog/right-to-work-for-directors-partners/ | Do Company Directors Need Right to Work Checks? | Article: review H1 claims, dates and brand fit
+/blog/right-to-work-gap-signs/ | 5 Signs Your Hiring Process Has a Right-to-Work Gap | Article: review H1 claims, dates and brand fit
+/blog/right-to-work-penalties-2026/ | Right to Work Penalties in 2026: Fines, Prosecution, Risk | Article: review H1 claims, dates and brand fit
+/blog/safeguarding-gap-care-homes/ | The Safeguarding Gap: How Agency Staff Rotate Through Care Homes Unchecked | Article: review H1 claims, dates and brand fit
+/blog/seasonal-worker-compliance-agriculture/ | Seasonal Workers: The Compliance Challenge in Agriculture | Article: review H1 claims, dates and brand fit
+/blog/settled-status-employer-checks/ | EU Settled Status: How Employers Should Verify It | Article: review H1 claims, dates and brand fit
+/blog/skilled-worker-visa-employer-obligations/ | Skilled Worker Visa: Your Obligations as a Sponsor | Article: review H1 claims, dates and brand fit
+/blog/sme-right-to-work-mistakes/ | 7 Right to Work Mistakes Small Businesses Keep Making | Article: review H1 claims, dates and brand fit
+/blog/social-engineering-workplace/ | Social Engineering at Work: Why Your Team Is the Target | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/sponsor-licence-compliance-calendar/ | The Sponsor Licence Compliance Calendar You Need | Article: review H1 claims, dates and brand fit
+/blog/sponsor-licence-revocations-2025/ | 3,100 UK Businesses Lost Their Sponsor Licence Last Year | Article: review H1 claims, dates and brand fit
+/blog/sponsor-management-system-sms-guide/ | Sponsor Management System (SMS): A Practical Guide | Article: review H1 claims, dates and brand fit
+/blog/supply-chain-worker-verification/ | Supply Chain Worker Verification: Your Hidden Liability | Article: review H1 claims, dates and brand fit
+/blog/temp-worker-loophole/ | The Temp Worker Loophole: 1.1 Million Workers, Almost Zero Verification | Article: review H1 claims, dates and brand fit
+/blog/trade-platforms-blind-spot/ | Why Trade Platforms Can't Tell You Who Actually Showed Up | Article: review H1 claims, dates and brand fit
+/blog/trust-layer-missing/ | The Trust Layer Is Missing: Why Identity Verification Is the Infrastructure Problem of Our Time | Article: review H1 claims, dates and brand fit
+/blog/two-way-verification-explained/ | Two-Way Verification: What It Is and Why One-Way Systems Are No Longer Enough | Article: review H1 claims, dates and brand fit
+/blog/uk-immigration-enforcement-statistics-2025/ | UK Immigration Enforcement in Numbers: 2024-25 Data | Article: review H1 claims, dates and brand fit
+/blog/uk-visa-types-employer-guide/ | UK Visa Types: What Every Employer Needs to Know | Article: review H1 claims, dates and brand fit
+/blog/visa-expiry-tracking-employers/ | Visa Expiry Tracking: The Compliance Gap Most Employers Miss | Article: review H1 claims, dates and brand fit
+/blog/voice-cloning-threat/ | Voice Cloning in 30 Seconds: Why Phone Calls Are No Longer Proof of Identity | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/blog/vulnerable-adults-identity-doorstep/ | Protecting Vulnerable Adults from Doorstep Identity Fraud | Article: review H1 claims, dates and brand fit
+/blog/walk-in-compliance-audit-prep/ | How to Prepare Your Business for a Walk-In Compliance Audit | Article: review H1 claims, dates and brand fit
+/blog/welcome-to-certifyd/ | Welcome to Certifyd | Article: review H1 claims, dates and brand fit
+/blog/what-is-a-statutory-excuse-rtw/ | What Is a Statutory Excuse? Your RTW Legal Defence | Article: review H1 claims, dates and brand fit
+/blog/whistleblowing-compliance-failures/ | Whistleblowing and Compliance: When Employees Speak Up | Article: review H1 claims, dates and brand fit
+/blog/whos-really-at-your-door/ | Who's Really at Your Door? The Hidden Risk of Letting Strangers Into Your Home | Article: review H1 claims, dates and brand fit
+/blog/zero-trust-identity-business/ | Zero Trust Starts with Identity: Lessons from Cybersecurity | Article: decide separate AI-fraud brand/redirect; fact-check before move
+/careers/ | Join the Team | Other: review product fit and specific task wording before launch
+/contact/ | Book a demo. | Core: detailed review above
+/contract-activation/ | Turn the contract into the compliance plan. | Other: review product fit and specific task wording before launch
+/cookies/ | Cookie Policy | Legal/service: descriptive H1 appropriate
+/for/agency-nurses/ | They’re Wearing Scrubs. That’s All You Know. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/agency-worker-compliance/ | The Agency Checked Them. But Did They Check the Right Person? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/airbnb/ | You’re Giving a Stranger the Keys to Your Home. Who Are They? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/builders/ | Six Strangers in Your Home for Six Weeks. Who Are They? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/care-workers/ | Your Parent Can’t Check. But You Can. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/ceo-fraud/ | The CEO Just Called. Or Did They? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/cleaners/ | They Have Your Keys. Do You Know Who They Are? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/cleaning-companies/ | Your Cleaners Enter 50 Homes a Week. Can You Prove Who They Are? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/contractor-verification/ | Third-Party Contractors. Your Site. Your Liability. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/deepfakes/ | You Can’t Trust Your Eyes Anymore. Trust Verified Identity Instead. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/delivery-drivers/ | They Know Your Address. They Know When You’re Home. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/electricians/ | They’re in Every Room. Do You Know Who Sent Them? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/estate-agent-viewings/ | An Empty Property. A Stranger. No One Else Around. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/facilities-management/ | Dozens of People. Dozens of Sites. One Question: Who Are They? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/fwa-compliance/ | They Can Walk In. Can You Pass the Audit? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/hospitality-businesses/ | High Turnover. New Staff Weekly. Who’s Checking? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/hospitality-staff/ | Three New Faces Every Friday Night. Nobody Checked. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/lone-workers/ | They’re Meeting a Stranger. Alone. In a Private Location. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/nannies-au-pairs/ | They’re Alone with Your Children. Do You Really Know Who They Are? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/online-dating/ | You’ve Swiped Right. But Who Are They Really? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/phishing/ | The Email Looks Right. The Sender Isn’t. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/plumbers/ | It’s an Emergency. You’ve Never Seen This Person Before. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/protecting-elderly-parents/ | Your Mum Opens the Door to Everyone. She Shouldn’t Have To. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/remote-workers/ | You’ve Never Met Them. You’re Giving Them Access to Everything. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/right-to-work-checks/ | A Photocopied Passport Is Not Proof. It Never Was. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/right-to-work-penalties/ | £45,000 Per Worker. And 80% of Employers Would Fail the Audit. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/romance-scams/ | You’ve Talked for Months. You’ve Never Met. Are They Real? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/safeguarding/ | Safeguarding Means Knowing Who. Not Just Trusting Who. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/school-pickups/ | A Stranger Says They’re Picking Up Your Child. Are They? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/security-guards/ | They Guard Your Building. Who Guards Their Identity? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/social-engineering/ | The Attack Doesn’t Target Your Systems. It Targets Your People. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/temp-workers/ | Day One. New Face. No Idea Who They Are. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/trade-platforms/ | You Verify the Business. Who Verifies the Person? | Legacy template: review for consolidation and rewrite repeated H2s
+/for/voice-cloning/ | That’s Their Voice. But It’s Not Them. | Legacy template: review for consolidation and rewrite repeated H2s
+/for/warehouse-workers/ | 200 Workers. 40 Are New This Week. Who Checked? | Legacy template: review for consolidation and rewrite repeated H2s
+/industries/care/ | Keep care-worker records ready for review. | Core: detailed review above
+/industries/nhs/ | Bring staff credentials into one trust-managed view. | Core: detailed review above
+/industries/recruitment/ | Prepare worker records for the next placement. | Core: detailed review above
+/industries/trades/ | Scan a visitor’s QR code. See their work profile. | Core: detailed review above
+/industries/workforce/ | Keep your workforce records ready for the next review. | Core: detailed review above
+/outcomes/import-compliance-records/ | Import your existing workforce records. | Core: detailed review above
+/outcomes/portable-worker-credentials/ | Let workers manage their own credentials. | Core: detailed review above
+/outcomes/reduce-compliance-admin/ | Spend less time chasing documents. | Core: detailed review above
+/outcomes/reduce-compliance-risk/ | Find and fix compliance gaps. | Core: detailed review above
+/outcomes/verified-worker-check-in/ | Track worker check-ins by site and time. | Core: detailed review above
+/partners/ | Partners & Programmes | Other: review product fit and specific task wording before launch
+/platform/records/ | Track expiry dates. Plan record reviews. | Core: detailed review above
+/podcast/ | Gone Phishing | Podcast: retain descriptive episode title
+/podcast/20-years-cybersecurity-almost-got-scammed/ | 20 Years in Cybersecurity and I Almost Got Scammed | Podcast: retain descriptive episode title
+/podcast/a-million-hacking-attempts-per-second/ | A Million Hacking Attempts Per Second | Podcast: retain descriptive episode title
+/privacy/ | Privacy Policy | Legal/service: descriptive H1 appropriate
+/products/id/ | Store your ID documents. Share them for work. | Core: detailed review above
+/products/id/demo/ | Store an ID document. Share it for work. | Core: detailed review above
+/products/portal/demo/ | [none] | Noindex demo: add accessible H1 if retained
+/resources/fair-work-agency-checklist/ | Review the records behind your employment practices. | Core: detailed review above
+/resources/preview/fair-work-agency-checklist/ | Review the records behind your employment practices. | Core: detailed review above
+/resources/preview/right-to-work-guide/ | Prepare the evidence for your next right-to-work check. | Core: detailed review above
+/resources/recruitment-placement-evidence-checklist/ | Prepare worker evidence for the next placement. | Core: detailed review above
+/resources/right-to-work-guide/ | Prepare the evidence for your next right-to-work check. | Core: detailed review above
+/resources/worker-record-review-checklist/ | Review the evidence behind each worker record. | Core: detailed review above
+/security/ | Know who can see each record. | Core: detailed review above
+/terms/ | Terms of Service | Legal/service: descriptive H1 appropriate
+/tools/ | Plan the work behind your compliance records. | Core: detailed review above
+/tools/audit-probability/ | Read enforcement figures without guessing your inspection risk. | Core: detailed review above
+/tools/audit-readiness/ | Find the gaps in your worker-record review process. | Core: detailed review above
+/tools/cost-calculator/ | Calculate the time and cost of reviewing worker records. | Core: detailed review above
+/tools/penalty-calculator/ | Calculate a right-to-work penalty scenario. | Core: detailed review above
+/tools/roi-calculator/ | Compare the cost of your current and proposed process. | Core: detailed review above
+
+SOURCE AND DELIVERY
+Heading inventory was parsed from out/**/index.html after the production-style static build. Baseline heading comparison was saved before this pass. Canonical report: docs/heading-review-2026-10-12.txt. Local copy: ../certifyd-heading-review-2026-10-12.txt. The attached standalone review pages are for design review; they are not a production deployment.

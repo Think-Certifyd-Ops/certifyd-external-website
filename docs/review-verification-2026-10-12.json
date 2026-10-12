@@ -1,26 +1,28 @@
 {
   "checked": "2026-10-12",
   "build": "npm run build:review passed:webpack,TypeScript,static export,RSS",
-  "lint": "0 errors,16 existing warnings",
+  "lint": "0 errors,15 existing warnings",
   "tests": [
     "Workload:independent financial scenarios,zero/negative/invalid cases",
     "Measurement:source/origin/namespace/status/consent boundaries",
     "Accepted callbacks with paymentRequired=true are excluded."
   ],
   "metadata": "All exported index routes checked; no unexpected H1/canonical exceptions",
-  "internal_links": "All generated internal links resolve to exported files or configured routes; no links to retired AI routes",
+  "internal_links": "All 167 exported pages checked for internal links, H1 count, canonicals, sitemap placement and retired-route redirects; architecture check reports zero errors.",
   "testimonials": "No testimonial component/data/render path or review-rating schema in current marketing source",
   "handover": "Six source pieces,current CodeWords Hono service identified,25 names,selected Sentinel source ZIP",
-  "demo_spec": "68 capture placements,17 pages,11 families",
-  "review_bundle": "35 self-contained pages plus hub. Native connected/profile examples, calculators, readiness and fictional ID sharing; calendar loads immediately on the contact page. No local analytics or submitted enquiries. Browser interaction verification remains pending.",
+  "demo_spec": "64 capture placements,16 pages,11 families",
+  "review_bundle": "34 self-contained pages plus hub. Native connected/profile examples, calculators, readiness and fictional ID sharing; calendar loads immediately on the contact page. No local analytics or submitted enquiries. Browser interaction verification remains pending.",
   "release_checks_pending": [
     "Browser-rendered hero fit and interaction checks:computer-use permission denied",
     "Actual deployed accepted-booking/redirect checks and real capture assets"
   ],
   "state": "Review branch only; no production deployment",
   "booking_configuration": "Created and read back live GA demo_booking_completed ONCE_PER_EVENT after matching the stream to G-FNMZS9PQ1S. No collector or booking generated.",
-  "local_review_validation": "Native bridge scripts parse on all36 top-level local files; relative links resolve. Actual browser interaction and responsive layout remain unverified.",
+  "local_review_validation": "34 standalone pages plus hub and supporting documents generated; links and exported routes checked. Actual browser interaction and responsive layout remain unverified.",
   "booking_journey": "Primary header/connected booking links navigate directly to /contact/. Calendar is present on the first screen with optional industry/topic choices; choices prefill Cal notes in the iframe and fallback URL. Explicit demo markers exclude general account/contact navigation from click tracking. Provider prefill source: https://cal.com/help/bookings/prefill-fields. Actual provider booking and viewport checks remain pending.",
   "partner_distribution": "Unsent care/recruitment drafts and asset brief prepared; source URLs must be live before distribution, and recipients/actions are not assumed authorised.",
-  "remaining_goal_gate": "Browser-rendered layout/interactions and the deployed accepted-booking/redirect journey remain unproven. Chrome computer-use access was rechecked and denied; no known deployment/check job exists for the previous remote checkpoint."
+  "remaining_goal_gate": "Browser-rendered layout/interactions and the deployed accepted-booking/redirect journey remain unproven. Chrome computer-use access was rechecked and denied; no known deployment/check job exists for the previous remote checkpoint.",
+  "platform_retirement": "Platform overview removed. Both /platform and /platform/ forced 301 to homepage; prior redirects now target the closest current route. Tracked records remains at /platform/records/. Shared header/footer and generated internal links updated.",
+  "homepage_cleanup": "Repeated chapter callouts and instructional prose removed from the mockups. Existing role-setup screenshot replaces illustrated hero. Horizontal arrows move right on hover/focus and respect reduced motion. Fresh live-app screenshots unavailable: Chrome CUA permission denied."
 }

@@ -80,7 +80,7 @@ export const ROLE_PAGES: ForPage[] = [
       },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -183,7 +183,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Right-to-Work Checks", slug: "right-to-work-checks" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
 
     ],
@@ -277,7 +277,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Trade Platforms", slug: "trade-platforms" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -371,7 +371,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -465,7 +465,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Trade Platforms", slug: "trade-platforms" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -560,7 +560,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Domiciliary Care", slug: "domiciliary-care" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -655,7 +655,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Safeguarding", slug: "safeguarding" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -749,7 +749,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Trade Platforms", slug: "trade-platforms" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
       { label: "Certifyd ID", href: "/products/id/" },
     ],
@@ -838,7 +838,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Lone Workers", slug: "lone-workers" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
     ],
     relatedArticles: [
@@ -926,7 +926,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Right-to-Work Checks", slug: "right-to-work-checks" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
     ],
     relatedArticles: [
@@ -1019,7 +1019,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for Right-to-Work Checks", slug: "right-to-work-checks" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
     ],
     relatedArticles: [
@@ -1113,7 +1113,7 @@ export const ROLE_PAGES: ForPage[] = [
       { label: "Certifyd for CEO Fraud", slug: "ceo-fraud" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Portal", href: "/platform/" },
+      { label: "Certifyd Portal", href: "/" },
 
 
     ],

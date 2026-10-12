@@ -33,7 +33,7 @@ export function HomeCTA() {
               <Button href="/contact/" size="lg">
                 Book a demo
               </Button>
-              <Button href="/platform/" variant="outline" size="lg">
+              <Button href="/#solutions" variant="outline" size="lg">
                 Explore solutions
               </Button>
             </div>

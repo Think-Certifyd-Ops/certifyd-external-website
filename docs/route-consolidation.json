@@ -1,6 +1,6 @@
 {
-  "/products/": "/platform/",
-  "/products/portal/": "/platform/",
+  "/products/": "/",
+  "/products/portal/": "/",
   "/products/shiftcheck/": "/outcomes/verified-worker-check-in/",
   "/for/care-homes/": "/industries/care/",
   "/for/domiciliary-care/": "/industries/care/",
@@ -16,5 +16,9 @@
   "/products/codewords/demo/": "/",
   "/security/codewords/": "/",
   "/support/codewords/": "/",
-  "/tools/deepfake-assessment/": "/"
+  "/tools/deepfake-assessment/": "/",
+  "/platform/": "/",
+  "/solutions/compliance/": "/outcomes/reduce-compliance-risk/",
+  "/rtw/": "/resources/right-to-work-guide/",
+  "/onboarding/organisation/": "/outcomes/import-compliance-records/"
 }
