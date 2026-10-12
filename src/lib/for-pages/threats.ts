@@ -42,11 +42,6 @@ export const THREAT_PAGES: ForPage[] = [
       "The system confirms both identities through WebAuthn authentication \u2014 unforgeable, unspoofable",
       "A auditable record is created: who verified, when, and through which registered device",
     ],
-    testimonial: {
-      quote:
-        "They created a voice model of his voice from public recordings. It sounded a bit like him, but knowing him well enough, I knew it wasn\u2019t him. Most people wouldn\u2019t.",
-      attribution: "Cybersecurity professional, 20 years experience",
-    },
     faqs: [
       {
         question: "How does Certifyd defeat deepfakes?",
@@ -75,9 +70,9 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Remote Workers", slug: "remote-workers" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
+
+
     ],
     relatedArticles: [
       { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },
@@ -137,11 +132,6 @@ export const THREAT_PAGES: ForPage[] = [
       "If the sender is genuine, they complete the verified credential challenge on their registered device",
       "If they can\u2019t complete it, the instruction is flagged as potentially fraudulent \u2014 crisis averted",
     ],
-    testimonial: {
-      quote:
-        "When we hire somebody new, we get phishing attempts to them almost immediately. It\u2019s always from the CEO saying \u2018I\u2019m in an important meeting, can you quickly do this?\u2019",
-      attribution: "Head of Cybersecurity, healthcare tech",
-    },
     faqs: [
       {
         question: "How does Certifyd prevent CEO fraud?",
@@ -170,9 +160,9 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Voice Cloning", slug: "voice-cloning" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
+
+
+
     ],
     relatedArticles: [
       { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },
@@ -232,11 +222,6 @@ export const THREAT_PAGES: ForPage[] = [
       "The caller must complete a device-verified verified credential challenge on their registered phone",
       "If they can\u2019t complete it, the call is flagged as a potential impersonation \u2014 regardless of how convincing the voice sounds",
     ],
-    testimonial: {
-      quote:
-        "They created a voice model of his voice from public recordings. It sounded a bit like him, but knowing him well enough, I knew it wasn\u2019t him. Most people wouldn\u2019t.",
-      attribution: "Cybersecurity professional, 20 years experience",
-    },
     faqs: [
       {
         question: "How does voice cloning work?",
@@ -265,8 +250,8 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Social Engineering", slug: "social-engineering" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
+
     ],
     relatedArticles: [
       { label: "The Voice Cloning Threat", href: "/blog/voice-cloning-threat/" },
@@ -326,11 +311,6 @@ export const THREAT_PAGES: ForPage[] = [
       "The sender completes a device-verified verified credential challenge on their registered phone",
       "If they can\u2019t complete it, the message is confirmed as phishing \u2014 before any damage is done",
     ],
-    testimonial: {
-      quote:
-        "When we hire somebody new, we get phishing attempts to them almost immediately. It\u2019s always from the CEO saying \u2018I\u2019m in an important meeting, can you quickly do this?\u2019",
-      attribution: "Head of Cybersecurity, healthcare tech",
-    },
     faqs: [
       {
         question: "How is Certifyd different from email security tools?",
@@ -359,8 +339,8 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Deepfakes", slug: "deepfakes" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
+
     ],
     relatedArticles: [
       { label: "The Deepfake Playbook", href: "/blog/deepfake-playbook/" },
@@ -448,7 +428,7 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Social Engineering", slug: "social-engineering" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -509,11 +489,6 @@ export const THREAT_PAGES: ForPage[] = [
       "The requester must complete a verified credential challenge on their registered device",
       "If they can\u2019t complete it, the request is flagged as social engineering \u2014 before any action is taken",
     ],
-    testimonial: {
-      quote:
-        "They created a voice model of his voice from public recordings. It sounded a bit like him, but knowing him well enough, I knew it wasn\u2019t him. Most people wouldn\u2019t.",
-      attribution: "Cybersecurity professional, 20 years experience",
-    },
     faqs: [
       {
         question: "Why can\u2019t training alone stop social engineering?",
@@ -542,9 +517,9 @@ export const THREAT_PAGES: ForPage[] = [
       { label: "Certifyd for Deepfakes", slug: "deepfakes" },
     ],
     relatedSolutions: [
-      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
+
+
+
     ],
     relatedArticles: [
       { label: "The Deepfake Playbook", href: "/blog/deepfake-playbook/" },

@@ -8,6 +8,7 @@ const INDUSTRIES = [
   "Trades & Home Services",
   "Care & Social Care",
   "Temporary Staffing",
+  "NHS & Healthcare",
   "Insurance",
   "Financial Services",
   "Government",
@@ -48,7 +49,7 @@ export function ContactForm() {
           Message sent
         </h3>
         <p className="text-text-on-light-muted">
-          We typically respond within 24 hours.
+          We’ll review your enquiry and reply to your work email.
         </p>
       </div>
     );
@@ -249,7 +250,7 @@ export function ContactForm() {
           required
           rows={5}
           className="w-full px-4 py-3 bg-white border border-warm-border rounded-sm text-text-on-light placeholder:text-text-on-light-muted/50 focus:outline-none focus:border-certifyd-blue transition-colors resize-none"
-          placeholder="Tell us about your needs..."
+          placeholder="Which records or workflow would you like to see?"
         />
       </div>
 
@@ -261,7 +262,7 @@ export function ContactForm() {
         type="submit"
         className="w-full md:w-auto bg-certifyd-blue text-white px-8 py-3 rounded-sm font-medium hover:bg-certifyd-blue-light transition-colors"
       >
-        Get in Touch
+        Send your enquiry
       </button>
     </form>
   );

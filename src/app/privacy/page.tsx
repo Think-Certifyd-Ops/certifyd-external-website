@@ -133,7 +133,7 @@ export default function PrivacyPolicyPage() {
             {" | "}
             <Link href="/terms/" className="text-certifyd-blue hover:underline">Terms of Service</Link>
             {" | "}
-            <Link href="/support/codewords/" className="text-certifyd-blue hover:underline">CodeWords Support</Link>
+            <Link href="/contact/" className="text-certifyd-blue hover:underline">Contact the team</Link>
             {" | "}
             <Link href="/account-deletion/" className="text-certifyd-blue hover:underline">Account Deletion</Link>
           </div>

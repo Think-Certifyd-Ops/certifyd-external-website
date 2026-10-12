@@ -41,7 +41,7 @@ export function Hero() {
           </div>
 
           <p className="text-xs text-text-on-dark-muted/50 mt-8 animate-slide-up animation-delay-400">
-            Trusted by recruitment agencies, care providers, and trades
+            For HR, compliance and workforce teams
             businesses across the UK.
           </p>
         </div>

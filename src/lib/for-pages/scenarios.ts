@@ -70,7 +70,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
     ],
     relatedArticles: [
       { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
@@ -130,11 +130,6 @@ export const SCENARIO_PAGES: ForPage[] = [
       "The viewer\u2019s identity is verified and confirmed to the agent",
       "An auditable record is created: who met whom, when, and at which property",
     ],
-    testimonial: {
-      quote:
-        "I do six viewings a day in empty houses with people I\u2019ve never met. My only safety measure is texting my colleague the address. That\u2019s it.",
-      attribution: "Estate agent, South London",
-    },
     faqs: [
       {
         question: "How does Certifyd protect estate agents during viewings?",
@@ -163,7 +158,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -251,7 +246,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Cleaners", slug: "cleaners" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -311,11 +306,6 @@ export const SCENARIO_PAGES: ForPage[] = [
       "The family receives verified confirmation of the nanny\u2019s identity and agency affiliation",
       "A auditable record is created for every visit: who arrived, when, and under whose authority",
     ],
-    testimonial: {
-      quote:
-        "The agency said they\u2019d verified her. But when she arrived at our door, we had no way to independently check she was actually the person they\u2019d vetted.",
-      attribution: "Parent, first-time nanny employer",
-    },
     faqs: [
       {
         question: "Are nannies required to be registered in the UK?",
@@ -344,7 +334,7 @@ export const SCENARIO_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [

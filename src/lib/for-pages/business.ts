@@ -41,11 +41,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "At placement, the candidate\u2019s identity, right-to-work status, and agency membership are confirmed in real time",
       "A auditable placement record is created: who was verified, when, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "We ask \u2018right to work?\u2019 and they say yes. Three weeks later \u2014 graduate visa, needs \u00a320k sponsorship. We had to start over.",
-      attribution: "HR Manager, tech company",
-    },
     faqs: [
       {
         question: "Are recruitment agencies liable for right-to-work checks?",
@@ -75,9 +70,9 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
-      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
+
+
     ],
     relatedArticles: [
       { label: "Right-to-Work Gap Signs", href: "/blog/right-to-work-gap-signs/" },
@@ -142,11 +137,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "When a worker arrives for a shift, both parties verify through Certifyd \u2014 confirming identity and agency membership in real time",
       "A auditable record is created for every shift: who, when, where, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "Rotating agency staff cover nights and weekends. Families ask who\u2019s looking after their parent. Honestly? We can\u2019t always tell them fast enough.",
-      attribution: "Manager, residential care home",
-    },
     faqs: [
       {
         question: "How does Certifyd support CQC compliance?",
@@ -176,7 +166,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -236,11 +226,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "At each client visit, both parties verify through Certifyd \u2014 confirming the cleaner\u2019s identity and company membership",
       "A auditable record is created for every visit: who, when, where, and under your company\u2019s authority",
     ],
-    testimonial: {
-      quote:
-        "We had a client call worried sick because a different cleaner showed up \u2014 one of our team was off sick and we sent a replacement. They had no way of knowing if she really worked for us.",
-      attribution: "Owner, domestic cleaning company",
-    },
     faqs: [
       {
         question: "How do I add my cleaners to Certifyd?",
@@ -270,7 +255,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -330,11 +315,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "At each assignment, the worker verifies at the client site \u2014 confirming identity, agency membership, and right-to-work status",
       "A auditable record is created for every placement: who, when, where, and under the agency\u2019s authority",
     ],
-    testimonial: {
-      quote:
-        "At \u00a350\u2013200 per background check, we were spending thousands a year just to verify temps. Some checks got skipped. That\u2019s the reality for millions of small businesses.",
-      attribution: "Director, temp staffing agency",
-    },
     faqs: [
       {
         question: "How does Certifyd reduce verification costs?",
@@ -364,8 +344,8 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
+
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -424,11 +404,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "At every shift, the worker verifies through Certifyd \u2014 confirming identity, employer, and right-to-work status in real time",
       "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "Saturday night, full restaurant, two new agency staff I\u2019ve never seen before walk in. They put on aprons and start working. I\u2019ve got 200 covers to get through \u2014 I\u2019m not stopping to check IDs.",
-      attribution: "General Manager, restaurant group",
-    },
     faqs: [
       {
         question: "Why is hospitality targeted for right-to-work enforcement?",
@@ -458,7 +433,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
     ],
     relatedArticles: [
       { label: "Fair Work Agency: What Changes in April 2026", href: "/blog/fair-work-agency-april-2026/" },
@@ -517,11 +492,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "When a tradesperson arrives at a platform-sourced job, both parties verify through Certifyd",
       "A auditable record links the individual to the business, the platform, and the specific job",
     ],
-    testimonial: {
-      quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
-    },
     faqs: [
       {
         question: "How would Certifyd integrate with a trade platform?",
@@ -551,7 +521,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -612,11 +582,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "At each home visit, the carer verifies through Certifyd \u2014 confirming identity, employment, and service user authorisation",
       "A auditable visit record is created: who, when, where, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "Rotating agency staff cover nights and weekends. Families ask who\u2019s looking after their parent. Honestly? We can\u2019t always tell them fast enough.",
-      attribution: "Manager, residential care home",
-    },
     faqs: [
       {
         question: "How does Certifyd work for service users who can\u2019t use a phone?",
@@ -646,7 +611,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -706,11 +671,6 @@ export const BUSINESS_PAGES: ForPage[] = [
       "At each site, workers verify through Certifyd \u2014 confirming identity, employer, and site-specific authorisation",
       "A auditable record is created for every site visit, auditable by the FM company and the end client",
     ],
-    testimonial: {
-      quote:
-        "We manage 40 sites. On any given day, we\u2019ve got subcontracted cleaners, agency guards, and maintenance engineers across all of them. When a client asks \u2018who was in our building last night?\u2019 \u2014 it takes us hours to piece it together.",
-      attribution: "Operations Director, facilities management company",
-    },
     faqs: [
       {
         question: "How does Certifyd handle multi-tier supply chains?",
@@ -740,7 +700,7 @@ export const BUSINESS_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [

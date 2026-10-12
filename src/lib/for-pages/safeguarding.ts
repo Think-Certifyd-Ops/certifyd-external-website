@@ -41,11 +41,6 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       "The elderly person (or their family member remotely) can see the visitor\u2019s verified identity and company",
       "A auditable record is created: who visited, when, and under whose authority",
     ],
-    testimonial: {
-      quote:
-        "Mum had a man knock on her door saying he was from the water board. She let him in. He wasn\u2019t. That\u2019s when we realised she can\u2019t tell anymore who she should trust.",
-      attribution: "Daughter of elderly fraud victim",
-    },
     faqs: [
       {
         question: "Can my elderly parent use Certifyd?",
@@ -75,7 +70,7 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd ID", href: "/products/id/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
     ],
     relatedArticles: [
       { label: "Who\u2019s Really at Your Door?", href: "/blog/whos-really-at-your-door/" },
@@ -168,7 +163,7 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -256,7 +251,7 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -317,11 +312,6 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       "A auditable record is created: who was present, when, where, and under whose authority",
       "When a safeguarding concern arises, verifiable evidence is immediately available",
     ],
-    testimonial: {
-      quote:
-        "Rotating agency staff cover nights and weekends. Families ask who\u2019s looking after their parent. Honestly? We can\u2019t always tell them fast enough.",
-      attribution: "Manager, residential care home",
-    },
     faqs: [
       {
         question: "How does Certifyd support Ofsted and CQC safeguarding requirements?",
@@ -350,7 +340,7 @@ export const SAFEGUARDING_PAGES: ForPage[] = [
       { label: "Certifyd for Protecting Elderly Parents", slug: "protecting-elderly-parents" },
     ],
     relatedSolutions: [
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [

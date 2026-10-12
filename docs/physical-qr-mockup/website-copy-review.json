@@ -1,0 +1,50 @@
+{
+  "scope": "Homepage, platform and five outcomes plus rebuilt sector, trades and ID pages. Targeted changes preserve clear existing active headings.",
+  "changes": [
+    {
+      "file": "app/_connected-html/verified-worker-check-in.json",
+      "before": "Keep the visit<br>after the working day.",
+      "after": "Review visits<br>after the working day."
+    },
+    {
+      "file": "app/_connected-html/reduce-compliance-admin.json",
+      "before": "Measure the chasing<br>your team does today.",
+      "after": "Measure the time your team<br>spends chasing documents."
+    },
+    {
+      "file": "app/_connected-html/portable-worker-credentials.json",
+      "before": "Bring a credential.<br>Follow both sides.",
+      "after": "See how workers share<br>credentials with your team."
+    },
+    {
+      "file": "app/_connected-html/index.json",
+      "before": "Choose what your team<br>needs to improve.",
+      "after": "Choose the next task<br>for your team."
+    },
+    {
+      "file": "app/industries/trades/page.tsx",
+      "before": "Scan the person at your door. See their work profile.",
+      "after": "Scan a visitor’s QR code. See their work profile."
+    },
+    {
+      "file": "app/industries/trades/page.tsx",
+      "before": "Read the person, company and credential details.",
+      "after": "Check who they are and who they work for."
+    },
+    {
+      "file": "app/products/id/page.tsx",
+      "before": "Keep your identification documents with you.",
+      "after": "Store your ID documents. Share them for work."
+    },
+    {
+      "file": "app/products/id/page.tsx",
+      "before": "Add the identification evidence you need for work.",
+      "after": "Store your ID documents in the app."
+    },
+    {
+      "file": "app/products/id/page.tsx",
+      "before": "Connect your evidence to the workplace’s requirements.",
+      "after": "Share the documents your workplace needs."
+    }
+  ]
+}

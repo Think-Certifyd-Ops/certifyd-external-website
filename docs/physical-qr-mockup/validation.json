@@ -1,0 +1,41 @@
+{
+  "h1_count": 1,
+  "headings": [
+    [
+      "h1",
+      "Record check-ins with a rotating QR display."
+    ],
+    [
+      "h2",
+      "See who checks in for each shift."
+    ],
+    [
+      "h2",
+      "Track check-ins to each care-home room."
+    ],
+    [
+      "h2",
+      "Record home visits, even without a connection."
+    ],
+    [
+      "h2",
+      "Replace a check-in tablet with a compact display."
+    ],
+    [
+      "h2",
+      "Connect each scan to a person, place and time."
+    ],
+    [
+      "h2",
+      "Plan your shift and care check-in points."
+    ]
+  ],
+  "unique_ids": true,
+  "local_device_links_resolve": true,
+  "javascript_syntax": "passed",
+  "embedded_code_frames": 3,
+  "external_script_requests": 0,
+  "preview_only": true,
+  "browser_visual_test": "NOT RUN: computer-use permission denied",
+  "design_overviews": "Pillow composition from page copy, inspected visually. Not browser screenshots."
+}

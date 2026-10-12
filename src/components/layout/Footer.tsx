@@ -28,7 +28,7 @@ const companyLinks = [
 ];
 
 const resourceLinks = [
-  { label: "Existing product support", href: "/support/codewords/" },
+  { label: "Account help", href: "/contact/" },
   { label: "Blog", href: "/blog/" },
   { label: "Security & Trust", href: "/security/" },
 ];

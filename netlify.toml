@@ -162,13 +162,13 @@
 
 [[redirects]]
   from = "/solutions/person"
-  to = "/products/codewords/"
+  to = "/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/person/"
-  to = "/products/codewords/"
+  to = "/"
   status = 301
   force = true
 
@@ -229,5 +229,125 @@
 [[redirects]]
   from = "/onboarding/organisation/"
   to = "/platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/verify"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/verify/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/sentinel"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/sentinel/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/agent-watch"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/agent-watch/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/callcheck"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/callcheck/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords/family"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords/family/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords/business"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords/business/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords/demo"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/products/codewords/demo/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/security/codewords"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/security/codewords/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/support/codewords"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/support/codewords/"
+  to = "/"
   status = 301
   force = true

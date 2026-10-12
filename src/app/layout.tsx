@@ -1,26 +1,16 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import "@/styles/marketing.css";
 import "@/styles/connected.css";
+import "@/styles/story.css";
 import { MarketingHeader } from "@/components/marketing/MarketingHeader";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-
-const ibmPlexSans = IBM_Plex_Sans({
-  variable: "--font-ibm-plex-sans",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
+const ibmPlexMono = localFont({src:"../../public/images/connected/ibm-plex-mono-700.woff2",variable:"--font-ibm-plex-mono",weight:"700",display:"swap"});
+const ibmPlexSans = localFont({src:"../../public/images/connected/ibm-plex-sans.woff2",variable:"--font-ibm-plex-sans",weight:"100 900",display:"swap"});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://certifyd.io"),

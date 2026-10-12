@@ -45,9 +45,6 @@ export interface ForPage {
   // Steps
   steps: string[];
 
-  // Testimonial (optional)
-  testimonial?: { quote: string; attribution: string };
-
   // FAQ
   faqs: { question: string; answer: string }[];
 
@@ -71,8 +68,8 @@ export interface ForPage {
 
 export const PRODUCT_DEMOS: Record<string, { label: string; href: string; external?: boolean }> = {
   "/platform/":    { label: "Try the Portal demo",   href: "/products/portal/demo/" },
-  "/products/verify/":    { label: "Try Screen free",       href: "https://recruiter.certifyd.io", external: true },
+
   "/products/id/":        { label: "Try the ID demo",       href: "/products/id/demo/" },
-  "/products/codewords/": { label: "Try the CodeWords demo", href: "/products/codewords/demo/" },
-  "/products/sentinel/":  { label: "Learn about Sentinel",  href: "/products/sentinel/" },
+
+
 };

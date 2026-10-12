@@ -54,6 +54,7 @@ export function WebSiteSchema() {
 }
 
 interface BlogPostSchemaProps {
+  updated?: string;
   title: string;
   description: string;
   slug: string;
@@ -62,6 +63,7 @@ interface BlogPostSchemaProps {
 }
 
 export function BlogPostSchema({
+  updated,
   title,
   description,
   slug,
@@ -75,9 +77,9 @@ export function BlogPostSchema({
     description,
     url: `${BASE_URL}/blog/${slug}/`,
     datePublished: date,
-    dateModified: date,
+    dateModified: updated || date,
     author: {
-      "@type": "Person",
+      "@type": author === "Certifyd Team" ? "Organization" : "Person",
       name: author,
     },
     publisher: {

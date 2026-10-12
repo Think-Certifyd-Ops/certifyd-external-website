@@ -8,6 +8,7 @@ export interface BlogPostMeta {
   slug: string;
   title: string;
   date: string;
+  updated?: string;
   author: string;
   excerpt: string;
   category: string;
@@ -37,6 +38,7 @@ export function getAllPosts(): BlogPostMeta[] {
       slug,
       title: data.title || slug,
       date: data.date || "",
+      updated: data.updated || undefined,
       author: data.author || "Certifyd Team",
       excerpt: data.excerpt || "",
       category: data.category || "Company Updates",
@@ -62,6 +64,7 @@ export function getPostBySlug(slug: string) {
       slug,
       title: data.title || slug,
       date: data.date || "",
+      updated: data.updated || undefined,
       author: data.author || "Certifyd Team",
       excerpt: data.excerpt || "",
       category: data.category || "Company Updates",

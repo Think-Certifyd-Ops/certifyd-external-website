@@ -1,0 +1,45 @@
+{
+  "build": "next build --webpack passed: compiled, TypeScript, static generation",
+  "routes_checked": [
+    "",
+    "platform",
+    "platform/records",
+    "outcomes/reduce-compliance-risk",
+    "outcomes/reduce-compliance-admin",
+    "outcomes/import-compliance-records",
+    "outcomes/verified-worker-check-in",
+    "outcomes/portable-worker-credentials",
+    "industries/care",
+    "industries/recruitment",
+    "industries/nhs",
+    "industries/workforce",
+    "industries/trades",
+    "products/id",
+    "resources/worker-record-review-checklist",
+    "resources/recruitment-placement-evidence-checklist"
+  ],
+  "single_h1": true,
+  "testimonials_absent_in_reviewed_pages": true,
+  "retired_routes": {
+    "/products/verify/": "/",
+    "/products/sentinel/": "/",
+    "/products/agent-watch/": "/",
+    "/products/callcheck/": "/",
+    "/products/codewords/": "/",
+    "/products/codewords/family/": "/",
+    "/products/codewords/business/": "/",
+    "/products/codewords/demo/": "/",
+    "/security/codewords/": "/",
+    "/support/codewords/": "/"
+  },
+  "retired_pages_not_exported": true,
+  "retired_sitemap_urls_removed": true,
+  "both_redirect_path_forms_present": true,
+  "browser_qa": "Pending: computer-use access denied",
+  "remaining_scope_issues": [
+    "rogerson-4869t.8.2",
+    "rogerson-4869t.8.3",
+    "rogerson-4869t.8.4"
+  ],
+  "lint": "npm run lint passed, 0 errors and 22 warnings"
+}

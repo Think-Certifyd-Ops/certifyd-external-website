@@ -1,0 +1,31 @@
+{
+  "type": "User-requested landing-page mockup",
+  "proposed_route": "/products/rotating-qr/",
+  "hardware": "Concept enclosure and display, not a photograph or confirmed specification",
+  "benefits_from_brief": [
+    "Lower-cost direction than iPad",
+    "Small unobtrusive display",
+    "Rotating code",
+    "Offline use",
+    "Low-power operation"
+  ],
+  "must_validate": [
+    "Price and unit economics against comparable tablet deployment",
+    "Battery/runtime at selected display and rotation interval",
+    "Token signing and device enrolment",
+    "Token expiry and clock rollback/drift",
+    "Offline scanner validation, trusted time and eventual synchronisation",
+    "Screenshot replay and real-time remote relay threat model",
+    "Code sharing does not alone prove physical presence",
+    "Device-to-site/room binding and physical tamper handling"
+  ],
+  "demo_slots": [
+    "physical-qr.hero",
+    "physical-qr.receipt",
+    "physical-qr.room",
+    "physical-qr.offline"
+  ],
+  "proof_needed": "Real hardware clip of code rotation, actual app scan and offline-to-synced event with person/place/time. Do not substitute model QR codes for authenticated protocol proof.",
+  "visual_review": "Browser permission denied. Separate raster design overview is a composed mockup, not a browser screenshot.",
+  "claim_boundary": "A scan is a recorded event at an assigned point. Rotation does not prove continuous attendance or independently prevent a live relay."
+}

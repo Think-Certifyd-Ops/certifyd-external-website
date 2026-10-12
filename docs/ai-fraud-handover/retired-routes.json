@@ -1,0 +1,12 @@
+{
+  "/products/verify/": "/",
+  "/products/sentinel/": "/",
+  "/products/agent-watch/": "/",
+  "/products/callcheck/": "/",
+  "/products/codewords/": "/",
+  "/products/codewords/family/": "/",
+  "/products/codewords/business/": "/",
+  "/products/codewords/demo/": "/",
+  "/security/codewords/": "/",
+  "/support/codewords/": "/"
+}

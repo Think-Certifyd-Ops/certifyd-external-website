@@ -285,64 +285,8 @@ export default async function ForPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Testimonial — dark, dramatic */}
-      {page.testimonial && (
-        <section className="relative bg-navy overflow-hidden">
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(ellipse at 50% 0%, rgba(0,89,255,0.12), transparent 60%)",
-            }}
-            aria-hidden="true"
-          />
-          <div className="section-container relative z-10 py-24 lg:py-32">
-            <ScrollReveal>
-              <div className="max-w-3xl mx-auto text-center">
-                <svg
-                  className="w-16 h-16 text-certifyd-blue/30 mx-auto mb-10"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
-                <blockquote className="font-heading text-2xl lg:text-4xl font-bold text-text-on-dark leading-snug mb-8">
-                  &ldquo;{page.testimonial.quote}&rdquo;
-                </blockquote>
-                <cite className="text-sm text-text-on-dark-muted not-italic">
-                  — {page.testimonial.attribution}
-                </cite>
 
-                <div className="mt-12">
-                  <a
-                    href="#get-started"
-                    className="group inline-flex items-center justify-center px-8 py-3 border border-white/40 text-white rounded-sm font-heading font-medium hover:bg-white hover:text-navy transition-all duration-300"
-                  >
-                    <span className="transition-transform duration-300 group-hover:-translate-x-1.5">
-                      Get started
-                    </span>
-                    <span className="inline-flex items-center ml-1 w-4 shrink-0 opacity-0 translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-      )}
+
 
       {/* FAQ */}
       {page.faqs.length > 0 && (

@@ -41,11 +41,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the cleaner\u2019s active membership with their cleaning company and their authority to be there",
       "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "My clients give me their house keys and alarm codes. They trust me completely. But when I started, nobody verified who I was \u2014 I could have been anyone.",
-      attribution: "Self-employed cleaner",
-    },
     faqs: [
       {
         question: "Do I need to verify my cleaner\u2019s identity?",
@@ -86,7 +81,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -160,11 +155,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the temp\u2019s active assignment with their staffing agency, right-to-work status, and authority to be at that site",
       "A auditable record is created: who, when, where, and under whose contractual authority",
     ],
-    testimonial: {
-      quote:
-        "At \u00a350\u2013200 per background check, we were spending thousands a year just to verify temps. Some checks got skipped. That\u2019s the reality for millions of small businesses.",
-      attribution: "Director, temp staffing agency",
-    },
     faqs: [
       {
         question: "Who is responsible for verifying a temp worker\u2019s identity \u2014 the agency or the employer?",
@@ -194,8 +184,8 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
+
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -259,11 +249,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the electrician\u2019s active membership with their company and their authority for that specific job",
       "A auditable record is created: who, when, where, and under whose professional authority",
     ],
-    testimonial: {
-      quote:
-        "Platforms verify the business exists. They can\u2019t verify who actually shows up at the door. That\u2019s the gap.",
-      attribution: "Sole trader, electrical contractor",
-    },
     faqs: [
       {
         question: "Do electricians need to show ID before entering my home?",
@@ -293,7 +278,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -358,11 +343,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the plumber\u2019s active membership with their company and dispatch authority for that callout",
       "A auditable record is created: who, when, where, and under whose professional authority",
     ],
-    testimonial: {
-      quote:
-        "I turn up at someone\u2019s house, and they just let me in. They\u2019ve got no idea if I\u2019m really a plumber or if I actually work for the company I say I do.",
-      attribution: "Sole trader, plumber",
-    },
     faqs: [
       {
         question: "Are plumbers required to show ID in the UK?",
@@ -392,7 +372,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -457,11 +437,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms each person\u2019s active membership with the building company or subcontractor and their authority for this project",
       "A auditable record is created for every visit: who, when, where, and under whose authority in the contractor chain",
     ],
-    testimonial: {
-      quote:
-        "We send crews to residential sites. The homeowner has never met most of them. When we swap someone out mid-project, the client just has to trust us that the new person is legit.",
-      attribution: "Owner, building and renovation company",
-    },
     faqs: [
       {
         question: "Do builders need a licence in the UK?",
@@ -491,7 +466,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -557,11 +532,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the care worker\u2019s active membership with their care provider, current role, and authorisation for that service user",
       "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "Rotating agency staff cover nights and weekends. Families ask who\u2019s looking after their parent. Honestly? We can\u2019t always tell them fast enough.",
-      attribution: "Manager, residential care home",
-    },
     faqs: [
       {
         question: "How does Certifyd help with CQC compliance?",
@@ -591,7 +561,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -657,11 +627,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the nurse\u2019s active membership with their nursing agency and their authorisation for that specific shift",
       "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "Rotating agency staff cover nights and weekends. Families ask who\u2019s looking after their parent. Honestly? We can\u2019t always tell them fast enough.",
-      attribution: "Manager, residential care home",
-    },
     faqs: [
       {
         question: "How do facilities currently verify agency nurses?",
@@ -691,7 +656,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -785,7 +750,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -874,7 +839,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
     ],
     relatedArticles: [
       { label: "Two-Way Verification Explained", href: "/blog/two-way-verification-explained/" },
@@ -933,11 +898,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the worker\u2019s active assignment with their agency, right-to-work status, and site authorisation",
       "A auditable record is created: who, when, where, and under whose contractual authority",
     ],
-    testimonial: {
-      quote:
-        "Monday morning, 30 new temps arrive at the gate. We\u2019ve got names on a list from the agency. Half the time, the person doesn\u2019t match the name. We wave them through anyway because we\u2019ve got orders to ship.",
-      attribution: "Shift Manager, distribution centre",
-    },
     faqs: [
       {
         question: "How does Certifyd handle high-volume onboarding?",
@@ -967,7 +927,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -1031,11 +991,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the worker\u2019s active role with their employer or agency and their right-to-work status",
       "A auditable record is created: who, when, where, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "On a busy weekend we\u2019ll have agency staff we\u2019ve never met working the bar. They\u2019re serving alcohol, handling payments, dealing with customers. I just have to hope the agency did their checks.",
-      attribution: "Operations Manager, hotel chain",
-    },
     faqs: [
       {
         question: "Why is hospitality high-risk for right-to-work compliance?",
@@ -1065,7 +1020,7 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },
@@ -1130,11 +1085,6 @@ export const ROLE_PAGES: ForPage[] = [
       "The system confirms the worker\u2019s active membership with their employer and their role authorisation",
       "A auditable record is created: who verified, when, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "The amount of CVs that people like me are getting every day that say one thing, you challenge, and it falls apart. It\u2019s ridiculous.",
-      attribution: "Director, cybersecurity recruitment firm",
-    },
     faqs: [
       {
         question: "Can Certifyd stop deepfake impersonation?",
@@ -1164,8 +1114,8 @@ export const ROLE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
-      { label: "Certifyd Sentinel", href: "/products/sentinel/" },
+
+
     ],
     relatedArticles: [
       { label: "The Arup Deepfake Attack: Lessons for Every Business", href: "/blog/arup-deepfake-attack/" },

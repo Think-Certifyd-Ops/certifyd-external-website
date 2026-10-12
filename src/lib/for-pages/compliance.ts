@@ -42,11 +42,6 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       "At each assignment or employment event, the worker\u2019s identity is re-verified in real time through their device",
       "A auditable audit record is created: who was verified, when, how, and linked to which documentation",
     ],
-    testimonial: {
-      quote:
-        "A lot of people are sleeping on what\u2019s about to happen. The Fair Work Agency will have the right to walk into any business \u2014 butchers, dog kennels, anyone \u2014 and ask for an audit.",
-      attribution: "HR Director, UK employer",
-    },
     faqs: [
       {
         question: "Does Certifyd replace the right-to-work check?",
@@ -76,7 +71,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
+
     ],
     relatedArticles: [
       { label: "Right-to-Work Gap Signs", href: "/blog/right-to-work-gap-signs/" },
@@ -141,11 +136,6 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       "Right-to-work status is linked to their verified identity, not just filed as a document",
       "Every verification event creates an auditable record \u2014 exportable, searchable, and FWA-ready",
     ],
-    testimonial: {
-      quote:
-        "A lot of people are sleeping on what\u2019s about to happen. The Fair Work Agency will have the right to walk into any business \u2014 butchers, dog kennels, anyone \u2014 and ask for an audit.",
-      attribution: "HR Director, UK employer",
-    },
     faqs: [
       {
         question: "When does the Fair Work Agency launch?",
@@ -240,11 +230,6 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       "At each assignment or employment event, identity is re-verified in real time \u2014 30 seconds, any channel",
       "Your compliance dashboard shows verification status across your entire workforce, exportable as audit-ready reports",
     ],
-    testimonial: {
-      quote:
-        "We asked and they said yes \u2014 that was our right-to-work process. Then the Home Office visited and we realised \u2018asking\u2019 is not a statutory excuse. It cost us £90,000.",
-      attribution: "Director, UK staffing agency",
-    },
     faqs: [
       {
         question: "How much is the fine for employing an illegal worker?",
@@ -348,11 +333,6 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       "At each site visit, the contractor verifies through Certifyd \u2014 confirming identity, company membership, and site authorisation",
       "A auditable record is created: who accessed the site, when, and under whose organisational authority",
     ],
-    testimonial: {
-      quote:
-        "A lot of companies are trying to do all the legwork themselves as hiring managers, because they don\u2019t want the headcount on a HR person when they only recruit two or three people a year.",
-      attribution: "People Manager, SME",
-    },
     faqs: [
       {
         question: "How does Certifyd differ from a visitor management system?",
@@ -382,7 +362,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd CodeWords", href: "/products/codewords/" },
+
       { label: "Certifyd ID", href: "/products/id/" },
     ],
     relatedArticles: [
@@ -443,11 +423,6 @@ export const COMPLIANCE_PAGES: ForPage[] = [
       "Worker verifies through Certifyd at the client site \u2014 confirming identity, agency membership, and right-to-work status",
       "Both agency and hirer receive auditable verification records for the same event",
     ],
-    testimonial: {
-      quote:
-        "At \u00a350\u2013200 per background check, we were spending thousands a year just to verify temps. Some checks got skipped. That\u2019s the reality for millions of small businesses.",
-      attribution: "Director, temp staffing agency",
-    },
     faqs: [
       {
         question: "Who is liable \u2014 the agency or the hirer?",
@@ -477,7 +452,7 @@ export const COMPLIANCE_PAGES: ForPage[] = [
     ],
     relatedSolutions: [
       { label: "Certifyd Portal", href: "/platform/" },
-      { label: "Certifyd Screen", href: "/products/verify/" },
+
     ],
     relatedArticles: [
       { label: "The Temp Worker Loophole", href: "/blog/temp-worker-loophole/" },

@@ -1,0 +1,157 @@
+{
+  "reader": "HR, workforce operations and care managers planning check-in points",
+  "action": "Discuss the check-in setup",
+  "selected_headline": "Record check-ins with a rotating QR display.",
+  "headline_options": [
+    "Record check-ins with a rotating QR display.",
+    "Track worker check-ins with a changing QR code.",
+    "Put a rotating QR display where work happens.",
+    "Record who checks in, where and when.",
+    "Give every workplace a point to scan.",
+    "Check workers into shifts with a changing code.",
+    "Capture check-ins at shifts, rooms and home visits.",
+    "Connect every scan to the worker and workplace.",
+    "Track visits with a small rotating QR display.",
+    "Record home visits without a constant connection.",
+    "Put a changing code at every check-in point.",
+    "Bring check-in to each care-home room.",
+    "Use a compact QR display to record attendance.",
+    "Replace your check-in tablet with a QR display.",
+    "Give workers a fresh code for each check-in.",
+    "Record shift arrivals with a rotating QR code.",
+    "Follow worker check-ins from the place of work.",
+    "Bring shift and visit check-ins into one record.",
+    "Capture room visits with a changing QR code.",
+    "Fit a check-in point where your team needs it.",
+    "Keep recording visits when connectivity drops.",
+    "Record the worker, location and scan time.",
+    "Connect care visits to the assigned scan point.",
+    "Track check-ins without a tablet at every point.",
+    "Put a low-power QR display at the point of care."
+  ],
+  "reason": "Starts with an action, names the event and names the physical product. The subhead supplies the three use cases and low-power/offline benefits.",
+  "changes": [
+    {
+      "before": "Put a changing code at the point of work.",
+      "after": "Record check-ins with a rotating QR display."
+    },
+    {
+      "before": "Give your team a compact point to scan for a shift, a room or a visit.",
+      "after": "Check workers into shifts, rooms and home visits. Put a small, low-power display where they need to scan, even when connectivity drops."
+    },
+    {
+      "before": "Explore the uses",
+      "after": "Explore check-in options"
+    },
+    {
+      "before": "A dedicated display for one clear task.",
+      "after": "Place it where your team checks in."
+    },
+    {
+      "before": "Give every shift a clear check-in point.",
+      "after": "See who checks in for each shift."
+    },
+    {
+      "before": "Place the display at the entrance or team check-in area. Workers scan the current code in the app to connect the event to the person, site and time.",
+      "after": "Put the display at your entrance or staff check-in point. Workers scan the current code in the Certifyd app. You see who checked in, where and when."
+    },
+    {
+      "before": "Rotating, time-limited codes help prevent an old screenshot from being reused for a later check-in. Keep check-in and check-out events connected to the worker record.",
+      "after": "Follow check-in and check-out in the worker’s record. Time-limited codes help stop workers reusing an old screenshot for a later scan."
+    },
+    {
+      "before": "Connect a visit to the room where it happens.",
+      "after": "Track check-ins to each care-home room."
+    },
+    {
+      "before": "Put a compact display at the relevant room or care point. The scan records which point the worker checked into and when.",
+      "after": "Place a display by the room or care point. Each scan adds the worker, room and time to the visit record."
+    },
+    {
+      "before": "Give the care team a room-level event to review alongside the wider visit and shift history. Keep resident information out of the code itself.",
+      "after": "Review room check-ins alongside the wider shift history. Keep resident details out of the QR code."
+    },
+    {
+      "before": "Record the visit at the home.",
+      "after": "Record home visits, even without a connection."
+    },
+    {
+      "before": "Leave a dedicated display at the agreed check-in point. The worker scans it on arrival and at the relevant points in the visit workflow.",
+      "after": "Leave a small display at the agreed point in the home. Care workers scan on arrival and at the other points your visit process requires."
+    },
+    {
+      "before": "Offline operation supports visits where connectivity is unreliable. The app queues the event and syncs it when a connection returns.",
+      "after": "Keep recording when the connection drops. The app saves the scan and syncs it when the worker reconnects."
+    },
+    {
+      "before": "Use a QR display where a tablet is more than you need.",
+      "after": "Replace a check-in tablet with a compact display."
+    },
+    {
+      "before": "The display has one job: present the current code. A smaller, dedicated device is designed to cost less than putting an iPad at every check-in point.",
+      "after": "Put a lower-cost device at each check-in point. The display shows the changing code; workers use their own phones to scan it."
+    },
+    {
+      "before": "Low-power operation and a compact enclosure make it suitable for entrances, rooms and home visits without turning each point into a kiosk.",
+      "after": "Fit it beside an entrance, a room door or a home-visit point. Its small enclosure and low power use help you place more scan points where your team needs them."
+    },
+    {
+      "before": "One job. A smaller footprint.",
+      "after": "Keep each check-in point small."
+    },
+    {
+      "before": "A changing code, a clear location and a worker using the app. Keep the hardware focused on that moment.",
+      "after": "Mount the display. Assign the location. Let your team scan with the app."
+    },
+    {
+      "before": "Follow the scan into the worker’s record.",
+      "after": "Connect each scan to a person, place and time."
+    },
+    {
+      "before": "The device is one part of the system. Connect the place, the person and the recorded event in Certifyd.",
+      "after": "Give your managers a record they can review. Follow each check-in from the assigned display to the worker’s record in Certifyd."
+    },
+    {
+      "before": "Review the recorded activity.",
+      "after": "Review each check-in."
+    },
+    {
+      "before": "Follow the person, point and time, including queued offline events.",
+      "after": "See the worker, location and time. Follow saved offline scans as they sync."
+    },
+    {
+      "before": "Show us where your team needs to check in.",
+      "after": "Plan your shift and care check-in points."
+    },
+    {
+      "before": "Bring a shift, a room or a home-visit workflow. We’ll discuss the device placement, the worker’s scan and the record your team needs to review.",
+      "after": "Tell us where your team works. We’ll walk through where to put the displays, how workers scan and what your managers need to see."
+    },
+    {
+      "before": "Discuss the device workflow",
+      "after": "Discuss your check-in setup"
+    },
+    {
+      "before": "<strong>Less hardware than a tablet</strong>",
+      "after": "<strong>Reduce hardware costs</strong>"
+    },
+    {
+      "before": "<strong>Small and unobtrusive</strong>",
+      "after": "<strong>Keep check-in points small</strong>"
+    },
+    {
+      "before": "<strong>Low-power operation</strong>",
+      "after": "<strong>Use less power</strong>"
+    },
+    {
+      "before": "<strong>Offline check-in flow</strong>",
+      "after": "<strong>Record visits offline</strong>"
+    }
+  ],
+  "claim_boundaries": [
+    "User-supplied lower-cost and low-power benefits; no invented price or battery hours.",
+    "Rotating codes help against stale screenshots; they do not alone prove continuous presence or stop live relays.",
+    "Examples are fictional; no customer proof or testimonials."
+  ],
+  "scope": "Physical rotating QR mockup. Wider website review remains in progress."
+}

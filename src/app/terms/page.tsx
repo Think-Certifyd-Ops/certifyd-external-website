@@ -73,7 +73,7 @@ export default function TermsPage() {
           <div className="mt-16 border-t border-warm-border pt-8 text-sm text-text-on-light-muted">
             <Link href="/privacy/" className="text-certifyd-blue hover:underline">Privacy Policy</Link>
             {" | "}
-            <Link href="/support/codewords/" className="text-certifyd-blue hover:underline">CodeWords Support</Link>
+            <Link href="/contact/" className="text-certifyd-blue hover:underline">Contact the team</Link>
             {" | "}
             <Link href="/account-deletion/" className="text-certifyd-blue hover:underline">Account Deletion</Link>
           </div>
