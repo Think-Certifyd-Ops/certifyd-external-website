@@ -12,7 +12,7 @@
   "testimonials": "No testimonial component/data/render path or review-rating schema in current marketing source",
   "handover": "Six source pieces,current CodeWords Hono service identified,25 names,selected Sentinel source ZIP",
   "demo_spec": "68 capture placements,17 pages,11 families",
-  "review_bundle": "35 self-contained pages plus hub. Native connected/profile examples, calculators, readiness,fictional ID sharing and click-to-load booking adapter implemented; no local analytics or submitted enquiries. Script syntax and canonical arithmetic/measurement boundaries checked; browser interaction verification pending.",
+  "review_bundle": "35 self-contained pages plus hub. Native connected/profile examples, calculators, readiness and fictional ID sharing; calendar loads immediately on the contact page. No local analytics or submitted enquiries. Browser interaction verification remains pending.",
   "release_checks_pending": [
     "Browser-rendered hero fit and interaction checks:computer-use permission denied",
     "Actual deployed accepted-booking/redirect checks and real capture assets"
@@ -20,7 +20,7 @@
   "state": "Review branch only; no production deployment",
   "booking_configuration": "Created and read back live GA demo_booking_completed ONCE_PER_EVENT after matching the stream to G-FNMZS9PQ1S. No collector or booking generated.",
   "local_review_validation": "Native bridge scripts parse on all36 top-level local files; relative links resolve. Actual browser interaction and responsive layout remain unverified.",
-  "booking_journey": "Primary header/connected booking links use the contact-page calendar; #booking intent activates it. Explicit demo markers exclude general account/contact navigation from demo-click tracking.",
+  "booking_journey": "Primary header/connected booking links navigate directly to /contact/. Calendar is present on the first screen with optional industry/topic choices; choices prefill Cal notes in the iframe and fallback URL. Explicit demo markers exclude general account/contact navigation from click tracking. Provider prefill source: https://cal.com/help/bookings/prefill-fields. Actual provider booking and viewport checks remain pending.",
   "partner_distribution": "Unsent care/recruitment drafts and asset brief prepared; source URLs must be live before distribution, and recipients/actions are not assumed authorised.",
   "remaining_goal_gate": "Browser-rendered layout/interactions and the deployed accepted-booking/redirect journey remain unproven. Chrome computer-use access was rechecked and denied; no known deployment/check job exists for the previous remote checkpoint."
 }

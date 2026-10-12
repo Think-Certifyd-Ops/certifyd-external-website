@@ -1,0 +1,155 @@
+CERTIFYD AI-FRAUD PRODUCTS: DEVELOPER HANDOVER
+Plain text export, 12 October 2026.
+Source archive and JSON inventories are beside handover.html in docs/ai-fraud-handover/.
+
+AI-fraud brand developer handover
+
+Developer handover · 12 October 2026
+
+Build a separate brand for the AI-fraud tools.
+
+Screen, Sentinel, Agent Watch, CallCheck and CodeWords: source, product boundaries, naming directions and migration requirements.
+
+[source-inventory.json] Source inventory
+[naming-directions.json] Naming directions
+[retired-routes.json] Retired routes
+
+Keep the two brands focused.
+
+Certifyd keeps workplace credentials, onboarding, company records, expiry and review dates, the worker app and site attendance. The new brand owns tools for checking suspicious requests, meeting media and access grants in response to AI-enabled impersonation and fraud.
+
+Working promise: Check who is asking before you act. Show a second source of evidence, the request being approved and the result the user should inspect. Detection scores and a recognised device answer different questions. Preserve that distinction in both the interface and marketing.
+
+This handover describes source inspected on 12 October 2026. It is not a claim that every prototype is production-ready. No clients, testimonials, detector accuracy claims or guaranteed fraud prevention are available for these pages.
+
+Find the current source.
+
+The current CodeWords backend is certifyd-api-temp, package certifyd-codewords-api. The old Java certifyd-api checkout is not the current CodeWords release service. A mirrored copy exists under Certifyd/api-temp; choose and document a single authoritative repository before changing either copy.
+
+| Piece | Source and snapshot | Declared stack
+
+| Screen | /Users/andrewspeer/Documents/GitHub/certifyd-verify
+c2d64a56 2026-07-08 Update search title
+[https://github.com/raspeeruk/certifyd-verify] Repository
+Working-tree changes: False | @supabase/ssr, @supabase/supabase-js, next, react, react-dom
+
+| Sentinel | /Users/andrewspeer/Documents/GitHub/Certifyd/sentinel
+Workspace subdirectory; no independent repository identity established
+Working-tree changes: not assessed as an independent repository | @anthropic-ai/sdk, dotenv, express, playwright, ws
+
+| Agent Watch | /Users/andrewspeer/Documents/GitHub/certifyd-agent-watch
+e1d2382 2026-07-08 Add favicon
+Working-tree changes: False | next, react, react-dom
+
+| CallCheck | /Users/andrewspeer/Documents/GitHub/certifyd-callcheck
+6a7663b 2026-07-08 Add favicon
+[https://github.com/raspeeruk/certifyd-callcheck] Repository
+Working-tree changes: True | @vercel/blob, lucide-react, next, qrcode, react, react-dom, sharp
+
+| CodeWords app | /Users/andrewspeer/Documents/GitHub/certifyd-react
+Workspace subdirectory; no independent repository identity established
+Working-tree changes: not assessed as an independent repository | @expo-google-fonts/ibm-plex-mono, @expo-google-fonts/ibm-plex-sans, @expo/app-integrity, @expo/vector-icons, @scure/bip39, @tanstack/react-query, expo, expo-camera, expo-constants, expo-crypto, expo-dev-client, expo-font, expo-linking, expo-local-authentication, expo-notifications, expo-router, expo-screen-capture, expo-secure-store, expo-splash-screen, expo-status-bar, expo-updates, expo-web-browser, json-canonicalize, react, react-dom, react-hook-form, react-native, react-native-paper, react-native-qrcode-svg, react-native-reanimated, react-native-safe-area-context, react-native-screens, react-native-svg, react-native-svg-transformer, react-native-web, react-native-worklets, zod, zustand
+
+| CodeWords service | /Users/andrewspeer/Documents/GitHub/certifyd-api-temp
+Workspace subdirectory; no independent repository identity established
+Working-tree changes: not assessed as an independent repository | @hono/node-server, @hono/zod-validator, @scure/bip39, appattest-checker-node, dotenv, google-auth-library, hono, jose, json-canonicalize, pg, zod
+
+See [source-inventory.json] the JSON inventory for commands, dependency ranges and environment variable names. It contains no environment values. Preserve existing uncommitted work when preparing the new developer checkout.
+
+Build Screen around a reviewable media check.
+
+Source: certifyd-verify. Next.js application with Supabase-backed accounts/meeting records and NVIDIA analysis integration. The inspected verify route collects meeting ID, participant name/email, selfie data and responses, saves them to cv_candidates, starts asynchronous selfie analysis and returns the meeting URL. This is a pre-meeting submission workflow; it is not evidence of continuous live-video analysis. Start with src/app/api/verify, meeting/config routes, auth callbacks and the Supabase migrations.
+
+Proposed page: “Review participant evidence before the meeting.” Show the submitted media, analysis availability, risk signal and next human step. Explain accepted inputs and whether analysis is live or uploaded.
+
+Before release: establish the actual input path and detector provider contract; review uploads, authorisation, RLS, tenant access and service-role use; test unsupported media, no-face results, provider outages and deletion. Move fire-and-forget analysis into a durable job path, or prove that the deployed runtime reliably completes it after the request response. Validate accuracy on relevant real-world examples before publishing performance figures. Treat a low detector score as a model result, rather than proof of identity.
+
+Separate Sentinel alerts from identity proof.
+
+Source: Certifyd/sentinel. [sentinel-source.zip] Download the selected source archive and [sentinel-source-manifest.json] its provenance manifest. TypeScript/Express/WebSocket meeting bot with Playwright, caption/participant handling, Anthropic summaries and NVIDIA deepfake checks. Review src/session/manager, src/bot/meet, src/verification/matcher and src/verification/deepfake.ts.
+
+Actual blocking defects: the deepfake implementation creates random 3–11% scores when the API key is absent or an API call fails; a no-face response returns score 0 and “genuine”. Replace those results with explicit unavailable/insufficient-evidence states. Current score thresholds have not been validated by this review. The participant matcher uses names and fuzzy matching; it does not prove a participant’s biometric identity.
+
+Proposed page: “Follow suspicious signals during the meeting.” Show bot consent, participant changes, evidence, uncertain analysis and reviewer actions. Distinguish observation, detector output, identity evidence and a human decision.
+
+Before release: confirm supported meeting platforms and permissions, participant notice/consent, capture retention, bot account isolation, session concurrency, failed reconnects, detector availability and alert delivery. Do not describe a browser bot as a reliable cross-platform product until its platform tests pass.
+
+Make Agent Watch clear about access and actions.
+
+Source: certifyd-agent-watch. Next.js Google Workspace OAuth application using Directory/Reports APIs. Read its README and HANDOFF, then src/lib/google, analyse, scan, store, and scan/audit/revoke/acknowledge API routes.
+
+The prototype analyses grant metadata and scopes, including combined read-and-send permissions. Its exposure score is a heuristic, not an observed breach probability. The grant inspection does not read email/document contents, but the revoke endpoint changes access. Keep those two actions distinct.
+
+Proposed page: “Review the apps with access to your workspace.” Show the app, granted scopes, reason for concern, owner and available action. Confirm revocation before performing it and record the admin decision.
+
+Before release: review Google OAuth scopes and verification, admin authorisation, tenant separation, token encryption and rotation, CSRF and mutation controls. The prototype’s local JSON audit/snapshot storage needs a durable tenant-aware store for a hosted multi-customer service. Test partial scan failures, disconnected grants and failed revocation.
+
+Describe CallCheck as evidence for a human review.
+
+Source: certifyd-callcheck. Next.js application with private Vercel Blob storage, QR generation and Sharp image processing. Routes create a request, accept an expiring-token challenge submission and expose a review-token view-once flow.
+
+The flow asks the participant to provide a selfie and a call-screen photo with a random finger-count challenge. The server adds challenge and timing information. A reviewer compares the evidence. This is not, by itself, a validated deepfake detector.
+
+Proposed page: “Ask for fresh evidence before you continue the call.” Explain the challenge, what the reviewer sees and what happens after review. Do not confuse a watermark timestamp with trusted capture time or physical presence.
+
+Before release: test token generation/expiry, upload type/size checks, rate limits, auth boundaries, private-blob access, concurrent first reads, review refresh/back behaviour, retry safety and deletion failures. Prove view-once semantics atomically and define residual metadata retention. Avoid logging image contents or capability tokens.
+
+Carry CodeWords into the new brand without weakening its protocol.
+
+App: Expo/React Native certifyd-react. Service: Node/Hono/PostgreSQL certifyd-api-temp. Read docs/CODEWORDS_V1_PROTOCOL.md, CODEWORDS_IMPLEMENTATION_PLAN.md, lib/codewords, lib/api/real.ts, the native module and the service’s codewords routes and tests.
+
+The current protocol uses non-exportable P-256 device keys where supported. LiveQR changes every 1,200 ms; the scanner collects three fresh sequential frames and the service rejects frames older than 20 seconds. The app combines a QR exchange, an application-authenticated BLE challenge, mutual word/number comparison and independent signed confirmations. Exact request intent is included in the canonical signed summary.
+
+Implemented enrolment is stored as direct-prototype. It is not Level A or a cryptographic proof that phones met in person. A coordinated relay can forward the channels. An accepted confirmation shows that an enrolled device approved a particular request, rather than establishing legal identity, genuine voice or freedom from coercion.
+
+Proposed page: “Check the request with the person you already know.” Show the exact request, enrolled relationship, expiry, device approval and declined/expired/recovered-device states. Keep Family and Work use cases distinct; work policies require stronger controls.
+
+Service work: inspect account sessions, email verification, enrolments, devices, relationships, challenges, recovery, integrity and push routes. Schema setup currently includes DDL in src/services/database.ts; establish a tested versioned migration path rather than assuming older Supabase migrations describe the current tables. Its production PostgreSQL connection currently disables certificate verification with rejectUnauthorized: false; configure trusted certificates and verify TLS before moving hosting.
+
+Before release: test wrong-user/wrong-device access, replay, stale/mixed QR frames, relay scenarios, declined/expired/cancelled intents, app-integrity failures, key rotation, revocation, recovery assurance and duplicate relationship conflicts. Preserve App Attest/Play Integrity, push credentials, application identifiers and protocol domain labels until a deliberate migration handles enrolled keys and existing users. No secret values or signing keys are included here.
+
+Choose a brand direction after clearing the name.
+
+These are working creative names, not cleared domain or trademark recommendations. Test them with intended buyers, then check trademarks, relevant companies, domains and app stores before committing.
+
+| Name | Direction | Trade-off
+
+| SecondSignal | Umbrella for another signal before trusting a request. | Broad enough for five tools; needs a clear category line.
+
+| IntentCheck | Approve the exact request, especially CodeWords. | Strong mechanism; narrower than media analysis.
+
+| Knownline | Reconnect with a known person or trusted contact. | Warm and memorable; explain workspace/access tools.
+
+| ProofRelay | Exchange evidence before acting. | Technical; “proof” must remain bounded by the actual evidence.
+
+| ReplySafe | Pause before responding to a suspicious request. | Approachable; avoid absolute safety claims.
+
+All 25 directions: SecondSignal, Knownline, ProofRelay, IntentCheck, ReplySafe, SideSignal, SignalReturn, AskTwice, TrustLoop, CallerProof, HumanBack, ProofChannel, TrueContact, SignalMatch, SecondCheck, KnownCircle, ReturnLine, ContactAnchor, CallAnchor, RequestProof, SecondVoice, SafeReply, SignalLane, SureContact, CheckBack.
+
+Recommended exploration: SecondSignal for the umbrella and IntentCheck for exact-request approval. Retain the current five working product names in code until the chosen brand and migration plan are approved.
+
+Build shared foundations and keep adapters separate.
+
+Create one brand website with clear pages for the five capabilities. Use a common account/organisation layer and permission model where appropriate, but do not merge prototypes’ databases or auth tokens by convention. Keep adapters for Google grants, meeting capture, NVIDIA analysis, Blob evidence and native approvals separate.
+
+Represent a case with an organisation, actor, requested action, evidence items, signal outputs, reviewer decision, timestamps and retention state. Model unavailable analysis explicitly. Keep successful device approval distinct from detector risk and human judgement. Centralise request/capability-token expiry, rate limits and an audit log that excludes secrets and raw sensitive media.
+
+Deliver the first coherent workflow before presenting a five-tool suite as finished. CodeWords provides signed request intent; CallCheck can provide a separate manual evidence path. Sentinel, Screen and Agent Watch can integrate through documented evidence adapters as their production gates pass.
+
+Move the website without breaking existing accounts.
+
+Eleven Certifyd routes are retired in this branch, including variants and the deepfake assessment. See [retired-routes.json] the exact redirect map. Their source and selected assets are archived here. The branch config forces both trailing-slash forms to the homepage and excludes them from the sitemap. These redirects are implemented in source; production deployment still needs verification.
+
+Publish the new brand’s product, security, privacy, terms, support and account-deletion pages before changing app help/legal links. Identify the actual controller, processors, retention, deletion and contact routes from the implemented systems. Keep existing Certifyd legal/account routes until their obligations and links are migrated; the old consumer wording cannot establish the workforce platform’s data policy.
+
+Review app-store names/identifiers, associated domains, universal/deep links, OAuth redirect URIs, Google verification, Supabase URLs/RLS, API CORS, push topics, App Attest/Play Integrity settings, email templates, Blob ownership and telemetry. Rebranding screens does not migrate these dependencies.
+
+Preserve archived Certifyd marketing as history. Rewrite claims around each tool’s demonstrated behaviour, use clearly labelled examples, and add genuine product captures. Do not import the website’s old synthetic testimonials or unsupported 60-second/statutory-excuse/detector guarantees.
+
+Verify the handover before a release.
+
+Run each repository’s own install/build/typecheck/test commands from the JSON inventory using its lockfile and supported runtime. Use sandbox accounts, media and workspace tenants. Keep production smoke tests and email/push actions out of ordinary visual tests unless separately authorised.
+
+For each capability, verify tenant and object permissions, malicious and malformed inputs, unavailable providers, expiry/replay, cancellation, retries, rate limiting, logs, retention and deletion. Then capture the real success and failure states with a dated build/version note. Have reviewers assess what the UI result actually establishes.
+
+For the websites, check unique titles and canonical URLs, crawlable internal links, redirects without chains, no retired sitemap entries, legal/support links, keyboard controls, 1366×768 desktop hero fit and 390×844 mobile readability. Track demo clicks separately from accepted booking completion. Ship only claims supported by those checks.

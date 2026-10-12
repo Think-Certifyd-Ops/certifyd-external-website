@@ -10,3 +10,22 @@
 @media(max-width:800px){.story-fields{grid-template-columns:1fr}.story-checklist-item{grid-template-columns:1fr}.story-result dl>div{grid-template-columns:1fr;gap:8px}}
 @media print{.certifyd-header,footer,.story-cta,.story-hero .story-button,.story-tool button,.story-form{display:none!important}.story-section{break-inside:avoid;padding:24px 0!important}.story{font-size:12pt!important}.story h1{font-size:28pt!important}.story h2{font-size:20pt!important}.story-wrap{max-width:none!important;padding:0!important}}
 .story-example-tabs{display:flex;gap:16px;margin-bottom:36px;flex-wrap:wrap}.story-example-tabs button,.story-document-list button{font:inherit;color:#0a1224;border:1px solid #b9d0eb;background:white;min-height:48px;padding:12px 20px;cursor:pointer}.story-example-tabs button[aria-pressed=true],.story-document-list button[aria-pressed=true]{border-color:#0a64f7;background:#e8f3ff}.story-document-list{display:grid;gap:12px;margin:24px 0}.story-document-list button{text-align:left;display:grid;gap:8px}.story-document-list span{font-size:14px;color:#46566c}.story-document-detail{border:1px solid #b9d0eb;padding:28px;background:#f8fbff}.story-document-detail h3{font-size:24px;margin-bottom:24px}.story-document-detail dd{margin:0 0 16px}.story-document-detail dt{font-size:13px;color:#46566c}.story-button:disabled{opacity:.65;cursor:default}.story-example-tabs button:focus-visible,.story-document-list button:focus-visible{outline:3px solid #0a64f7;outline-offset:4px}
+/* Direct booking: preferences beside the calendar, without a second load action. */
+.demo-booking-page{padding-top:28px;padding-bottom:32px;max-width:1392px}
+.demo-booking-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:32px;align-items:start}
+.story .demo-booking-details h1{font-size:36px;line-height:1.15}
+.story .demo-booking-intro{font-size:17px;line-height:1.5;margin:18px 0 24px;color:var(--ink-muted)}
+.demo-preferences>label,.demo-preferences legend{display:block;font-size:15px;font-weight:600;margin-bottom:8px}
+.demo-preferences>label span,.demo-preferences legend span{font-weight:400;color:var(--ink-muted);font-size:13px}
+.demo-preferences select{width:100%;min-height:44px;border:1px solid var(--warm-line);background:white;padding:8px 12px;border-radius:2px;color:var(--ink);font:inherit;font-size:15px}
+.demo-preferences fieldset{margin:20px 0 0;padding:0;border:0;min-width:0}
+.demo-topic{display:flex;align-items:center;gap:10px;font-size:15px;line-height:21px;min-height:40px;cursor:pointer}
+.demo-topic input{width:18px;height:18px;accent-color:var(--blue);flex-shrink:0}
+.story .demo-preferences-note{font-size:13px;line-height:1.5;color:var(--ink-muted);margin:12px 0 0}
+.demo-preferences :is(input,select):focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.demo-booking-layout .story-booking{min-width:0}
+.demo-booking-layout [data-booking-status]{font-size:14px;line-height:20px;min-height:20px;margin:0 0 8px;color:var(--ink-muted)}
+.demo-booking-layout iframe{display:block;width:100%;height:560px;min-height:560px;border:1px solid var(--warm-line);border-radius:4px;background:white}
+.story .demo-booking-fallback{font-size:13px;line-height:20px;margin:10px 0 0}
+@media(max-width:900px){.demo-booking-layout{grid-template-columns:240px minmax(0,1fr);gap:20px}.demo-booking-page{padding-left:24px;padding-right:24px}.story .demo-booking-details h1{font-size:30px}}
+@media(max-width:700px){.demo-booking-layout{grid-template-columns:1fr;gap:20px}.demo-booking-page{padding-top:24px}.story .demo-booking-intro{margin:12px 0 16px}.demo-preferences fieldset{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;column-gap:12px}.demo-topic{font-size:13px;line-height:18px;min-height:44px}.demo-preferences legend{margin-bottom:6px}.demo-booking-layout iframe{height:620px;min-height:620px}}

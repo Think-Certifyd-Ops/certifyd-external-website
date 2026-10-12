@@ -1,8 +1,24 @@
 "use client";
-import {useEffect,useRef,useState,useSyncExternalStore} from "react";
-import {completedBooking,trackWebsiteEvent,readCalMessage} from "@/lib/measurement";
-const ORIGIN="https://app.cal.com";const NAMESPACE="certifyd-demo";
-const subscribeBookingHash=(notify:()=>void)=>{window.addEventListener("hashchange",notify);return()=>window.removeEventListener("hashchange",notify)};
-export function DemoBooking(){const [active,setActive]=useState(false);const [ready,setReady]=useState(false);const requested=useSyncExternalStore(subscribeBookingHash,()=>window.location.hash==="#booking",()=>false);const enabled=active||requested;const frame=useRef<HTMLIFrameElement>(null);const seen=useRef(new Set<string>());
-useEffect(()=>{if(!enabled)return;const receive=(event:MessageEvent)=>{const message=readCalMessage(event,frame.current?.contentWindow);if(!message)return;const action=message.action;if(action==="__iframeReady"){frame.current?.contentWindow?.postMessage({originator:"CAL",method:"parentKnowsIframeReady"},ORIGIN)}if(action==="bookerReady"||action==="linkReady")setReady(true);if(action==="__dimensionChanged"){const height=message.data?.iframeHeight;if(typeof height==="number"&&Number.isFinite(height)&&height>=350&&height<=2000&&frame.current)frame.current.style.height=`${height}px`}if(action!=="bookingSuccessfulV2"||!completedBooking(message.data)||seen.current.has(message.data.uid))return;if(trackWebsiteEvent("demo_booking_completed",{booking_provider:"cal",booking_flow:"certifyd-discovery"}))seen.current.add(message.data.uid)};window.addEventListener("message",receive);return()=>window.removeEventListener("message",receive)},[enabled]);
-return <div className="story-booking">{!enabled?<button type="button" className="story-button" onClick={()=>{trackWebsiteEvent("demo_cta_click",{destination:"cal_embed",placement:"contact_booking"});setActive(true)}}>Choose a demo time <span aria-hidden="true">↗</span></button>:<><p role="status">{ready?"Choose a time in the calendar.":"Loading available times…"}</p><iframe ref={frame} title="Choose a time for your Certifyd discovery call" src={`${ORIGIN}/andrew-speer/certifyd-discovery/embed?embed=${NAMESPACE}&theme=light&layout=month_view`} style={{width:"100%",minHeight:700,border:0}}/></>}<p><a data-demo-cta="true" href="https://cal.com/andrew-speer/certifyd-discovery">Open the booking calendar in a separate page ↗</a></p></div>}
+import {useEffect,useRef} from "react";
+import {bookingUrls,initializeDemoBooking,DEMO_INDUSTRIES,DEMO_TOPICS} from "@/lib/demo-booking";
+export function DemoBooking(){
+ const root=useRef<HTMLDivElement>(null);
+ useEffect(()=>root.current?initializeDemoBooking(root.current):undefined,[]);
+ return <div ref={root} className="demo-booking-layout">
+  <div className="demo-booking-details">
+   <h1>Book a demo.</h1>
+   <p className="demo-booking-intro">Choose a time to see how Certifyd handles your workforce records.</p>
+   <div className="demo-preferences">
+    <label htmlFor="demo-industry">Your industry <span>(optional)</span></label>
+    <select id="demo-industry" name="demo-industry" defaultValue=""><option value="">Choose an industry</option>{DEMO_INDUSTRIES.map(i=><option key={i} value={i}>{i}</option>)}</select>
+    <fieldset><legend>What would you like to see? <span>(optional)</span></legend>{DEMO_TOPICS.map((topic,i)=><label className="demo-topic" key={topic}><input type="checkbox" name="demo-topic" value={topic} id={`demo-topic-${i}`}/><span>{topic}</span></label>)}</fieldset>
+    <p className="demo-preferences-note">Choose any topics before selecting a time.</p>
+   </div>
+  </div>
+  <div className="story-booking">
+   <p data-booking-status role="status">Loading available times…</p>
+   <iframe title="Book a Certifyd demo" src={bookingUrls().embed} referrerPolicy="strict-origin-when-cross-origin"/>
+   <p className="demo-booking-fallback"><a data-booking-fallback data-demo-cta="true" href={bookingUrls().direct}>Calendar not loading? Open it on Cal.com <span aria-hidden="true">↗</span></a></p>
+  </div>
+ </div>;
+}

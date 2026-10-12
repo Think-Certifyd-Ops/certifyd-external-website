@@ -224,9 +224,7 @@
       white-space: nowrap;
     }
     .eyebrow::before {
-      content: ""; display: inline-block;
-      width: 24px; height: 1px; background: var(--blue);
-      flex: 0 0 24px;
+      content: none; display: none;
     }
     @media (max-width: 540px) { .eyebrow { white-space: normal; } }
 
