@@ -9,7 +9,8 @@
     "lint": "eslint",
     "build:review": "next build --webpack && node --import tsx scripts/generate-rss.ts",
     "test:workload": "node --import tsx scripts/verify-workload.mjs",
-    "test:measurement": "node --import tsx scripts/verify-measurement.mjs"
+    "test:measurement": "node --import tsx scripts/verify-measurement.mjs",
+    "review:local": "python3 scripts/build-local-review.py"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

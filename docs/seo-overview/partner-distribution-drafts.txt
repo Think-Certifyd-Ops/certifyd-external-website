@@ -1,0 +1,32 @@
+Partner distribution brief · Certifyd · 12 October 2026
+
+Status: unsent working drafts. No partners, clients, endorsements or distribution results are claimed. Confirm the resource is live before using its URL. Select the recipient and authorise sending separately.
+
+Reader: a care, recruitment or HR community organiser who wants useful practical material for members. Ask for their view on the task first. Offer the relevant guide without requiring a sales call.
+
+Care draft
+Subject: A worker-record checklist for your care teams
+
+Hi [Name],
+We’ve put together a practical checklist for reviewing a care worker’s record: role requirements, supplied evidence, expiry and review dates, and the next action.
+[Live checklist link]
+Would this help the managers in [community/newsletter]? If it would, I’m happy to adapt the example to a role they manage.
+Andrew
+
+Recruitment draft
+Subject: A placement-evidence checklist for your members
+
+Hi [Name],
+We’ve put together a checklist for preparing a worker’s next placement. It helps teams agree what the client needs, who reviews each item and what still needs attention.
+[Live placement checklist link]
+Would this be useful for [community/newsletter]? I’d welcome your view on the evidence your members spend most time chasing.
+Andrew
+
+Asset brief
+Use the ungated checklist, a 60-word audience-specific summary and a seeded worker-record screenshot or short captioned clip. Show requirements, evidence and the next review action. Link to current official guidance where the process involves statutory checks. Provide a source/version date for the actual product capture. Use no client quotes, logos, detector claims or fabricated savings.
+
+Proposed routes, not yet released by this branch:
+/resources/worker-record-review-checklist/
+/resources/recruitment-placement-evidence-checklist/
+
+Measure: which audience saw the resource, meaningful employer replies, consented CTA clicks, accepted bookings and qualified conversations. Keep referral results distinct from organic search. Record what the partner actually published rather than attributing all later traffic to it.

@@ -69,7 +69,7 @@ export function Button({
 
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} data-demo-cta={typeof children==="string"&&/demo/i.test(children)?"true":undefined}>
         {inner}
       </Link>
     );
