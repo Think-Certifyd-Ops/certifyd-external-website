@@ -38,4 +38,22 @@
 @media(min-width:801px){.connected .hero-example[open]>summary{display:none}}
 @media(max-width:800px){.connected [data-hero]{gap:24px;padding-top:24px;padding-bottom:28px}.connected [data-hero] h1{font-size:32px;line-height:1.08}.connected [data-hero] .copy{font-size:16px;line-height:1.5;margin-top:16px;margin-bottom:18px}.connected [data-hero] .chapter-copy>p.text-sm{display:none}.connected .hero-record-summary{display:flex;gap:14px;align-items:center;padding:16px;background:#e8f3ff;min-height:84px}.connected .hero-record-summary strong{font-size:16px;font-weight:600}.connected .hero-record-summary p{font-size:13px;line-height:20px;color:#46566c;margin-top:4px}.connected .hero-record-avatar{display:flex;align-items:center;justify-content:center;background:#0a64f7;color:white;flex:0 0 36px;height:36px;font-size:13px}.connected .hero-example>summary{font-size:14px}.connected .hero-example .figure{margin-top:0}.connected [data-hero] .eyebrow{font-size:11px;margin-bottom:12px}}
 
+/* Outcome heroes include their breadcrumb and complete example in the first view. */
+.connected .outcome-hero[data-hero]{padding-top:24px;padding-bottom:28px}
+.connected .outcome-hero[data-hero] .chapter-copy{gap:12px}
+.connected .outcome-hero[data-hero] .copy{margin:0}
+.connected .outcome-hero[data-hero] .eyebrow{margin-bottom:0}
+@media(min-width:801px){
+ .connected .outcome-hero[data-hero] h1{font-size:clamp(2.25rem,3.2vw,2.75rem)}
+ .connected .outcome-hero[data-hero] .figure-body{min-height:0;padding:18px}
+ .connected .outcome-hero[data-hero] .figure-head{padding:12px 18px}
+ .connected .outcome-hero[data-hero] .sheet{padding:20px}
+ .connected .outcome-hero[data-hero] .record-row{min-height:48px;padding-block:8px}
+ .connected .outcome-hero[data-hero] .phone{padding:16px}
+}
+@media(max-width:800px){
+ .connected .outcome-hero[data-hero]{gap:16px;padding-top:20px;padding-bottom:24px}
+ .connected .outcome-hero[data-hero] .hero-record-summary{min-height:76px;padding:12px}
+}
+
 .connected .bg-ink .eyebrow{color:#93bbff}
