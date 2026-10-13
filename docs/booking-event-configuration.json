@@ -1,9 +1,9 @@
 {
   "checkedAt": "2026-10-12T11:32:56.301Z",
-  "property": "properties/520574638",
+  "property": "Website property matched through GOOGLE_ANALYTICS_PROPERTY_ID; numeric ID omitted from release source.",
   "measurementId": "G-FNMZS9PQ1S",
   "eventName": "demo_booking_completed",
-  "eventResource": "properties/520574638/keyEvents/16112083532",
+  "eventResource": "keyEvents/16112083532 (property prefix omitted from release source)",
   "countingMethod": "ONCE_PER_EVENT",
   "status": "Created and verified by a separate read-back",
   "method": "Authenticated Google Analytics Admin API; web stream matched the website measurement ID before mutation.",
