@@ -32,7 +32,8 @@ export function initializeDemoBooking(root:HTMLElement,analytics=true){
  if(sectors[query.get("sector")??""])industry.value=sectors[query.get("sector")??""];
  update();root.addEventListener("change",update,{signal});
  const ready=()=>frame.contentWindow?.postMessage({originator:"CAL",method:"parentKnowsIframeReady"},"https://app.cal.com");
- frame.addEventListener("load",ready,{signal});
+ // A trusted __iframeReady message proves the Cal document is ready.
+ // Posting to a loading iframe can still target its initial same-origin document.
  window.addEventListener("message",event=>{
   const message=readCalMessage(event,frame.contentWindow);if(!message)return;
   if(message.action==="__iframeReady")ready();
@@ -43,6 +44,6 @@ export function initializeDemoBooking(root:HTMLElement,analytics=true){
   status.textContent="Your demo is booked.";
   seen.add(message.data.uid);
   if(analytics)trackWebsiteEvent("demo_booking_completed",{booking_provider:"cal",booking_flow:"certifyd-discovery"});
- },{signal});ready();
+ },{signal});
  return()=>controller.abort();
 }

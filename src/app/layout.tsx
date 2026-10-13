@@ -72,6 +72,14 @@ export default function RootLayout({
           data-marketing="false"
         />
         <Script
+          id="rogerson-newsletter"
+          src="https://rogerson-signups.netlify.app/newsletter-widget.js"
+          strategy="afterInteractive"
+          data-brand="Certifyd"
+          data-domain="certifyd.io"
+          data-slug="certifyd"
+        />
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FNMZS9PQ1S"
           strategy="afterInteractive"
         />

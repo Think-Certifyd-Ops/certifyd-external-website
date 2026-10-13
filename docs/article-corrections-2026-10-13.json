@@ -1,0 +1,53 @@
+{
+  "completed": [
+    {
+      "slug": "visa-expiry-tracking-employers",
+      "original_date": "\"2026-04-24\"",
+      "updated": "2026-10-13",
+      "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
+      "words_before": 1734,
+      "words_after": 497
+    },
+    {
+      "slug": "settled-status-employer-checks",
+      "original_date": "\"2026-06-02\"",
+      "updated": "2026-10-13",
+      "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
+      "words_before": 1836,
+      "words_after": 447
+    },
+    {
+      "slug": "graduate-visa-employer-guide",
+      "original_date": "\"2026-05-05\"",
+      "updated": "2026-10-13",
+      "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
+      "words_before": 1857,
+      "words_after": 440
+    },
+    {
+      "slug": "fair-work-agency-april-2026",
+      "original_date": "\"2026-02-07\"",
+      "updated": "2026-10-13",
+      "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
+      "words_before": 680,
+      "words_after": 414
+    },
+    {
+      "slug": "right-to-work-penalties-2026",
+      "original_date": "\"2026-04-22\"",
+      "updated": "2026-10-13",
+      "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
+      "words_before": 1793,
+      "words_after": 435
+    },
+    {
+      "slug": "skilled-worker-visa-employer-obligations",
+      "original_date": "\"2026-06-05\"",
+      "updated": "2026-10-13",
+      "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
+      "words_before": 1824,
+      "words_after": 441
+    }
+  ],
+  "remaining": "The full audited archive remains in scope; this file records only completed substantive article corrections."
+}
