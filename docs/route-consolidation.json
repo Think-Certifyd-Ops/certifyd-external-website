@@ -20,5 +20,7 @@
   "/platform/": "/",
   "/solutions/compliance/": "/outcomes/reduce-compliance-risk/",
   "/rtw/": "/resources/right-to-work-guide/",
-  "/onboarding/organisation/": "/outcomes/import-compliance-records/"
+  "/onboarding/organisation/": "/outcomes/import-compliance-records/",
+  "/for/fwa-compliance/": "/blog/fair-work-agency-april-2026/",
+  "/for/right-to-work-penalties/": "/blog/right-to-work-penalties-2026/"
 }

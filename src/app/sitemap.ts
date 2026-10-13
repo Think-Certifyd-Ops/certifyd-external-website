@@ -222,6 +222,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const forPages: MetadataRoute.Sitemap = getAllForPages().map((page) => ({
     url: `${BASE_URL}/for/${page.slug}`,
+    lastModified: new Date("2026-10-13"),
     changeFrequency: "monthly",
     priority: 0.7,
   }));

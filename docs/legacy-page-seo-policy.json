@@ -1,0 +1,47 @@
+{
+  "reviewed_at": "2026-10-13",
+  "scope": "35 retained for pages and historical3i concept",
+  "rewritten_in_place": [
+    "cleaners",
+    "temp-workers",
+    "electricians",
+    "plumbers",
+    "builders",
+    "care-workers",
+    "agency-nurses",
+    "security-guards",
+    "warehouse-workers",
+    "hospitality-staff",
+    "remote-workers",
+    "cleaning-companies",
+    "hospitality-businesses",
+    "facilities-management",
+    "right-to-work-checks",
+    "contractor-verification",
+    "agency-worker-compliance",
+    "lone-workers",
+    "safeguarding",
+    "nannies-au-pairs"
+  ],
+  "archive_noindex": [
+    "delivery-drivers",
+    "trade-platforms",
+    "deepfakes",
+    "ceo-fraud",
+    "voice-cloning",
+    "phishing",
+    "romance-scams",
+    "social-engineering",
+    "protecting-elderly-parents",
+    "school-pickups",
+    "online-dating",
+    "estate-agent-viewings",
+    "airbnb"
+  ],
+  "archived_routes": "Self-canonical, noindex-follow, excluded from sitemap, historical public concept summary with no service claims or conversion form. Original source preserved privately under docs/for-pages-before-review/.",
+  "redirects": {
+    "/for/fwa-compliance/": "/blog/fair-work-agency-april-2026/",
+    "/for/right-to-work-penalties/": "/blog/right-to-work-penalties-2026/"
+  },
+  "for_page_lastmod": "Fixed actual substantive content rewrite date,13October2026. No invented original publication date or rebuild clock."
+}

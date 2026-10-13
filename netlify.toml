@@ -386,3 +386,27 @@
   for = "/"
   [headers.values]
     Link = "</images/connected/roles.webp>; rel=preload; as=image; fetchpriority=high"
+
+[[redirects]]
+  from = "/for/fwa-compliance/"
+  to = "/blog/fair-work-agency-april-2026/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/fwa-compliance"
+  to = "/blog/fair-work-agency-april-2026/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/right-to-work-penalties/"
+  to = "/blog/right-to-work-penalties-2026/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/for/right-to-work-penalties"
+  to = "/blog/right-to-work-penalties-2026/"
+  status = 301
+  force = true

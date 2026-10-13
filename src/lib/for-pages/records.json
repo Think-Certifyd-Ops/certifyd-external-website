@@ -1,0 +1,551 @@
+[
+  {
+    "slug": "cleaners",
+    "title": "Manage cleaner credentials and property visits",
+    "industry": "trades",
+    "role": "Cleaner",
+    "intro": "Keep the cleaner’s shared evidence, company role and recorded visits connected to the work your team manages.",
+    "description": "Keep the cleaner’s shared evidence, company role and recorded visits connected to the work your team manages.",
+    "requirements": [
+      "The person and cleaning company assigned to the work",
+      "Training required for the cleaning task",
+      "Property-specific instructions and induction",
+      "The evidence your organisation needs to review"
+    ],
+    "review": "Set requirements for the actual role and property. Identify which records the cleaner holds and which your company maintains. Review the supplied evidence and record the reviewer, decision and next action. A shared profile should not imply that every qualification, background check or employment condition has been independently verified.",
+    "work": "Use recorded check-ins and check-outs to review visits associated with a worker and site. When the team changes, review the new person’s evidence before the next assignment. Agree separately who may enter the property, hold keys and act on customer instructions.",
+    "boundary": "A work profile gives the recipient information to inspect. It does not prove property-access permission, prevent impersonation or guarantee safe conduct."
+  },
+  {
+    "slug": "temp-workers",
+    "title": "Prepare temporary-worker evidence for placement",
+    "industry": "recruitment",
+    "role": "Temporary worker",
+    "intro": "Review temporary-worker evidence against the placement before handing the record to the next decision-maker.",
+    "description": "Review temporary-worker evidence against the placement before handing the record to the next decision-maker.",
+    "requirements": [
+      "The role, client and placement",
+      "The employer and labour-supply arrangement",
+      "Required qualifications, induction and check evidence",
+      "Restrictions relevant to the assignment"
+    ],
+    "review": "Record who is responsible for each check and what evidence the agency and client maintain. Review the result against the actual placement rather than universally clearing the worker for every job. Keep outstanding evidence and conditions visible to the person arranging the assignment.",
+    "work": "Follow placement review dates and recorded arrivals. A changed worker, role or requirement should prompt a review of the affected evidence. It does not follow that every shift requires a new statutory right-to-work check.",
+    "boundary": "Agency and hirer responsibilities depend on the arrangement and current guidance. Certifyd organises records; it does not automatically complete statutory checks or determine liability.",
+    "source": {
+      "title": "Read the agency-worker check guide",
+      "href": "/blog/agency-worker-compliance-who-checks/"
+    }
+  },
+  {
+    "slug": "electricians",
+    "title": "Review electrical-worker qualifications and visits",
+    "industry": "trades",
+    "role": "Electrical worker",
+    "intro": "Connect the electrical worker to the qualifications and site requirements your organisation needs to review.",
+    "description": "Connect the electrical worker to the qualifications and site requirements your organisation needs to review.",
+    "requirements": [
+      "The scope of the electrical work",
+      "Relevant qualification or registration evidence",
+      "Site induction and customer requirements",
+      "The company responsible for the assignment"
+    ],
+    "review": "Different electrical tasks can require different evidence. Record the qualification, certificate or registration inspected, its source and the reviewer’s decision. One generic verified label should not imply that every installation, inspection or building-regulation requirement has been satisfied.",
+    "work": "Keep the worker’s record connected to recorded site visits. If another person attends, review the substitution and evidence relevant to their role. Use genuine credential expiry dates or a separate company review date to plan the next action.",
+    "boundary": "Certifyd does not certify an electrical installation or automatically query a professional scheme. Your organisation reviews the requirements and completes any scheme or competence check through the appropriate source."
+  },
+  {
+    "slug": "plumbers",
+    "title": "Review plumber evidence and recorded site visits",
+    "industry": "trades",
+    "role": "Plumber",
+    "intro": "Review the evidence needed for the plumbing work and keep it with the person assigned to the property.",
+    "description": "Review the evidence needed for the plumbing work and keep it with the person assigned to the property.",
+    "requirements": [
+      "The tasks included in the assignment",
+      "Relevant qualifications and training",
+      "Site induction or customer requirements",
+      "The worker’s company and review responsibilities"
+    ],
+    "review": "Match requirements to the task. General plumbing and gas work are different scopes; do not imply that the same evidence authorises both. Record the source or register checked where one is required, the result and the reviewer. A supplied certificate and the company’s check record serve different purposes.",
+    "work": "Record arrival and departure where site check-in is part of your process. Review replacement workers against the applicable requirements. Keep expiry dates attached to credentials that actually expire and use company review dates for your own policy.",
+    "boundary": "A shared profile or arrival record does not certify the work, establish gas competence or authorise entry. Your company uses the appropriate professional source and makes the assignment decision."
+  },
+  {
+    "slug": "builders",
+    "title": "Manage construction-worker records by role and site",
+    "industry": "trades",
+    "role": "Construction worker",
+    "intro": "Keep named workers and subcontractors connected to the evidence required for the job and site.",
+    "description": "Keep named workers and subcontractors connected to the evidence required for the job and site.",
+    "requirements": [
+      "The worker, employer or subcontractor",
+      "Task-specific qualifications and training",
+      "Site induction and required safety evidence",
+      "Responsibility for reviewing replacements"
+    ],
+    "review": "Define evidence requirements for each construction role rather than treating everyone on a crew as interchangeable. Your company maintains site inductions and review decisions while workers share personal credentials. Keep the source, date and outcome of each relevant check with the person’s record.",
+    "work": "Review recorded arrivals and departures by site. If the crew changes, identify the new workers and revisit requirements relevant to their tasks. Attendance information does not establish continuous presence, appropriate supervision or permission to perform every activity.",
+    "boundary": "Certifyd does not replace construction safety management, certification schemes or prescribed right-to-work checks. Your organisation determines and reviews the requirements for the actual work."
+  },
+  {
+    "slug": "care-workers",
+    "title": "Review care-worker evidence and visit records",
+    "industry": "care",
+    "role": "Care worker",
+    "intro": "Give the care team a route from role requirements to worker evidence, review decisions and recorded visits.",
+    "description": "Give the care team a route from role requirements to worker evidence, review decisions and recorded visits.",
+    "requirements": [
+      "The care role and location",
+      "Required training and qualification evidence",
+      "Appropriate suitability and check records",
+      "Company induction and review responsibilities"
+    ],
+    "review": "Separate personal training certificates from company-held evidence of suitability and right-to-work checks. DBS certificates have no official expiry date. Record check information and your review policy separately rather than inventing a universal three-year expiry. Keep unresolved evidence visible to the responsible reviewer.",
+    "work": "Connect the record to care-site or home visits where relevant. For an agency replacement, review the actual placement and evidence responsibilities. Document status and attendance serve different purposes; neither replaces the provider’s supervision and safeguarding process.",
+    "boundary": "Certifyd does not automatically confirm DBS status, notify families about every visit or guarantee safeguarding outcomes. Your care provider reviews evidence and makes the suitability decision.",
+    "source": {
+      "title": "Read the care-sector check guide",
+      "href": "/blog/care-sector-rtw-compliance-guide/"
+    }
+  },
+  {
+    "slug": "agency-nurses",
+    "title": "Prepare agency-nurse evidence for placement",
+    "industry": "recruitment",
+    "role": "Agency nurse",
+    "intro": "Review the nurse’s evidence against the placement and retain the employer’s check records for the next reviewer.",
+    "description": "Review the nurse’s evidence against the placement and retain the employer’s check records for the next reviewer.",
+    "requirements": [
+      "The nurse, agency and clinical placement",
+      "Relevant registration-check evidence",
+      "Required training and role-specific records",
+      "Client induction and placement requirements"
+    ],
+    "review": "Use the appropriate NMC employer process to confirm registration where required. Retain the result and date beside the supplied evidence. A document uploaded by the nurse is not the same as a current employer confirmation. Resolve unanswered questions before the placement decision.",
+    "work": "Maintain placement review dates and site requirements as the assignment changes. Recorded arrivals connect the worker to a visit history while the team maintains its evidence and decisions. A shift check-in is separate from registration and statutory right-to-work checks.",
+    "boundary": "Certifyd does not automatically verify NMC registration or decide clinical suitability. The agency and client retain their responsibilities for the actual arrangement.",
+    "source": {
+      "title": "Read NMC employer guidance",
+      "href": "https://www.nmc.org.uk/registration/guidance-for-employers/"
+    }
+  },
+  {
+    "slug": "security-guards",
+    "title": "Review security-guard evidence and site records",
+    "industry": "workforce",
+    "role": "Security guard",
+    "intro": "Prepare the guard’s evidence for the assigned work and record the checks your organisation actually completes.",
+    "description": "Prepare the guard’s evidence for the assigned work and record the checks your organisation actually completes.",
+    "requirements": [
+      "The security activity and any licence requirement",
+      "Licence details and the check result",
+      "Site induction and assignment requirements",
+      "The employer’s decision and review date"
+    ],
+    "review": "Use the SIA’s tools and guidance to check the licence relevant to the activity. Retain the result, date and reviewer where your process requires it. Keep a supplied card or number distinct from the register-check outcome. Resolve any restriction or discrepancy before assigning work.",
+    "work": "Connect company requirements and review dates to the worker. Recorded check-ins and check-outs can support attendance review but do not prove continuous guard coverage, authorised access or completion of a licence check at every shift.",
+    "boundary": "Certifyd does not automatically query the SIA register or certify suitability for every activity. Your organisation uses the official source and makes the assignment decision.",
+    "source": {
+      "title": "Check the SIA register",
+      "href": "https://www.gov.uk/check-a-private-security-licence"
+    }
+  },
+  {
+    "slug": "warehouse-workers",
+    "title": "Manage warehouse-worker evidence and attendance",
+    "industry": "workforce",
+    "role": "Warehouse worker",
+    "intro": "Connect the warehouse role, required evidence and company review to the worker attending the site.",
+    "description": "Connect the warehouse role, required evidence and company review to the worker attending the site.",
+    "requirements": [
+      "The worker and employment or agency arrangement",
+      "Training relevant to assigned tasks",
+      "Warehouse induction and site requirements",
+      "Applicable check evidence and reviewer"
+    ],
+    "review": "Define requirements by the work assigned. A general record should not imply authorisation for every vehicle, machine or task. Your company maintains induction and review decisions while workers contribute relevant credentials. Keep outstanding evidence visible before approving the assignment.",
+    "work": "Review recorded site arrivals alongside worker evidence. When agency personnel change, follow the process for the actual placement and substitution. Record a prescribed employment check separately from attendance; check-in is not automatic right-to-work verification.",
+    "boundary": "Home Office checks, labour-market duties and warehouse safety procedures have distinct requirements. Certifyd organises evidence and recorded activity; it does not replace those checks or guarantee compliance."
+  },
+  {
+    "slug": "hospitality-staff",
+    "title": "Prepare hospitality-worker records before a shift",
+    "industry": "workforce",
+    "role": "Hospitality worker",
+    "intro": "Bring role-specific evidence into view before the venue assigns a worker to a shift.",
+    "description": "Bring role-specific evidence into view before the venue assigns a worker to a shift.",
+    "requirements": [
+      "The role, venue and employer",
+      "Task-specific training and qualifications",
+      "Venue induction and check records",
+      "Restrictions affecting the proposed work"
+    ],
+    "review": "Use requirements appropriate to the task and venue. Your company maintains induction and review records while workers share personal training evidence. Record who performed prescribed employment checks and where their results are held; a uniform or roster entry is not that evidence.",
+    "work": "Follow approaching credential dates and outstanding reviews without implying that every shift requires another statutory check. Recorded check-ins can support visit history. Payroll, hours, permitted work and supervision still need their respective review processes.",
+    "boundary": "Certifyd does not automatically establish right to work at the entrance or determine agency and hirer responsibilities. Review the actual arrangement and appropriate evidence."
+  },
+  {
+    "slug": "remote-workers",
+    "title": "Review remote-worker evidence during onboarding",
+    "industry": "workforce",
+    "role": "Remote worker",
+    "intro": "Keep remote onboarding focused on the evidence, check method and decision your organisation needs.",
+    "description": "Keep remote onboarding focused on the evidence, check method and decision your organisation needs.",
+    "requirements": [
+      "The role and work location",
+      "Required qualifications and supporting evidence",
+      "The appropriate employment check method",
+      "Company policies, induction and review responsibilities"
+    ],
+    "review": "A video introduction and an uploaded document answer different questions from a prescribed employment check. Choose the appropriate method for the worker’s circumstances and jurisdiction, retain the result and record the decision. Keep organisational policies distinct from worker-held credentials.",
+    "work": "Follow missing evidence, pending reviews and approaching recorded dates. Give the next reviewer a clear action rather than relying on one verified status. Discuss the access controls, existing systems and integrations your remote process needs before extending it across teams.",
+    "boundary": "Certifyd’s records workflow does not authenticate meeting participants, detect deepfakes or establish legal identity from a device. Your organisation completes the required checks and security decisions.",
+    "source": {
+      "title": "Read the employer right-to-work guide",
+      "href": "https://www.gov.uk/government/publications/right-to-work-checks-employers-guide"
+    }
+  },
+  {
+    "slug": "cleaning-companies",
+    "title": "Manage cleaner records across customer properties",
+    "industry": "trades",
+    "role": "Cleaner",
+    "intro": "Keep cleaner evidence connected to company requirements and the properties your team assigns.",
+    "description": "Keep cleaner evidence connected to company requirements and the properties your team assigns.",
+    "requirements": [
+      "The cleaner and company role",
+      "Task-specific training evidence",
+      "Property instructions and inductions",
+      "Responsibility for approving changes"
+    ],
+    "review": "Set requirements before inviting cleaners to contribute evidence. Distinguish personal credentials from company inductions and decisions. When a worker or requirement changes, follow the affected record and assign the next review rather than relying on a general cleared status.",
+    "work": "Review recorded property check-ins and check-outs. Where a shared profile is used, agree what person-and-company information the recipient should inspect. Company review records and customer instructions need access appropriate to the role and purpose.",
+    "boundary": "Certifyd does not automatically give customers every worker document or revoke property-entry permission. Your company controls assignments, disclosures and access decisions."
+  },
+  {
+    "slug": "hospitality-businesses",
+    "title": "Manage workforce evidence across hospitality venues",
+    "industry": "workforce",
+    "role": "Hospitality team member",
+    "intro": "Follow each venue’s requirements to the evidence and reviews behind an assignment.",
+    "description": "Follow each venue’s requirements to the evidence and reviews behind an assignment.",
+    "requirements": [
+      "Permanent, casual and agency arrangements",
+      "Requirements for the hospitality role",
+      "Venue induction and training records",
+      "Ownership of each check and decision"
+    ],
+    "review": "Keep evidence responsibilities clear across venues and labour suppliers. Review requirements for the actual role and arrangement rather than assuming one record covers every job. Your business maintains company documents and reviews while workers share credentials relevant to work.",
+    "work": "Follow missing evidence, pending reviews and genuine expiry or review dates. Connect recorded attendance to venue visit history. Keep pay, working time, immigration permission and competence in their respective processes, with evidence supporting each decision.",
+    "boundary": "The Fair Work Agency’s labour-market remit is separate from Home Office immigration enforcement. Certifyd does not automatically satisfy either body’s requirements or promise an inspection outcome."
+  },
+  {
+    "slug": "facilities-management",
+    "title": "Review workforce records across managed facilities",
+    "industry": "workforce",
+    "role": "Facilities worker",
+    "intro": "Prepare client-site evidence while keeping worker, supplier and review responsibilities clear.",
+    "description": "Prepare client-site evidence while keeping worker, supplier and review responsibilities clear.",
+    "requirements": [
+      "The worker, employer and subcontractor",
+      "The client-site assignment",
+      "Training, qualifications and inductions",
+      "Responsibility for changes and substitutions"
+    ],
+    "review": "Translate relevant site and contractual requirements into evidence your team can review. Distinguish supplier statements, worker credentials and your company’s decision. Where facilities differ, identify the requirements for each site rather than using a universal compliance status.",
+    "work": "Connect recorded visits to the person’s evidence and company review dates. A changed worker, supplier or assignment should trigger review of affected requirements. Agree each organisation’s record access rather than assuming automatic chain-wide sharing.",
+    "boundary": "Certifyd does not certify ISO, BREEAM or contractual compliance, or automatically grant building access. Your organisation reviews the obligations and makes the decisions."
+  },
+  {
+    "slug": "right-to-work-checks",
+    "title": "Keep prescribed right-to-work evidence with reviews",
+    "industry": "workforce",
+    "role": "Team member",
+    "intro": "Choose the appropriate check, retain its result and connect the employer’s review to the worker record.",
+    "description": "Choose the appropriate check, retain its result and connect the employer’s review to the worker record.",
+    "requirements": [
+      "The prescribed method for the circumstances",
+      "The employer-facing result or document evidence",
+      "The check date and reviewer",
+      "Work restrictions and required follow-ups"
+    ],
+    "review": "The Home Office guide explains manual and online checks, eligible right-to-work digital verification providers and the Employer Checking Service. A passport copy can form part of a prescribed check. An uploaded image, share code or QR scan does not itself complete the process or establish an excuse.",
+    "work": "Use current guidance to determine whether a follow-up is required. EUSS settled and pre-settled status do not require repeat employment checks. Pending applications and verification notices have separate rules. Keep document expiry, permission dates and company reviews distinct.",
+    "boundary": "Your employer or responsible organisation performs the prescribed check and decision. Certifyd organises records; it does not provide automatic statutory verification or immunity from penalties.",
+    "source": {
+      "title": "Read the employer right-to-work guide",
+      "href": "https://www.gov.uk/government/publications/right-to-work-checks-employers-guide"
+    }
+  },
+  {
+    "slug": "contractor-verification",
+    "title": "Review contractor credentials and site requirements",
+    "industry": "workforce",
+    "role": "Contractor",
+    "intro": "Review contractor evidence against the work and site requirements before approving an assignment.",
+    "description": "Review contractor evidence against the work and site requirements before approving an assignment.",
+    "requirements": [
+      "The named contractor and arrangement",
+      "Task-specific qualifications and training",
+      "Site induction and company evidence",
+      "Substitution controls and review responsibilities"
+    ],
+    "review": "Identify what the contractor supplies and what checks your company performs. Record the source, reviewer, date and outcome rather than using universally verified as an assurance. The actual contractual arrangement matters when determining employment and right-to-work responsibilities.",
+    "work": "Connect the record to recorded visits and review dates. If another person attends, follow your substitution process and assess their relevant evidence. Keep site-access permission separate from attendance or an uploaded document.",
+    "boundary": "Certifyd does not guarantee ISO 27001, SOC 2 or PCI compliance, automatically revoke access or prove legal identity from a device. Your organisation makes the check and assignment decisions."
+  },
+  {
+    "slug": "agency-worker-compliance",
+    "title": "Review agency-worker evidence and responsibilities",
+    "industry": "recruitment",
+    "role": "Agency worker",
+    "intro": "Start with the agency and hirer arrangement, then record the evidence and decisions each party maintains.",
+    "description": "Start with the agency and hirer arrangement, then record the evidence and decisions each party maintains.",
+    "requirements": [
+      "The agency, employer, hirer and placement",
+      "Responsibility for each applicable check",
+      "Worker evidence and relevant restrictions",
+      "Client requirements and substitutions"
+    ],
+    "review": "Current Home Office guidance distinguishes arrangements; it does not impose automatic joint liability or duplicate checks on every standard agency placement. Identify the employer’s prescribed check and any evidence the hirer needs for its own obligations, role requirements or contractual assurance.",
+    "work": "Connect shared credentials, company placement records and review dates. When a placement changes, review evidence relevant to that change. Site attendance can support a visit history but remains separate from the agency’s check and hirer’s placement decision.",
+    "boundary": "Certifyd supports evidence and review work. It does not determine liability, certify every agency worker or replace the applicable prescribed check process.",
+    "source": {
+      "title": "Read the agency-worker check guide",
+      "href": "/blog/agency-worker-compliance-who-checks/"
+    }
+  },
+  {
+    "slug": "lone-workers",
+    "title": "Connect lone-worker records to assigned visits",
+    "industry": "workforce",
+    "role": "Lone worker",
+    "intro": "Connect worker evidence and company requirements to assigned visits and your separate safety procedures.",
+    "description": "Connect worker evidence and company requirements to assigned visits and your separate safety procedures.",
+    "requirements": [
+      "The worker and work location",
+      "Task-specific qualifications and training",
+      "Company instructions and site requirements",
+      "The separate risk and escalation process"
+    ],
+    "review": "Maintain the credentials and company reviews needed for the work. Keep personal evidence distinct from risk assessment, supervision and escalation procedures. A shared profile gives a recipient information but does not authenticate every person the worker will meet.",
+    "work": "Review recorded arrivals and departures alongside the assignment. Check-in records a point in visit history; it does not prove continuous presence, wellbeing or delivery of an emergency notification. Agree separate contact, monitoring and response arrangements for the actual risk.",
+    "boundary": "Certifyd does not replace a lone-working safety system or guarantee safety. Employers assess and manage risks through their own procedures.",
+    "source": {
+      "title": "Read HSE lone-working guidance",
+      "href": "https://www.hse.gov.uk/lone-working/employer/index.htm"
+    }
+  },
+  {
+    "slug": "safeguarding",
+    "title": "Review worker suitability evidence and visit records",
+    "industry": "care",
+    "role": "Care team member",
+    "intro": "Keep the evidence supporting a worker-suitability decision available to the responsible reviewers.",
+    "description": "Keep the evidence supporting a worker-suitability decision available to the responsible reviewers.",
+    "requirements": [
+      "The role, setting and safeguarding duties",
+      "The appropriate check level and eligibility",
+      "Training and suitability evidence",
+      "The reviewer’s decision and next action"
+    ],
+    "review": "Use checks appropriate to the role and jurisdiction. DBS, professional registration and right-to-work results answer different questions. Record what was inspected, when and by whom. Resolve concerns through your safeguarding process rather than inferring suitability from an uploaded document.",
+    "work": "Connect evidence and company reviews to recorded visits where relevant. Give reviewers access appropriate to the purpose and role. Site events do not prove exactly who was present throughout the day or that every safeguarding requirement was satisfied.",
+    "boundary": "Certifyd does not automatically confirm DBS status, authorise child collection or replace safeguarding decisions and response procedures.",
+    "source": {
+      "title": "Read the care-sector check guide",
+      "href": "/blog/care-sector-rtw-compliance-guide/"
+    }
+  },
+  {
+    "slug": "nannies-au-pairs",
+    "title": "Prepare nanny and au-pair employment evidence",
+    "industry": "workforce",
+    "role": "Childcare worker",
+    "intro": "Keep hiring evidence and review responsibilities clear for the household or agency making the decision.",
+    "description": "Keep hiring evidence and review responsibilities clear for the household or agency making the decision.",
+    "requirements": [
+      "The role and actual employer or agency",
+      "Qualifications, references and appropriate checks",
+      "The prescribed right-to-work result",
+      "Registration rules relevant to the jurisdiction"
+    ],
+    "review": "Use requirements appropriate to the childcare role and location. Registration rules differ by jurisdiction and circumstances; do not assume one UK-wide mandatory nanny register. Au pairs need appropriate work permission. A visitor cannot be employed as an au pair merely because they stay with a family.",
+    "work": "Keep the decision and supporting evidence with the worker record. Use genuine credential dates and justified review dates. For an agency arrangement, establish what it checks and what the employer or household must decide.",
+    "boundary": "Certifyd does not authenticate parents, authorise releasing a child or guarantee daily safety. Storing evidence does not provide immigration sponsorship.",
+    "source": {
+      "title": "Read official au-pair guidance",
+      "href": "https://www.gov.uk/au-pairs-employment-law/au-pairs"
+    }
+  },
+  {
+    "slug": "delivery-drivers",
+    "title": "Historical delivery doorstep verification concept",
+    "description": "Historical delivery doorstep verification concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Comparing person-and-company information during a delivery visit.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "trade-platforms",
+    "title": "Historical trade-platform identity integration concept",
+    "description": "Historical trade-platform identity integration concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Sharing identity-related information between platforms and visiting workers.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "deepfakes",
+    "title": "Historical deepfake verification concept",
+    "description": "Historical deepfake verification concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Checking a second source of evidence before trusting media or a request.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "ceo-fraud",
+    "title": "Historical executive impersonation concept",
+    "description": "Historical executive impersonation concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Independently confirming a request attributed to a senior colleague.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "voice-cloning",
+    "title": "Historical voice impersonation concept",
+    "description": "Historical voice impersonation concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Using another confirmation channel when a caller’s voice is uncertain.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "phishing",
+    "title": "Historical phishing verification concept",
+    "description": "Historical phishing verification concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Reviewing a request’s source before sharing information or granting access.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "romance-scams",
+    "title": "Historical romance-scam identity checks concept",
+    "description": "Historical romance-scam identity checks concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Exchanging identity-related information during an online relationship.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "social-engineering",
+    "title": "Historical social-engineering checks concept",
+    "description": "Historical social-engineering checks concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Reviewing the requester, requested action and a separate source of evidence.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "protecting-elderly-parents",
+    "title": "Historical family doorstep verification concept",
+    "description": "Historical family doorstep verification concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Sharing information about an expected visitor with a family member.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "school-pickups",
+    "title": "Historical school collection authorisation concept",
+    "description": "Historical school collection authorisation concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Representing an agreed collection arrangement and the person attending.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "online-dating",
+    "title": "Historical online-dating identity sharing concept",
+    "description": "Historical online-dating identity sharing concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Exchanging identity-related information before a meeting.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "estate-agent-viewings",
+    "title": "Historical property-viewing verification concept",
+    "description": "Historical property-viewing verification concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Comparing agent and visitor information before a viewing.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  },
+  {
+    "slug": "airbnb",
+    "title": "Historical short-stay identity sharing concept",
+    "description": "Historical short-stay identity sharing concept. This archived page does not describe an available Certifyd product.",
+    "intro": "Exchanging host and guest information around a short-stay booking.",
+    "archive": true,
+    "industry": "workforce",
+    "role": "",
+    "requirements": [],
+    "review": "",
+    "work": "",
+    "boundary": ""
+  }
+]
