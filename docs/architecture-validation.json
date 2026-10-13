@@ -1,6 +1,8 @@
 {
   "exported_pages": 165,
   "sitemap_urls": 145,
+  "reachable_pages": 148,
+  "orphaned_sitemap_pages": [],
   "new_routes": 7,
   "consolidations": 24,
   "errors": []

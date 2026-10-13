@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {readAttribution} from '../src/lib/attribution.ts';
+import {readAttribution,initializeAttribution,submissionAttribution} from '../src/lib/attribution.ts';
 import {bookingUrls,initializeDemoBooking} from '../src/lib/demo-booking.ts';
 import demoEnquiry from '../netlify/functions/demo-enquiry.mts';
 import leadMagnet from '../netlify/functions/lead-magnet.mts';
@@ -42,3 +42,16 @@ for(const handler of [demoEnquiry,leadMagnet]){
  assert.equal(person.body.data.values.description,undefined,'Acquisition must not overwrite an existing CRM description');
 }
 console.log('Attribution sanitization, Cal notes and consent-safe deduplication, and mocked CRM acquisition notes passed.');
+
+// Saved-choice startup must preserve the original landing; withdrawal must clear it.
+globalThis.window=new EventTarget();globalThis.location={pathname:'/contact/',search:'?utm_source=google&utm_medium=organic'};globalThis.document={referrer:'https://www.google.com/search?q=private'};
+const storage=new Map([['certifyd_utm',JSON.stringify({_landing:'/blog/guide/',utm_source:'google',utm_medium:'organic'})],['certifyd_demo_entry','{}']]);
+globalThis.sessionStorage={getItem:key=>storage.get(key)||null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
+const attributionCleanup=initializeAttribution();assert.equal(storage.has('certifyd_utm'),true,'Waiting for the manager must not erase consented first-touch context');
+window.rogersonConsent={has:()=>true};window.dispatchEvent(new Event('rogerson:consent-ready'));
+assert.equal(submissionAttribution('contact-page')._landing,'/blog/guide/');
+window.rogersonConsent.has=()=>false;window.dispatchEvent(new CustomEvent('rogerson:consent',{detail:{analytics:false}}));
+assert.equal(storage.size,0);assert.deepEqual(submissionAttribution('contact-page'),{page_path:'/contact/',placement:'contact-page'});
+window.rogersonConsent.has=()=>true;window.dispatchEvent(new CustomEvent('rogerson:consent',{detail:{analytics:true}}));
+const captured=JSON.parse(storage.get('certifyd_utm'));assert.equal(captured._referrer,'www.google.com');assert.equal(captured.utm_source,'google');assert.equal(captured._landing,'/contact/');assert.equal(JSON.stringify(captured).includes('private'),false);
+attributionCleanup();console.log('Saved consent startup, first-touch preservation, denied choice and withdrawal clearing passed.');

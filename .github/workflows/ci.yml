@@ -25,4 +25,5 @@ jobs:
       - run: npm run test:connected
       - run: npm run test:attribution
       - run: npm run build
+      - run: python3 scripts/check-site-architecture.py
       - run: npm audit --omit=dev --audit-level=high

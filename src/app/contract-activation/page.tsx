@@ -4,7 +4,7 @@ import { ContractActivationDemo } from "./ContractActivationDemo";
 import styles from "./contract-activation.module.css";
 
 export const metadata: Metadata = siteMetadata({
-  title: "Contract Activation for Workforce Suppliers",
+  title: "Human-reviewed Contract Activation pilot",
   description:
     "Turn client contracts into source-linked supplier, organisation and personnel compliance requirements with a human-reviewed activation pack.",
   alternates: { canonical: "/contract-activation/" },
@@ -51,10 +51,10 @@ export default function ContractActivationPage() {
         <div className={styles.container}>
           <div className={styles.heroGrid}>
             <div className={styles.heroCopy}>
-              <p className={styles.eyebrow}>Certifyd Contract Activation</p>
+              <p className={styles.eyebrow}>Certifyd Contract Activation pilot</p>
               <h1>Turn the contract into the compliance plan.</h1>
               <p className={styles.heroLead}>
-                We read the complete client contract stack and produce a
+                This human-reviewed service pilot reads your client contract stack and produces a
                 source-linked register of what the client, your organisation
                 and every affected worker must do.
               </p>
@@ -63,7 +63,7 @@ export default function ContractActivationPage() {
                   See the worked example
                   <span aria-hidden="true">↓</span>
                 </a>
-                <a className={styles.secondaryButton} href="/contact/">
+                <a className={styles.secondaryButton} href="/contact/?workflow=contract-activation#enquiry">
                   Request a reviewed pack
                   <span aria-hidden="true">→</span>
                 </a>

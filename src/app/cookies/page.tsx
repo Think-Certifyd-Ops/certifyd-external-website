@@ -1,5 +1,6 @@
 import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
+import {CookieChoices} from "@/components/measurement/CookieChoices";
 import Link from "next/link";
 
 export const metadata: Metadata = siteMetadata({
@@ -10,59 +11,12 @@ export const metadata: Metadata = siteMetadata({
 });
 
 const sections = [
-  {
-    title: "1. What Are Cookies",
-    content: `Cookies are small text files placed on your device when you visit a website. They are widely used to make websites work efficiently and to provide information to the site owners. We use cookies and similar technologies (such as local storage and pixel tags) to improve your experience on our website.`,
-  },
-  {
-    title: "2. Cookies We Use",
-    content: `We use the following categories of cookies:
-
-**Essential cookies** — These cookies are necessary for the website to function and cannot be switched off. They are typically set in response to actions you take, such as setting your privacy preferences, logging in, or filling in forms. Without these cookies, the site cannot function properly.
-
-**Analytics cookies** — These cookies help us understand how visitors interact with our website by collecting information about pages visited, time spent, and navigation patterns. This data is aggregated and anonymised. We use this information to improve our website and services.
-
-**Functional cookies** — These cookies enable enhanced functionality and personalisation, such as remembering your preferences and settings. If you do not allow these cookies, some features may not function as intended.`,
-  },
-  {
-    title: "3. Third-Party Cookies",
-    content: `Some cookies are placed by third-party services that appear on our pages. We use the following third-party services:
-
-- **Analytics providers** — To understand website usage and improve our services.
-- **Hosting providers** — Our website is hosted on infrastructure that may set technical cookies necessary for delivery and security.
-
-We do not use third-party advertising cookies or sell cookie data to advertisers.`,
-  },
-  {
-    title: "4. Managing Your Preferences",
-    content: `You can manage cookies through your browser settings. Most browsers allow you to:
-
-- View what cookies are stored and delete them individually
-- Block third-party cookies
-- Block cookies from specific sites
-- Block all cookies
-- Delete all cookies when you close your browser
-
-Please note that blocking all cookies may affect the functionality of our website and other sites you visit.
-
-**Browser-specific instructions:**
-- Chrome: Settings > Privacy and Security > Cookies
-- Firefox: Settings > Privacy & Security > Cookies and Site Data
-- Safari: Preferences > Privacy > Cookies and Website Data
-- Edge: Settings > Cookies and Site Permissions`,
-  },
-  {
-    title: "5. Changes to This Policy",
-    content: `We may update this cookie policy from time to time to reflect changes in our practices or in applicable regulations. The date at the top of this page indicates when this policy was last updated.`,
-  },
-  {
-    title: "6. Contact",
-    content: `If you have questions about our use of cookies, contact us at:
-
-**Certifyd Ltd**
-Aldwych House, 71-91 Aldwych, London, England WC2B 4HN
-Email: team@certifyd.io`,
-  },
+  {title:"1. Cookies and similar storage",content:"Cookies and browser storage can remember a choice or support a website process. This notice covers the public Certifyd website; embedded services such as Cal.com also have their own notices."},
+  {title:"2. Your privacy choice",content:"The rg_privacy_choice cookie records your analytics and marketing preferences for up to 180 days. A choice record containing its identifier, version, time and page is sent to the shared RogerSon consent service. The privacy controls remain available through Cookie settings. Advertising tags are disabled on this website."},
+  {title:"3. Optional analytics and campaign context",content:"Google Analytics loads after analytics permission. It measures pages and events using pseudonymous identifiers; this is not a promise of anonymous data. Our custom demo and lead events exclude names, email addresses, messages and booking identifiers. With permission, sessionStorage entries certifyd_utm and certifyd_demo_entry keep limited landing, referring-domain, campaign and placement context for the tab session. Withdrawing analytics permission clears that optional session context and the known analytics cookies."},
+  {title:"4. Enquiries, newsletters and booking services",content:"The current page and form placement can accompany an enquiry you choose to submit. Netlify handles website forms; the privacy notice explains contact, guide and newsletter processing. The Cal.com calendar may use its own technical storage and service worker for the booking flow. Blocking an embedded service in your browser can affect its operation; you can use the separate Cal.com link on the contact page."},
+  {title:"5. Change or withdraw a choice",content:"Use Cookie settings on any page, or the button below, to review your choice. Reject non-essential leaves optional analytics disabled. You can withdraw a previous analytics choice there; the page reloads when needed to stop previously activated analytics. Browser settings also let you inspect, block or delete site data."},
+  {title:"6. Contact",content:"For questions about this website’s storage or your data, contact Certifyd Ltd at team@certifyd.io or Aldwych House, 71-91 Aldwych, London, England WC2B 4HN."},
 ];
 
 export default function CookiePolicyPage() {
@@ -79,7 +33,7 @@ export default function CookiePolicyPage() {
             Cookie Policy
           </h1>
           <p className="text-text-on-dark-muted mt-4 text-lg">
-            Last updated: February 2025
+            Last updated: 13 October 2026
           </p>
         </div>
       </section>
@@ -87,6 +41,7 @@ export default function CookiePolicyPage() {
       {/* Content */}
       <section className="section-light">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+          <div className="mb-8"><CookieChoices/></div>
           <div className="space-y-12">
             {sections.map((section) => (
               <div key={section.title}>

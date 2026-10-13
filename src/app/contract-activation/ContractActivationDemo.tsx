@@ -161,12 +161,11 @@ export function ContractActivationDemo() {
 
   return (
     <div className={styles.demoShell}>
-      <div className={styles.demoTabs} role="tablist" aria-label="Contract analysis examples">
+      <div className={styles.demoTabs} role="group" aria-label="Contract analysis examples">
         {scenarios.map((scenario) => (
           <button
             type="button"
-            role="tab"
-            aria-selected={scenario.id === active.id}
+            aria-pressed={scenario.id === active.id}
             className={scenario.id === active.id ? styles.demoTabActive : styles.demoTab}
             key={scenario.id}
             onClick={() => selectScenario(scenario.id)}
@@ -195,12 +194,12 @@ export function ContractActivationDemo() {
           </div>
         </article>
 
-        <div className={styles.resultPanel}>
+        <div className={styles.resultPanel} role="region" aria-labelledby="contract-example-title">
           <div className={styles.panelHeader}>
             <span>Activation output</span>
             <span>Human review required</span>
           </div>
-          <h3>{active.heading}</h3>
+          <h3 id="contract-example-title" aria-live="polite">{active.heading}</h3>
           <div className={styles.resultList}>
             {active.results.map((result) => (
               <article className={styles.resultCard} key={`${active.id}-${result.title}`}>

@@ -9,6 +9,8 @@ import { MarketingHeader } from "@/components/marketing/MarketingHeader";
 import {DemoClickTracking} from "@/components/measurement/DemoClickTracking";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
+import {ConsentWidget} from "@/components/measurement/ConsentWidget";
+import {ConsentAttribution} from "@/components/measurement/ConsentAttribution";
 import {PageBreadcrumbs} from "@/components/seo/PageBreadcrumbs";
 
 const ibmPlexMono = localFont({src:"../../public/images/connected/ibm-plex-mono-700.woff2",variable:"--font-ibm-plex-mono",weight:"700",display:"swap"});
@@ -62,15 +64,7 @@ export default function RootLayout({
           id="roger-group-consent-default"
           dangerouslySetInnerHTML={{ __html: "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:500});" }}
         />
-        <Script
-          id="roger-group-consent"
-          src="https://rogerson-signups.netlify.app/consent-widget.js"
-          strategy="afterInteractive"
-          data-brand="Certifyd"
-          data-domain="certifyd.io"
-          data-analytics="true"
-          data-marketing="false"
-        />
+        <ConsentWidget/>
         <Script
           id="rogerson-newsletter"
           src="https://rogerson-signups.netlify.app/newsletter-widget.js"
@@ -79,39 +73,8 @@ export default function RootLayout({
           data-domain="certifyd.io"
           data-slug="certifyd"
         />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-FNMZS9PQ1S"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-FNMZS9PQ1S');
-          `}
-        </Script>
-        {/* Capture UTM params + gclid for Google Ads attribution */}
-        <Script id="utm-capture" strategy="afterInteractive">
-          {`
-            (function(){
-              try {
-                var params = new URLSearchParams(window.location.search);
-                var keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
-                if(sessionStorage.getItem('certifyd_utm')) return;
-                var stored = {_landing:window.location.pathname};
-                try { if(document.referrer) stored._referrer = new URL(document.referrer).hostname; } catch(e){}
-                keys.forEach(function(k){
-                  var v = params.get(k);
-                  if(v && v.length <= 200 && /^[a-z0-9_.:/ -]+$/i.test(v)) stored[k] = v;
-                });
-                if(Object.keys(stored).length > 0){
-                  sessionStorage.setItem('certifyd_utm', JSON.stringify(stored));
-                }
-              } catch(e){}
-            })();
-          `}
-        </Script>
+        <script type="text/plain" data-consent="analytics" data-consent-src="https://www.googletagmanager.com/gtag/js?id=G-FNMZS9PQ1S" />
+        <script type="text/plain" data-consent="analytics" dangerouslySetInnerHTML={{__html:"window.gtag('js',new Date());window.gtag('config','G-FNMZS9PQ1S');"}} />
       </head>
       <body
         className={`${ibmPlexMono.variable} ${ibmPlexSans.variable} antialiased`}
@@ -121,6 +84,7 @@ export default function RootLayout({
         <a className="site-skip-link" href="#page-content">Skip to main content</a>
         <MarketingHeader />
         <DemoClickTracking/>
+        <ConsentAttribution/>
         <main id="page-content" tabIndex={-1}><PageBreadcrumbs/>{children}</main>
         <Footer />
       </body>

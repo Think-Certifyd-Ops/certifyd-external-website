@@ -23,7 +23,7 @@ export function initializeDemoBooking(root:HTMLElement,analytics=true){
  const seen=new Set<string>();
  function update(){
   const topics=Array.from(root.querySelectorAll<HTMLInputElement>('input[name="demo-topic"]:checked')).map(input=>input.value);
-  let entry={};try{entry=readAttribution(JSON.parse(sessionStorage.getItem("certifyd_demo_entry")||"{}"))}catch{}
+  let entry={};if(window.rogersonConsent?.has("analytics"))try{entry=readAttribution(JSON.parse(sessionStorage.getItem("certifyd_demo_entry")||"{}"))}catch{}
   const urls=bookingUrls(industry!.value,topics,{...submissionAttribution("contact-calendar"),...entry});fallback!.href=urls.direct;
   if(frame!.getAttribute("src")!==urls.embed){status!.textContent="Loading available times…";frame!.src=urls.embed}
  }

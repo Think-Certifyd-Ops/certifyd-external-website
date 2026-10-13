@@ -1,3 +1,4 @@
+import {IndustryRoleLinks} from "@/components/story/IndustryRoleLinks";
 import Link from "next/link";
 import {pageMetadata} from "@/lib/story/metadata";
 import {StoryShell,StoryHero,RecordExample,StorySection,StoryCTA} from "@/components/story/StoryParts";
@@ -7,5 +8,6 @@ export default function Page(){return <StoryShell><StoryHero label="Trades and h
 <StorySection label="Before you let someone in" title="Ask the visitor to show their Certifyd QR code." visual={<RecordExample person="Eleanor Lee" role="Electrician" record="Work profile QR" action="Scan to open the shared person and company record" owner="Presented by the visitor" slot="trades.qr"/>}><p>The tradesperson presents their work profile from the app. The person in the home scans the code to open the information shared for the visit.</p><p>The record connects the named person, their role and their company. It gives you something to inspect alongside the booking and the work you expect.</p></StorySection>
 <StorySection label="See the shared information" title="Check who they are and who they work for." visual={<ProfileExample/>}><p>See the worker’s identity information, role, company affiliation and the credentials made available for the work. Follow the details behind the visit instead of relying on a name at the door.</p><p>Personal documents remain with the person. The scan shows the information shared for the visit, with access determined by the record and sharing permissions.</p></StorySection>
 <StorySection label="For trade businesses" title="Share each visiting worker’s company details."><p>Maintain company details and worker relationships in your workspace. Let workers carry their personal evidence and present the information needed at the point of work.</p><Link href="/products/id/">Explore reusable identity documents ↗</Link><br/><Link href="/outcomes/verified-worker-check-in/">Follow recorded visits and site attendance ↗</Link></StorySection>
+<IndustryRoleLinks industry="trades"/>
 <StoryCTA title="Review a visiting-worker profile in a demo." copy="We’ll show the worker’s app, the person-and-company information shared through the QR code, and the view someone in the home receives." href="/contact/?sector=trades"/>
 </StoryShell>}

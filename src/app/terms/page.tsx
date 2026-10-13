@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export const metadata: Metadata = siteMetadata({
   title: "Terms of Service | Certifyd",
-  description: "The terms that apply when you use Certifyd CodeWords.",
+  description: "Existing CodeWords terms and the scope of Certifyd website information. Workforce services use their applicable service agreement.",
   alternates: { canonical: "/terms/" },
   openGraph: {
     title: "Terms of Service | Certifyd",
-    description: "The terms that apply when you use Certifyd CodeWords.",
+    description: "Existing CodeWords terms and the scope of Certifyd website information. Workforce services use their applicable service agreement.",
     url: "https://certifyd.io/terms/",
   },
 });
@@ -56,12 +56,13 @@ export default function TermsPage() {
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <span className="mb-6 inline-block rounded-full bg-certifyd-blue/15 px-3 py-1 font-heading text-xs font-medium text-certifyd-blue">Legal</span>
           <h1 className="font-heading text-4xl font-bold text-text-on-dark lg:text-5xl">Terms of Service</h1>
-          <p className="mt-4 text-lg text-text-on-dark-muted">Last updated: 27 August 2026</p>
+          <p className="mt-4 text-lg text-text-on-dark-muted">CodeWords terms updated: 27 August 2026. Website scope noted: 13 October 2026.</p>
         </div>
       </section>
 
       <section className="section-light">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+          <div className="mb-12 text-sm leading-relaxed text-text-on-light-muted"><h2 className="font-heading text-xl font-semibold text-text-on-light mb-4">Website and workforce-service scope</h2><p>The workforce pages describe record and review workflows. A website example or demo does not establish a completed statutory check or a compliance guarantee. Workforce subscriptions and the human-reviewed Contract Activation pilot are governed by the applicable service agreement.</p><p className="mt-4">The existing CodeWords terms below remain available for people whose app links to this page. They do not establish the terms of a workforce-platform subscription.</p></div>
           <div className="space-y-12">
             {sections.map((section) => (
               <section key={section.title}>
