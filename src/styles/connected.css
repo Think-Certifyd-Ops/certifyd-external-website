@@ -50,6 +50,10 @@
  .connected .outcome-hero[data-hero] .sheet{padding:20px}
  .connected .outcome-hero[data-hero] .record-row{min-height:48px;padding-block:8px}
  .connected .outcome-hero[data-hero] .phone{padding:16px}
+ .connected [data-demo-slot="verified-worker-check-in.figure-1"] .person{padding-bottom:12px}
+ .connected [data-demo-slot="verified-worker-check-in.figure-1"] .my-6{margin-block:16px}
+ .connected [data-demo-slot="verified-worker-check-in.figure-1"] .mt-6{margin-top:16px}
+ .connected [data-demo-slot="verified-worker-check-in.figure-1"] .mt-5{margin-top:12px}
 }
 @media(max-width:800px){
  .connected .outcome-hero[data-hero]{gap:16px;padding-top:20px;padding-bottom:24px}
