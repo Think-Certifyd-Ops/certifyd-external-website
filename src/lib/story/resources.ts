@@ -26,7 +26,7 @@ export const RESOURCES={
         "Treat document expiry, permission dates and company review dates as separate fields. Pending applications and verification notices require the guidance relevant to those circumstances."
       ],
       [
-        "Review gaps before the next decision.",
+        "Resolve missing evidence and assign follow-up work.",
         "Identify missing evidence, incomplete checks and unanswered restrictions. Name the person responsible for resolving each gap.",
         "Use the worker-record checklist to organise the process. Ask a qualified adviser about cases that need an individual interpretation."
       ]

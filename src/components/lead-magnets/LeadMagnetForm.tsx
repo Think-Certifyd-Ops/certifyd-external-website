@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { trackLeadEvent } from "@/lib/measurement";
+import { submissionAttribution } from "@/lib/attribution";
 import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 interface LeadMagnetFormProps {
@@ -98,8 +100,7 @@ export function LeadMagnetForm({
           }
 
           // Forward to Loops via Netlify Function (best-effort, don't block)
-          let utmData = {};
-          try { utmData = JSON.parse(sessionStorage.getItem("certifyd_utm") || "{}"); } catch {}
+          const utmData = submissionAttribution(source);
           fetch("/.netlify/functions/lead-magnet", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -116,13 +117,7 @@ export function LeadMagnetForm({
           });
 
           // GA4 event
-          if (typeof window !== "undefined" && typeof window.gtag === "function") {
-            window.gtag("event", "generate_lead", {
-              event_category: "lead_magnet",
-              event_label: source,
-              ...(GOOGLE_ADS_CONVERSIONS.leadMagnet ? { send_to: GOOGLE_ADS_CONVERSIONS.leadMagnet } : {}),
-            });
-          }
+          trackLeadEvent("generate_lead",{event_category: "lead_magnet",event_label: source},GOOGLE_ADS_CONVERSIONS.leadMagnet);
 
           setSubmitted(true);
         } catch {

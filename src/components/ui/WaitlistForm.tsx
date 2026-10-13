@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { trackLeadEvent } from "@/lib/measurement";
+import { submissionAttribution } from "@/lib/attribution";
 import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -39,19 +41,14 @@ export function WaitlistForm({
         body: JSON.stringify({
           email,
           hp: hpRef.current?.value || "",
+          ...submissionAttribution(source),
           source,
         }),
       });
 
       if (res.ok) {
         // GA4 conversion event
-        if (typeof window !== "undefined" && typeof window.gtag === "function") {
-          window.gtag("event", "sign_up", {
-            event_category: "waitlist",
-            event_label: eventLabel,
-            ...(GOOGLE_ADS_CONVERSIONS.waitlistSignup ? { send_to: GOOGLE_ADS_CONVERSIONS.waitlistSignup } : {}),
-          });
-        }
+        trackLeadEvent("sign_up",{event_category: "waitlist",event_label: eventLabel},GOOGLE_ADS_CONVERSIONS.waitlistSignup);
         setStatus("success");
       } else {
         const data = await res.json().catch(() => ({}));

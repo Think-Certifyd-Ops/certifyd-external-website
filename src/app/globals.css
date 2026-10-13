@@ -281,3 +281,9 @@
     overflow: visible;
   }
 }
+
+.site-skip-link{position:fixed;left:1rem;top:1rem;z-index:1000;padding:.75rem 1rem;background:#fff;color:#0753ce;border:2px solid currentColor;transform:translateY(-200%)}
+.site-skip-link:focus{transform:translateY(0)}
+#page-content:focus{outline:none}
+
+.site-breadcrumbs{max-width:82rem;margin:0 auto;padding:1rem 2rem 0;color:#46566c;font-size:.8rem}.site-breadcrumbs ol{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}.site-breadcrumbs li{display:flex;gap:.5rem}.site-breadcrumbs a{text-decoration:underline;text-underline-offset:3px;color:#0753ce}@media(max-width:600px){.site-breadcrumbs{padding:1rem 1.25rem 0}}

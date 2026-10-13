@@ -1,11 +1,14 @@
 import {completedBooking,readCalMessage,trackWebsiteEvent} from "@/lib/measurement";
+import {readAttribution,submissionAttribution} from "@/lib/attribution";
 export const DEMO_INDUSTRIES=["Care & Social Care","Recruitment","NHS & Healthcare","Trades & Home Services","Other workforce teams"];
 export const DEMO_TOPICS=["Onboarding","Tracked records and renewals","Workforce overview","Worker app and reusable documents","Site check-in"];
-export function bookingUrls(industry="",topics:string[]=[]){
+export function bookingUrls(industry="",topics:string[]=[],attribution:Record<string,string>={}){
  const lines=[];
  if(DEMO_INDUSTRIES.includes(industry))lines.push(`Industry: ${industry}`);
  const selected=DEMO_TOPICS.filter(topic=>topics.includes(topic));
  if(selected.length)lines.push(`Topics: ${selected.join(", ")}`);
+ const safe=readAttribution(attribution);
+ for(const key of ["_landing","page_path","placement","utm_source","utm_medium","utm_campaign"]){if(safe[key])lines.push(`${key}: ${safe[key]}`)}
  const direct=new URL("https://cal.com/andrew-speer/certifyd-discovery");
  const embed=new URL("https://app.cal.com/andrew-speer/certifyd-discovery/embed");
  embed.searchParams.set("embed","certifyd-demo");embed.searchParams.set("theme","light");embed.searchParams.set("layout","month_view");
@@ -20,7 +23,8 @@ export function initializeDemoBooking(root:HTMLElement,analytics=true){
  const seen=new Set<string>();
  function update(){
   const topics=Array.from(root.querySelectorAll<HTMLInputElement>('input[name="demo-topic"]:checked')).map(input=>input.value);
-  const urls=bookingUrls(industry!.value,topics);fallback!.href=urls.direct;
+  let entry={};try{entry=readAttribution(JSON.parse(sessionStorage.getItem("certifyd_demo_entry")||"{}"))}catch{}
+  const urls=bookingUrls(industry!.value,topics,{...submissionAttribution("contact-calendar"),...entry});fallback!.href=urls.direct;
   if(frame!.getAttribute("src")!==urls.embed){status!.textContent="Loading available times…";frame!.src=urls.embed}
  }
  const query=new URLSearchParams(location.search);
@@ -33,10 +37,12 @@ export function initializeDemoBooking(root:HTMLElement,analytics=true){
   const message=readCalMessage(event,frame.contentWindow);if(!message)return;
   if(message.action==="__iframeReady")ready();
   if(message.action==="bookerReady"||message.action==="linkReady")status.textContent="Choose a date and time.";
+  if(message.action==="linkFailed")status.textContent="The calendar could not load. Use the Cal.com link below to choose a time.";
   if(message.action==="__dimensionChanged"){const height=message.data?.iframeHeight;if(typeof height==='number'&&Number.isFinite(height)&&height>=350&&height<=2000)frame.style.height=`${height}px`}
   if(message.action!=="bookingSuccessfulV2"||!completedBooking(message.data)||seen.has(message.data.uid))return;
   status.textContent="Your demo is booked.";
-  if(!analytics||trackWebsiteEvent("demo_booking_completed",{booking_provider:"cal",booking_flow:"certifyd-discovery"}))seen.add(message.data.uid);
+  seen.add(message.data.uid);
+  if(analytics)trackWebsiteEvent("demo_booking_completed",{booking_provider:"cal",booking_flow:"certifyd-discovery"});
  },{signal});ready();
  return()=>controller.abort();
 }

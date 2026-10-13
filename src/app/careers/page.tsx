@@ -1,6 +1,7 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Careers at Certifyd — Join the Identity Verification Team",
   description:
     "Join Certifyd and build identity verification infrastructure for UK businesses. London-based team with deep institutional experience.",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
       "Join Certifyd and build identity verification infrastructure for UK businesses.",
     url: "https://certifyd.io/careers/",
   },
-};
+});
 
 export default function CareersPage() {
   return (

@@ -1,7 +1,8 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import { SolutionCTA } from "@/components/solutions/SolutionCTA";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Partners & Programmes — Certifyd",
   description:
     "Certifyd partners with leading technology programmes to accelerate identity verification innovation. NVIDIA Inception Programme member.",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
       "Certifyd partners with leading technology programmes to accelerate identity verification innovation.",
     url: "https://certifyd.io/partners/",
   },
-};
+});
 
 export default function PartnersPage() {
   return (

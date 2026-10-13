@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { trackLeadEvent } from "@/lib/measurement";
+import { submissionAttribution } from "@/lib/attribution";
 import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 interface InlineFormProps {
@@ -76,8 +78,7 @@ export function InlineForm({
             if (res.ok) {
               // Forward to Attio + Loops via Netlify Function (best-effort)
               const name = formData.get("name") as string;
-              let utmData = {};
-              try { utmData = JSON.parse(sessionStorage.getItem("certifyd_utm") || "{}"); } catch {}
+              const utmData = submissionAttribution(source);
               fetch("/.netlify/functions/demo-enquiry", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -95,13 +96,7 @@ export function InlineForm({
               }).catch(() => {});
 
               // GA4 conversion event
-              if (typeof window !== "undefined" && typeof window.gtag === "function") {
-                window.gtag("event", "generate_lead", {
-                  event_category: "demo_request",
-                  event_label: source,
-                  ...(GOOGLE_ADS_CONVERSIONS.demoRequest ? { send_to: GOOGLE_ADS_CONVERSIONS.demoRequest } : {}),
-                });
-              }
+              trackLeadEvent("generate_lead",{event_category: "demo_request",event_label: source},GOOGLE_ADS_CONVERSIONS.demoRequest);
 
               setSubmitted(true);
             } else {

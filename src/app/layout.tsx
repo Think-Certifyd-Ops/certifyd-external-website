@@ -9,6 +9,7 @@ import { MarketingHeader } from "@/components/marketing/MarketingHeader";
 import {DemoClickTracking} from "@/components/measurement/DemoClickTracking";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
+import {PageBreadcrumbs} from "@/components/seo/PageBreadcrumbs";
 
 const ibmPlexMono = localFont({src:"../../public/images/connected/ibm-plex-mono-700.woff2",variable:"--font-ibm-plex-mono",weight:"700",display:"swap"});
 const ibmPlexSans = localFont({src:"../../public/images/connected/ibm-plex-sans.woff2",variable:"--font-ibm-plex-sans",weight:"100 900",display:"swap"});
@@ -64,7 +65,7 @@ export default function RootLayout({
         <Script
           id="roger-group-consent"
           src="https://rogerson-signups.netlify.app/consent-widget.js"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
           data-brand="Certifyd"
           data-domain="certifyd.io"
           data-analytics="true"
@@ -80,7 +81,6 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-FNMZS9PQ1S');
-            gtag('config', 'AW-18037838481');
           `}
         </Script>
         {/* Capture UTM params + gclid for Google Ads attribution */}
@@ -90,14 +90,14 @@ export default function RootLayout({
               try {
                 var params = new URLSearchParams(window.location.search);
                 var keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
-                var stored = {};
+                if(sessionStorage.getItem('certifyd_utm')) return;
+                var stored = {_landing:window.location.pathname};
+                try { if(document.referrer) stored._referrer = new URL(document.referrer).hostname; } catch(e){}
                 keys.forEach(function(k){
                   var v = params.get(k);
-                  if(v) stored[k] = v;
+                  if(v && v.length <= 200 && /^[a-z0-9_.:/ -]+$/i.test(v)) stored[k] = v;
                 });
                 if(Object.keys(stored).length > 0){
-                  stored._landing = window.location.pathname;
-                  stored._ts = new Date().toISOString();
                   sessionStorage.setItem('certifyd_utm', JSON.stringify(stored));
                 }
               } catch(e){}
@@ -110,9 +110,10 @@ export default function RootLayout({
       >
         <OrganizationSchema />
         <WebSiteSchema />
+        <a className="site-skip-link" href="#page-content">Skip to main content</a>
         <MarketingHeader />
         <DemoClickTracking/>
-        <main>{children}</main>
+        <main id="page-content" tabIndex={-1}><PageBreadcrumbs/>{children}</main>
         <Footer />
       </body>
     </html>

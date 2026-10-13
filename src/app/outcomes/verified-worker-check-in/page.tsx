@@ -1,7 +1,8 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import { ConnectedPage } from "@/components/connected/ConnectedPage";
 import body from "@/app/_connected-html/verified-worker-check-in.json";
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   "title": {
     "absolute": "Know who checked in, where and when. | Certifyd"
   },
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
     "description": "Record worker check-in and check-out against a person and site. Review the latest attendance activity and return to the visit history with Certifyd.",
     "url": "https://certifyd.io/outcomes/verified-worker-check-in/"
   }
-};
+});
 export default function Page(){return <ConnectedPage html={body} />}

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const dynamic = "force-static";
-export const alt = "Certifyd — Identity Verification for Businesses";
+export const alt = "Certifyd workforce compliance and worker records";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -97,7 +97,7 @@ export default async function Image() {
             fontFamily: "sans-serif",
           }}
         >
-          Identity Verification for Businesses
+          Workforce compliance and worker records
         </div>
 
         {/* URL */}
@@ -110,7 +110,7 @@ export default async function Image() {
             fontFamily: "sans-serif",
           }}
         >
-          www.certifyd.io
+          certifyd.io
         </div>
       </div>
     ),

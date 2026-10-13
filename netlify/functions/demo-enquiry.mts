@@ -1,4 +1,5 @@
 import type { Context } from "@netlify/functions";
+import { attributionSummary } from "../../src/lib/attribution";
 
 export default async (req: Request, _context: Context) => {
   if (req.method !== "POST") {
@@ -13,6 +14,7 @@ export default async (req: Request, _context: Context) => {
   try {
     const body = await req.json();
     const { email, firstName, lastName, company, role, industry, interest, source, message } = body;
+    const attribution = attributionSummary(body);
 
     if (!email) {
       return new Response(JSON.stringify({ error: "Email required" }), {
@@ -99,12 +101,13 @@ export default async (req: Request, _context: Context) => {
         }
 
         // Add a note with the enquiry details
-        if (companyRecordId) {
+        if (companyRecordId || attioPersonId) {
           const noteLines = [
             `Inbound enquiry from ${firstName} ${lastName} (${email})`,
             role ? `Role: ${role}` : null,
             interest ? `Interest: ${interest}` : null,
             source ? `Form: ${source}` : null,
+            attribution ? `Acquisition context:\n${attribution}` : null,
             message ? `\nMessage:\n${message}` : null,
           ]
             .filter(Boolean)
@@ -118,8 +121,8 @@ export default async (req: Request, _context: Context) => {
             },
             body: JSON.stringify({
               data: {
-                parent_object: "companies",
-                parent_record_id: companyRecordId,
+                parent_object: companyRecordId ? "companies" : "people",
+                parent_record_id: companyRecordId || attioPersonId,
                 title: `Website enquiry — ${interest || source || "General"}`,
                 format: "plaintext",
                 content: noteLines,

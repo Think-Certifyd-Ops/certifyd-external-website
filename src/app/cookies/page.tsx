@@ -1,12 +1,13 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Cookie Policy — Certifyd",
   description:
     "Information about the cookies Certifyd uses, why we use them, and how to manage your preferences.",
   alternates: { canonical: "/cookies/" },
-};
+});
 
 const sections = [
   {

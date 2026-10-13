@@ -10,7 +10,9 @@
     "build:review": "next build --webpack && node --import tsx scripts/generate-rss.ts",
     "test:workload": "node --import tsx scripts/verify-workload.mjs",
     "test:measurement": "node --import tsx scripts/verify-measurement.mjs",
-    "review:local": "python3 scripts/build-local-review.py"
+    "review:local": "python3 scripts/build-local-review.py",
+    "test:connected": "node scripts/verify-connected.mjs",
+    "test:attribution": "node --import tsx scripts/verify-attribution.mjs"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

@@ -27,6 +27,7 @@ const companyLinks = [
 ];
 
 const resourceLinks = [
+  { label: "Sponsor register", href: "/sponsors" },
   { label: "Account help", href: "/contact/" },
   { label: "Blog", href: "/blog/" },
   { label: "Security & Trust", href: "/security/" },
@@ -43,6 +44,9 @@ export function Footer() {
             <Link href="/" className="inline-block">
               <img
                 src="/logos/certifyd-logo-blue-black.svg"
+                width={1445}
+                height={602}
+                loading="lazy"
                 alt={COMPANY.name}
                 className="h-8 w-auto"
                 style={{ width: "120px" }}
@@ -54,6 +58,9 @@ export function Footer() {
             <Link href="/partners/" className="mt-6 inline-block">
               <img
                 src="/logos/partners/nvidia-inception.png"
+                width={636}
+                height={280}
+                loading="lazy"
                 alt="NVIDIA Inception Programme Member"
                 className="h-12 w-auto rounded opacity-80 transition-opacity hover:opacity-100"
               />

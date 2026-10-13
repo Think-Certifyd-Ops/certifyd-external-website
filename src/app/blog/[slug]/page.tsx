@@ -1,3 +1,4 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -21,10 +22,10 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (!post) return {};
+  if (!post) return siteMetadata({});
   const today = new Date().toISOString().split("T")[0];
-  if (!post.meta.date || post.meta.date > today) return {};
-  return {
+  if (!post.meta.date || post.meta.date > today) return siteMetadata({});
+  return siteMetadata({
     title: post.meta.title,
     description: post.meta.excerpt,
     alternates: { canonical: `/blog/${slug}/` },
@@ -42,7 +43,7 @@ export async function generateMetadata({
       title: post.meta.title,
       description: post.meta.excerpt,
     },
-  };
+  });
 }
 
 export default async function BlogPostPage({ params }: PageProps) {

@@ -1,11 +1,12 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/Button";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Delete Your Certifyd Account",
   description: "Request deletion of your Certifyd account and associated CodeWords data.",
   alternates: { canonical: "/account-deletion/" },
-};
+});
 
 export default function AccountDeletionPage() {
   return (

@@ -1,7 +1,8 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Privacy Policy | Certifyd",
   description: "How Certifyd handles account, device, relationship and challenge data.",
   alternates: { canonical: "/privacy/" },
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     description: "How Certifyd handles account, device, relationship and challenge data.",
     url: "https://certifyd.io/privacy/",
   },
-};
+});
 
 const sections = [
   {

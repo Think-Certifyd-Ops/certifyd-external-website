@@ -8,7 +8,7 @@ export function OrganizationSchema() {
     "@type": "Organization",
     name: COMPANY.name,
     url: BASE_URL,
-    logo: `${BASE_URL}/logos/Blue Certifyd Icon.png`,
+    logo: `${BASE_URL}/logos/certifyd-icon-blue.svg`,
     description: COMPANY.tagline,
     email: COMPANY.email,
     address: {
@@ -30,7 +30,7 @@ export function OrganizationSchema() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }
@@ -48,7 +48,7 @@ export function WebSiteSchema() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }
@@ -78,6 +78,7 @@ export function BlogPostSchema({
     url: `${BASE_URL}/blog/${slug}/`,
     datePublished: date,
     dateModified: updated || date,
+    image: `${BASE_URL}/opengraph-image`,
     author: {
       "@type": author === "Certifyd Team" ? "Organization" : "Person",
       name: author,
@@ -87,7 +88,7 @@ export function BlogPostSchema({
       name: COMPANY.name,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/logos/Blue Certifyd Icon.png`,
+        url: `${BASE_URL}/logos/certifyd-icon-blue.svg`,
       },
     },
     mainEntityOfPage: {
@@ -99,7 +100,7 @@ export function BlogPostSchema({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }
@@ -131,7 +132,7 @@ export function ServiceSchema({ name, description, slug }: ServiceSchemaProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }
@@ -157,7 +158,7 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }
@@ -182,7 +183,7 @@ export function HowToSchema({ name, steps }: HowToSchemaProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }
@@ -238,7 +239,7 @@ export function PodcastEpisodeSchema({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }
@@ -262,7 +263,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g,"\\u003c") }}
     />
   );
 }

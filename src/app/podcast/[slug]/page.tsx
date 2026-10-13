@@ -1,3 +1,4 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -22,11 +23,11 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const episode = getEpisodeBySlug(slug);
-  if (!episode) return {};
+  if (!episode) return siteMetadata({});
   const today = new Date().toISOString().split("T")[0];
-  if (!episode.meta.date || episode.meta.date > today) return {};
-  return {
-    title: `${episode.meta.title} — Gone Phishing Podcast`,
+  if (!episode.meta.date || episode.meta.date > today) return siteMetadata({});
+  return siteMetadata({
+    title: `Podcast: ${episode.meta.title}`,
     description: episode.meta.description,
     alternates: { canonical: `/podcast/${slug}/` },
     openGraph: {
@@ -41,7 +42,7 @@ export async function generateMetadata({
       title: episode.meta.title,
       description: episode.meta.description,
     },
-  };
+  });
 }
 
 export default async function PodcastEpisodePage({ params }: PageProps) {

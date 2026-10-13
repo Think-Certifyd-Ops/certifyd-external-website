@@ -6,6 +6,11 @@
   NODE_VERSION = "20"
 
 [[headers]]
+  for = "/opengraph-image"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
   for = "/podcast/feed.xml"
   [headers.values]
     Content-Type = "application/rss+xml; charset=utf-8"
@@ -376,3 +381,8 @@
   to = "/"
   status = 301
   force = true
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Link = "</images/connected/roles.webp>; rel=preload; as=image; fetchpriority=high"

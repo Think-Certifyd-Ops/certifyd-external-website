@@ -1,0 +1,23 @@
+# Certifyd
+
+> Workforce compliance software for organising worker evidence, company records, expiry dates, record reviews and site check-ins.
+
+## Platform
+- [Workforce compliance](https://certifyd.io/): How workers, companies and sites connect through their records.
+- [Tracked records](https://certifyd.io/platform/records/): Expiry tracking, supporting evidence and review dates.
+- [Compliance gaps](https://certifyd.io/outcomes/reduce-compliance-risk/): Missing evidence, role requirements and company reviews.
+- [Import records](https://certifyd.io/outcomes/import-compliance-records/): Plan an import of existing workforce records.
+- [Site check-ins](https://certifyd.io/outcomes/verified-worker-check-in/): Worker, site and check-in time records.
+- [Worker credentials](https://certifyd.io/outcomes/portable-worker-credentials/): Worker-held credentials and company requirements.
+
+## Employer resources
+- [Workforce compliance guides](https://certifyd.io/blog/): Practical employer guidance with official sources.
+- [Worker-record checklist](https://certifyd.io/resources/worker-record-review-checklist/): Review requirements, evidence and next actions.
+- [Placement evidence checklist](https://certifyd.io/resources/recruitment-placement-evidence-checklist/): Prepare recruitment placement evidence.
+- [Sponsor register](https://certifyd.io/sponsors): Collected public Home Office register entries and dated changes.
+
+## Contact
+- [Book a demo](https://certifyd.io/contact/)
+- team@certifyd.io
+
+Employers remain responsible for prescribed checks and review decisions. Record storage and attendance records do not replace statutory right-to-work checks.

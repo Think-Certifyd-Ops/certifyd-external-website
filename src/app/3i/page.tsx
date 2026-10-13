@@ -1,3 +1,4 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import { SolutionHero } from "@/components/solutions/SolutionHero";
 import { SolutionCTA } from "@/components/solutions/SolutionCTA";
@@ -8,7 +9,7 @@ import { GraphNodesGraphic } from "@/components/graphics/GraphNodesGraphic";
 import { AnalyticsEngineGraphic } from "@/components/graphics/AnalyticsEngineGraphic";
 import { APIResponseGraphic } from "@/components/graphics/APIResponseGraphic";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Identity Intelligence Infrastructure (3I) — Certifyd",
   description:
     "Graph-powered identity intelligence that sees what individual checks miss. Continuous trust scoring, anomaly detection, and relationship analysis — built on GPU-accelerated graph infrastructure.",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
       "Graph-powered identity intelligence that sees what individual checks miss. Three layers. One intelligence engine.",
     url: "https://certifyd.io/3i/",
   },
-};
+});
 
 const layers = [
   {

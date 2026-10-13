@@ -1,3 +1,4 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -35,8 +36,8 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const page = getForPageBySlug(slug);
-  if (!page) return {};
-  return {
+  if (!page) return siteMetadata({});
+  return siteMetadata({
     title: page.metaTitle,
     description: page.metaDescription,
     alternates: { canonical: `/for/${slug}/` },
@@ -45,7 +46,7 @@ export async function generateMetadata({
       description: page.metaDescription,
       url: `https://certifyd.io/for/${slug}/`,
     },
-  };
+  });
 }
 
 export default async function ForPage({ params }: PageProps) {

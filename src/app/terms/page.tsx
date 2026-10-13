@@ -1,7 +1,8 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Terms of Service | Certifyd",
   description: "The terms that apply when you use Certifyd CodeWords.",
   alternates: { canonical: "/terms/" },
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     description: "The terms that apply when you use Certifyd CodeWords.",
     url: "https://certifyd.io/terms/",
   },
-};
+});
 
 const sections = [
   {

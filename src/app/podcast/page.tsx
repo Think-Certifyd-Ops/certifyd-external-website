@@ -1,8 +1,9 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllEpisodes, SHOW_CONFIG } from "@/lib/podcast";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Gone Phishing Podcast — Conversations About Identity & Trust",
   description: SHOW_CONFIG.description,
   alternates: {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     description: SHOW_CONFIG.description,
     url: "https://certifyd.io/podcast/",
   },
-};
+});
 
 export default function PodcastPage() {
   const episodes = getAllEpisodes();

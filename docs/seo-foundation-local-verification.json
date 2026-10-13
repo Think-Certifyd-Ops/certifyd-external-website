@@ -1,0 +1,3052 @@
+{
+  "sitemap_urls": 160,
+  "errors": [],
+  "checks": [
+    "production-style webpack static build",
+    "all sitemap canonical/H1/social metadata/title and description uniqueness",
+    "lint: 0 errors, 15 existing warnings",
+    "workload, measurement, interaction lifecycle and mocked CRM attribution tests"
+  ],
+  "pages": [
+    {
+      "url": "https://certifyd.io/",
+      "title": "Workforce compliance and worker records | Certifyd",
+      "description": [
+        "Manage workplace credentials, company records and expiry dates. Connect HR and compliance teams with the records people hold and the sites they attend."
+      ],
+      "canonical": [
+        "https://certifyd.io/"
+      ],
+      "h1": [
+        "Manage workforcecompliance inone place."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Workforce compliance and worker records | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/about/",
+      "title": "Meet the Certifyd team | Certifyd",
+      "description": [
+        "Meet the team building Certifyd\u2019s connected workforce records, personal credentials and company review workflows."
+      ],
+      "canonical": [
+        "https://certifyd.io/about/"
+      ],
+      "h1": [
+        "See why we built Certifyd."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Meet the Certifyd team | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/contact/",
+      "title": "Book a workforce compliance demo | Certifyd",
+      "description": [
+        "Book a Certifyd demo. Choose a time and explore onboarding, workforce records, renewals, worker documents and site check-in."
+      ],
+      "canonical": [
+        "https://certifyd.io/contact/"
+      ],
+      "h1": [
+        "Book a demo."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Book a workforce compliance demo | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/security/",
+      "title": "Workforce records and data access | Certifyd",
+      "description": [
+        "Understand personal credentials, company records, sharing permissions and the data-handling questions to review with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/security/"
+      ],
+      "h1": [
+        "Review who can access each record."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Workforce records and data access | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/account-deletion/",
+      "title": "Delete Your Certifyd Account | Certifyd",
+      "description": [
+        "Request deletion of your Certifyd account and associated CodeWords data."
+      ],
+      "canonical": [
+        "https://certifyd.io/account-deletion/"
+      ],
+      "h1": [
+        "Delete your Certifyd account."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Delete Your Certifyd Account | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/privacy/",
+      "title": "Privacy Policy | Certifyd",
+      "description": [
+        "How Certifyd handles account, device, relationship and challenge data."
+      ],
+      "canonical": [
+        "https://certifyd.io/privacy/"
+      ],
+      "h1": [
+        "Privacy Policy"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Privacy Policy | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/terms/",
+      "title": "Terms of Service | Certifyd",
+      "description": [
+        "The terms that apply when you use Certifyd CodeWords."
+      ],
+      "canonical": [
+        "https://certifyd.io/terms/"
+      ],
+      "h1": [
+        "Terms of Service"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Terms of Service | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/cookies/",
+      "title": "Cookie Policy \u2014 Certifyd | Certifyd",
+      "description": [
+        "Information about the cookies Certifyd uses, why we use them, and how to manage your preferences."
+      ],
+      "canonical": [
+        "https://certifyd.io/cookies/"
+      ],
+      "h1": [
+        "Cookie Policy"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Cookie Policy \u2014 Certifyd | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/contract-activation/",
+      "title": "Contract Activation for Workforce Suppliers | Certifyd",
+      "description": [
+        "Turn client contracts into source-linked supplier, organisation and personnel compliance requirements with a human-reviewed activation pack."
+      ],
+      "canonical": [
+        "https://certifyd.io/contract-activation/"
+      ],
+      "h1": [
+        "Turn the contract into the compliance plan."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Contract Activation for Workforce Suppliers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/careers/",
+      "title": "Careers at Certifyd \u2014 Join the Identity\u2026 | Certifyd",
+      "description": [
+        "Join Certifyd and build identity verification infrastructure for UK businesses. London-based team with deep institutional experience."
+      ],
+      "canonical": [
+        "https://certifyd.io/careers/"
+      ],
+      "h1": [
+        "Join the Team"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Careers at Certifyd \u2014 Join the Identity\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/products/id/",
+      "title": "Reusable worker identity documents | Certifyd",
+      "description": [
+        "Keep personal identification documents in the Certifyd app and share the evidence needed for work with your organisation."
+      ],
+      "canonical": [
+        "https://certifyd.io/products/id/"
+      ],
+      "h1": [
+        "Store your ID documents. Share them for work."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Reusable worker identity documents | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/industries/recruitment/",
+      "title": "Recruitment compliance | Certifyd",
+      "description": [
+        "Manage recruitment role requirements, worker evidence, review dates and placement records with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/industries/recruitment/"
+      ],
+      "h1": [
+        "Prepare worker records for the next placement."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Recruitment compliance | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/industries/trades/",
+      "title": "Verify a visiting tradesperson | Certifyd",
+      "description": [
+        "Scan a visiting tradesperson\u2019s Certifyd QR code to see their shared work profile, company information and credentials."
+      ],
+      "canonical": [
+        "https://certifyd.io/industries/trades/"
+      ],
+      "h1": [
+        "Scan a visitor\u2019s QR code. See their work profile."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Verify a visiting tradesperson | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/industries/care/",
+      "title": "Care workforce compliance | Certifyd",
+      "description": [
+        "Manage care workforce requirements, shared credentials, company records and review dates in Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/industries/care/"
+      ],
+      "h1": [
+        "Keep care-worker records ready for review."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Care workforce compliance | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/industries/nhs/",
+      "title": "NHS workforce records | Certifyd",
+      "description": [
+        "Organise NHS workforce role requirements, shared staff credentials, company records and review dates with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/industries/nhs/"
+      ],
+      "h1": [
+        "Review staff credentials across your trust."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "NHS workforce records | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/industries/workforce/",
+      "title": "Workforce compliance | Certifyd",
+      "description": [
+        "Manage workforce compliance requirements, worker credentials, company records and review dates in Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/industries/workforce/"
+      ],
+      "h1": [
+        "Manage workforce compliance records."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Workforce compliance | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/partners/",
+      "title": "Partners & Programmes \u2014 Certifyd | Certifyd",
+      "description": [
+        "Certifyd partners with leading technology programmes to accelerate identity verification innovation. NVIDIA Inception Programme member."
+      ],
+      "canonical": [
+        "https://certifyd.io/partners/"
+      ],
+      "h1": [
+        "Partners & Programmes"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Partners & Programmes \u2014 Certifyd | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/resources/right-to-work-guide/",
+      "title": "Right-to-work guide for employers | Certifyd",
+      "description": [
+        "Prepare employer right-to-work checks with a practical guide to methods, evidence, review records and follow-up dates."
+      ],
+      "canonical": [
+        "https://certifyd.io/resources/right-to-work-guide/"
+      ],
+      "h1": [
+        "Prepare the evidence for your next right-to-work check."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right-to-work guide for employers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/resources/fair-work-agency-checklist/",
+      "title": "Fair Work Agency record-keeping checklist | Certifyd",
+      "description": [
+        "Review your employment record-keeping process with a practical Fair Work Agency checklist and links to current official guidance."
+      ],
+      "canonical": [
+        "https://certifyd.io/resources/fair-work-agency-checklist/"
+      ],
+      "h1": [
+        "Review the records behind your employment practices."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Fair Work Agency record-keeping checklist | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/",
+      "title": "Workforce records and compliance guides | Certifyd",
+      "description": [
+        "Practical guides to worker evidence, right-to-work checks, review dates and managing workforce records."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/"
+      ],
+      "h1": [
+        "Read workforce compliance guides."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Workforce records and compliance guides | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/tools/",
+      "title": "Workforce compliance tools | Certifyd",
+      "description": [
+        "Use your own figures to estimate worker-record review costs, compare processes and plan the evidence your team needs to review."
+      ],
+      "canonical": [
+        "https://certifyd.io/tools/"
+      ],
+      "h1": [
+        "Calculate review costs. Identify record gaps."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Workforce compliance tools | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/tools/penalty-calculator/",
+      "title": "Right-to-work penalty scenario | Certifyd",
+      "description": [
+        "Explore a hypothetical worker count and published penalty rate. Read the official framework before assessing a real case."
+      ],
+      "canonical": [
+        "https://certifyd.io/tools/penalty-calculator/"
+      ],
+      "h1": [
+        "Calculate a right-to-work penalty scenario."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right-to-work penalty scenario | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/tools/audit-probability/",
+      "title": "Understand inspection probability | Certifyd",
+      "description": [
+        "Understand why published enforcement visit counts cannot predict an individual employer\u2019s inspection probability. Review the records you can control."
+      ],
+      "canonical": [
+        "https://certifyd.io/tools/audit-probability/"
+      ],
+      "h1": [
+        "Read enforcement figures without guessing your inspection risk."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Understand inspection probability | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/tools/audit-readiness/",
+      "title": "Worker-record readiness checklist | Certifyd",
+      "description": [
+        "Work through six practical items, then follow the records and responsibilities that still need attention."
+      ],
+      "canonical": [
+        "https://certifyd.io/tools/audit-readiness/"
+      ],
+      "h1": [
+        "Find the gaps in your worker-record review process."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Worker-record readiness checklist | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/tools/cost-calculator/",
+      "title": "Workforce compliance cost calculator | Certifyd",
+      "description": [
+        "Enter your monthly review volume, staff time and costs. Use the result to discuss the work your team needs to manage."
+      ],
+      "canonical": [
+        "https://certifyd.io/tools/cost-calculator/"
+      ],
+      "h1": [
+        "Calculate the time and cost of reviewing worker records."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Workforce compliance cost calculator | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/tools/roi-calculator/",
+      "title": "Workforce process comparison | Certifyd",
+      "description": [
+        "Use your own assumptions to compare staff time, monthly costs and setup costs across a year."
+      ],
+      "canonical": [
+        "https://certifyd.io/tools/roi-calculator/"
+      ],
+      "h1": [
+        "Compare the cost of your current and proposed process."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Workforce process comparison | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/cleaners/",
+      "title": "Identity Verification for Cleaners | Certifyd",
+      "description": [
+        "Cleaners have your keys, know your routine, and enter your home unsupervised. Verify every cleaner at the door in 30 seconds with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/cleaners/"
+      ],
+      "h1": [
+        "They Have Your Keys. Do You Know Who They Are?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Cleaners | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/temp-workers/",
+      "title": "Identity Verification for Temp Workers | Certifyd",
+      "description": [
+        "Temp workers arrive on day one as strangers. Verify every temp\u2019s identity and right to work before they start \u2014 in 30 seconds with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/temp-workers/"
+      ],
+      "h1": [
+        "Day One. New Face. No Idea Who They Are."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Temp Workers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/electricians/",
+      "title": "Identity Verification for Electricians | Certifyd",
+      "description": [
+        "Electricians work unsupervised in your home with access to every room. Verify their identity and company affiliation at the door in 30 seconds."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/electricians/"
+      ],
+      "h1": [
+        "They\u2019re in Every Room. Do You Know Who Sent Them?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Electricians | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/plumbers/",
+      "title": "Identity Verification for Plumbers | Certifyd",
+      "description": [
+        "Emergency plumbers arrive in a crisis when you\u2019re most vulnerable. Verify their identity and company affiliation before letting them in."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/plumbers/"
+      ],
+      "h1": [
+        "It\u2019s an Emergency. You\u2019ve Never Seen This Person Before."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Plumbers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/builders/",
+      "title": "Identity Verification for Builders | Certifyd",
+      "description": [
+        "Builders bring crews of people you\u2019ve never met into your home for weeks. Verify every person on site with Certifyd in 30 seconds."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/builders/"
+      ],
+      "h1": [
+        "Six Strangers in Your Home for Six Weeks. Who Are They?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Builders | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/care-workers/",
+      "title": "Identity Verification for Care Workers | Certifyd",
+      "description": [
+        "Care workers look after the most vulnerable. Verify every care worker\u2019s identity, DBS status, and employer in real time with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/care-workers/"
+      ],
+      "h1": [
+        "Your Parent Can\u2019t Check. But You Can."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Care Workers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/agency-nurses/",
+      "title": "Identity Verification for Agency Nurses | Certifyd",
+      "description": [
+        "Agency nurses arrive at hospitals and care homes as strangers. Verify their identity, NMC registration, and agency affiliation in 30 seconds."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/agency-nurses/"
+      ],
+      "h1": [
+        "They\u2019re Wearing Scrubs. That\u2019s All You Know."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Agency Nurses | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/delivery-drivers/",
+      "title": "Identity Verification for Delivery Drivers | Certifyd",
+      "description": [
+        "Delivery drivers know your address, routine, and when you\u2019re home. Verify who\u2019s at your door before opening it \u2014 in 30 seconds with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/delivery-drivers/"
+      ],
+      "h1": [
+        "They Know Your Address. They Know When You\u2019re Home."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Delivery Drivers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/security-guards/",
+      "title": "Identity Verification for Security Guards | Certifyd",
+      "description": [
+        "Security guards protect your premises but who verifies them? Confirm every guard\u2019s identity, SIA licence, and employer in real time."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/security-guards/"
+      ],
+      "h1": [
+        "They Guard Your Building. Who Guards Their Identity?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Security Guards | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/warehouse-workers/",
+      "title": "Identity Verification for Warehouse Workers | Certifyd",
+      "description": [
+        "Warehouse workers rotate through shifts at multiple sites. Verify every worker\u2019s identity and right to work before they start \u2014 in 30 seconds."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/warehouse-workers/"
+      ],
+      "h1": [
+        "200 Workers. 40 Are New This Week. Who Checked?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Warehouse Workers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/hospitality-staff/",
+      "title": "Identity Verification for Hospitality Staff | Certifyd",
+      "description": [
+        "Hospitality runs on agency and casual staff. Verify every new face\u2019s identity, right to work, and employer before their first shift."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/hospitality-staff/"
+      ],
+      "h1": [
+        "Three New Faces Every Friday Night. Nobody Checked."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Hospitality Staff | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/remote-workers/",
+      "title": "Identity Verification for Remote Workers | Certifyd",
+      "description": [
+        "Remote workers join your team from anywhere. Verify they are who they claim to be \u2014 not a deepfake, bot, or impersonator. 30-second verification."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/remote-workers/"
+      ],
+      "h1": [
+        "You\u2019ve Never Met Them. You\u2019re Giving Them Access to Everything."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Remote Workers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/cleaning-companies/",
+      "title": "Identity Verification for Cleaning Companies | Certifyd",
+      "description": [
+        "Cleaning companies send staff into clients\u2019 homes unsupervised. Verify every cleaner\u2019s identity and prove your professionalism with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/cleaning-companies/"
+      ],
+      "h1": [
+        "Your Cleaners Enter 50 Homes a Week. Can You Prove Who They Are?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Cleaning Companies | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/hospitality-businesses/",
+      "title": "Identity Verification for Hospitality Businesses | Certifyd",
+      "description": [
+        "Hotels, restaurants, and venues face high staff turnover and right-to-work risk. Verify every worker\u2019s identity before they serve your customers."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/hospitality-businesses/"
+      ],
+      "h1": [
+        "High Turnover. New Staff Weekly. Who\u2019s Checking?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Hospitality Businesses | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/trade-platforms/",
+      "title": "Identity Verification for Trade Platforms | Certifyd",
+      "description": [
+        "Trade platforms verify businesses but can\u2019t verify who arrives at your door. Close the gap with real-time identity verification from Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/trade-platforms/"
+      ],
+      "h1": [
+        "You Verify the Business. Who Verifies the Person?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Trade Platforms | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/facilities-management/",
+      "title": "Identity Verification for Facilities Management | Certifyd",
+      "description": [
+        "FM companies send cleaners, engineers, and guards to client sites daily. Verify every person on every site with Certifyd in 30 seconds."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/facilities-management/"
+      ],
+      "h1": [
+        "Dozens of People. Dozens of Sites. One Question: Who Are They?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Facilities Management | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/right-to-work-checks/",
+      "title": "Right-to-Work Identity Verification | Certifyd",
+      "description": [
+        "Right-to-work checks that go beyond photocopied passports. Verify identity verifiably and stay audit-ready for the Fair Work Agency."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/right-to-work-checks/"
+      ],
+      "h1": [
+        "A Photocopied Passport Is Not Proof. It Never Was."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right-to-Work Identity Verification | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/fwa-compliance/",
+      "title": "Fair Work Agency Compliance | Certifyd",
+      "description": [
+        "The Fair Work Agency launches April 2026 with walk-in audit powers. Get audit-ready with verifiable identity verification records from Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/fwa-compliance/"
+      ],
+      "h1": [
+        "They Can Walk In. Can You Pass the Audit?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Fair Work Agency Compliance | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/right-to-work-penalties/",
+      "title": "Right-to-Work Penalties UK: \u00a345K\u2013\u00a360K Per Worker | Certifyd",
+      "description": [
+        "UK employers face fines of \u00a345,000\u2013\u00a360,000 per illegal worker. 2,438 penalties issued in 2025 alone. Find out how to protect your business."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/right-to-work-penalties/"
+      ],
+      "h1": [
+        "\u00a345,000 Per Worker. And 80% of Employers Would Fail the Audit."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right-to-Work Penalties UK: \u00a345K\u2013\u00a360K Per Worker | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/contractor-verification/",
+      "title": "Contractor Identity Verification | Certifyd",
+      "description": [
+        "Contractors arrive at your site from third parties you don\u2019t control. Verify every contractor\u2019s identity and company in real time with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/contractor-verification/"
+      ],
+      "h1": [
+        "Third-Party Contractors. Your Site. Your Liability."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Contractor Identity Verification | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/agency-worker-compliance/",
+      "title": "Agency Worker Identity Compliance | Certifyd",
+      "description": [
+        "Hiring businesses share right-to-work liability for agency workers. Verify every agency worker\u2019s identity at the point of assignment with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/agency-worker-compliance/"
+      ],
+      "h1": [
+        "The Agency Checked Them. But Did They Check the Right Person?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Agency Worker Identity Compliance | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/deepfakes/",
+      "title": "Deepfake Protection \u2014 Device-Verified Identity | Certifyd",
+      "description": [
+        "Deepfakes can fool eyes and ears, but they can\u2019t fake a verified credential. Verify identity through device-verified authentication with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/deepfakes/"
+      ],
+      "h1": [
+        "You Can\u2019t Trust Your Eyes Anymore. Trust Verified Identity Instead."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Deepfake Protection \u2014 Device-Verified Identity | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/ceo-fraud/",
+      "title": "CEO Fraud Protection \u2014 Verify Executive Identity | Certifyd",
+      "description": [
+        "CEO fraud costs UK businesses millions annually. Verify that instructions actually come from your CEO \u2014 not a deepfake or impersonator."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/ceo-fraud/"
+      ],
+      "h1": [
+        "The CEO Just Called. Or Did They?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "CEO Fraud Protection \u2014 Verify Executive Identity | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/voice-cloning/",
+      "title": "Voice Cloning Protection \u2014 Device-Verified\u2026 | Certifyd",
+      "description": [
+        "Voice cloning can replicate anyone\u2019s voice from seconds of audio. Verify identity through verified identity, not through what you hear."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/voice-cloning/"
+      ],
+      "h1": [
+        "That\u2019s Their Voice. But It\u2019s Not Them."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Voice Cloning Protection \u2014 Device-Verified\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/phishing/",
+      "title": "Phishing Protection \u2014 Verify Who\u2019s Really\u2026 | Certifyd",
+      "description": [
+        "Phishing attacks impersonate trusted people and organisations. Verify the sender\u2019s identity verifiably \u2014 in 30 seconds with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/phishing/"
+      ],
+      "h1": [
+        "The Email Looks Right. The Sender Isn\u2019t."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Phishing Protection \u2014 Verify Who\u2019s Really\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/romance-scams/",
+      "title": "Romance Scam Protection \u2014 Verify Who You\u2019re\u2026 | Certifyd",
+      "description": [
+        "Romance scams cost UK victims \u00a331M+ annually. Verify that the person you\u2019re talking to is real \u2014 verifiably, not just visually."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/romance-scams/"
+      ],
+      "h1": [
+        "You\u2019ve Talked for Months. You\u2019ve Never Met. Are They Real?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Romance Scam Protection \u2014 Verify Who You\u2019re\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/social-engineering/",
+      "title": "Social Engineering Protection \u2014 Verify Identity\u2026 | Certifyd",
+      "description": [
+        "Social engineering exploits trust in people, not flaws in technology. Verify the person behind the request with device-verified authentication."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/social-engineering/"
+      ],
+      "h1": [
+        "The Attack Doesn\u2019t Target Your Systems. It Targets Your People."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Social Engineering Protection \u2014 Verify Identity\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/protecting-elderly-parents/",
+      "title": "Protect Elderly Parents from Doorstep Fraud | Certifyd",
+      "description": [
+        "Elderly people are the primary targets of doorstep fraud. Let your parents verify who\u2019s at the door before they open it \u2014 with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/protecting-elderly-parents/"
+      ],
+      "h1": [
+        "Your Mum Opens the Door to Everyone. She Shouldn\u2019t Have To."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Protect Elderly Parents from Doorstep Fraud | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/lone-workers/",
+      "title": "Identity Verification for Lone Workers | Certifyd",
+      "description": [
+        "Lone workers meet clients and contacts alone. Verify the identity of the person they\u2019re meeting before they arrive \u2014 with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/lone-workers/"
+      ],
+      "h1": [
+        "They\u2019re Meeting a Stranger. Alone. In a Private Location."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Lone Workers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/school-pickups/",
+      "title": "Identity Verification for School Pickups | Certifyd",
+      "description": [
+        "Schools release children to adults they can\u2019t always verify. Certifyd confirms pickup authorisation verifiably \u2014 in 30 seconds."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/school-pickups/"
+      ],
+      "h1": [
+        "A Stranger Says They\u2019re Picking Up Your Child. Are They?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for School Pickups | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/safeguarding/",
+      "title": "Identity Verification for Safeguarding | Certifyd",
+      "description": [
+        "Safeguarding requires knowing who is with vulnerable people. Verify every worker, visitor, and carer\u2019s identity in real time with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/safeguarding/"
+      ],
+      "h1": [
+        "Safeguarding Means Knowing Who. Not Just Trusting Who."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Safeguarding | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/online-dating/",
+      "title": "Identity Verification for Online Dating | Certifyd",
+      "description": [
+        "Online dating profiles can be completely fake. Verify that the person you\u2019re meeting is who they claim to be \u2014 before you meet them."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/online-dating/"
+      ],
+      "h1": [
+        "You\u2019ve Swiped Right. But Who Are They Really?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Online Dating | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/estate-agent-viewings/",
+      "title": "Identity Verification for Estate Agent Viewings | Certifyd",
+      "description": [
+        "Estate agents meet strangers alone in empty properties. Verify the identity of both parties before every viewing with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/estate-agent-viewings/"
+      ],
+      "h1": [
+        "An Empty Property. A Stranger. No One Else Around."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Estate Agent Viewings | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/airbnb/",
+      "title": "Identity Verification for Airbnb Hosts & Guests | Certifyd",
+      "description": [
+        "Airbnb hosts hand keys to strangers. Guests enter homes owned by strangers. Verify both parties\u2019 identity before check-in with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/airbnb/"
+      ],
+      "h1": [
+        "You\u2019re Giving a Stranger the Keys to Your Home. Who Are They?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Airbnb Hosts & Guests | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/for/nannies-au-pairs/",
+      "title": "Identity Verification for Nannies & Au Pairs | Certifyd",
+      "description": [
+        "Nannies and au pairs have unsupervised access to your children. Verify their identity and employer affiliation in real time with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/for/nannies-au-pairs/"
+      ],
+      "h1": [
+        "They\u2019re Alone with Your Children. Do You Really Know Who They Are?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification for Nannies & Au Pairs | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/future-of-identity-verification-uk/",
+      "title": "The Future of Identity Verification in the UK | Certifyd",
+      "description": [
+        "From paper documents to reusable digital credentials \u2014 the UK identity verification landscape is transforming. Here's what businesses should prepare for."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/future-of-identity-verification-uk/"
+      ],
+      "h1": [
+        "The Future of Identity Verification in the UK"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Future of Identity Verification in the UK | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/whistleblowing-compliance-failures/",
+      "title": "Whistleblowing and Compliance: When Employees\u2026 | Certifyd",
+      "description": [
+        "Most compliance failures are known internally before regulators find them. Creating a speak-up culture is your best early warning system."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/whistleblowing-compliance-failures/"
+      ],
+      "h1": [
+        "Whistleblowing and Compliance: When Employees Speak Up"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Whistleblowing and Compliance: When Employees\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/identity-verification-api-integration/",
+      "title": "Identity Verification APIs: What Businesses\u2026 | Certifyd",
+      "description": [
+        "Building identity verification into your product or workflow? Here's what to look for in an API provider \u2014 and what most businesses get wrong."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/identity-verification-api-integration/"
+      ],
+      "h1": [
+        "Identity Verification APIs: What Businesses Should Know"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Verification APIs: What Businesses\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/contractor-vs-employee-compliance/",
+      "title": "Contractors vs Employees: Different Compliance\u2026 | Certifyd",
+      "description": [
+        "Many businesses assume RTW checks only apply to employees. If you engage anyone personally to do work, the obligation likely applies to you."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/contractor-vs-employee-compliance/"
+      ],
+      "h1": [
+        "Contractors vs Employees: Different Compliance Obligations?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Contractors vs Employees: Different Compliance\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/preventing-modern-slavery-supply-chain/",
+      "title": "Modern Slavery Due Diligence: What Your\u2026 | Certifyd",
+      "description": [
+        "Modern slavery exists in UK supply chains today. The law requires due diligence \u2014 but most businesses don't know what that means in practice."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/preventing-modern-slavery-supply-chain/"
+      ],
+      "h1": [
+        "Modern Slavery Due Diligence: What Your Business Must Do"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Modern Slavery Due Diligence: What Your\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/multi-site-business-compliance-challenge/",
+      "title": "Multi-Site Compliance: When Your Records Are\u2026 | Certifyd",
+      "description": [
+        "Multiple locations mean scattered records, inconsistent processes, and compliance gaps invisible to head office. Here's how to fix that."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/multi-site-business-compliance-challenge/"
+      ],
+      "h1": [
+        "Multi-Site Compliance: When Your Records Are Everywhere"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Multi-Site Compliance: When Your Records Are\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/education-sector-dbs-rtw-compliance/",
+      "title": "Schools and Universities: DBS and RTW\u2026 | Certifyd",
+      "description": [
+        "Education has the strictest pre-employment checks in the UK. Gaps in your single central record will be found \u2014 by Ofsted, parents, or the press."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/education-sector-dbs-rtw-compliance/"
+      ],
+      "h1": [
+        "Schools and Universities: DBS and RTW Compliance Guide"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Schools and Universities: DBS and RTW\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/zero-trust-identity-business/",
+      "title": "Zero Trust Starts with Identity: Lessons from\u2026 | Certifyd",
+      "description": [
+        "Cybersecurity adopted zero trust years ago. Businesses should apply the same principle to physical identity \u2014 never assume, always verify."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/zero-trust-identity-business/"
+      ],
+      "h1": [
+        "Zero Trust Starts with Identity: Lessons from Cybersecurity"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Zero Trust Starts with Identity: Lessons from\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/right-to-work-for-directors-partners/",
+      "title": "Do Company Directors Need Right to Work Checks? | Certifyd",
+      "description": [
+        "Company directors and partners who receive payment need right to work checks. Many businesses skip this \u2014 especially for foreign-national co-founders."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/right-to-work-for-directors-partners/"
+      ],
+      "h1": [
+        "Do Company Directors Need Right to Work Checks?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Do Company Directors Need Right to Work Checks? | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/ai-generated-documents-employer-risk/",
+      "title": "AI-Generated Documents: The Next Frontier of\u2026 | Certifyd",
+      "description": [
+        "AI can now produce photorealistic passports and bank statements for under \u00a350. Visual document inspection is no longer enough for employers."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/ai-generated-documents-employer-risk/"
+      ],
+      "h1": [
+        "AI-Generated Documents: The Next Frontier of Employment Fraud"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "AI-Generated Documents: The Next Frontier of\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/compliance-officer-role-guide/",
+      "title": "What a Compliance Officer Actually Needs: A\u2026 | Certifyd",
+      "description": [
+        "The compliance officer role is growing fast but remains under-resourced. Here's what the job actually requires and what tools close the gap."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/compliance-officer-role-guide/"
+      ],
+      "h1": [
+        "What a Compliance Officer Actually Needs: A Practical Guide"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "What a Compliance Officer Actually Needs: A\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/recruitment-fraud-fake-candidates/",
+      "title": "Fake Candidates Are Applying for Your Jobs\u2026 | Certifyd",
+      "description": [
+        "Recruitment fraud is surging: fake CVs, stolen identities, proxy interviews. A US firm found 300+ fraudulent applications in one quarter."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/recruitment-fraud-fake-candidates/"
+      ],
+      "h1": [
+        "Fake Candidates Are Applying for Your Jobs Right Now"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Fake Candidates Are Applying for Your Jobs\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/meeting-identity-verification-remote/",
+      "title": "Who's Really on That Video Call? Meeting\u2026 | Certifyd",
+      "description": [
+        "In remote work, you regularly meet people you've never seen in person. Meeting identity verification closes a gap most organisations ignore."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/meeting-identity-verification-remote/"
+      ],
+      "h1": [
+        "Who's Really on That Video Call? Meeting Verification"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Who's Really on That Video Call? Meeting\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/right-to-work-discrimination-law/",
+      "title": "RTW Checks and Discrimination: Walking the\u2026 | Certifyd",
+      "description": [
+        "You must check everyone's right to work. But checking inconsistently is discrimination. Here's how to get the balance right."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/right-to-work-discrimination-law/"
+      ],
+      "h1": [
+        "RTW Checks and Discrimination: Walking the Legal Line"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "RTW Checks and Discrimination: Walking the\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/seasonal-worker-compliance-agriculture/",
+      "title": "Seasonal Workers: The Compliance Challenge in\u2026 | Certifyd",
+      "description": [
+        "~45,000 seasonal workers arrive annually for UK agriculture. Short tenure, rural sites, and rapid onboarding create serious compliance gaps."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/seasonal-worker-compliance-agriculture/"
+      ],
+      "h1": [
+        "Seasonal Workers: The Compliance Challenge in Agriculture"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Seasonal Workers: The Compliance Challenge in\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/phishing-attacks-business-verification/",
+      "title": "Phishing Has Evolved. Has Your Verification? | Certifyd",
+      "description": [
+        "Phishing attacks now use AI, social engineering, and deepfakes. Email-based verification is fundamentally broken. Here's what comes next."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/phishing-attacks-business-verification/"
+      ],
+      "h1": [
+        "Phishing Has Evolved. Has Your Verification?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Phishing Has Evolved. Has Your Verification? | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/health-care-worker-visa-sponsor-guide/",
+      "title": "Health and Care Worker Visa: A Sponsor's\u2026 | Certifyd",
+      "description": [
+        "The Health and Care Worker visa drives care recruitment but carries the same compliance burden. One in three sponsor revocations comes from care."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/health-care-worker-visa-sponsor-guide/"
+      ],
+      "h1": [
+        "Health and Care Worker Visa: A Sponsor's Compliance Guide"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Health and Care Worker Visa: A Sponsor's\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/payroll-fraud-ghost-employees/",
+      "title": "Ghost Employees and Payroll Fraud: An Identity\u2026 | Certifyd",
+      "description": [
+        "Ghost employees cost UK businesses millions each year. At the root of every case is the same failure: identity verification that stops at onboarding."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/payroll-fraud-ghost-employees/"
+      ],
+      "h1": [
+        "Ghost Employees and Payroll Fraud: An Identity Problem"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Ghost Employees and Payroll Fraud: An Identity\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/vulnerable-adults-identity-doorstep/",
+      "title": "Protecting Vulnerable Adults from Doorstep\u2026 | Certifyd",
+      "description": [
+        "Doorstep fraud costs \u00a357M+ a year and disproportionately targets the elderly. Legitimate service providers have a duty to fix this."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/vulnerable-adults-identity-doorstep/"
+      ],
+      "h1": [
+        "Protecting Vulnerable Adults from Doorstep Identity Fraud"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Protecting Vulnerable Adults from Doorstep\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/uk-visa-types-employer-guide/",
+      "title": "UK Visa Types: What Every Employer Needs to Know | Certifyd",
+      "description": [
+        "A reference guide to the UK visa categories that affect employers. Get the wrong one wrong, and your compliance fails before it starts."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/uk-visa-types-employer-guide/"
+      ],
+      "h1": [
+        "UK Visa Types: What Every Employer Needs to Know"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "UK Visa Types: What Every Employer Needs to Know | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/skilled-worker-visa-employer-obligations/",
+      "title": "Skilled Worker Visa: Your Obligations as a\u2026 | Certifyd",
+      "description": [
+        "The Skilled Worker visa is the most common sponsorship route. Here are the obligations most employers get wrong \u2014 and how failures lead to licence revocation."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/skilled-worker-visa-employer-obligations/"
+      ],
+      "h1": [
+        "Skilled Worker Visa: Your Obligations as a Sponsor"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Skilled Worker Visa: Your Obligations as a\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/identity-fraud-uk-statistics-2026/",
+      "title": "Identity Fraud in the UK: The 2025-26 Numbers | Certifyd",
+      "description": [
+        "Identity fraud cases rose 22% to over 237,000 in the UK last year. Synthetic identities and AI-generated documents are driving the surge."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/identity-fraud-uk-statistics-2026/"
+      ],
+      "h1": [
+        "Identity Fraud in the UK: The 2025-26 Numbers"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Identity Fraud in the UK: The 2025-26 Numbers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/compliance-culture-vs-compliance-theatre/",
+      "title": "Compliance Culture vs Compliance Theatre | Certifyd",
+      "description": [
+        "Many businesses have compliance processes that look good on paper but catch nothing in practice. That is compliance theatre \u2014 and it will not survive an audit."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/compliance-culture-vs-compliance-theatre/"
+      ],
+      "h1": [
+        "Compliance Culture vs Compliance Theatre"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Compliance Culture vs Compliance Theatre | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/settled-status-employer-checks/",
+      "title": "EU Settled Status: How Employers Should Verify It | Certifyd",
+      "description": [
+        "An EU passport alone is no longer proof of right to work in the UK. Here's how to check settled and pre-settled status correctly."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/settled-status-employer-checks/"
+      ],
+      "h1": [
+        "EU Settled Status: How Employers Should Verify It"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "EU Settled Status: How Employers Should Verify It | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/cleaning-contractor-verification/",
+      "title": "Cleaning Contractors: The Workforce You Never\u2026 | Certifyd",
+      "description": [
+        "Cleaning staff access offices, schools, and hospitals unsupervised. Most businesses have no idea who actually shows up to clean their premises."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/cleaning-contractor-verification/"
+      ],
+      "h1": [
+        "Cleaning Contractors: The Workforce You Never Verified"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Cleaning Contractors: The Workforce You Never\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/social-engineering-workplace/",
+      "title": "Social Engineering at Work: Why Your Team Is\u2026 | Certifyd",
+      "description": [
+        "93% of data breaches involve social engineering. AI has made these attacks harder to detect \u2014 and training alone is not enough to stop them."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/social-engineering-workplace/"
+      ],
+      "h1": [
+        "Social Engineering at Work: Why Your Team Is the Target"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Social Engineering at Work: Why Your Team Is\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/dbs-checks-vs-right-to-work-checks/",
+      "title": "DBS Checks vs Right to Work Checks: What's the\u2026 | Certifyd",
+      "description": [
+        "DBS and right-to-work checks serve different legal purposes. Getting them confused \u2014 or thinking one covers the other \u2014 is a compliance failure."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/dbs-checks-vs-right-to-work-checks/"
+      ],
+      "h1": [
+        "DBS Checks vs Right to Work Checks: What's the Difference?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "DBS Checks vs Right to Work Checks: What's the\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/cyber-fraud-ceo-impersonation/",
+      "title": "CEO Fraud and Deepfake Impersonation: The New\u2026 | Certifyd",
+      "description": [
+        "CEO fraud losses exceed \u00a31.2B annually in the UK. Deepfakes have turned a social engineering attack into an identity attack."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/cyber-fraud-ceo-impersonation/"
+      ],
+      "h1": [
+        "CEO Fraud and Deepfake Impersonation: The New Threat"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "CEO Fraud and Deepfake Impersonation: The New\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/care-home-agency-staff-risk/",
+      "title": "Agency Staff in Care Homes: The Compliance Risk\u2026 | Certifyd",
+      "description": [
+        "Care homes rely on agency staff to fill gaps. Agencies say the home should check. Homes say the agency already did. CQC holds the home responsible."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/care-home-agency-staff-risk/"
+      ],
+      "h1": [
+        "Agency Staff in Care Homes: The Compliance Risk No One Owns"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Agency Staff in Care Homes: The Compliance Risk\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/uk-immigration-enforcement-statistics-2025/",
+      "title": "UK Immigration Enforcement in Numbers: 2024-25\u2026 | Certifyd",
+      "description": [
+        "Civil penalty notices up 74%, total fines exceeding \u00a388M. The immigration enforcement data tells a clear story about where the Home Office is heading."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/uk-immigration-enforcement-statistics-2025/"
+      ],
+      "h1": [
+        "UK Immigration Enforcement in Numbers: 2024-25 Data"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "UK Immigration Enforcement in Numbers: 2024-25\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/hr-compliance-automation-business-case/",
+      "title": "The Business Case for Automating HR Compliance | Certifyd",
+      "description": [
+        "Manual RTW checks take 45 minutes each and break at scale. Here's the ROI case for compliance automation \u2014 with real numbers."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/hr-compliance-automation-business-case/"
+      ],
+      "h1": [
+        "The Business Case for Automating HR Compliance"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Business Case for Automating HR Compliance | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/biometric-identity-verification-explained/",
+      "title": "Biometric Identity Verification: How It Works\u2026 | Certifyd",
+      "description": [
+        "Facial recognition, liveness detection, document OCR and NFC \u2014 here's how biometric identity verification actually works and where it falls short."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/biometric-identity-verification-explained/"
+      ],
+      "h1": [
+        "Biometric Identity Verification: How It Works in 2026"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Biometric Identity Verification: How It Works\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/supply-chain-worker-verification/",
+      "title": "Supply Chain Worker Verification: Your Hidden\u2026 | Certifyd",
+      "description": [
+        "Under the Modern Slavery Act and FWA, businesses have duties for workers in their supply chain \u2014 not just direct employees. Here's the exposure."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/supply-chain-worker-verification/"
+      ],
+      "h1": [
+        "Supply Chain Worker Verification: Your Hidden Liability"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Supply Chain Worker Verification: Your Hidden\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/employee-data-protection-rtw-checks/",
+      "title": "RTW Checks and Data Protection: What You Can\u2026 | Certifyd",
+      "description": [
+        "RTW checks collect sensitive personal data. GDPR and the UK Data Protection Act set strict rules on what you keep, how long, and where."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/employee-data-protection-rtw-checks/"
+      ],
+      "h1": [
+        "RTW Checks and Data Protection: What You Can (and Can't) Keep"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "RTW Checks and Data Protection: What You Can\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/landlord-right-to-rent-checks/",
+      "title": "Right to Rent Checks: What Landlords Must Do in\u2026 | Certifyd",
+      "description": [
+        "Landlords face civil penalties up to \u00a310,000 per occupier for failing right to rent checks. Here's the full guide to staying compliant in 2026."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/landlord-right-to-rent-checks/"
+      ],
+      "h1": [
+        "Right to Rent Checks: What Landlords Must Do in 2026"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right to Rent Checks: What Landlords Must Do in\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/right-to-work-follow-up-checks/",
+      "title": "Right-to-work follow-up checks for employers | Certifyd",
+      "description": [
+        "Understand when a follow-up right-to-work check is needed, record the correct date and plan the next action using current Home Office guidance."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/right-to-work-follow-up-checks/"
+      ],
+      "h1": [
+        "Right-to-work follow-up checks for employers"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right-to-work follow-up checks for employers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/domiciliary-care-worker-verification/",
+      "title": "Domiciliary Care Workers: The Verification\u2026 | Certifyd",
+      "description": [
+        "Home care workers visit vulnerable adults alone. Unlike residential care, there's no supervisor at the door. How do you verify who actually shows up?"
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/domiciliary-care-worker-verification/"
+      ],
+      "h1": [
+        "Domiciliary Care Workers: The Verification Blind Spot"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Domiciliary Care Workers: The Verification\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/deepfake-detection-video-calls/",
+      "title": "Can You Spot a Deepfake on a Video Call?\u2026 | Certifyd",
+      "description": [
+        "Research shows humans detect deepfakes at near-chance levels. Here's why 'just look carefully' is not a security strategy."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/deepfake-detection-video-calls/"
+      ],
+      "h1": [
+        "Can You Spot a Deepfake on a Video Call? Probably Not."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Can You Spot a Deepfake on a Video Call?\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/right-to-work-check-documents-list/",
+      "title": "Right-to-work documents for UK employers | Certifyd",
+      "description": [
+        "Choose the right check method, understand acceptable evidence and keep a clear employer record using current Home Office guidance."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/right-to-work-check-documents-list/"
+      ],
+      "h1": [
+        "Right-to-work documents for UK employers"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right-to-work documents for UK employers | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/agency-worker-compliance-who-checks/",
+      "title": "Prepare agency-worker checks before the next\u2026 | Certifyd",
+      "description": [
+        "Clarify agency and hirer responsibilities, inspect placement evidence and record the next action using the current Home Office guidance."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/agency-worker-compliance-who-checks/"
+      ],
+      "h1": [
+        "Prepare agency-worker checks before the next placement."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Prepare agency-worker checks before the next\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/sponsor-management-system-sms-guide/",
+      "title": "Sponsor Management System (SMS): A Practical\u2026 | Certifyd",
+      "description": [
+        "The SMS is how sponsors manage certificates and report to the Home Office. Most underuse it. Here's what you need to know."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/sponsor-management-system-sms-guide/"
+      ],
+      "h1": [
+        "Sponsor Management System (SMS): A Practical Guide"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Sponsor Management System (SMS): A Practical\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/remote-hiring-identity-verification/",
+      "title": "Remote Hiring and Identity Verification:\u2026 | Certifyd",
+      "description": [
+        "Remote hiring created a verification gap that adjusted checks only partially filled. Here's how to verify identity when you've never met someone."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/remote-hiring-identity-verification/"
+      ],
+      "h1": [
+        "Remote Hiring and Identity Verification: Closing the Gap"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Remote Hiring and Identity Verification:\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/preventing-illegal-working-landlord-employer/",
+      "title": "The Employer's Duty to Prevent Illegal Working | Certifyd",
+      "description": [
+        "Section 15 of the 2006 Act creates a strict duty on employers to prevent illegal working. Ignorance is not a defence. Here's what it means."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/preventing-illegal-working-landlord-employer/"
+      ],
+      "h1": [
+        "The Employer's Duty to Prevent Illegal Working"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Employer's Duty to Prevent Illegal Working | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/graduate-visa-employer-guide/",
+      "title": "Hiring Graduate Visa Holders: What Employers\u2026 | Certifyd",
+      "description": [
+        "The Graduate visa lets international graduates work for 2 years without sponsorship. But employers must understand the rules and the clock."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/graduate-visa-employer-guide/"
+      ],
+      "h1": [
+        "Hiring Graduate Visa Holders: What Employers Need to Know"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Hiring Graduate Visa Holders: What Employers\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/construction-worker-verification-challenges/",
+      "title": "Construction Worker Verification: The On-Site\u2026 | Certifyd",
+      "description": [
+        "Construction sites have layers of subcontractors and transient workers. Verifying who is actually on site is harder than most realise."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/construction-worker-verification-challenges/"
+      ],
+      "h1": [
+        "Construction Worker Verification: The On-Site Blind Spot"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Construction Worker Verification: The On-Site\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/what-is-a-statutory-excuse-rtw/",
+      "title": "What Is a Statutory Excuse? Your RTW Legal\u2026 | Certifyd",
+      "description": [
+        "A statutory excuse is the only legal defence against a civil penalty for illegal working. Here's exactly how to establish and maintain one."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/what-is-a-statutory-excuse-rtw/"
+      ],
+      "h1": [
+        "What Is a Statutory Excuse? Your RTW Legal Defence"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "What Is a Statutory Excuse? Your RTW Legal\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/hospitality-right-to-work-compliance/",
+      "title": "Right to Work in Hospitality: High Turnover,\u2026 | Certifyd",
+      "description": [
+        "Hospitality accounts for 18% of sponsor licence revocations. High turnover and rapid hiring make RTW compliance uniquely difficult."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/hospitality-right-to-work-compliance/"
+      ],
+      "h1": [
+        "Right to Work in Hospitality: High Turnover, High Risk"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right to Work in Hospitality: High Turnover,\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/document-fraud-spotting-guide-employers/",
+      "title": "How to Spot Fraudulent Documents: A Guide for\u2026 | Certifyd",
+      "description": [
+        "AI-generated forgeries are getting harder to detect. Studies show humans catch fewer than half. Here's what employers need to know."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/document-fraud-spotting-guide-employers/"
+      ],
+      "h1": [
+        "How to Spot Fraudulent Documents: A Guide for Employers"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "How to Spot Fraudulent Documents: A Guide for\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/care-home-cqc-workforce-compliance/",
+      "title": "CQC and Workforce Compliance: What Care Homes\u2026 | Certifyd",
+      "description": [
+        "CQC inspectors now scrutinise workforce compliance more closely than ever. Here's what they look for and where care homes fall short."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/care-home-cqc-workforce-compliance/"
+      ],
+      "h1": [
+        "CQC and Workforce Compliance: What Care Homes Get Wrong"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "CQC and Workforce Compliance: What Care Homes\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/sme-right-to-work-mistakes/",
+      "title": "7 Right to Work Mistakes Small Businesses Keep\u2026 | Certifyd",
+      "description": [
+        "SMEs without HR teams make the same RTW errors repeatedly. These 7 mistakes carry fines of up to \u00a360,000 per worker."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/sme-right-to-work-mistakes/"
+      ],
+      "h1": [
+        "7 Right to Work Mistakes Small Businesses Keep Making"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "7 Right to Work Mistakes Small Businesses Keep\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/visa-expiry-tracking-employers/",
+      "title": "Visa Expiry Tracking: The Compliance Gap Most\u2026 | Certifyd",
+      "description": [
+        "Most employers check right to work at hiring and never again. With ~1.2M workers on time-limited visas, that's a compliance time bomb."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/visa-expiry-tracking-employers/"
+      ],
+      "h1": [
+        "Visa Expiry Tracking: The Compliance Gap Most Employers Miss"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Visa Expiry Tracking: The Compliance Gap Most\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/ai-deepfakes-business-identity-fraud/",
+      "title": "AI Deepfakes Are Now a Business Problem, Not a\u2026 | Certifyd",
+      "description": [
+        "Deepfakes cost Arup $25M and are now available for $20/month. Here's why AI identity fraud is an operational business risk, not a novelty."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/ai-deepfakes-business-identity-fraud/"
+      ],
+      "h1": [
+        "AI Deepfakes Are Now a Business Problem, Not a Tech Demo"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "AI Deepfakes Are Now a Business Problem, Not a\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/right-to-work-penalties-2026/",
+      "title": "Right to Work Penalties in 2026: Fines,\u2026 | Certifyd",
+      "description": [
+        "Penalties for employing illegal workers trebled in 2024 to \u00a345k-\u00a360k per worker. Here's the full breakdown of fines, prosecution, and how statutory excuse works."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/right-to-work-penalties-2026/"
+      ],
+      "h1": [
+        "Right to Work Penalties in 2026: Fines, Prosecution, Risk"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right to Work Penalties in 2026: Fines,\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/recruitment-agency-compliance-risk/",
+      "title": "Why Recruitment Agencies Carry More Compliance\u2026 | Certifyd",
+      "description": [
+        "Agencies supply workers but retain compliance obligations. The 'who checked?' problem leaves 1.1 million temp workers in a verification gap."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/recruitment-agency-compliance-risk/"
+      ],
+      "h1": [
+        "Why Recruitment Agencies Carry More Compliance Risk"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Why Recruitment Agencies Carry More Compliance\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/sponsor-licence-compliance-calendar/",
+      "title": "The Sponsor Licence Compliance Calendar You Need | Certifyd",
+      "description": [
+        "Most sponsors don't know all their obligations. Here's a month-by-month calendar of every recurring duty, reporting deadline, and audit task."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/sponsor-licence-compliance-calendar/"
+      ],
+      "h1": [
+        "The Sponsor Licence Compliance Calendar You Need"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Sponsor Licence Compliance Calendar You Need | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/digital-right-to-work-checks-vs-manual/",
+      "title": "Digital vs Manual Right to Work Checks: Which\u2026 | Certifyd",
+      "description": [
+        "Digital right to work checks via IDSPs create stronger audit trails. Manual checks still have a role. Here's when to use each and why it matters."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/digital-right-to-work-checks-vs-manual/"
+      ],
+      "h1": [
+        "Digital vs Manual Right to Work Checks: Which Is Safer?"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Digital vs Manual Right to Work Checks: Which\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/care-sector-rtw-compliance-guide/",
+      "title": "Prepare right-to-work records across your care\u2026 | Certifyd",
+      "description": [
+        "Organise care-worker evidence, check responsibilities and follow-up dates across permanent, bank and agency teams."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/care-sector-rtw-compliance-guide/"
+      ],
+      "h1": [
+        "Prepare right-to-work records across your care teams."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Prepare right-to-work records across your care\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/home-office-compliance-visit-what-happens/",
+      "title": "What Happens During a Home Office Compliance\u2026 | Certifyd",
+      "description": [
+        "Home Office compliance officers can arrive unannounced. Here's exactly what happens during a visit, what they inspect, and what triggers further action."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/home-office-compliance-visit-what-happens/"
+      ],
+      "h1": [
+        "What Happens During a Home Office Compliance Visit"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "What Happens During a Home Office Compliance\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/employee-onboarding-compliance-checklist/",
+      "title": "The Compliance-First Employee Onboarding\u2026 | Certifyd",
+      "description": [
+        "Most onboarding processes put compliance at the end. That's backwards. Here's a step-by-step checklist that puts legal requirements first."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/employee-onboarding-compliance-checklist/"
+      ],
+      "h1": [
+        "The Compliance-First Employee Onboarding Checklist"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Compliance-First Employee Onboarding\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/right-to-work-checks-2026-update/",
+      "title": "Right to Work Checks in 2026: What's Changed | Certifyd",
+      "description": [
+        "Right to work rules have shifted significantly since 2024. Here's what UK employers need to do differently in 2026 to stay compliant."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/right-to-work-checks-2026-update/"
+      ],
+      "h1": [
+        "Right to Work Checks in 2026: What's Changed"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Right to Work Checks in 2026: What's Changed | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/b-rated-sponsor-licence/",
+      "title": "What a B-Rated Sponsor Licence Means \u2014 and How\u2026 | Certifyd",
+      "description": [
+        "A B-rated sponsor licence means the Home Office found failures in your compliance. Here's what triggers it and how to recover."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/b-rated-sponsor-licence/"
+      ],
+      "h1": [
+        "What a B-Rated Sponsor Licence Means \u2014 and How to Fix It"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "What a B-Rated Sponsor Licence Means \u2014 and How\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/sponsor-licence-revocations-2025/",
+      "title": "3,100 UK Businesses Lost Their Sponsor Licence\u2026 | Certifyd",
+      "description": [
+        "Sponsor licence revocations surged 1,155% in two years. Most failures aren't fraud \u2014 they're record-keeping gaps."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/sponsor-licence-revocations-2025/"
+      ],
+      "h1": [
+        "3,100 UK Businesses Lost Their Sponsor Licence Last Year"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "3,100 UK Businesses Lost Their Sponsor Licence\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/trust-layer-missing/",
+      "title": "The Trust Layer Is Missing: Why Identity\u2026 | Certifyd",
+      "description": [
+        "We built infrastructure for payments, communications, and cloud computing. We never built it for trust. That's about to change."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/trust-layer-missing/"
+      ],
+      "h1": [
+        "The Trust Layer Is Missing: Why Identity Verification Is the Infrastructure Problem of Our Time"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Trust Layer Is Missing: Why Identity\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/deepfake-playbook/",
+      "title": "The Deepfake Playbook: How Real-Time AI Video\u2026 | Certifyd",
+      "description": [
+        "Real-time deepfakes can now impersonate anyone on a video call. Here's how the technology works, what it costs, and why traditional defences can't detect it."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/deepfake-playbook/"
+      ],
+      "h1": [
+        "The Deepfake Playbook: How Real-Time AI Video Cloning Works"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Deepfake Playbook: How Real-Time AI Video\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/enterprise-compliance-sme-prices/",
+      "title": "Enterprise Compliance at SME Prices: Why\u2026 | Certifyd",
+      "description": [
+        "5.5 million UK SMEs face the same \u00a360,000 fines as FTSE 250 companies. But they can't afford \u00a350-200 per background check. Something has to give."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/enterprise-compliance-sme-prices/"
+      ],
+      "h1": [
+        "Enterprise Compliance at SME Prices: Why Verification Shouldn't Cost \u00a350 Per Check"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Enterprise Compliance at SME Prices: Why\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/walk-in-compliance-audit-prep/",
+      "title": "How to Prepare Your Business for a Walk-In\u2026 | Certifyd",
+      "description": [
+        "The Fair Work Agency can arrive unannounced and demand your employment records. Here's a practical checklist to make sure you're ready."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/walk-in-compliance-audit-prep/"
+      ],
+      "h1": [
+        "How to Prepare Your Business for a Walk-In Compliance Audit"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "How to Prepare Your Business for a Walk-In\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/doorstep-fraud-problem/",
+      "title": "The Doorstep Problem: \u00a357 Million in Annual\u2026 | Certifyd",
+      "description": [
+        "Doorstep crime costs UK victims \u00a357 million a year. The average victim is over 75. The conviction rate is below 5%. It's time to verify who's at the door."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/doorstep-fraud-problem/"
+      ],
+      "h1": [
+        "The Doorstep Problem: \u00a357 Million in Annual Fraud That Starts With a Knock"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Doorstep Problem: \u00a357 Million in Annual\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/real-cost-bad-hire/",
+      "title": "The Real Cost of a Bad Hire: Time, Money, and\u2026 | Certifyd",
+      "description": [
+        "A bad hire doesn't just cost you a salary. It costs weeks of interviews, months of onboarding, and potentially \u00a360,000 in fines."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/real-cost-bad-hire/"
+      ],
+      "h1": [
+        "The Real Cost of a Bad Hire: Time, Money, and Compliance Risk"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Real Cost of a Bad Hire: Time, Money, and\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/kyc-fatigue-living-identity/",
+      "title": "From KYC Fatigue to Living Identity: Why Static\u2026 | Certifyd",
+      "description": [
+        "You verify your identity to open a bank account, get a phone contract, start a job, and rent a flat. Every time, from scratch. There's a better way."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/kyc-fatigue-living-identity/"
+      ],
+      "h1": [
+        "From KYC Fatigue to Living Identity: Why Static Checks Are Failing"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "From KYC Fatigue to Living Identity: Why Static\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/voice-cloning-threat/",
+      "title": "Voice Cloning in 30 Seconds: Why Phone Calls\u2026 | Certifyd",
+      "description": [
+        "It takes 30 seconds of audio to clone a voice with 99.8% accuracy. That means the phone call you just received from your CEO may not have been your CEO."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/voice-cloning-threat/"
+      ],
+      "h1": [
+        "Voice Cloning in 30 Seconds: Why Phone Calls Are No Longer Proof of Identity"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Voice Cloning in 30 Seconds: Why Phone Calls\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/safeguarding-gap-care-homes/",
+      "title": "The Safeguarding Gap: How Agency Staff Rotate\u2026 | Certifyd",
+      "description": [
+        "39% of safeguarding concerns in care involve staff or volunteers. Yet most care homes have no way to verify who's actually on shift."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/safeguarding-gap-care-homes/"
+      ],
+      "h1": [
+        "The Safeguarding Gap: How Agency Staff Rotate Through Care Homes Unchecked"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Safeguarding Gap: How Agency Staff Rotate\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/platform-agnostic-verification/",
+      "title": "Platform Agnostic Verification: Why Your\u2026 | Certifyd",
+      "description": [
+        "Identity fraud doesn't stay on Zoom. So why does your verification solution? The case for platform-agnostic identity."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/platform-agnostic-verification/"
+      ],
+      "h1": [
+        "Platform Agnostic Verification: Why Your Identity Solution Can't Be Locked to One App"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Platform Agnostic Verification: Why Your\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/deepfake-candidates-recruitment/",
+      "title": "The Recruiter's Nightmare: Deepfake Candidates\u2026 | Certifyd",
+      "description": [
+        "You interviewed him on Tuesday. He started Monday. By Wednesday, you realised it wasn't the same person. Welcome to the era of deepfake hiring."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/deepfake-candidates-recruitment/"
+      ],
+      "h1": [
+        "The Recruiter's Nightmare: Deepfake Candidates in Remote Interviews"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Recruiter's Nightmare: Deepfake Candidates\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/audit-trails-compliance/",
+      "title": "Audit Trails That Actually Work: Why \"We Asked\u2026 | Certifyd",
+      "description": [
+        "When the regulator arrives, they want documentation. 'We asked and they said yes' is not an audit trail. Here's what is."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/audit-trails-compliance/"
+      ],
+      "h1": [
+        "Audit Trails That Actually Work: Why \"We Asked and They Said Yes\" Isn't Compliance"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Audit Trails That Actually Work: Why \"We Asked\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/identity-as-infrastructure/",
+      "title": "What Is Identity-as-Infrastructure? The Next\u2026 | Certifyd",
+      "description": [
+        "Cloud infrastructure transformed how we build software. Identity infrastructure will transform how we build trust. Here's what that means."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/identity-as-infrastructure/"
+      ],
+      "h1": [
+        "What Is Identity-as-Infrastructure? The Next Category in Enterprise Trust"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "What Is Identity-as-Infrastructure? The Next\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/temp-worker-loophole/",
+      "title": "The Temp Worker Loophole: 1.1 Million Workers,\u2026 | Certifyd",
+      "description": [
+        "Five agency workers arrive Monday morning. One says 'Dave couldn't make it \u2014 I'm covering.' He gets a lanyard and building access. Nobody checks."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/temp-worker-loophole/"
+      ],
+      "h1": [
+        "The Temp Worker Loophole: 1.1 Million Workers, Almost Zero Verification"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Temp Worker Loophole: 1.1 Million Workers,\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/care-home-staffing-crisis/",
+      "title": "Care Home Staffing: When \"Who's Looking After\u2026 | Certifyd",
+      "description": [
+        "1.5 million people work in UK social care. Many rotate between sites. Families rarely know who's actually looking after their loved ones."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/care-home-staffing-crisis/"
+      ],
+      "h1": [
+        "Care Home Staffing: When \"Who's Looking After Mum?\" Has No Good Answer"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Care Home Staffing: When \"Who's Looking After\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/trade-platforms-blind-spot/",
+      "title": "Why Trade Platforms Can't Tell You Who Actually\u2026 | Certifyd",
+      "description": [
+        "Checkatrade verifies the business. But when someone knocks on your door, the platform has no idea if that's the person you booked \u2014 or someone else entirely."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/trade-platforms-blind-spot/"
+      ],
+      "h1": [
+        "Why Trade Platforms Can't Tell You Who Actually Showed Up"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Why Trade Platforms Can't Tell You Who Actually\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/arup-deepfake-attack/",
+      "title": "The $25 Million Deepfake: What the Arup Attack\u2026 | Certifyd",
+      "description": [
+        "In early 2024, a finance worker at Arup transferred $25 million after a video call with deepfake versions of his colleagues. Here's what went wrong \u2014 and what it means for your business."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/arup-deepfake-attack/"
+      ],
+      "h1": [
+        "The $25 Million Deepfake: What the Arup Attack Means for Every Business"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The $25 Million Deepfake: What the Arup Attack\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/right-to-work-gap-signs/",
+      "title": "5 Signs Your Hiring Process Has a Right-to-Work\u2026 | Certifyd",
+      "description": [
+        "Most UK businesses think their right-to-work process is solid. Most are wrong. Here are five warning signs."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/right-to-work-gap-signs/"
+      ],
+      "h1": [
+        "5 Signs Your Hiring Process Has a Right-to-Work Gap"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "5 Signs Your Hiring Process Has a Right-to-Work\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/two-way-verification-explained/",
+      "title": "Two-Way Verification: What It Is and Why\u2026 | Certifyd",
+      "description": [
+        "You prove your identity to your bank every day. But when did your bank last prove its identity to you? That's the problem with one-way verification."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/two-way-verification-explained/"
+      ],
+      "h1": [
+        "Two-Way Verification: What It Is and Why One-Way Systems Are No Longer Enough"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Two-Way Verification: What It Is and Why\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/identity-verification-gap/",
+      "title": "The Identity Verification Gap: Why Businesses\u2026 | Certifyd",
+      "description": [
+        "Every day, businesses let unverified people into their buildings, onto their systems, and into their hiring pipelines. Here's why that's a problem \u2014 and what's changing."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/identity-verification-gap/"
+      ],
+      "h1": [
+        "The Identity Verification Gap: Why Businesses Still Trust Strangers"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Identity Verification Gap: Why Businesses\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/fair-work-agency-april-2026/",
+      "title": "The Fair Work Agency: What Every UK Business\u2026 | Certifyd",
+      "description": [
+        "The Fair Work Agency launches in April 2026 with walk-in audit powers. Here's what it means for your business and how to prepare."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/fair-work-agency-april-2026/"
+      ],
+      "h1": [
+        "The Fair Work Agency: What Every UK Business Needs to Know Before April 2026"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "The Fair Work Agency: What Every UK Business\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/welcome-to-certifyd/",
+      "title": "Welcome to Certifyd | Certifyd",
+      "description": [
+        "We're building the identity layer for businesses that can't afford to get it wrong. Here's why."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/welcome-to-certifyd/"
+      ],
+      "h1": [
+        "Welcome to Certifyd"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Welcome to Certifyd | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/biblical-armageddon-when-ai-attacks-get-intelligent/",
+      "title": "Biblical Armageddon: When AI Attacks Get\u2026 | Certifyd",
+      "description": [
+        "Dr. Rigoberto Garcia on why state-sponsored cognitive neural networks are driving a new wave of attacks most security teams aren't ready for."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/biblical-armageddon-when-ai-attacks-get-intelligent/"
+      ],
+      "h1": [
+        "Biblical Armageddon: When AI Attacks Get Intelligent"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Biblical Armageddon: When AI Attacks Get\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/a-million-hacking-attempts-per-second/",
+      "title": "A Million Hacking Attempts Per Second | Certifyd",
+      "description": [
+        "A cybersecurity veteran explains why AI voice cloning, shadow AI, and the death of the junior developer are the threats keeping him up at night."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/a-million-hacking-attempts-per-second/"
+      ],
+      "h1": [
+        "A Million Hacking Attempts Per Second"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "A Million Hacking Attempts Per Second | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/whos-really-at-your-door/",
+      "title": "Who's Really at Your Door? The Hidden Risk of\u2026 | Certifyd",
+      "description": [
+        "You verify your identity to board a plane. But to let a stranger into your home? You rely on hope. Here's why that needs to change."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/whos-really-at-your-door/"
+      ],
+      "h1": [
+        "Who's Really at Your Door? The Hidden Risk of Letting Strangers Into Your Home"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Who's Really at Your Door? The Hidden Risk of\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/blog/20-years-cybersecurity-almost-got-scammed/",
+      "title": "20 Years in Cybersecurity and I Almost Got\u2026 | Certifyd",
+      "description": [
+        "A Field CTO with two decades in cybersecurity reveals how a phone scam nearly got him \u2014 and why the real defence is culture, not technology."
+      ],
+      "canonical": [
+        "https://certifyd.io/blog/20-years-cybersecurity-almost-got-scammed/"
+      ],
+      "h1": [
+        "20 Years in Cybersecurity and I Almost Got Scammed"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "20 Years in Cybersecurity and I Almost Got\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/podcast/",
+      "title": "Gone Phishing Podcast \u2014 Conversations About\u2026 | Certifyd",
+      "description": [
+        "Gone Phishing is the podcast where we talk to the people behind cybersecurity, identity, and trust. Real stories from practitioners \u2014 not vendor pitches."
+      ],
+      "canonical": [
+        "https://certifyd.io/podcast/"
+      ],
+      "h1": [
+        "Gone Phishing"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Gone Phishing Podcast \u2014 Conversations About\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/podcast/a-million-hacking-attempts-per-second/",
+      "title": "Podcast: A Million Hacking Attempts Per Second | Certifyd",
+      "description": [
+        "Healthcare cybersecurity lead Nick Hernandez on AI voice cloning, phishing that defeats senior staff, and why the junior developer pipeline is a security risk."
+      ],
+      "canonical": [
+        "https://certifyd.io/podcast/a-million-hacking-attempts-per-second/"
+      ],
+      "h1": [
+        "A Million Hacking Attempts Per Second"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Podcast: A Million Hacking Attempts Per Second | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/podcast/20-years-cybersecurity-almost-got-scammed/",
+      "title": "Podcast: 20 Years in Cybersecurity and I Almost\u2026 | Certifyd",
+      "description": [
+        "Field CTO Irfahn Khimji shares how a sophisticated phone scam nearly fooled him after 20 years in cybersecurity, and why building a culture of calling things out is the real defence."
+      ],
+      "canonical": [
+        "https://certifyd.io/podcast/20-years-cybersecurity-almost-got-scammed/"
+      ],
+      "h1": [
+        "20 Years in Cybersecurity and I Almost Got Scammed"
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Podcast: 20 Years in Cybersecurity and I Almost\u2026 | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/resources/worker-record-review-checklist/",
+      "title": "Worker-record review checklist | Certifyd",
+      "description": [
+        "Review worker requirements, personal and company evidence, expiry dates, review decisions and next actions with this practical checklist."
+      ],
+      "canonical": [
+        "https://certifyd.io/resources/worker-record-review-checklist/"
+      ],
+      "h1": [
+        "Review the evidence behind each worker record."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Worker-record review checklist | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/resources/recruitment-placement-evidence-checklist/",
+      "title": "Placement evidence checklist | Certifyd",
+      "description": [
+        "Prepare recruitment placement evidence with a checklist covering role requirements, worker credentials, review responsibilities, sharing and follow-up dates."
+      ],
+      "canonical": [
+        "https://certifyd.io/resources/recruitment-placement-evidence-checklist/"
+      ],
+      "h1": [
+        "Prepare worker evidence for the next placement."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Placement evidence checklist | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/platform/records/",
+      "title": "Track workforce expiry dates and reviews | Certifyd",
+      "description": [
+        "Track worker-document expiry dates, review upcoming renewals and keep supporting evidence with each workforce record."
+      ],
+      "canonical": [
+        "https://certifyd.io/platform/records/"
+      ],
+      "h1": [
+        "Track expiry dates.Plan record reviews."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Track workforce expiry dates and reviews | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/outcomes/reduce-compliance-risk/",
+      "title": "Find and fix compliance gaps. | Certifyd",
+      "description": [
+        "Find missing workforce evidence, track credential expiries and follow review activity in Certifyd. See the compliance workflow in a demo."
+      ],
+      "canonical": [
+        "https://certifyd.io/outcomes/reduce-compliance-risk/"
+      ],
+      "h1": [
+        "Find and fixcompliance gaps."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Find and fix compliance gaps. | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/outcomes/import-compliance-records/",
+      "title": "Import workforce compliance records | Certifyd",
+      "description": [
+        "Plan your move from worker spreadsheets to Certifyd. Bring existing worker details across, set role requirements and plan the evidence review."
+      ],
+      "canonical": [
+        "https://certifyd.io/outcomes/import-compliance-records/"
+      ],
+      "h1": [
+        "Import your existingworkforce records."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Import workforce compliance records | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/outcomes/reduce-compliance-admin/",
+      "title": "Spend less time chasing documents. | Certifyd",
+      "description": [
+        "Reduce recurring compliance admin by connecting worker requirements, evidence and review dates. Estimate your current document follow-up workload."
+      ],
+      "canonical": [
+        "https://certifyd.io/outcomes/reduce-compliance-admin/"
+      ],
+      "h1": [
+        "Spend less timechasing documents."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Spend less time chasing documents. | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/outcomes/verified-worker-check-in/",
+      "title": "Know who checked in, where and when. | Certifyd",
+      "description": [
+        "Record worker check-in and check-out against a person and site. Review the latest attendance activity and return to the visit history with Certifyd."
+      ],
+      "canonical": [
+        "https://certifyd.io/outcomes/verified-worker-check-in/"
+      ],
+      "h1": [
+        "Track worker check-insby site and time."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Know who checked in, where and when. | Certifyd"
+      ]
+    },
+    {
+      "url": "https://certifyd.io/outcomes/portable-worker-credentials/",
+      "title": "Let workers manage their own credentials. | Certifyd",
+      "description": [
+        "Let workers hold personal qualifications and certificates in the Certifyd app. Connect shared evidence to company requirements and review activity."
+      ],
+      "canonical": [
+        "https://certifyd.io/outcomes/portable-worker-credentials/"
+      ],
+      "h1": [
+        "Let workers managetheir own credentials."
+      ],
+      "og_image": [
+        "https://certifyd.io/opengraph-image"
+      ],
+      "twitter_title": [
+        "Let workers manage their own credentials. | Certifyd"
+      ]
+    }
+  ]
+}

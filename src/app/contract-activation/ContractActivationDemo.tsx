@@ -1,4 +1,5 @@
 "use client";
+import {trackWebsiteEvent} from "@/lib/measurement";
 
 import { useState } from "react";
 import styles from "./contract-activation.module.css";
@@ -155,12 +156,7 @@ export function ContractActivationDemo() {
 
   function selectScenario(id: string) {
     setActiveId(id);
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "contract_activation_demo_view", {
-        event_category: "product_demo",
-        event_label: id,
-      });
-    }
+    trackWebsiteEvent("contract_activation_demo_view", {event_category:"product_demo",event_label:id});
   }
 
   return (

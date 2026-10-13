@@ -1,4 +1,5 @@
 import type { Context } from "@netlify/functions";
+import { attributionSummary } from "../../src/lib/attribution";
 
 export default async (req: Request, _context: Context) => {
   if (req.method !== "POST") {
@@ -13,6 +14,7 @@ export default async (req: Request, _context: Context) => {
   try {
     const body = await req.json();
     const { email, firstName, lastName, company, source } = body;
+    const attribution = attributionSummary(body);
 
     if (!email) {
       return new Response(JSON.stringify({ error: "Email required" }), {
@@ -23,6 +25,7 @@ export default async (req: Request, _context: Context) => {
 
     const results: Record<string, string> = {};
     let attioPersonUrl: string | null = null;
+    let attioPersonId: string | null = null;
 
     // ── Step 1: Attio — create company + person ─────────────
     if (attioApiKey) {
@@ -84,6 +87,7 @@ export default async (req: Request, _context: Context) => {
         if (personRes.ok) {
           const personData = await personRes.json();
           const personId = personData?.data?.id?.record_id || null;
+          attioPersonId = personId;
           attioPersonUrl = personId
             ? `https://app.attio.com/${attioSlug}/person/${personId}/overview`
             : null;
@@ -94,7 +98,7 @@ export default async (req: Request, _context: Context) => {
         }
 
         // Add a note on the company
-        if (companyRecordId) {
+        if (companyRecordId || attioPersonId) {
           await fetch("https://api.attio.com/v2/notes", {
             method: "POST",
             headers: {
@@ -103,11 +107,11 @@ export default async (req: Request, _context: Context) => {
             },
             body: JSON.stringify({
               data: {
-                parent_object: "companies",
-                parent_record_id: companyRecordId,
+                parent_object: companyRecordId ? "companies" : "people",
+                parent_record_id: companyRecordId || attioPersonId,
                 title: `Lead magnet download — ${source}`,
                 format: "plaintext",
-                content: `${firstName || ""} ${lastName || ""} (${email}) downloaded: ${source}`,
+                content: `${firstName || ""} ${lastName || ""} (${email}) downloaded: ${source}${attribution ? `\n\nAcquisition context:\n${attribution}` : ""}`,
               },
             }),
           }).catch((err) => console.error("Attio note failed:", err));

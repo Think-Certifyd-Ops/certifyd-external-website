@@ -1,8 +1,9 @@
+import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import { ContractActivationDemo } from "./ContractActivationDemo";
 import styles from "./contract-activation.module.css";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Contract Activation for Workforce Suppliers",
   description:
     "Turn client contracts into source-linked supplier, organisation and personnel compliance requirements with a human-reviewed activation pack.",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
       "A source-linked Contract Activation Pack for staffing, managed-service and regulated workforce suppliers.",
     url: "https://certifyd.io/contract-activation/",
   },
-};
+});
 
 const includedItems = [
   "A source-linked responsibility register",

@@ -42,19 +42,19 @@ interface Employee {
 
 const employees: Employee[] = [
   {
-    id: 1, name: "Sarah Chen", email: "s.chen@sunrisecare.co.uk", role: "Software Engineer", department: "Engineering",
+    id: 1, name: "Sarah Chen", email: "s.chen@example.test", role: "Software Engineer", department: "Engineering",
     documents: [
       { type: "UK Passport", category: "rtw", status: "verified", expiryDate: null, uploadedDate: "2026-03-01" },
-      { type: "Enhanced DBS", category: "dbs", status: "verified", expiryDate: "2028-06-15", uploadedDate: "2025-06-15" },
+      { type: "Enhanced DBS", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2025-06-15" },
     ],
     chaseHistory: [{ date: "2026-02-28", event: "Upload link sent" }, { date: "2026-03-01", event: "Documents uploaded by employee" }],
     scheduledReminders: [],
   },
   {
-    id: 2, name: "James Okafor", email: "j.okafor@sunrisecare.co.uk", role: "Care Worker", department: "Care",
+    id: 2, name: "James Okafor", email: "j.okafor@example.test", role: "Care Worker", department: "Care",
     documents: [
-      { type: "Biometric Residence Permit", category: "rtw", status: "verified", expiryDate: "2026-12-01", uploadedDate: "2026-03-10" },
-      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: "2027-09-20", uploadedDate: "2024-09-20" },
+      { type: "Home Office online-check result", category: "rtw", status: "verified", expiryDate: "2026-12-01", uploadedDate: "2026-03-10" },
+      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2024-09-20" },
       { type: "Safeguarding Level 2", category: "training", status: "verified", expiryDate: "2027-03-10", uploadedDate: "2026-03-10" },
       { type: "Manual Handling", category: "training", status: "verified", expiryDate: "2026-11-15", uploadedDate: "2025-11-15" },
     ],
@@ -62,10 +62,10 @@ const employees: Employee[] = [
     scheduledReminders: [],
   },
   {
-    id: 3, name: "Maria Santos", email: "m.santos@sunrisecare.co.uk", role: "Nurse", department: "Care",
+    id: 3, name: "Maria Santos", email: "m.santos@example.test", role: "Nurse", department: "Care",
     documents: [
       { type: "Visa", category: "rtw", status: "pending", expiryDate: "2026-04-15", uploadedDate: null },
-      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: "2027-01-20", uploadedDate: "2024-01-20" },
+      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2024-01-20" },
       { type: "NMC Registration", category: "professional", status: "verified", expiryDate: "2026-11-30", uploadedDate: "2025-11-30" },
       { type: "Safeguarding Level 3", category: "training", status: "expired", expiryDate: "2026-03-01", uploadedDate: "2023-03-01" },
       { type: "First Aid at Work", category: "training", status: "verified", expiryDate: "2027-02-28", uploadedDate: "2024-02-28" },
@@ -77,7 +77,7 @@ const employees: Employee[] = [
     ],
   },
   {
-    id: 4, name: "David Brown", email: "d.brown@sunrisecare.co.uk", role: "Chef", department: "Kitchen",
+    id: 4, name: "David Brown", email: "d.brown@example.test", role: "Chef", department: "Kitchen",
     documents: [
       { type: "Right to Work", category: "rtw", status: "missing", expiryDate: null, uploadedDate: null },
       { type: "Basic DBS", category: "dbs", status: "missing", expiryDate: null, uploadedDate: null },
@@ -90,10 +90,10 @@ const employees: Employee[] = [
     ],
   },
   {
-    id: 5, name: "Emma Wilson", email: "e.wilson@sunrisecare.co.uk", role: "Receptionist", department: "Admin",
+    id: 5, name: "Emma Wilson", email: "e.wilson@example.test", role: "Receptionist", department: "Admin",
     documents: [
       { type: "UK Passport", category: "rtw", status: "verified", expiryDate: null, uploadedDate: "2026-02-15" },
-      { type: "Basic DBS", category: "dbs", status: "verified", expiryDate: "2028-02-15", uploadedDate: "2025-02-15" },
+      { type: "Basic DBS", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2025-02-15" },
       { type: "Fire Safety", category: "training", status: "verified", expiryDate: "2027-01-10", uploadedDate: "2025-01-10" },
       { type: "GDPR / Data Protection", category: "training", status: "verified", expiryDate: "2026-09-30", uploadedDate: "2025-09-30" },
     ],
@@ -101,10 +101,10 @@ const employees: Employee[] = [
     scheduledReminders: [],
   },
   {
-    id: 6, name: "Ahmed Hassan", email: "a.hassan@sunrisecare.co.uk", role: "Care Worker", department: "Care",
+    id: 6, name: "Ahmed Hassan", email: "a.hassan@example.test", role: "Care Worker", department: "Care",
     documents: [
       { type: "Share Code verified", category: "rtw", status: "verified", expiryDate: "2027-06-30", uploadedDate: "2026-01-20" },
-      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: "2027-05-18", uploadedDate: "2024-05-18" },
+      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2024-05-18" },
       { type: "Safeguarding Level 2", category: "training", status: "verified", expiryDate: "2027-08-22", uploadedDate: "2024-08-22" },
       { type: "Manual Handling", category: "training", status: "pending", expiryDate: null, uploadedDate: null },
     ],
@@ -114,20 +114,20 @@ const employees: Employee[] = [
     ],
   },
   {
-    id: 7, name: "Lucy Taylor", email: "l.taylor@sunrisecare.co.uk", role: "Activities Coordinator", department: "Care",
+    id: 7, name: "Lucy Taylor", email: "l.taylor@example.test", role: "Activities Coordinator", department: "Care",
     documents: [
       { type: "UK Birth Certificate + NI Letter", category: "rtw", status: "verified", expiryDate: null, uploadedDate: "2026-02-22" },
-      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: "2028-01-12", uploadedDate: "2025-01-12" },
+      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2025-01-12" },
       { type: "Safeguarding Level 2", category: "training", status: "verified", expiryDate: "2027-04-15", uploadedDate: "2024-04-15" },
     ],
     chaseHistory: [{ date: "2026-02-20", event: "Upload link sent" }, { date: "2026-02-22", event: "Documents uploaded by employee" }],
     scheduledReminders: [],
   },
   {
-    id: 8, name: "Tomasz Kowalski", email: "t.kowalski@sunrisecare.co.uk", role: "Maintenance", department: "Facilities",
+    id: 8, name: "Tomasz Kowalski", email: "t.kowalski@example.test", role: "Maintenance", department: "Facilities",
     documents: [
       { type: "EU Settlement Scheme — Settled", category: "rtw", status: "verified", expiryDate: null, uploadedDate: "2026-03-05" },
-      { type: "Basic DBS", category: "dbs", status: "verified", expiryDate: "2027-11-05", uploadedDate: "2024-11-05" },
+      { type: "Basic DBS", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2024-11-05" },
       { type: "Manual Handling", category: "training", status: "verified", expiryDate: "2026-08-20", uploadedDate: "2024-08-20" },
       { type: "COSHH", category: "training", status: "expired", expiryDate: "2026-02-28", uploadedDate: "2024-02-28" },
     ],
@@ -137,10 +137,10 @@ const employees: Employee[] = [
     ],
   },
   {
-    id: 9, name: "Fatima Al-Rashid", email: "f.alrashid@sunrisecare.co.uk", role: "Senior Nurse", department: "Care",
+    id: 9, name: "Fatima Al-Rashid", email: "f.alrashid@example.test", role: "Senior Nurse", department: "Care",
     documents: [
       { type: "Visa", category: "rtw", status: "expired", expiryDate: "2026-03-01", uploadedDate: "2025-09-15" },
-      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: "2027-07-14", uploadedDate: "2024-07-14" },
+      { type: "Enhanced DBS + Barred List", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2024-07-14" },
       { type: "NMC Registration", category: "professional", status: "verified", expiryDate: "2026-09-30", uploadedDate: "2025-09-30" },
       { type: "Safeguarding Level 3", category: "training", status: "verified", expiryDate: "2027-06-01", uploadedDate: "2024-06-01" },
       { type: "First Aid at Work", category: "training", status: "verified", expiryDate: "2026-12-15", uploadedDate: "2023-12-15" },
@@ -151,9 +151,9 @@ const employees: Employee[] = [
     ],
   },
   {
-    id: 10, name: "Priya Sharma", email: "p.sharma@sunrisecare.co.uk", role: "Night Carer", department: "Care",
+    id: 10, name: "Priya Sharma", email: "p.sharma@example.test", role: "Night Carer", department: "Care",
     documents: [
-      { type: "Biometric Residence Permit", category: "rtw", status: "verified", expiryDate: "2027-03-15", uploadedDate: "2026-03-12" },
+      { type: "Home Office online-check result", category: "rtw", status: "verified", expiryDate: "2027-03-15", uploadedDate: "2026-03-12" },
       { type: "Enhanced DBS + Barred List", category: "dbs", status: "pending", expiryDate: null, uploadedDate: null },
       { type: "Safeguarding Level 2", category: "training", status: "verified", expiryDate: "2027-09-01", uploadedDate: "2024-09-01" },
     ],
@@ -163,10 +163,10 @@ const employees: Employee[] = [
     ],
   },
   {
-    id: 11, name: "Michael O'Brien", email: "m.obrien@sunrisecare.co.uk", role: "Driver", department: "Transport",
+    id: 11, name: "Michael O'Brien", email: "m.obrien@example.test", role: "Driver", department: "Transport",
     documents: [
       { type: "Irish Passport", category: "rtw", status: "verified", expiryDate: null, uploadedDate: "2026-01-10" },
-      { type: "Enhanced DBS", category: "dbs", status: "verified", expiryDate: "2027-10-30", uploadedDate: "2024-10-30" },
+      { type: "Enhanced DBS", category: "dbs", status: "verified", expiryDate: null, uploadedDate: "2024-10-30" },
       { type: "Driving Licence", category: "licence", status: "verified", expiryDate: "2026-07-08", uploadedDate: "2025-07-08" },
       { type: "Manual Handling", category: "training", status: "verified", expiryDate: "2026-10-20", uploadedDate: "2024-10-20" },
     ],
@@ -174,7 +174,7 @@ const employees: Employee[] = [
     scheduledReminders: [],
   },
   {
-    id: 12, name: "Grace Mensah", email: "g.mensah@sunrisecare.co.uk", role: "Care Worker", department: "Care",
+    id: 12, name: "Grace Mensah", email: "g.mensah@example.test", role: "Care Worker", department: "Care",
     documents: [
       { type: "Right to Work", category: "rtw", status: "pending", expiryDate: null, uploadedDate: null },
       { type: "Enhanced DBS + Barred List", category: "dbs", status: "pending", expiryDate: null, uploadedDate: null },
@@ -230,6 +230,8 @@ const docCounts = {
 
 const score = Math.round((docCounts.verified / docCounts.total) * 100);
 
+const DEMO_NOW = Date.UTC(2026, 9, 13, 12);
+
 /* ── Helpers ── */
 
 function formatDate(d: string | null) {
@@ -239,11 +241,11 @@ function formatDate(d: string | null) {
 
 function daysUntil(d: string | null) {
   if (!d) return null;
-  return Math.ceil((new Date(d).getTime() - Date.now()) / 86400000);
+  return Math.ceil((new Date(d).getTime() - DEMO_NOW) / 86400000);
 }
 
 function daysSince(d: string) {
-  return Math.abs(Math.floor((Date.now() - new Date(d).getTime()) / 86400000));
+  return Math.abs(Math.floor((DEMO_NOW - new Date(d).getTime()) / 86400000));
 }
 
 /* ── Expiring documents ── */
@@ -311,7 +313,8 @@ export default function PortalDemoPage() {
   /* ── Email gate ── */
   if (!gateSubmitted) {
     return (
-      <BrowserFrame url="portal.certifyd.io" backHref="/" backLabel="Back to Certifyd Portal">
+      <BrowserFrame url="certifyd.io" backHref="/platform/records/" backLabel="Back to tracked records">
+      <div className="p-4 bg-sky-50 text-slate-900"><h1 className="text-xl font-semibold">Explore a fictional workforce record.</h1><p className="text-sm mt-2">Historical interface example with fictional people, reviewed as at 13 October 2026. No messages are sent. “Verified” represents a sample reviewer status, not an automatic statutory or regulator check. DBS certificates have no official expiry date.</p></div>
         <div className="bg-warm-white min-h-[60vh] flex items-center justify-center p-6">
           <div className="max-w-md w-full text-center">
             <div className="w-12 h-12 rounded-full bg-certifyd-blue/10 flex items-center justify-center mx-auto mb-6">
@@ -357,7 +360,8 @@ export default function PortalDemoPage() {
   }
 
   return (
-    <BrowserFrame url="portal.certifyd.io" backHref="/" backLabel="Back to Certifyd Portal">
+    <BrowserFrame url="certifyd.io" backHref="/platform/records/" backLabel="Back to tracked records">
+      <div className="p-4 bg-sky-50 text-slate-900"><h1 className="text-xl font-semibold">Explore a fictional workforce record.</h1><p className="text-sm mt-2">Historical interface example with fictional people, reviewed as at 13 October 2026. No messages are sent. “Verified” represents a sample reviewer status, not an automatic statutory or regulator check. DBS certificates have no official expiry date.</p></div>
       <div className="bg-warm-white">
       {/* Top bar */}
       <div className="bg-navy border-b border-navy-border">
@@ -750,7 +754,7 @@ export default function PortalDemoPage() {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h2 className="font-heading text-lg font-bold text-text-on-light">Workforce Compliance Report</h2>
-                    <p className="text-xs text-text-on-light-muted mt-1">Generated: {new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })} at {new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</p>
+                    <p className="text-xs text-text-on-light-muted mt-1">Example report dated 13 October 2026</p>
                   </div>
                   <span className={`text-[10px] px-2 py-0.5 rounded-full font-heading font-medium ${score >= 80 ? "bg-accent-success/15 text-accent-success" : score >= 60 ? "bg-accent-warning/15 text-accent-warning" : "bg-red-500/15 text-red-500"}`}>
                     {score >= 80 ? "Audit-Ready" : score >= 60 ? "Needs Attention" : "At Risk"}

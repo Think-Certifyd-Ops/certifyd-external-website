@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { trackLeadEvent } from "@/lib/measurement";
+import { submissionAttribution } from "@/lib/attribution";
 import { GOOGLE_ADS_CONVERSIONS } from "@/lib/constants";
 
 interface ToolEmailCaptureProps {
@@ -84,12 +86,7 @@ export function ToolEmailCapture({
             if (!res.ok) throw new Error("Form submission failed");
 
             // Forward to Loops (best-effort)
-            let utmData = {};
-            try {
-              utmData = JSON.parse(
-                sessionStorage.getItem("certifyd_utm") || "{}"
-              );
-            } catch { /* ignore */ }
+            const utmData = submissionAttribution(`tool-${source}`);
             fetch("/.netlify/functions/lead-magnet", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -109,18 +106,7 @@ export function ToolEmailCapture({
             }).catch(() => {});
 
             // GA4 event
-            if (
-              typeof window !== "undefined" &&
-              typeof window.gtag === "function"
-            ) {
-              window.gtag("event", "generate_lead", {
-                event_category: "tool_report",
-                event_label: source,
-                ...(GOOGLE_ADS_CONVERSIONS.leadMagnet
-                  ? { send_to: GOOGLE_ADS_CONVERSIONS.leadMagnet }
-                  : {}),
-              });
-            }
+            trackLeadEvent("generate_lead",{event_category: "tool_report",event_label: source},GOOGLE_ADS_CONVERSIONS.leadMagnet);
 
             setSubmitted(true);
           } catch {

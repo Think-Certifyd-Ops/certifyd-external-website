@@ -55,6 +55,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: `${BASE_URL}/cookies`,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
       url: `${BASE_URL}/contract-activation`,
       changeFrequency: "monthly",
       priority: 0.9,
