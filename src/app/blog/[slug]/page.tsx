@@ -29,6 +29,7 @@ export async function generateMetadata({
     title: post.meta.title,
     description: post.meta.excerpt,
     alternates: { canonical: `/blog/${slug}/` },
+    ...(post.meta.archived ? {robots: {index: false, follow: true}} : {}),
     openGraph: {
       title: post.meta.title,
       description: post.meta.excerpt,
@@ -66,13 +67,13 @@ export default async function BlogPostPage({ params }: PageProps) {
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },
-          { name: "Blog", href: "/blog/" },
+          { name: post.meta.archived ? "Editorial archive" : "Blog", href: post.meta.archived ? "/blog/archive/" : "/blog/" },
           { name: post.meta.title, href: `/blog/${slug}/` },
         ]}
       />
       <div className="story"><div className="story-reading">
-        <Link href="/blog/" className="story-back">← Browse practical guides</Link>
-        <p className="story-label">{post.meta.category}</p>
+        <Link href={post.meta.archived ? "/blog/archive/" : "/blog/"} className="story-back">← {post.meta.archived ? "Browse the editorial archive" : "Browse practical guides"}</Link>
+        <p className="story-label">{post.meta.archived ? "Historical editorial archive" : post.meta.category}</p>
         <h1>{post.meta.title}</h1>
         <p className="story-byline">{post.meta.author} · Published <time dateTime={post.meta.date}>{new Date(post.meta.date).toLocaleDateString("en-GB")}</time>{post.meta.updated&&<> · Updated <time dateTime={post.meta.updated}>{new Date(post.meta.updated).toLocaleDateString("en-GB")}</time></>}</p>
         <article className="prose prose-lg prose-certifyd max-w-none prose-headings:font-heading prose-a:text-certifyd-blue"><MDXRemote source={post.content}/></article>

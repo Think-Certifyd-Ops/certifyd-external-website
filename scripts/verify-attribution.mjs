@@ -10,12 +10,13 @@ for(const url of Object.values(urls)){
  assert.match(notes,/Recruitment/);assert.match(notes,/_landing: \/blog\/guide\//);
  assert.doesNotMatch(notes,/fixture|unsupported|gclid|email/);
 }
-class NodeStub extends EventTarget{constructor(){super();this.attrs={};this.textContent='';this.value='';this.style={};}getAttribute(k){return this.attrs[k]??null}}
+class NodeStub extends EventTarget{constructor(){super();this.attrs={};this.textContent='';this.value='';this.style={};}getAttribute(k){return k==='src'?this.src??null:this.attrs[k]??null}}
 const frame=new NodeStub();frame.contentWindow={postMessage(){}};
 const industry=new NodeStub(),status=new NodeStub(),fallback=new NodeStub(),root=new NodeStub();
 const nodes={'iframe':frame,'#demo-industry':industry,'[data-booking-status]':status,'[data-booking-fallback]':fallback};
 root.querySelector=s=>nodes[s]??null;root.querySelectorAll=()=>[];
 globalThis.sessionStorage={getItem:()=>null};globalThis.location={search:'',pathname:'/contact/'};
+globalThis.document=Object.assign(new EventTarget(),{activeElement:null,referrer:''});
 globalThis.window=new EventTarget();window.location=location;
 let consent=false,events=[];window.rogersonConsent={has:()=>consent};window.gtag=(...args)=>events.push(args);
 const cleanup=initializeDemoBooking(root);
@@ -55,3 +56,27 @@ assert.equal(storage.size,0);assert.deepEqual(submissionAttribution('contact-pag
 window.rogersonConsent.has=()=>true;window.dispatchEvent(new CustomEvent('rogerson:consent',{detail:{analytics:true}}));
 const captured=JSON.parse(storage.get('certifyd_utm'));assert.equal(captured._referrer,'www.google.com');assert.equal(captured.utm_source,'google');assert.equal(captured._landing,'/contact/');assert.equal(JSON.stringify(captured).includes('private'),false);
 attributionCleanup();console.log('Saved consent startup, first-touch preservation, denied choice and withdrawal clearing passed.');
+
+// Consent after client navigation retains the original route without pre-consent persistence.
+storage.clear();globalThis.window=new EventTarget();window.location=location;
+window.rogersonConsent={has:()=>false};location.pathname='/blog/right-to-work-checks-2026-update/';location.search='?utm_source=seo-fixture&utm_campaign=review';
+document=Object.assign(new EventTarget(),{activeElement:null,referrer:'https://www.google.com/search?q=private'});
+const landingCleanup=initializeAttribution();assert.equal(storage.size,0);
+location.pathname='/contact/';location.search='';
+const calendarCleanup=initializeDemoBooking(root);const initialSrc=frame.src;
+window.rogersonConsent.has=()=>true;window.dispatchEvent(new CustomEvent('rogerson:consent',{detail:{analytics:true}}));await Promise.resolve();
+assert.equal(submissionAttribution('contact-calendar')._landing,'/blog/right-to-work-checks-2026-update/');
+assert.notEqual(frame.src,initialSrc);assert.match(new URL(frame.src).searchParams.get('notes'),/utm_source: seo-fixture/);
+const consentedSrc=frame.src;window.dispatchEvent(new Event('rogerson:consent-ready'));await Promise.resolve();assert.equal(frame.src,consentedSrc,'Repeated readiness must not reload an unchanged calendar');
+document.activeElement=frame;window.dispatchEvent(new Event('blur'));
+window.rogersonConsent.has=()=>false;window.dispatchEvent(new CustomEvent('rogerson:consent',{detail:{analytics:false}}));await Promise.resolve();
+assert.equal(frame.src,consentedSrc,'Withdrawal must preserve an engaged booking draft');assert.doesNotMatch(new URL(fallback.href).searchParams.get('notes'),/seo-fixture/);assert.equal(storage.size,0);
+calendarCleanup();landingCleanup();document.activeElement=null;
+
+// A trusted pending booking locks the calendar, while its GA4 event remains excluded.
+const pendingCleanup=initializeDemoBooking(root);const pendingSrc=frame.src;
+booking('pending-calendar-fixture','PENDING');window.rogersonConsent.has=()=>true;
+storage.set('certifyd_utm',JSON.stringify({_landing:'/blog/guide/',utm_source:'new-fixture'}));window.dispatchEvent(new Event('rogerson:consent-ready'));await Promise.resolve();
+assert.equal(frame.src,pendingSrc);assert.match(new URL(fallback.href).searchParams.get('notes'),/new-fixture/);
+pendingCleanup();const finalHref=fallback.href;storage.clear();window.dispatchEvent(new Event('rogerson:consent-ready'));await Promise.resolve();assert.equal(fallback.href,finalHref,'Cleanup removes the consent refresh listener');
+console.log('Late consent preserves the initial route, updates an untouched calendar, preserves focused/pending forms, refreshes fallback and cleans up listeners.');

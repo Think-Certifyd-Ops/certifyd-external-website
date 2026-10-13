@@ -12,7 +12,9 @@ import matter from "gray-matter";
 const OUT_DIR = path.join(process.cwd(), "out");
 const PODCAST_DIR = path.join(process.cwd(), "content", "podcast");
 const AUDIO_DIR = path.join(process.cwd(), "public", "podcast", "audio");
-const BASE_URL = "https://www.certifyd.io";
+const BASE_URL = "https://certifyd.io";
+// Preserve published subscription identifiers when canonical links change.
+const GUID_BASE_URL = "https://www.certifyd.io";
 
 const SHOW = {
   title: "Gone Phishing with Certifyd",
@@ -49,6 +51,8 @@ interface Episode {
   slug: string;
   title: string;
   date: string;
+  updated?: string;
+  episodeNumber?: number;
   description: string;
   guest: { name: string; title: string; company: string };
   duration: string;
@@ -72,6 +76,8 @@ function loadEpisodes(): Episode[] {
         slug: filename.replace(/\.mdx$/, ""),
         title: data.title || "",
         date: data.date || "",
+        updated: data.updated || undefined,
+        episodeNumber: Number.isInteger(data.episodeNumber) && data.episodeNumber > 0 ? data.episodeNumber : undefined,
         description: data.description || "",
         guest: data.guest || { name: "", title: "", company: "" },
         duration: data.duration || "00:00",
@@ -85,11 +91,10 @@ function loadEpisodes(): Episode[] {
 }
 
 function buildFeed(episodes: Episode[]): string {
-  const pubDate = episodes.length > 0 ? new Date(episodes[0].date).toUTCString() : new Date().toUTCString();
+  const pubDate = episodes.length > 0 ? new Date(episodes.map(ep=>ep.updated || ep.date).sort().at(-1)!).toUTCString() : new Date().toUTCString();
 
   const items = episodes
-    .map((ep, index) => {
-      const episodeNumber = episodes.length - index;
+    .map((ep) => {
       const audioSize = getAudioFileSize(ep.audioFile);
       const audioUrl = `${BASE_URL}/podcast/audio/${ep.audioFile}`;
       const episodeUrl = `${BASE_URL}/podcast/${ep.slug}/`;
@@ -98,7 +103,7 @@ function buildFeed(episodes: Episode[]): string {
       return `    <item>
       <title>${escapeXml(ep.title)}</title>
       <link>${episodeUrl}</link>
-      <guid isPermaLink="true">${episodeUrl}</guid>
+      <guid isPermaLink="true">${GUID_BASE_URL}/podcast/${ep.slug}/</guid>
       <pubDate>${pubDateStr}</pubDate>
       <description>${escapeXml(ep.description)}</description>
       <enclosure url="${audioUrl}" length="${audioSize}" type="audio/mpeg" />
@@ -107,7 +112,7 @@ function buildFeed(episodes: Episode[]): string {
       <itunes:summary>${escapeXml(ep.description)}</itunes:summary>
       <itunes:duration>${ep.durationSeconds}</itunes:duration>
       <itunes:explicit>${ep.explicit ? "true" : "false"}</itunes:explicit>
-      <itunes:episode>${episodeNumber}</itunes:episode>
+      ${ep.episodeNumber ? `<itunes:episode>${ep.episodeNumber}</itunes:episode>` : ""}
       <itunes:episodeType>full</itunes:episodeType>
     </item>`;
     })

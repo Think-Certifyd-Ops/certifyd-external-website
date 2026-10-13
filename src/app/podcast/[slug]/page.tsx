@@ -2,7 +2,7 @@ import { siteMetadata } from "@/lib/story/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllEpisodeSlugs, getEpisodeBySlug, getAllEpisodes } from "@/lib/podcast";
+import { getAllEpisodeSlugs, getEpisodeBySlug } from "@/lib/podcast";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import {
   PodcastEpisodeSchema,
@@ -36,6 +36,7 @@ export async function generateMetadata({
       url: `https://certifyd.io/podcast/${slug}/`,
       type: "article",
       publishedTime: episode.meta.date,
+      modifiedTime: episode.meta.updated || episode.meta.date,
     },
     twitter: {
       card: "summary",
@@ -55,10 +56,6 @@ export default async function PodcastEpisodePage({ params }: PageProps) {
   const { meta, content } = episode;
   const audioUrl = `/podcast/audio/${meta.audioFile}`;
 
-  // Calculate episode number (oldest = 1)
-  const allEpisodes = getAllEpisodes();
-  const episodeNumber = allEpisodes.length - allEpisodes.findIndex((e) => e.slug === slug);
-
   return (
     <>
       <PodcastEpisodeSchema
@@ -66,6 +63,8 @@ export default async function PodcastEpisodePage({ params }: PageProps) {
         description={meta.description}
         slug={slug}
         date={meta.date}
+        updated={meta.updated}
+        episodeNumber={meta.episodeNumber}
         duration={meta.duration}
         audioUrl={`https://certifyd.io${audioUrl}`}
         guestName={meta.guest.name}
@@ -87,15 +86,15 @@ export default async function PodcastEpisodePage({ params }: PageProps) {
           >
             &larr; Back to Podcast
           </Link>
-          <span className="inline-block px-2 py-0.5 text-xs font-medium rounded-full bg-certifyd-blue/15 text-certifyd-blue mb-4">
-            Episode {episodeNumber}
-          </span>
+          {meta.episodeNumber && <span className="inline-block px-2 py-0.5 text-xs font-medium rounded-full bg-certifyd-blue/15 text-certifyd-blue mb-4">
+            Episode {meta.episodeNumber}
+          </span>}
           <h1 className="font-heading text-3xl lg:text-4xl font-bold">
             {meta.title}
           </h1>
           <div className="flex flex-wrap items-center gap-3 mt-4 text-sm text-text-on-dark-muted">
             <span>
-              with {meta.guest.name} — {meta.guest.title}, {meta.guest.company}
+              with {meta.guest.name}, {meta.guest.title}, {meta.guest.company}
             </span>
             <span>&middot;</span>
             <time>
@@ -107,6 +106,7 @@ export default async function PodcastEpisodePage({ params }: PageProps) {
             </time>
             <span>&middot;</span>
             <span>{meta.duration}</span>
+            {meta.updated && <span>Summary updated <time dateTime={meta.updated}>{new Date(meta.updated).toLocaleDateString("en-GB")}</time></span>}
           </div>
         </div>
       </section>

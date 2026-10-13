@@ -22,6 +22,11 @@ export function submissionAttribution(placement:string):Record<string,string>{
  return readAttribution({...readAttribution(stored),page_path:location.pathname,placement});
 }
 export function initializeAttribution(){
+ // Keep an in-memory candidate from the original route; persist only after consent.
+ const params=new URLSearchParams(location.search),candidate:Record<string,string>={_landing:location.pathname};
+ try{if(document.referrer)candidate._referrer=new URL(document.referrer).hostname}catch{}
+ for(const key of ATTRIBUTION_KEYS){if(key.startsWith("utm_")||key==="gclid"){const value=params.get(key);if(value)candidate[key]=value}}
+ const initial=readAttribution(candidate);
  const update=(event?:Event)=>{
   try{
    const explicit=event instanceof CustomEvent&&typeof event.detail?.analytics==="boolean";
@@ -29,10 +34,7 @@ export function initializeAttribution(){
    const granted=explicit?event.detail.analytics:window.rogersonConsent?.has("analytics");
    if(!granted){sessionStorage.removeItem("certifyd_utm");sessionStorage.removeItem("certifyd_demo_entry");return}
    if(sessionStorage.getItem("certifyd_utm"))return;
-   const params=new URLSearchParams(location.search),data:Record<string,string>={_landing:location.pathname};
-   try{if(document.referrer)data._referrer=new URL(document.referrer).hostname}catch{}
-   for(const key of ATTRIBUTION_KEYS){if(key.startsWith("utm_")||key==="gclid"){const value=params.get(key);if(value)data[key]=value}}
-   sessionStorage.setItem("certifyd_utm",JSON.stringify(readAttribution(data)));
+   sessionStorage.setItem("certifyd_utm",JSON.stringify(initial));
   }catch{}
  };
  update();window.addEventListener("rogerson:consent",update);window.addEventListener("rogerson:consent-ready",update);

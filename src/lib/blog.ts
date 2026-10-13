@@ -9,6 +9,7 @@ export interface BlogPostMeta {
   title: string;
   date: string;
   updated?: string;
+  archived?: boolean;
   author: string;
   excerpt: string;
   category: string;
@@ -23,7 +24,7 @@ function isPublished(date: string): boolean {
   return date <= getTodayIsoDate();
 }
 
-export function getAllPosts(): BlogPostMeta[] {
+export function getAllPosts(includeArchived = false): BlogPostMeta[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
 
   const files = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith(".mdx"));
@@ -39,6 +40,7 @@ export function getAllPosts(): BlogPostMeta[] {
       title: data.title || slug,
       date: data.date || "",
       updated: data.updated || undefined,
+      archived: data.archived === true,
       author: data.author || "Certifyd Team",
       excerpt: data.excerpt || "",
       category: data.category || "Company Updates",
@@ -46,7 +48,7 @@ export function getAllPosts(): BlogPostMeta[] {
   });
 
   return posts
-    .filter((p) => isPublished(p.date))
+    .filter((p) => isPublished(p.date) && (includeArchived || !p.archived))
     .sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
@@ -65,6 +67,7 @@ export function getPostBySlug(slug: string) {
       title: data.title || slug,
       date: data.date || "",
       updated: data.updated || undefined,
+      archived: data.archived === true,
       author: data.author || "Certifyd Team",
       excerpt: data.excerpt || "",
       category: data.category || "Company Updates",

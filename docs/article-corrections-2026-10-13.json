@@ -2,7 +2,7 @@
   "completed": [
     {
       "slug": "visa-expiry-tracking-employers",
-      "original_date": "\"2026-04-24\"",
+      "original_date": "2026-04-24",
       "updated": "2026-10-13",
       "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
       "words_before": 1734,
@@ -10,7 +10,7 @@
     },
     {
       "slug": "settled-status-employer-checks",
-      "original_date": "\"2026-06-02\"",
+      "original_date": "2026-06-02",
       "updated": "2026-10-13",
       "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
       "words_before": 1836,
@@ -18,7 +18,7 @@
     },
     {
       "slug": "graduate-visa-employer-guide",
-      "original_date": "\"2026-05-05\"",
+      "original_date": "2026-05-05",
       "updated": "2026-10-13",
       "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
       "words_before": 1857,
@@ -26,7 +26,7 @@
     },
     {
       "slug": "fair-work-agency-april-2026",
-      "original_date": "\"2026-02-07\"",
+      "original_date": "2026-02-07",
       "updated": "2026-10-13",
       "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
       "words_before": 680,
@@ -34,20 +34,740 @@
     },
     {
       "slug": "right-to-work-penalties-2026",
-      "original_date": "\"2026-04-22\"",
+      "original_date": "2026-04-22",
       "updated": "2026-10-13",
       "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
       "words_before": 1793,
-      "words_after": 435
+      "words_after": 442
     },
     {
       "slug": "skilled-worker-visa-employer-obligations",
-      "original_date": "\"2026-06-05\"",
+      "original_date": "2026-06-05",
       "updated": "2026-10-13",
       "substantive_corrections": "Replaced unsupported case narratives, obsolete legal/process claims and automatic product guarantees with topic-specific sourced employer guidance. Original publication date retained.",
       "words_before": 1824,
       "words_after": 441
+    },
+    {
+      "slug": "b-rated-sponsor-licence",
+      "original_date": "2026-04-10",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1564,
+      "words_after": 308
+    },
+    {
+      "slug": "home-office-compliance-visit-what-happens",
+      "original_date": "2026-04-15",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1725,
+      "words_after": 306
+    },
+    {
+      "slug": "sponsor-management-system-sms-guide",
+      "original_date": "2026-05-08",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2007,
+      "words_after": 324
+    },
+    {
+      "slug": "sponsor-licence-compliance-calendar",
+      "original_date": "2026-04-20",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1703,
+      "words_after": 349
+    },
+    {
+      "slug": "sponsor-licence-revocations-2025",
+      "original_date": "2026-04-10",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1286,
+      "words_after": 286
+    },
+    {
+      "slug": "what-is-a-statutory-excuse-rtw",
+      "original_date": "2026-05-01",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1735,
+      "words_after": 319
+    },
+    {
+      "slug": "right-to-work-checks-2026-update",
+      "original_date": "2026-04-13",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1538,
+      "words_after": 339
+    },
+    {
+      "slug": "digital-right-to-work-checks-vs-manual",
+      "original_date": "2026-04-17",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1677,
+      "words_after": 318
+    },
+    {
+      "slug": "right-to-work-for-directors-partners",
+      "original_date": "2026-06-23",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1945,
+      "words_after": 322
+    },
+    {
+      "slug": "right-to-work-discrimination-law",
+      "original_date": "2026-06-16",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2065,
+      "words_after": 317
+    },
+    {
+      "slug": "preventing-illegal-working-landlord-employer",
+      "original_date": "2026-05-06",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1777,
+      "words_after": 312
+    },
+    {
+      "slug": "landlord-right-to-rent-checks",
+      "original_date": "2026-05-18",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1956,
+      "words_after": 310
+    },
+    {
+      "slug": "dbs-checks-vs-right-to-work-checks",
+      "original_date": "2026-05-28",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1742,
+      "words_after": 302
+    },
+    {
+      "slug": "care-home-agency-staff-risk",
+      "original_date": "2026-05-26",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1733,
+      "words_after": 302
+    },
+    {
+      "slug": "care-home-cqc-workforce-compliance",
+      "original_date": "2026-04-28",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1684,
+      "words_after": 304
+    },
+    {
+      "slug": "care-home-staffing-crisis",
+      "original_date": "2026-02-13",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 999,
+      "words_after": 283
+    },
+    {
+      "slug": "domiciliary-care-worker-verification",
+      "original_date": "2026-05-14",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1734,
+      "words_after": 296
+    },
+    {
+      "slug": "safeguarding-gap-care-homes",
+      "original_date": "2026-02-19",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 987,
+      "words_after": 294
+    },
+    {
+      "slug": "health-care-worker-visa-sponsor-guide",
+      "original_date": "2026-06-11",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1749,
+      "words_after": 327
+    },
+    {
+      "slug": "education-sector-dbs-rtw-compliance",
+      "original_date": "2026-06-25",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2153,
+      "words_after": 289
+    },
+    {
+      "slug": "employee-data-protection-rtw-checks",
+      "original_date": "2026-05-19",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1948,
+      "words_after": 298
+    },
+    {
+      "slug": "employee-onboarding-compliance-checklist",
+      "original_date": "2026-04-14",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1618,
+      "words_after": 333
+    },
+    {
+      "slug": "ai-generated-documents-employer-risk",
+      "original_date": "2026-06-22",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1964,
+      "words_after": 291
+    },
+    {
+      "slug": "document-fraud-spotting-guide-employers",
+      "original_date": "2026-04-29",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1629,
+      "words_after": 296
+    },
+    {
+      "slug": "recruitment-agency-compliance-risk",
+      "original_date": "2026-04-21",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1698,
+      "words_after": 282
+    },
+    {
+      "slug": "temp-worker-loophole",
+      "original_date": "2026-02-14",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 890,
+      "words_after": 283
+    },
+    {
+      "slug": "supply-chain-worker-verification",
+      "original_date": "2026-05-20",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1743,
+      "words_after": 288
+    },
+    {
+      "slug": "cleaning-contractor-verification",
+      "original_date": "2026-06-01",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1685,
+      "words_after": 284
+    },
+    {
+      "slug": "construction-worker-verification-challenges",
+      "original_date": "2026-05-04",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1656,
+      "words_after": 286
+    },
+    {
+      "slug": "contractor-vs-employee-compliance",
+      "original_date": "2026-06-30",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2178,
+      "words_after": 293
+    },
+    {
+      "slug": "hospitality-right-to-work-compliance",
+      "original_date": "2026-04-30",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1529,
+      "words_after": 288
+    },
+    {
+      "slug": "seasonal-worker-compliance-agriculture",
+      "original_date": "2026-06-15",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1816,
+      "words_after": 291
+    },
+    {
+      "slug": "sme-right-to-work-mistakes",
+      "original_date": "2026-04-27",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1657,
+      "words_after": 293
+    },
+    {
+      "slug": "right-to-work-gap-signs",
+      "original_date": "2026-02-10",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 780,
+      "words_after": 299
+    },
+    {
+      "slug": "audit-trails-compliance",
+      "original_date": "2026-02-16",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1058,
+      "words_after": 282
+    },
+    {
+      "slug": "compliance-officer-role-guide",
+      "original_date": "2026-06-19",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2086,
+      "words_after": 286
+    },
+    {
+      "slug": "compliance-culture-vs-compliance-theatre",
+      "original_date": "2026-06-03",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1796,
+      "words_after": 290
+    },
+    {
+      "slug": "hr-compliance-automation-business-case",
+      "original_date": "2026-05-22",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1997,
+      "words_after": 290
+    },
+    {
+      "slug": "enterprise-compliance-sme-prices",
+      "original_date": "2026-02-25",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 982,
+      "words_after": 288
+    },
+    {
+      "slug": "multi-site-business-compliance-challenge",
+      "original_date": "2026-06-26",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2082,
+      "words_after": 287
+    },
+    {
+      "slug": "payroll-fraud-ghost-employees",
+      "original_date": "2026-06-10",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1682,
+      "words_after": 275
+    },
+    {
+      "slug": "preventing-modern-slavery-supply-chain",
+      "original_date": "2026-06-29",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2054,
+      "words_after": 266
+    },
+    {
+      "slug": "real-cost-bad-hire",
+      "original_date": "2026-02-22",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 987,
+      "words_after": 282
+    },
+    {
+      "slug": "uk-immigration-enforcement-statistics-2025",
+      "original_date": "2026-05-25",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1489,
+      "words_after": 260
+    },
+    {
+      "slug": "uk-visa-types-employer-guide",
+      "original_date": "2026-06-08",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2035,
+      "words_after": 279
+    },
+    {
+      "slug": "walk-in-compliance-audit-prep",
+      "original_date": "2026-02-24",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1028,
+      "words_after": 283
+    },
+    {
+      "slug": "whistleblowing-compliance-failures",
+      "original_date": "2026-07-02",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2154,
+      "words_after": 276
+    },
+    {
+      "slug": "trade-platforms-blind-spot",
+      "original_date": "2026-02-12",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1209,
+      "words_after": 278
+    },
+    {
+      "slug": "doorstep-fraud-problem",
+      "original_date": "2026-02-23",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1034,
+      "words_after": 285
+    },
+    {
+      "slug": "vulnerable-adults-identity-doorstep",
+      "original_date": "2026-06-09",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1859,
+      "words_after": 290
+    },
+    {
+      "slug": "whos-really-at-your-door",
+      "original_date": "2026-01-15",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1032,
+      "words_after": 266
+    },
+    {
+      "slug": "welcome-to-certifyd",
+      "original_date": "2026-02-06",
+      "updated": "2026-10-13",
+      "disposition": "retained-guide",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 222,
+      "words_after": 296
+    },
+    {
+      "slug": "20-years-cybersecurity-almost-got-scammed",
+      "original_date": "2025-12-01",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 826,
+      "words_after": 165
+    },
+    {
+      "slug": "a-million-hacking-attempts-per-second",
+      "original_date": "2026-01-29",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 930,
+      "words_after": 164
+    },
+    {
+      "slug": "ai-deepfakes-business-identity-fraud",
+      "original_date": "2026-04-23",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1541,
+      "words_after": 165
+    },
+    {
+      "slug": "arup-deepfake-attack",
+      "original_date": "2026-02-11",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1189,
+      "words_after": 168
+    },
+    {
+      "slug": "biblical-armageddon-when-ai-attacks-get-intelligent",
+      "original_date": "2026-01-30",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 888,
+      "words_after": 166
+    },
+    {
+      "slug": "biometric-identity-verification-explained",
+      "original_date": "2026-05-21",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1903,
+      "words_after": 167
+    },
+    {
+      "slug": "cyber-fraud-ceo-impersonation",
+      "original_date": "2026-05-27",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1614,
+      "words_after": 156
+    },
+    {
+      "slug": "deepfake-candidates-recruitment",
+      "original_date": "2026-02-17",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1198,
+      "words_after": 161
+    },
+    {
+      "slug": "deepfake-detection-video-calls",
+      "original_date": "2026-05-13",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1646,
+      "words_after": 149
+    },
+    {
+      "slug": "deepfake-playbook",
+      "original_date": "2026-02-26",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1141,
+      "words_after": 159
+    },
+    {
+      "slug": "future-of-identity-verification-uk",
+      "original_date": "2026-07-03",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2182,
+      "words_after": 155
+    },
+    {
+      "slug": "identity-as-infrastructure",
+      "original_date": "2026-02-15",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1295,
+      "words_after": 162
+    },
+    {
+      "slug": "identity-fraud-uk-statistics-2026",
+      "original_date": "2026-06-04",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1777,
+      "words_after": 159
+    },
+    {
+      "slug": "identity-verification-api-integration",
+      "original_date": "2026-07-01",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 2146,
+      "words_after": 160
+    },
+    {
+      "slug": "identity-verification-gap",
+      "original_date": "2026-02-08",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 759,
+      "words_after": 157
+    },
+    {
+      "slug": "kyc-fatigue-living-identity",
+      "original_date": "2026-02-21",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 984,
+      "words_after": 162
+    },
+    {
+      "slug": "meeting-identity-verification-remote",
+      "original_date": "2026-06-17",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1746,
+      "words_after": 151
+    },
+    {
+      "slug": "phishing-attacks-business-verification",
+      "original_date": "2026-06-12",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1654,
+      "words_after": 162
+    },
+    {
+      "slug": "platform-agnostic-verification",
+      "original_date": "2026-02-18",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 701,
+      "words_after": 153
+    },
+    {
+      "slug": "recruitment-fraud-fake-candidates",
+      "original_date": "2026-06-18",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1676,
+      "words_after": 151
+    },
+    {
+      "slug": "remote-hiring-identity-verification",
+      "original_date": "2026-05-07",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1690,
+      "words_after": 155
+    },
+    {
+      "slug": "social-engineering-workplace",
+      "original_date": "2026-05-29",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1683,
+      "words_after": 159
+    },
+    {
+      "slug": "trust-layer-missing",
+      "original_date": "2026-02-27",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1499,
+      "words_after": 151
+    },
+    {
+      "slug": "two-way-verification-explained",
+      "original_date": "2026-02-09",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1203,
+      "words_after": 159
+    },
+    {
+      "slug": "voice-cloning-threat",
+      "original_date": "2026-02-20",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 924,
+      "words_after": 148
+    },
+    {
+      "slug": "zero-trust-identity-business",
+      "original_date": "2026-06-24",
+      "updated": "2026-10-13",
+      "disposition": "historical-noindex",
+      "substantive_corrections": "Replaced unsupported stories, statistics, legal conclusions and product guarantees with sourced topic-specific guidance; retained URL and original publication date.",
+      "words_before": 1733,
+      "words_after": 152
     }
   ],
-  "remaining": "The full audited archive remains in scope; this file records only completed substantive article corrections."
+  "remaining": [],
+  "retained_previously_reviewed": [
+    "agency-worker-compliance-who-checks",
+    "care-sector-rtw-compliance-guide",
+    "right-to-work-check-documents-list",
+    "right-to-work-follow-up-checks"
+  ],
+  "counts": {
+    "retained_substantively_corrected": 58,
+    "historical_noindex_corrected": 26,
+    "previously_reviewed_retained": 4,
+    "total_original_articles": 88
+  },
+  "verification": {
+    "reviewed": "2026-10-13",
+    "source": "Four read-only factual reviews of52 retained guides and one of26 archives; all required legal/citation fixes applied. Six prior critical corrections and four earlier reviewed guides preserved.",
+    "rendering": "Historical articles have self-canonicals, noindex/follow, separate archive hub and sitemap exclusion.",
+    "publication": "Pending publication of this batch."
+  }
 }

@@ -36,6 +36,8 @@ export interface EpisodeMeta {
   slug: string;
   title: string;
   date: string;
+  updated?: string;
+  episodeNumber?: number;
   description: string;
   guest: EpisodeGuest;
   host: string;
@@ -71,6 +73,8 @@ export function getAllEpisodes(): EpisodeMeta[] {
       slug,
       title: data.title || slug,
       date: data.date || "",
+      updated: data.updated || undefined,
+      episodeNumber: Number.isInteger(data.episodeNumber) && data.episodeNumber > 0 ? data.episodeNumber : undefined,
       description: data.description || "",
       guest: data.guest || { name: "", title: "", company: "", bio: "" },
       host: data.host || "Andrew Speer",
@@ -102,6 +106,8 @@ export function getEpisodeBySlug(slug: string) {
       slug,
       title: data.title || slug,
       date: data.date || "",
+      updated: data.updated || undefined,
+      episodeNumber: Number.isInteger(data.episodeNumber) && data.episodeNumber > 0 ? data.episodeNumber : undefined,
       description: data.description || "",
       guest: data.guest || { name: "", title: "", company: "", bio: "" },
       host: data.host || "Andrew Speer",

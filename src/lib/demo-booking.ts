@@ -21,21 +21,28 @@ export function initializeDemoBooking(root:HTMLElement,analytics=true){
  const frame=root.querySelector<HTMLIFrameElement>("iframe"),industry=root.querySelector<HTMLSelectElement>("#demo-industry"),status=root.querySelector<HTMLElement>("[data-booking-status]"),fallback=root.querySelector<HTMLAnchorElement>("[data-booking-fallback]");
  if(!frame||!industry||!status||!fallback)return()=>controller.abort();
  const seen=new Set<string>();
- function update(){
+ let engaged=false,bookingFinished=false;
+ function update(reload=true){
   const topics=Array.from(root.querySelectorAll<HTMLInputElement>('input[name="demo-topic"]:checked')).map(input=>input.value);
   let entry={};if(window.rogersonConsent?.has("analytics"))try{entry=readAttribution(JSON.parse(sessionStorage.getItem("certifyd_demo_entry")||"{}"))}catch{}
   const urls=bookingUrls(industry!.value,topics,{...submissionAttribution("contact-calendar"),...entry});fallback!.href=urls.direct;
-  if(frame!.getAttribute("src")!==urls.embed){status!.textContent="Loading available times…";frame!.src=urls.embed}
+  if(reload&&frame!.getAttribute("src")!==urls.embed){status!.textContent="Loading available times…";frame!.src=urls.embed}
  }
  const query=new URLSearchParams(location.search);
  const sectors:Record<string,string>={care:DEMO_INDUSTRIES[0],recruitment:DEMO_INDUSTRIES[1],nhs:DEMO_INDUSTRIES[2],trades:DEMO_INDUSTRIES[3],workforce:DEMO_INDUSTRIES[4]};
  if(sectors[query.get("sector")??""])industry.value=sectors[query.get("sector")??""];
- update();root.addEventListener("change",update,{signal});
+ update();root.addEventListener("change",()=>update(),{signal});
+ const markFocus=()=>{if(document.activeElement===frame)engaged=true};
+ frame.addEventListener("focus",()=>{engaged=true},{signal});
+ window.addEventListener("blur",markFocus,{signal});document.addEventListener("focusin",markFocus,{signal});
+ const consentUpdate=()=>queueMicrotask(()=>{if(signal.aborted)return;markFocus();update(!engaged&&!bookingFinished)});
+ window.addEventListener("rogerson:consent",consentUpdate,{signal});window.addEventListener("rogerson:consent-ready",consentUpdate,{signal});
  const ready=()=>frame.contentWindow?.postMessage({originator:"CAL",method:"parentKnowsIframeReady"},"https://app.cal.com");
  // A trusted __iframeReady message proves the Cal document is ready.
  // Posting to a loading iframe can still target its initial same-origin document.
  window.addEventListener("message",event=>{
   const message=readCalMessage(event,frame.contentWindow);if(!message)return;
+  if(message.action==="bookingSuccessfulV2")bookingFinished=true;
   if(message.action==="__iframeReady")ready();
   if(message.action==="bookerReady"||message.action==="linkReady")status.textContent="Choose a date and time.";
   if(message.action==="linkFailed")status.textContent="The calendar could not load. Use the Cal.com link below to choose a time.";

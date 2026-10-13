@@ -193,6 +193,8 @@ interface PodcastEpisodeSchemaProps {
   description: string;
   slug: string;
   date: string;
+  updated?: string;
+  episodeNumber?: number;
   duration: string;
   audioUrl: string;
   guestName: string;
@@ -203,6 +205,8 @@ export function PodcastEpisodeSchema({
   description,
   slug,
   date,
+  updated,
+  episodeNumber,
   duration,
   audioUrl,
   guestName,
@@ -214,6 +218,8 @@ export function PodcastEpisodeSchema({
     description,
     url: `${BASE_URL}/podcast/${slug}/`,
     datePublished: date,
+    dateModified: updated || date,
+    ...(episodeNumber ? {episodeNumber} : {}),
     timeRequired: `PT${duration.replace(":", "M")}S`,
     associatedMedia: {
       "@type": "MediaObject",

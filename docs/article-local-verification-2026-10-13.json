@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-13",
+  "scope": "52 additional retained guides,26 historical articles,2 podcast summaries and late-consent attribution",
+  "articles": {
+    "retained_substantively_corrected": 58,
+    "historical_noindex_corrected": 26,
+    "previously_reviewed_retained": 4,
+    "total_original_articles": 88
+  },
+  "architecture": {
+    "exported_pages": 166,
+    "sitemap_urls": 119,
+    "reachable_pages": 149,
+    "orphaned_sitemap_pages": [],
+    "new_routes": 7,
+    "consolidations": 24,
+    "errors": []
+  },
+  "publication_dates_preserved": 88,
+  "build": "passed",
+  "lint": {
+    "errors": 0,
+    "existing_warnings": 15
+  },
+  "suites": [
+    "measurement",
+    "workload",
+    "connected",
+    "attribution"
+  ],
+  "independent_reviews": [
+    "Four factual retained-guide batches and26archive articles; required fixes applied.",
+    "Archive, podcast, RSS and static export implementation review passed.",
+    "Consent, cleanup, reversed listener order and stale-booking protection review passed."
+  ],
+  "podcast": {
+    "audio_changed": false,
+    "original_guids_and_pubdates_preserved": true,
+    "episode_numbers": [
+      1,
+      3
+    ],
+    "duration_seconds": [
+      1478,
+      1714
+    ]
+  },
+  "known_limits": [
+    "No real booking or enquiry submitted; specific approval question pending.",
+    "Cal does not provide a documented state-preserving notes updater. Late consent refreshes an untouched calendar and direct link, while an engaged draft keeps its original notes.",
+    "Explicit industry/topic changes retain the existing calendar reload behavior and choose-before-time instruction.",
+    "Production verification and rendered viewport/performance proof still required."
+  ]
+}

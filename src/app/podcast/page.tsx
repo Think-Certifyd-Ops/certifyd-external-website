@@ -63,7 +63,7 @@ export default function PodcastPage() {
             </div>
           ) : (
             <div className="space-y-6">
-              {episodes.map((episode, index) => (
+              {episodes.map((episode) => (
                 <Link
                   key={episode.slug}
                   href={`/podcast/${episode.slug}/`}
@@ -71,14 +71,14 @@ export default function PodcastPage() {
                 >
                   <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-certifyd-navy text-white flex items-center justify-center font-heading font-bold text-lg">
-                      {episodes.length - index}
+                      {episode.episodeNumber ?? "Audio"}
                     </div>
                     <div className="flex-1 min-w-0">
                       <h2 className="font-heading text-lg font-semibold text-text-on-light group-hover:text-certifyd-blue transition-colors">
                         {episode.title}
                       </h2>
                       <p className="text-sm text-text-on-light-muted mt-1">
-                        with {episode.guest.name} — {episode.guest.title},{" "}
+                        with {episode.guest.name}, {episode.guest.title},{" "}
                         {episode.guest.company}
                       </p>
                       <p className="text-text-on-light-muted text-sm mt-3 leading-relaxed">

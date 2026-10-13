@@ -68,5 +68,15 @@ for route in ['/products/id/demo/','/products/portal/demo/']:
  p=pages[route]
  if not any('noindex' in r for r in p.robots) or p.canonical!=['https://certifyd.io'+route]:errors.append(f'Demo indexing incorrect: {route}')
 if len(paths)!=len(set(paths)):errors.append('Duplicate sitemap URLs')
+archive_sources=[p for p in (ROOT/'content/blog').glob('*.mdx') if '\narchived: true\n' in p.read_text()]
+for source in archive_sources:
+ route='/blog/'+source.stem+'/'
+ p=pages.get(route)
+ if not p or p.canonical!=['https://certifyd.io'+route] or not any('noindex' in r and 'follow' in r for r in p.robots):errors.append(f'Article archive indexing incorrect: {route}')
+ if route in paths:errors.append(f'Article archive in sitemap: {route}')
+ if route not in reachable:errors.append(f'Article archive unreachable: {route}')
+if archive_sources:
+ hub=pages.get('/blog/archive/')
+ if not hub or not any('noindex' in r for r in hub.robots) or '/blog/archive/' in paths:errors.append('Article archive hub indexing incorrect')
 result={'exported_pages':len(pages),'sitemap_urls':len(paths),'reachable_pages':len(reachable),'orphaned_sitemap_pages':orphaned,'new_routes':len(routes),'consolidations':len(retired),'errors':sorted(set(errors))}
 (ROOT/'docs/architecture-validation.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2));raise SystemExit(bool(errors))

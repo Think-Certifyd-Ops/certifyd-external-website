@@ -237,7 +237,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const podcastEpisodes: MetadataRoute.Sitemap = getAllEpisodes().map((ep) => ({
     url: `${BASE_URL}/podcast/${ep.slug}`,
-    lastModified: new Date(ep.date),
+    lastModified: new Date(ep.updated || ep.date),
     changeFrequency: "yearly",
     priority: 0.6,
   }));
