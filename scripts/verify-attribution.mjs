@@ -71,7 +71,7 @@ assert.notEqual(frame.src,initialSrc);assert.match(new URL(frame.src).searchPara
 const consentedSrc=frame.src;window.dispatchEvent(new Event('rogerson:consent-ready'));await Promise.resolve();assert.equal(frame.src,consentedSrc,'Repeated readiness must not reload an unchanged calendar');
 document.activeElement=frame;window.dispatchEvent(new Event('blur'));
 window.rogersonConsent.has=()=>false;window.dispatchEvent(new CustomEvent('rogerson:consent',{detail:{analytics:false}}));await Promise.resolve();
-assert.equal(frame.src,consentedSrc,'Withdrawal must preserve an engaged booking draft');assert.doesNotMatch(new URL(fallback.href).searchParams.get('notes'),/seo-fixture/);assert.equal(storage.size,0);
+assert.equal(frame.src,consentedSrc,'The calendar adapter must not replace an engaged iframe; the shared consent manager may reload the page on withdrawal');assert.doesNotMatch(new URL(fallback.href).searchParams.get('notes'),/seo-fixture/);assert.equal(storage.size,0);
 calendarCleanup();landingCleanup();document.activeElement=null;
 
 // A trusted pending booking locks the calendar, while its GA4 event remains excluded.
@@ -85,14 +85,20 @@ console.log('Late consent preserves the initial route, updates an untouched cale
 // Raw rendered links use app navigation; modified clicks, downloads and the proxied app stay native.
 globalThis.Element=class extends EventTarget{closest(){return this.anchor}};
 const navigationRoot=new Element();const pushed=[];
+const focused=[];navigationRoot.getElementById=id=>id==='page-content'?{focus:options=>focused.push(options)}:null;
 globalThis.location={href:'https://certifyd.io/blog/guide/',origin:'https://certifyd.io',pathname:'/blog/guide/'};
 navigationRoot.anchor={href:'https://certifyd.io/contact/?sector=care#enquiry',target:'',rel:'',hasAttribute:()=>false};
 const navCleanup=initializeInternalNavigation(navigationRoot,url=>pushed.push(url));
 function navClick(extra={}){const e=new Event('click',{cancelable:true});Object.assign(e,{button:0,metaKey:false,ctrlKey:false,shiftKey:false,altKey:false,...extra});navigationRoot.dispatchEvent(e);return e}
 assert.equal(navClick().defaultPrevented,true);assert.deepEqual(pushed,['/contact/?sector=care#enquiry']);
 for(const flags of [{ctrlKey:true},{metaKey:true},{shiftKey:true},{altKey:true},{button:1}])assert.equal(navClick(flags).defaultPrevented,false);
-for(const href of ['https://certifyd.io/sponsors/','https://certifyd.io/sponsors/sponsor/fixture/','https://certifyd.io/blog/guide/#section','https://certifyd.io/podcast/feed.xml','https://certifyd.io/.netlify/functions/demo-enquiry','https://cal.com/andrew-speer/certifyd-discovery','https://certifyd.io//example%2Ecom/path']){navigationRoot.anchor.href=href;assert.equal(navClick().defaultPrevented,false)}
+for(const href of ['https://certifyd.io/sponsors/','https://certifyd.io/sponsors/sponsor/fixture/','https://certifyd.io/blog/guide/','https://certifyd.io/podcast/feed.xml','https://certifyd.io/.netlify/functions/demo-enquiry','https://cal.com/andrew-speer/certifyd-discovery','https://certifyd.io//example%2Ecom/path']){navigationRoot.anchor.href=href;assert.equal(navClick().defaultPrevented,false)}
+navigationRoot.anchor.href='https://certifyd.io/blog/guide/#page-content';assert.equal(navClick().defaultPrevented,true,'Same-page fragments must use App Router history');
+assert.deepEqual(focused,[{preventScroll:true}]);assert.equal(navClick({metaKey:true}).defaultPrevented,false);assert.equal(focused.length,1);
+navigationRoot.anchor.href='https://certifyd.io/blog/guide/#missing';assert.equal(navClick().defaultPrevented,true);
+navigationRoot.anchor.href='https://certifyd.io/blog/guide/?section=records#details';assert.equal(navClick().defaultPrevented,false,'Query-only changes retain their existing reload and page initialization');
+assert.deepEqual(pushed.slice(1),['/blog/guide/#page-content','/blog/guide/#missing']);
 navigationRoot.anchor.href='https://certifyd.io/contact/';navigationRoot.anchor.hasAttribute=()=>true;assert.equal(navClick().defaultPrevented,false);
 navigationRoot.anchor.hasAttribute=()=>false;navigationRoot.anchor.target='_blank';assert.equal(navClick().defaultPrevented,false);
-navigationRoot.anchor.target='';const handled=new Event('click',{cancelable:true});Object.assign(handled,{button:0});handled.preventDefault();navigationRoot.dispatchEvent(handled);assert.equal(pushed.length,1,'Existing Next Link handling must not double-push');
-navCleanup();navClick();assert.equal(pushed.length,1);console.log('Internal navigation preserves query/fragment and native modified, download, same-page, external and sponsor-app behavior; cleanup and existing Link handling pass.');
+navigationRoot.anchor.target='';const handled=new Event('click',{cancelable:true});Object.assign(handled,{button:0});handled.preventDefault();navigationRoot.dispatchEvent(handled);assert.equal(pushed.length,3,'Existing Next Link handling must not double-push');
+navCleanup();navClick();assert.equal(pushed.length,3);console.log('Internal navigation manages same-page fragment history and skip focus, preserving native query changes, modified clicks, downloads, identical links, external and sponsor-app behavior; cleanup and existing Link handling pass.');
