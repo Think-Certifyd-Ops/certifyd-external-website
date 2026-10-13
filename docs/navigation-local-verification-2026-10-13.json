@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-13",
+  "trigger": "Live guide-to-header-Contact navigation performed a full document load; late analytics permission therefore lost the unpersisted guide and campaign candidate.",
+  "change": "Ordinary same-origin marketing page links use the App Router and retain the shared layout. Native same-page, modified/new-tab, file/download, external, API and proxied sponsor navigation remains intact.",
+  "verification": {
+    "build": "passed",
+    "lint_errors": 0,
+    "existing_lint_warnings": 15,
+    "attribution_navigation_suite": "passed",
+    "connected_cleanup_suite": "passed",
+    "measurement_suite": "passed",
+    "read_only_review": "Passed after excluding protocol-relative push paths and adding the defensive fixture."
+  },
+  "limits": [
+    "Unconsented memory cannot survive an intentional reload, new tab or other full document navigation.",
+    "Production guide-to-demo and engaged-calendar checks are still pending for this patch."
+  ]
+}

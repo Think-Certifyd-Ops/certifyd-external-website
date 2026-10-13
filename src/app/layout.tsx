@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
 import {ConsentWidget} from "@/components/measurement/ConsentWidget";
 import {ConsentAttribution} from "@/components/measurement/ConsentAttribution";
+import {InternalNavigation} from "@/components/measurement/InternalNavigation";
 import {PageBreadcrumbs} from "@/components/seo/PageBreadcrumbs";
 
 const ibmPlexMono = localFont({src:"../../public/images/connected/ibm-plex-mono-700.woff2",variable:"--font-ibm-plex-mono",weight:"700",display:"swap"});
@@ -85,6 +86,7 @@ export default function RootLayout({
         <MarketingHeader />
         <DemoClickTracking/>
         <ConsentAttribution/>
+        <InternalNavigation/>
         <main id="page-content" tabIndex={-1}><PageBreadcrumbs/>{children}</main>
         <Footer />
       </body>

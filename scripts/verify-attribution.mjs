@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {readAttribution,initializeAttribution,submissionAttribution} from '../src/lib/attribution.ts';
 import {bookingUrls,initializeDemoBooking} from '../src/lib/demo-booking.ts';
+import {initializeInternalNavigation} from '../src/lib/internal-navigation.ts';
 import demoEnquiry from '../netlify/functions/demo-enquiry.mts';
 import leadMagnet from '../netlify/functions/lead-magnet.mts';
 assert.deepEqual(readAttribution({_landing:'/blog/guide/?private=1',_referrer:'WWW.Google.COM',utm_source:'organic',unknown:'private',email:'fixture@example.test',utm_content:'x'.repeat(201)}),{utm_source:'organic',_landing:'/blog/guide/',_referrer:'www.google.com'});
@@ -80,3 +81,18 @@ storage.set('certifyd_utm',JSON.stringify({_landing:'/blog/guide/',utm_source:'n
 assert.equal(frame.src,pendingSrc);assert.match(new URL(fallback.href).searchParams.get('notes'),/new-fixture/);
 pendingCleanup();const finalHref=fallback.href;storage.clear();window.dispatchEvent(new Event('rogerson:consent-ready'));await Promise.resolve();assert.equal(fallback.href,finalHref,'Cleanup removes the consent refresh listener');
 console.log('Late consent preserves the initial route, updates an untouched calendar, preserves focused/pending forms, refreshes fallback and cleans up listeners.');
+
+// Raw rendered links use app navigation; modified clicks, downloads and the proxied app stay native.
+globalThis.Element=class extends EventTarget{closest(){return this.anchor}};
+const navigationRoot=new Element();const pushed=[];
+globalThis.location={href:'https://certifyd.io/blog/guide/',origin:'https://certifyd.io',pathname:'/blog/guide/'};
+navigationRoot.anchor={href:'https://certifyd.io/contact/?sector=care#enquiry',target:'',rel:'',hasAttribute:()=>false};
+const navCleanup=initializeInternalNavigation(navigationRoot,url=>pushed.push(url));
+function navClick(extra={}){const e=new Event('click',{cancelable:true});Object.assign(e,{button:0,metaKey:false,ctrlKey:false,shiftKey:false,altKey:false,...extra});navigationRoot.dispatchEvent(e);return e}
+assert.equal(navClick().defaultPrevented,true);assert.deepEqual(pushed,['/contact/?sector=care#enquiry']);
+for(const flags of [{ctrlKey:true},{metaKey:true},{shiftKey:true},{altKey:true},{button:1}])assert.equal(navClick(flags).defaultPrevented,false);
+for(const href of ['https://certifyd.io/sponsors/','https://certifyd.io/sponsors/sponsor/fixture/','https://certifyd.io/blog/guide/#section','https://certifyd.io/podcast/feed.xml','https://certifyd.io/.netlify/functions/demo-enquiry','https://cal.com/andrew-speer/certifyd-discovery','https://certifyd.io//example%2Ecom/path']){navigationRoot.anchor.href=href;assert.equal(navClick().defaultPrevented,false)}
+navigationRoot.anchor.href='https://certifyd.io/contact/';navigationRoot.anchor.hasAttribute=()=>true;assert.equal(navClick().defaultPrevented,false);
+navigationRoot.anchor.hasAttribute=()=>false;navigationRoot.anchor.target='_blank';assert.equal(navClick().defaultPrevented,false);
+navigationRoot.anchor.target='';const handled=new Event('click',{cancelable:true});Object.assign(handled,{button:0});handled.preventDefault();navigationRoot.dispatchEvent(handled);assert.equal(pushed.length,1,'Existing Next Link handling must not double-push');
+navCleanup();navClick();assert.equal(pushed.length,1);console.log('Internal navigation preserves query/fragment and native modified, download, same-page, external and sponsor-app behavior; cleanup and existing Link handling pass.');
