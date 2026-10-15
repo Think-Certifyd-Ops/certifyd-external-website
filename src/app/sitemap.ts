@@ -246,5 +246,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const retired = new Set(["/platform/","/tools/deepfake-assessment/","/products/verify/","/products/sentinel/","/products/agent-watch/","/products/callcheck/","/products/codewords/","/products/codewords/family/","/products/codewords/business/","/products/codewords/demo/","/security/codewords/","/support/codewords/","/products/", "/products/portal/", "/products/shiftcheck/", "/for/care-homes/", "/for/domiciliary-care/", "/for/recruitment-agencies/", "/for/staffing-agencies/"]);
   const added = ["/resources/worker-record-review-checklist/", "/resources/recruitment-placement-evidence-checklist/", "/platform/records/", "/outcomes/reduce-compliance-risk/", "/outcomes/import-compliance-records/", "/outcomes/reduce-compliance-admin/", "/outcomes/verified-worker-check-in/", "/outcomes/portable-worker-credentials/"];
   const all = [...entries, ...added.map(path => ({url: BASE_URL + path, changeFrequency: "monthly" as const, priority: 0.8}))];
-  return all.map(entry => ({...entry, url: entry.url.replace(/\/?$/, "/")})).filter(entry => !retired.has(new URL(entry.url).pathname));
+  const changedOutcomePaths = new Set(["/outcomes/import-compliance-records/", "/outcomes/verified-worker-check-in/", "/outcomes/portable-worker-credentials/"]);
+  return all.map(entry => {
+    const url = entry.url.replace(/\/?$/, "/");
+    return {...entry, url, ...(changedOutcomePaths.has(new URL(url).pathname) ? {lastModified: new Date("2026-10-15")} : {})};
+  }).filter(entry => !retired.has(new URL(entry.url).pathname));
 }

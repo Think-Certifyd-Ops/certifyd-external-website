@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://certifyd.io/outcomes/import-compliance-records/",
+    "file": "src/app/_connected-html/import-compliance-records.json",
+    "question": "What should we prepare before importing worker records?",
+    "answer": "Start with your worker spreadsheet, the roles it covers and a list of where the supporting documents are held. Agree which requirements belong to each role, then review a small group of records before a wider rollout. Importing worker details is separate from reviewing their evidence. Your team still decides what needs review and who will carry it out.",
+    "secondary_question": "What should we discuss in an import demo?",
+    "secondary_answer": "Bring your workforce size, current worker list, role requirements and document-storage questions. We can discuss a practical starting point for your team. Ask us about current pricing and implementation scope; the migration plan depends on your source material.",
+    "source": "Existing released outcome workflows and approved worker-record resource; no new capability claims",
+    "preserved": "Hero, examples, existing workflow, demos, consent and controls"
+  },
+  {
+    "url": "https://certifyd.io/outcomes/verified-worker-check-in/",
+    "file": "src/app/_connected-html/verified-worker-check-in.json",
+    "question": "What does a worker attendance record show?",
+    "answer": "A recorded visit connects a worker to a site and its check-in and check-out times. Your team can review the latest recorded activity and return to the visit history. A missing check-out needs investigation. The record describes attendance events; it does not establish uninterrupted presence or replace the checks your organisation conducts before someone works.",
+    "secondary_question": "How should we review a missing check-out?",
+    "secondary_answer": "Check the recorded events and follow up with the person responsible for the site. An open visit is a record to investigate, not proof that the worker is still present. Agree how your team handles incomplete records before using attendance history in its wider processes.",
+    "source": "Existing released outcome workflows and approved worker-record resource; no new capability claims",
+    "preserved": "Hero, examples, existing workflow, demos, consent and controls"
+  },
+  {
+    "url": "https://certifyd.io/outcomes/portable-worker-credentials/",
+    "file": "src/app/_connected-html/portable-worker-credentials.json",
+    "question": "Who holds the credentials and who reviews them?",
+    "answer": "Workers keep their personal qualifications and certificates in the Certifyd app and share the evidence needed for work. Your organisation maintains its own requirements, inductions and review records. Your team reviews the shared evidence against the role before recording a decision. Keeping a document in the app does not establish that it meets every employer requirement.",
+    "secondary_question": "How do shared documents connect to company records?",
+    "secondary_answer": "Start with the evidence required for the person’s role. Review the documents shared with your organisation alongside the records your company maintains, including inductions and review activity. Keep the person’s own credentials and the company’s review decision distinct, with access governed by what is shared and the user’s role.",
+    "source": "Existing released outcome workflows and approved worker-record resource; no new capability claims",
+    "preserved": "Hero, examples, existing workflow, demos, consent and controls"
+  }
+]
