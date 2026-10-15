@@ -6,10 +6,11 @@ export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${BASE_URL}/#organization`,
     name: COMPANY.name,
     url: BASE_URL,
     logo: `${BASE_URL}/logos/certifyd-icon-blue.svg`,
-    description: COMPANY.tagline,
+    description: "Workforce compliance software for managing role requirements, worker credentials, company records, expiry dates and site attendance.",
     email: COMPANY.email,
     address: {
       "@type": "PostalAddress",
@@ -39,8 +40,10 @@ export function WebSiteSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${BASE_URL}/#website`,
     name: COMPANY.name,
     url: BASE_URL,
+    publisher: { "@id": `${BASE_URL}/#organization` },
     description:
       "Workforce compliance software for managing role requirements, worker credentials, company records, expiry dates and site attendance.",
   };
