@@ -5,9 +5,10 @@ import "./globals.css";
 import "@/styles/marketing.css";
 import "@/styles/connected.css";
 import "@/styles/story.css";
-import { MarketingHeader } from "@/components/marketing/MarketingHeader";
+import "@/styles/site.css";
+import { SiteHeader } from "@/components/site/SiteHeader";
 import {DemoClickTracking} from "@/components/measurement/DemoClickTracking";
-import { Footer } from "@/components/layout/Footer";
+import { SiteFooter } from "@/components/site/SiteFooter";
 import { OrganizationSchema, WebSiteSchema } from "@/components/seo/JsonLd";
 import {ConsentWidget} from "@/components/measurement/ConsentWidget";
 import {ConsentAttribution} from "@/components/measurement/ConsentAttribution";
@@ -21,11 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://certifyd.io"),
   title: {
     default:
-      "Certifyd | Workplace credentials and compliance",
+      "Certifyd | Worker compliance, without the chasing",
     template: "%s",
   },
   description:
-    "Manage workforce credentials, company records, expiry dates and site attendance with Certifyd.",
+    "Certifyd collects, checks and tracks everything a worker needs before they start, in one view your whole team shares.",
   alternates: {
     canonical: "/",
     types: {
@@ -33,9 +34,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Certifyd | Workplace credentials and compliance",
+    title: "Certifyd | Worker compliance, without the chasing",
     description:
-      "Manage workforce credentials, company records, expiry dates and site attendance with Certifyd.",
+      "Certifyd collects, checks and tracks everything a worker needs before they start, in one view your whole team shares.",
     url: "https://certifyd.io",
     siteName: "Certifyd",
     locale: "en_GB",
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Certifyd | Workplace credentials and compliance",
+    title: "Certifyd | Worker compliance, without the chasing",
     description:
-      "Manage workforce credentials, company records, expiry dates and site attendance with Certifyd.",
+      "Certifyd collects, checks and tracks everything a worker needs before they start, in one view your whole team shares.",
   },
   icons: {
     icon: "/logos/certifyd-icon-blue.svg",
@@ -83,12 +84,12 @@ export default function RootLayout({
         <OrganizationSchema />
         <WebSiteSchema />
         <a className="site-skip-link" href="#page-content">Skip to main content</a>
-        <MarketingHeader />
+        <SiteHeader />
         <DemoClickTracking/>
         <ConsentAttribution/>
         <InternalNavigation/>
         <main id="page-content" tabIndex={-1}><PageBreadcrumbs/>{children}</main>
-        <Footer />
+        <SiteFooter />
       </body>
     </html>
   );

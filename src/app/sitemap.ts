@@ -2,12 +2,24 @@ import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { getAllEpisodes } from "@/lib/podcast";
 import { getAllForPages } from "@/lib/for-pages";
+import { SEGMENTS } from "@/data/site/segments";
+import { ALL_ROLES, isReviewed } from "@/lib/regulations";
+import { GUIDES } from "@/data/regulations/guides";
 
 export const dynamic = "force-static";
 
 const BASE_URL = "https://certifyd.io";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // November 2026 rebuild. Regulations pages appear only once a person has reviewed them.
+  const reviewedRoles = ALL_ROLES.filter(isReviewed);
+  const rebuild: MetadataRoute.Sitemap = [
+    ...["how-it-works", "solutions", "workers", "pricing"].map((p) => ({ url: `${BASE_URL}/${p}/`, changeFrequency: "monthly" as const, priority: 0.9 })),
+    ...SEGMENTS.map((s) => ({ url: `${BASE_URL}/solutions/${s.slug}/`, changeFrequency: "monthly" as const, priority: 0.8 })),
+    ...(reviewedRoles.length ? [{ url: `${BASE_URL}/regulations/`, changeFrequency: "weekly" as const, priority: 0.8 }] : []),
+    ...reviewedRoles.map((r) => ({ url: `${BASE_URL}/regulations/${r.slug}/`, changeFrequency: "monthly" as const, priority: 0.7 })),
+    ...GUIDES.filter((g) => g.status === "reviewed").map((g) => ({ url: `${BASE_URL}/regulations/${g.kind === "check" ? "checks" : "changes"}/${g.slug}/`, changeFrequency: "monthly" as const, priority: 0.7 })),
+  ];
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
@@ -242,7 +254,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const entries = [...staticPages, ...forPages, ...blogPosts, ...podcastIndex, ...podcastEpisodes];
+  const entries = [...rebuild, ...staticPages, ...forPages, ...blogPosts, ...podcastIndex, ...podcastEpisodes];
   const retired = new Set(["/platform/","/tools/deepfake-assessment/","/products/verify/","/products/sentinel/","/products/agent-watch/","/products/callcheck/","/products/codewords/","/products/codewords/family/","/products/codewords/business/","/products/codewords/demo/","/security/codewords/","/support/codewords/","/products/", "/products/portal/", "/products/shiftcheck/", "/for/care-homes/", "/for/domiciliary-care/", "/for/recruitment-agencies/", "/for/staffing-agencies/"]);
   const added = ["/resources/worker-record-review-checklist/", "/resources/recruitment-placement-evidence-checklist/", "/platform/records/", "/outcomes/reduce-compliance-risk/", "/outcomes/import-compliance-records/", "/outcomes/reduce-compliance-admin/", "/outcomes/verified-worker-check-in/", "/outcomes/portable-worker-credentials/"];
   const all = [...entries, ...added.map(path => ({url: BASE_URL + path, changeFrequency: "monthly" as const, priority: 0.8}))];
