@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Guide } from "@/data/regulations/guides";
 import { CloseBand } from "./CloseBand";
 import { BreadcrumbSchema } from "@/components/seo/JsonLd";
+import { REGULATIONS_UPDATED, showDraftBanner } from "@/lib/regulations";
 
 export function GuidePage({ g }: { g: Guide }) {
   const base = g.kind === "check" ? "checks" : "changes";
@@ -12,7 +13,7 @@ export function GuidePage({ g }: { g: Guide }) {
       <section aria-labelledby="g-title" className="section on-paper" style={{ paddingTop: 40, paddingBottom: 48 }}>
         <div className="wrap stack gap-20 max-920">
           <nav aria-label="Breadcrumb"><ol className="crumbs"><li><Link href="/regulations/">Regulations</Link></li><li aria-hidden="true">/</li><li>{crumb}</li><li aria-hidden="true">/</li><li aria-current="page">{g.title}</li></ol></nav>
-          {g.status !== "reviewed" && <p className="banner-draft" role="note"><strong>Draft for review.</strong> Written from the official sources below on 6 November 2026, but not yet checked by a person. It isn&apos;t indexed or listed on the live site.</p>}
+          {showDraftBanner(g.status === "reviewed") && <p className="banner-draft" role="note"><strong>Draft for review.</strong> Written from the official sources below on 6 November 2026, but not yet checked by a person. It isn&apos;t indexed or listed on the live site.</p>}
           {g.date && <p className="eyebrow">{g.date}</p>}
           <h1 id="g-title" className="h1">{g.h1}</h1>
           <p className="lead">{g.lead}</p>
@@ -28,7 +29,7 @@ export function GuidePage({ g }: { g: Guide }) {
             </div>
           ))}
           <div className="stack gap-8"><h2 className="h4">Official sources</h2><ul className="plain stack gap-6">{g.sources.map((s) => <li key={s.href}><a href={s.href}>{s.title}</a></li>)}</ul></div>
-          <p className="disclaimer">Guidance, not legal advice. Your organisation stays responsible for its own decisions.</p>
+          <p className="disclaimer">{g.status === "reviewed" ? "" : `Updated ${REGULATIONS_UPDATED}. `}Guidance, not legal advice. Your organisation stays responsible for its own decisions.</p>
         </div>
       </section>
       <CloseBand title="Keep every check current, for every worker." />

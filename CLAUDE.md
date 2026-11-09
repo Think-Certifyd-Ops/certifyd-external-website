@@ -78,6 +78,7 @@ All form submissions route through **Netlify Functions** (`.mts`, v2 format) —
 | **Industry pages** (full form) | `InlineForm` | `demo-enquiry.mts` | Yes (`for-page-enquiry`) | Yes (company + person + note) | Yes (contact) | Yes |
 | **Lead magnet** (name + email + company) | `LeadMagnetForm` | `lead-magnet.mts` | Yes (`lead-magnet`) | Yes (company + person + note) | Yes (contact + drip event) | Yes |
 | **Careers** (with CV upload) | Inline in `careers/page.tsx` | None | Yes (`careers`) | No | No | No |
+| **Footer newsletter** (email only) | `FooterNewsletter` | RogerSon `newsletter-subscribe` (external) | No | No | No (RogerSon list, double opt-in) | No |
 
 ### Routing rules
 
@@ -126,5 +127,8 @@ They are intentionally outside `netlify/functions/` so Netlify does not deploy o
 - New pages use the design system in `src/styles/site.css`, scoped under the `.cd` class so older pages keep their styles. Wrap new pages in `<div className="cd page">`.
 - Shared parts live in `src/components/site/` (`SiteHeader`, `SiteFooter`, `Buttons`, `Illustrations`, `Film`, `Faqs`, `CloseBand`). The root layout uses `SiteHeader` and `SiteFooter`.
 - Headlines are one colour. The main call to action is Book a demo (`DEMO_HREF`). Message Certifyd stays behind `NEXT_PUBLIC_MESSAGE_CERTIFYD=on`.
-- Regulations library: `src/data/regulations/roles.json` (150 roles) and `guides.ts`. Pages with status other than `reviewed` build only when `SHOW_REGULATION_DRAFTS` is true (previews), and are always noindex. Never publish an unreviewed requirement pack.
+- Regulations library: `src/data/regulations/roles.json` (150 roles) and `guides.ts`. Live and indexed since 9 November 2026 (Andrew's decision, so the pages can rank), controlled by `REGULATIONS_LIVE` in `src/lib/site.ts` (set `REGULATIONS_LIVE=off` in Netlify to pull unreviewed pages). `status` records whether a person has reviewed a page: unreviewed pages show "Updated 6 November 2026", reviewed ones show the reviewer. Roles with a `flag` in roles.json still need a person to check that point.
+- Log in goes to `https://app.certifyd.io/` (`LOGIN_HREF`). The pricing page shows no plan prices; we quote on the demo call.
+- Films: until an MP4 is in `public/videos/` and `FILMS[...].available` is true, the homepage film band is hidden and other film spots show still illustrations (`src/components/site/Stills.tsx`).
+- Footer newsletter: `FooterNewsletter` posts to the RogerSon `newsletter-subscribe` endpoint (same fields as RogerSon's widget, which it replaces).
 - Working notes for the rebuild are in `docs/website-rebuild/`.

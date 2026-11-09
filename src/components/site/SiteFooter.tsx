@@ -3,6 +3,7 @@ import { DEMO_HREF, SHOW_REGULATION_DRAFTS } from "@/lib/site";
 import { GUIDES } from "@/data/regulations/guides";
 import { SEGMENT_MENU } from "@/data/site/segment-menu";
 import { ContactButton, DemoButton } from "./Buttons";
+import { FooterNewsletter } from "./FooterNewsletter";
 import { Arrow } from "./Icons";
 
 export function SiteFooter() {
@@ -11,6 +12,7 @@ export function SiteFooter() {
     <>
       <footer className="cd site-footer">
         <div className="wrap">
+          <FooterNewsletter />
           <div className="foot-cols">
             <div className="foot-brand">
               <img src="/images/site/logo-white.svg" alt="Certifyd" width={140} height={26} style={{ height: 26, width: "auto", alignSelf: "flex-start" }} />

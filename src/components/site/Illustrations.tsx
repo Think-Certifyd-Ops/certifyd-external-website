@@ -3,7 +3,7 @@
    The square behind the connector is gone (Michael, 6 Nov). */
 import { QrCode } from "./QrCode";
 
-export type BoardRow = { name: string; sub: string; status: string; kind: "ok" | "pend" | "warn" | "bad" };
+export { Board, ChatStill, type BoardRow } from "./Stills";
 
 export function Connector({ left, top }: { left: number; top: number }) {
   return (
@@ -67,21 +67,6 @@ export function ChaseScene() {
         <p className="note-line" style={{ margin: "0 0 8px" }}>Paper file · branch office</p>
         <div className="row"><span style={{ flex: 1 }}>Reference 2</span><span className="status bad">Missing</span></div>
         <div className="row"><span style={{ flex: 1 }}>Right to work</span><span className="status pend">Which date?</span></div>
-      </div>
-    </div>
-  );
-}
-
-/** A white status card on torn blue paper, used on segment pages. */
-export function Board({ eyebrow, title, rows, tiles }: { eyebrow: string; title: string; rows: BoardRow[]; tiles?: { n: number; l: string; kind: "ok" | "pend" | "warn" | "bad" }[] }) {
-  const icon = { ok: "✓", pend: "◔", warn: "◷", bad: "✕" } as const;
-  return (
-    <div className="backdrop">
-      <div className="torn" />
-      <div className="card pad board">
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10 }}><div><p className="eyebrow" style={{ fontSize: 11 }}>{eyebrow}</p><strong>{title}</strong></div><span className="tag tag-demo">DEMO</span></div>
-        {tiles && <div style={{ display: "grid", gridTemplateColumns: `repeat(${tiles.length}, minmax(0, 1fr))`, gap: 8 }}>{tiles.map((t) => <div key={t.l} className={`tile tile-${t.kind}`}><span className="n">{t.n}</span><span className="l">{t.l}</span></div>)}</div>}
-        <div>{rows.map((r) => <div key={r.name + r.sub} className="row"><div style={{ flex: 1 }}><strong>{r.name}</strong><br /><span style={{ color: "#4F5A6B", fontSize: 13 }}>{r.sub}</span></div><span className={`status ${r.kind}`}>{icon[r.kind]} {r.status}</span></div>)}</div>
       </div>
     </div>
   );

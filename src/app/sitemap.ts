@@ -3,7 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 import { getAllEpisodes } from "@/lib/podcast";
 import { getAllForPages } from "@/lib/for-pages";
 import { SEGMENTS } from "@/data/site/segments";
-import { ALL_ROLES, isReviewed } from "@/lib/regulations";
+import { PUBLISHED_ROLES, guideIndexed, isIndexed } from "@/lib/regulations";
 import { GUIDES } from "@/data/regulations/guides";
 
 export const dynamic = "force-static";
@@ -11,14 +11,14 @@ export const dynamic = "force-static";
 const BASE_URL = "https://certifyd.io";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // November 2026 rebuild. Regulations pages appear only once a person has reviewed them.
-  const reviewedRoles = ALL_ROLES.filter(isReviewed);
+  // November 2026 rebuild. Regulations pages are listed when indexed: reviewed, or while the library is live.
+  const indexedRoles = PUBLISHED_ROLES.filter(isIndexed);
   const rebuild: MetadataRoute.Sitemap = [
     ...["how-it-works", "solutions", "workers", "pricing"].map((p) => ({ url: `${BASE_URL}/${p}/`, changeFrequency: "monthly" as const, priority: 0.9 })),
     ...SEGMENTS.map((s) => ({ url: `${BASE_URL}/solutions/${s.slug}/`, changeFrequency: "monthly" as const, priority: 0.8 })),
-    ...(reviewedRoles.length ? [{ url: `${BASE_URL}/regulations/`, changeFrequency: "weekly" as const, priority: 0.8 }] : []),
-    ...reviewedRoles.map((r) => ({ url: `${BASE_URL}/regulations/${r.slug}/`, changeFrequency: "monthly" as const, priority: 0.7 })),
-    ...GUIDES.filter((g) => g.status === "reviewed").map((g) => ({ url: `${BASE_URL}/regulations/${g.kind === "check" ? "checks" : "changes"}/${g.slug}/`, changeFrequency: "monthly" as const, priority: 0.7 })),
+    ...(indexedRoles.length ? [{ url: `${BASE_URL}/regulations/`, changeFrequency: "weekly" as const, priority: 0.8 }] : []),
+    ...indexedRoles.map((r) => ({ url: `${BASE_URL}/regulations/${r.slug}/`, changeFrequency: "monthly" as const, priority: 0.7 })),
+    ...GUIDES.filter(guideIndexed).map((g) => ({ url: `${BASE_URL}/regulations/${g.kind === "check" ? "checks" : "changes"}/${g.slug}/`, changeFrequency: "monthly" as const, priority: 0.7 })),
   ];
   const staticPages: MetadataRoute.Sitemap = [
     {

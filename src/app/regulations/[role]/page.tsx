@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { pageMetadata } from "@/lib/story/metadata";
-import { BASELINE, PUBLISHED_ROLES, SEGMENT_FOR_SECTOR, TYPE_CLASS, getRole, isReviewed, lawItems, relatedRoles, roleItems } from "@/lib/regulations";
+import { BASELINE, PUBLISHED_ROLES, REGULATIONS_UPDATED, SEGMENT_FOR_SECTOR, TYPE_CLASS, getRole, isIndexed, isReviewed, lawItems, relatedRoles, roleItems, showDraftBanner } from "@/lib/regulations";
 import { GUIDES } from "@/data/regulations/guides";
 import { SHOW_REGULATION_DRAFTS } from "@/lib/site";
 import { DemoButton } from "@/components/site/Buttons";
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!r) return {};
   const name = lower(r.role);
   const meta = pageMetadata(`What checks does ${article(name)} ${name} need? | Certifyd`, `The checks ${article(name)} ${name} needs before starting work in the UK, from right to work to ${r.regulator === "None" || r.regulator.startsWith("None") ? "role training" : r.regulator + " registration"}, with the official source for each.`, `/regulations/${r.slug}/`);
-  return isReviewed(r) ? meta : { ...meta, robots: { index: false, follow: true } };
+  return isIndexed(r) ? meta : { ...meta, robots: { index: false, follow: true } };
 }
 
 export default async function RolePage({ params }: Props) {
@@ -47,11 +47,11 @@ export default async function RolePage({ params }: Props) {
       <section aria-labelledby="role-title" className="section on-paper" style={{ paddingTop: 40, paddingBottom: 48 }}>
         <div className="wrap stack gap-20">
           <nav aria-label="Breadcrumb"><ol className="crumbs"><li><Link href="/regulations/">Regulations</Link></li><li aria-hidden="true">/</li><li><Link href={`/regulations/#${r.sector_key}`}>{r.sector}</Link></li><li aria-hidden="true">/</li><li aria-current="page">{r.role}</li></ol></nav>
-          {!isReviewed(r) && <p className="banner-draft" role="note"><strong>Draft for review.</strong> This guide hasn&apos;t been checked by a person yet, so don&apos;t rely on it. It isn&apos;t indexed or listed on the live site.{r.flag ? ` Reviewer note: ${r.flag}.` : ""}</p>}
+          {showDraftBanner(isReviewed(r)) && <p className="banner-draft" role="note"><strong>Draft for review.</strong> This guide hasn&apos;t been checked by a person yet, so don&apos;t rely on it. It isn&apos;t indexed or listed on the live site.{r.flag ? ` Reviewer note: ${r.flag}.` : ""}</p>}
           <h1 id="role-title" className="h1">What checks does {article(name)} {name} need?</h1>
           <p className="lead">{total} checks before {article(name)} {name}&apos;s first shift in the UK, with the legal basis for each.</p>
           <div className="note-line" style={{ display: "flex", flexWrap: "wrap", gap: "8px 20px" }}>
-            <span>{isReviewed(r) ? `Reviewed ${r.reviewed_on} by ${r.reviewer}` : "Not yet reviewed"}</span><span aria-hidden="true">·</span><span>Regulator: {r.regulator}</span>{r.aliases && <><span aria-hidden="true">·</span><span>Also called: {r.aliases}</span></>}
+            <span>{isReviewed(r) ? `Reviewed ${r.reviewed_on} by ${r.reviewer}` : `Updated ${REGULATIONS_UPDATED}`}</span><span aria-hidden="true">·</span><span>Regulator: {r.regulator}</span>{r.aliases && <><span aria-hidden="true">·</span><span>Also called: {r.aliases}</span></>}
           </div>
         </div>
       </section>

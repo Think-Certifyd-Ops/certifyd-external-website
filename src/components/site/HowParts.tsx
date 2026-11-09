@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
+import { ANY_FILM } from "@/lib/site";
 import { FilmSlot } from "./Film";
+import { Board, ChatStill, type BoardRow } from "./Stills";
 
 const STEPS = [
   { n: "01", name: "You ask once", body: "Pick the role and invite your worker. We send one message with a secure link, by WhatsApp, text or email.", clip: "0:17" },
@@ -9,6 +11,31 @@ const STEPS = [
   { n: "04", name: "Reception checks the person", body: "Reception scans the pass with a phone camera, checks the face against the profile and records it.", clip: "0:49" },
   { n: "05", name: "You're ready for audit", body: "Every request, upload, check and decision is on the record. Export one worker or your whole workforce in one click.", clip: "1:00" },
 ];
+
+/** Pictures for each step until the film is in. */
+const STILL_ROWS: Record<string, { eyebrow: string; title: string; rows: BoardRow[] }> = {
+  "01": { eyebrow: "New worker", title: "Dan Price · Forklift driver", rows: [
+    { name: "Role template", sub: "Forklift driver, Leeds distribution centre", status: "8 checks", kind: "ok" },
+    { name: "Invite sent", sub: "WhatsApp, Mon 09:01", status: "Sent", kind: "ok" },
+    { name: "Worker reply", sub: "Waiting for Dan", status: "Waiting", kind: "pend" },
+  ] },
+  "03": { eyebrow: "Needs a person", title: "2 of 24 workers this week", rows: [
+    { name: "Amira Khan", sub: "Security · SIA licence expires in 12 days", status: "Due soon", kind: "warn" },
+    { name: "Tom Hughes", sub: "Care · Reference 2 not returned", status: "Chasing", kind: "pend" },
+    { name: "22 other workers", sub: "Every check cleared", status: "Cleared", kind: "ok" },
+  ] },
+  "04": { eyebrow: "At reception", title: "Riverside site · Mon 07:52", rows: [
+    { name: "Pass scanned", sub: "Dan Price · Forklift driver", status: "Valid", kind: "ok" },
+    { name: "Face check", sub: "Matches the profile photo", status: "Matched", kind: "ok" },
+    { name: "Check-in", sub: "Recorded by reception", status: "On record", kind: "ok" },
+  ] },
+  "05": { eyebrow: "Evidence pack", title: "Jamie Taylor · Registered nurse", rows: [
+    { name: "Right to work", sub: "Checked 3 Nov 2026, face match passed", status: "Cleared", kind: "ok" },
+    { name: "NMC register", sub: "Active, no conditions", status: "Cleared", kind: "ok" },
+    { name: "DBS", sub: "Update Service, no change", status: "Cleared", kind: "ok" },
+    { name: "Training", sub: "Next expiry March 2027, reminder set", status: "Cleared", kind: "ok" },
+  ] },
+};
 
 export function StepPicker() {
   const [i, setI] = useState(0);
@@ -19,13 +46,13 @@ export function StepPicker() {
         {STEPS.map((x, k) => (
           <li key={x.n}>
             <button type="button" className="step-btn" aria-pressed={k === i} onClick={() => setI(k)}>
-              <span className="step-head"><span className="num">{x.n}</span><strong>{x.name}</strong><span className="note-line">{x.clip}</span></span>
+              <span className="step-head"><span className="num">{x.n}</span><strong>{x.name}</strong>{ANY_FILM && <span className="note-line">{x.clip}</span>}</span>
               {k === i && <span style={{ fontSize: 16, lineHeight: 1.5, color: "#3C4657" }}>{x.body}</span>}
             </button>
           </li>
         ))}
       </ol>
-      <div style={{ flex: "1.4 1 520px", minWidth: 0 }}><FilmSlot film="care" chapter={{ t: s.clip, name: s.name }} label="chapter" /></div>
+      <div style={{ flex: "1.4 1 520px", minWidth: 0 }}><FilmSlot film="care" chapter={{ t: s.clip, name: s.name }} label="chapter" still={STILL_ROWS[s.n] ? <Board {...STILL_ROWS[s.n]} /> : <ChatStill />} /></div>
     </div>
   );
 }

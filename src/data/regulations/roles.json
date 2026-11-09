@@ -83,7 +83,7 @@
   "wave": "1",
   "batch": "2",
   "regulator": "NMC",
-  "checks": "As registered nurse, but enhanced DBS with children's barred list (and adults' where the ward needs it)",
+  "checks": "NMC register and revalidation date; enhanced DBS with children's barred list (and adults' where the ward needs it); 3 years of references; occupational health and immunisations; CSTF training; Oliver McGowan training",
   "law": "Nursing and Midwifery Order 2001; Safeguarding Vulnerable Groups Act 2006",
   "types": [
    "Law",
@@ -1633,7 +1633,7 @@
   "wave": "1",
   "batch": "1",
   "regulator": "HSE",
-  "checks": "As forklift driver, for reach trucks",
+  "checks": "Basic training, job training and familiarisation on reach trucks; written authorisation; refresher plan; fitness to operate",
   "law": "PUWER 1998 (reg 9); HSE ACoP L117",
   "types": [
    "Law",
@@ -1961,7 +1961,7 @@
   "wave": "1",
   "batch": "1",
   "regulator": "DVSA and DVLA",
-  "checks": "As HGV class 1, for category C",
+  "checks": "Licence category C; Driver CPC card; digital tachograph card; Group 2 medical; drivers' hours briefing",
   "law": "As HGV class 1",
   "types": [
    "Law",
@@ -3310,7 +3310,7 @@
   "wave": "3",
   "batch": "2",
   "regulator": "HSE",
-  "checks": "As plant operator, for telehandlers",
+  "checks": "Training and authorisation for telehandlers; CPCS or NPORS telehandler card (client requirement)",
   "law": "PUWER 1998; LOLER 1998",
   "types": [
    "Law",

@@ -1,6 +1,6 @@
 /* Check guides (/regulations/checks/{slug}/) and rule-change guides (/regulations/changes/{slug}/).
    Written 6 November 2026 from the GOV.UK, CQC and Fair Work Agency pages listed under each guide.
-   status "draft" = not yet reviewed by a person: built on previews only, always noindex. */
+   status "draft" = not yet reviewed by a person. Live and indexed since 9 November 2026 (REGULATIONS_LIVE in src/lib/site.ts). */
 
 export type Guide = {
   slug: string; kind: "check" | "change"; title: string; h1: string; lead: string; date?: string; status: "draft" | "reviewed";

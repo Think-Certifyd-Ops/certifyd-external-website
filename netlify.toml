@@ -154,38 +154,26 @@
   force = true
 
 [[redirects]]
-  from = "/solutions"
-  to = "/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/solutions/"
-  to = "/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/solutions/person"
-  to = "/"
+  to = "/solutions/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/person/"
-  to = "/"
+  to = "/solutions/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/business"
-  to = "/"
+  to = "/solutions/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/solutions/business/"
-  to = "/"
+  to = "/solutions/"
   status = 301
   force = true
 

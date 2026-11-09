@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/story/metadata";
-import { ALL_ROLES, PUBLISHED_ROLES, SECTOR_NAMES, SECTOR_ORDER, isReviewed } from "@/lib/regulations";
+import { ALL_ROLES, PUBLISHED_ROLES, SECTOR_NAMES, SECTOR_ORDER, isIndexed, isReviewed, showDraftBanner } from "@/lib/regulations";
 import { GUIDES } from "@/data/regulations/guides";
-import { SHOW_REGULATION_DRAFTS } from "@/lib/site";
+import { REGULATIONS_LIVE, SHOW_REGULATION_DRAFTS } from "@/lib/site";
 import { DemoButton } from "@/components/site/Buttons";
 import { RoleSearch } from "@/components/site/RoleSearch";
 
-const anyReviewed = ALL_ROLES.some(isReviewed);
+const anyIndexed = ALL_ROLES.some(isIndexed);
 const base = pageMetadata(
   "What checks does this role need? UK regulations library | Certifyd",
   "The checks every role needs before starting work in the UK, from right to work and DBS to professional registers and licences, with the official source for each.",
   "/regulations/",
 );
-// The hub stays out of search until the first reviewed role is published.
-export const metadata: Metadata = anyReviewed ? base : { ...base, robots: { index: false, follow: true } };
+// The hub stays out of search until at least one role page is indexed.
+export const metadata: Metadata = anyIndexed ? base : { ...base, robots: { index: false, follow: true } };
 
 export default function Regulations() {
   const guides = GUIDES.filter((g) => g.status === "reviewed" || SHOW_REGULATION_DRAFTS);
@@ -29,7 +29,7 @@ export default function Regulations() {
           <h1 id="lib-title" className="h1">What checks does this role need?</h1>
           <p className="lead">The checks every role needs before starting work in the UK, from right to work and DBS to professional registers and licences, with the official source for each.</p>
           {PUBLISHED_ROLES.length > 0 && <RoleSearch roles={PUBLISHED_ROLES.map((r) => ({ slug: r.slug, role: r.role, aliases: r.aliases, sector: r.sector }))} />}
-          {SHOW_REGULATION_DRAFTS && !anyReviewed && <p className="banner-draft" role="note"><strong>Preview.</strong> All {ALL_ROLES.length} role guides are drafts waiting for review. The live site shows only reviewed guides.</p>}
+          {SHOW_REGULATION_DRAFTS && !REGULATIONS_LIVE && !anyIndexed && <p className="banner-draft" role="note"><strong>Preview.</strong> All {ALL_ROLES.length} role guides are drafts waiting for review. The live site shows only reviewed guides.</p>}
         </div>
       </section>
 
@@ -41,7 +41,7 @@ export default function Regulations() {
               <h3 className="h3">{s.name} <span className="note-line">· {s.all.length} roles</span></h3>
               <div className="grid-4" style={{ gap: 12 }}>
                 {s.roles.length > 0
-                  ? s.roles.map((r) => <Link key={r.slug} href={`/regulations/${r.slug}/`} className="card-flat stack gap-6" style={{ padding: 16, textDecoration: "none", color: "#0F1A2B" }}><strong style={{ fontSize: 16 }}>{r.role}</strong><span className="note-line">{r.regulator}{isReviewed(r) ? "" : " · draft"}</span></Link>)
+                  ? s.roles.map((r) => <Link key={r.slug} href={`/regulations/${r.slug}/`} className="card-flat stack gap-6" style={{ padding: 16, textDecoration: "none", color: "#0F1A2B" }}><strong style={{ fontSize: 16 }}>{r.role}</strong><span className="note-line">{r.regulator}{showDraftBanner(isReviewed(r)) ? " · draft" : ""}</span></Link>)
                   : s.all.slice(0, 8).map((r) => <div key={r.slug} className="card-flat stack gap-6" style={{ padding: 16 }}><strong style={{ fontSize: 16 }}>{r.role}</strong><span className="note-line">In review</span></div>)}
               </div>
             </div>

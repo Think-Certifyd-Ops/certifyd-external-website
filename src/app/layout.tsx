@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import localFont from "next/font/local";
 import "./globals.css";
 import "@/styles/marketing.css";
@@ -67,14 +66,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:500});" }}
         />
         <ConsentWidget/>
-        <Script
-          id="rogerson-newsletter"
-          src="https://rogerson-signups.netlify.app/newsletter-widget.js"
-          strategy="afterInteractive"
-          data-brand="Certifyd"
-          data-domain="certifyd.io"
-          data-slug="certifyd"
-        />
+        {/* The RogerSon newsletter widget is replaced by FooterNewsletter in the site footer (same endpoint, Certifyd styling). */}
         <script type="text/plain" data-consent="analytics" data-consent-src="https://www.googletagmanager.com/gtag/js?id=G-FNMZS9PQ1S" />
         <script type="text/plain" data-consent="analytics" dangerouslySetInnerHTML={{__html:"window.gtag('js',new Date());window.gtag('config','G-FNMZS9PQ1S');"}} />
       </head>

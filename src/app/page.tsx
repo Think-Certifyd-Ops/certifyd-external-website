@@ -8,7 +8,7 @@ import { RolePicker } from "@/components/site/RolePicker";
 import { TourTabs } from "@/components/site/Tabs";
 import { SegmentIcons } from "@/components/site/Icons";
 import { SEGMENT_MENU } from "@/data/site/segment-menu";
-import { CONTACT_HREF } from "@/lib/site";
+import { ANY_FILM, CONTACT_HREF } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "Worker compliance, without the chasing | Certifyd",
@@ -80,10 +80,12 @@ export default function Home() {
         <div style={{ flex: "1.2 1 560px", padding: "56px 40px" }}><ChaseScene /></div>
       </section>
 
-      {/* 4 Film on the blue band (kept as designed) */}
-      <section aria-labelledby="film-title" className="section on-blue">
-        <div className="wrap"><FilmBand /></div>
-      </section>
+      {/* 4 Film on the blue band (kept as designed). Hidden until a film is in /public/videos. */}
+      {ANY_FILM && (
+        <section aria-labelledby="film-title" className="section on-blue">
+          <div className="wrap"><FilmBand /></div>
+        </section>
+      )}
 
       {/* 5 Ask once: templated roles */}
       <section aria-labelledby="ask-title" className="section on-white">

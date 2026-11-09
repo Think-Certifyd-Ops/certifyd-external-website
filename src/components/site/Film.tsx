@@ -1,6 +1,7 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import { FILMS, type FilmKey } from "@/lib/site";
+import { ChatStill } from "./Stills";
 
 export type Chapter = { t: string; name: string };
 
@@ -10,31 +11,21 @@ export const CHAPTERS: Record<FilmKey, Chapter[]> = {
 };
 const secs = (t: string) => { const [m, s] = t.split(":").map(Number); return m * 60 + s; };
 
-/** One film slot. Plays the MP4 when it's in /public/videos, otherwise shows a poster with the chapter. */
-export function FilmSlot({ film, chapter, label }: { film: FilmKey; chapter?: Chapter; label?: string }) {
+/** One film slot. Plays the MP4 when it's in /public/videos, otherwise shows a still illustration. */
+export function FilmSlot({ film, chapter, still }: { film: FilmKey; chapter?: Chapter; label?: string; still?: ReactNode }) {
   const f = FILMS[film];
   const ref = useRef<HTMLVideoElement>(null);
-  if (f.available) {
-    return (
-      <div className="film">
-        <video ref={ref} src={f.file} autoPlay muted loop playsInline controls preload="metadata" onLoadedMetadata={() => { if (chapter && ref.current) ref.current.currentTime = secs(chapter.t); }}>
-          <track kind="captions" src={f.captions} srcLang="en" label="English" default />
-        </video>
-      </div>
-    );
-  }
+  if (!f.available) return <>{still ?? <ChatStill />}</>;
   return (
-    <div className="film" role="img" aria-label={`Certifyd film, ${f.label}${chapter ? `: ${chapter.name}` : ""}`}>
-      <span className="film-label">FILM · {f.label} · {f.length}{label ? ` · ${label}` : ""}</span>
-      <div className="film-poster">
-        {chapter && <span className="note-line" style={{ color: "#DCE7FF" }}>{chapter.t}</span>}
-        <span className="film-chapter">{chapter ? chapter.name : "Worker compliance, without the chasing."}</span>
-      </div>
+    <div className="film">
+      <video ref={ref} src={f.file} autoPlay muted loop playsInline controls preload="metadata" onLoadedMetadata={() => { if (chapter && ref.current) ref.current.currentTime = secs(chapter.t); }}>
+        <track kind="captions" src={f.captions} srcLang="en" label="English" default />
+      </video>
     </div>
   );
 }
 
-/** Homepage film band: choose a film, then a chapter. */
+/** Homepage film band: choose a film, then a chapter. The homepage hides it until a film is available. */
 export function FilmBand() {
   const [film, setFilm] = useState<FilmKey>("care");
   const [ch, setCh] = useState(1);

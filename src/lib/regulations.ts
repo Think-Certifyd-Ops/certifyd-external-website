@@ -1,5 +1,6 @@
 import roles from "@/data/regulations/roles.json";
-import { SHOW_REGULATION_DRAFTS } from "@/lib/site";
+import { REGULATIONS_LIVE, SHOW_REGULATION_DRAFTS } from "@/lib/site";
+import type { Guide } from "@/data/regulations/guides";
 
 export type Role = {
   n: number; role: string; aliases: string; slug: string; url: string; sector: string; sector_key: string; segment: string; wave: string; batch: string;
@@ -10,7 +11,15 @@ export type Role = {
 export const ALL_ROLES = roles as Role[];
 export const isReviewed = (r: Role) => r.status === "reviewed";
 
-/** Roles that get a page in this build: reviewed ones always, drafts only on previews (ENG-125). */
+/** When unreviewed pages were last written from the official sources. */
+export const REGULATIONS_UPDATED = "6 November 2026";
+/** Indexed by search engines: reviewed pages always, every page while the library is live. */
+export const isIndexed = (r: Role) => isReviewed(r) || REGULATIONS_LIVE;
+export const guideIndexed = (g: Guide) => g.status === "reviewed" || REGULATIONS_LIVE;
+/** The amber "draft" banner only shows on previews when the library is not live. */
+export const showDraftBanner = (reviewed: boolean) => !reviewed && !REGULATIONS_LIVE;
+
+/** Roles that get a page in this build: reviewed ones always, the rest while the library is live or on previews (ENG-125). */
 export const PUBLISHED_ROLES = ALL_ROLES.filter((r) => isReviewed(r) || SHOW_REGULATION_DRAFTS);
 export const getRole = (slug: string) => PUBLISHED_ROLES.find((r) => r.slug === slug);
 
@@ -29,8 +38,26 @@ export const BASELINE = [
 
 export const TYPE_CLASS: Record<string, string> = { Law: "tag-law", "Regulator guidance": "tag-reg", "Industry scheme": "tag-industry", "Agency choice": "tag-agency" };
 
-export function roleItems(r: Role): string[] {
-  return r.checks.split(";").map((s) => s.trim()).filter(Boolean).map((s) => s.charAt(0).toUpperCase() + s.slice(1));
+const plainName = (s: string) => s.toLowerCase().replace(/\s*\(.*?\)\s*/g, " ").trim();
+/** Finds the role a shorthand like "As registered nurse" or "As labourer" points to. */
+function findRole(ref: string): Role | undefined {
+  const q = ref.toLowerCase().trim();
+  return ALL_ROLES.find((x) => plainName(x.role) === q)
+    ?? ALL_ROLES.find((x) => plainName(x.role).startsWith(q + " "))
+    ?? ALL_ROLES.find((x) => plainName(x.role).endsWith(" " + q));
+}
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+/** The role's own checks. "As <role>" items are replaced by that role's checklist, so every page is complete. */
+export function roleItems(r: Role, depth = 0): string[] {
+  const out: string[] = [];
+  for (const part of r.checks.split(";").map((s) => s.trim()).filter(Boolean)) {
+    const m = /^as (.+)$/i.exec(part);
+    const base = m && depth < 3 ? findRole(m[1]) : undefined;
+    if (base && base.slug !== r.slug) out.push(...roleItems(base, depth + 1));
+    else out.push(cap(part));
+  }
+  return [...new Set(out)];
 }
 export function lawItems(r: Role): string[] {
   return r.law.split(";").map((s) => s.trim()).filter(Boolean);
