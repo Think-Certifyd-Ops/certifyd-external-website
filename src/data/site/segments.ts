@@ -22,14 +22,14 @@ const RTW_RULE = "From 1 October 2026, checks also cover worker's contracts, ind
 type Source = { title: string; href: string };
 export type Segment = {
   slug: string; sector: string; crumb: string; eyebrow?: string; title: string; lead: string; metaTitle: string; metaDescription: string;
-  hero: { kind: "film"; film: FilmKey; chapter: { t: string; name: string } } | { kind: "board"; eyebrow: string; title: string; rows: BoardRow[]; tiles?: { n: number; l: string; kind: "ok" | "pend" | "warn" | "bad" }[] };
+  hero: { kind: "film"; film: FilmKey } | { kind: "board"; eyebrow: string; title: string; rows: BoardRow[]; tiles?: { n: number; l: string; kind: "ok" | "pend" | "warn" | "bad" }[] };
   week: { title: string; today: string[]; with: string[] };
   steps?: { eyebrow: string; title: string; items: { who: string; title: string; body: string }[] };
   standards?: { eyebrow: string; title: string; body: string; items: string[]; numbered: boolean; link?: string; source?: Source };
   roles?: { title: string; cards: { name: string; note?: string; items: string[] }[]; footer: string };
   rules?: { title: string; cards: { label: string; title: string; body: string; source?: Source }[] };
   feature?: { eyebrow: string; title: string; body: string; board: { eyebrow: string; title: string; rows: BoardRow[]; tiles?: { n: number; l: string; kind: "ok" | "pend" | "warn" | "bad" }[] } };
-  invite?: { eyebrow: string; title: string; body: string; chapter: { t: string; name: string } };
+  invite?: { eyebrow: string; title: string; body: string; film: FilmKey };
   pricingNote?: { title: string; body: string };
   start: { title: string; body: string; outcomes: string[] };
   faqTitle: string; faqs: { q: string; a: string }[];
@@ -41,7 +41,7 @@ export const SEGMENTS: Segment[] = [
     slug: "healthcare-staffing", sector: "health", crumb: "Healthcare staffing agencies", eyebrow: "For healthcare staffing agencies",
     title: "Your consultants place. Certifyd chases.", lead: "We collect, check and track every worker's credentials. Your compliance team reviews the exceptions. Your consultants get back to filling shifts.",
     metaTitle: "Compliance for healthcare staffing agencies | Certifyd", metaDescription: "Certifyd collects, checks and tracks every nurse and carer's credentials against the NHS employment check standards, so your consultants can fill shifts.",
-    hero: { kind: "film", film: "care", chapter: { t: "0:42", name: "Exceptions" } },
+    hero: { kind: "film", film: "askOnce" },
     week: { title: "Here's your week without the chasing.", today: ["Documents sit in consultants' personal WhatsApp chats", "A spreadsheet tracks who has sent what", "Expiry dates surface when a shift is already booked", "A framework audit or client request takes days to pull together"], with: ["One Certifyd conversation per worker, on the record", "Live status for every checklist item", "Reminders 30, 14 and 7 days before anything expires", "An evidence pack for one worker or your whole workforce, in one click"] },
     steps: { eyebrow: "How a new starter clears", title: "How a new starter gets cleared.", items: [
       { who: "01 · Your manager", title: "Registers the agency", body: "Adds the team, switches on role templates and adds client sites." },
@@ -67,7 +67,7 @@ export const SEGMENTS: Segment[] = [
     slug: "industrial-logistics-staffing", sector: "ind", crumb: "Industrial and logistics staffing", eyebrow: "For industrial and logistics staffing",
     title: "Get pickers, drivers and forklift operators cleared before the first shift.", lead: "We collect right to work, ID, licences and certificates from every temp, chase anything missing, and show your client sites who is cleared for tomorrow.",
     metaTitle: "Compliance for industrial and logistics staffing | Certifyd", metaDescription: "Right to work, licences and certificates collected from every temp and checked before the first shift, with a live cleared list for each client site.",
-    hero: { kind: "film", film: "warehouse", chapter: { t: "0:23", name: "Before the first shift" } },
+    hero: { kind: "film", film: "workers" },
     week: { title: "Here's your week without the chasing.", today: ["Licence photos arrive blurred on WhatsApp at 6am", "Night-shift starters turn up without a share code", "A client asks who's cleared for tomorrow and nobody knows", "Expired certificates turn up when a client audits you"], with: ["One conversation per worker, with every document on the record", "Share codes checked before anyone is booked", "A live list of who's cleared for each site and shift", "Reminders before any licence or certificate runs out"] },
     roles: { title: "The checks for every role you place.", cards: [
       { name: "Warehouse operative", items: ["Right to work", "Photo ID and face match", "Two references", "Site induction"] },
@@ -106,7 +106,7 @@ export const SEGMENTS: Segment[] = [
       { name: "Housekeeper", items: ["Right to work, DBS at the right level, COSHH training, references"] },
       { name: "Activities coordinator", items: ["Right to work, enhanced DBS, references, training"] },
     ], footer: "Have your own checklist? Send it over and we'll set Certifyd up to match." },
-    invite: { eyebrow: "Your agencies", title: "Ask your agencies to join, and see their workers for free.", body: "Send each agency an invite from Certifyd. Once they're on, you see every worker they send before the shift starts, and we help each agency get set up.", chapter: { t: "0:49", name: "At reception" } },
+    invite: { eyebrow: "Your agencies", title: "Ask your agencies to join, and see their workers for free.", body: "Send each agency an invite from Certifyd. Once they're on, you see every worker they send before the shift starts, and we help each agency get set up.", film: "audit" },
     pricingNote: { title: "Free to see agency workers. A monthly plan for your own staff.", body: "Your agencies' workers cost you nothing to view. Onboarding your own team is on the same plans as everyone else." },
     start: { title: "Start with tonight's rota.", body: "Add your home and the agencies you use. We set up your roles with you and help each agency join.", outcomes: ["Every agency worker's status before their shift", "Gaps in your own staff files, found early", "Reception check-ins on the record", "An evidence pack ready for your next inspection"] },
     faqTitle: "What care managers ask us before they start.",
@@ -122,7 +122,7 @@ export const SEGMENTS: Segment[] = [
     slug: "security-firms", sector: "sec", crumb: "Security firms", eyebrow: "For security firms",
     title: "Get every officer screened and licensed before they're on site.", lead: "We chase five years of history, check SIA licences and keep each officer's screening on the record, so your vetting team only handles the gaps.",
     metaTitle: "Screening and SIA licence checks for security firms | Certifyd", metaDescription: "Certifyd chases five years of history, checks SIA licences and keeps every officer's screening on the record, so your vetting team handles only the gaps.",
-    hero: { kind: "film", film: "warehouse", chapter: { t: "0:45", name: "At the gate" } },
+    hero: { kind: "film", film: "door" },
     week: { title: "Here's screening without the chasing.", today: ["Five years of employers chased by email and phone", "Gaps in history found after an officer has started", "SIA licences lapse between shifts", "A client contract audit means days of pulling files"], with: ["Employers and referees chased on a schedule, every reply on the record", "Gaps flagged and explained before you clear anyone", "SIA licence status checked, with renewal reminders", "A screening file for any officer, in one click"] },
     roles: { title: "The checks for every role you deploy.", cards: [
       { name: "Security officer", note: "Right to work and ID, plus", items: ["SIA security guarding licence", "Five-year employment history", "Basic DBS", "Credit check"] },

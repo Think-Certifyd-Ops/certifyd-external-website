@@ -25,11 +25,18 @@ export const REGULATIONS_LIVE = process.env.REGULATIONS_LIVE !== "off";
 export const SHOW_REGULATION_DRAFTS =
   REGULATIONS_LIVE || process.env.REGULATIONS_DRAFTS === "on" || (process.env.REGULATIONS_DRAFTS !== "off" && (process.env.CONTEXT ?? "local") !== "production");
 
-/** Film files. Drop the MP4 and captions into /public/videos/ and set available to true.
- * Until then the film band on the homepage is hidden and other film spots show an illustration. */
+/**
+ * Films in /public/videos (review cuts added 9 Nov 2026). Each has a poster frame (.jpg) and captions burned
+ * into the picture, so there is no separate captions file. To swap in a final cut, replace the MP4 and keep
+ * the name. Set available to false to hide a film: the homepage band disappears and other spots show a still.
+ */
 export const FILMS = {
-  care: { label: "Health and care", file: "/videos/certifyd-website-hero-v2.mp4", captions: "/videos/certifyd-website-hero-v2.vtt", length: "1:25", available: false },
-  warehouse: { label: "Warehouse and logistics", file: "/videos/certifyd-website-hero-v1.mp4", captions: "/videos/certifyd-website-hero-v1.vtt", length: "1:20", available: false },
+  overview: { label: "The 30-second film", file: "/videos/certifyd-film-30s.mp4", poster: "/videos/certifyd-film-30s.jpg", length: "0:33", available: true },
+  problem: { label: "The problem", file: "/videos/certifyd-clip-01-the-problem.mp4", poster: "/videos/certifyd-clip-01-the-problem.jpg", length: "0:27", available: true },
+  askOnce: { label: "Ask once", file: "/videos/certifyd-clip-02-ask-once.mp4", poster: "/videos/certifyd-clip-02-ask-once.jpg", length: "0:26", available: true },
+  workers: { label: "The worker's side", file: "/videos/certifyd-clip-03-the-workers-side.mp4", poster: "/videos/certifyd-clip-03-the-workers-side.jpg", length: "0:25", available: true },
+  door: { label: "At the door", file: "/videos/certifyd-clip-04-at-the-door.mp4", poster: "/videos/certifyd-clip-04-at-the-door.jpg", length: "0:22", available: true },
+  audit: { label: "Audit-ready", file: "/videos/certifyd-clip-05-audit-ready.mp4", poster: "/videos/certifyd-clip-05-audit-ready.jpg", length: "0:22", available: true },
 } as const;
 export type FilmKey = keyof typeof FILMS;
 export const ANY_FILM = Object.values(FILMS).some((f) => f.available);

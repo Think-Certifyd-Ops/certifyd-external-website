@@ -3,44 +3,59 @@ import { useRef, useState, type ReactNode } from "react";
 import { FILMS, type FilmKey } from "@/lib/site";
 import { ChatStill } from "./Stills";
 
-export type Chapter = { t: string; name: string };
-
-export const CHAPTERS: Record<FilmKey, Chapter[]> = {
-  care: [{ t: "0:00", name: "Scattered records" }, { t: "0:17", name: "One record" }, { t: "0:27", name: "Workers respond" }, { t: "0:42", name: "Exceptions" }, { t: "0:49", name: "At reception" }, { t: "1:00", name: "Audit-ready" }],
-  warehouse: [{ t: "0:00", name: "The pile-up" }, { t: "0:15", name: "One record" }, { t: "0:23", name: "Before the first shift" }, { t: "0:38", name: "No more chasing" }, { t: "0:45", name: "At the gate" }, { t: "0:55", name: "Audit-ready" }],
-};
-const secs = (t: string) => { const [m, s] = t.split(":").map(Number); return m * 60 + s; };
-
-/** One film slot. Plays the MP4 when it's in /public/videos, otherwise shows a still illustration. */
-export function FilmSlot({ film, chapter, still }: { film: FilmKey; chapter?: Chapter; label?: string; still?: ReactNode }) {
+/**
+ * One film. Shows the poster with a play button; the film plays with sound when someone presses play.
+ * The films are voiced and have captions burned in, so nothing plays on its own.
+ * If the film isn't available, shows a still illustration instead.
+ */
+export function FilmSlot({ film, still, autoPlay = false }: { film: FilmKey; still?: ReactNode; autoPlay?: boolean }) {
   const f = FILMS[film];
   const ref = useRef<HTMLVideoElement>(null);
+  const [started, setStarted] = useState(autoPlay);
   if (!f.available) return <>{still ?? <ChatStill />}</>;
+  const play = () => { setStarted(true); void ref.current?.play(); };
   return (
-    <div className="film">
-      <video ref={ref} src={f.file} autoPlay muted loop playsInline controls preload="metadata" onLoadedMetadata={() => { if (chapter && ref.current) ref.current.currentTime = secs(chapter.t); }}>
-        <track kind="captions" src={f.captions} srcLang="en" label="English" default />
-      </video>
+    <div className="film film-live">
+      <video
+        ref={ref}
+        src={f.file}
+        poster={f.poster}
+        preload="none"
+        playsInline
+        controls={started}
+        autoPlay={autoPlay}
+        onPlay={() => setStarted(true)}
+        aria-label={`Certifyd film: ${f.label}. Captions are shown in the picture.`}
+      />
+      {!started && (
+        <button type="button" className="film-play" onClick={play} aria-label={`Play the film: ${f.label}, ${f.length}`}>
+          <span className="film-play-icon" aria-hidden="true">▶</span>
+          <span>Play · {f.length}</span>
+        </button>
+      )}
     </div>
   );
 }
 
-/** Homepage film band: choose a film, then a chapter. The homepage hides it until a film is available. */
+const BAND: FilmKey[] = ["overview", "problem", "askOnce", "workers", "door", "audit"];
+
+/** Homepage film band: the 30-second film first, then each part on its own. */
 export function FilmBand() {
-  const [film, setFilm] = useState<FilmKey>("care");
-  const [ch, setCh] = useState(1);
-  const chapters = CHAPTERS[film];
+  const [film, setFilm] = useState<FilmKey>("overview");
+  const [chosen, setChosen] = useState(false);
   return (
     <div className="stack gap-28">
-      <div className="head-row">
-        <div className="stack gap-12 max-780"><p className="eyebrow">The film</p><h2 id="film-title" className="h2">Watch a new starter go from first message to first shift.</h2></div>
-        <div role="tablist" aria-label="Choose a film" className="btn-row" style={{ gap: 8 }}>
-          {(Object.keys(FILMS) as FilmKey[]).map((k) => <button key={k} type="button" role="tab" aria-selected={k === film} className="pill" onClick={() => { setFilm(k); setCh(1); }}>{FILMS[k].label}</button>)}
-        </div>
+      <div className="stack gap-12 max-780">
+        <p className="eyebrow">The film</p>
+        <h2 id="film-title" className="h2">See how Certifyd takes a new starter from first message to first shift.</h2>
       </div>
-      <FilmSlot film={film} chapter={chapters[ch]} />
-      <div role="group" aria-label="Film chapters" className="btn-row" style={{ gap: 10 }}>
-        {chapters.map((c, i) => <button key={c.t} type="button" className="pill" aria-pressed={i === ch} onClick={() => setCh(i)}><span className="mono" style={{ marginRight: 8 }}>{c.t}</span>{c.name}</button>)}
+      <FilmSlot key={film} film={film} autoPlay={chosen} />
+      <div role="group" aria-label="Choose a part of the film" className="btn-row" style={{ gap: 10 }}>
+        {BAND.filter((k) => FILMS[k].available).map((k, i) => (
+          <button key={k} type="button" className="pill" aria-pressed={k === film} onClick={() => { setFilm(k); setChosen(true); }}>
+            <span className="mono" style={{ marginRight: 8 }}>{i === 0 ? FILMS[k].length : `0${i}`}</span>{FILMS[k].label}
+          </button>
+        ))}
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ export default function Workers() {
             <p className="lead">Your agency or employer asked us to collect the documents you need before you start. It takes a few minutes, it&apos;s free, and you can do it from your phone.</p>
             <div className="btn-row"><a href="#invited" className="btn btn-primary">Open my invite</a><a href="#independent" className="btn btn-secondary">Not with an agency yet?</a></div>
           </div>
-          <div className="visual"><FilmSlot film="care" chapter={{ t: "0:27", name: "Workers respond" }} label="worker's side" /></div>
+          <div className="visual"><FilmSlot film="workers" /></div>
         </div>
       </section>
 

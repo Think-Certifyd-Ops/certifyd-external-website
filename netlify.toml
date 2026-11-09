@@ -45,6 +45,19 @@
 
 # Exact permanent redirects. Keep at least one year after launch.
 
+# The films' end card says "certifyd.io/start". Send it to the demo booking until a start page exists.
+[[redirects]]
+  from = "/start"
+  to = "/contact/#booking"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/start/"
+  to = "/contact/#booking"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/products"
   to = "/"

@@ -35,7 +35,7 @@ export default async function SegmentPage({ params }: Props) {
             <p className="lead">{s.lead}</p>
             <CtaPair />
           </div>
-          <div className="visual">{s.hero.kind === "film" ? <FilmSlot film={s.hero.film} chapter={s.hero.chapter} /> : <Board eyebrow={s.hero.eyebrow} title={s.hero.title} rows={s.hero.rows} tiles={s.hero.tiles} />}</div>
+          <div className="visual">{s.hero.kind === "film" ? <FilmSlot film={s.hero.film} /> : <Board eyebrow={s.hero.eyebrow} title={s.hero.title} rows={s.hero.rows} tiles={s.hero.tiles} />}</div>
         </div>
       </section>
 
@@ -107,7 +107,7 @@ export default async function SegmentPage({ params }: Props) {
         <section aria-labelledby="invite-title" className="section">
           <div className="wrap split">
             <div className="text"><p className="eyebrow">{s.invite.eyebrow}</p><h2 id="invite-title" className="h2">{s.invite.title}</h2><p className="body">{s.invite.body}</p><div className="btn-row"><DemoButton label="Book a demo to invite them" /></div></div>
-            <div className="visual"><FilmSlot film="care" chapter={s.invite.chapter} /></div>
+            <div className="visual"><FilmSlot film={s.invite.film} /></div>
           </div>
         </section>
       )}

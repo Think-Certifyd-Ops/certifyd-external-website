@@ -99,7 +99,7 @@ export default async function RolePage({ params }: Props) {
             <p className="body">Your {name} gets one message, replies in the app they already use, and uploads documents on a secure page. You see each check clear, and we chase anything missing.</p>
             <div className="btn-row"><DemoButton /><Link href="/how-it-works/" className="btn btn-secondary">How it works</Link></div>
           </div>
-          <div className="visual"><FilmSlot film="care" chapter={{ t: "0:27", name: "Workers respond" }} /></div>
+          <div className="visual"><FilmSlot film="workers" /></div>
         </div>
       </section>
 

@@ -1,15 +1,15 @@
 "use client";
 import { useState } from "react";
-import { ANY_FILM } from "@/lib/site";
+import { FILMS, type FilmKey } from "@/lib/site";
 import { FilmSlot } from "./Film";
 import { Board, ChatStill, type BoardRow } from "./Stills";
 
-const STEPS = [
-  { n: "01", name: "You ask once", body: "Pick the role and invite your worker. We send one message with a secure link, by WhatsApp, text or email.", clip: "0:17" },
-  { n: "02", name: "Your worker replies", body: "They answer in the app they already use, in their own language. ID and share codes open on a secure page, never in the chat.", clip: "0:27" },
-  { n: "03", name: "We chase, you see the exceptions", body: "We chase anything missing on your schedule. You see who is verified and who needs a person.", clip: "0:42" },
-  { n: "04", name: "Reception checks the person", body: "Reception scans the pass with a phone camera, checks the face against the profile and records it.", clip: "0:49" },
-  { n: "05", name: "You're ready for audit", body: "Every request, upload, check and decision is on the record. Export one worker or your whole workforce in one click.", clip: "1:00" },
+const STEPS: { n: string; name: string; body: string; film?: FilmKey }[] = [
+  { n: "01", name: "You ask once", body: "Pick the role and invite your worker. We send one message with a secure link, by WhatsApp, text or email.", film: "askOnce" },
+  { n: "02", name: "Your worker replies", body: "They answer in the app they already use, in their own language. ID and share codes open on a secure page, never in the chat.", film: "workers" },
+  { n: "03", name: "We chase, you see the exceptions", body: "We chase anything missing on your schedule. You see who is verified and who needs a person." },
+  { n: "04", name: "Reception checks the person", body: "Reception scans the pass with a phone camera, checks the face against the profile and records it.", film: "door" },
+  { n: "05", name: "You're ready for audit", body: "Every request, upload, check and decision is on the record. Export one worker or your whole workforce in one click.", film: "audit" },
 ];
 
 /** Pictures for each step until the film is in. */
@@ -46,13 +46,13 @@ export function StepPicker() {
         {STEPS.map((x, k) => (
           <li key={x.n}>
             <button type="button" className="step-btn" aria-pressed={k === i} onClick={() => setI(k)}>
-              <span className="step-head"><span className="num">{x.n}</span><strong>{x.name}</strong>{ANY_FILM && <span className="note-line">{x.clip}</span>}</span>
+              <span className="step-head"><span className="num">{x.n}</span><strong>{x.name}</strong>{x.film && FILMS[x.film].available && <span className="note-line">▶ {FILMS[x.film].length}</span>}</span>
               {k === i && <span style={{ fontSize: 16, lineHeight: 1.5, color: "#3C4657" }}>{x.body}</span>}
             </button>
           </li>
         ))}
       </ol>
-      <div style={{ flex: "1.4 1 520px", minWidth: 0 }}><FilmSlot film="care" chapter={{ t: s.clip, name: s.name }} label="chapter" still={STILL_ROWS[s.n] ? <Board {...STILL_ROWS[s.n]} /> : <ChatStill />} /></div>
+      <div style={{ flex: "1.4 1 520px", minWidth: 0 }}>{s.film ? <FilmSlot key={s.film} film={s.film} still={STILL_ROWS[s.n] ? <Board {...STILL_ROWS[s.n]} /> : <ChatStill />} /> : <Board {...STILL_ROWS[s.n]} />}</div>
     </div>
   );
 }
