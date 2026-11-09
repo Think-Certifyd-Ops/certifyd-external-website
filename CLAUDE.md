@@ -120,3 +120,11 @@ They are intentionally outside `netlify/functions/` so Netlify does not deploy o
 - `SolutionCTA` — call-to-action component for solution/industry pages
 - `SolutionHero`, `ProblemSection`, `SolutionSteps` — shared layout components
 - `WaitlistForm` — inline email capture (email + submit button) with loading/success/error states, honeypot spam protection
+
+## November 2026 rebuild (branch `rebuild/website-2026-11`)
+
+- New pages use the design system in `src/styles/site.css`, scoped under the `.cd` class so older pages keep their styles. Wrap new pages in `<div className="cd page">`.
+- Shared parts live in `src/components/site/` (`SiteHeader`, `SiteFooter`, `Buttons`, `Illustrations`, `Film`, `Faqs`, `CloseBand`). The root layout uses `SiteHeader` and `SiteFooter`.
+- Headlines are one colour. The main call to action is Book a demo (`DEMO_HREF`). Message Certifyd stays behind `NEXT_PUBLIC_MESSAGE_CERTIFYD=on`.
+- Regulations library: `src/data/regulations/roles.json` (150 roles) and `guides.ts`. Pages with status other than `reviewed` build only when `SHOW_REGULATION_DRAFTS` is true (previews), and are always noindex. Never publish an unreviewed requirement pack.
+- Working notes for the rebuild are in `docs/website-rebuild/`.

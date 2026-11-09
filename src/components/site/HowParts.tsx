@@ -1,0 +1,83 @@
+"use client";
+import { useState } from "react";
+import { FilmSlot } from "./Film";
+
+const STEPS = [
+  { n: "01", name: "You ask once", body: "Pick the role and invite your worker. We send one message with a secure link, by WhatsApp, text or email.", clip: "0:17" },
+  { n: "02", name: "Your worker replies", body: "They answer in the app they already use, in their own language. ID and share codes open on a secure page, never in the chat.", clip: "0:27" },
+  { n: "03", name: "We chase, you see the exceptions", body: "We chase anything missing on your schedule. You see who is verified and who needs a person.", clip: "0:42" },
+  { n: "04", name: "Reception checks the person", body: "Reception scans the pass with a phone camera, checks the face against the profile and records it.", clip: "0:49" },
+  { n: "05", name: "You're ready for audit", body: "Every request, upload, check and decision is on the record. Export one worker or your whole workforce in one click.", clip: "1:00" },
+];
+
+export function StepPicker() {
+  const [i, setI] = useState(0);
+  const s = STEPS[i];
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", gap: 40, alignItems: "flex-start" }}>
+      <ol className="plain stack gap-10" style={{ flex: "1 1 340px", minWidth: 0 }}>
+        {STEPS.map((x, k) => (
+          <li key={x.n}>
+            <button type="button" className="step-btn" aria-pressed={k === i} onClick={() => setI(k)}>
+              <span className="step-head"><span className="num">{x.n}</span><strong>{x.name}</strong><span className="note-line">{x.clip}</span></span>
+              {k === i && <span style={{ fontSize: 16, lineHeight: 1.5, color: "#3C4657" }}>{x.body}</span>}
+            </button>
+          </li>
+        ))}
+      </ol>
+      <div style={{ flex: "1.4 1 520px", minWidth: 0 }}><FilmSlot film="care" chapter={{ t: s.clip, name: s.name }} label="chapter" /></div>
+    </div>
+  );
+}
+
+type Who = "you" | "us" | "worker";
+const LOG: { when: string; who: Who; text: string }[] = [
+  { when: "Mon 09:00", who: "you", text: "Invite Jamie as a registered nurse for Willowbank Care Home." },
+  { when: "Mon 09:01", who: "us", text: "Messages Jamie on WhatsApp with a secure link." },
+  { when: "Mon 09:12", who: "worker", text: "Adds a passport and share code on the secure page." },
+  { when: "Mon 09:13", who: "us", text: "Runs the right-to-work check and face match. Passed." },
+  { when: "Mon 09:15", who: "us", text: "Checks the NMC register. Active, no conditions." },
+  { when: "Mon 09:20", who: "worker", text: "Agrees to a DBS Update Service check." },
+  { when: "Mon 09:21", who: "us", text: "Runs the Update Service check. No change." },
+  { when: "Mon 09:30", who: "us", text: "Emails both referees." },
+  { when: "Tue 10:00", who: "us", text: "Reminds the referee who hasn't replied." },
+  { when: "Tue 14:05", who: "worker", text: "Uploads training certificates." },
+  { when: "Tue 14:06", who: "us", text: "Reads the expiry dates and sets reminders." },
+  { when: "Wed 11:40", who: "us", text: "Second reference arrives. Case moves to ready for review." },
+  { when: "Wed 16:20", who: "you", text: "Review the evidence and clear Jamie for Monday's shift." },
+];
+const TAG: Record<Who, { label: string; style: React.CSSProperties }> = {
+  you: { label: "Your team", style: { background: "#0F1A2B", color: "#FFFFFF" } },
+  us: { label: "Certifyd", style: { background: "#0059FF", color: "#FFFFFF" } },
+  worker: { label: "Jamie", style: { background: "#FFFFFF", color: "#0F1A2B", border: "1px solid #0F1A2B" } },
+};
+
+export function CaseLog() {
+  const [who, setWho] = useState<"all" | Who>("all");
+  const feed = LOG.filter((e) => who === "all" || e.who === who);
+  const count = (w: Who) => LOG.filter((e) => e.who === w).length;
+  const filters: { key: "all" | Who; label: string }[] = [{ key: "all", label: "Everything" }, { key: "you", label: "Your team" }, { key: "us", label: "Certifyd" }, { key: "worker", label: "Jamie" }];
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", gap: 32, alignItems: "flex-start" }}>
+      <div className="card stack gap-16" style={{ flex: "1.7 1 560px", minWidth: 0, padding: "28px 32px" }}>
+        <div className="head-row" style={{ alignItems: "center" }}><div><p className="eyebrow" style={{ fontSize: 11 }}>Example case</p><strong style={{ fontSize: 17 }}>Jamie Taylor, registered nurse, for Willowbank Care Home</strong></div><span className="tag tag-demo">DEMO</span></div>
+        <div role="group" aria-label="Show actions by" className="btn-row" style={{ gap: 8 }}>{filters.map((f) => <button key={f.key} type="button" className="pill" aria-pressed={f.key === who} style={{ minHeight: 40, fontSize: 14 }} onClick={() => setWho(f.key)}>{f.label}</button>)}</div>
+        <ol className="plain" aria-live="polite">
+          {feed.map((e) => (
+            <li key={e.when + e.text} style={{ display: "grid", gridTemplateColumns: "92px 112px minmax(0, 1fr)", gap: 16, alignItems: "start", padding: "12px 0", borderBottom: "1px solid #E1E7F0" }}>
+              <span className="note-line" style={{ paddingTop: 3 }}>{e.when}</span>
+              <span><span className="tag" style={TAG[e.who].style}>{TAG[e.who].label}</span></span>
+              <span style={{ fontSize: 16, lineHeight: 1.45 }}>{e.text}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div className="stack gap-12" style={{ flex: "1 1 280px", minWidth: 0 }}>
+        <div style={{ background: "#0F1A2B", color: "#FFFFFF", borderRadius: 12, padding: "22px 24px" }} className="stack gap-6"><span className="mono" style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{count("you")}</span><span style={{ fontSize: 16, fontWeight: 600 }}>things your team did</span></div>
+        <div style={{ background: "#0059FF", color: "#FFFFFF", borderRadius: 12, padding: "22px 24px" }} className="stack gap-6"><span className="mono" style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{count("us")}</span><span style={{ fontSize: 16, fontWeight: 600 }}>things Certifyd did</span></div>
+        <div className="card-flat stack gap-6" style={{ padding: "22px 24px" }}><span className="mono" style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{count("worker")}</span><span style={{ fontSize: 16, fontWeight: 600 }}>replies from Jamie</span></div>
+        <p className="small">The last step is always yours. Certifyd never clears a worker.</p>
+      </div>
+    </div>
+  );
+}
