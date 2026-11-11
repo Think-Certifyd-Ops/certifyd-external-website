@@ -13,9 +13,9 @@ export function RoleSearch({ roles }: { roles: R[] }) {
   }, [q, roles]);
   return (
     <form role="search" onSubmit={(e) => e.preventDefault()} className="stack gap-10" style={{ maxWidth: 720 }}>
-      <div className="field"><label htmlFor="role-q">Search for a role</label><input id="role-q" type="search" placeholder="e.g. healthcare assistant, forklift, door supervisor" value={q} onChange={(e) => setQ(e.target.value)} autoComplete="off" /></div>
+      <div className="field"><label htmlFor="role-q">Search for a job</label><input id="role-q" type="search" placeholder="e.g. healthcare assistant, forklift, door supervisor" value={q} onChange={(e) => setQ(e.target.value)} autoComplete="off" /></div>
       {hits.length > 0 && <div className="card-flat" style={{ padding: "4px 20px" }} aria-live="polite">{hits.map((r) => <Link key={r.slug} href={`/regulations/${r.slug}/`} className="row" style={{ textDecoration: "none", color: "#0F1A2B" }}><strong style={{ flex: 1 }}>{r.role}</strong><span className="note-line">{r.sector}</span></Link>)}</div>}
-      {q.trim().length >= 2 && hits.length === 0 && <p className="small">No guide for that yet. Tell us the job title and we&apos;ll build its checklist with you.</p>}
+      {q.trim().length >= 2 && hits.length === 0 && <p className="small">We don&apos;t have that job yet. Tell us what it is and we&apos;ll build its checklist with you.</p>}
     </form>
   );
 }

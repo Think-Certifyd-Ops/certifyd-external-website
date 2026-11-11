@@ -158,6 +158,36 @@ The sentences are mostly short already. What makes the copy hard is **words that
 
 7. **Make the pictures say the same thing.** The product mock-ups use "on the record", "exceptions" and "evidence pack". When the copy changes, update the labels in the illustrations so the words match.
 
-## Next step
+## Body copy pass (done 11 November 2026)
 
-Apply rules 1 to 6 to the body copy, page by page: homepage and How it works first, then the eight sector pages, then the regulations template (one change covers all 150 role pages).
+Rules 1 to 7 were applied to the body copy of every new-design page: homepage, How it works, For workers, Pricing, Who it's for, the eight sector pages, the regulations hub, the five guides and the role template (all 150 role pages).
+
+What changed:
+
+- **Trade words swapped.** "Evidence pack" is now "worker file", "exceptions" is "needs you", "expiry" is "runs out" or "end date", "onboard" is "take on" or "sign up", "screening" is "background checks", "operative" is "worker", "template" is "checklist", "civil penalty" is "fine", and "role" is "job" in reader-facing copy.
+- **Official names explained.** DBS (criminal record) check, CQC (the care regulator), COSHH (cleaning chemicals), share code (a GOV.UK code that proves you can work here), Regulation 19, the Conduct Regulations, statutory excuse, "regulated activity" and the designated premises supervisor all get a few plain words the first time they appear. Role pages spell out the official body, for example "NMC (Nursing and Midwifery Council)".
+- **"In short" box** at the top of every role page and every guide: what to do, in two or three sentences. On role pages it's built from the checklist, for example: "Before a practice nurse starts, check their ID and their right to work in the UK. Then check NMC register and revalidation date, enhanced DBS with adults' barred list and 3 years of references. There are 4 more checks on the list below."
+- **Long sentences split**, especially on the regulations pages. The "who can be fined" section is now a short list.
+- **One word for one thing.** "Worker" in general copy, the trade word only on its sector page; "file" for what the customer downloads; "cleared" for a worker who has passed every check (the dashboards said "Verified").
+- **Pictures match the words.** Product mock-ups now say "Worker file", "Needs you", "One list", "Checked", "In progress", "Running out" and "Save check-in".
+- **Small fixes.** "an HGV driver" and "an SIA officer" on role pages, where it used to say "a HGV".
+
+Reading level of the body copy (Flesch-Kincaid grade; lower is easier):
+
+| Page | Before | After | Sentences over 20 words, before → after |
+|---|---|---|---|
+| Homepage | 6.2 | 4.5 | 6 → 1 |
+| How it works | 5.3 | 4.7 | 0 → 0 |
+| Pricing | 3.7 | 3.2 | 0 → 0 |
+| Healthcare staffing | 6.2 | 5.2 | 1 → 1 |
+| Security firms | 5.1 | 3.8 | 2 → 0 |
+| Regulations hub | 8.5 | 7.2 | 2 → 2 |
+| Role page (registered nurse) | 8.1 | 5.6 | 4 → 2 |
+| Right-to-work guide | 8.1 | 5.9 | 1 → 4 |
+| Right-to-work change, Oct 2026 | 9.0 | 6.9 | 1 → 1 |
+
+The right-to-work guide has more sentences over 20 words because the plain explanations added words (for example what a statutory excuse protects you from). Its grade still fell by two years.
+
+Not changed: page titles, meta descriptions, URLs, legal facts and dates, the 150 role checklists in roles.json (they use the official names people search for), and the older pages that don't use the new design (blog, /for/, /industries/, tools).
+
+Words still on the site on purpose: "compliance team" (a team name customers use), "vetting" and "screening" on the security page (the industry's own words, next to "background checks"), "barred list" (the official DBS term, explained on the DBS guide) and "statutory excuse" (explained where it appears).

@@ -16,10 +16,10 @@ export const metadata = pageMetadata(
 const FAQS = [
   { q: "How long is the contract?", a: "Month to month, with 30 days' notice. There's no long contract to sign." },
   { q: "How much does it cost?", a: "One monthly fee for your organisation, set by how many workers you manage. Book a 20-minute demo and we'll give you a price for your team on the call." },
-  { q: "Is there a setup fee?", a: "Not for most teams: we set up your roles, checklists and sites with you as part of your plan. For large groups with several tiers and their own systems, set-up may be priced as a project. We'll agree it with you up front." },
-  { q: "What counts as an active worker?", a: "Anyone with an open record that month, whether they're being onboarded or already cleared and working for you. Workers you archive stop counting." },
+  { q: "Is there a setup fee?", a: "Not for most teams. Setting up your jobs, checklists and sites is part of your plan. For very large groups with their own systems, set-up may cost extra. If so, we'll agree the price with you first." },
+  { q: "Which workers count towards the price?", a: "Anyone with an open file that month, whether they're just starting or already working for you. When you close a worker's file, they stop counting." },
   { q: "Can we change plan later?", a: "Yes. Move up or down whenever you like, and the change applies from your next bill." },
-  { q: "What happens to our data if we leave?", a: "You download every record and evidence pack first. Then we delete everything on the date you choose and confirm it in writing." },
+  { q: "What happens to our data if we leave?", a: "First you download every worker's file. Then we delete everything on the date you choose, and confirm it in writing." },
   { q: "Do prices include VAT?", a: "No. Every price we quote is without VAT." },
 ];
 
@@ -30,7 +30,7 @@ export default function Pricing() {
         <div className="wrap stack gap-20">
           <p className="eyebrow">Pricing</p>
           <h1 id="price-title" className="h1">One monthly price. Your workers pay nothing.</h1>
-          <p className="lead">One monthly plan for your organisation, sized to the workers you manage. Book a demo and we&apos;ll give you a price for your team.</p>
+          <p className="lead">You pay one monthly fee, based on how many workers you have. Book a demo and we&apos;ll give you a price for your team.</p>
           <div className="btn-row"><DemoButton /><ContactButton /></div>
         </div>
       </section>

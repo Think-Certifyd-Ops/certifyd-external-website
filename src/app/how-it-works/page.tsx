@@ -12,15 +12,15 @@ export const metadata = pageMetadata(
 );
 
 const GET = [
-  { n: "01", k: "Collect", t: "We gather everything, without the chasing.", s: "Your workers reply where they already are.", items: [["Invites by WhatsApp, text or email", "Your worker replies in the app they already use, in their own language."], ["A secure page for ID", "Passports, share codes and health forms never touch the chat."], ["Workers in from a spreadsheet", "Bring your existing workers in, and export their status and evidence back out."]] },
-  { n: "02", k: "Check", t: "We check it against the rules for each role.", s: "Any role, any document, on your schedule.", items: [["Right-to-work checks", "Run through a registered provider, with the face match kept on file."], ["DBS and register checks", "NMC, SIA, DVLA and other lookups, plus new DBS applications, handled for you."], ["Your checklist, or one we draft", "Send us what each role needs, or we draft it from the rules and you sign it off."], ["Reminders before anything expires", "30, 14 and 7 days out, to the worker first and to you if nothing happens."]] },
-  { n: "03", k: "Share", t: "Everyone who needs it sees the same record.", s: "From your office to the door of the site.", items: [["One shared view for your team", "Recruiters, compliance and branch managers follow the same journey for every worker."], ["A pass to show at the door", "Workers share their credentials in one tap, scanned with any phone camera."], ["A free view for your clients", "Sites see who is cleared for each shift, not the papers behind it."], ["Evidence packs", "One worker or your whole workforce, ready for an audit in one click."]] },
+  { n: "01", k: "Collect", t: "We get every document from your workers.", s: "They reply in the app they already use.", items: [["Invites by WhatsApp, text or email", "Your worker replies in the app they already use, in their own language."], ["A secure page for ID", "Passports, share codes and health forms never go in the chat."], ["Bring in your current workers", "Upload a spreadsheet of the workers you already have. You can download their files again at any time."]] },
+  { n: "02", k: "Check", t: "We check each document against the rules for the job.", s: "Any job, any document, as often as you choose.", items: [["Right-to-work checks", "Done through a registered provider. We keep the photo match on file."], ["DBS and official register checks", "We look people up on the NMC, SIA, DVLA and other official lists, and handle new DBS (criminal record) checks for you."], ["Your checklist, or one we write", "Send us what each job needs. Or we write it from the rules and you check it."], ["Reminders before anything runs out", "30, 14 and 7 days before. The worker hears first, then you if nothing happens."]] },
+  { n: "03", k: "Share", t: "Everyone who needs it sees the same file.", s: "From your office to the door of the site.", items: [["One list for your whole team", "Recruiters, your compliance team and branch managers all see each worker's progress."], ["A pass to show at the door", "Workers show they're cleared with one tap. Anyone can scan it with a phone camera."], ["Free for your clients to see", "Sites see who is cleared for each shift, but not their private papers."], ["Worker files", "Download one worker's file, or everyone's, in one click."]] },
 ];
 const NEVER = [
   ["Ask for documents in chat", "IDs, share codes, health details and bank details only go through the secure page."],
-  ["Clear a worker", "A named person at your organisation signs off every worker."],
-  ["Promise you're compliant", "We run checks through registered providers and keep the evidence. You stay responsible."],
-  ["Keep chats forever", "Workers are told chats are recorded, and each record type is deleted on a set schedule."],
+  ["Clear a worker for you", "A named person at your organisation approves every worker."],
+  ["Promise you're following the law", "We use registered providers for checks and keep the proof. But your organisation is still responsible."],
+  ["Keep chats forever", "We tell workers their chats are saved. Each kind of record is deleted after a set time."],
 ];
 
 export default function HowItWorks() {
@@ -32,7 +32,7 @@ export default function HowItWorks() {
             <p className="eyebrow">How it works</p>
             {/* Two lines, each ending on a full stop: the one two-tone headline Michael kept */}
             <h1 id="how-title" className="h1" style={{ fontSize: "clamp(30px, 3vw, 42px)" }}>Ask once.<br /><span className="accent nowrap-lg">We do the rest.</span></h1>
-            <p className="lead">You set the rules and make the calls. We do the asking, checking, chasing and recording, from the first message to the evidence pack.</p>
+            <p className="lead">You decide what each job needs and who gets cleared. We ask for the documents, check them, chase what&apos;s missing and keep it all on file.</p>
             <CtaPair />
           </div>
           <HeroScene label="Illustration: the worker opens a secure check from the chat, and the team's view shows them cleared" />
@@ -48,7 +48,7 @@ export default function HowItWorks() {
 
       <section aria-labelledby="who-title" className="section">
         <div className="wrap stack gap-28">
-          <div className="stack gap-12 max-820"><p className="eyebrow">Who does what</p><h2 id="who-title" className="h2">We chase the missing documents, so your team doesn&apos;t have to.</h2><p className="body">Here is one nurse&apos;s case, from invite to cleared. Filter it to see how little lands on your desk.</p></div>
+          <div className="stack gap-12 max-820"><p className="eyebrow">Who does what</p><h2 id="who-title" className="h2">We chase the missing documents, so your team doesn&apos;t have to.</h2><p className="body">Here is one nurse, from first message to cleared. Use the filter to see how little your team has to do.</p></div>
           <CaseLog />
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function HowItWorks() {
       </section>
 
       <CloseBand title="Be ready for any inspection, on any day." />
-      <HowToSchema name="How Certifyd onboards a new worker" steps={["You pick the role and invite your worker.", "Your worker replies and uploads documents on a secure page.", "Certifyd checks and chases; your team sees the exceptions.", "Reception scans the worker's pass and records the check.", "Every check and decision is on the record, ready for audit."]} />
+      <HowToSchema name="How Certifyd onboards a new worker" steps={["You pick the role and invite your worker.", "Your worker replies and uploads documents on a secure page.", "Certifyd checks the documents and chases what's missing. Your team sees who needs them.", "Reception scans the worker's pass and saves the check-in.", "Every check and decision is saved, ready for an inspection."]} />
     </div>
   );
 }

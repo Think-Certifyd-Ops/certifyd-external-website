@@ -336,3 +336,8 @@
 .cd .film-play:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 3px; }
 .cd .film-play-icon { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #FFFFFF; color: var(--blue); font-size: 12px; padding-left: 2px; }
 @media (max-width: 560px) { .cd .film-play { left: 12px; bottom: 12px; font-size: 14px; padding: 8px 14px 8px 8px; } .cd .film-play-icon { width: 26px; height: 26px; } }
+
+/* "In short" summary at the top of regulations pages (11 Nov 2026) */
+.cd .in-short { max-width: 820px; background: #FFFFFF; border: 1px solid #BFD3EE; border-left: 5px solid var(--blue); border-radius: 10px; padding: 18px 22px; display: flex; flex-direction: column; gap: 6px; }
+.cd .in-short strong { font-family: var(--mono); font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); }
+.cd .in-short p { margin: 0; font-size: 18px; line-height: 1.5; color: var(--ink); }

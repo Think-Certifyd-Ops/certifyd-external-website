@@ -33,7 +33,7 @@ export function SiteFooter() {
             </div>
             <div className="foot-col">
               <p className="eyebrow">Regulations</p>
-              <Link href="/regulations/">Roles</Link>
+              <Link href="/regulations/">Jobs</Link>
               {live("right-to-work") && <Link href="/regulations/checks/right-to-work/">Checks</Link>}
               {live("right-to-work-october-2026") && <Link href="/regulations/changes/right-to-work-october-2026/">Rule changes</Link>}
               <Link href="/resources/right-to-work-guide/">Guides and checklists</Link>
@@ -51,7 +51,7 @@ export function SiteFooter() {
           </div>
           <div className="foot-base">
             <span>© 2026 Certifyd</span>
-            <span>Regulations pages are guidance, not legal advice. Your organisation stays responsible for its decisions.</span>
+            <span>Our regulations pages are guidance, not legal advice. Your organisation is still responsible for its own decisions.</span>
           </div>
         </div>
       </footer>

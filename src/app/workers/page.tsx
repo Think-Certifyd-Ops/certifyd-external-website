@@ -55,7 +55,7 @@ export default function Workers() {
             <div id="independent" className="card-flat stack gap-16" style={{ padding: 32 }}>
               <h3 className="h3">You&apos;re not with an agency yet</h3>
               <p className="body">Soon you&apos;ll be able to register free and keep your documents in one place, ready for the day an agency or employer asks for them.</p>
-              <div>{["Free, with no payment ever", "Any job title", "You choose who sees your record"].map((x) => <div key={x} className="row"><span className="status ok" aria-hidden="true">✓</span><span>{x}</span></div>)}</div>
+              <div>{["Free, with no payment ever", "Any job title", "You choose who sees your documents"].map((x) => <div key={x} className="row"><span className="status ok" aria-hidden="true">✓</span><span>{x}</span></div>)}</div>
               <Link href={`${CONTACT_HREF}`} className="btn btn-secondary self-start">Ask us about it</Link>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Workers() {
             <Link href="/regulations/" className="btn btn-ghost self-start">Look up what your job needs →</Link>
           </div>
           <div className="visual"><div className="card pad">
-            {[["Passport or photo ID", "a photo is fine"], ["Share code, if you're not a British or Irish citizen", "from GOV.UK"], ["Any licence or card your job needs", "we check it for you"], ["Training and qualification certificates", "photos are fine"], ["DBS certificate number, if you have one", "only if your job needs it"], ["Contact details for your referees", "we contact them"]].map(([a, b]) => <div key={a} className="row"><span style={{ flex: 1 }}>{a}</span><span className="note-line">{b}</span></div>)}
+            {[["Passport or photo ID", "a photo is fine"], ["Share code, if you're not British or Irish", "a GOV.UK code that proves you can work here"], ["Any licence or card your job needs", "we check it for you"], ["Training and qualification certificates", "photos are fine"], ["DBS (criminal record) certificate number, if you have one", "only if your job needs it"], ["Contact details for the people giving you a reference", "we contact them"]].map(([a, b]) => <div key={a} className="row"><span style={{ flex: 1 }}>{a}</span><span className="note-line">{b}</span></div>)}
           </div></div>
         </div>
       </section>
@@ -79,12 +79,12 @@ export default function Workers() {
       <section aria-labelledby="yours-title" className="section">
         <div className="wrap split split-reverse">
           <div className="text">
-            <p className="eyebrow">Your record</p>
+            <p className="eyebrow">Your information</p>
             <h2 id="yours-title" className="h2">You can see everything we keep about you, and you choose who else can.</h2>
-            <p className="body">You can see everything we hold about you. Whoever invited you sees your documents. The sites you work at see your status, not your documents. We delete records on a set schedule.</p>
+            <p className="body">Whoever invited you can see your documents. The places you work at only see that you&apos;re cleared, not your documents. We delete your records after a set time.</p>
             <Link href="/privacy/" className="btn btn-ghost self-start">Read how we handle your data →</Link>
           </div>
-          <div className="visual"><div className="backdrop" style={{ display: "flex", justifyContent: "center" }}><div className="torn" /><div style={{ position: "relative" }}><PassCard initials="DP" name="Dan Price" role="Forklift operator" org="Northline Staffing" status="Cleared for Leeds DC, today" qrLabel="QR code on Dan's demo pass" /></div></div></div>
+          <div className="visual"><div className="backdrop" style={{ display: "flex", justifyContent: "center" }}><div className="torn" /><div style={{ position: "relative" }}><PassCard initials="DP" name="Dan Price" role="Forklift driver" org="Northline Staffing" status="Cleared for Leeds DC, today" qrLabel="QR code on Dan's demo pass" /></div></div></div>
         </div>
       </section>
 

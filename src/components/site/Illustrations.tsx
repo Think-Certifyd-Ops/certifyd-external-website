@@ -35,13 +35,13 @@ export function HeroScene({ label = "Illustration: a worker's Certifyd chat on a
       <div className="dev-window" style={{ right: 8, top: 170, width: 330 }}>
         <div className="dev-bar"><i /><i /><i /></div>
         <div className="dev-body">
-          <div style={{ display: "flex", justifyContent: "space-between", gap: 10, alignItems: "flex-start" }}><p className="dev-title">Every worker, every site, on the record.</p><span className="tag tag-demo">DEMO</span></div>
+          <div style={{ display: "flex", justifyContent: "space-between", gap: 10, alignItems: "flex-start" }}><p className="dev-title">Every worker, every site, in one list.</p><span className="tag tag-demo">DEMO</span></div>
           <div>
             <div className="mrow"><span className="avatar">JT</span><span className="mrow-name"><strong>Jamie Taylor</strong><span>Nurse · Willowbank</span></span><span className="st st-ok">Cleared</span></div>
             <div className="mrow"><span className="avatar">DP</span><span className="mrow-name"><strong>Dan Price</strong><span>Forklift · Leeds DC</span></span><span className="st st-pend">Checking</span></div>
             <div className="mrow"><span className="avatar">AK</span><span className="mrow-name"><strong>Amira Khan</strong><span>Security · Riverside</span></span><span className="st st-warn">Licence due</span></div>
           </div>
-          <p style={{ margin: 0, fontSize: 13, color: "#4F5A6B" }}>Shared with recruitment, compliance and the site.</p>
+          <p style={{ margin: 0, fontSize: 13, color: "#4F5A6B" }}>Your recruiters, compliance team and the site all see this.</p>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@ export async function PassCard({ initials, name, role, org, status, qrLabel, com
         <span className="small" style={{ marginTop: -8 }}>{role}</span>
         <QrCode value="https://certifyd.io/how-it-works/" label={qrLabel} size={136} />
         <span className="st st-ok">{status}</span>
-        <span className="small" style={{ fontSize: 12.5 }}>Live code. It refreshes, so a screenshot won&apos;t work.</span>
+        <span className="small" style={{ fontSize: 12.5 }}>The code keeps changing, so a screenshot won&apos;t work.</span>
       </div>
     </div>
   );

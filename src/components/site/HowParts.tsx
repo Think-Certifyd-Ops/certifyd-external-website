@@ -5,22 +5,22 @@ import { FilmSlot } from "./Film";
 import { Board, ChatStill, type BoardRow } from "./Stills";
 
 const STEPS: { n: string; name: string; body: string; film?: FilmKey }[] = [
-  { n: "01", name: "You ask once", body: "Pick the role and invite your worker. We send one message with a secure link, by WhatsApp, text or email.", film: "askOnce" },
-  { n: "02", name: "Your worker replies", body: "They answer in the app they already use, in their own language. ID and share codes open on a secure page, never in the chat.", film: "workers" },
-  { n: "03", name: "We chase, you see the exceptions", body: "We chase anything missing on your schedule. You see who is verified and who needs a person." },
-  { n: "04", name: "Reception checks the person", body: "Reception scans the pass with a phone camera, checks the face against the profile and records it.", film: "door" },
-  { n: "05", name: "You're ready for audit", body: "Every request, upload, check and decision is on the record. Export one worker or your whole workforce in one click.", film: "audit" },
+  { n: "01", name: "You ask once", body: "Pick the job and invite your worker. We send them one message with a secure link, by WhatsApp, text or email.", film: "askOnce" },
+  { n: "02", name: "Your worker replies", body: "They answer in the app they already use, in their own language. They add their ID on a secure page, never in the chat.", film: "workers" },
+  { n: "03", name: "We chase, you see who needs you", body: "We chase anything missing, as often as you choose. You see who is cleared, and who needs a person to look." },
+  { n: "04", name: "Reception checks the person", body: "Reception scans the worker's pass with a phone camera, checks their face matches the photo, and saves the check-in.", film: "door" },
+  { n: "05", name: "You're ready for inspection", body: "Every message, document, check and decision is saved. Download one worker's file, or everyone's, in one click.", film: "audit" },
 ];
 
 /** Pictures for each step until the film is in. */
 const STILL_ROWS: Record<string, { eyebrow: string; title: string; rows: BoardRow[] }> = {
   "01": { eyebrow: "New worker", title: "Dan Price · Forklift driver", rows: [
-    { name: "Role template", sub: "Forklift driver, Leeds distribution centre", status: "8 checks", kind: "ok" },
+    { name: "Checklist", sub: "Forklift driver, Leeds distribution centre", status: "8 checks", kind: "ok" },
     { name: "Invite sent", sub: "WhatsApp, Mon 09:01", status: "Sent", kind: "ok" },
     { name: "Worker reply", sub: "Waiting for Dan", status: "Waiting", kind: "pend" },
   ] },
   "03": { eyebrow: "Needs a person", title: "2 of 24 workers this week", rows: [
-    { name: "Amira Khan", sub: "Security · SIA licence expires in 12 days", status: "Due soon", kind: "warn" },
+    { name: "Amira Khan", sub: "Security · SIA licence runs out in 12 days", status: "Due soon", kind: "warn" },
     { name: "Tom Hughes", sub: "Care · Reference 2 not returned", status: "Chasing", kind: "pend" },
     { name: "22 other workers", sub: "Every check cleared", status: "Cleared", kind: "ok" },
   ] },
@@ -29,7 +29,7 @@ const STILL_ROWS: Record<string, { eyebrow: string; title: string; rows: BoardRo
     { name: "Face check", sub: "Matches the profile photo", status: "Matched", kind: "ok" },
     { name: "Check-in", sub: "Recorded by reception", status: "On record", kind: "ok" },
   ] },
-  "05": { eyebrow: "Evidence pack", title: "Jamie Taylor · Registered nurse", rows: [
+  "05": { eyebrow: "Worker file", title: "Jamie Taylor · Registered nurse", rows: [
     { name: "Right to work", sub: "Checked 3 Nov 2026, face match passed", status: "Cleared", kind: "ok" },
     { name: "NMC register", sub: "Active, no conditions", status: "Cleared", kind: "ok" },
     { name: "DBS", sub: "Update Service, no change", status: "Cleared", kind: "ok" },
@@ -62,16 +62,16 @@ const LOG: { when: string; who: Who; text: string }[] = [
   { when: "Mon 09:00", who: "you", text: "Invite Jamie as a registered nurse for Willowbank Care Home." },
   { when: "Mon 09:01", who: "us", text: "Messages Jamie on WhatsApp with a secure link." },
   { when: "Mon 09:12", who: "worker", text: "Adds a passport and share code on the secure page." },
-  { when: "Mon 09:13", who: "us", text: "Runs the right-to-work check and face match. Passed." },
+  { when: "Mon 09:13", who: "us", text: "Runs the right-to-work check and photo match. Passed." },
   { when: "Mon 09:15", who: "us", text: "Checks the NMC register. Active, no conditions." },
   { when: "Mon 09:20", who: "worker", text: "Agrees to a DBS Update Service check." },
   { when: "Mon 09:21", who: "us", text: "Runs the Update Service check. No change." },
-  { when: "Mon 09:30", who: "us", text: "Emails both referees." },
-  { when: "Tue 10:00", who: "us", text: "Reminds the referee who hasn't replied." },
+  { when: "Mon 09:30", who: "us", text: "Emails both people giving references." },
+  { when: "Tue 10:00", who: "us", text: "Reminds the one who hasn't replied." },
   { when: "Tue 14:05", who: "worker", text: "Uploads training certificates." },
-  { when: "Tue 14:06", who: "us", text: "Reads the expiry dates and sets reminders." },
-  { when: "Wed 11:40", who: "us", text: "Second reference arrives. Case moves to ready for review." },
-  { when: "Wed 16:20", who: "you", text: "Review the evidence and clear Jamie for Monday's shift." },
+  { when: "Tue 14:06", who: "us", text: "Reads the end dates and sets reminders." },
+  { when: "Wed 11:40", who: "us", text: "Second reference arrives. Jamie is ready for your team to review." },
+  { when: "Wed 16:20", who: "you", text: "Check the file and clear Jamie for Monday's shift." },
 ];
 const TAG: Record<Who, { label: string; style: React.CSSProperties }> = {
   you: { label: "Your team", style: { background: "#0F1A2B", color: "#FFFFFF" } },
@@ -103,7 +103,7 @@ export function CaseLog() {
         <div style={{ background: "#0F1A2B", color: "#FFFFFF", borderRadius: 12, padding: "22px 24px" }} className="stack gap-6"><span className="mono" style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{count("you")}</span><span style={{ fontSize: 16, fontWeight: 600 }}>things your team did</span></div>
         <div style={{ background: "#0059FF", color: "#FFFFFF", borderRadius: 12, padding: "22px 24px" }} className="stack gap-6"><span className="mono" style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{count("us")}</span><span style={{ fontSize: 16, fontWeight: 600 }}>things Certifyd did</span></div>
         <div className="card-flat stack gap-6" style={{ padding: "22px 24px" }}><span className="mono" style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{count("worker")}</span><span style={{ fontSize: 16, fontWeight: 600 }}>replies from Jamie</span></div>
-        <p className="small">The last step is always yours. Certifyd never clears a worker.</p>
+        <p className="small">The last step is always yours. Certifyd never clears a worker for you.</p>
       </div>
     </div>
   );

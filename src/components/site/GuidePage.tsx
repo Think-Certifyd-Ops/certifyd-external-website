@@ -17,6 +17,7 @@ export function GuidePage({ g }: { g: Guide }) {
           {g.date && <p className="eyebrow">{g.date}</p>}
           <h1 id="g-title" className="h1">{g.h1}</h1>
           <p className="lead">{g.lead}</p>
+          <div className="in-short" role="note"><strong>In short</strong><p>{g.inShort}</p></div>
         </div>
       </section>
       <section className="section-tight" style={{ paddingTop: 0 }}>
@@ -29,7 +30,7 @@ export function GuidePage({ g }: { g: Guide }) {
             </div>
           ))}
           <div className="stack gap-8"><h2 className="h4">Official sources</h2><ul className="plain stack gap-6">{g.sources.map((s) => <li key={s.href}><a href={s.href}>{s.title}</a></li>)}</ul></div>
-          <p className="disclaimer">{g.status === "reviewed" ? "" : `Updated ${REGULATIONS_UPDATED}. `}Guidance, not legal advice. Your organisation stays responsible for its own decisions.</p>
+          <p className="disclaimer">{g.status === "reviewed" ? "" : `Updated ${REGULATIONS_UPDATED}. `}This is guidance, not legal advice. Your organisation is still responsible for its own decisions.</p>
         </div>
       </section>
       <CloseBand title="Keep every worker's checks up to date." />

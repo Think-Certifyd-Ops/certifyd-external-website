@@ -21,7 +21,7 @@ export default function Solutions() {
         <div className="wrap stack gap-20 max-920" style={{ marginLeft: "auto", marginRight: "auto" }}>
           <p className="eyebrow">Who it&apos;s for</p>
           <h1 id="sol-title" className="h1">Made for teams that take on new workers every week.</h1>
-          <p className="lead">Any role, any document. Pick your team below, or tell us the job titles you hire for and we&apos;ll set Certifyd up around them.</p>
+          <p className="lead">Any job, any document. Pick your type of team below. Or tell us the jobs you hire for, and we&apos;ll set Certifyd up around them.</p>
         </div>
       </section>
       {groups.map((g) => (

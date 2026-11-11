@@ -27,7 +27,7 @@ export default function Regulations() {
         <div className="wrap stack gap-24">
           <p className="eyebrow">Regulations library</p>
           <h1 id="lib-title" className="h1">What checks does this job need?</h1>
-          <p className="lead">The checks every role needs before starting work in the UK, from right to work and DBS to professional registers and licences, with the official source for each.</p>
+          <p className="lead">Pick a job to see the checks it needs before someone starts work in the UK. That covers right to work, DBS (criminal record) checks, official registers and licences. Each check links to the official source.</p>
           {PUBLISHED_ROLES.length > 0 && <RoleSearch roles={PUBLISHED_ROLES.map((r) => ({ slug: r.slug, role: r.role, aliases: r.aliases, sector: r.sector }))} />}
           {SHOW_REGULATION_DRAFTS && !REGULATIONS_LIVE && !anyIndexed && <p className="banner-draft" role="note"><strong>Preview.</strong> All {ALL_ROLES.length} role guides are drafts waiting for review. The live site shows only reviewed guides.</p>}
         </div>
@@ -60,12 +60,12 @@ export default function Regulations() {
 
       <section aria-labelledby="tools-title" className="section on-blue">
         <div className="wrap grid-2" style={{ alignItems: "stretch" }}>
-          <div className="card stack gap-12" style={{ padding: 32 }}><p className="eyebrow">Free guides</p><h2 id="tools-title" className="h3">Checklists your team can use today</h2><p className="body">The right-to-work guide, the Fair Work Agency record-keeping checklist and the placement evidence checklist.</p><div className="btn-row"><Link href="/resources/right-to-work-guide/" className="btn btn-primary">Right-to-work guide</Link><Link href="/tools/" className="btn btn-secondary">All tools</Link></div></div>
-          <div className="card stack gap-12" style={{ padding: 32 }}><p className="eyebrow">Can&apos;t find your role?</p><h2 className="h3">Tell us the job title</h2><p className="body">We&apos;ll work out what it needs, and Certifyd starts collecting for it straight away.</p><div className="btn-row"><DemoButton /></div></div>
+          <div className="card stack gap-12" style={{ padding: 32 }}><p className="eyebrow">Free guides</p><h2 id="tools-title" className="h3">Checklists your team can use today</h2><p className="body">Our right-to-work guide, plus checklists for the records the Fair Work Agency expects and the proof to keep for each worker you place.</p><div className="btn-row"><Link href="/resources/right-to-work-guide/" className="btn btn-primary">Right-to-work guide</Link><Link href="/tools/" className="btn btn-secondary">All tools</Link></div></div>
+          <div className="card stack gap-12" style={{ padding: 32 }}><p className="eyebrow">Can&apos;t find the job?</p><h2 className="h3">Tell us the job title</h2><p className="body">We&apos;ll work out what it needs, and Certifyd starts collecting the documents straight away.</p><div className="btn-row"><DemoButton /></div></div>
         </div>
       </section>
 
-      <section className="section-tight" style={{ paddingTop: 24 }}><div className="wrap"><p className="disclaimer">Guidance, not legal advice. Every guide shows its sources, the date it was last reviewed and who reviewed it.</p></div></section>
+      <section className="section-tight" style={{ paddingTop: 24 }}><div className="wrap"><p className="disclaimer">This is guidance, not legal advice. Every guide shows its official sources and when it was last updated.</p></div></section>
     </div>
   );
 }

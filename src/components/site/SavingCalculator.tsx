@@ -15,7 +15,7 @@ export function SavingCalculator() {
     <>
       <div className="card" style={{ padding: 40, display: "flex", flexWrap: "wrap", gap: "40px 56px", alignItems: "center" }}>
         <form style={{ flex: "1.1 1 420px", minWidth: 0 }} className="stack gap-32" onSubmit={(e) => e.preventDefault()}>
-          <div className="field" style={{ gap: 12 }}><label htmlFor="c-starters" style={{ fontSize: 18 }}>How many people do you onboard a month?</label><div style={{ display: "flex", alignItems: "center", gap: 20 }}><input id="c-starters" type="range" min={5} max={200} step={5} value={v.starters} onChange={set("starters")} style={{ flex: 1 }} /><span className="mono" style={{ fontSize: 30, fontWeight: 700, minWidth: 72, textAlign: "right" }}>{v.starters}</span></div></div>
+          <div className="field" style={{ gap: 12 }}><label htmlFor="c-starters" style={{ fontSize: 18 }}>How many new workers do you take on each month?</label><div style={{ display: "flex", alignItems: "center", gap: 20 }}><input id="c-starters" type="range" min={5} max={200} step={5} value={v.starters} onChange={set("starters")} style={{ flex: 1 }} /><span className="mono" style={{ fontSize: 30, fontWeight: 700, minWidth: 72, textAlign: "right" }}>{v.starters}</span></div></div>
           <div className="field" style={{ gap: 12 }}><label htmlFor="c-admin" style={{ fontSize: 18 }}>How many hours of paperwork does each one take today?</label><div style={{ display: "flex", alignItems: "center", gap: 20 }}><input id="c-admin" type="range" min={1} max={10} step={0.5} value={v.admin} onChange={set("admin")} style={{ flex: 1 }} /><span className="mono" style={{ fontSize: 30, fontWeight: 700, minWidth: 72, textAlign: "right" }}>{v.admin}h</span></div><span className="help">Chasing, checking and filing, across everyone who touches the file.</span></div>
         </form>
         <div aria-live="polite" className="stack gap-10" style={{ flex: "1 1 360px", minWidth: 0, background: "#E9F3FE", borderRadius: 16, padding: 32 }}>
@@ -28,11 +28,11 @@ export function SavingCalculator() {
       <details className="faq">
         <summary>How we work this out</summary>
         <div className="grid-3" style={{ marginTop: 18 }}>
-          <div className="field"><label htmlFor="c-share">Share of that time we take off you (%)</label><input id="c-share" type="number" min={0} max={100} step={5} value={v.share} onChange={set("share")} /><span className="help">Your team still reviews and signs off.</span></div>
-          <div className="field"><label htmlFor="c-cost">Cost of one coordinator a year (£)</label><input id="c-cost" type="number" min={15000} step={500} value={v.cost} onChange={set("cost")} /><span className="help">Salary plus employer costs.</span></div>
+          <div className="field"><label htmlFor="c-share">How much of that time we save you (%)</label><input id="c-share" type="number" min={0} max={100} step={5} value={v.share} onChange={set("share")} /><span className="help">Your team still checks and approves each worker.</span></div>
+          <div className="field"><label htmlFor="c-cost">What one admin person costs a year (£)</label><input id="c-cost" type="number" min={15000} step={500} value={v.cost} onChange={set("cost")} /><span className="help">Their pay plus your other costs, like pension and National Insurance.</span></div>
           <div className="field"><label htmlFor="c-hours">Working hours a year, per person</label><input id="c-hours" type="number" min={1000} step={10} value={v.hours} onChange={set("hours")} /></div>
         </div>
-        <p className="small" style={{ marginTop: 14 }}>An estimate from the numbers you enter. Check fees are left out, because you pay those today too.</p>
+        <p className="small" style={{ marginTop: 14 }}>This is a rough figure based on your numbers. It leaves out the cost of the checks themselves, because you pay for those today too.</p>
       </details>
     </>
   );

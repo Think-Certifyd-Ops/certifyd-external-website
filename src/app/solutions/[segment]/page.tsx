@@ -61,7 +61,7 @@ export default async function SegmentPage({ params }: Props) {
       {s.standards && (
         <section aria-labelledby="std-title" className={`section ${s.steps ? "on-white" : ""}`}>
           <div className="wrap split" style={{ alignItems: "flex-start" }}>
-            <div className="text"><p className="eyebrow">{s.standards.eyebrow}</p><h2 id="std-title" className="h2">{s.standards.title}</h2><p className="body">{s.standards.body}</p>{s.standards.source && <a href={s.standards.source.href} className="small">Source: {s.standards.source.title}</a>}{s.standards.link && <Link href={s.standards.link} className="btn btn-ghost self-start">See the checks for each role →</Link>}</div>
+            <div className="text"><p className="eyebrow">{s.standards.eyebrow}</p><h2 id="std-title" className="h2">{s.standards.title}</h2><p className="body">{s.standards.body}</p>{s.standards.source && <a href={s.standards.source.href} className="small">Source: {s.standards.source.title}</a>}{s.standards.link && <Link href={s.standards.link} className="btn btn-ghost self-start">See the checks for each job →</Link>}</div>
             <div className="visual">
               {s.standards.numbered
                 ? <div className="grid-2" style={{ gap: 12 }}>{s.standards.items.map((x, i) => <div key={x} className="card-flat" style={{ padding: "16px 18px", display: "flex", gap: 12, alignItems: "center" }}><span className="num">{i + 1}</span><strong>{x}</strong></div>)}</div>
@@ -79,7 +79,7 @@ export default async function SegmentPage({ params }: Props) {
               {s.roles.cards.map((c) => <div key={c.name} className="card-flat pad stack gap-6"><h3 className="h4" style={{ marginBottom: 6 }}>{c.name}</h3>{c.note && <p className="note-line" style={{ margin: 0 }}>{c.note}</p>}{c.items.length === 1 ? <p className="small">{c.items[0]}</p> : c.items.map((x) => <div key={x} className="row"><span>{x}</span></div>)}</div>)}
             </div>
             <p className="body">{s.roles.footer}</p>
-            {roles.length > 0 && <div className="stack gap-10"><p className="eyebrow">Role guides</p><div className="btn-row" style={{ gap: 8 }}>{roles.map((r) => <Link key={r.slug} href={`/regulations/${r.slug}/`} className="tag tag-plain" style={{ fontSize: 13, padding: "8px 10px", textDecoration: "none" }}>{r.role}</Link>)}<Link href="/regulations/" className="btn btn-ghost">All roles →</Link></div></div>}
+            {roles.length > 0 && <div className="stack gap-10"><p className="eyebrow">Checklists by job</p><div className="btn-row" style={{ gap: 8 }}>{roles.map((r) => <Link key={r.slug} href={`/regulations/${r.slug}/`} className="tag tag-plain" style={{ fontSize: 13, padding: "8px 10px", textDecoration: "none" }}>{r.role}</Link>)}<Link href="/regulations/" className="btn btn-ghost">All jobs →</Link></div></div>}
           </div>
         </section>
       )}

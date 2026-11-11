@@ -62,7 +62,7 @@ export function SiteHeader() {
             <div className="stack gap-6"><p className="eyebrow" style={{ marginBottom: 8 }}>If you employ your own workers</p>{employ.map((s) => <Link key={s.slug} href={`/solutions/${s.slug}/`} className="menu-item"><strong>{s.name}</strong><span>{s.sub}</span></Link>)}</div>
             <div className="menu-aside">
               <p className="eyebrow">Not on the list?</p>
-              <p style={{ margin: 0, fontSize: 17, lineHeight: 1.45, fontWeight: 600 }}>Tell us any job title, and we&apos;ll set up its checklist with you.</p>
+              <p style={{ margin: 0, fontSize: 17, lineHeight: 1.45, fontWeight: 600 }}>Tell us the job and we&apos;ll build its checklist with you.</p>
               <div className="btn-row"><Link href={DEMO_HREF} className="btn btn-primary" data-demo-cta="true">Book a demo <Arrow /></Link><Link href="/solutions/" className="btn btn-ghost">Every team we work with</Link></div>
             </div>
           </div>
