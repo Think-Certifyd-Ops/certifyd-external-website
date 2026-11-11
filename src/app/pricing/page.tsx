@@ -29,7 +29,7 @@ export default function Pricing() {
       <section aria-labelledby="price-title" className="section on-paper" style={{ paddingBottom: 56 }}>
         <div className="wrap stack gap-20">
           <p className="eyebrow">Pricing</p>
-          <h1 id="price-title" className="h1">Simple pricing, and nothing for your workers to pay.</h1>
+          <h1 id="price-title" className="h1">One monthly price. Your workers pay nothing.</h1>
           <p className="lead">One monthly plan for your organisation, sized to the workers you manage. Book a demo and we&apos;ll give you a price for your team.</p>
           <div className="btn-row"><DemoButton /><ContactButton /></div>
         </div>
@@ -42,9 +42,9 @@ export default function Pricing() {
         </div>
       </section>
 
-      <Faqs id="faq-title" title="Teams usually ask us these before they sign up." items={FAQS} intro={<p className="body">Something else on your mind? <Link href={CONTACT_HREF}>Contact us</Link> and a person will reply.</p>} />
+      <Faqs id="faq-title" title="Questions teams ask before they join." items={FAQS} intro={<p className="body">Something else on your mind? <Link href={CONTACT_HREF}>Contact us</Link> and a person will reply.</p>} />
 
-      <CloseBand title="Worker compliance, without the chasing." />
+      <CloseBand title="Get a price for your team on a 20-minute call." />
     </div>
   );
 }

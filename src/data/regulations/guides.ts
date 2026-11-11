@@ -17,7 +17,7 @@ const RTW_OPS = { title: "Home Office: Illegal working operations guidance", hre
 export const GUIDES: Guide[] = [
   {
     slug: "right-to-work", kind: "check", status: "draft",
-    title: "Right-to-work checks", h1: "Right-to-work checks: what they involve and what to keep.",
+    title: "Right-to-work checks", h1: "Right-to-work checks: how they work and what to keep.",
     lead: "Every employer must check that a person is allowed to do the work before they start. Done the prescribed way, the check gives you a statutory excuse against a civil penalty.",
     metaTitle: "Right-to-work checks explained for employers | Certifyd", metaDescription: "The three ways to check right to work, when to re-check, who is covered from 1 October 2026 and what records to keep, with the Home Office sources.",
     sections: [
@@ -31,7 +31,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "dbs", kind: "check", status: "draft",
-    title: "DBS checks", h1: "DBS checks: the four levels and when each one applies.",
+    title: "DBS checks", h1: "DBS checks: the four levels and when you need each one.",
     lead: "A Disclosure and Barring Service check shows a person's criminal record. The level you can ask for depends on the job, and the higher levels need the role to be eligible in law.",
     metaTitle: "DBS check levels explained for employers | Certifyd", metaDescription: "Basic, standard, enhanced and enhanced with barred lists: which DBS check a role can have, how the Update Service works and what changes in Scotland and NI.",
     sections: [
@@ -44,21 +44,21 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "right-to-work-october-2026", kind: "change", status: "draft", date: "1 October 2026",
-    title: "Right-to-work checks now cover contract and platform work", h1: "Right-to-work checks now cover workers, subcontractors and platforms.",
+    title: "Right-to-work checks now cover contract and platform work", h1: "Right-to-work checks now cover more people, including subcontractors and gig workers.",
     lead: "From 1 October 2026, the illegal working rules reach beyond employees. The change is not retrospective: it applies to work that starts on or after that date.",
     metaTitle: "Right-to-work changes from 1 October 2026 | Certifyd", metaDescription: "From 1 October 2026 right-to-work checks cover worker's contracts, individual subcontractors and online platforms, with extended liability up contract chains.",
     sections: [
       { h: "What changed", p: ["Section 48 of the Border Security, Asylum and Immigration Act 2025 amended the Immigration, Asylum and Nationality Act 2006. Updated Home Office guidance and codes of practice came into force on 1 October 2026."] },
       { h: "Who is now covered", list: ["People engaged on a worker's contract", "Individual subcontractors", "Service providers matched to clients through an online matching service"] },
-      { h: "Extended liability", p: ["Liability can now pass beyond the business that engaged the worker, for example up a chain of contracts, to an online matching service, or where a substitution clause lets someone else do the work. The Home Office first looks to the business with the direct relationship. Others can protect themselves by meeting the prescribed contractual requirements."] },
-      { h: "It is not retrospective", p: ["The Home Office says the new provisions don't create liability for working arrangements entered into before 1 October 2026. Repeat checks on existing workers follow the new codes when they fall due after that date."] },
+      { h: "Who can be fined", p: ["Liability can now pass beyond the business that engaged the worker, for example up a chain of contracts, to an online matching service, or where a substitution clause lets someone else do the work. The Home Office first looks to the business with the direct relationship. Others can protect themselves by meeting the prescribed contractual requirements."] },
+      { h: "It only covers work that starts from 1 October 2026", p: ["The Home Office says the new provisions don't create liability for working arrangements entered into before 1 October 2026. Repeat checks on existing workers follow the new codes when they fall due after that date."] },
       { h: "What to do", list: ["Check everyone who starts on or after 1 October 2026, whatever their contract", "Use a registered digital provider if you check digitally", "Make sure the person working is the person you checked", "Review contracts with suppliers, subcontractors and platforms for the new requirements"] },
     ],
     sources: [RTW_CODE, RTW_GUIDE, RTW_OPS],
   },
   {
     slug: "fair-work-agency", kind: "change", status: "draft", date: "7 April 2026",
-    title: "The Fair Work Agency", h1: "The Fair Work Agency now enforces agency and gangmaster rules.",
+    title: "The Fair Work Agency", h1: "The Fair Work Agency now makes sure agencies and gangmasters follow the rules.",
     lead: "The Fair Work Agency launched on 7 April 2026. It brought the Employment Agency Standards Inspectorate and the Gangmasters and Labour Abuse Authority into one body.",
     metaTitle: "The Fair Work Agency: what agencies need to know | Certifyd", metaDescription: "The Fair Work Agency launched on 7 April 2026, taking over agency regulation and gangmaster licensing. What changes for staffing agencies and labour providers.",
     sections: [
@@ -69,7 +69,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "oliver-mcgowan-code", kind: "change", status: "draft", date: "6 September 2025",
-    title: "The Oliver McGowan code of practice", h1: "The Oliver McGowan code sets the standard for learning disability and autism training.",
+    title: "The Oliver McGowan code of practice", h1: "The Oliver McGowan code: the learning disability and autism training care staff need.",
     lead: "Since 1 July 2022, CQC-registered providers must make sure their staff get learning disability and autism training suited to their role. The code of practice, in force since 6 September 2025, sets the standard CQC checks against.",
     metaTitle: "Oliver McGowan training code: what care providers need | Certifyd", metaDescription: "The Oliver McGowan code of practice came into force on 6 September 2025. What CQC-registered providers must show for learning disability and autism training.",
     sections: [

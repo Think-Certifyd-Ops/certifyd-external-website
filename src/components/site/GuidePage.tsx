@@ -32,7 +32,7 @@ export function GuidePage({ g }: { g: Guide }) {
           <p className="disclaimer">{g.status === "reviewed" ? "" : `Updated ${REGULATIONS_UPDATED}. `}Guidance, not legal advice. Your organisation stays responsible for its own decisions.</p>
         </div>
       </section>
-      <CloseBand title="Keep every check current, for every worker." />
+      <CloseBand title="Keep every worker's checks up to date." />
     </div>
   );
 }

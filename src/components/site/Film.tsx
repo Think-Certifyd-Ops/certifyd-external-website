@@ -47,7 +47,7 @@ export function FilmBand() {
     <div className="stack gap-28">
       <div className="stack gap-12 max-780">
         <p className="eyebrow">The film</p>
-        <h2 id="film-title" className="h2">See how Certifyd takes a new starter from first message to first shift.</h2>
+        <h2 id="film-title" className="h2">Watch a new worker go from first message to first shift.</h2>
       </div>
       <FilmSlot key={film} film={film} autoPlay={chosen} />
       <div role="group" aria-label="Choose a part of the film" className="btn-row" style={{ gap: 10 }}>

@@ -31,7 +31,7 @@ export default function HowItWorks() {
           <div className="stack gap-24">
             <p className="eyebrow">How it works</p>
             {/* Two lines, each ending on a full stop: the one two-tone headline Michael kept */}
-            <h1 id="how-title" className="h1" style={{ fontSize: "clamp(30px, 3vw, 42px)" }}>Ask once.<br /><span className="accent nowrap-lg">Certifyd does the rest.</span></h1>
+            <h1 id="how-title" className="h1" style={{ fontSize: "clamp(30px, 3vw, 42px)" }}>Ask once.<br /><span className="accent nowrap-lg">We do the rest.</span></h1>
             <p className="lead">You set the rules and make the calls. We do the asking, checking, chasing and recording, from the first message to the evidence pack.</p>
             <CtaPair />
           </div>
@@ -41,21 +41,21 @@ export default function HowItWorks() {
 
       <section aria-labelledby="steps-title" className="section on-white">
         <div className="wrap stack gap-32">
-          <h2 id="steps-title" className="h2 nowrap-lg" style={{ fontSize: "clamp(24px, 2.6vw, 36px)" }}>Follow one new starter from invite to evidence pack.</h2>
+          <h2 id="steps-title" className="h2 nowrap-lg" style={{ fontSize: "clamp(24px, 2.6vw, 36px)" }}>Follow one new worker from first message to finished file.</h2>
           <StepPicker />
         </div>
       </section>
 
       <section aria-labelledby="who-title" className="section">
         <div className="wrap stack gap-28">
-          <div className="stack gap-12 max-820"><p className="eyebrow">Who does what</p><h2 id="who-title" className="h2">We do the chasing, so your team stays compliant.</h2><p className="body">Here is one nurse&apos;s case, from invite to cleared. Filter it to see how little lands on your desk.</p></div>
+          <div className="stack gap-12 max-820"><p className="eyebrow">Who does what</p><h2 id="who-title" className="h2">We chase the missing documents, so your team doesn&apos;t have to.</h2><p className="body">Here is one nurse&apos;s case, from invite to cleared. Filter it to see how little lands on your desk.</p></div>
           <CaseLog />
         </div>
       </section>
 
       <section aria-labelledby="get-title" className="section on-white">
         <div className="wrap stack gap-32">
-          <div className="stack gap-12 max-820"><p className="eyebrow">What you get</p><h2 id="get-title" className="h2">You get all of it from your very first starter.</h2></div>
+          <div className="stack gap-12 max-820"><p className="eyebrow">What you get</p><h2 id="get-title" className="h2">You get every part of Certifyd from your first worker.</h2></div>
           <div className="grid-3" style={{ alignItems: "stretch" }}>
             {GET.map((g, i) => (
               <div key={g.k} className={`card stack gap-10 ${i === 2 ? "card-strong" : ""}`} style={{ padding: 28 }}>
@@ -77,7 +77,7 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      <CloseBand title="Join Certifyd and stay compliant every day, not just on audit day." />
+      <CloseBand title="Be ready for any inspection, on any day." />
       <HowToSchema name="How Certifyd onboards a new worker" steps={["You pick the role and invite your worker.", "Your worker replies and uploads documents on a secure page.", "Certifyd checks and chases; your team sees the exceptions.", "Reception scans the worker's pass and records the check.", "Every check and decision is on the record, ready for audit."]} />
     </div>
   );

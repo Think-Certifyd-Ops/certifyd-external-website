@@ -58,8 +58,8 @@ export function SiteHeader() {
       {menu && (
         <div id="menu-solutions" className="menu-panel">
           <div className="menu-grid">
-            <div className="stack gap-6"><p className="eyebrow" style={{ marginBottom: 8 }}>If you supply workers</p>{supply.map((s) => <Link key={s.slug} href={`/solutions/${s.slug}/`} className="menu-item"><strong>{s.name}</strong><span>{s.sub}</span></Link>)}</div>
-            <div className="stack gap-6"><p className="eyebrow" style={{ marginBottom: 8 }}>If you employ workers</p>{employ.map((s) => <Link key={s.slug} href={`/solutions/${s.slug}/`} className="menu-item"><strong>{s.name}</strong><span>{s.sub}</span></Link>)}</div>
+            <div className="stack gap-6"><p className="eyebrow" style={{ marginBottom: 8 }}>If you supply workers to other businesses</p>{supply.map((s) => <Link key={s.slug} href={`/solutions/${s.slug}/`} className="menu-item"><strong>{s.name}</strong><span>{s.sub}</span></Link>)}</div>
+            <div className="stack gap-6"><p className="eyebrow" style={{ marginBottom: 8 }}>If you employ your own workers</p>{employ.map((s) => <Link key={s.slug} href={`/solutions/${s.slug}/`} className="menu-item"><strong>{s.name}</strong><span>{s.sub}</span></Link>)}</div>
             <div className="menu-aside">
               <p className="eyebrow">Not on the list?</p>
               <p style={{ margin: 0, fontSize: 17, lineHeight: 1.45, fontWeight: 600 }}>Tell us any job title, and we&apos;ll set up its checklist with you.</p>

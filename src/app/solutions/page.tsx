@@ -12,15 +12,15 @@ export const metadata = pageMetadata(
 
 export default function Solutions() {
   const groups = [
-    { key: "supply", title: "If you supply workers" },
-    { key: "employ", title: "If you employ workers" },
+    { key: "supply", title: "If you supply workers to other businesses" },
+    { key: "employ", title: "If you employ your own workers" },
   ] as const;
   return (
     <div className="cd page">
       <section aria-labelledby="sol-title" className="section on-paper" style={{ paddingBottom: 48 }}>
         <div className="wrap stack gap-20 max-920" style={{ marginLeft: "auto", marginRight: "auto" }}>
           <p className="eyebrow">Who it&apos;s for</p>
-          <h1 id="sol-title" className="h1">If you bring on new workers every week, Certifyd is built for you.</h1>
+          <h1 id="sol-title" className="h1">Made for teams that take on new workers every week.</h1>
           <p className="lead">Any role, any document. Pick your team below, or tell us the job titles you hire for and we&apos;ll set Certifyd up around them.</p>
         </div>
       </section>
@@ -37,7 +37,7 @@ export default function Solutions() {
           </div>
         </section>
       ))}
-      <CloseBand title="Not on the list? Tell us the job title, and we'll set up its checklist with you." />
+      <CloseBand title="Not on the list? Tell us the job and we'll build its checklist with you." />
     </div>
   );
 }

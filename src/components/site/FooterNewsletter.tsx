@@ -50,7 +50,7 @@ export function FooterNewsletter() {
     <section className="foot-news" aria-labelledby="foot-news-title" data-rogerson-newsletter="certifyd">
       <div className="foot-news-text">
         <p className="eyebrow">Newsletter</p>
-        <h2 id="foot-news-title" className="foot-news-title">What should Certifyd help you do?</h2>
+        <h2 id="foot-news-title" className="foot-news-title">What do you need help with?</h2>
         <p>Join the newsletter for useful updates. After you confirm, Andrew will ask one quick question about what you need.</p>
       </div>
       <div className="foot-news-form">

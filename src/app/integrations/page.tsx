@@ -11,7 +11,7 @@ export default function Integrations() {
       <section aria-labelledby="int-title" className="section on-paper">
         <div className="wrap stack gap-24 max-820">
           <p className="eyebrow">Integrations</p>
-          <h1 id="int-title" className="h1">Bring your workers in, and take their status with you.</h1>
+          <h1 id="int-title" className="h1">Move your workers&apos; details into Certifyd, and out again.</h1>
           <p className="lead">Today you can import workers from a spreadsheet and export their status and evidence packs. Connections to recruitment CRMs and HR systems come next, starting with the systems our customers use most.</p>
           <p className="body">Tell us which system you use and we&apos;ll show you how Certifyd fits around it.</p>
           <CtaPair />

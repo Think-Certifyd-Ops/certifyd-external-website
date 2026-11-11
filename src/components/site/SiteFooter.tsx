@@ -16,7 +16,7 @@ export function SiteFooter() {
           <div className="foot-cols">
             <div className="foot-brand">
               <img src="/images/site/logo-white.svg" alt="Certifyd" width={140} height={26} style={{ height: 26, width: "auto", alignSelf: "flex-start" }} />
-              <p style={{ margin: 0, fontSize: 15, lineHeight: 1.5, color: "#C9D6EA", maxWidth: 300 }}>Worker compliance, without the chasing.</p>
+              <p style={{ margin: 0, fontSize: 15, lineHeight: 1.5, color: "#C9D6EA", maxWidth: 300 }}>Hiring paperwork, done for you.</p>
               <div className="btn-row on-ink" style={{ background: "transparent" }}><DemoButton /><ContactButton /></div>
             </div>
             <div className="foot-col">

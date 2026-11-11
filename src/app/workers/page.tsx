@@ -36,7 +36,7 @@ export default function Workers() {
 
       <section aria-labelledby="real-title" className="section on-white">
         <div className="wrap stack gap-28">
-          <h2 id="real-title" className="h2">How to tell the message is really for you.</h2>
+          <h2 id="real-title" className="h2">How to tell the message is real.</h2>
           <div className="grid-3">
             {[["01", "It names who sent it", "Every message says which agency or employer asked us to contact you. If you don't recognise the name, don't reply."], ["02", "You can check with them", "Call them on the number you already have. They can see exactly what we've asked you for."], ["03", "We never ask in the chat", "Your passport, bank details and passwords only go through a secure Certifyd page. Never by message."]].map(([n, t, b]) => <div key={n} className="card-flat pad stack gap-8"><span className="num">{n}</span><h3 className="h4">{t}</h3><p className="small">{b}</p></div>)}
           </div>
@@ -45,7 +45,7 @@ export default function Workers() {
 
       <section aria-labelledby="routes-title" className="section">
         <div className="wrap stack gap-32">
-          <h2 id="routes-title" className="h2">Start from your invite, or on your own.</h2>
+          <h2 id="routes-title" className="h2">Start from your invite, or sign up yourself.</h2>
           <div className="grid-2">
             <div id="invited" className="card card-strong stack gap-16" style={{ padding: 32 }}>
               <h3 className="h3">You&apos;ve been invited</h3>
@@ -66,7 +66,7 @@ export default function Workers() {
         <div className="wrap split" style={{ alignItems: "flex-start" }}>
           <div className="text">
             <p className="eyebrow">Get ready</p>
-            <h2 id="need-title" className="h2">Have these to hand and you&apos;ll be done faster.</h2>
+            <h2 id="need-title" className="h2">Have these ready and you&apos;ll finish faster.</h2>
             <p className="body">Every job is a little different. Your checklist shows exactly what your agency or employer needs from you, and nothing more.</p>
             <Link href="/regulations/" className="btn btn-ghost self-start">Look up what your job needs →</Link>
           </div>
@@ -80,7 +80,7 @@ export default function Workers() {
         <div className="wrap split split-reverse">
           <div className="text">
             <p className="eyebrow">Your record</p>
-            <h2 id="yours-title" className="h2">You see everything we hold, and you choose who else does.</h2>
+            <h2 id="yours-title" className="h2">You can see everything we keep about you, and you choose who else can.</h2>
             <p className="body">You can see everything we hold about you. Whoever invited you sees your documents. The sites you work at see your status, not your documents. We delete records on a set schedule.</p>
             <Link href="/privacy/" className="btn btn-ghost self-start">Read how we handle your data →</Link>
           </div>
@@ -94,7 +94,7 @@ export default function Workers() {
         </section>
       )}
 
-      <Faqs id="wfaq-title" title="Answers to what workers ask us most." items={FAQS} />
+      <Faqs id="wfaq-title" title="Questions workers ask us." items={FAQS} />
 
       <section aria-labelledby="help-title" className="section on-blue">
         <div className="wrap head-row" style={{ alignItems: "center" }}>

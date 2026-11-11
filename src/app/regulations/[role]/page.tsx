@@ -70,7 +70,7 @@ export default async function RolePage({ params }: Props) {
 
       <section aria-labelledby="law-title" className="section">
         <div className="wrap stack gap-24">
-          <h2 id="law-title" className="h2">The rules behind the checklist.</h2>
+          <h2 id="law-title" className="h2">The laws behind this checklist.</h2>
           <div className="table-box"><table className="table"><thead><tr><th scope="col">Rule</th><th scope="col">Applies to</th></tr></thead><tbody>
             <tr><td><strong>Immigration, Asylum and Nationality Act 2006, as amended from 1 October 2026</strong></td><td>Right to work, for every worker</td></tr>
             <tr><td><strong>Conduct of Employment Agencies and Employment Businesses Regulations 2003</strong></td><td>Identity, qualifications and terms, when an agency supplies the worker</td></tr>
@@ -103,12 +103,12 @@ export default async function RolePage({ params }: Props) {
         </div>
       </section>
 
-      <Faqs id="rfaq-title" title={`What agencies ask about ${name} checks.`} items={faqs} />
+      <Faqs id="rfaq-title" title={`Common questions about ${name} checks.`} items={faqs} />
 
       <section aria-label="Related" className="section-tight">
         <div className="wrap grid-2">
-          <div className="card-flat pad"><h2 className="h4" style={{ marginBottom: 10 }}>Related roles</h2>{related.map((x) => <Link key={x.slug} href={`/regulations/${x.slug}/`} className="row" style={{ textDecoration: "none", color: "#0F1A2B" }}>{x.role}</Link>)}{segment && <Link href={`/solutions/${segment}/`} className="row" style={{ textDecoration: "none" }}>How Certifyd works for {r.sector.toLowerCase()} →</Link>}</div>
-          <div className="card-flat pad"><h2 className="h4" style={{ marginBottom: 10 }}>Related checks</h2>{checkGuides.map((g) => <Link key={g.slug} href={`/regulations/checks/${g.slug}/`} className="row" style={{ textDecoration: "none", color: "#0F1A2B" }}>{g.title}</Link>)}<Link href="/resources/right-to-work-guide/" className="row" style={{ textDecoration: "none", color: "#0F1A2B" }}>Right-to-work guide for employers</Link></div>
+          <div className="card-flat pad"><h2 className="h4" style={{ marginBottom: 10 }}>Similar jobs</h2>{related.map((x) => <Link key={x.slug} href={`/regulations/${x.slug}/`} className="row" style={{ textDecoration: "none", color: "#0F1A2B" }}>{x.role}</Link>)}{segment && <Link href={`/solutions/${segment}/`} className="row" style={{ textDecoration: "none" }}>How Certifyd works for {r.sector.toLowerCase()} →</Link>}</div>
+          <div className="card-flat pad"><h2 className="h4" style={{ marginBottom: 10 }}>More about these checks</h2>{checkGuides.map((g) => <Link key={g.slug} href={`/regulations/checks/${g.slug}/`} className="row" style={{ textDecoration: "none", color: "#0F1A2B" }}>{g.title}</Link>)}<Link href="/resources/right-to-work-guide/" className="row" style={{ textDecoration: "none", color: "#0F1A2B" }}>Right-to-work guide for employers</Link></div>
         </div>
       </section>
 

@@ -25,11 +25,11 @@ export default function Home() {
     <div className="cd page">
       {/* 1 Hero */}
       <section aria-labelledby="hero-title" className="on-paper" style={{ padding: "56px 0", minHeight: 720, display: "flex", alignItems: "center" }}>
-        <div className="wrap wrap-wide" style={{ display: "grid", gridTemplateColumns: "minmax(0, 560px) minmax(0, 1fr)", gap: 56, alignItems: "center" }} data-hero-grid>
+        <div className="wrap wrap-wide" style={{ display: "grid", gridTemplateColumns: "minmax(0, 620px) minmax(0, 1fr)", gap: 56, alignItems: "center" }} data-hero-grid>
           <div className="stack gap-24">
-            <p className="eyebrow">For teams that onboard workers every week</p>
-            <h1 id="hero-title" className="h1" style={{ fontSize: "clamp(36px, 4.2vw, 52px)" }}>Worker compliance, without the chasing.</h1>
-            <p className="lead">Certifyd collects, checks and tracks everything a worker needs before they start, in one view your whole team shares.</p>
+            <p className="eyebrow">For agencies, care providers and employers</p>
+            <h1 id="hero-title" className="h1" style={{ fontSize: "clamp(34px, 3.4vw, 46px)" }}>Every worker&apos;s documents, collected, checked and kept up to date.</h1>
+            <p className="lead">We message your workers, check their documents and remind you before anything runs out. Your whole team sees it all in one place.</p>
             <div className="btn-row"><DemoButton /><Link href="/how-it-works/" className="btn btn-secondary">See how it works</Link><MessageCertifydButton /></div>
             <p className="hint">A 20-minute demo, built around the roles you hire for.</p>
           </div>
@@ -41,7 +41,7 @@ export default function Home() {
       <section aria-labelledby="who-title" className="section">
         <div className="wrap stack gap-32">
           <div className="head-row">
-            <div className="stack gap-12 max-780"><p className="eyebrow">Who it&apos;s for</p><h2 id="who-title" className="h2">If you bring on new workers every week, Certifyd is built for you.</h2></div>
+            <div className="stack gap-12 max-780"><p className="eyebrow">Who it&apos;s for</p><h2 id="who-title" className="h2">Made for teams that take on new workers every week.</h2></div>
             <Link href="/solutions/" className="btn btn-ghost">See every team we work with →</Link>
           </div>
           <div className="grid-3" style={{ gap: 16 }}>
@@ -68,7 +68,7 @@ export default function Home() {
         <div data-chase-text style={{ flex: "1 1 520px", display: "flex", alignItems: "center", justifyContent: "flex-end", padding: "80px 56px 80px 40px" }}>
           <div className="stack gap-24" style={{ maxWidth: 520 }}>
             <p className="eyebrow">The chase</p>
-            <h2 id="chase-title" className="h2">Every missing document is a compliance gap, and a contract at risk.</h2>
+            <h2 id="chase-title" className="h2">One missing document can break the rules and cost you a client.</h2>
             <ol className="plain stack gap-16" style={{ fontSize: 18, lineHeight: 1.45 }}>
               <li style={{ display: "flex", gap: 12 }}><span aria-hidden="true" className="num">01</span>Documents land in WhatsApp chats, inboxes and paper files.</li>
               <li style={{ display: "flex", gap: 12 }}><span aria-hidden="true" className="num">02</span>An expired licence or a missing reference only shows up at audit.</li>
@@ -92,7 +92,7 @@ export default function Home() {
         <RolePicker
           intro={<>
             <p className="eyebrow">Ask once</p>
-            <h2 id="ask-title" className="h2">Tell us the role. We already know what it needs.</h2>
+            <h2 id="ask-title" className="h2">Tell us the job. We know which checks it needs.</h2>
             <p className="body">Every common role comes as a ready-made template. Say you&apos;re hiring a nurse or a forklift driver, and Certifyd asks your worker for everything that role needs, then chases anything missing on the schedule you set.</p>
           </>}
           after={
@@ -109,7 +109,7 @@ export default function Home() {
       {/* 6 Product tour: dark band */}
       <section aria-labelledby="tour-title" className="section on-ink">
         <div className="wrap stack gap-40">
-          <div className="stack gap-12 max-820"><p className="eyebrow">Inside Certifyd</p><h2 id="tour-title" className="h2">Your whole team works from one shared view of every worker.</h2></div>
+          <div className="stack gap-12 max-820"><p className="eyebrow">Inside Certifyd</p><h2 id="tour-title" className="h2">Your whole team sees the same up-to-date list of every worker.</h2></div>
           <TourTabs
             label="Product tour"
             tabs={[
@@ -127,7 +127,7 @@ export default function Home() {
       {/* 7 Security: one-colour headline, no unconfirmed claims */}
       <section aria-labelledby="safe-title" className="section">
         <div className="wrap stack gap-32">
-          <div className="stack gap-12 max-820"><p className="eyebrow">Security and privacy</p><h2 id="safe-title" className="h2">Your workers&apos; documents stay safe, and you decide who sees them.</h2></div>
+          <div className="stack gap-12 max-820"><p className="eyebrow">Security and privacy</p><h2 id="safe-title" className="h2">We keep workers&apos; documents safe. You choose who sees them.</h2></div>
           <div className="grid-4" style={{ gap: 16 }}>
             {[
               { i: "lock", t: "Documents never go through the chat", b: "The chat only sends links. ID, passports and certificates go onto a secure, encrypted page." },
@@ -140,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* 8 Close: the whole business, compliant all the time */}
-      <CloseBand tone="ink" title="Join Certifyd and stay compliant every day, not just on audit day." lead="Every worker, every check and every expiry date in one place, so your whole business is ready for an inspection or a client audit at any moment." contactLabel="Contact us" />
+      <CloseBand tone="ink" title="Be ready for any inspection, on any day." lead="Every worker, every check and every renewal date in one place. When an inspector or a client asks, you can show them straight away." contactLabel="Contact us" />
     </div>
   );
 }
