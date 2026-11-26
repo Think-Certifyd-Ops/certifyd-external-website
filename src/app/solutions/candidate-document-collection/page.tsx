@@ -1,4 +1,12 @@
-import { pageMetadata } from "@/lib/story/metadata";
 import { OnboardingLanding } from "@/components/OnboardingLanding";
-export const metadata=pageMetadata("Candidate document collection software","Request candidate forms and evidence, follow up missing items and prepare a clear review queue.","/solutions/candidate-document-collection/");
-export default function Page(){return <OnboardingLanding slug="solutions/candidate-document-collection"/>}
+import { onboardingPages } from "@/lib/onboarding-pages";
+import { pageMetadata } from "@/lib/story/metadata";
+
+const topic = "candidate-document-collection";
+const page = onboardingPages[topic];
+
+export const metadata = pageMetadata(page.title, page.description, page.path);
+
+export default function Page() {
+  return <OnboardingLanding topic={topic} />;
+}

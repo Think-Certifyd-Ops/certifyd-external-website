@@ -1,4 +1,4 @@
-import { onboardingPages } from "@/lib/onboarding-pages";
+import { careChecklist, workflowTopics } from "@/lib/onboarding-pages";
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { getAllEpisodes } from "@/lib/podcast";
@@ -22,7 +22,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...GUIDES.filter(guideIndexed).map((g) => ({ url: `${BASE_URL}/regulations/${g.kind === "check" ? "checks" : "changes"}/${g.slug}/`, changeFrequency: "monthly" as const, priority: 0.7 })),
   ];
   const staticPages: MetadataRoute.Sitemap = [
-    ...onboardingPages.filter(p=>!p.slug.endsWith("healthcare-staffing")&&!p.slug.endsWith("care-providers")).map(p=>({url:`${BASE_URL}/${p.slug}/`,lastModified:new Date("2026-11-26"),changeFrequency:"monthly" as const,priority:0.8})),
+    ...[...workflowTopics, careChecklist].map(({ path }) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date("2026-11-26"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     {
       url: BASE_URL,
       changeFrequency: "weekly",

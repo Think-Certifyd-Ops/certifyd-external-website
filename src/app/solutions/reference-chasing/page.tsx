@@ -1,4 +1,12 @@
-import { pageMetadata } from "@/lib/story/metadata";
 import { OnboardingLanding } from "@/components/OnboardingLanding";
-export const metadata=pageMetadata("Reference request and chasing software","Coordinate referee requests, follow-up and returned references within your recruitment onboarding workflow.","/solutions/reference-chasing/");
-export default function Page(){return <OnboardingLanding slug="solutions/reference-chasing"/>}
+import { onboardingPages } from "@/lib/onboarding-pages";
+import { pageMetadata } from "@/lib/story/metadata";
+
+const topic = "reference-chasing";
+const page = onboardingPages[topic];
+
+export const metadata = pageMetadata(page.title, page.description, page.path);
+
+export default function Page() {
+  return <OnboardingLanding topic={topic} />;
+}

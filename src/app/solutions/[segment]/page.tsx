@@ -1,4 +1,5 @@
-import { OnboardingWorkflowSections } from "@/components/OnboardingWorkflowSections";
+import { OnboardingLanding } from "@/components/OnboardingLanding";
+import { onboardingPages } from "@/lib/onboarding-pages";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -16,12 +17,19 @@ type Props = { params: Promise<{ segment: string }> };
 export function generateStaticParams() { return SEGMENTS.map((s) => ({ segment: s.slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const s = getSegment((await params).segment);
+  if (s?.slug === "healthcare-staffing" || s?.slug === "care-providers") {
+    const page = onboardingPages[s.slug];
+    return pageMetadata(page.title, page.description, page.path);
+  }
   return s ? pageMetadata(s.metaTitle, s.metaDescription, `/solutions/${s.slug}/`) : {};
 }
 
 export default async function SegmentPage({ params }: Props) {
   const s = getSegment((await params).segment);
   if (!s) notFound();
+  if (s.slug === "healthcare-staffing" || s.slug === "care-providers") {
+    return <OnboardingLanding topic={s.slug} />;
+  }
   const roles = rolesForSector(s.sector).slice(0, 8);
   return (
     <div className="cd page">
@@ -128,7 +136,6 @@ export default async function SegmentPage({ params }: Props) {
         </div>
       </section>
 
-      <OnboardingWorkflowSections slug={s.slug} />
       <Faqs title={s.faqTitle} items={s.faqs} />
       <CloseBand title={s.close} />
     </div>
