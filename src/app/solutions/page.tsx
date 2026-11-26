@@ -1,3 +1,4 @@
+import { onboardingPages } from "@/lib/onboarding-pages";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/story/metadata";
 import { SEGMENT_MENU } from "@/data/site/segment-menu";
@@ -37,6 +38,7 @@ export default function Solutions() {
           </div>
         </section>
       ))}
+      <section id="workflow-topics" className="section on-white"><div className="wrap stack gap-24"><h2 className="h2">Automate the steps between application and first start.</h2><div className="grid-2">{onboardingPages.filter(p=>!p.slug.endsWith("healthcare-staffing")&&!p.slug.endsWith("care-providers")).map(p=><article className="card-flat pad stack gap-12" key={p.slug}><h3 className="h3"><Link href={`/${p.slug}/`}>{p.title}</Link></h3><p className="body">{p.description}</p></article>)}</div></div></section>
       <CloseBand title="Not on the list? Tell us the job and we'll build its checklist with you." />
     </div>
   );

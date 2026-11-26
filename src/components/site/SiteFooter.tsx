@@ -22,6 +22,7 @@ export function SiteFooter() {
             <div className="foot-col">
               <p className="eyebrow">Product</p>
               <Link href="/how-it-works/">How it works</Link>
+              <Link href="/solutions/#workflow-topics">Onboarding workflows</Link>
               <Link href="/pricing/">Pricing</Link>
               <Link href="/security/">Security</Link>
               <Link href="/workers/">For workers</Link>

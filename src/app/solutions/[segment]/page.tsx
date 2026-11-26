@@ -1,3 +1,4 @@
+import { OnboardingWorkflowSections } from "@/components/OnboardingWorkflowSections";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -127,6 +128,7 @@ export default async function SegmentPage({ params }: Props) {
         </div>
       </section>
 
+      <OnboardingWorkflowSections slug={s.slug} />
       <Faqs title={s.faqTitle} items={s.faqs} />
       <CloseBand title={s.close} />
     </div>
